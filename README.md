@@ -1,7 +1,7 @@
 <h1>DelphiAcademy</h1>
 Todos os exemplos do Delphi Academy
 
-<h2>Brasil<h2>
+<h2>Brasil</h2>
 19/04 - Controle uma Aplicação Windows a partir de uma Aplicação Mobile com AppTethering<br>
 03/05 - LiveBindings - de Formulários Visuais ao Código<br>
 17/05 - Integração de Serviços Cloud com REST/JSON<br>
