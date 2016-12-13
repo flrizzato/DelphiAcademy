@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/04/11 16:44:06.000.591,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 11:46:17.000.671,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 11:51:45.000.216,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 12:12:40.000.560,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 17:17:36.000.605,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 17:18:19.000.781,C:\DelphiAcademy\01-AppTethering-BR\01-AppTethering101\VCLMainForm.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2016/04/13 17:18:19.000.781,C:\DelphiAcademy\01-AppTethering-BR\01-AppTethering101\VCLMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 17:18:32.000.712,C:\DelphiAcademy\01-AppTethering-BR\01-AppTethering101\VCLProject.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/04/14 23:40:04.000.241,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\VCLProject.dproj=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\HubAppVCL.dproj</Transaction>
+    <Transaction>2016/04/14 23:43:10.000.128,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\VCLMainForm.dfm=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\HubAppVCLMain.dfm</Transaction>
+    <Transaction>2016/04/14 23:43:10.000.128,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\VCLMainForm.pas=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\HubAppVCLMain.pas</Transaction>
+    <Transaction>2016/04/14 23:43:29.000.355,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\HubAppVCLMain.dfm=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\Unit1.dfm</Transaction>
+    <Transaction>2016/04/14 23:43:29.000.355,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\HubAppVCLMain.pas=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PRIZZATO iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

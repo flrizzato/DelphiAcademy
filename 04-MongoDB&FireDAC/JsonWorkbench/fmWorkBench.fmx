@@ -1,0 +1,251 @@
+object WorkBenchForm: TWorkBenchForm
+  Left = 389
+  Top = 179
+  Caption = 'Json WorkBench'
+  ClientHeight = 692
+  ClientWidth = 1121
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  Left = 389
+  Top = 179
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 1121.000000000000000000
+    Size.Height = 692.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      1121s
+      666s
+      1121s
+      666s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 99.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Json Formatter'
+      ExplicitSize.cx = 101.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object mInput: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          '{'
+          '    "glossary": {'
+          '        "title": "example glossary",'
+          #9#9'"GlossDiv": {'
+          '            "title": "S",'
+          #9#9#9'"GlossList": {'
+          '                "GlossEntry": {'
+          '                    "ID": "SGML",'
+          #9#9#9#9#9'"SortAs": "SGML",'
+          #9#9#9#9#9'"GlossTerm": "Standard Generalized Markup Language",'
+          #9#9#9#9#9'"Acronym": "SGML",'
+          #9#9#9#9#9'"Abbrev": "ISO 8879:1986",'
+          #9#9#9#9#9'"GlossDef": {'
+          
+            '                        "para": "A meta-markup language, used to' +
+            ' create markup languages such as DocBook.",'
+          #9#9#9#9#9#9'"GlossSeeAlso": ["GML", "XML"]'
+          '                    },'
+          #9#9#9#9#9'"GlossSee": "markup"'
+          '                }'
+          '            }'
+          '        }'
+          '    }'
+          '}')
+        TextSettings.WordWrap = True
+        Position.X = 8.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 449.000000000000000000
+        Size.Height = 617.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 445.000000000000000000
+        Viewport.Height = 613.000000000000000000
+      end
+      object btBeautify: TButton
+        Position.X = 472.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Beautify >'
+        OnClick = btBeautifyClick
+      end
+      object btMinify: TButton
+        Position.X = 472.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Minify >'
+        OnClick = btMinifyClick
+      end
+      object gbButtons: TGroupBox
+        Position.X = 464.000000000000000000
+        Position.Y = 216.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 89.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Writer'
+        TabOrder = 4
+        object btToWriter: TButton
+          Position.X = 8.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 137.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'To Writer >'
+          OnClick = btToWriterClick
+        end
+        object lbUseBuilders: TCheckBox
+          IsChecked = True
+          Position.X = 24.000000000000000000
+          Position.Y = 56.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Use Builders'
+        end
+      end
+      object btToDelphi: TButton
+        Position.X = 472.000000000000000000
+        Position.Y = 168.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'To Delphi >'
+        OnClick = btToDelphiClick
+      end
+      object WebBrowser1: TWebBrowser
+        Size.Width = 489.000000000000000000
+        Size.Height = 617.000000000000000000
+        Size.PlatformDefault = False
+        Position.X = 624.000000000000000000
+        Position.Y = 40.000000000000000000
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 97.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Json <-> Bson'
+      ExplicitSize.cx = 100.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object mBson: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        TextSettings.WordWrap = True
+        Position.X = 568.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 545.000000000000000000
+        Size.Height = 593.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 541.000000000000000000
+        Viewport.Height = 589.000000000000000000
+      end
+      object mJson: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          '{'
+          '    "glossary": {'
+          '        "title": "example glossary",'
+          #9#9'"GlossDiv": {'
+          '            "title": "S",'
+          #9#9#9'"GlossList": {'
+          '                "GlossEntry": {'
+          '                    "ID": "SGML",'
+          #9#9#9#9#9'"SortAs": "SGML",'
+          #9#9#9#9#9'"GlossTerm": "Standard Generalized Markup Language",'
+          #9#9#9#9#9'"Acronym": "SGML",'
+          #9#9#9#9#9'"Abbrev": "ISO 8879:1986",'
+          #9#9#9#9#9'"GlossDef": {'
+          
+            '                        "para": "A meta-markup language, used to' +
+            ' create markup languages such as DocBook.",'
+          #9#9#9#9#9#9'"GlossSeeAlso": ["GML", "XML"]'
+          '                    },'
+          #9#9#9#9#9'"GlossSee": "markup"'
+          '                }'
+          '            }'
+          '        }'
+          '    }'
+          '}')
+        TextSettings.WordWrap = True
+        Position.X = 8.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 505.000000000000000000
+        Size.Height = 593.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 501.000000000000000000
+        Viewport.Height = 589.000000000000000000
+      end
+      object btRight: TButton
+        StyledSettings = [Family, Size, Style]
+        Position.X = 520.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 289.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = '>'
+        OnClick = btRightClick
+      end
+      object btLeft: TButton
+        Position.X = 520.000000000000000000
+        Position.Y = 360.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 297.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = '<'
+        OnClick = btLeftClick
+      end
+      object Label1: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 30.000000000000000000
+        Size.Width = 441.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'JSON'
+      end
+      object Label2: TLabel
+        Position.X = 584.000000000000000000
+        Position.Y = 30.000000000000000000
+        Size.Width = 481.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'BSON'
+      end
+    end
+  end
+end

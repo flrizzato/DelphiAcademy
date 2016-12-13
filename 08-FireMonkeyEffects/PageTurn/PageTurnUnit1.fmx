@@ -1,0 +1,182 @@
+object PageTurnSampleForm: TPageTurnSampleForm
+  Left = 0
+  Top = 0
+  Caption = 'Page Turn Sample'
+  ClientHeight = 500
+  ClientWidth = 600
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnResize = FormResize
+  DesignerMasterStyle = 0
+  object EditLoremIpsum1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Text = 
+      'ipsum mi vehicula purus, eu congue sapien orci eu est. Morbi bla' +
+      'ndit volutpat ante, non ultrices eros semper at. Fusce leo leo, ' +
+      'mollis id viverra a, pulvinar non diam. Praesent ornare mauris a' +
+      'c magna placerat rutrum.Curabitur volutpat urna fermentum sem ia' +
+      'culis ultrices. Maecenas adipiscing sapien risus, nec consectetu' +
+      'r arcu. Sed in arcu iaculis felis placerat elementum vitae porta' +
+      ' libero. Donec quis purus nisi, ac ultrices lorem. Proin vitae d' +
+      'iam id turpis rhoncus vestibulum scelerisque vel leo. Nulla quis' +
+      ' scelerisque sem. Etiam imperdiet lacinia nulla sit amet varius.' +
+      ' Aliquam in interdum mauris. Praesent placerat, libero vel biben' +
+      'dum malesuada, velit libero vestibulum erat, vel porttitor diam ' +
+      'urna et nibh. Nullam fringilla cursus tempor. Cras eleifend male' +
+      'suada lacus quis consectetur. Cum sociis natoque penatibus et ma' +
+      'gnis dis parturient montes, nascetur ridiculus mus. Sed vestibul' +
+      'um bibendum sodales.Mauris consectetur ipsum ac turpis aliquam i' +
+      'd placerat justo ornare. Donec nisl arcu, faucibus vel dictum vi' +
+      'tae, dapibus vel mauris. Sed lacinia, elit ut commodo tempor, ma' +
+      'uris felis consequat nisl, sit amet laoreet est quam et tortor. ' +
+      'Proin mattis interdum tempus. Etiam ac vehicula neque. Donec tem' +
+      'por, velit sit'
+    Position.X = 208.000000000000000000
+    Position.Y = 160.000000000000000000
+    Visible = False
+  end
+  object LayoutVirtual: TLayout
+    Align = Contents
+    Size.Width = 600.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Memo3: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      ReadOnly = True
+      ShowScrollBars = False
+      TextSettings.WordWrap = True
+      Position.X = 304.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 154.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 173.000000000000000000
+      Viewport.Height = 150.000000000000000000
+    end
+    object Memo4: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      ReadOnly = True
+      ShowScrollBars = False
+      TextSettings.WordWrap = True
+      Position.X = 304.000000000000000000
+      Position.Y = 216.000000000000000000
+      TabOrder = 1
+      Viewport.Width = 46.000000000000000000
+      Viewport.Height = 46.000000000000000000
+    end
+  end
+  object LayoutVisible: TLayout
+    Align = Contents
+    Size.Width = 600.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Lines.Strings = (
+        
+          'There are two visible memos on a layout. That layout has a TSwip' +
+          'eTransitionEffect. Over both memos is another Layout with HitTes' +
+          't = True to catch all the mouse events and drive the animation.'
+        ''
+        'Behind that memo is another Layout with two more memos on it.'
+        ''
+        
+          'The Target and Back bitmaps for the TSwipeTransitionEffect are m' +
+          'ade from the layout in the back, but is flipped horizontaly for ' +
+          'the background image.'
+        ''
+        
+          'To finish the page turn animation a TSelectPoint has a TPathAnim' +
+          'ation that is tied to the MousePoint on the TSwipeTransitionEffe' +
+          'ct.')
+      ReadOnly = True
+      ShowScrollBars = False
+      TextSettings.WordWrap = True
+      Size.Width = 273.000000000000000000
+      Size.Height = 497.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 269.000000000000000000
+      Viewport.Height = 493.000000000000000000
+    end
+    object Memo2: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      ReadOnly = True
+      ShowScrollBars = False
+      TextSettings.WordWrap = True
+      Position.X = 272.000000000000000000
+      Size.Width = 393.000000000000000000
+      Size.Height = 497.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 389.000000000000000000
+      Viewport.Height = 493.000000000000000000
+    end
+    object Swipe: TSwipeTransitionEffect
+      Enabled = False
+      Deep = 50.000000000000000000
+    end
+    object LayoutGlass: TLayout
+      Align = Contents
+      HitTest = True
+      Size.Width = 600.000000000000000000
+      Size.Height = 500.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      OnMouseDown = LayoutGlassMouseDown
+      OnMouseMove = LayoutGlassMouseMove
+      OnMouseUp = LayoutGlassMouseUp
+      OnMouseLeave = LayoutGlassMouseLeave
+    end
+    object SwipePoint: TSelectionPoint
+      GripSize = 3.000000000000000000
+      Opacity = 0.000000000000000000
+      Position.X = 328.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      object SwipeAnimation: TPathAnimation
+        Duration = 1.000000000000000000
+        OnProcess = SwipeAnimationProcess
+        OnFinish = SwipeAnimationFinish
+      end
+    end
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'LoremIpsum1'
+        Generator = 'LoremIpsum'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 408
+    Top = 216
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 408
+    Top = 165
+    object LinkControlToFieldLoremIpsum1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'LoremIpsum1'
+      Control = EditLoremIpsum1
+      Track = False
+    end
+  end
+end

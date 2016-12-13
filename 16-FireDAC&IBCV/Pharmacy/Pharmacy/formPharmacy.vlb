@@ -1,0 +1,15 @@
+﻿[dtmdLocalDB.qryCategory]
+Visible=False
+
+[dtmdLocalDB.qryMedicines]
+Visible=False
+
+[dtmdLocalDB.qryPharmacy]
+Visible=False
+
+[dtmdLocalDB.qryCustomer]
+Visible=False
+
+[dtmdLocalDB.qryOrders]
+Visible=False
+

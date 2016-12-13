@@ -1,0 +1,64 @@
+object FormAdd: TFormAdd
+  Left = 0
+  Top = 0
+  Caption = 'Add molecule...'
+  ClientHeight = 480
+  ClientWidth = 533
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object edtURL: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 0
+    Position.X = 24.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 489.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    object lblEnterURL: TLabel
+      Position.X = 4.000000000000000000
+      Position.Y = -19.000000000000000000
+      Size.Width = 349.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Enter Molecule PDB file URL...'
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 533.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object spdbtnBack: TSpeedButton
+      Align = Left
+      Size.Width = 57.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+      Text = 'spdbtnBack'
+      OnClick = spdbtnBackClick
+    end
+    object lblTitle: TLabel
+      Align = Client
+      Size.Width = 476.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Add Molecule...'
+    end
+  end
+  object btnAddMolecule: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 24.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 489.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'ADD MOLECULE'
+    OnClick = btnAddMoleculeClick
+  end
+end

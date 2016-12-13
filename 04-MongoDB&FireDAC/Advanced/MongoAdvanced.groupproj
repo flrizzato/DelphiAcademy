@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{85D81C58-ED9A-48E0-BF31-E361DE1EA54E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MongoSQL\OpMongoSQL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MongoAdvanced\MongoGeospatial.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MongoAdvanced\MongoIndexing.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="OpMongoSQL">
+        <MSBuild Projects="MongoSQL\OpMongoSQL.dproj"/>
+    </Target>
+    <Target Name="OpMongoSQL:Clean">
+        <MSBuild Projects="MongoSQL\OpMongoSQL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OpMongoSQL:Make">
+        <MSBuild Projects="MongoSQL\OpMongoSQL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MongoGeospatial">
+        <MSBuild Projects="MongoAdvanced\MongoGeospatial.dproj"/>
+    </Target>
+    <Target Name="MongoGeospatial:Clean">
+        <MSBuild Projects="MongoAdvanced\MongoGeospatial.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MongoGeospatial:Make">
+        <MSBuild Projects="MongoAdvanced\MongoGeospatial.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MongoIndexing">
+        <MSBuild Projects="MongoAdvanced\MongoIndexing.dproj"/>
+    </Target>
+    <Target Name="MongoIndexing:Clean">
+        <MSBuild Projects="MongoAdvanced\MongoIndexing.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MongoIndexing:Make">
+        <MSBuild Projects="MongoAdvanced\MongoIndexing.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="OpMongoSQL;MongoGeospatial;MongoIndexing"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="OpMongoSQL:Clean;MongoGeospatial:Clean;MongoIndexing:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="OpMongoSQL:Make;MongoGeospatial:Make;MongoIndexing:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

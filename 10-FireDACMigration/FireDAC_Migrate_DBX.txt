@@ -1,0 +1,178 @@
+#unuse Data.SqlExpr
+#unuse Data.DBXCommon
+#unuse Data.DBConnAdmin
+#unuse Data.DBXDynalink
+#unuse SqlExpr
+#unuse DBXCommon
+#unuse DBConnAdmin
+#unuse DBXDynalink
+
+#remove Origin
+
+// Driver units -------------------------------------------------------------------------------
+#migrate Data.DbxDb2 -> FireDAC.Phys.DB2
+#migrate Data.DbxFirebird -> FireDAC.Phys.FB
+#migrate Data.DbxInformix -> FireDAC.Phys.Infx
+#migrate Data.DbxInterbase -> FireDAC.Phys.IB
+#migrate Data.DbxMSSQL -> FireDAC.Phys.MSSQL
+#migrate Data.DbxMySql -> FireDAC.Phys.MySQL
+#migrate Data.DbxOdbc -> FireDAC.Phys.ODBC
+#migrate Data.DbxOracle -> FireDAC.Phys.Oracle
+#migrate Data.DbxSqlite -> FireDAC.Phys.SQLite
+#migrate Data.DbxSybaseASA -> FireDAC.Phys.ASA
+#migrate Data.DbxSybaseASE -> FireDAC.Phys.ODBC
+
+// Generic types -------------------------------------------------------------------------------
+#migrate TDBXIsolation -> TFDTxIsolation, FireDAC.Stan.Option
+#migrate TDBXIsolations.ReadCommitted -> xiReadCommitted, FireDAC.Stan.Option
+#migrate TDBXIsolations.RepeatableRead -> xiRepeatableRead, FireDAC.Stan.Option
+#migrate TDBXIsolations.DirtyRead -> xiDirtyRead, FireDAC.Stan.Option
+#migrate TDBXIsolations.Serializable -> xiSerializible, FireDAC.Stan.Option
+#migrate TDBXIsolations.SnapShot -> xiSnapshot, FireDAC.Stan.Option
+
+#migrate TTransIsolationLevel -> TFDTxIsolation, FireDAC.Stan.Option
+#migrate xilREADCOMMITTED -> xiReadCommitted, FireDAC.Stan.Option
+#migrate xilREPEATABLEREAD -> xiRepeatableRead, FireDAC.Stan.Option
+#migrate xilDIRTYREAD -> xiDirtyRead, FireDAC.Stan.Option
+#migrate xilCUSTOM -> xiReadCommitted, FireDAC.Stan.Option
+
+#migrate TConnectionState -> TFDPhysConnectionState, FireDAC.Phys.Intf
+#migrate csStateClosed -> csDisconnected, FireDAC.Phys.Intf
+#migrate csStateOpen -> csConnected, FireDAC.Phys.Intf
+#migrate csStateConnecting -> csConnecting, FireDAC.Phys.Intf
+#migrate csStateDisconnecting -> csDisconnecting, FireDAC.Phys.Intf
+
+#migrate TSchemaType -> TFDPhysMetaInfoKind, FireDAC.Phys.Intf
+#migrate stNoSchema -> mkNone, FireDAC.Phys.Intf
+#migrate stTables -> mkTables, FireDAC.Phys.Intf
+#migrate stSysTables -> mkTables, FireDAC.Phys.Intf
+#migrate stProcedures -> mkProcs, FireDAC.Phys.Intf
+#migrate stColumns -> mkTableFields, FireDAC.Phys.Intf
+#migrate stProcedureParams -> mkProcArgs, FireDAC.Phys.Intf
+#migrate stIndexes -> mkIndexes, FireDAC.Phys.Intf
+#migrate stPackages -> mkPackages, FireDAC.Phys.Intf
+#migrate stUserNames -> mkSchemas, FireDAC.Phys.Intf
+
+#migrate TTableScope -> TFDPhysTableKind, FireDAC.Phys.Intf
+#migrate TTableScopes -> TFDPhysTableKinds, FireDAC.Phys.Intf
+#migrate tsSynonym -> tkSynonym, FireDAC.Phys.Intf
+#migrate tsSysTable -> tkTable, FireDAC.Phys.Intf
+#migrate tsTable -> tkTable, FireDAC.Phys.Intf
+#migrate tsView -> tkView, FireDAC.Phys.Intf
+
+// IConnectionAdmin -----------------------------------------------------------------------------
+
+; Directly not supported
+; ----------------------
+; GetDelegateDriverNames
+; RegisterDriver
+; UnregisterDriver
+
+#migrate GetDisplayDriverName -> GetBaseDriverDesc
+#migrate GetDisplayDriverNames -> GetDriverNames
+#migrate AddConnection -> AddConnectionDef
+#migrate DeleteConnection -> DeleteConnectionDef
+#migrate ModifyConnection -> ModifyConnectionDef
+#migrate RenameConnection -> RenameConnectionDef
+
+// TSQLConnection -------------------------------------------------------------------------------
+#remove AutoClone
+#remove LocaleCode
+#remove UniqueID
+#remove GetDriverFunc
+#remove LibraryName
+#remove ValidatePeerCertificate
+
+; Directly not supported
+; ----------------------
+; GetCommandTypes
+; GetServerMethodNames
+;
+; SetTraceEvent(Event: TDBXTraceEvent);
+; TraceCallbackEvent
+;
+; TConnectionState.csStateExecuting
+; TConnectionState.csStateFetching
+; MaxStmtsPerConn
+;
+; VendorLib
+;
+; LoadParamsOnConnect
+; ParamsLoaded
+; LoadParamsFromIniFile( FFileName: string = '')
+;
+; Execute(...; ResultSet: Pointer): Integer
+
+#migrate TSQLConnecion:CloseDataSets -> ReleaseClients(rmDisconnect)
+#migrate TSQLConnecion:Execute -> ExecSQL
+#migrate TSQLConnecion:ExecuteDirect -> ExecSQL
+#migrate TSQLConnecion:GetDefaultSchemaName -> CurrentSchema
+#migrate TSQLConnecion:ActiveStatements -> RefCount
+#migrate TSQLConnecion:ConnectionState -> State
+;!! #migrate TSQLConnecion:MetaData -> ConnectionMetaDataIntf
+#migrate TSQLConnecion:MultipleTransactionsSupported -> ConnectionMetaDataIntf.TxSavepoints
+#migrate TSQLConnecion:DBXConnection -> ConnectionIntf
+#migrate TSQLConnecion:SQLHourGlass -> ResourceOptions.SilentMode
+#migrate TSQLConnecion:TransactionsSupported -> ConnectionMetaDataIntf.TxSupported
+;!! migrate TSQLConnecion:ConnectionData -> ResultConnectionDef
+#migrate TSQLConnecion:ConnectionName -> ConnectionDefName
+#migrate TSQLConnecion:KeepConnection -> ResourceOptions.KeepConnection
+
+// TSQLDataSet -------------------------------------------------------------------------------
+#remove MaxBlobSize
+#remove SchemaName
+
+; Directly not supported
+; ----------------------
+; GetCommandNames
+; SetSchemaInfo
+; ParseSelectSql
+; ParseDeleteSql
+; ParseUpdateSql
+; ParseInsertSql
+; SchemaName - just remove
+; GetMetadata
+
+#migrate TSQLDataSet:DataSource -> MasterSource
+#migrate TSQLDataSet:ParamCheck -> ResourceOptions.ParamCreate
+#migrate TSQLDataSet:SortFieldNames -> IndexFieldNames
+#migrate TSQLDataSet:SQLConnection -> Connection
+#migrate TSQLDataSet:PrepareStatement -> Prepare
+
+// TSQLQuery -------------------------------------------------------------------------------
+#migrate TSQLQuery:DataSource -> MasterSource
+#migrate TSQLQuery:ParamCheck -> ResourceOptions.ParamCreate
+#migrate TSQLQuery:SQLConnection -> Connection
+#migrate TSQLQuery:PrepareStatement -> Prepare
+
+// TSQLStoredProc --------------------------------------------------------------------------
+#migrate TSQLStoredProc:DataSource -> MasterSource
+#migrate TSQLStoredProc:ParamCheck -> ResourceOptions.ParamCreate
+#migrate TSQLStoredProc:SQLConnection -> Connection
+#migrate TSQLStoredProc:PrepareStatement -> Prepare
+
+// TSQLTable -------------------------------------------------------------------------------
+#migrate TSQLTable:DeleteRecords -> ServerDeleteAll
+#migrate TSQLTable:PrepareStatement -> Prepare
+#migrate TSQLTable:SQLConnection -> Connection
+
+// Components -------------------------------------------------------------------------------
+
+; Directly not supported
+; ----------------------
+; TSQLMonitor
+
+#migrate GetConnectionAdmin.* -> FDManager.*, FireDAC.Comp.Client
+#migrate TSQLConnection -> TFDConnection, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Comp.Client, FireDAC.DBX.Migrate
+#migrate TSQLDataSet -> TFDQuery, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.DBX.Migrate
+#migrate TSQLTable -> TFDTable, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.DBX.Migrate
+#migrate TSQLQuery -> TFDQuery, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.DBX.Migrate
+#migrate TSQLStoredProc -> TFDStoredProc, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.DBX.Migrate
+#migrate TParam -> TFDParam, FireDAC.Stan.Param
+#migrate TParams -> TFDParams, FireDAC.Stan.Param
+#migrate TSQLBlobStream -> TFDBlobStream, FireDAC.Comp.DataSet
+#migrate TAutoIncField -> TFDAutoIncField, FireDAC.Comp.DataSet
+#migrate TDBXError -> EFDDBEngineException, FireDAC.Stan.Error
+#migrate TTransactionDesc -> TFDDBXTransactionDesc, FireDAC.Stan.Option, FireDAC.DBX.Migrate
+#migrate TDBXTransaction -> TFDDBXTransaction, FireDAC.Stan.Option, FireDAC.DBX.Migrate
+#migrate TProcParamList -> TFDDBXProcParamList, FireDAC.DBX.Migrate

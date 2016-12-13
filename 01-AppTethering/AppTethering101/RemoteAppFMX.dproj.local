@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/04/11 16:44:06.000.591,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 11:46:17.000.671,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 11:51:45.000.216,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 12:12:40.000.560,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 17:36:41.000.329,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2016/04/13 17:37:15.000.353,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.fmx=C:\DelphiAcademy\01-AppTethering-BR\01-AppTethering101\FMXMainForm.fmx</Transaction>
+    <Transaction>2016/04/13 17:37:15.000.353,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\DelphiAcademy\01-AppTethering-BR\01-AppTethering101\FMXMainForm.pas</Transaction>
+    <Transaction>2016/04/13 17:37:21.000.430,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\01-AppTethering-BR\01-AppTethering101\FMXProject.dproj</Transaction>
+    <Transaction>2016/04/14 23:40:29.000.739,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\FMXProject.dproj=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\RemoteAppFMX.dproj</Transaction>
+    <Transaction>2016/04/14 23:42:53.000.296,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\FMXMainForm.fmx=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\RemoteAppFMXMain.fmx</Transaction>
+    <Transaction>2016/04/14 23:42:53.000.296,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\FMXMainForm.pas=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\RemoteAppFMXMain.pas</Transaction>
+    <Transaction>2016/04/14 23:43:57.903,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\Unit2.fmx=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\RemoteAppFMXMain.fmx</Transaction>
+    <Transaction>2016/04/14 23:43:57.903,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\Unit2.pas=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\RemoteAppFMXMain.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PRIZZATO iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="04db9f214811d5d3"/>
+	</ActiveMobileDevice>
+</BorlandProject>

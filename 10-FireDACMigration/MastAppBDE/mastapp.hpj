@@ -1,0 +1,26 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+HCW=0
+LCID=0x409 0x0 0x0 ;English (United States)
+REPORT=Yes
+CONTENTS=MastappHelpContents
+TITLE=MASTAPP Help
+HLP=.\mastapp.hlp
+
+[FILES]
+MASTAPP.RTF
+
+[MAP]
+#define MastappHelpContents 1
+#define NewOrders 2
+#define BrowseForm 3
+#define PartsForm 4
+#define ReportSmith 5
+#define EditParts 6
+#define SplashScreen 7
+#define SelectCustomer 8
+#define SelectPart 9
+#define InsertMode 10
+#define EditMode 11
+#define BrowseMode 12

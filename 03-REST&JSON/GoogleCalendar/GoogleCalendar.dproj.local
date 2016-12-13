@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/05/11 22:11:14.000.739,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/05/11 22:59:12.000.143,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\GoogleCalendar\uMainForm.pas</Transaction>
+    <Transaction>2016/05/11 22:59:12.000.143,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\GoogleCalendar\uMainForm.fmx</Transaction>
+    <Transaction>2016/05/11 22:59:17.000.603,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\GoogleCalendar\GoogleCalendar.dproj</Transaction>
+    <Transaction>2016/05/11 22:59:31.000.897,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\GoogleCalendar\Unit1.pas</Transaction>
+    <Transaction>2016/05/11 22:59:45.000.532,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\GoogleCalendar\Unit1.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\GoogleCalendar\uMainDM.dfm</Transaction>
+    <Transaction>2016/05/11 22:59:45.000.532,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\GoogleCalendar\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\GoogleCalendar\uMainDM.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMAC iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="04db9f214811d5d3"/>
+	</ActiveMobileDevice>
+</BorlandProject>

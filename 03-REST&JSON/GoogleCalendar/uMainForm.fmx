@@ -1,0 +1,176 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Google Calendar'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object butLogin: TButton
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Login'
+    end
+  end
+  object ToolBar2: TToolBar
+    Align = Bottom
+    Position.Y = 440.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TDynamicAppearance'
+    ItemEditAppearanceClassName = 'TDynamicAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 400.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Summay'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.StyleExt = {00070000000000000004000000}
+        Appearance.TextAlign = Leading
+        Appearance.WordWrap = True
+        Appearance.Trimming = Character
+        Appearance.Width = 475.000000000000000000
+        Appearance.Height = 22.000000000000000000
+        Appearance.PlaceOffset.X = 132.000000000000000000
+        Appearance.PlaceOffset.Y = 22.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Location'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 10.000000000000000000
+        Appearance.Font.StyleExt = {00040000000200000004000000}
+        Appearance.TextAlign = Leading
+        Appearance.WordWrap = True
+        Appearance.Trimming = Character
+        Appearance.Width = 475.000000000000000000
+        Appearance.Height = 22.000000000000000000
+        Appearance.PlaceOffset.X = 132.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'StartDate'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 10.000000000000000000
+        Appearance.Font.StyleExt = {00070000000000000004000000}
+        Appearance.TextAlign = Leading
+        Appearance.Width = 100.000000000000000000
+        Appearance.Height = 22.000000000000000000
+        Appearance.PlaceOffset.X = 16.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'EndDate'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 10.000000000000000000
+        Appearance.Font.StyleExt = {00070000000000000004000000}
+        Appearance.TextAlign = Leading
+        Appearance.Width = 100.000000000000000000
+        Appearance.Height = 22.000000000000000000
+        Appearance.PlaceOffset.X = 16.000000000000000000
+        Appearance.PlaceOffset.Y = 22.000000000000000000
+      end>
+    ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+      end>
+  end
+  object MultiView1: TMultiView
+    MasterButton = butLogin
+    Mode = Drawer
+    OnShown = MultiView1Shown
+    Size.Width = 250.000000000000000000
+    Size.Height = 400.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 2
+    object WebBrowser1: TWebBrowser
+      Align = Client
+      Size.Width = 249.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      OnDidFinishLoad = WebBrowser1DidFinishLoad
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = MainDM.FDMemTable1
+    ScopeMappings = <>
+    Left = 512
+    Top = 88
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 516
+    Top = 149
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = True
+      FillDataSource = BindSourceDB1
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'summary'
+          ControlMemberName = 'Summary'
+        end
+        item
+          SourceMemberName = 'start.dateTime'
+          ControlMemberName = 'StartDate'
+        end
+        item
+          SourceMemberName = 'end.dateTime'
+          ControlMemberName = 'EndDate'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField2: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = BindSourceDB1
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'summary'
+          ControlMemberName = 'Summay'
+        end
+        item
+          SourceMemberName = 'location'
+          ControlMemberName = 'Location'
+        end
+        item
+          SourceMemberName = 'start.dateTime'
+          ControlMemberName = 'StartDate'
+        end
+        item
+          SourceMemberName = 'end.dateTime'
+          ControlMemberName = 'EndDate'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

@@ -1,0 +1,240 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Molecule Hero'
+  ClientHeight = 419
+  ClientWidth = 719
+  WindowState = wsMaximized
+  FormFactor.Width = 1920
+  FormFactor.Height = 915
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  Touch.InteractiveGestures = [Zoom]
+  DesignerMasterStyle = 2
+  object LayoutClient: TLayout
+    Align = Client
+    Size.Width = 469.000000000000000000
+    Size.Height = 419.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ViewportMain: TViewport3D
+      Align = Client
+      Camera = CameraZ
+      Color = claBlack
+      Size.Width = 469.000000000000000000
+      Size.Height = 419.000000000000000000
+      Size.PlatformDefault = False
+      UsingDesignCamera = False
+      OnMouseDown = ViewportMainMouseDown
+      OnMouseMove = ViewportMainMouseMove
+      OnMouseWheel = ViewportMainMouseWheel
+      object DummyMain: TDummy
+        RotationAngle.X = 20.000000000000000000
+        RotationAngle.Y = 5.000000000000000000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = 
+          '(0.173482909798622,0.0429567135870457,0.00757442787289619,0.9838' +
+          '70506286621)'
+        object DummyModel: TDummy
+          Width = 1.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 1.000000000000000000
+        end
+      end
+      object DummyXY: TDummy
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        object CameraZ: TCamera
+          AngleOfView = 45.000000000000000000
+          Position.Z = -10.000000000000000000
+          Width = 1.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 1.000000000000000000
+          object Light1: TLight
+            Color = claWhite
+            LightType = Directional
+            SpotCutOff = 180.000000000000000000
+            Width = 1.000000000000000000
+            Height = 1.000000000000000000
+            Depth = 1.000000000000000000
+          end
+        end
+      end
+      object LayoutHeader: TLayout
+        Align = Top
+        Size.Width = 469.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object SpeedButtonMenu: TSpeedButton
+          Align = Left
+          Position.Y = 2.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'detailstoolbutton'
+          Text = 'SpeedButtonMenu'
+          Visible = False
+        end
+        object LabelTitle: TLabel
+          Align = Left
+          StyledSettings = [Family, Style]
+          Margins.Left = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Size.Width = 249.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claWhite
+          Text = 'Molecule'
+        end
+        object SpeedButtonInfo: TSpeedButton
+          Align = Right
+          Margins.Right = 8.000000000000000000
+          Position.X = 417.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbutton'
+          Text = 'Info'
+          OnClick = SpeedButtonInfoClick
+        end
+      end
+      object LayoutBottom: TLayout
+        Align = Bottom
+        Position.Y = 369.000000000000000000
+        Size.Width = 469.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object SpeedButtonViewModeAB: TSpeedButton
+          StaysPressed = True
+          Align = Left
+          GroupName = 'MOLVIEWMODE'
+          IsPressed = True
+          Margins.Left = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 47.000000000000000000
+          Size.Height = 29.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'segmentedbuttonleft'
+          Text = 'A+B'
+          OnClick = SpeedButtonViewModeABClick
+        end
+        object SpeedButtonViewModeA: TSpeedButton
+          StaysPressed = True
+          Align = Left
+          GroupName = 'MOLVIEWMODE'
+          Position.X = 55.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 47.000000000000000000
+          Size.Height = 29.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'segmentedbuttonmiddle'
+          Text = 'A'
+          OnClick = SpeedButtonViewModeAClick
+        end
+        object SpeedButtonViewModeB: TSpeedButton
+          StaysPressed = True
+          Align = Left
+          GroupName = 'MOLVIEWMODE'
+          Margins.Right = 8.000000000000000000
+          Position.X = 102.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 47.000000000000000000
+          Size.Height = 29.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'segmentedbuttonright'
+          Text = 'B'
+          OnClick = SpeedButtonViewModeBClick
+        end
+        object SpeedButtonZoomOut: TSpeedButton
+          Align = Right
+          Position.X = 367.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 47.000000000000000000
+          Size.Height = 29.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'stepperbuttonleft'
+          Text = 'SpeedButtonZoomOut'
+          OnClick = SpeedButtonZoomOutClick
+        end
+        object SpeedButtonZoomIn: TSpeedButton
+          Align = Right
+          Margins.Right = 8.000000000000000000
+          Position.X = 414.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 47.000000000000000000
+          Size.Height = 29.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'stepperbuttonright'
+          Text = 'spdbtnZoom'
+          OnClick = SpeedButtonZoomInClick
+        end
+      end
+    end
+  end
+  object MultiViewMain: TMultiView
+    MasterButton = SpeedButtonMenu
+    Size.Width = 250.000000000000000000
+    Size.Height = 419.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object RectangleMenu: TRectangle
+      Align = Client
+      Fill.Color = claBlack
+      Size.Width = 249.000000000000000000
+      Size.Height = 419.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      object LayoutMenuTop: TLayout
+        Align = Top
+        Size.Width = 249.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object RectangleMenuTop: TRectangle
+          Align = Client
+          Fill.Color = claBlack
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 245.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claWhite
+          object LabelMenuTitle: TLabel
+            Align = Client
+            StyledSettings = [Family, Style]
+            Margins.Left = 8.000000000000000000
+            Size.Width = 237.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = claWhite
+            Text = 'Molecule Hero'
+          end
+        end
+      end
+      object ListViewMoleculeList: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 249.000000000000000000
+        Size.Height = 371.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        CanSwipeDelete = False
+        OnItemClick = ListViewMoleculeListItemClick
+      end
+    end
+  end
+end

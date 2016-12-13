@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/09 02:48:28.000.936,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/08/09 03:02:45.000.643,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\FireDAC102\Unit1.pas</Transaction>
+    <Transaction>2016/08/09 03:02:45.000.643,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\FireDAC102\Unit1.dfm</Transaction>
+    <Transaction>2016/08/09 03:02:46.000.508,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\FireDAC102\Project1.dproj</Transaction>
+    <Transaction>2016/08/09 03:07:02.000.832,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\FireDAC102\Project1.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\FireDAC102\FireDAC102.dproj</Transaction>
+    <Transaction>2016/08/09 03:07:09.000.356,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\FireDAC102\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\FireDAC102\uMainForm.pas</Transaction>
+    <Transaction>2016/08/09 03:07:09.000.356,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\FireDAC102\Unit1.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\FireDAC102\uMainForm.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

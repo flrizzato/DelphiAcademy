@@ -1,0 +1,218 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LayoutMain: TLayout
+    Align = Client
+    Margins.Left = 50.000000000000000000
+    Size.Width = 590.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ToolBar1: TToolBar
+      Size.Width = 590.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object butMultiView: TButton
+        Align = Left
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'detailstoolbutton'
+        TabOrder = 0
+      end
+    end
+    object LayoutContainer: TLayout
+      Align = Client
+      Size.Width = 590.000000000000000000
+      Size.Height = 440.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object MultiViewMain: TMultiView
+    TargetControl = LayoutMain
+    PopoverOptions.StyleLookup = ''
+    PopoverOptions.PopupHeight = 150.000000000000000000
+    MasterButton = butMultiView
+    Size.Width = 150.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ListBoxMainMenu: TListBox
+      Align = Client
+      Size.Width = 49.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      Images = ImageList1
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 45.000000000000000000
+      Viewport.Height = 476.000000000000000000
+      object ListBoxGroupHeader1: TListBoxGroupHeader
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Center
+        StyledSettings = [Family, Size, FontColor]
+        TabOrder = 3
+        Text = 'Menu'
+      end
+      object ListBoxItem1: TListBoxItem
+        StyledSettings = [Family, Style]
+        ImageIndex = 0
+        Position.Y = 19.000000000000000000
+        TabOrder = 0
+        Text = 'Op'#231#227'o 1'
+        OnClick = ListBoxItem1Click
+      end
+      object ListBoxItem2: TListBoxItem
+        StyledSettings = [Family, Style, FontColor, Other]
+        ImageIndex = 1
+        Position.Y = 38.000000000000000000
+        TabOrder = 1
+        Text = 'Op'#231#227'o 2'
+        OnClick = ListBoxItem2Click
+      end
+      object ListBoxItem3: TListBoxItem
+        StyledSettings = [Family, Style, FontColor, Other]
+        ImageIndex = 2
+        Position.Y = 57.000000000000000000
+        TabOrder = 2
+        Text = 'Op'#231#227'o 3'
+        OnClick = ListBoxItem3Click
+      end
+    end
+  end
+  object ImageList1: TImageList
+    Source = <
+      item
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 16
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+              61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              024F49444154384F7D53CF6B134114FE6637BBC92631AD9A88785082E849AB07
+              3D14452968FD13BC042AA247F15CF11210A45745A9074121673D69D15BA5E0C9
+              8BAD82B6C188A5AD49EA2635C9864D76D76F66D39005E9076F7667DE7BDFBC5F
+              23304050CADDF07CEFAEAE69670747FF453F082A31A11545A1F642EE87044E29
+              6B0793C5B495C9C7001788A569DD027A36B541287A064E6DC5B33E3D6B8999AD
+              71E937124136C0D463A042C94D0289A3642D033BCB524BF1817613B049EAEE40
+              5CAF295F4D2E4338BFB818A1E826A3B048B46F2019C04C02DDBFCA74175182F6
+              3A173D74D628061D4C3AC6A5B324E1DE60862388127437991409048D5404093A
+              4B47A69B180B2388513F822841ED1B171EE92490447A9C4E2CA60A9F6230256D
+              583685E1AE534AB5D0332C2B9DD2B0FF1090E4CD3A0BA7F7E86822FE66096E2F
+              804982463ED549165A29E937929010387F27C0C1738095E54D5245029F42B8BD
+              0B7838F300B32FEF7317C8B6280C53B05821EBC0191D954740F515D0FC086C94
+              80D57BC0F7D9D0C6603AF20B4BDD2E11AD816CA3DFE7A96C25C37E3D0FF17611
+              62E1835277E1A8AF28D7812287A3083BDA13876D941D10B203265CD7C3D3DB4F
+              A0E93A1A7E13E54E1957A7A6B1F67315D5ED2AE7AA3D1E9DC4935738BE7F80C3
+              1781F431C49FDF5424BBB876791AEF16DF0F760A8D2841360F8CB180472EB10B
+              1C65BF0A788C8A6D15F373383D710ACB9F57101CCF4214EAD151EE92CDD95CEB
+              63FD2B8BC79C371680AD25609B6FC1FEA26C7EDB1C3442DAAA1F622482BD9F73
+              FC471D2E3B6AF8F0DC13B95BE17306FE014F6AC2B44E4E03600000000049454E
+              44AE426082}
+            FileName = 
+              'C:\Embarcadero\Studio\18.0\Images\GlyFX\Icons\Aero\PNG\16x16\db_' +
+              'register_16_h.png'
+          end>
+        Name = 'db_register_16_h'
+      end
+      item
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 16
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+              61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              012B49444154384FA553CB4A0331143D9642EDCE0FEAC245170A2A145AA90529
+              B6E8DA8FF00FDC290AA55405172EFCA40A0A8A9D626B679899C49B9B64260363
+              16ED813BC9DCC73927816C5D5E5DCF00EC50AC83004420D7C1EF2A946AB66298
+              10C62996518A4598621E26085609BE9709BE16313E7F627CCC63BC0711DE28A6
+              B308F5ED1ACF6504A900A4A415925741FF82369CE39AA09AEE21037A885035AB
+              6EA4E1C9FD8DC994E3A03B60428B8CC02A77FB175E65EBD4A2E040D97E1AF91D
+              EC75C881C39011D833774ECFBDCA6AD831E010A802559EC7B726538E66FB8CC5
+              2C8A974885566FE855D64E7386FC12B951E0E5E1CE64CAB1DBEA33A185E3409F
+              F9F064E855E69CC819720714AAF8FAE877D038FAD7810A89FDE38156A18FEA2B
+              2AEB1EC700367E4C1B3E67047FD09A68B6F9A160BB0000000049454E44AE4260
+              82}
+            FileName = 
+              'C:\Embarcadero\Studio\18.0\Images\GlyFX\Icons\Aero\PNG\16x16\ali' +
+              'gn_justify_16_h.png'
+          end>
+        Name = 'align_justify_16_h'
+      end
+      item
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 16
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+              61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              027549444154384FA552DD4B5371187EF67576A62E0FB37D48B36D8690196391
+              699742A1E84DABAE844477D38DD0FE843E204209A2CBAE8CC00844A821984888
+              51A814B662CCE1B0391B526AF3CCED6C675F9EDE330F896841F4C0EF9CF37BDF
+              F7797ECFFBFE0EFE86D9876D81E9FBCDCF95EDBF61B80B03DB9FEF49E9C54149
+              FE56C287A056DE87D07EADB79FAB6F408DB906ED9D17FA95F0211C29F0A00B4E
+              87FB52075412A0D5C271C6D521C794F4011C296073360C383C17018D86164B02
+              276177596E2BE903502D3CBBF9D1DA78EA3C55921C4311156A4F34813BAE050A
+              09A0F81DC8A5C1C79691FABA08A4D3403C07ECEC5604349D4D427D636B7787DD
+              750C9CA50A9CCD0CD6A8A29400944420CB5371026CE91BB8EA12384603AE0088
+              4B19CCF3F9A79AB1F75BB3CD85B9789DABCDCB59CCC02E118A292013A5D362A4
+              430EC42D8AEDEC09AEF0882F243125947D7DAFA5BBE41B087C1282D6C4E4ACC9
+              EEF09A4D0C8BD417209FA116C845812C17885CA47D7C13E1B7497E7CBBD8ED9F
+              925E565A901F32DEAC60B5950D9E3ED76AF720B749A7C964F95445A0407D47D3
+              9858165EDC9AC46385B67F0B8FAE806B71DBBC4886A8EF0D5A3FC83A09E592E4
+              86C45245C060408B9EF1CAB50A6D5FC0C8E8BCEE7A1D872CF52B93840CC4F532
+              C43825690C4896004982BBCEC81977D5DE0A89F05BC0A9D7FBD99F34DE8D22C4
+              980E1F66F8D5D1F1906F7422E29B7BB7CD8BF16A6A430DD6C2C0A9D3F915DADE
+              0C867BE0B95C6BBA5343F30B87CAFCCCD2DA50647DD337385E9E0F84CBC1B376
+              E1C91A9FCD6BB28CC76C64D9AA2C6C567BF6D574B4E20D18EA415FE486451ABB
+              6E18F9D32F2B43CE8D5D358C447A4D92CC51C2FF03E017A533F4CF0B16FAEB00
+              00000049454E44AE426082}
+            FileName = 
+              'C:\Embarcadero\Studio\18.0\Images\GlyFX\Icons\Aero\PNG\16x16\fav' +
+              'ourites_16_h.png'
+          end>
+        Name = 'favourites_16_h'
+      end>
+    Destination = <
+      item
+        Layers = <
+          item
+            Name = 'db_register_16_h'
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'align_justify_16_h'
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'favourites_16_h'
+          end>
+      end>
+    Left = 80
+    Top = 56
+  end
+end

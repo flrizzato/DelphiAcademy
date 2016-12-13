@@ -1,0 +1,92 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'MongoDB Restaurants Demo'
+  ClientHeight = 369
+  ClientWidth = 449
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object btnLoadData: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 3
+    Text = 'Load Data'
+    OnClick = btnLoadDataClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 433.000000000000000000
+    Size.Height = 297.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 429.000000000000000000
+    Viewport.Height = 293.000000000000000000
+  end
+  object btnAggregate: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 5
+    Text = 'Aggregate'
+    OnClick = btnAggregateClick
+  end
+  object btnIndexes: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 9
+    Text = 'Indexes'
+    OnClick = btnIndexesClick
+  end
+  object btnInsert: TButton
+    Position.X = 184.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 12
+    Text = 'Insert'
+    OnClick = btnInsertClick
+  end
+  object btnRemove: TButton
+    Position.X = 360.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 11
+    Text = 'Remove'
+    OnClick = btnRemoveClick
+  end
+  object btnUpdate: TButton
+    Position.X = 272.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 16
+    Text = 'Update'
+    OnClick = btnUpdateClick
+  end
+  object btnQuery: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 17
+    Text = 'Query'
+    OnClick = btnQueryClick
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Server=172.16.121.241'
+      'User_Name=test'
+      'Password=test'
+      'DriverID=Mongo')
+    Left = 80
+    Top = 152
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 80
+    Top = 216
+  end
+  object FDPhysMongoDriverLink1: TFDPhysMongoDriverLink
+    Left = 80
+    Top = 280
+  end
+end

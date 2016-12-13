@@ -1,0 +1,9 @@
+Title: SQLite
+
+Brief Description: This snippet shows you how to populate a listbox from a SQLite database using FireDAC and LiveBindings. See the section called "Accessing a Database" in the Mobile Tuturials topic in the documentation for more information and licensing requirements.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+
+Keywords: SQLite, database, iOS, Android, listbox, read, write, FireDAC

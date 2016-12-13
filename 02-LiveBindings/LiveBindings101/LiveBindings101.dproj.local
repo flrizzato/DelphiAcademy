@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/04/29 17:28:20.000.359,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/29 17:29:14.000.908,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\02-LiveBindings\LiveBindings101\uMainForm.pas</Transaction>
+    <Transaction>2016/04/29 17:29:14.000.908,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\DelphiAcademy\02-LiveBindings\LiveBindings101\uMainForm.dfm</Transaction>
+    <Transaction>2016/04/29 17:29:19.000.818,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\02-LiveBindings\LiveBindings101\LiveBindings101.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,143 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Bottom
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 387.000000000000000000
+    Size.Width = 620.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object butSend: TButton
+      Enabled = False
+      Position.X = 184.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 1
+      Text = 'Send'
+      OnClick = butSendClick
+    end
+    object butLoad: TButton
+      Enabled = False
+      Position.X = 96.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 2
+      Text = 'Load'
+      OnClick = butLoadClick
+    end
+    object butConnect: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 3
+      Text = 'Connect'
+      OnClick = butConnectClick
+    end
+  end
+  object StringGrid1: TStringGrid
+    Align = Client
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 620.000000000000000000
+    Size.Height = 367.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    RowCount = 0
+    RowHeight = 21.000000000000000000
+    Viewport.Width = 616.000000000000000000
+    Viewport.Height = 342.000000000000000000
+  end
+  object BindNavigator1: TBindNavigator
+    Align = Bottom
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 445.000000000000000000
+    Size.Width = 620.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 560
+    Top = 24
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ClientDataSet1
+    ScopeMappings = <>
+    Left = 560
+    Top = 80
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 556
+    Top = 141
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <
+        item
+          MemberName = 'PartNo'
+        end
+        item
+          MemberName = 'VendorNo'
+        end
+        item
+          MemberName = 'Description'
+          Width = 155
+        end
+        item
+          MemberName = 'OnHand'
+        end
+        item
+          MemberName = 'OnOrder'
+        end
+        item
+          MemberName = 'Cost'
+        end
+        item
+          MemberName = 'ListPrice'
+        end>
+    end
+  end
+  object TetheringManager1: TTetheringManager
+    OnEndAutoConnect = TetheringManager1EndAutoConnect
+    Text = 'TetheringManager1'
+    AllowedAdapters = 'Network'
+    Left = 560
+    Top = 200
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Manager = TetheringManager1
+    Text = 'TetheringAppProfile1'
+    Group = 'DataGroup'
+    Actions = <>
+    Resources = <
+      item
+        Name = 'MyDataSet'
+        IsPublic = True
+        ResType = Stream
+      end>
+    Left = 560
+    Top = 256
+  end
+end

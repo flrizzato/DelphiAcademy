@@ -1,0 +1,137 @@
+object IBLiteForm: TIBLiteForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'IBLite'
+      object AddButton: TButton
+        Align = Right
+        Margins.Right = 5.000000000000000000
+        Position.X = 331.000000000000000000
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'addtoolbuttonbordered'
+        TabOrder = 0
+        Text = 'AddButton'
+        OnClick = AddButtonClick
+      end
+      object DeleteButton: TButton
+        Align = Left
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'deletetoolbutton'
+        TabOrder = 1
+        Text = 'Delete'
+        OnClick = DeleteButtonClick
+      end
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 519.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+    CanSwipeDelete = False
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 208
+    Top = 72
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'TASKNAME'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDTableTask
+    ScopeMappings = <>
+    Left = 296
+    Top = 72
+  end
+  object FDQueryDelete: TFDQuery
+    Connection = FireTaskList
+    SQL.Strings = (
+      'delete from task where TaskName = (:TaskName)')
+    Left = 296
+    Top = 196
+    ParamData = <
+      item
+        Name = 'TASKNAME'
+        ParamType = ptInput
+      end>
+  end
+  object FDQueryInsert: TFDQuery
+    Connection = FireTaskList
+    SQL.Strings = (
+      'insert into task (TaskName) values (:TaskName)')
+    Left = 296
+    Top = 132
+    ParamData = <
+      item
+        Name = 'TASKNAME'
+        ParamType = ptInput
+      end>
+  end
+  object FDTableTask: TFDTable
+    Connection = FireTaskList
+    UpdateOptions.UpdateTableName = 'Task'
+    TableName = 'Task'
+    Left = 208
+    Top = 196
+  end
+  object FireTaskList: TFDConnection
+    Params.Strings = (
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'DriverID=IBLite')
+    LoginPrompt = False
+    BeforeConnect = TaskListBeforeConnect
+    Left = 208
+    Top = 132
+  end
+  object FDPhysIBDriverLink1: TFDPhysIBDriverLink
+    Left = 176
+    Top = 264
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 296
+    Top = 260
+  end
+end

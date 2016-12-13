@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/08/22 16:49:12.000.121,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/08/22 16:49:26.000.473,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\10-FireDACMigration\Paradox\uMainForm.pas</Transaction>
+    <Transaction>2016/08/22 16:49:26.000.473,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\DelphiAcademy\10-FireDACMigration\Paradox\uMainForm.dfm</Transaction>
+    <Transaction>2016/08/22 16:49:48.000.752,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\10-FireDACMigration\Paradox\GettingStarted.dproj</Transaction>
+    <Transaction>2016/08/22 22:57:14.000.557,C:\DelphiAcademy\10-FireDACMigration\Paradox\GettingStarted.dproj=C:\DelphiAcademy\10-FireDACMigration\Paradox\FDParadox.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

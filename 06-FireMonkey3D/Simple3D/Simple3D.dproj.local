@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/06/28 00:08:52.000.024,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/06/28 00:09:21.309,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/06/28 00:15:47.911,C:\DelphiAcademy\06-FireMonkey3D\Simple3D\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2016/06/28 00:15:47.911,C:\DelphiAcademy\06-FireMonkey3D\Simple3D\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/06/28 00:15:52.481,C:\DelphiAcademy\06-FireMonkey3D\Simple3D\Simple3D.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMAC iOSSimulator="_iossimulator_AD9BFDF3-D701-43D8-8F35-91CE1AB4A5DC"/>  <NoProfile Android="0022831207"/>
+  </ActiveMobileDevice>
+</BorlandProject>

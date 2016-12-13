@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{9554CC96-919C-4098-819B-30AF439355AE}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="HubDataTransfer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RemoteDataTransfer.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="HubDataTransfer">
+        <MSBuild Projects="HubDataTransfer.dproj"/>
+    </Target>
+    <Target Name="HubDataTransfer:Clean">
+        <MSBuild Projects="HubDataTransfer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HubDataTransfer:Make">
+        <MSBuild Projects="HubDataTransfer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RemoteDataTransfer">
+        <MSBuild Projects="RemoteDataTransfer.dproj"/>
+    </Target>
+    <Target Name="RemoteDataTransfer:Clean">
+        <MSBuild Projects="RemoteDataTransfer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RemoteDataTransfer:Make">
+        <MSBuild Projects="RemoteDataTransfer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="HubDataTransfer;RemoteDataTransfer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="HubDataTransfer:Clean;RemoteDataTransfer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="HubDataTransfer:Make;RemoteDataTransfer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

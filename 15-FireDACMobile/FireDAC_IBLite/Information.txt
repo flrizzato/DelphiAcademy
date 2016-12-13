@@ -1,0 +1,10 @@
+Title: IBLite
+
+Brief Description: This snippet shows you how to populate a list view from a IBLite database using FireDAC and LiveBindings. See the section called "Accessing a Database" in the Mobile Tuturials topic in the documentation for more information and licensing requirements.
+The sample must be executed against a remote profile in windows platforms.
+
+Language: Object Pascal
+
+Platforms supported: Win32, Win64, Android, iOSDevice32, iOSDevice64, iOSSimulator, OSX32
+
+Keywords: IBLite, database, iOS, Android, listbox, read, write, FireDAC

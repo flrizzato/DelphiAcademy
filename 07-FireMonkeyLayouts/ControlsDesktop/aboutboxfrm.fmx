@@ -1,0 +1,159 @@
+object frmAbout: TfrmAbout
+  Left = 497
+  Top = 148
+  BorderStyle = None
+  Caption = 'About Box'
+  ClientHeight = 550
+  ClientWidth = 414
+  Position = ScreenCenter
+  Transparency = True
+  FormFactor.Width = 2020
+  FormFactor.Height = 1273
+  FormFactor.Devices = [Desktop]
+  FormFamily = 'TForm'
+  Left = 497
+  Top = 148
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = xDC065B79
+    HitTest = False
+    Margins.Left = 9.000000000000000000
+    Margins.Top = 9.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Margins.Bottom = 15.000000000000000000
+    Size.Width = 390.000000000000000000
+    Size.Height = 526.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claWhite
+    Stroke.Thickness = 3.000000000000000000
+    XRadius = 9.000000000000000000
+    YRadius = 9.000000000000000000
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+    object Button1: TButton
+      Position.X = 166.000000000000000000
+      Position.Y = 376.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Close'
+      OnClick = Button1Click
+    end
+    object Text1: TText
+      HitTest = False
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 353.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'FireMonkey'
+      TextSettings.Font.Size = 33.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.FontColor = xFFDDDDDD
+    end
+    object Viewport3D1: TViewport3D
+      Color = claNull
+      HitTest = False
+      Position.X = 40.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 313.000000000000000000
+      Size.Height = 233.000000000000000000
+      Size.PlatformDefault = False
+      object Light1: TLight
+        Color = claWhite
+        LightType = Directional
+        SpotCutOff = 180.000000000000000000
+        Position.X = -4.972735404968262000
+        Position.Y = -8.621065139770508000
+        Position.Z = 0.000001339281197943
+        RotationAngle.X = 24.660659790039060000
+        RotationAngle.Z = 22.268035888671880000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = 
+          '(-0.209528207778931,-0.0412370041012764,-0.188650131225586,0.958' +
+          '544969558716)'
+      end
+      object Cube1: TCube
+        Position.X = -0.386544138193130500
+        Position.Y = 1.010106325149536000
+        Position.Z = 0.000001636869001231
+        RotationAngle.Z = 333.172454833984400000
+        Width = 7.609084606170654000
+        Height = 6.270119190216064000
+        Depth = 5.854271888732910000
+        MaterialSource = GouraudMaterialSource1
+        Quanternion = '(0,0,0.23198176920414,0.97271990776062)'
+        object FloatAnimation1: TFloatAnimation
+          AnimationType = InOut
+          AutoReverse = True
+          Enabled = True
+          Duration = 4.000000000000000000
+          Interpolation = Back
+          Loop = True
+          PropertyName = 'RotationAngle.Y'
+          StartValue = 0.000000000000000000
+          StopValue = 360.000000000000000000
+        end
+        object ColorAnimation1: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Material.Diffuse'
+          StartValue = xFFD49B0B
+          StopValue = claRed
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+        object Text3D1: TText3D
+          Position.X = 0.316741466522216800
+          Position.Y = 0.540490031242370600
+          Position.Z = -3.230856418609619000
+          RotationAngle.X = 45.000000000000000000
+          Width = 15.722661972045900000
+          Height = 2.997238159179688000
+          Depth = 0.997689545154571500
+          HitTest = False
+          Font.Size = 2.000000000000000000
+          Font.Style = [fsBold]
+          Text = 'FireMonkey'
+          Flatness = 1.000000000000000000
+          Sides = [Front, Back, Shaft]
+          MaterialBackSource = GouraudMaterialSource2
+          MaterialShaftSource = GouraudMaterialSource2
+          MaterialSource = GouraudMaterialSource2
+          Quanternion = '(0.382683634757996,0,0,-0.92387992143631)'
+        end
+      end
+      object GlowEffect1: TGlowEffect
+        Softness = 0.400000005960464500
+        GlowColor = claGold
+        Opacity = 0.899999976158142100
+      end
+    end
+  end
+  object GouraudMaterialSource1: TLightMaterialSource
+    Diffuse = claTomato
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 314
+    Top = 62
+  end
+  object GouraudMaterialSource2: TLightMaterialSource
+    Diffuse = claTurquoise
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 82
+    Top = 80
+  end
+end

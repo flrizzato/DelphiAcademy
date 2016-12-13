@@ -1,0 +1,128 @@
+inherited TabSlideTransitionFrmBase_LgXhdpiPh: TTabSlideTransitionFrmBase_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited VertScrollBox1: TVertScrollBox
+    Size.Width = 450.000000000000000000
+    Size.Height = 647.000000000000000000
+    Viewport.Width = 450.000000000000000000
+    Viewport.Height = 647.000000000000000000
+    inherited MainLayout1: TLayout
+      Size.Width = 450.000000000000000000
+      Size.Height = 647.000000000000000000
+      inherited TabControl1: TTabControl
+        Size.Width = 450.000000000000000000
+        Size.Height = 647.000000000000000000
+        Sizes = (
+          450s
+          598s
+          450s
+          598s
+          450s
+          598s
+          450s
+          598s
+          450s
+          598s)
+        inherited TabItem1: TTabItem
+          Size.Width = 90.000000000000000000
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+          inherited NameList: TListBox
+            Size.Width = 440.000000000000000000
+            Viewport.Width = 440.000000000000000000
+            Viewport.Height = 137.000000000000000000
+            inherited firstName: TListBoxItem
+              Size.Width = 440.000000000000000000
+              inherited efirstName: TEdit
+                Size.Width = 280.000000000000000000
+              end
+            end
+            inherited LastName: TListBoxItem
+              Size.Width = 440.000000000000000000
+              inherited eLastName: TEdit
+                Size.Width = 280.000000000000000000
+              end
+            end
+          end
+        end
+        inherited TabItem2: TTabItem
+          Size.Width = 90.000000000000000000
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+          inherited PersonalInfoList: TListBox
+            Size.Width = 440.000000000000000000
+            Viewport.Width = 374.000000000000000000
+            Viewport.Height = 217.000000000000000000
+            inherited Address: TListBoxItem
+              Position.Y = 30.000000000000000000
+            end
+          end
+        end
+        inherited TabItem3: TTabItem
+          Size.Width = 90.000000000000000000
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+          inherited EducationList: TListBox
+            Size.Width = 440.000000000000000000
+            Viewport.Width = 374.000000000000000000
+            Viewport.Height = 241.000000000000000000
+            inherited Institution: TListBoxItem
+              Position.Y = 30.000000000000000000
+            end
+          end
+        end
+        inherited TabItem4: TTabItem
+          Size.Width = 90.000000000000000000
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+          inherited WorkList: TListBox
+            Size.Width = 440.000000000000000000
+            Viewport.Width = 374.000000000000000000
+            Viewport.Height = 273.000000000000000000
+            inherited Employer: TListBoxItem
+              Position.Y = 30.000000000000000000
+            end
+          end
+        end
+        inherited TabItem5: TTabItem
+          Size.Width = 90.000000000000000000
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+          inherited Memo1: TMemo
+            Size.Width = 440.000000000000000000
+            Size.Height = 573.000000000000000000
+            Viewport.Width = 440.000000000000000000
+            Viewport.Height = 573.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited Label2: TLabel
+      Size.Width = 378.000000000000000000
+    end
+    inherited Button1: TButton
+      Position.X = 388.000000000000000000
+    end
+    inherited Button2: TButton
+      Size.Width = 48.000000000000000000
+      Visible = False
+    end
+  end
+  inherited GestureManager1: TGestureManager
+    GestureData = <
+      item
+        Control = TabControl1
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end>
+  end
+end

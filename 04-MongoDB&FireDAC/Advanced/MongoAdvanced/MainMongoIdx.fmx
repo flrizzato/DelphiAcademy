@@ -1,0 +1,127 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  Caption = 'Delphi 10 Seattle MongoDB Query Sample'
+  ClientHeight = 570
+  ClientWidth = 432
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    TextSettings.WordWrap = True
+    Align = Client
+    Size.Width = 432.000000000000000000
+    Size.Height = 337.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 428.000000000000000000
+    Viewport.Height = 333.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 432.000000000000000000
+    Size.Height = 233.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Button1: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Populate'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 38.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'List Indexes'
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 70.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Drop Indexes'
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 102.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Explain'
+      OnClick = Button4Click
+    end
+    object Button5: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Index Int'
+      OnClick = Button5Click
+    end
+    object Button6: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 166.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Index Str'
+      OnClick = Button6Click
+    end
+    object Button7: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 198.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Compound Idx'
+      OnClick = Button7Click
+    end
+    object Label1: TLabel
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Position.X = 120.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 193.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Leading
+      Text = 
+        'MongoDB uses B-trees for storing indexes internally. Indexes are' +
+        ' used to improve query performance. The query explain plan helps' +
+        ' plan for index creation. All collections have a default index c' +
+        'alled _id_ on the _id field. It cannot be deleted.'
+    end
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 136
+    Top = 384
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'DriverID=Mongo')
+    LoginPrompt = False
+    Left = 136
+    Top = 336
+  end
+end

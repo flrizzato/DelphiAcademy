@@ -1,0 +1,163 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Scrollable Form Demo'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnFocusChanged = FormFocusChanged
+  OnVirtualKeyboardShown = FormVirtualKeyboardShown
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMasterStyle = 3
+  object VertScrollBox1: TVertScrollBox
+    Align = Contents
+    Size.Width = 384.000000000000000000
+    Size.Height = 567.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ShowScrollBars = False
+    object MainLayout1: TLayout
+      Align = Client
+      Size.Width = 384.000000000000000000
+      Size.Height = 567.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Bottom
+        TabOrder = 6
+        KeyboardType = NumberPad
+        Text = 'Edit control (alBottom)'
+        TextSettings.Font.Size = 16.000000000000000000
+        Position.Y = 535.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Style, FontColor]
+        object ClearEditButton1: TClearEditButton
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 32.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object Button2: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 208.000000000000000000
+        Size.Width = 305.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'No edit control'
+        TextSettings.Font.Size = 16.000000000000000000
+      end
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        Align = Top
+        Position.Y = 33.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 176.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Lines.Strings = (
+          ''
+          'The global variable VKAutoShowMode := '
+          'TVKAutoShowMode.vkasAlways is set in the'
+          'project file.  This means that the virtual'
+          '(onscreen) keyboard appears automatically'
+          'under Win32, iOS and Android.'
+          ''
+          'VertScrollBox1 is placed in the main form and'
+          'manages the moving of the MainLayout1 component.  '
+          'All main controls are inside MainLayout1.'
+          ''
+          'Use the OnVirtualKeyboardShown event to detect'
+          'whether the virtual keyboard appears.  Also, you'
+          'can retrive the virtual keyboard coordinates '
+          'from this event.'
+          ''
+          'The OnVirtualKeyboardHidden event occurs when'
+          'the virtual keyboard disappears. '
+          'The OnFocusChanged event occurs when the input'
+          'focus is set to other controls.'
+          ''
+          'The UpdateKBBounds method retrieves the coordinates'
+          'of the control having the focus, and if the images '
+          'of the control and the virtual keyboard overlap,'
+          'then it shifts the VertScrollBox1'#39's visible region.'
+          ''
+          'For correct functioning, you should also increase'
+          'the size of the working region; for this purpose, '
+          'use the VertScrollBox1.OnCalcContentBounts event.')
+        TextSettings.WordWrap = True
+      end
+      object LabelTitle: TLabel
+        Align = Top
+        StyledSettings = [Family, Size, Style]
+        Size.Width = 384.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 72.000000000000000000
+        TextSettings.FontColor = claSlateblue
+        Text = 'Scrollable Form Demo'
+      end
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Text = 'Some Text'
+        Position.X = 9.000000000000000000
+        Position.Y = 248.000000000000000000
+        Size.Width = 88.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit3: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        KeyboardType = NumberPad
+        Text = 'Other Text'
+        Position.X = 8.000000000000000000
+        Position.Y = 288.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit4: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        ReadOnly = True
+        Text = 'Readonly edit control'
+        Position.X = 8.000000000000000000
+        Position.Y = 328.000000000000000000
+        Size.Width = 273.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit5: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        ReadOnly = True
+        Text = 'Disable edit control'
+        Position.X = 8.000000000000000000
+        Position.Y = 364.000000000000000000
+        Enabled = False
+        Size.Width = 273.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object Line2: TLine
+    LineType = Top
+    Position.Y = 243.000000000000000000
+    Size.Width = 9.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claBlueviolet
+  end
+end

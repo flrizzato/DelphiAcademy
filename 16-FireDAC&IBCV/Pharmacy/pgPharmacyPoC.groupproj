@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{806519A0-8F4B-45F4-B97D-46480E13BA1B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Pharmacy\PharmacyApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CentralDataViewer\CentralDataViewer.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PharmacyApp">
+        <MSBuild Projects="Pharmacy\PharmacyApp.dproj"/>
+    </Target>
+    <Target Name="PharmacyApp:Clean">
+        <MSBuild Projects="Pharmacy\PharmacyApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PharmacyApp:Make">
+        <MSBuild Projects="Pharmacy\PharmacyApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CentralDataViewer">
+        <MSBuild Projects="CentralDataViewer\CentralDataViewer.dproj"/>
+    </Target>
+    <Target Name="CentralDataViewer:Clean">
+        <MSBuild Projects="CentralDataViewer\CentralDataViewer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CentralDataViewer:Make">
+        <MSBuild Projects="CentralDataViewer\CentralDataViewer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PharmacyApp;CentralDataViewer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PharmacyApp:Clean;CentralDataViewer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PharmacyApp:Make;CentralDataViewer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

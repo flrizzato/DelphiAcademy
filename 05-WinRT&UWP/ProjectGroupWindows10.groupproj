@@ -1,0 +1,156 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F215E821-5E37-4B1A-B6E1-05021C314EA8}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CommonDialogStyling\VCLDialogStyling.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ActivityIndicator\ActivityIndicator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RelativePanel\RelativePanel.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SearchBox\SearchBox.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SplitView\SplitView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ToggleSwitch\ToggleSwitch.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="NativeControls\NativeControlsDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Windows 10 Notifications VCL\NotificationsVCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Windows 10 Notifications FMX\NotificationsFMX.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Windows 10 SharingContract\FrameWork\ShareContractFramework.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Windows 10 SharingContract\Component\ShareContractComponent.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="VCLDialogStyling">
+        <MSBuild Projects="CommonDialogStyling\VCLDialogStyling.dproj"/>
+    </Target>
+    <Target Name="VCLDialogStyling:Clean">
+        <MSBuild Projects="CommonDialogStyling\VCLDialogStyling.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLDialogStyling:Make">
+        <MSBuild Projects="CommonDialogStyling\VCLDialogStyling.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ActivityIndicator">
+        <MSBuild Projects="ActivityIndicator\ActivityIndicator.dproj"/>
+    </Target>
+    <Target Name="ActivityIndicator:Clean">
+        <MSBuild Projects="ActivityIndicator\ActivityIndicator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ActivityIndicator:Make">
+        <MSBuild Projects="ActivityIndicator\ActivityIndicator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RelativePanel">
+        <MSBuild Projects="RelativePanel\RelativePanel.dproj"/>
+    </Target>
+    <Target Name="RelativePanel:Clean">
+        <MSBuild Projects="RelativePanel\RelativePanel.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RelativePanel:Make">
+        <MSBuild Projects="RelativePanel\RelativePanel.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SearchBox">
+        <MSBuild Projects="SearchBox\SearchBox.dproj"/>
+    </Target>
+    <Target Name="SearchBox:Clean">
+        <MSBuild Projects="SearchBox\SearchBox.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SearchBox:Make">
+        <MSBuild Projects="SearchBox\SearchBox.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SplitView">
+        <MSBuild Projects="SplitView\SplitView.dproj"/>
+    </Target>
+    <Target Name="SplitView:Clean">
+        <MSBuild Projects="SplitView\SplitView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SplitView:Make">
+        <MSBuild Projects="SplitView\SplitView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ToggleSwitch">
+        <MSBuild Projects="ToggleSwitch\ToggleSwitch.dproj"/>
+    </Target>
+    <Target Name="ToggleSwitch:Clean">
+        <MSBuild Projects="ToggleSwitch\ToggleSwitch.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ToggleSwitch:Make">
+        <MSBuild Projects="ToggleSwitch\ToggleSwitch.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NativeControlsDemo">
+        <MSBuild Projects="NativeControls\NativeControlsDemo.dproj"/>
+    </Target>
+    <Target Name="NativeControlsDemo:Clean">
+        <MSBuild Projects="NativeControls\NativeControlsDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativeControlsDemo:Make">
+        <MSBuild Projects="NativeControls\NativeControlsDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NotificationsVCL">
+        <MSBuild Projects="Windows 10 Notifications VCL\NotificationsVCL.dproj"/>
+    </Target>
+    <Target Name="NotificationsVCL:Clean">
+        <MSBuild Projects="Windows 10 Notifications VCL\NotificationsVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NotificationsVCL:Make">
+        <MSBuild Projects="Windows 10 Notifications VCL\NotificationsVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NotificationsFMX">
+        <MSBuild Projects="Windows 10 Notifications FMX\NotificationsFMX.dproj"/>
+    </Target>
+    <Target Name="NotificationsFMX:Clean">
+        <MSBuild Projects="Windows 10 Notifications FMX\NotificationsFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NotificationsFMX:Make">
+        <MSBuild Projects="Windows 10 Notifications FMX\NotificationsFMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ShareContractFramework">
+        <MSBuild Projects="Windows 10 SharingContract\FrameWork\ShareContractFramework.dproj"/>
+    </Target>
+    <Target Name="ShareContractFramework:Clean">
+        <MSBuild Projects="Windows 10 SharingContract\FrameWork\ShareContractFramework.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ShareContractFramework:Make">
+        <MSBuild Projects="Windows 10 SharingContract\FrameWork\ShareContractFramework.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ShareContractComponent">
+        <MSBuild Projects="Windows 10 SharingContract\Component\ShareContractComponent.dproj"/>
+    </Target>
+    <Target Name="ShareContractComponent:Clean">
+        <MSBuild Projects="Windows 10 SharingContract\Component\ShareContractComponent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ShareContractComponent:Make">
+        <MSBuild Projects="Windows 10 SharingContract\Component\ShareContractComponent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="VCLDialogStyling;ActivityIndicator;RelativePanel;SearchBox;SplitView;ToggleSwitch;NativeControlsDemo;NotificationsVCL;NotificationsFMX;ShareContractFramework;ShareContractComponent"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="VCLDialogStyling:Clean;ActivityIndicator:Clean;RelativePanel:Clean;SearchBox:Clean;SplitView:Clean;ToggleSwitch:Clean;NativeControlsDemo:Clean;NotificationsVCL:Clean;NotificationsFMX:Clean;ShareContractFramework:Clean;ShareContractComponent:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="VCLDialogStyling:Make;ActivityIndicator:Make;RelativePanel:Make;SearchBox:Make;SplitView:Make;ToggleSwitch:Make;NativeControlsDemo:Make;NotificationsVCL:Make;NotificationsFMX:Make;ShareContractFramework:Make;ShareContractComponent:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

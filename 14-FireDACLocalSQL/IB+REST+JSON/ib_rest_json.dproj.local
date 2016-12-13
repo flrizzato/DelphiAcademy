@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ActiveMobileDevice>
+		<PRIZZATOOSX iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+	<Transactions>
+    <Transaction>2016/10/17 23:25:58.000.978,C:\DelphiAcademy\14-FireDACLocalSQL\LocalSQL-demo\ib_rest_json.dproj=C:\DelphiAcademy\14-FireDACLocalSQL\LocalSQL-demo\LocalSQLDemo.dproj</Transaction>
+    <Transaction>2016/10/17 23:26:11.000.265,C:\DelphiAcademy\14-FireDACLocalSQL\LocalSQL-demo\uMainForm.fmx=C:\DelphiAcademy\14-FireDACLocalSQL\LocalSQL-demo\LocalSQLUnit1.fmx</Transaction>
+    <Transaction>2016/10/17 23:26:11.000.265,C:\DelphiAcademy\14-FireDACLocalSQL\LocalSQL-demo\uMainForm.pas=C:\DelphiAcademy\14-FireDACLocalSQL\LocalSQL-demo\LocalSQLUnit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

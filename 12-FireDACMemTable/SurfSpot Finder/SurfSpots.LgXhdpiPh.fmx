@@ -1,0 +1,20 @@
+inherited SurfSpotFinder_LgXhdpiPh: TSurfSpotFinder_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    Size.Height = 695.000000000000000000
+  end
+  inherited MultiView1: TMultiView
+    Size.Height = 695.000000000000000000
+    inherited AllSurfSpotsListView: TListView
+      Size.Height = 647.000000000000000000
+    end
+  end
+  inherited MultiView2: TMultiView
+    Size.Height = 695.000000000000000000
+    inherited FavoritesListBox: TListBox
+      Size.Height = 647.000000000000000000
+    end
+  end
+end

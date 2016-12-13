@@ -1,0 +1,1528 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Rubik'#39's Cube Le Dev du Jeudi Episode7'
+  ClientHeight = 359
+  ClientWidth = 598
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 3
+  object Viewport3D2: TViewport3D
+    Align = Client
+    Camera = Camera
+    Color = claSilver
+    RotationCenter.X = 0.000000000000000000
+    RotationCenter.Y = 0.000000000000000000
+    Size.Width = 598.000000000000000000
+    Size.Height = 159.000000000000000000
+    Size.PlatformDefault = False
+    UsingDesignCamera = False
+    OnMouseDown = Viewport3D2MouseDown
+    OnMouseMove = Viewport3D2MouseMove
+    OnMouseUp = Viewport3D2MouseUp
+    object CubeCentral: TCube
+      Width = 0.500000000000000000
+      Height = 0.500000000000000000
+      Depth = 0.500000000000000000
+      object GreenPivot: TCube
+        Tag = 1
+        Position.X = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialStickerGreen
+        object FaTurnGreen: TFloatAnimation
+          Duration = 1.000000000000000000
+          OnFinish = RotationFinish
+          PropertyName = 'RotationAngle.X'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+      object OrangePivot: TCube
+        Tag = 1
+        Position.Z = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialStickerOrange
+        object FaTurnOrange: TFloatAnimation
+          Duration = 1.000000000000000000
+          OnFinish = RotationFinish
+          PropertyName = 'RotationAngle.Z'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+      object WhitePivot: TCube
+        Tag = 1
+        Position.Y = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialStickerWhite
+        object FaTurnWhite: TFloatAnimation
+          Duration = 1.000000000000000000
+          OnFinish = RotationFinish
+          PropertyName = 'RotationAngle.Y'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+      object YellowPivot: TCube
+        Tag = 1
+        Position.Y = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialStickerYellow
+        object FaTurnYellow: TFloatAnimation
+          Duration = 1.000000000000000000
+          OnFinish = RotationFinish
+          PropertyName = 'RotationAngle.Y'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+      object RedPivot: TCube
+        Tag = 1
+        Position.Z = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialStickerRed
+        object FaTurnRed: TFloatAnimation
+          Duration = 1.000000000000000000
+          OnFinish = RotationFinish
+          PropertyName = 'RotationAngle.Z'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+      object BluePivot: TCube
+        Tag = 1
+        Position.X = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialStickerBlue
+        object FaTurnBlue: TFloatAnimation
+          Duration = 1.000000000000000000
+          OnFinish = RotationFinish
+          PropertyName = 'RotationAngle.X'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+      object CC1: TCube
+        Tag = 3
+        Position.X = -3.000000000000000000
+        Position.Y = -3.000000000000000000
+        Position.Z = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCC1R: TPlane
+          Position.Z = -1.509999990463257000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerRed
+        end
+        object PLCC1W: TPlane
+          Position.Y = -1.509999990463257000
+          RotationAngle.X = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerWhite
+          Quanternion = '(-0.707106828689575,0,0,0.707106709480286)'
+        end
+        object PLCC1V: TPlane
+          Position.X = -1.509999871253967000
+          RotationAngle.Y = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerGreen
+          Quanternion = '(0,0.70710676908493,0,0.70710676908493)'
+        end
+      end
+      object CC2: TCube
+        Tag = 3
+        Position.X = 3.000000000000000000
+        Position.Y = -3.000000000000000000
+        Position.Z = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCC2R: TPlane
+          Position.Z = -1.509999990463257000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerRed
+        end
+        object PLCC2W: TPlane
+          Position.Y = -1.509999990463257000
+          RotationAngle.X = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerWhite
+          Quanternion = '(-0.70710676908493,0,0,0.70710676908493)'
+        end
+        object PLCC2B: TPlane
+          Position.X = 1.509999990463257000
+          RotationAngle.Y = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerBlue
+          Quanternion = '(0,-0.70710676908493,0,0.70710676908493)'
+        end
+      end
+      object CC5: TCube
+        Tag = 3
+        Position.X = -3.000000000000000000
+        Position.Y = -3.000000000000000000
+        Position.Z = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCC5W: TPlane
+          Position.Y = -1.509999990463257000
+          RotationAngle.X = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerWhite
+          Quanternion = '(-0.707106828689575,0,0,0.707106709480286)'
+        end
+        object PLCC5V: TPlane
+          Position.X = -1.509999871253967000
+          RotationAngle.Y = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerGreen
+          Quanternion = '(0,0.70710676908493,0,0.70710676908493)'
+        end
+        object PLCC5O: TPlane
+          Position.Z = 1.509999990463257000
+          RotationAngle.X = 180.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerOrange
+          Quanternion = '(1,0,0,-4.37113882867379E-8)'
+        end
+      end
+      object CC3: TCube
+        Tag = 3
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Position.Z = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCC3R: TPlane
+          Position.Z = -1.509999990463257000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerRed
+        end
+        object PLCC3B: TPlane
+          Position.X = 1.509999990463257000
+          RotationAngle.Y = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerBlue
+          Quanternion = '(0,-0.707106828689575,0,0.707106709480286)'
+        end
+        object PLCC3J: TPlane
+          Position.Y = 1.509999990463257000
+          RotationAngle.X = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerYellow
+          Quanternion = '(0.70710676908493,0,0,0.70710676908493)'
+        end
+      end
+      object CC4: TCube
+        Tag = 3
+        Position.X = -3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Position.Z = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCC4R: TPlane
+          Position.Z = -1.509999990463257000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerRed
+        end
+        object PLCC4V: TPlane
+          Position.X = -1.509999871253967000
+          RotationAngle.Y = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerGreen
+          Quanternion = '(0,0.70710676908493,0,0.70710676908493)'
+        end
+        object PLCC4J: TPlane
+          Position.Y = 1.509999990463257000
+          RotationAngle.X = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerYellow
+          Quanternion = '(0.70710676908493,0,0,0.70710676908493)'
+        end
+      end
+      object CC6: TCube
+        Tag = 3
+        Position.X = 3.000000000000000000
+        Position.Y = -3.000000000000000000
+        Position.Z = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCC6W: TPlane
+          Position.Y = -1.509999990463257000
+          RotationAngle.X = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerWhite
+          Quanternion = '(-0.707106828689575,0,0,0.707106709480286)'
+        end
+        object PLCC6B: TPlane
+          Position.X = 1.509999990463257000
+          RotationAngle.Y = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerBlue
+          Quanternion = '(0,-0.707106828689575,0,0.707106709480286)'
+        end
+        object PLCC6O: TPlane
+          Position.Z = 1.509999990463257000
+          RotationAngle.X = 180.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerOrange
+          Quanternion = '(1,0,0,-4.37113882867379E-8)'
+        end
+      end
+      object CC8: TCube
+        Tag = 3
+        Position.X = -3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Position.Z = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCC8V: TPlane
+          Position.X = -1.509999871253967000
+          RotationAngle.Y = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerGreen
+          Quanternion = '(0,0.70710676908493,0,0.70710676908493)'
+        end
+        object PLCC8J: TPlane
+          Position.Y = 1.509999990463257000
+          RotationAngle.X = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerYellow
+          Quanternion = '(0.70710676908493,0,0,0.70710676908493)'
+        end
+        object PLCC8O: TPlane
+          Position.Z = 1.509999990463257000
+          RotationAngle.X = 180.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerOrange
+          Quanternion = '(1,0,0,-4.37113882867379E-8)'
+        end
+      end
+      object CC7: TCube
+        Tag = 3
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Position.Z = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCC7B: TPlane
+          Position.X = 1.509999990463257000
+          RotationAngle.Y = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerBlue
+          Quanternion = '(0,-0.707106828689575,0,0.707106709480286)'
+        end
+        object PLCC7J: TPlane
+          Position.Y = 1.509999990463257000
+          RotationAngle.X = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerYellow
+          Quanternion = '(0.70710676908493,0,0,0.70710676908493)'
+        end
+        object PLCC7O: TPlane
+          Position.Z = 1.509999990463257000
+          RotationAngle.X = 180.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseMove = StickCornerMouseMove
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerOrange
+          Quanternion = '(1,0,0,-4.37113882867379E-8)'
+        end
+      end
+      object CA1: TCube
+        Tag = 2
+        Position.Y = -3.000000000000000000
+        Position.Z = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA1R: TPlane
+          Position.Z = -1.509999990463257000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerRed
+        end
+        object PLCA1W: TPlane
+          Position.Y = -1.509999990463257000
+          RotationAngle.X = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerWhite
+          Quanternion = '(-0.707106828689575,0,0,0.707106709480286)'
+        end
+      end
+      object CA2: TCube
+        Tag = 2
+        Position.X = -3.000000000000000000
+        Position.Z = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA2R: TPlane
+          Position.Z = -1.509999990463257000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerRed
+        end
+        object PLCA2V: TPlane
+          Position.X = -1.509999871253967000
+          RotationAngle.Y = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerGreen
+          Quanternion = '(0,0.70710676908493,0,0.70710676908493)'
+        end
+      end
+      object CA3: TCube
+        Tag = 2
+        Position.X = 3.000000000000000000
+        Position.Z = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA3R: TPlane
+          Position.Z = -1.509999990463257000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerRed
+        end
+        object PLCA3B: TPlane
+          Position.X = 1.509999990463257000
+          RotationAngle.Y = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerBlue
+          Quanternion = '(0,-0.707106828689575,0,0.707106709480286)'
+        end
+      end
+      object CA4: TCube
+        Tag = 2
+        Position.Y = 3.000000000000000000
+        Position.Z = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA4R: TPlane
+          Position.Z = -1.509999990463257000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerRed
+        end
+        object PLCA4J: TPlane
+          Position.Y = 1.509999990463257000
+          RotationAngle.X = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerYellow
+          Quanternion = '(0.70710676908493,0,0,0.70710676908493)'
+        end
+      end
+      object CA5: TCube
+        Tag = 2
+        Position.X = -3.000000000000000000
+        Position.Y = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA5W: TPlane
+          Position.Y = -1.509999990463257000
+          RotationAngle.X = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerWhite
+          Quanternion = '(-0.707106828689575,0,0,0.707106709480286)'
+        end
+        object PLCA5V: TPlane
+          Position.X = -1.509999871253967000
+          RotationAngle.Y = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerGreen
+          Quanternion = '(0,0.70710676908493,0,0.70710676908493)'
+        end
+      end
+      object CA7: TCube
+        Tag = 2
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA7B: TPlane
+          Position.X = 1.509999990463257000
+          RotationAngle.Y = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerBlue
+          Quanternion = '(0,-0.707106828689575,0,0.707106709480286)'
+        end
+        object PLCA7J: TPlane
+          Position.Y = 1.509999990463257000
+          RotationAngle.X = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerYellow
+          Quanternion = '(0.70710676908493,0,0,0.70710676908493)'
+        end
+      end
+      object CA8: TCube
+        Tag = 2
+        Position.X = -3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA8V: TPlane
+          Position.X = -1.509999871253967000
+          RotationAngle.Y = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerGreen
+          Quanternion = '(0,0.70710676908493,0,0.70710676908493)'
+        end
+        object PLCA8J: TPlane
+          Position.Y = 1.509999990463257000
+          RotationAngle.X = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerYellow
+          Quanternion = '(0.70710676908493,0,0,0.70710676908493)'
+        end
+      end
+      object CA9: TCube
+        Tag = 2
+        Position.Y = -3.000000000000000000
+        Position.Z = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA9W: TPlane
+          Position.Y = -1.509999990463257000
+          RotationAngle.X = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerWhite
+          Quanternion = '(-0.707106828689575,0,0,0.707106709480286)'
+        end
+        object PLCA9O: TPlane
+          Position.Z = 1.509999990463257000
+          RotationAngle.X = 180.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerOrange
+          Quanternion = '(1,0,0,-4.37113882867379E-8)'
+        end
+      end
+      object CA10: TCube
+        Tag = 2
+        Position.X = -3.000000000000000000
+        Position.Z = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA10V: TPlane
+          Position.X = -1.509999871253967000
+          RotationAngle.Y = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerGreen
+          Quanternion = '(0,0.70710676908493,0,0.70710676908493)'
+        end
+        object PLCA10O: TPlane
+          Position.Z = 1.509999990463257000
+          RotationAngle.X = 180.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerOrange
+          Quanternion = '(1,0,0,-4.37113882867379E-8)'
+        end
+      end
+      object CA11: TCube
+        Tag = 2
+        Position.X = 3.000000000000000000
+        Position.Z = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA11B: TPlane
+          Position.X = 1.509999990463257000
+          RotationAngle.Y = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerBlue
+          Quanternion = '(0,-0.70710676908493,0,0.70710676908493)'
+        end
+        object PLCA11O: TPlane
+          Position.Z = 1.509999990463257000
+          RotationAngle.X = 180.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerOrange
+          Quanternion = '(1,0,0,-4.37113882867379E-8)'
+        end
+      end
+      object CA12: TCube
+        Tag = 2
+        Position.Y = 3.000000000000000000
+        Position.Z = 3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA12J: TPlane
+          Position.Y = 1.509999990463257000
+          RotationAngle.X = 90.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerYellow
+          Quanternion = '(0.70710676908493,0,0,0.70710676908493)'
+        end
+        object PLCA12O: TPlane
+          Position.Z = 1.509999990463257000
+          RotationAngle.X = 180.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerOrange
+          Quanternion = '(1,0,0,-4.37113882867379E-8)'
+        end
+      end
+      object CA6: TCube
+        Tag = 2
+        Position.X = 3.000000000000000000
+        Position.Y = -3.000000000000000000
+        Width = 3.000000000000000000
+        Height = 3.000000000000000000
+        Depth = 3.000000000000000000
+        MaterialSource = DmCommon.LightMaterialCube
+        object PLCA6W: TPlane
+          Position.Y = -1.509999990463257000
+          RotationAngle.X = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerWhite
+          Quanternion = '(-0.707106828689575,0,0,0.707106709480286)'
+        end
+        object PLCA6B: TPlane
+          Position.X = 1.509999990463257000
+          RotationAngle.Y = 270.000000000000000000
+          Width = 3.000000000000000000
+          Height = 3.000000000000000000
+          Depth = 0.001000000047497451
+          OnMouseDown = StickMouseDown
+          OnMouseUp = StickCornerMouseUp
+          MaterialSource = DmCommon.LightMaterialStickerBlue
+          Quanternion = '(0,-0.707106828689575,0,0.707106709480286)'
+        end
+      end
+    end
+    object Dummy: TDummy
+      RotationAngle.X = 324.000000000000000000
+      RotationAngle.Y = 315.000000000000000000
+      RotationAngle.Z = 342.000000000000000000
+      Locked = True
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      Quanternion = 
+        '(-0.225086376070976,-0.413512736558914,-0.0547118037939072,0.880' +
+        '539655685425)'
+      object Camera: TCamera
+        AngleOfView = 45.000000000000000000
+        Position.Z = -20.000000000000000000
+        Locked = True
+        Width = 25.000000000000000000
+        Height = 25.000000000000000000
+        Depth = 25.000000000000000000
+        Projection = Screen
+      end
+      object MainLight: TLight
+        Color = claWhite
+        LightType = Spot
+        SpotCutOff = 200.000000000000000000
+        SpotExponent = 4.000000000000000000
+        Position.X = -7.296343803405762000
+        Position.Y = -1.143384814262390000
+        Position.Z = -20.391630172729490000
+        RotationAngle.X = 33.983268737792970000
+        RotationAngle.Y = 17.645021438598630000
+        RotationAngle.Z = 284.269470214843800000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = 
+          '(0.160548686981201,-0.189767777919769,0.631180703639984,-0.73472' +
+          '5952148438)'
+      end
+    end
+    object StyleBook1: TStyleBook
+      Styles = <
+        item
+          ResourcesBin = {
+            464D585F5354594C4520322E3501060842746E526F756765033C06060742746E
+            56657274031606060842746E426C616E63031406060742746E426C6575031206
+            060942746E4F72616E6765031A06060842746E4A61756E65031B060054504630
+            07544C61796F757400095374796C654E616D65060842746E526F7567650A506F
+            736974696F6E2E5805000000000000008608400A506F736974696F6E2E590500
+            000000000080B507400A53697A652E57696474680500000000000000B605400B
+            53697A652E4865696768740500000000000000C003401453697A652E506C6174
+            666F726D44656661756C7408085461624F726465720200000A5452656374616E
+            676C6500095374796C654E616D65060A6261636B67726F756E6405416C69676E
+            0708436F6E74656E74730A46696C6C2E436F6C6F720709784646454645464546
+            0748697454657374080A53697A652E57696474680500000000000000B605400B
+            53697A652E4865696768740500000000000000C003401453697A652E506C6174
+            666F726D44656661756C74080B5374726F6B652E4B696E6407044E6F6E650758
+            5261646975730500000000000000C00040075952616469757305000000000000
+            00C00040000A5452656374616E676C650005416C69676E0708436F6E74656E74
+            730A46696C6C2E436F6C6F720706636C615265640748697454657374080A5369
+            7A652E57696474680500000000000000B605400B53697A652E48656967687405
+            00000000000000C003401453697A652E506C6174666F726D44656661756C7408
+            0C5374726F6B652E436F6C6F7207097843383446344634460758526164697573
+            0500000000000000C0004007595261646975730500000000000000C000400000
+            0F54436F6C6F72416E696D6174696F6E00084475726174696F6E050000000000
+            CDCCCCFC3F0C50726F70657274794E616D65060A46696C6C2E436F6C6F720A53
+            7461727456616C75650706636C615265640953746F7056616C75650709784646
+            4638394339430754726967676572061049734D6F7573654F7665723D74727565
+            00000F54436F6C6F72416E696D6174696F6E00084475726174696F6E05000000
+            0000CDCCCCFC3F0C50726F70657274794E616D65060A46696C6C2E436F6C6F72
+            0A537461727456616C756507097846464638394339430953746F7056616C7565
+            0706636C615265640754726967676572061149734D6F7573654F7665723D6661
+            6C736500001054496E6E6572476C6F774566666563740008536F66746E657373
+            050000000000CDCCCCFD3F09476C6F77436F6C6F720709784646344634383438
+            074F7061636974790500000000006666E6FE3F0754726967676572060E497350
+            7265737365643D7472756507456E61626C65640800000A5452656374616E676C
+            650005416C69676E0706436C69656E740946696C6C2E4B696E6407044E6F6E65
+            064C6F636B6564090748697454657374080C50616464696E672E4C6566740500
+            00000000000080FF3F0B50616464696E672E546F70050000000000000080FF3F
+            0D50616464696E672E5269676874050000000000000080FF3F0E50616464696E
+            672E426F74746F6D050000000000000080FF3F0A53697A652E57696474680500
+            000000000000B605400B53697A652E4865696768740500000000000000C00340
+            1453697A652E506C6174666F726D44656661756C74080C5374726F6B652E436F
+            6C6F720709783936464346434643075852616469757305000000000000008000
+            4007595261646975730500000000000000800040000000055454657874000953
+            74796C654E616D6506047465787405416C69676E0706436C69656E74064C6F63
+            6B6564090748697454657374080C50616464696E672E4C656674050000000000
+            0000A001400B50616464696E672E546F700500000000000000C000400D506164
+            64696E672E52696768740500000000000000A001400E50616464696E672E426F
+            74746F6D0500000000000000C000400A53697A652E5769647468050000000000
+            0000B605400B53697A652E4865696768740500000000000000C003401453697A
+            652E506C6174666F726D44656661756C740804546578740606627574746F6E1A
+            5465787453657474696E67732E466F6E742E5374796C654578740A0D00000000
+            07000000000000000400000000000B54476C6F774566666563740008536F6674
+            6E657373050000000000CDCCCCFC3F09476C6F77436F6C6F720706636C615265
+            64074F7061636974790500000000006666E6FE3F0754726967676572060E4973
+            466F63757365643D7472756507456E61626C6564080000005450463007544C61
+            796F757400095374796C654E616D65060742746E566572740A506F736974696F
+            6E2E5805000000000000008608400A506F736974696F6E2E5905000000000000
+            80B507400A53697A652E57696474680500000000000000B605400B53697A652E
+            4865696768740500000000000000C003401453697A652E506C6174666F726D44
+            656661756C7408085461624F726465720201000A5452656374616E676C650009
+            5374796C654E616D65060A6261636B67726F756E6405416C69676E0708436F6E
+            74656E74730A46696C6C2E436F6C6F7207097846464546454645460748697454
+            657374080A53697A652E57696474680500000000000000B605400B53697A652E
+            4865696768740500000000000000C003401453697A652E506C6174666F726D44
+            656661756C74080B5374726F6B652E4B696E6407044E6F6E6507585261646975
+            730500000000000000C0004007595261646975730500000000000000C0004000
+            0A5452656374616E676C650005416C69676E0708436F6E74656E74730A46696C
+            6C2E436F6C6F720708636C61477265656E0748697454657374080A53697A652E
+            57696474680500000000000000B605400B53697A652E48656967687405000000
+            00000000C003401453697A652E506C6174666F726D44656661756C74080C5374
+            726F6B652E436F6C6F7207097843383446344634460758526164697573050000
+            0000000000C0004007595261646975730500000000000000C0004000000F5443
+            6F6C6F72416E696D6174696F6E00084475726174696F6E050000000000CDCCCC
+            FC3F0C50726F70657274794E616D65060A46696C6C2E436F6C6F720A53746172
+            7456616C75650708636C61477265656E0953746F7056616C7565070978464631
+            41444131410754726967676572061049734D6F7573654F7665723D7472756500
+            000F54436F6C6F72416E696D6174696F6E00084475726174696F6E0500000000
+            00CDCCCCFC3F0C50726F70657274794E616D65060A46696C6C2E436F6C6F720A
+            537461727456616C756507097846463141444131410953746F7056616C756507
+            08636C61477265656E0754726967676572061149734D6F7573654F7665723D66
+            616C736500001054496E6E6572476C6F774566666563740008536F66746E6573
+            73050000000000CDCCCCFD3F09476C6F77436F6C6F7207097846463446343834
+            38074F7061636974790500000000006666E6FE3F0754726967676572060E4973
+            507265737365643D7472756507456E61626C65640800000A5452656374616E67
+            6C650005416C69676E0706436C69656E740946696C6C2E4B696E6407044E6F6E
+            65064C6F636B6564090748697454657374080C50616464696E672E4C65667405
+            0000000000000080FF3F0B50616464696E672E546F70050000000000000080FF
+            3F0D50616464696E672E5269676874050000000000000080FF3F0E5061646469
+            6E672E426F74746F6D050000000000000080FF3F0A53697A652E576964746805
+            00000000000000B605400B53697A652E4865696768740500000000000000C003
+            401453697A652E506C6174666F726D44656661756C74080C5374726F6B652E43
+            6F6C6F7207097839364643464346430758526164697573050000000000000080
+            0040075952616469757305000000000000008000400000000554546578740009
+            5374796C654E616D6506047465787405416C69676E0706436C69656E74064C6F
+            636B6564090748697454657374080C50616464696E672E4C6566740500000000
+            000000A001400B50616464696E672E546F700500000000000000C000400D5061
+            6464696E672E52696768740500000000000000A001400E50616464696E672E42
+            6F74746F6D0500000000000000C000400A53697A652E57696474680500000000
+            000000B605400B53697A652E4865696768740500000000000000C00340145369
+            7A652E506C6174666F726D44656661756C740804546578740606627574746F6E
+            00000B54476C6F774566666563740008536F66746E657373050000000000CDCC
+            CCFC3F09476C6F77436F6C6F720708636C61477265656E074F70616369747905
+            00000000006666E6FE3F0754726967676572060E4973466F63757365643D7472
+            756507456E61626C6564080000005450463007544C61796F757400095374796C
+            654E616D65060842746E426C616E630A506F736974696F6E2E58050000000000
+            00008608400A506F736974696F6E2E590500000000000080B507400A53697A65
+            2E57696474680500000000000000B605400B53697A652E486569676874050000
+            0000000000C003401453697A652E506C6174666F726D44656661756C74080854
+            61624F726465720202000A5452656374616E676C6500095374796C654E616D65
+            060A6261636B67726F756E6405416C69676E0708436F6E74656E74730A46696C
+            6C2E436F6C6F7207097846464546454645460748697454657374080A53697A65
+            2E57696474680500000000000000B605400B53697A652E486569676874050000
+            0000000000C003401453697A652E506C6174666F726D44656661756C74080B53
+            74726F6B652E4B696E6407044E6F6E6507585261646975730500000000000000
+            C0004007595261646975730500000000000000C00040000A5452656374616E67
+            6C650005416C69676E0708436F6E74656E74730A46696C6C2E436F6C6F720708
+            636C6157686974650748697454657374080A53697A652E576964746805000000
+            00000000B605400B53697A652E4865696768740500000000000000C003401453
+            697A652E506C6174666F726D44656661756C74080C5374726F6B652E436F6C6F
+            72070978433834463446344607585261646975730500000000000000C0004007
+            595261646975730500000000000000C0004000000F54436F6C6F72416E696D61
+            74696F6E00084475726174696F6E050000000000CDCCCCFC3F0C50726F706572
+            74794E616D65060A46696C6C2E436F6C6F720A537461727456616C7565070863
+            6C6157686974650953746F7056616C75650708636C6157686974650754726967
+            676572061049734D6F7573654F7665723D7472756500000F54436F6C6F72416E
+            696D6174696F6E00084475726174696F6E050000000000CDCCCCFC3F0C50726F
+            70657274794E616D65060A46696C6C2E436F6C6F720A537461727456616C7565
+            0708636C6157686974650953746F7056616C75650708636C6157686974650754
+            726967676572061149734D6F7573654F7665723D66616C736500001054496E6E
+            6572476C6F774566666563740008536F66746E657373050000000000CDCCCCFD
+            3F09476C6F77436F6C6F720708636C615768656174074F706163697479050000
+            0000006666E6FE3F0754726967676572060E4973507265737365643D74727565
+            07456E61626C65640800000A5452656374616E676C650005416C69676E070643
+            6C69656E740946696C6C2E4B696E6407044E6F6E65064C6F636B656409074869
+            7454657374080C50616464696E672E4C656674050000000000000080FF3F0B50
+            616464696E672E546F70050000000000000080FF3F0D50616464696E672E5269
+            676874050000000000000080FF3F0E50616464696E672E426F74746F6D050000
+            000000000080FF3F0A53697A652E57696474680500000000000000B605400B53
+            697A652E4865696768740500000000000000C003401453697A652E506C617466
+            6F726D44656661756C74080C5374726F6B652E436F6C6F720709783936464346
+            4346430758526164697573050000000000000080004007595261646975730500
+            00000000000080004000000005545465787400095374796C654E616D65060474
+            65787405416C69676E0706436C69656E74064C6F636B65640907486974546573
+            74080C50616464696E672E4C6566740500000000000000A001400B5061646469
+            6E672E546F700500000000000000C000400D50616464696E672E526967687405
+            00000000000000A001400E50616464696E672E426F74746F6D05000000000000
+            00C000400A53697A652E57696474680500000000000000B605400B53697A652E
+            4865696768740500000000000000C003401453697A652E506C6174666F726D44
+            656661756C740804546578740606627574746F6E00000B54476C6F7745666665
+            63740008536F66746E657373050000000000CDCCCCFC3F09476C6F77436F6C6F
+            720708636C615768697465074F7061636974790500000000006666E6FE3F0754
+            726967676572060E4973466F63757365643D7472756507456E61626C65640800
+            00005450463007544C61796F757400095374796C654E616D65060742746E426C
+            65750A506F736974696F6E2E5805000000000000008608400A506F736974696F
+            6E2E590500000000000080B507400A53697A652E576964746805000000000000
+            00B605400B53697A652E4865696768740500000000000000C003401453697A65
+            2E506C6174666F726D44656661756C7408085461624F726465720203000A5452
+            656374616E676C6500095374796C654E616D65060A6261636B67726F756E6405
+            416C69676E0708436F6E74656E74730A46696C6C2E436F6C6F72070978464645
+            46454645460748697454657374080A53697A652E576964746805000000000000
+            00B605400B53697A652E4865696768740500000000000000C003401453697A65
+            2E506C6174666F726D44656661756C74080B5374726F6B652E4B696E6407044E
+            6F6E6507585261646975730500000000000000C0004007595261646975730500
+            000000000000C00040000A5452656374616E676C650005416C69676E0708436F
+            6E74656E74730A46696C6C2E436F6C6F720707636C61426C7565074869745465
+            7374080A53697A652E57696474680500000000000000B605400B53697A652E48
+            65696768740500000000000000C003401453697A652E506C6174666F726D4465
+            6661756C74080C5374726F6B652E436F6C6F7207097843383446344634460758
+            5261646975730500000000000000C00040075952616469757305000000000000
+            00C0004000000F54436F6C6F72416E696D6174696F6E00084475726174696F6E
+            050000000000CDCCCCFC3F0C50726F70657274794E616D65060A46696C6C2E43
+            6F6C6F720A537461727456616C75650707636C61426C75650953746F7056616C
+            756507097846464135443946460754726967676572061049734D6F7573654F76
+            65723D7472756500000F54436F6C6F72416E696D6174696F6E00084475726174
+            696F6E050000000000CDCCCCFC3F0C50726F70657274794E616D65060A46696C
+            6C2E436F6C6F720A537461727456616C75650709784646413544394646095374
+            6F7056616C75650707636C61426C75650754726967676572061149734D6F7573
+            654F7665723D66616C736500001054496E6E6572476C6F774566666563740008
+            536F66746E657373050000000000CDCCCCFD3F09476C6F77436F6C6F72070763
+            6C61426C7565074F7061636974790500000000006666E6FE3F07547269676765
+            72060E4973507265737365643D7472756507456E61626C65640800000A545265
+            6374616E676C650005416C69676E0706436C69656E740946696C6C2E4B696E64
+            07044E6F6E65064C6F636B6564090748697454657374080C50616464696E672E
+            4C656674050000000000000080FF3F0B50616464696E672E546F700500000000
+            00000080FF3F0D50616464696E672E5269676874050000000000000080FF3F0E
+            50616464696E672E426F74746F6D050000000000000080FF3F0A53697A652E57
+            696474680500000000000000B605400B53697A652E4865696768740500000000
+            000000C003401453697A652E506C6174666F726D44656661756C74080C537472
+            6F6B652E436F6C6F720709783936464346434643075852616469757305000000
+            0000000080004007595261646975730500000000000000800040000000055454
+            65787400095374796C654E616D6506047465787405416C69676E0706436C6965
+            6E74064C6F636B6564090748697454657374080C50616464696E672E4C656674
+            0500000000000000A001400B50616464696E672E546F700500000000000000C0
+            00400D50616464696E672E52696768740500000000000000A001400E50616464
+            696E672E426F74746F6D0500000000000000C000400A53697A652E5769647468
+            0500000000000000B605400B53697A652E4865696768740500000000000000C0
+            03401453697A652E506C6174666F726D44656661756C74080454657874060662
+            7574746F6E00000B54476C6F774566666563740008536F66746E657373050000
+            000000CDCCCCFC3F09476C6F77436F6C6F720709783832303035414343074F70
+            61636974790500000000006666E6FE3F0754726967676572060E4973466F6375
+            7365643D7472756507456E61626C6564080000005450463007544C61796F7574
+            00095374796C654E616D65060942746E4F72616E67650A506F736974696F6E2E
+            5805000000000000008608400A506F736974696F6E2E590500000000000080B5
+            07400A53697A652E57696474680500000000000000B605400B53697A652E4865
+            696768740500000000000000C003401453697A652E506C6174666F726D446566
+            61756C7408085461624F726465720204000A5452656374616E676C6500095374
+            796C654E616D65060A6261636B67726F756E6405416C69676E0708436F6E7465
+            6E74730A46696C6C2E436F6C6F72070978464646453945304307486974546573
+            74080A53697A652E57696474680500000000000000B605400B53697A652E4865
+            696768740500000000000000C003401453697A652E506C6174666F726D446566
+            61756C74080B5374726F6B652E4B696E6407044E6F6E65075852616469757305
+            00000000000000C0004007595261646975730500000000000000C00040000A54
+            52656374616E676C650005416C69676E0708436F6E74656E74730A46696C6C2E
+            436F6C6F7207097846464645394530430748697454657374080A53697A652E57
+            696474680500000000000000B605400B53697A652E4865696768740500000000
+            000000C003401453697A652E506C6174666F726D44656661756C74080C537472
+            6F6B652E436F6C6F720709784338344634463446075852616469757305000000
+            00000000C0004007595261646975730500000000000000C0004000000F54436F
+            6C6F72416E696D6174696F6E00084475726174696F6E050000000000CDCCCCFC
+            3F0C50726F70657274794E616D65060A46696C6C2E436F6C6F720A5374617274
+            56616C75650708636C61436F72616C0953746F7056616C756507097846464645
+            394530430754726967676572061049734D6F7573654F7665723D747275650000
+            0F54436F6C6F72416E696D6174696F6E00084475726174696F6E050000000000
+            CDCCCCFC3F0C50726F70657274794E616D65060A46696C6C2E436F6C6F720A53
+            7461727456616C75650708636C61436F72616C0953746F7056616C7565070978
+            46464645394530430754726967676572061149734D6F7573654F7665723D6661
+            6C736500001054496E6E6572476C6F774566666563740008536F66746E657373
+            050000000000CDCCCCFD3F09476C6F77436F6C6F720709784646464539453043
+            074F7061636974790500000000006666E6FE3F0754726967676572060E497350
+            7265737365643D7472756507456E61626C65640800000A5452656374616E676C
+            650005416C69676E0706436C69656E740946696C6C2E4B696E6407044E6F6E65
+            064C6F636B6564090748697454657374080C50616464696E672E4C6566740500
+            00000000000080FF3F0B50616464696E672E546F70050000000000000080FF3F
+            0D50616464696E672E5269676874050000000000000080FF3F0E50616464696E
+            672E426F74746F6D050000000000000080FF3F0A53697A652E57696474680500
+            000000000000B605400B53697A652E4865696768740500000000000000C00340
+            1453697A652E506C6174666F726D44656661756C74080C5374726F6B652E436F
+            6C6F720709783936464346434643075852616469757305000000000000008000
+            4007595261646975730500000000000000800040000000055454657874000953
+            74796C654E616D6506047465787405416C69676E0706436C69656E74064C6F63
+            6B6564090748697454657374080C50616464696E672E4C656674050000000000
+            0000A001400B50616464696E672E546F700500000000000000C000400D506164
+            64696E672E52696768740500000000000000A001400E50616464696E672E426F
+            74746F6D0500000000000000C000400A53697A652E5769647468050000000000
+            0000B605400B53697A652E4865696768740500000000000000C003401453697A
+            652E506C6174666F726D44656661756C740804546578740606627574746F6E00
+            000B54476C6F774566666563740008536F66746E657373050000000000CDCCCC
+            FC3F09476C6F77436F6C6F720709784646464539453043074F70616369747905
+            00000000006666E6FE3F0754726967676572060E4973466F63757365643D7472
+            756507456E61626C6564080000005450463007544C61796F757400095374796C
+            654E616D65060842746E4A61756E650A506F736974696F6E2E58050000000000
+            00008608400A506F736974696F6E2E590500000000000080B507400A53697A65
+            2E57696474680500000000000000B605400B53697A652E486569676874050000
+            0000000000C003401453697A652E506C6174666F726D44656661756C74080854
+            61624F726465720205000A5452656374616E676C6500095374796C654E616D65
+            060A6261636B67726F756E6405416C69676E0708436F6E74656E74730A46696C
+            6C2E436F6C6F7207097846464546454645460748697454657374080A53697A65
+            2E57696474680500000000000000B605400B53697A652E486569676874050000
+            0000000000C003401453697A652E506C6174666F726D44656661756C74080B53
+            74726F6B652E4B696E6407044E6F6E6507585261646975730500000000000000
+            C0004007595261646975730500000000000000C00040000A5452656374616E67
+            6C650005416C69676E0708436F6E74656E74730A46696C6C2E436F6C6F720709
+            636C6159656C6C6F770748697454657374080A53697A652E5769647468050000
+            0000000000B605400B53697A652E4865696768740500000000000000C0034014
+            53697A652E506C6174666F726D44656661756C74080C5374726F6B652E436F6C
+            6F72070978433834463446344607585261646975730500000000000000C00040
+            07595261646975730500000000000000C0004000000F54436F6C6F72416E696D
+            6174696F6E00084475726174696F6E050000000000CDCCCCFC3F0C50726F7065
+            7274794E616D65060A46696C6C2E436F6C6F720A537461727456616C75650709
+            636C614269737175650953746F7056616C75650709636C6159656C6C6F770754
+            726967676572061049734D6F7573654F7665723D7472756500000F54436F6C6F
+            72416E696D6174696F6E00084475726174696F6E050000000000CDCCCCFC3F0C
+            50726F70657274794E616D65060A46696C6C2E436F6C6F720A53746172745661
+            6C75650709636C6159656C6C6F770953746F7056616C75650709636C61426973
+            7175650754726967676572061149734D6F7573654F7665723D66616C73650000
+            1054496E6E6572476C6F774566666563740008536F66746E6573730500000000
+            00CDCCCCFD3F09476C6F77436F6C6F720709636C6159656C6C6F77074F706163
+            6974790500000000006666E6FE3F0754726967676572060E4973507265737365
+            643D7472756507456E61626C65640800000A5452656374616E676C650005416C
+            69676E0706436C69656E740946696C6C2E4B696E6407044E6F6E65064C6F636B
+            6564090748697454657374080C50616464696E672E4C65667405000000000000
+            0080FF3F0B50616464696E672E546F70050000000000000080FF3F0D50616464
+            696E672E5269676874050000000000000080FF3F0E50616464696E672E426F74
+            746F6D050000000000000080FF3F0A53697A652E576964746805000000000000
+            00B605400B53697A652E4865696768740500000000000000C003401453697A65
+            2E506C6174666F726D44656661756C74080C5374726F6B652E436F6C6F720709
+            7839364643464346430758526164697573050000000000000080004007595261
+            64697573050000000000000080004000000005545465787400095374796C654E
+            616D6506047465787405416C69676E0706436C69656E74064C6F636B65640907
+            48697454657374080C50616464696E672E4C6566740500000000000000A00140
+            0B50616464696E672E546F700500000000000000C000400D50616464696E672E
+            52696768740500000000000000A001400E50616464696E672E426F74746F6D05
+            00000000000000C000400A53697A652E57696474680500000000000000B60540
+            0B53697A652E4865696768740500000000000000C003401453697A652E506C61
+            74666F726D44656661756C740804546578740606627574746F6E00000B54476C
+            6F774566666563740008536F66746E657373050000000000CDCCCCFC3F09476C
+            6F77436F6C6F720709636C6159656C6C6F77074F706163697479050000000000
+            6666E6FE3F0754726967676572060E4973466F63757365643D7472756507456E
+            61626C656408000000}
+        end>
+      Left = 32
+      Top = 88
+    end
+  end
+  object LayoutParams: TLayout
+    Align = Bottom
+    Position.Y = 159.000000000000000000
+    Size.Width = 598.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+    object LayoutParamLeft: TLayout
+      Align = Left
+      Size.Width = 105.000000000000000000
+      Size.Height = 200.000000000000000000
+      Size.PlatformDefault = False
+      object ArcDialY: TArcDial
+        Position.X = 21.000000000000000000
+        Position.Y = 70.000000000000000000
+        ShowValue = True
+        Size.Width = 60.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Value = -45.000000000000000000
+        OnChange = ArcDialChange
+        object LabelY: TLabel
+          Align = Client
+          Locked = True
+          Margins.Bottom = 25.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          TextSettings.WordWrap = False
+          Text = 'Y'
+        end
+      end
+      object ArcDialZ: TArcDial
+        Position.X = 21.000000000000000000
+        Position.Y = 135.000000000000000000
+        ShowValue = True
+        Size.Width = 60.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Value = -18.000000000000000000
+        OnChange = ArcDialChange
+        object LabelZ: TLabel
+          Align = Client
+          Locked = True
+          Margins.Bottom = 25.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          TextSettings.WordWrap = False
+          Text = 'Z'
+        end
+      end
+      object ArcDialX: TArcDial
+        Locked = True
+        Position.X = 21.000000000000000000
+        Position.Y = 5.000000000000000000
+        ShowValue = True
+        Size.Width = 60.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Value = -36.000000000000000000
+        OnChange = ArcDialChange
+        object LabelX: TLabel
+          Align = Client
+          Locked = True
+          Margins.Bottom = 25.000000000000000000
+          Size.Width = 60.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          TextSettings.WordWrap = False
+          Text = 'X'
+        end
+      end
+    end
+    object LayoutParamRight: TLayout
+      Align = Right
+      Position.X = 416.000000000000000000
+      Size.Width = 182.000000000000000000
+      Size.Height = 200.000000000000000000
+      Size.PlatformDefault = False
+      object CbAnimation: TComboBox
+        Position.X = 8.000000000000000000
+        Position.Y = 48.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnChange = CbAnimationChange
+      end
+      object BtnStart: TButton
+        Position.X = 13.000000000000000000
+        Position.Y = 112.000000000000000000
+        Size.Width = 156.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Start position'
+        TextSettings.WordWrap = True
+        OnClick = BtnStartClick
+      end
+      object LblAnim: TLabel
+        AutoSize = True
+        Position.X = 45.000000000000000000
+        Position.Y = 19.000000000000000000
+        Size.Width = 83.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Animation'
+      end
+    end
+    object LayoutParamCenter: TLayout
+      Anchors = [akTop]
+      Position.X = 105.000000000000000000
+      Size.Width = 311.000000000000000000
+      Size.Height = 200.000000000000000000
+      Size.PlatformDefault = False
+      object BtnRedRight: TButton
+        Position.X = 58.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnRouge'
+        TabOrder = 0
+        Text = 'R'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnRedLeft: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnRouge'
+        TabOrder = 1
+        Text = 'r'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnGreenLeft: TButton
+        Position.X = 109.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'BtnVert'
+        TabOrder = 2
+        Text = 'g'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnGreenRight: TButton
+        Position.X = 160.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'BtnVert'
+        TabOrder = 3
+        Text = 'G'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnWhiteLeft: TButton
+        Position.X = 211.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'BtnBlanc'
+        TabOrder = 4
+        Text = 'w'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnWhiteRight: TButton
+        Tag = 87
+        Position.X = 262.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'BtnBlanc'
+        TabOrder = 5
+        Text = 'W'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnYellowRight: TButton
+        Position.X = 262.000000000000000000
+        Position.Y = 58.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'BtnJaune'
+        TabOrder = 6
+        Text = 'Y'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnYellowLeft: TButton
+        Position.X = 211.000000000000000000
+        Position.Y = 58.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'BtnJaune'
+        TabOrder = 7
+        Text = 'y'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnBlueRight: TButton
+        Position.X = 159.000000000000000000
+        Position.Y = 58.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'BtnBleu'
+        TabOrder = 8
+        Text = 'B'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnBlueLeft: TButton
+        Position.X = 108.000000000000000000
+        Position.Y = 58.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'BtnBleu'
+        TabOrder = 9
+        Text = 'b'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnOrangeRight: TButton
+        Position.X = 58.000000000000000000
+        Position.Y = 58.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'BtnOrange'
+        TabOrder = 10
+        Text = 'O'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object BtnOrangeLeft: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 58.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'BtnOrange'
+        TabOrder = 11
+        Text = 'o'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = ColorBtnClick
+      end
+      object pbFun: TProgressBar
+        Orientation = Horizontal
+        Position.X = 20.000000000000000000
+        Position.Y = 152.000000000000000000
+        Size.Width = 277.000000000000000000
+        Size.Height = 10.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+      end
+      object cbFun: TComboBox
+        Position.X = 64.000000000000000000
+        Position.Y = 105.000000000000000000
+        Size.Width = 238.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 13
+        OnChange = cbFunChange
+      end
+      object LblFun: TLabel
+        Position.X = 9.000000000000000000
+        Position.Y = 110.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Fun'
+      end
+      object LblP2f: TLabel
+        AutoSize = True
+        Cursor = crHandPoint
+        StyledSettings = [Family, Size, FontColor]
+        HitTest = True
+        Position.X = 56.000000000000000000
+        Position.Y = 168.000000000000000000
+        Size.Width = 202.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'http://p2f-logiciels.com/'
+        OnClick = LblP2fClick
+      end
+    end
+    object FloatAnimLayoutParam: TFloatAnimation
+      Duration = 0.500000000000000000
+      OnFinish = FloatAnimLayoutParamFinish
+      PropertyName = 'Height'
+      StartValue = 1.000000000000000000
+      StopValue = 200.000000000000000000
+    end
+    object LayoutBtParam: TLayout
+      Anchors = [akTop, akRight]
+      Position.X = 548.000000000000000000
+      Position.Y = -48.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      object BtParams: TButton
+        Align = Contents
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'arrowuptoolbutton'
+        TabOrder = 0
+        Text = 'BtParams'
+        OnClick = BtParamsClick
+      end
+    end
+  end
+end

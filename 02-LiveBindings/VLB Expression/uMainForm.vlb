@@ -1,0 +1,16 @@
+﻿[]
+Coordinates=84,124,82,33
+ExplicitSubNodes=
+
+[Label2]
+Coordinates=200,70,46,51
+
+[Label1]
+Coordinates=210,0,46,51
+
+[ListBox1]
+Coordinates=0,0,84,123
+
+[BindingsList1]
+Coordinates=84,124,82,33
+

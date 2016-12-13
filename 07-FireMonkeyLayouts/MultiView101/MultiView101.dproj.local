@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/06/25 15:01:47.000.651,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/06/25 15:05:07.000.001,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uMainForm.fmx</Transaction>
+    <Transaction>2015/06/25 15:05:07.000.001,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uMainForm.pas</Transaction>
+    <Transaction>2015/06/25 15:05:10.000.904,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\MultiView101.dproj</Transaction>
+    <Transaction>2015/06/25 15:17:32.000.909,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.pas</Transaction>
+    <Transaction>2015/06/25 15:17:39.000.835,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit3.pas</Transaction>
+    <Transaction>2015/06/25 15:17:55.000.435,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormOne.pas</Transaction>
+    <Transaction>2015/06/25 15:17:55.000.435,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormOne.fmx</Transaction>
+    <Transaction>2015/06/25 15:18:00.000.694,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit3.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormTwo.fmx</Transaction>
+    <Transaction>2015/06/25 15:18:00.000.694,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit3.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormTwo.pas</Transaction>
+    <Transaction>2015/06/25 15:20:15.000.214,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit4.pas</Transaction>
+    <Transaction>2015/06/25 15:21:06.000.944,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit4.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormThree.pas</Transaction>
+    <Transaction>2015/06/25 15:21:06.000.944,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit4.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormThree.fmx</Transaction>
+    <Transaction>2015/06/25 15:39:17.000.458,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.pas</Transaction>
+    <Transaction>2015/06/25 15:39:24.000.759,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormBase.pas</Transaction>
+    <Transaction>2015/06/25 15:39:24.000.759,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormBase.fmx</Transaction>
+    <Transaction>2015/06/25 15:41:56.000.525,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit1.pas</Transaction>
+    <Transaction>2015/06/25 15:42:53.000.368,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormTwo.pas=</Transaction>
+    <Transaction>2015/06/25 15:42:53.000.352,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormThree.pas=</Transaction>
+    <Transaction>2015/06/25 15:42:53.000.336,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormOne.pas=</Transaction>
+    <Transaction>2015/06/25 15:43:00.000.372,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.pas</Transaction>
+    <Transaction>2015/06/25 15:43:06.000.253,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormOne.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.fmx</Transaction>
+    <Transaction>2015/06/25 15:43:06.000.253,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormOne.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.pas</Transaction>
+    <Transaction>2015/06/25 15:43:21.000.637,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormOne.pas=</Transaction>
+    <Transaction>2015/06/25 15:43:51.000.611,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit1.pas</Transaction>
+    <Transaction>2015/06/25 15:43:55.000.455,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.pas</Transaction>
+    <Transaction>2015/06/25 15:43:59.000.059,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit3.pas</Transaction>
+    <Transaction>2015/06/25 15:44:05.000.283,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormOne.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit1.pas</Transaction>
+    <Transaction>2015/06/25 15:44:05.000.283,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormOne.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit1.fmx</Transaction>
+    <Transaction>2015/06/25 15:44:11.000.960,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormTwo.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit3.fmx</Transaction>
+    <Transaction>2015/06/25 15:44:11.000.960,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormTwo.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit3.pas</Transaction>
+    <Transaction>2015/06/25 15:44:14.000.940,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormThree.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.pas</Transaction>
+    <Transaction>2015/06/25 15:44:14.000.940,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\uFormThree.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MultiView101\Unit2.fmx</Transaction>
+  </Transactions>
+	<MobileDevice>%iosdevice%9423306d1a3afaa2ee710d1d1b3bafd92b577664-iOSDevice32</MobileDevice>
+	<ActiveMobileDevice>
+		<PRIZZATO iOSSimulator="_iossimulator_6FC12671-9C31-4A7E-A97E-E024E1B9315C" iOSDevice32="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="0022831207"/>
+		<PMAC iOSSimulator="_iossimulator_AD9BFDF3-D701-43D8-8F35-91CE1AB4A5DC"/>
+	</ActiveMobileDevice>
+</BorlandProject>

@@ -1,0 +1,99 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object NavigatorPrototypeBindSource1: TBindNavigator
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    DataSource = PrototypeBindSource1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 16.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 609.000000000000000000
+    Size.Height = 313.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    RowHeight = 21.000000000000000000
+    RowCount = 200
+    Viewport.Width = 589.000000000000000000
+    Viewport.Height = 288.000000000000000000
+  end
+  object EditContactName1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Text = 'Mr. MARK ANDERSON'
+    Position.X = 24.000000000000000000
+    Position.Y = 416.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    object LabelContactName1: TLabel
+      Position.Y = -16.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'ContactName1'
+    end
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'ContactName1'
+        Generator = 'ContactNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactTitle1'
+        Generator = 'ContactTitles'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 552
+    Top = 8
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 444
+    Top = 13
+    object LinkControlToFieldContactName1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'ContactName1'
+      Control = EditContactName1
+      Track = False
+      CustomFormat = '"Mr. " + UpperCase(%s)'
+    end
+    object LinkGridToDataSourcePrototypeBindSource1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'ContactName1'
+          Width = 155
+        end
+        item
+          MemberName = 'ContactTitle1'
+          Width = 105
+        end>
+    end
+  end
+end

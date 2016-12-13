@@ -1,0 +1,77 @@
+#unuse BDE.DBTables
+#unuse BDE.BDEConst
+#unuse DBTables
+#unuse BDEConst
+#unuse BDEMTS
+#unuse BDE
+
+#remove SessionName
+#remove PrivateDir
+#remove Origin
+
+#migrate TTransIsolation -> TFDTxIsolation, FireDAC.Stan.Option
+#migrate tiDirtyRead -> xiDirtyRead, FireDAC.Stan.Option
+#migrate tiReadCommitted -> xiReadCommitted, FireDAC.Stan.Option
+#migrate tiRepeatableRead -> xiRepeatableRead, FireDAC.Stan.Option
+
+#migrate TUpdateKind -> TFDUpdateRequest, FireDAC.Phys.Intf
+#migrate ukModify -> arUpdate, FireDAC.Phys.Intf
+#migrate ukInsert -> arInsert, FireDAC.Phys.Intf
+#migrate ukDelete -> arDelete, FireDAC.Phys.Intf
+
+#migrate TUpdateAction -> TFDErrorAction, FireDAC.Stan.Intf
+#migrate uaFail -> eaFail, FireDAC.Stan.Intf
+#migrate uaAbort -> eaExitFailure, FireDAC.Stan.Intf
+#migrate uaSkip -> eaSkip, FireDAC.Stan.Intf
+#migrate uaRetry -> eaRetry, FireDAC.Stan.Intf
+#migrate uaApplied -> eaApplied, FireDAC.Stan.Intf
+
+#migrate TBatchMode -> TFDDataMoveMode, FireDAC.Comp.DataMove
+#migrate batAppend -> dmAppend, FireDAC.Comp.DataMove
+#migrate batUpdate -> dmUpdate, FireDAC.Comp.DataMove
+#migrate batAppendUpdate -> dmAppendUpdate, FireDAC.Comp.DataMove
+#migrate batDelete -> dmDelete, FireDAC.Comp.DataMove
+#migrate batCopy -> dmAlwaysInsert, FireDAC.Comp.DataMove
+
+#migrate TDBScreenCursors -> TFDGUIxScreenCursor, FireDAC.UI.Intf
+#migrate dcrDefault -> gcrDefault
+#migrate dcrHourGlass -> gcrHourGlass
+#migrate dcrSQLWait -> gcrSQLWait
+#migrate dcrOther -> gcrNone
+
+#migrate Session.* -> FDManager.*, FireDAC.Comp.Client
+#migrate DatabaseName -> ConnectionName
+#migrate AliasName -> ConnectionDefName
+#migrate IsAlias -> IsConnectionDef
+#migrate AddAlias -> AddConnectionDef
+#migrate DeleteAlias -> DeleteConnectionDef
+#migrate ModifyAlias -> ModifyConnectionDef
+#migrate GetAliasParams -> GetConnectionDefParams
+#migrate GetAliasNames -> GetConnectionDefNames
+#migrate FindDatabase -> FindConnection
+#migrate OpenDatabase -> OpenConnection
+#migrate CloseDatabase -> CloseConnection
+#migrate GetDatabaseNames -> GetConnectionNames
+#migrate Unidirectional -> FetchOptions.Unidirectional
+#migrate UpdateRecordTypes -> FilterChanges
+#migrate RequestLive -> UpdateOptions.RequestLive
+#migrate UpdateMode -> UpdateOptions.UpdateMode
+#migrate TransIsolation -> TxOptions.Isolation
+#migrate TQuery:DataSource -> MasterSource
+#migrate TTable:ReadOnly -> UpdateOptions.ReadOnly
+#migrate TDatabase:Execute -> ExecSQL
+
+#migrate TSession -> TFDManager, FireDAC.Comp.Client
+#migrate TDatabase -> TFDConnection, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Comp.Client
+#migrate TTable -> TFDTable, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client
+#migrate TQuery -> TFDQuery, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client
+#migrate TUpdateSQL -> TFDUpdateSQL, FireDAC.Comp.Client
+#migrate TStoredProc -> TFDStoredProc, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client
+#migrate TParam -> TFDParam, FireDAC.Stan.Param
+#migrate TParams -> TFDParams, FireDAC.Stan.Param
+#migrate TBlobStream -> TFDBlobStream, FireDAC.Comp.DataSet
+#migrate TAutoIncField -> TFDAutoIncField, FireDAC.Comp.DataSet
+#migrate TBatchMove -> TFDDataMove, FireDAC.Comp.DataMove
+#migrate TDBDataSet -> TFDRDBMSDataSet, FireDAC.Comp.Client
+#migrate TBDEDataSet -> TFDRDBMSDataSet, FireDAC.Comp.Client
+#migrate EDBEngineError -> EFDDBEngineException, FireDAC.Stan.Error

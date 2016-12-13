@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/10/14 23:37:37.000.606,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/14 23:41:06.000.152,C:\DCONF2014\UsingJavaLibraries\uMain.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2014/10/14 23:41:06.000.152,C:\DCONF2014\UsingJavaLibraries\uMain.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/14 23:41:29.000.573,C:\DCONF2014\UsingJavaLibraries\UsingJavaLibraries.dproj=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2014/10/14 23:41:37.000.987,C:\DCONF2014\UsingJavaLibraries\uMainForm.fmx=C:\DCONF2014\UsingJavaLibraries\uMain.fmx</Transaction>
+    <Transaction>2014/10/14 23:41:37.000.987,C:\DCONF2014\UsingJavaLibraries\uMainForm.pas=C:\DCONF2014\UsingJavaLibraries\uMain.pas</Transaction>
+    <Transaction>2014/10/14 23:41:47.000.509,=C:\DCONF2014\base64coder.jar</Transaction>
+    <Transaction>2014/10/14 23:42:39.000.642,=C:\DCONF2014\Androidapi.JNI.base64coder.pas</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+	<ActiveMobileDevice>
+		<PRIZZATO iOSSimulator="_iossimulator_06C627C6-685F-42D3-833E-677D89C22077"/>
+		<NoProfile Android="04db9f214811d5d3"/>
+	</ActiveMobileDevice>
+</BorlandProject>

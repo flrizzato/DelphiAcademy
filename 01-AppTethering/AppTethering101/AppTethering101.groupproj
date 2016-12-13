@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{977E8479-3625-4828-B2E1-3F5AFB293697}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="HubAppVCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="HubAppFMX.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RemoteAppFMX.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="HubAppVCL">
+        <MSBuild Projects="HubAppVCL.dproj"/>
+    </Target>
+    <Target Name="HubAppVCL:Clean">
+        <MSBuild Projects="HubAppVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HubAppVCL:Make">
+        <MSBuild Projects="HubAppVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HubAppFMX">
+        <MSBuild Projects="HubAppFMX.dproj"/>
+    </Target>
+    <Target Name="HubAppFMX:Clean">
+        <MSBuild Projects="HubAppFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HubAppFMX:Make">
+        <MSBuild Projects="HubAppFMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RemoteAppFMX">
+        <MSBuild Projects="RemoteAppFMX.dproj"/>
+    </Target>
+    <Target Name="RemoteAppFMX:Clean">
+        <MSBuild Projects="RemoteAppFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RemoteAppFMX:Make">
+        <MSBuild Projects="RemoteAppFMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="HubAppVCL;HubAppFMX;RemoteAppFMX"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="HubAppVCL:Clean;HubAppFMX:Clean;RemoteAppFMX:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="HubAppVCL:Make;HubAppFMX:Make;RemoteAppFMX:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

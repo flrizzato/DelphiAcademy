@@ -1,0 +1,17 @@
+inherited FormTwo: TFormTwo
+  Caption = 'FormBase3'
+  DesignerMasterStyle = 0
+  inherited LayoutClient: TLayout
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, Style]
+      Size.Width = 640.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 36.000000000000000000
+      TextSettings.FontColor = claBlue
+      TextSettings.HorzAlign = Center
+      Text = 'Form #2'
+    end
+  end
+end

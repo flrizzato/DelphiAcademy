@@ -1,0 +1,159 @@
+object Form27: TForm27
+  Left = 0
+  Top = 0
+  Caption = 'Form27'
+  ClientHeight = 271
+  ClientWidth = 232
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Button2: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 0
+    Text = 'Switch'
+    OnClick = Button2Click
+  end
+  object TabControl1: TTabControl
+    Position.X = 16.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = Dots
+    Sizes = (
+      201s
+      217s
+      201s
+      217s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      ExplicitSize.cx = 67.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Tab1Layout: TLayout
+        Align = Client
+        Size.Width = 201.000000000000000000
+        Size.Height = 217.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Button1: TButton
+          Position.X = 24.000000000000000000
+          Position.Y = 16.000000000000000000
+          TabOrder = 0
+          Text = 'Button1'
+        end
+        object Edit1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          Position.X = 24.000000000000000000
+          Position.Y = 48.000000000000000000
+        end
+        object CheckBox1: TCheckBox
+          Position.X = 24.000000000000000000
+          Position.Y = 80.000000000000000000
+          TabOrder = 2
+          Text = 'CheckBox1'
+        end
+        object ProgressBar1: TProgressBar
+          Orientation = Horizontal
+          Position.X = 32.000000000000000000
+          Position.Y = 112.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          Value = 50.000000000000000000
+          object FloatAnimation2: TFloatAnimation
+            Enabled = True
+            Duration = 2.000000000000000000
+            Loop = True
+            PropertyName = 'Value'
+            StartValue = 0.000000000000000000
+            StopValue = 100.000000000000000000
+          end
+        end
+      end
+      object TransitionEffect1: TRotateCrumpleTransitionEffect
+        Enabled = False
+        Progress = 30.000000000000000000
+        RandomSeed = 0.300000011920929000
+        object FloatAnimation1: TFloatAnimation
+          Duration = 2.000000000000000000
+          OnProcess = FloatAnimation1Process
+          OnFinish = FloatAnimation1Finish
+          PropertyName = 'Progress'
+          StartValue = 0.000000000000000000
+          StopValue = 100.000000000000000000
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      ExplicitSize.cx = 68.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Tab2Layout: TLayout
+        Align = Client
+        Size.Width = 201.000000000000000000
+        Size.Height = 217.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object RadioButton1: TRadioButton
+          Position.X = 16.000000000000000000
+          Position.Y = 31.000000000000000000
+          TabOrder = 0
+          Text = 'RadioButton1'
+        end
+        object RadioButton2: TRadioButton
+          Position.X = 16.000000000000000000
+          Position.Y = 63.000000000000000000
+          TabOrder = 1
+          Text = 'RadioButton2'
+        end
+        object TrackBar1: TTrackBar
+          CanParentFocus = True
+          Orientation = Horizontal
+          Position.X = 24.000000000000000000
+          Position.Y = 104.000000000000000000
+          TabOrder = 2
+          object FloatAnimation3: TFloatAnimation
+            Enabled = True
+            Duration = 1.000000000000000000
+            Loop = True
+            PropertyName = 'Value'
+            StartValue = 0.000000000000000000
+            StopValue = 100.000000000000000000
+          end
+        end
+        object ArcDial1: TArcDial
+          Position.X = 112.000000000000000000
+          Position.Y = 136.000000000000000000
+          Size.Width = 65.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+        end
+      end
+    end
+  end
+end

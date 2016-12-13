@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4991C828-B238-4468-92CD-D527A294D088}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="JsonWorkbench\JsonWorkbench.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BatchMove\Mongo_BatchMove.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DataSet\Mongo_DataSet.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Explore\Mongo_Explore.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="General\Mongo_Basic.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ListView\Mongo_ListView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Restaurants\Mongo_Restaurants.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="JsonWorkbench">
+        <MSBuild Projects="JsonWorkbench\JsonWorkbench.dproj"/>
+    </Target>
+    <Target Name="JsonWorkbench:Clean">
+        <MSBuild Projects="JsonWorkbench\JsonWorkbench.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JsonWorkbench:Make">
+        <MSBuild Projects="JsonWorkbench\JsonWorkbench.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mongo_BatchMove">
+        <MSBuild Projects="BatchMove\Mongo_BatchMove.dproj"/>
+    </Target>
+    <Target Name="Mongo_BatchMove:Clean">
+        <MSBuild Projects="BatchMove\Mongo_BatchMove.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mongo_BatchMove:Make">
+        <MSBuild Projects="BatchMove\Mongo_BatchMove.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mongo_DataSet">
+        <MSBuild Projects="DataSet\Mongo_DataSet.dproj"/>
+    </Target>
+    <Target Name="Mongo_DataSet:Clean">
+        <MSBuild Projects="DataSet\Mongo_DataSet.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mongo_DataSet:Make">
+        <MSBuild Projects="DataSet\Mongo_DataSet.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mongo_Explore">
+        <MSBuild Projects="Explore\Mongo_Explore.dproj"/>
+    </Target>
+    <Target Name="Mongo_Explore:Clean">
+        <MSBuild Projects="Explore\Mongo_Explore.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mongo_Explore:Make">
+        <MSBuild Projects="Explore\Mongo_Explore.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mongo_Basic">
+        <MSBuild Projects="General\Mongo_Basic.dproj"/>
+    </Target>
+    <Target Name="Mongo_Basic:Clean">
+        <MSBuild Projects="General\Mongo_Basic.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mongo_Basic:Make">
+        <MSBuild Projects="General\Mongo_Basic.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mongo_ListView">
+        <MSBuild Projects="ListView\Mongo_ListView.dproj"/>
+    </Target>
+    <Target Name="Mongo_ListView:Clean">
+        <MSBuild Projects="ListView\Mongo_ListView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mongo_ListView:Make">
+        <MSBuild Projects="ListView\Mongo_ListView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Mongo_Restaurants">
+        <MSBuild Projects="Restaurants\Mongo_Restaurants.dproj"/>
+    </Target>
+    <Target Name="Mongo_Restaurants:Clean">
+        <MSBuild Projects="Restaurants\Mongo_Restaurants.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Mongo_Restaurants:Make">
+        <MSBuild Projects="Restaurants\Mongo_Restaurants.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="JsonWorkbench;Mongo_BatchMove;Mongo_DataSet;Mongo_Explore;Mongo_Basic;Mongo_ListView;Mongo_Restaurants"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="JsonWorkbench:Clean;Mongo_BatchMove:Clean;Mongo_DataSet:Clean;Mongo_Explore:Clean;Mongo_Basic:Clean;Mongo_ListView:Clean;Mongo_Restaurants:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="JsonWorkbench:Make;Mongo_BatchMove:Make;Mongo_DataSet:Make;Mongo_Explore:Make;Mongo_Basic:Make;Mongo_ListView:Make;Mongo_Restaurants:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

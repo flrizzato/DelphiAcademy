@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2016/06/28 00:57:09.773,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/06/28 00:57:30.895,C:\DelphiAcademy\06-FireMonkey3D\RubiksCube\RubikCube.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/06/28 00:57:48.321,=C:\DelphiAcademy\06-FireMonkey3D\RubiksCube\UCommon.pas</Transaction>
+    <Transaction>2016/06/28 00:57:48.354,=C:\DelphiAcademy\06-FireMonkey3D\RubiksCube\ULaunchWebbrowser.pas</Transaction>
+    <Transaction>2016/06/28 00:57:49.474,=C:\DelphiAcademy\06-FireMonkey3D\RubiksCube\UMain.pas</Transaction>
+  </Transactions>
+  <ActiveMobileDevice>   <PMAC iOSSimulator="_iossimulator_AD9BFDF3-D701-43D8-8F35-91CE1AB4A5DC"/>
+    <NoProfile Android="0022831207"/>
+  </ActiveMobileDevice>
+</BorlandProject>

@@ -1,0 +1,88 @@
+object Form29: TForm29
+  Left = 0
+  Top = 0
+  Caption = 'Form29'
+  ClientHeight = 480
+  ClientWidth = 671
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object CheckBox1: TCheckBox
+    Scale.X = 2.000000000000000000
+    Scale.Y = 2.000000000000000000
+    TabOrder = 1
+    Text = 'Horizontal'
+    object FloatAnimation1: TFloatAnimation
+      AnimationType = InOut
+      Duration = 2.000000000000000000
+      Interpolation = Quintic
+      PropertyName = 'Position.X'
+      StartValue = 0.000000000000000000
+      StopValue = 500.000000000000000000
+      Trigger = 'IsChecked=true'
+      TriggerInverse = 'IsChecked=false'
+    end
+  end
+  object CheckBox2: TCheckBox
+    Position.Y = 40.000000000000000000
+    Scale.X = 2.000000000000000000
+    Scale.Y = 2.000000000000000000
+    TabOrder = 0
+    Text = 'Vertical'
+    object FloatAnimation2: TFloatAnimation
+      Duration = 2.000000000000000000
+      PropertyName = 'Position.Y'
+      StartValue = 40.000000000000000000
+      StopValue = 440.000000000000000000
+      Trigger = 'IsChecked=true'
+      TriggerInverse = 'IsChecked=false'
+    end
+  end
+  object Button1: TButton
+    Position.Y = 80.000000000000000000
+    TabOrder = 2
+    Text = 'Scale'
+    object FloatAnimation3: TFloatAnimation
+      Duration = 1.000000000000000000
+      PropertyName = 'Scale.X'
+      StartValue = 1.000000000000000000
+      StopValue = 4.000000000000000000
+      Trigger = 'IsMouseOver=true'
+      TriggerInverse = 'IsMouseOver=false'
+    end
+    object FloatAnimation4: TFloatAnimation
+      Duration = 1.000000000000000000
+      PropertyName = 'Scale.Y'
+      StartValue = 1.000000000000000000
+      StopValue = 4.000000000000000000
+      Trigger = 'IsMouseOver=true'
+      TriggerInverse = 'IsMouseOver=false'
+    end
+  end
+  object Rectangle1: TRectangle
+    Position.X = 384.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+    OnClick = Rectangle1Click
+  end
+  object ColorPanel1: TColorPanel
+    Color = claSienna
+    Position.X = 464.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 150.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Anchors = [akRight, akBottom]
+    Position.X = 584.000000000000000000
+    Position.Y = 456.000000000000000000
+    TabOrder = 5
+    Text = 'Button2'
+    OnClick = Button2Click
+  end
+end

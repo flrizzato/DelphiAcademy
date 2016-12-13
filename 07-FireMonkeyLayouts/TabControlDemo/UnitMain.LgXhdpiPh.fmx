@@ -1,0 +1,96 @@
+inherited HeaderFooterwithNavigation_LgXhdpiPh: THeaderFooterwithNavigation_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited TopToolBar: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited ToolBarLabel: TLabel
+      Size.Width = 354.000000000000000000
+    end
+    inherited btnNext: TSpeedButton
+      Position.X = 402.000000000000000000
+    end
+  end
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    inherited TabItem2: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited Memo1: TMemo
+        Viewport.Width = 42.000000000000000000
+        Viewport.Height = 205.000000000000000000
+      end
+    end
+    inherited TabItem3: TTabItem
+      ExplicitSize.cx = 115.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+  inherited VertScrollBox1: TVertScrollBox
+    Size.Width = 450.000000000000000000
+    Size.Height = 367.000000000000000000
+    Viewport.Width = 434.000000000000000000
+    Viewport.Height = 367.000000000000000000
+    inherited LabelTabPosition: TLabel
+      Size.Width = 394.000000000000000000
+    end
+    inherited PopupBoxTabPosition: TPopupBox
+      Size.Width = 394.000000000000000000
+    end
+    inherited LabelFullSize: TLabel
+      Size.Width = 394.000000000000000000
+    end
+    inherited PopupBoxFullSize: TPopupBox
+      Size.Width = 394.000000000000000000
+    end
+    inherited LabelTabHeight: TLabel
+      Size.Width = 394.000000000000000000
+    end
+    inherited TrackBarTabHeight: TTrackBar
+      Size.Width = 394.000000000000000000
+    end
+    inherited CheckBoxEnabled: TCheckBox
+      Size.Width = 394.000000000000000000
+    end
+    inherited CheckBoxAutoSize: TCheckBox
+      Size.Width = 394.000000000000000000
+    end
+    inherited LabelWidth: TLabel
+      Size.Width = 394.000000000000000000
+    end
+    inherited TrackBarWidth: TTrackBar
+      Size.Width = 394.000000000000000000
+    end
+    inherited LabelHeight: TLabel
+      Size.Width = 394.000000000000000000
+    end
+    inherited TrackBarHeight: TTrackBar
+      Size.Width = 394.000000000000000000
+    end
+    inherited CheckBoxBoundsAnimation: TCheckBox
+      Size.Width = 394.000000000000000000
+    end
+    inherited CheckBoxHorzTouchTracki: TCheckBox
+      Size.Width = 394.000000000000000000
+    end
+    inherited ListBoxVisible: TListBox
+      Size.Width = 394.000000000000000000
+      Viewport.Width = 390.000000000000000000
+      Viewport.Height = 84.000000000000000000
+    end
+    inherited LabelVisible: TLabel
+      Size.Width = 394.000000000000000000
+    end
+    inherited Layout1: TLayout
+      Size.Width = 394.000000000000000000
+    end
+  end
+  inherited ActionList1: TActionList
+    inherited AddAction: TAction
+      ImageIndex = 5
+    end
+    inherited DeleteAction: TAction
+      ImageIndex = 2
+    end
+  end
+end

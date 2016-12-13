@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/02/19 09:09:35.000.518,=C:\Users\Administrador\Documents\RAD Studio\Projects\ItemDetail1.pas</Transaction>
+    <Transaction>2013/02/19 09:09:35.000.257,=C:\Users\Administrador\Documents\RAD Studio\Projects\GroupedItems1.pas</Transaction>
+    <Transaction>2013/03/04 12:54:59.000.767,=C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/03/04 12:57:12.000.090,=C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/03/05 10:09:11.000.272,=C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/03/05 10:15:43.000.193,C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Administrador\Documents\RAD Studio\Projects\FireDac1\Unit1.dfm</Transaction>
+    <Transaction>2013/03/05 10:15:43.000.680,C:\Users\Administrador\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Administrador\Documents\RAD Studio\Projects\FireDac1\Project1.dproj</Transaction>
+    <Transaction>2013/03/05 10:15:43.000.193,C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\FireDac1\Unit1.pas</Transaction>
+    <Transaction>2014/09/09 15:01:37.000.505,C:\DTOURXE7\07 Data\FireDAC_MultiDB\FireDAC_MultiDB.dproj=C:\DTOURXE7\07 Data\FireDAC_MultiDB\Project1.dproj</Transaction>
+    <Transaction>2014/09/09 15:01:42.000.760,C:\DTOURXE7\07 Data\FireDAC_MultiDB\uMainForm.pas=C:\DTOURXE7\07 Data\FireDAC_MultiDB\Unit1.pas</Transaction>
+    <Transaction>2014/09/09 15:01:42.000.760,C:\DTOURXE7\07 Data\FireDAC_MultiDB\uMainForm.dfm=C:\DTOURXE7\07 Data\FireDAC_MultiDB\Unit1.dfm</Transaction>
+    <Transaction>2016/08/09 00:17:07.000.045,C:\DelphiAcademy\09-FireDACIntro\FDMultiDB\FireDAC_MultiDB.dproj=C:\DelphiAcademy\09-FireDACIntro\FDMultiDB\FDMultiDB.dproj</Transaction>
+    <Transaction>2016/09/02 17:03:17.000.337,C:\DelphiAcademy\11-FireDACUpdates\FDMultiDB\FDMultiDB.dproj=C:\DelphiAcademy\11-FireDACUpdates\FDMultiDB\FDMultiDBv2.dproj</Transaction>
+    <Transaction>2016/09/29 17:06:28.000.865,C:\DelphiAcademy\13-FireDACMonitoring\FDMultiDBv3\FDMultiDBv2.dproj=C:\DelphiAcademy\13-FireDACMonitoring\FDMultiDBv3\FDMultiDBv3.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

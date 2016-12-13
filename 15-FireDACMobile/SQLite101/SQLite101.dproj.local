@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/11/01 00:42:02.000.958,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/11/01 00:43:21.000.022,C:\DelphiAcademy\15-FireDACMobile\SQLite101\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2016/11/01 00:43:21.000.022,C:\DelphiAcademy\15-FireDACMobile\SQLite101\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/11/01 00:43:24.000.324,C:\DelphiAcademy\15-FireDACMobile\SQLite101\SQLite101.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/11/01 01:10:19.000.449,=C:\DelphiAcademy\15-FireDACMobile\fddemo.sdb</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="0022831207"/>
+		<PRIZZATOOSX iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf" iOSDevice32="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf" iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

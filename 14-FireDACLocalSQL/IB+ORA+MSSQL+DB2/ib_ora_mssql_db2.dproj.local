@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/10/17 19:26:45.000.556,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/10/17 19:27:04.000.554,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\14-FireDACLocalSQL\IB+ORA+MSSQL+DB2\uMainForm.pas</Transaction>
+    <Transaction>2016/10/17 19:27:04.000.554,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\DelphiAcademy\14-FireDACLocalSQL\IB+ORA+MSSQL+DB2\uMainForm.dfm</Transaction>
+    <Transaction>2016/10/17 19:27:16.000.629,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\14-FireDACLocalSQL\IB+ORA+MSSQL+DB2\ib_ora_mssql_db2.dproj</Transaction>
+    <Transaction>2016/10/17 19:27:44.000.199,=C:\DelphiAcademy\14-FireDACLocalSQL\IB+ORA+MSSQL+DB2\Unit1.pas</Transaction>
+    <Transaction>2016/10/17 19:27:53.000.107,C:\DelphiAcademy\14-FireDACLocalSQL\IB+ORA+MSSQL+DB2\Unit1.pas=C:\DelphiAcademy\14-FireDACLocalSQL\IB+ORA+MSSQL+DB2\uMainDM.pas</Transaction>
+    <Transaction>2016/10/17 19:27:53.000.107,C:\DelphiAcademy\14-FireDACLocalSQL\IB+ORA+MSSQL+DB2\Unit1.dfm=C:\DelphiAcademy\14-FireDACLocalSQL\IB+ORA+MSSQL+DB2\uMainDM.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

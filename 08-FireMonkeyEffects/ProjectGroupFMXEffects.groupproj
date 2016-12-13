@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BBF6B0E0-1C5C-4578-98B2-E22B4E3B3940}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ShaderFilters\ShaderFilters.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Animations\AnimationSample.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Effects\EffectSample.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PageTurn\PageTurnSample.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Transitions\TransitionSample.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ShaderFilters">
+        <MSBuild Projects="ShaderFilters\ShaderFilters.dproj"/>
+    </Target>
+    <Target Name="ShaderFilters:Clean">
+        <MSBuild Projects="ShaderFilters\ShaderFilters.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ShaderFilters:Make">
+        <MSBuild Projects="ShaderFilters\ShaderFilters.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AnimationSample">
+        <MSBuild Projects="Animations\AnimationSample.dproj"/>
+    </Target>
+    <Target Name="AnimationSample:Clean">
+        <MSBuild Projects="Animations\AnimationSample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AnimationSample:Make">
+        <MSBuild Projects="Animations\AnimationSample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EffectSample">
+        <MSBuild Projects="Effects\EffectSample.dproj"/>
+    </Target>
+    <Target Name="EffectSample:Clean">
+        <MSBuild Projects="Effects\EffectSample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EffectSample:Make">
+        <MSBuild Projects="Effects\EffectSample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PageTurnSample">
+        <MSBuild Projects="PageTurn\PageTurnSample.dproj"/>
+    </Target>
+    <Target Name="PageTurnSample:Clean">
+        <MSBuild Projects="PageTurn\PageTurnSample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PageTurnSample:Make">
+        <MSBuild Projects="PageTurn\PageTurnSample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TransitionSample">
+        <MSBuild Projects="Transitions\TransitionSample.dproj"/>
+    </Target>
+    <Target Name="TransitionSample:Clean">
+        <MSBuild Projects="Transitions\TransitionSample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TransitionSample:Make">
+        <MSBuild Projects="Transitions\TransitionSample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ShaderFilters;AnimationSample;EffectSample;PageTurnSample;TransitionSample"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ShaderFilters:Clean;AnimationSample:Clean;EffectSample:Clean;PageTurnSample:Clean;TransitionSample:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ShaderFilters:Make;AnimationSample:Make;EffectSample:Make;PageTurnSample:Make;TransitionSample:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

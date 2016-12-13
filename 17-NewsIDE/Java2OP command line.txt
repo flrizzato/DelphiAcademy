@@ -1,0 +1,1 @@
+C:\Java2OP\java2op.exe -jar C:\DC2015\NewsIDE\base64coder.jar -unit C:\DC2015\NewsIDE\Androidapi.JNI.base64coder

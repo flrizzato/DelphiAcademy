@@ -1,0 +1,23 @@
+
+html, body, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+.wrapped {
+  white-space: normal;
+  unicode-bidi: normal;
+}
+
+.error {
+  color: red;
+}
+
+#code-box {
+  overflow: auto;
+}

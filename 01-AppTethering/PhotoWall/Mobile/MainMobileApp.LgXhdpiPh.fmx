@@ -1,0 +1,34 @@
+inherited Form49_LgXhdpiPh: TForm49_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ToolBarBottom: TToolBar
+    Position.Y = 781.000000000000000000
+    Size.Width = 480.000000000000000000
+  end
+  inherited LbWalls: TListBox
+    Position.Y = 651.000000000000000000
+    Size.Width = 480.000000000000000000
+  end
+  inherited CalloutPanel1: TCalloutPanel
+    Size.Width = 470.000000000000000000
+    Size.Height = 552.000000000000000000
+    inherited ImCaptured: TImage
+      Size.Width = 450.000000000000000000
+      Size.Height = 516.000000000000000000
+    end
+  end
+  inherited ToolBarTop: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited Label2: TLabel
+      Size.Width = 480.000000000000000000
+    end
+    inherited BtRefresh: TButton
+      Position.X = 427.000000000000000000
+    end
+  end
+  inherited Label1: TLabel
+    Position.Y = 620.000000000000000000
+    Size.Width = 475.000000000000000000
+  end
+end

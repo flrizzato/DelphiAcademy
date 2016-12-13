@@ -1,0 +1,57 @@
+inherited frmMain_iPad: TfrmMain_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 0
+  inherited Dest: TImage
+    Size.Width = 491.000000000000000000
+    Size.Height = 1004.000000000000000000
+  end
+  inherited Layout1: TLayout
+    Size.Height = 1006.000000000000000000
+    inherited Layout2: TLayout
+      inherited listCat: TListBox
+        Viewport.Width = 100.000000000000000000
+        Viewport.Height = 235.000000000000000000
+        inherited BlurItem: TListBoxItem
+          Size.Width = 100.000000000000000000
+        end
+        inherited ColorItem: TListBoxItem
+          Size.Width = 100.000000000000000000
+        end
+        inherited ColorAdjustItem: TListBoxItem
+          Size.Width = 100.000000000000000000
+        end
+        inherited CompositeItem: TListBoxItem
+          Size.Width = 100.000000000000000000
+        end
+        inherited DistortionItem: TListBoxItem
+          Size.Width = 100.000000000000000000
+        end
+        inherited GeneratorItem: TListBoxItem
+          Size.Width = 100.000000000000000000
+        end
+        inherited GeometryItem: TListBoxItem
+          Size.Width = 100.000000000000000000
+        end
+        inherited StyleItem: TListBoxItem
+          Size.Width = 100.000000000000000000
+        end
+        inherited TilesItem: TListBoxItem
+          Size.Width = 100.000000000000000000
+        end
+        inherited TransitionItem: TListBoxItem
+          Size.Width = 100.000000000000000000
+        end
+      end
+      inherited listFX: TListBox
+        Viewport.Width = 173.000000000000000000
+        Viewport.Height = 235.000000000000000000
+      end
+    end
+    inherited panelSettings: TListBox
+      Size.Height = 731.000000000000000000
+      Viewport.Width = 278.000000000000000000
+      Viewport.Height = 731.000000000000000000
+    end
+  end
+end

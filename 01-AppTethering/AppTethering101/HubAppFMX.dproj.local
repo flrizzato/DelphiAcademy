@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/04/11 16:44:06.000.591,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 11:46:17.000.671,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 11:51:45.000.216,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/13 12:12:40.000.560,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/04/14 23:40:48.000.453,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2016/04/14 23:42:25.000.118,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit3.fmx=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\HubAppFMXMain.fmx</Transaction>
+    <Transaction>2016/04/14 23:42:25.000.118,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit3.pas=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\HubAppFMXMain.pas</Transaction>
+    <Transaction>2016/04/14 23:42:29.000.226,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\HubAppFMX.dproj</Transaction>
+    <Transaction>2016/04/14 23:44:05.992,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\Unit3.fmx=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\HubAppFMXMain.fmx</Transaction>
+    <Transaction>2016/04/14 23:44:05.992,C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\Unit3.pas=C:\DelphiAcademy\01-AppTethering-BR\AppTethering101\HubAppFMXMain.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PRIZZATO iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="04db9f214811d5d3"/>
+	</ActiveMobileDevice>
+</BorlandProject>

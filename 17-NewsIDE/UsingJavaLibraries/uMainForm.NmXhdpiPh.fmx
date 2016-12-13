@@ -1,0 +1,24 @@
+inherited Form1_NmXhdpiPh: TForm1_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited Edit1: TEdit
+    Size.Height = 32.000000000000000000
+  end
+  inherited Button1: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'nexttoolbutton'
+    OnClick = Button1Click
+  end
+  inherited Edit2: TEdit
+    Position.X = 16.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

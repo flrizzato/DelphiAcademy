@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C23F1A14-3E0C-4B90-8C62-A1A3B9EB360C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="LiveBindings101\LiveBindings101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TListView and DBEdit\VLBDemo_VCLListView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TListView with Objects\VLBDemo_VCLListView_Objs.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VLB Format\VLB_format.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VLB Expression\VLB_expression.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="LiveBindings101">
+        <MSBuild Projects="LiveBindings101\LiveBindings101.dproj"/>
+    </Target>
+    <Target Name="LiveBindings101:Clean">
+        <MSBuild Projects="LiveBindings101\LiveBindings101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LiveBindings101:Make">
+        <MSBuild Projects="LiveBindings101\LiveBindings101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VLBDemo_VCLListView">
+        <MSBuild Projects="TListView and DBEdit\VLBDemo_VCLListView.dproj"/>
+    </Target>
+    <Target Name="VLBDemo_VCLListView:Clean">
+        <MSBuild Projects="TListView and DBEdit\VLBDemo_VCLListView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLBDemo_VCLListView:Make">
+        <MSBuild Projects="TListView and DBEdit\VLBDemo_VCLListView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VLBDemo_VCLListView_Objs">
+        <MSBuild Projects="TListView with Objects\VLBDemo_VCLListView_Objs.dproj"/>
+    </Target>
+    <Target Name="VLBDemo_VCLListView_Objs:Clean">
+        <MSBuild Projects="TListView with Objects\VLBDemo_VCLListView_Objs.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLBDemo_VCLListView_Objs:Make">
+        <MSBuild Projects="TListView with Objects\VLBDemo_VCLListView_Objs.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VLB_format">
+        <MSBuild Projects="VLB Format\VLB_format.dproj"/>
+    </Target>
+    <Target Name="VLB_format:Clean">
+        <MSBuild Projects="VLB Format\VLB_format.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLB_format:Make">
+        <MSBuild Projects="VLB Format\VLB_format.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VLB_expression">
+        <MSBuild Projects="VLB Expression\VLB_expression.dproj"/>
+    </Target>
+    <Target Name="VLB_expression:Clean">
+        <MSBuild Projects="VLB Expression\VLB_expression.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VLB_expression:Make">
+        <MSBuild Projects="VLB Expression\VLB_expression.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="LiveBindings101;VLBDemo_VCLListView;VLBDemo_VCLListView_Objs;VLB_format;VLB_expression"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="LiveBindings101:Clean;VLBDemo_VCLListView:Clean;VLBDemo_VCLListView_Objs:Clean;VLB_format:Clean;VLB_expression:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="LiveBindings101:Make;VLBDemo_VCLListView:Make;VLBDemo_VCLListView_Objs:Make;VLB_format:Make;VLB_expression:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

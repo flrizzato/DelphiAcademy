@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/09/03 20:05:42.000.933,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/09/03 20:05:56.000.755,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\11-FireDACUpdates\UpdateJoins\uMainForm.pas</Transaction>
+    <Transaction>2016/09/03 20:05:56.000.755,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\DelphiAcademy\11-FireDACUpdates\UpdateJoins\uMainForm.dfm</Transaction>
+    <Transaction>2016/09/03 20:06:12.000.362,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\11-FireDACUpdates\UpdateJoins\UpdateJoins.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

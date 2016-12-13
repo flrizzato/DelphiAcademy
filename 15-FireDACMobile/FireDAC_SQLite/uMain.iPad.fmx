@@ -1,0 +1,23 @@
+inherited FireDAC_SQLiteForm_iPad: TFireDAC_SQLiteForm_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 2
+  inherited ToolBar1: TToolBar
+    Size.Width = 768.000000000000000000
+    inherited btnAdd: TButton
+      Position.X = 719.000000000000000000
+    end
+    inherited Title: TLabel
+      Size.Width = 768.000000000000000000
+    end
+    inherited btnDelete: TButton
+      Size.Width = 92.000000000000000000
+    end
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 768.000000000000000000
+    Size.Height = 960.000000000000000000
+    Viewport.Width = 768.000000000000000000
+    Viewport.Height = 960.000000000000000000
+  end
+end

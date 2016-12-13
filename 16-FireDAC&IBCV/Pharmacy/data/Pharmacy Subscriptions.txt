@@ -1,0 +1,17 @@
+CREATE SUBSCRIPTION sub_pharmacyupdates
+ON ORDERS FOR ROW (INSERT, UPDATE),
+   CUSTOMERS FOR ROW (INSERT, UPDATE),
+   PHARMACY FOR ROW(INSERT, UPDATE)
+DESCRIPTION 'Pick up pharmacy data changes that need to be set back to HQ';
+
+GRANT SUBSCRIBE ON SUBSCRIPTION sub_pharmacyupdates TO SYSDBA;
+
+CREATE SUBSCRIPTION sub_pharmacydeletes
+ON ORDERS FOR ROW (DELETE),
+   CUSTOMERS FOR ROW (DELETE)
+DESCRIPTION 'Pick up pharmacy deletes that need to be set back to HQ';
+
+GRANT SUBSCRIBE ON SUBSCRIPTION sub_pharmacydeletes TO SYSDBA;
+
+COMMIT;
+
