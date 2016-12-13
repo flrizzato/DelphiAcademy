@@ -13,9 +13,9 @@ Todos os exemplos do Delphi Academy
 23/08 - Migrando de BDE e DBX para FireDAC
 06/09 - FireDAC Cached Updates e Campos Auto-Inc
 20/09 - FireDAC TFDMemTable - DataSets em Memória
-04/10 - FireDAC Tracing e Monitoring​
+04/10 - FireDAC Tracing e Monitoring
 18/10 - FireDAC Local SQL
 01/11 - FireDAC em Aplicações Mobile
 22/11 - FireDAC e Interbase Change Views
 29/11 - Truques e Técnicas que Você Precisa Saber Sobre a IDE
-13/12 - Trabalhando com Subversion, Mercurial e Git Integrados na IDE 
+13/12 - Trabalhando com Subversion, Mercurial e Git Integrados na IDE
