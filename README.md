@@ -1,7 +1,7 @@
 # DelphiAcademy
 Todos os exemplos do Delphi Academy
 
-19/04 - Controle uma Aplicação Windows a partir de uma Aplicação Mobile com AppTethering
+19/04 - Controle uma Aplicação Windows a partir de uma Aplicação Mobile com AppTethering<br>
 03/05 - LiveBindings - de Formulários Visuais ao Código
 17/05 - Integração de Serviços Cloud com REST/JSON
 31/05 - Introdução a NoSQL com MongoDB e FireDAC
