@@ -1,5 +1,5 @@
-<h1>DelphiAcademy</h1>
-<i>Todos os exemplos do Delphi Academy | Todos los ejemplos de Delphi Academy</i>
+<h1>Delphi Academy</h1>
+<b>Todos os exemplos do Delphi Academy || Todos los ejemplos de Delphi Academy</b><br>
 
 <h2>Português</h2>
 19/04 - Controle uma Aplicação Windows a partir de uma Aplicação Mobile com AppTethering<br>
