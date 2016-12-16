@@ -1,7 +1,7 @@
 <h1>DelphiAcademy</h1>
-Todos os exemplos do Delphi Academy
+<i>Todos os exemplos do Delphi Academy | Todos los ejemplos de Delphi Academy</i>
 
-<h2>Brasil</h2>
+<h2>Português</h2>
 19/04 - Controle uma Aplicação Windows a partir de uma Aplicação Mobile com AppTethering<br>
 03/05 - LiveBindings - de Formulários Visuais ao Código<br>
 17/05 - Integração de Serviços Cloud com REST/JSON<br>
@@ -20,3 +20,23 @@ Todos os exemplos do Delphi Academy
 22/11 - FireDAC e Interbase Change Views<br>
 29/11 - Truques e Técnicas que Você Precisa Saber Sobre a IDE<br>
 13/12 - Trabalhando com Subversion, Mercurial e Git Integrados na IDE<br>
+
+<h2>Español</h2>
+22/04 - Control de una aplicación Windows desde una aplicación móvil con AppTethering<br>
+06/05 - LiveBindings: desde lo básico hasta técnicas avanzadas<br>
+20/05 - integración de servicios en la nube con REST/JSON<br>
+03/06 - Introducción a NoSQL con MongoDB y FireDAC<br>
+17/06 - Uso del Windows Runtime (WinRT) y la Universal Windows Platform (UWP) en Windows 10<br>
+01/07 - Visualización de Datos con FireMonkey 3D<br>
+15/07 - Comprender y utilizar layouts FireMonkey<br>
+29/07 - Uso de efectos, animaciones y transiciones en FireMonkey<br>
+12/08 - Acceso a datos con FireDAC<br>
+26/08 - La migración de BDE y DBX a FireDAC<br>
+09/09 - FireDAC Cached Updates y Campos Auto-Inc<br>
+23/09 - FireDAC TFDMemTable - DataSets en la Memória<br>
+07/10 - FireDAC Tracing y Monitoring<br>
+21/10 - FireDAC Local SQL<br>
+04/11 - FireDAC en Aplicaciones Móviles<br>
+25/11 - FireDAC y Interbase Change Views<br>
+02/12 - Trucos y Técnicas que Usted Necesita Saber Acerca de el IDE<br>
+16/12 - Trabajando con Subversion, Mercurial y Git Integrado en el IDE<br>
