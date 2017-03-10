@@ -1,1 +1,0 @@
-for /d /r . %%d in (Debug,Release) do @if exist "%%d" rd /s/q "%%d"
