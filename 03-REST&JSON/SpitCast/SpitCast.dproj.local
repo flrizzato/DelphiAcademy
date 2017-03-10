@@ -2,12 +2,13 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2016/05/16 15:28:25.000.311,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/05/16 15:36:02.000.595,C:\DelphiAcademy\03-REST&amp;JSON\SpitCast\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/05/16 15:36:02.000.595,C:\DelphiAcademy\03-REST&amp;JSON\SpitCast\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2016/05/16 15:36:06.000.972,C:\DelphiAcademy\03-REST&amp;JSON\SpitCast\SpitCast.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/05/16 15:36:02.000.595,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\03-REST&amp;JSON\SpitCast\uMainForm.pas</Transaction>
+    <Transaction>2016/05/16 15:36:02.000.595,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\DelphiAcademy\03-REST&amp;JSON\SpitCast\uMainForm.fmx</Transaction>
+    <Transaction>2016/05/16 15:36:06.000.972,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\03-REST&amp;JSON\SpitCast\SpitCast.dproj</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<PMAC iOSSimulator="_iossimulator_AD9BFDF3-D701-43D8-8F35-91CE1AB4A5DC" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
-		<NoProfile Android="04db9f214811d5d3"/>  <PRIZZATOOSX iOSSimulator="iPhone5"/>
+		<NoProfile Android="0022831207"/>
+		<PRIZZATOOSX iOSSimulator="iPhone5"/>  <POSX iOSSimulator="iPhone5" iOSDevice32="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
   </ActiveMobileDevice>
 </BorlandProject>

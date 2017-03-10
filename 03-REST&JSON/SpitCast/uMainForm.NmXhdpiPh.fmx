@@ -10,4 +10,10 @@ inherited Form1_NmXhdpiPh: TForm1_NmXhdpiPh
     Size.Width = 400.000000000000000000
     Size.Height = 567.000000000000000000
   end
+  inherited RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Active = True
+  end
+  inherited FDMemTable1: TFDMemTable
+    Active = True
+  end
 end

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7A4576C7-E266-4398-94DC-C12A22223519}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="RS102\RS102.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS102\RS102client.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RS102">
+        <MSBuild Projects="RS102\RS102.dproj"/>
+    </Target>
+    <Target Name="RS102:Clean">
+        <MSBuild Projects="RS102\RS102.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RS102:Make">
+        <MSBuild Projects="RS102\RS102.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RS102client">
+        <MSBuild Projects="RS102\RS102client.dproj"/>
+    </Target>
+    <Target Name="RS102client:Clean">
+        <MSBuild Projects="RS102\RS102client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RS102client:Make">
+        <MSBuild Projects="RS102\RS102client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RS102;RS102client"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RS102:Clean;RS102client:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RS102:Make;RS102client:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
