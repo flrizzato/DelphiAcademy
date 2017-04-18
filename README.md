@@ -20,6 +20,12 @@
 16 - FireDAC e Interbase Change Views<br>
 17 - Truques e Técnicas que Você Precisa Saber Sobre a IDE<br>
 18 - Trabalhando com Subversion, Mercurial e Git Integrados na IDE<br>
+19 - Preview: Novo Compilador Linux para Delphi e C++ Builder<br>
+20 - Iniciando com DataSnap para Windows e Linux 64 bit<br>
+21 - Iniciando com RADServer para Windows e Linux 64 bit<br>
+22 - Parallel Programming Library (PPL) com Delphi<br>
+23 - Novos Recursos para JSON no Delphi e C++ Builder<br>
+24 - Servidores DataSnap REST<br>
 
 <h2>Español</h2>
 01 - Control de una aplicación Windows desde una aplicación móvil con AppTethering<br>
@@ -40,3 +46,9 @@
 16 - FireDAC y Interbase Change Views<br>
 17 - Trucos y Técnicas que Usted Necesita Saber Acerca de el IDE<br>
 18 - Trabajando con Subversion, Mercurial y Git Integrado en el IDE<br>
+19 - Preview: Nuevo compilador Linux para Delphi y C ++ Builder<br>
+20 - Empezando con DataSnap para Windows y Linux de 64 bits<br>
+21 - Empezando con RADServer para Windows y Linux de 64 bits<br>
+22 - Parallel Programming Library (PPL) con Delphi<br>
+23 - Nuevos Recursos para JSON en Delphi y C ++ Builder<br>
+
