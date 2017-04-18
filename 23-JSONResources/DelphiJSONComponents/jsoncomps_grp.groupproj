@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{879801F3-3E14-4182-A6B9-B66A0FB1DBEC}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="jsondoc_rt.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="jsondoc_dsgn.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="jsontreeview_rt.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="jsontreeview_dsgn.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="jsondoc_rt">
+        <MSBuild Projects="jsondoc_rt.dproj"/>
+    </Target>
+    <Target Name="jsondoc_rt:Clean">
+        <MSBuild Projects="jsondoc_rt.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="jsondoc_rt:Make">
+        <MSBuild Projects="jsondoc_rt.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="jsondoc_dsgn">
+        <MSBuild Projects="jsondoc_dsgn.dproj"/>
+    </Target>
+    <Target Name="jsondoc_dsgn:Clean">
+        <MSBuild Projects="jsondoc_dsgn.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="jsondoc_dsgn:Make">
+        <MSBuild Projects="jsondoc_dsgn.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="jsontreeview_rt">
+        <MSBuild Projects="jsontreeview_rt.dproj"/>
+    </Target>
+    <Target Name="jsontreeview_rt:Clean">
+        <MSBuild Projects="jsontreeview_rt.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="jsontreeview_rt:Make">
+        <MSBuild Projects="jsontreeview_rt.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="jsontreeview_dsgn">
+        <MSBuild Projects="jsontreeview_dsgn.dproj"/>
+    </Target>
+    <Target Name="jsontreeview_dsgn:Clean">
+        <MSBuild Projects="jsontreeview_dsgn.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="jsontreeview_dsgn:Make">
+        <MSBuild Projects="jsontreeview_dsgn.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="jsondoc_rt;jsondoc_dsgn;jsontreeview_rt;jsontreeview_dsgn"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="jsondoc_rt:Clean;jsondoc_dsgn:Clean;jsontreeview_rt:Clean;jsontreeview_dsgn:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="jsondoc_rt:Make;jsondoc_dsgn:Make;jsontreeview_rt:Make;jsontreeview_dsgn:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

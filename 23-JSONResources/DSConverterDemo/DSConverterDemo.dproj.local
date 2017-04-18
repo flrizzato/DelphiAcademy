@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/04/04 00:02:48.000.558,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/04/04 00:04:57.000.142,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\23-JSONResources\DSConverterDemo\uMainForm.pas</Transaction>
+    <Transaction>2017/04/04 00:04:57.000.142,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\DelphiAcademy\23-JSONResources\DSConverterDemo\uMainForm.dfm</Transaction>
+    <Transaction>2017/04/04 00:05:04.000.431,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\23-JSONResources\DSConverterDemo\DSConverterDemo.dproj</Transaction>
+    <Transaction>2017/04/04 00:05:43.000.983,=C:\DelphiAcademy\23-JSONResources\DSConverter4Delphi\DataSetConverter4D.Helper.pas</Transaction>
+    <Transaction>2017/04/04 00:07:49.000.654,=C:\DelphiAcademy\23-JSONResources\DSConverter4Delphi\DataSetConverter4D.Util.pas</Transaction>
+    <Transaction>2017/04/04 00:07:49.000.603,=C:\DelphiAcademy\23-JSONResources\DSConverter4Delphi\DataSetConverter4D.Impl.pas</Transaction>
+    <Transaction>2017/04/04 00:07:49.000.629,=C:\DelphiAcademy\23-JSONResources\DSConverter4Delphi\DataSetConverter4D.pas</Transaction>
+  </Transactions>
+</BorlandProject>

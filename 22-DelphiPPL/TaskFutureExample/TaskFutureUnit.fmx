@@ -1,0 +1,156 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Task & Future Example'
+  ClientHeight = 312
+  ClientWidth = 520
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ProgressBar1: TProgressBar
+    Align = Top
+    Orientation = Horizontal
+    Size.Width = 520.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Timer1: TTimer
+    Interval = 10
+    OnTimer = Timer1Timer
+    Left = 32
+    Top = 126
+  end
+  object btnBlocking: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Blocking'
+    OnClick = btnBlockingClick
+  end
+  object editArtist: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 10
+    Text = '13961'
+    Position.X = 8.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object memoResults: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    TextSettings.WordWrap = True
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Viewport.Width = 277.000000000000000000
+    Viewport.Height = 197.000000000000000000
+  end
+  object btnTask: TButton
+    Position.X = 200.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Task'
+    OnClick = btnTaskClick
+  end
+  object Clear: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'Clear'
+    OnClick = ClearClick
+  end
+  object GroupBox1: TGroupBox
+    Position.X = 288.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Future'
+    TabOrder = 14
+    object btnLaunch: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 0
+      Text = 'Launch'
+      OnClick = btnLaunchClick
+    end
+    object btnRead: TButton
+      Position.X = 104.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 1
+      Text = 'Read'
+      OnClick = btnReadClick
+    end
+  end
+  object lblTask: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 368.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Unknown'
+  end
+  object Label1: TLabel
+    Position.X = 304.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Task:'
+  end
+  object lblFuture: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 368.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Unknown'
+  end
+  object TLabel
+    Position.X = 304.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Future:'
+  end
+  object btnTaskCancel: TButton
+    Position.X = 304.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    Text = 'Task Cancel'
+    OnClick = btnTaskCancelClick
+  end
+  object btnFutureCancel: TButton
+    Position.X = 304.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    Text = 'Future Cancel'
+    OnClick = btnFutureCancelClick
+  end
+end

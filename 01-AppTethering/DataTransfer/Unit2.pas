@@ -11,7 +11,7 @@ uses
   FMX.StdCtrls, System.Tether.Manager, System.Tether.AppProfile,
   Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope, Data.DB,
   Datasnap.DBClient, FMX.Layouts, FMX.Bind.Navigator, FMX.Grid,
-  FMX.Controls.Presentation;
+  FMX.Controls.Presentation, FMX.Grid.Style, FMX.ScrollBox;
 
 type
   TForm2 = class(TForm)

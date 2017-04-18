@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/09/11 10:54:04.000.542,=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/09/11 10:54:49.000.579,Z:\Shared\Training\DelphiXE7Launch\AndroidPowerShort\Source\FutureString\Voltooid\UnitFormMain.fmx=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2014/09/11 10:54:49.000.579,Z:\Shared\Training\DelphiXE7Launch\AndroidPowerShort\Source\FutureString\Voltooid\UnitFormMain.pas=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/09/11 10:54:55.000.837,Z:\Shared\Training\DelphiXE7Launch\AndroidPowerShort\Source\FutureString\Voltooid\FutureString.dproj=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/03/20 11:54:15.000.563,C:\DelphiAcademy\22-DelphiPPL\FutureString\FutureString.dproj=C:\DelphiAcademy\22-DelphiPPL\FutureString\FutureString101.dproj</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="-1" SortType="1"/>
+	<ActiveMobileDevice>
+		<POSX iOSSimulator="iPhone5"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

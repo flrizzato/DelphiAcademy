@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.227,=Z:\Shared\Training\DelphiXE5VCLBootCamp\VCLUserExperience\Source\ThreadedREST\Voltooid\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.141,Z:\Shared\Training\DelphiXE5VCLBootCamp\VCLUserExperience\Source\ThreadedREST\Voltooid\ThreadedREST.dproj=C:\Users\Delphi\Documents\RAD Studio\Projects\Project7.dproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.198,=C:\Users\Delphi\Documents\RAD Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.646,=Z:\Shared\Training\DelphiXE5VCLBootCamp\VCLUserExperience\Source\MarineAdventureXE5\Stap2\VCL\ItemDetail1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.713,Z:\Shared\Training\DelphiXE5VCLBootCamp\VCLUserExperience\Source\ThreadedREST\Voltooid\UnitFormMain.dfm=C:\Users\Delphi\Documents\RAD Studio\Projects\Unit6.dfm</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.713,Z:\Shared\Training\DelphiXE5VCLBootCamp\VCLUserExperience\Source\ThreadedREST\Voltooid\UnitFormMain.pas=C:\Users\Delphi\Documents\RAD Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.945,Z:\Shared\Training\DelphiXE5VCLBootCamp\VCLUserExperience\Source\ThreadedREST\Voltooid\UnitClassRESTCallThread.pas=Z:\Shared\Training\DelphiXE5VCLBootCamp\VCLUserExperience\Source\ThreadedREST\Voltooid\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.465,=Z:\Shared\Training\DelphiXE5VCLBootCamp\VCLUserExperience\Source\MarineAdventureXE5\Stap2\VCL\GroupedItems1.pas</Transaction>
+    <Transaction>2014/10/19 12:28:09.000.214,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\ThreadedREST\DemoTTask\UnitClassRESTCallThread.pas=</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="-1" SortType="1"/>
+</BorlandProject>

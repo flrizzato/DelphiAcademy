@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/04/17 15:07:37.000.800,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/04/17 15:08:39.000.574,C:\DelphiAcademy\24-DatasnapREST\DataSnapJQueryClient\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/04/17 15:08:39.000.574,C:\DelphiAcademy\24-DatasnapREST\DataSnapJQueryClient\uMainForm.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2017/04/17 15:08:50.000.504,C:\DelphiAcademy\24-DatasnapREST\DataSnapJQueryClient\DataSnapJQueryClient.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/04/17 15:10:02.000.206,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQueryClient\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2017/04/17 15:10:03.000.063,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQueryClient\ClientModuleUnit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

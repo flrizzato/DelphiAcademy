@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/09/15 11:25:20.000.618,=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/17 15:38:10.000.049,=C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/17 15:42:56.000.480,C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit1.pas=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSlider\Voltooid\UnitFormMain.pas</Transaction>
+    <Transaction>2014/10/17 15:42:56.000.480,C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Unit1.fmx=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSlider\Voltooid\UnitFormMain.fmx</Transaction>
+    <Transaction>2014/10/17 15:43:02.000.316,C:\Users\Delphi\Documents\Embarcadero\Studio\Projects\Project1.dproj=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSlider\Voltooid\TaskSlider.dproj</Transaction>
+    <Transaction>2014/10/17 15:43:27.000.606,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSlider\Voltooid\TaskSlider.dproj=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSlider\Step1\TaskSlider.dproj</Transaction>
+    <Transaction>2014/10/17 15:43:35.000.309,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSlider\Voltooid\UnitFormMain.pas=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSlider\Step1\UnitFormMain.pas</Transaction>
+    <Transaction>2014/10/17 15:43:35.000.309,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSlider\Voltooid\UnitFormMain.fmx=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSlider\Step1\UnitFormMain.fmx</Transaction>
+    <Transaction>2014/10/17 15:45:00.000.021,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSlider\Step1\TaskSlider.dproj=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSwitch\Demo\TaskSwitch.dproj</Transaction>
+    <Transaction>2014/10/17 15:58:05.000.791,=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSwitch\Demo\UnitFormMain.pas</Transaction>
+    <Transaction>2014/10/18 13:49:56.000.416,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSwitch\Demo\TaskSwitch.dproj=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskInteger\Demo\TaskInteger.dproj</Transaction>
+    <Transaction>2014/10/18 13:50:06.000.401,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSwitch\Demo\UnitFormMain.pas=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskInteger\Demo\UnitFormMain.pas</Transaction>
+    <Transaction>2014/10/18 13:50:06.000.401,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskSwitch\Demo\UnitFormMain.fmx=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskInteger\Demo\UnitFormMain.fmx</Transaction>
+    <Transaction>2014/10/18 13:50:45.000.642,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskInteger\Voltooid\TaskInteger.dproj=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskInteger\Demo\TaskInteger.dproj</Transaction>
+    <Transaction>2014/10/18 13:50:51.000.776,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskInteger\Voltooid\UnitFormMain.fmx=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskInteger\Demo\UnitFormMain.fmx</Transaction>
+    <Transaction>2014/10/18 13:50:51.000.776,Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskInteger\Voltooid\UnitFormMain.pas=Z:\Shared\CodeRage9_DelphiParallelLibrary\Source\TaskInteger\Demo\UnitFormMain.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="-1" SortType="1"/>
+	<ActiveMobileDevice>
+		<POSX iOSSimulator="iPhone5"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

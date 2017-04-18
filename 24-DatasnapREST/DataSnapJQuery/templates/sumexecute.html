@@ -1,0 +1,53 @@
+<!-- !DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" -->
+<html>
+   <head>
+      <title>DataSnap REST Project</title>
+      <link rel="stylesheet" type="text/css" href="css/main.css" />
+      <script type="text/javascript" src="js/base64.js"></script>
+      <script type="text/javascript" src="js/json-min.js"></script>
+      <script type="text/javascript" src="js/serverfunctionexecutor.js"></script>
+      <script type="text/javascript" src="js/connection.js"></script>
+      <script type="text/javascript" src="js/serverfunctions.js"></script>
+      <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+      <script type="text/javascript">
+         function serverMethods()
+         {
+           return new TServerMethods1(connectionInfo);
+         }
+
+         $(document).ready(function() {
+           $('#AddDouble #button').click (function (){
+             res = serverMethods().Sum(
+               $('#AddDouble #a').val(),
+               $('#AddDouble #b').val());
+             $('#AddDouble #result').val (res.result);
+           });
+         });
+
+      </script>
+   </head>
+   <div id="wrapper">
+      <div class="banner">
+         <#serverfunctioninvoker>
+      </div>
+      <div class="content-top">
+         <h1>Sum Execute Project</h1>
+      </div>
+      <div class="content">
+         <h3>function Sum (a, b: Double): Double;</h3>
+         <div id="AddDouble">
+            <table>
+               <tr>
+                  <td><label>a:</label> <input id="a" type="text" value="0" /></td>
+                  <td><label>b:</label> <input id="b" type="text" value="0" /></td>
+                  <td><label>result: </label> <input id="result" type="text" value="" /></td>
+                  <td><button id="button">Sum Execute</button></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <!-- content -->
+   </div>
+   <!-- wrapper -->
+   </body>
+</html>

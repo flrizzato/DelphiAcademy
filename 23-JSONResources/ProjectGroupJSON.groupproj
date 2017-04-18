@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7067F87F-3DCF-4D60-A0EB-D45CD1583942}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="JsonWriting\JsonWriting.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="JsonReading\JsonReading.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DelphiJSONViewer\JSONViewer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DSConverterDemo\DSConverterDemo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="JsonWriting">
+        <MSBuild Projects="JsonWriting\JsonWriting.dproj"/>
+    </Target>
+    <Target Name="JsonWriting:Clean">
+        <MSBuild Projects="JsonWriting\JsonWriting.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JsonWriting:Make">
+        <MSBuild Projects="JsonWriting\JsonWriting.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="JsonReading">
+        <MSBuild Projects="JsonReading\JsonReading.dproj"/>
+    </Target>
+    <Target Name="JsonReading:Clean">
+        <MSBuild Projects="JsonReading\JsonReading.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JsonReading:Make">
+        <MSBuild Projects="JsonReading\JsonReading.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="JSONViewer">
+        <MSBuild Projects="DelphiJSONViewer\JSONViewer.dproj"/>
+    </Target>
+    <Target Name="JSONViewer:Clean">
+        <MSBuild Projects="DelphiJSONViewer\JSONViewer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JSONViewer:Make">
+        <MSBuild Projects="DelphiJSONViewer\JSONViewer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DSConverterDemo">
+        <MSBuild Projects="DSConverterDemo\DSConverterDemo.dproj"/>
+    </Target>
+    <Target Name="DSConverterDemo:Clean">
+        <MSBuild Projects="DSConverterDemo\DSConverterDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DSConverterDemo:Make">
+        <MSBuild Projects="DSConverterDemo\DSConverterDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="JsonWriting;JsonReading;JSONViewer;DSConverterDemo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="JsonWriting:Clean;JsonReading:Clean;JSONViewer:Clean;DSConverterDemo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="JsonWriting:Make;JsonReading:Make;JSONViewer:Make;DSConverterDemo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

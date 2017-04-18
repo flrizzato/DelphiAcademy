@@ -1,0 +1,37 @@
+inherited MainForm_XLgXhdpiTb: TMainForm_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 800.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 171.000000000000000000
+      Size.Height = 22.000000000000000000
+    end
+    inherited butLeft: TSpeedButton
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+    inherited butRight: TSpeedButton
+      Position.X = 752.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited ToolBar2: TToolBar
+    Position.Y = 1207.000000000000000000
+    Size.Width = 800.000000000000000000
+    Size.Height = 48.000000000000000000
+  end
+  inherited lblPersonagem: TLabel
+    Position.Y = 93.000000000000000000
+    Size.Width = 800.000000000000000000
+  end
+  inherited imgPersonagem: TImage
+    Align = Client
+    Margins.Top = 20.000000000000000000
+    Size.Width = 760.000000000000000000
+    Size.Height = 1058.000000000000000000
+  end
+end

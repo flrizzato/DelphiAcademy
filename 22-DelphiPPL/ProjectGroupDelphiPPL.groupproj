@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C7608267-0700-46F8-825F-BCD53321CE8F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ParallelFor\ParallelFor101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ParallelSquares\ParallelSquares.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TaskInteger\TaskInteger.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FutureString\FutureString101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TaskFutureExample\TaskFutureExample.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ThreadedREST\ThreadedREST.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MarvelRESTApi\MarvelRESTApi.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ParallelFor101">
+        <MSBuild Projects="ParallelFor\ParallelFor101.dproj"/>
+    </Target>
+    <Target Name="ParallelFor101:Clean">
+        <MSBuild Projects="ParallelFor\ParallelFor101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ParallelFor101:Make">
+        <MSBuild Projects="ParallelFor\ParallelFor101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ParallelSquares">
+        <MSBuild Projects="ParallelSquares\ParallelSquares.dproj"/>
+    </Target>
+    <Target Name="ParallelSquares:Clean">
+        <MSBuild Projects="ParallelSquares\ParallelSquares.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ParallelSquares:Make">
+        <MSBuild Projects="ParallelSquares\ParallelSquares.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TaskInteger">
+        <MSBuild Projects="TaskInteger\TaskInteger.dproj"/>
+    </Target>
+    <Target Name="TaskInteger:Clean">
+        <MSBuild Projects="TaskInteger\TaskInteger.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TaskInteger:Make">
+        <MSBuild Projects="TaskInteger\TaskInteger.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FutureString101">
+        <MSBuild Projects="FutureString\FutureString101.dproj"/>
+    </Target>
+    <Target Name="FutureString101:Clean">
+        <MSBuild Projects="FutureString\FutureString101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FutureString101:Make">
+        <MSBuild Projects="FutureString\FutureString101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TaskFutureExample">
+        <MSBuild Projects="TaskFutureExample\TaskFutureExample.dproj"/>
+    </Target>
+    <Target Name="TaskFutureExample:Clean">
+        <MSBuild Projects="TaskFutureExample\TaskFutureExample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TaskFutureExample:Make">
+        <MSBuild Projects="TaskFutureExample\TaskFutureExample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ThreadedREST">
+        <MSBuild Projects="ThreadedREST\ThreadedREST.dproj"/>
+    </Target>
+    <Target Name="ThreadedREST:Clean">
+        <MSBuild Projects="ThreadedREST\ThreadedREST.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ThreadedREST:Make">
+        <MSBuild Projects="ThreadedREST\ThreadedREST.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MarvelRESTApi">
+        <MSBuild Projects="MarvelRESTApi\MarvelRESTApi.dproj"/>
+    </Target>
+    <Target Name="MarvelRESTApi:Clean">
+        <MSBuild Projects="MarvelRESTApi\MarvelRESTApi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MarvelRESTApi:Make">
+        <MSBuild Projects="MarvelRESTApi\MarvelRESTApi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ParallelFor101;ParallelSquares;TaskInteger;FutureString101;TaskFutureExample;ThreadedREST;MarvelRESTApi"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ParallelFor101:Clean;ParallelSquares:Clean;TaskInteger:Clean;FutureString101:Clean;TaskFutureExample:Clean;ThreadedREST:Clean;MarvelRESTApi:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ParallelFor101:Make;ParallelSquares:Make;TaskInteger:Make;FutureString101:Make;TaskFutureExample:Make;ThreadedREST:Make;MarvelRESTApi:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

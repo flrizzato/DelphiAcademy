@@ -1,0 +1,52 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'TaskSwitch'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ButtonTask1: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Task1'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = ButtonTask1Click
+  end
+  object ScrollBarActivity: TScrollBar
+    Align = Top
+    SmallChange = 0.000000000000000000
+    Orientation = Horizontal
+    Size.Width = 640.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    object FloatAnimationActivity: TFloatAnimation
+      AnimationType = InOut
+      AutoReverse = True
+      Enabled = True
+      Duration = 1.000000000000000000
+      Loop = True
+      PropertyName = 'Value'
+      StartValue = 0.000000000000000000
+      StopValue = 100.000000000000000000
+    end
+  end
+  object LabelTask1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 112.000000000000000000
+    Position.Y = 49.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = '--'
+  end
+end

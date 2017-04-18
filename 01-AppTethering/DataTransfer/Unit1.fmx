@@ -11,6 +11,8 @@ object Form1: TForm1
   DesignerMasterStyle = 0
   object StringGrid1: TStringGrid
     Align = Client
+    CanFocus = True
+    ClipChildren = True
     Margins.Left = 10.000000000000000000
     Margins.Top = 10.000000000000000000
     Margins.Right = 10.000000000000000000
@@ -19,8 +21,8 @@ object Form1: TForm1
     Size.Height = 425.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    RowCount = 0
     RowHeight = 21.000000000000000000
+    RowCount = 0
     Viewport.Width = 616.000000000000000000
     Viewport.Height = 400.000000000000000000
   end

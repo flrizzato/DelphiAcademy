@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/09/24 18:49:26.000.553,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/09/24 18:49:54.000.563,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MarvelRESTApi\MarvelRESTApi.dproj=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2014/09/24 18:50:04.000.570,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MarvelRESTApi\uMainForm.pas</Transaction>
+    <Transaction>2014/09/24 18:50:39.000.153,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MarvelRESTApi\Lib\Xplat.Utils.pas</Transaction>
+    <Transaction>2014/09/24 18:50:52.000.268,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MarvelRESTApi\Lib\AnonThread.pas</Transaction>
+    <Transaction>2014/09/24 18:51:04.000.292,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MarvelRESTApi\Lib\Xplat.Services.pas</Transaction>
+    <Transaction>2014/09/24 18:51:18.000.773,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MarvelRESTApi\Lib\Android.Services.pas</Transaction>
+    <Transaction>2014/09/24 18:51:31.000.312,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MarvelRESTApi\Lib\Android.ProgressDialog.pas</Transaction>
+    <Transaction>2014/09/24 18:51:44.000.650,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MarvelRESTApi\Lib\Xplat.Inifiles.pas</Transaction>
+    <Transaction>2014/09/24 18:52:02.000.451,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\MarvelRESTApi\Lib\FMX.Graphics.HelperClass.pas</Transaction>
+    <Transaction>2017/03/20 15:03:02.000.692,=C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\Lib\Windows.Services.pas</Transaction>
+    <Transaction>2017/03/20 15:05:08.000.071,C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\Lib\Windows.Services.pas=</Transaction>
+    <Transaction>2017/03/20 15:05:14.000.398,C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\Lib\Android.Services.pas=</Transaction>
+    <Transaction>2017/03/20 15:05:19.000.458,C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\Lib\Android.ProgressDialog.pas=</Transaction>
+    <Transaction>2017/03/20 15:05:40.000.709,C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\Lib\AnonThread.pas=</Transaction>
+    <Transaction>2017/03/20 15:19:24.000.497,C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\Lib\Xplat.Inifiles.pas=</Transaction>
+    <Transaction>2017/03/20 15:19:28.000.500,C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\Lib\Xplat.Services.pas=</Transaction>
+    <Transaction>2017/03/20 15:19:33.000.795,C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\Lib\Xplat.Utils.pas=</Transaction>
+    <Transaction>2017/03/20 15:19:39.000.353,C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\Lib\FMX.Graphics.HelperClass.pas=</Transaction>
+    <Transaction>2017/03/20 15:20:00.000.384,=C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\FMX.Graphics.HelperClass.pas</Transaction>
+    <Transaction>2017/03/20 17:40:55.000.041,C:\DelphiAcademy\22-DelphiPPL\7-MarvelRESTApi\FMX.Graphics.HelperClass.pas=</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3-Android</MobileDevice>
+	<ActiveMobileDevice>
+		<POSX iOSSimulator="iPhone5"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

@@ -1,0 +1,98 @@
+object FormJsonRead: TFormJsonRead
+  Left = 0
+  Top = 0
+  Caption = 'JSON Reading - Delphi 10 "Seattle"'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ButtonReadTokens: TButton
+      Position.X = 184.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Read Tokens'
+      OnClick = ButtonReadTokensClick
+    end
+    object ButtonReadReader: TButton
+      Position.X = 360.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Read with Reader'
+      OnClick = ButtonReadReaderClick
+    end
+    object ButtonReadDOM: TButton
+      Position.X = 496.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Read with DOM'
+      OnClick = ButtonReadDOMClick
+    end
+  end
+  object MemoSrc: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      '{'
+      '  "Stocks": ['
+      '    {'
+      '      "symbol": "ACME",'
+      '      "price": 75.5'
+      '    },'
+      '    {'
+      '      "symbol": "COOL",'
+      '      "price": 21.7'
+      '    }'
+      '  ]'
+      '}')
+    Align = Left
+    Position.Y = 40.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 173.000000000000000000
+    Viewport.Height = 436.000000000000000000
+  end
+  object ListBoxTokens: TListBox
+    Align = Left
+    Position.X = 177.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 168.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 164.000000000000000000
+    Viewport.Height = 436.000000000000000000
+  end
+  object MemoLog: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 295.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 291.000000000000000000
+    Viewport.Height = 436.000000000000000000
+  end
+end

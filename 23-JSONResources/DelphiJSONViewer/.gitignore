@@ -1,0 +1,15 @@
+
+*.identcache
+
+
+*.dcu
+
+
+*.local
+
+
+*.res
+
+*.exe
+*.~*~
+*.stat

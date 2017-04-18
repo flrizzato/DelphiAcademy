@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/04/17 15:01:14.000.991,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\FormUnit1.pas</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.660,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\connection.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.567,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\callbackframework.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.644,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\callbackframework-min.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.678,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\serverfunctioninvoker.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.613,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\json2-min.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.544,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\base64.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.551,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\serverfunctionexecutor.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.583,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\serverfunctions.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.151,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.698,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\css\main.css</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.597,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\base64-min.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.559,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\json2.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.267,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.408,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.858,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\images\expand.png</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.746,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\templates\reversestring.html</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.723,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\css\serverfunctioninvoker.css</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.630,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\js\serverfunctionexecutor-min.js</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.800,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\templates\serverfunctioninvoker.html</Transaction>
+    <Transaction>2017/04/17 15:01:15.000.830,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\images\collapse.png</Transaction>
+    <Transaction>2017/04/17 15:49:59.000.953,=C:\DelphiAcademy\24-DatasnapREST\DataSnapJQuery\templates\sumexecute.html</Transaction>
+  </Transactions>
+</BorlandProject>

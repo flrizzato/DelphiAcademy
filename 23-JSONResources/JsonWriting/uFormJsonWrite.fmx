@@ -1,0 +1,49 @@
+object FormJsonWrite: TFormJsonWrite
+  Left = 0
+  Top = 0
+  Caption = 'JSON Writing - Delphi 10 "Seattle"'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ButtonWriter: TButton
+      Position.X = 112.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 1
+      Text = 'Writer'
+      OnClick = ButtonWriterClick
+    end
+    object ButtonDOM: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 3
+      Text = 'DOM'
+      OnClick = ButtonDOMClick
+    end
+    object ButtonBuilder: TButton
+      Position.X = 208.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 2
+      Text = 'Builder'
+      OnClick = ButtonBuilderClick
+    end
+  end
+  object MemoLog: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 436.000000000000000000
+  end
+end

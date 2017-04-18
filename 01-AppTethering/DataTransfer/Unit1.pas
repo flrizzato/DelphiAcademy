@@ -10,7 +10,8 @@ uses
   System.Bindings.Outputs, FMX.Bind.Editors, Data.Bind.Components,
   Data.Bind.Grid, Data.Bind.DBScope, FMX.Layouts, FMX.Bind.Navigator, FMX.Grid,
   Data.DB, Datasnap.DBClient, IPPeerClient, IPPeerServer, System.Tether.Manager,
-  System.Tether.AppProfile, System.IOUtils;
+  System.Tether.AppProfile, System.IOUtils, FMX.Grid.Style,
+  FMX.Controls.Presentation, FMX.ScrollBox;
 
 type
   TForm1 = class(TForm)

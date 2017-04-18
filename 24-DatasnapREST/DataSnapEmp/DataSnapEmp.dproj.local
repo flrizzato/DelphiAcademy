@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/04/17 16:20:05.000.986,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\connection.js</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.737,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.278,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\FormUnit1.pas</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.970,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\callbackframework-min.js</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.953,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\serverfunctionexecutor-min.js</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.895,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\callbackframework.js</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.599,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.906,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\serverfunctions.js</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.934,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\json2-min.js</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.476,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.885,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\json2.js</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.868,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\base64.js</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.921,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\base64-min.js</Transaction>
+    <Transaction>2017/04/17 16:20:05.000.877,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\serverfunctionexecutor.js</Transaction>
+    <Transaction>2017/04/17 16:20:06.000.044,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\css\serverfunctioninvoker.css</Transaction>
+    <Transaction>2017/04/17 16:20:06.000.004,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\js\serverfunctioninvoker.js</Transaction>
+    <Transaction>2017/04/17 16:20:06.000.118,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\images\collapse.png</Transaction>
+    <Transaction>2017/04/17 16:20:06.000.088,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\templates\serverfunctioninvoker.html</Transaction>
+    <Transaction>2017/04/17 16:20:06.000.144,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\images\expand.png</Transaction>
+    <Transaction>2017/04/17 16:20:06.000.065,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\templates\reversestring.html</Transaction>
+    <Transaction>2017/04/17 16:20:06.000.024,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\css\main.css</Transaction>
+    <Transaction>2017/04/17 16:22:03.000.764,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\uEmployeeServer.pas</Transaction>
+    <Transaction>2017/04/17 16:22:46.000.221,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\Lib\DataSetConverter4D.pas</Transaction>
+    <Transaction>2017/04/17 16:22:58.000.791,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\Lib\DataSetConverter4D.Impl.pas</Transaction>
+    <Transaction>2017/04/17 16:23:03.000.893,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\Lib\DataSetConverter4D.Util.pas</Transaction>
+    <Transaction>2017/04/17 16:23:16.000.834,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\Lib\DataSetConverter4D.Helper.pas</Transaction>
+    <Transaction>2017/04/18 11:26:20.000.376,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\Datasnap.DSProxyDelphiRest.pas</Transaction>
+    <Transaction>2017/04/18 11:41:26.000.444,=C:\DelphiAcademy\24-DatasnapREST\DataSnapEmp\Datasnap.DSService.pas</Transaction>
+  </Transactions>
+</BorlandProject>

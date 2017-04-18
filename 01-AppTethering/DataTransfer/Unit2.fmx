@@ -44,6 +44,8 @@ object Form2: TForm2
   end
   object StringGrid1: TStringGrid
     Align = Client
+    CanFocus = True
+    ClipChildren = True
     Margins.Left = 10.000000000000000000
     Margins.Top = 10.000000000000000000
     Margins.Right = 10.000000000000000000
@@ -52,8 +54,8 @@ object Form2: TForm2
     Size.Height = 367.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    RowCount = 0
     RowHeight = 21.000000000000000000
+    RowCount = 0
     Viewport.Width = 616.000000000000000000
     Viewport.Height = 342.000000000000000000
   end

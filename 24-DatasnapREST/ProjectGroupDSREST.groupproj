@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E8CE5DB0-025F-4532-90F6-BB5255EE68E3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DataSnap101\DataSnap101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DataSnapJQuery\DataSnapJQuery.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DataSnapJQueryClient\DataSnapJQueryClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DataSnapEmp\DataSnapEmp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DataSnap101">
+        <MSBuild Projects="DataSnap101\DataSnap101.dproj"/>
+    </Target>
+    <Target Name="DataSnap101:Clean">
+        <MSBuild Projects="DataSnap101\DataSnap101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DataSnap101:Make">
+        <MSBuild Projects="DataSnap101\DataSnap101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DataSnapJQuery">
+        <MSBuild Projects="DataSnapJQuery\DataSnapJQuery.dproj"/>
+    </Target>
+    <Target Name="DataSnapJQuery:Clean">
+        <MSBuild Projects="DataSnapJQuery\DataSnapJQuery.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DataSnapJQuery:Make">
+        <MSBuild Projects="DataSnapJQuery\DataSnapJQuery.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DataSnapJQueryClient">
+        <MSBuild Projects="DataSnapJQueryClient\DataSnapJQueryClient.dproj"/>
+    </Target>
+    <Target Name="DataSnapJQueryClient:Clean">
+        <MSBuild Projects="DataSnapJQueryClient\DataSnapJQueryClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DataSnapJQueryClient:Make">
+        <MSBuild Projects="DataSnapJQueryClient\DataSnapJQueryClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DataSnapEmp">
+        <MSBuild Projects="DataSnapEmp\DataSnapEmp.dproj"/>
+    </Target>
+    <Target Name="DataSnapEmp:Clean">
+        <MSBuild Projects="DataSnapEmp\DataSnapEmp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DataSnapEmp:Make">
+        <MSBuild Projects="DataSnapEmp\DataSnapEmp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DataSnap101;DataSnapJQuery;DataSnapJQueryClient;DataSnapEmp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DataSnap101:Clean;DataSnapJQuery:Clean;DataSnapJQueryClient:Clean;DataSnapEmp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DataSnap101:Make;DataSnapJQuery:Make;DataSnapJQueryClient:Make;DataSnapEmp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
