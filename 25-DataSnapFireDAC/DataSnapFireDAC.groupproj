@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{30EC2210-868C-4A3A-BC1A-62570DE97A4F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ds_fd_dbx\ds_fd_dbx.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ds_fd_dbx_client\ds_fd_dbx_client.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ds_firedac\ds_firedac.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ds_firedac_client\ds_firedac_client.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ds_fd_dbx">
+        <MSBuild Projects="ds_fd_dbx\ds_fd_dbx.dproj"/>
+    </Target>
+    <Target Name="ds_fd_dbx:Clean">
+        <MSBuild Projects="ds_fd_dbx\ds_fd_dbx.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ds_fd_dbx:Make">
+        <MSBuild Projects="ds_fd_dbx\ds_fd_dbx.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ds_fd_dbx_client">
+        <MSBuild Projects="ds_fd_dbx_client\ds_fd_dbx_client.dproj"/>
+    </Target>
+    <Target Name="ds_fd_dbx_client:Clean">
+        <MSBuild Projects="ds_fd_dbx_client\ds_fd_dbx_client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ds_fd_dbx_client:Make">
+        <MSBuild Projects="ds_fd_dbx_client\ds_fd_dbx_client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ds_firedac">
+        <MSBuild Projects="ds_firedac\ds_firedac.dproj"/>
+    </Target>
+    <Target Name="ds_firedac:Clean">
+        <MSBuild Projects="ds_firedac\ds_firedac.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ds_firedac:Make">
+        <MSBuild Projects="ds_firedac\ds_firedac.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ds_firedac_client">
+        <MSBuild Projects="ds_firedac_client\ds_firedac_client.dproj"/>
+    </Target>
+    <Target Name="ds_firedac_client:Clean">
+        <MSBuild Projects="ds_firedac_client\ds_firedac_client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ds_firedac_client:Make">
+        <MSBuild Projects="ds_firedac_client\ds_firedac_client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ds_fd_dbx;ds_fd_dbx_client;ds_firedac;ds_firedac_client"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ds_fd_dbx:Clean;ds_fd_dbx_client:Clean;ds_firedac:Clean;ds_firedac_client:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ds_fd_dbx:Make;ds_fd_dbx_client:Make;ds_firedac:Make;ds_firedac_client:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/05/15 12:08:23.000.785,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2017/05/15 12:08:23.000.522,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2017/05/15 12:08:24.000.944,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\json2.js</Transaction>
+    <Transaction>2017/05/15 12:08:24.000.990,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\callbackframework.js</Transaction>
+    <Transaction>2017/05/15 12:08:24.000.931,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\serverfunctionexecutor.js</Transaction>
+    <Transaction>2017/05/15 12:08:24.000.916,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\base64.js</Transaction>
+    <Transaction>2017/05/15 12:08:24.000.839,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\ServerConst1.pas</Transaction>
+    <Transaction>2017/05/15 12:08:24.000.595,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.335,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\templates\serverfunctioninvoker.html</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.273,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\templates\reversestring.html</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.083,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\serverfunctionexecutor-min.js</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.009,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\serverfunctions.js</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.217,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\css\main.css</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.368,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\images\collapse.png</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.029,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\base64-min.js</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.162,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\connection.js</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.243,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\css\serverfunctioninvoker.css</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.186,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\serverfunctioninvoker.js</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.055,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\json2-min.js</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.403,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\images\expand.png</Transaction>
+    <Transaction>2017/05/15 12:08:25.000.105,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\js\callbackframework-min.js</Transaction>
+    <Transaction>2017/05/15 13:22:15.000.511,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx\Datasnap.Provider.pas</Transaction>
+    <Transaction>2017/05/15 14:20:41.000.000,=C:\DelphiAcademy\25-DataSnapFireDAC\lib\Datasnap.Provider.pas</Transaction>
+    <Transaction>2017/05/15 14:21:12.000.969,=C:\DelphiAcademy\25-DataSnapFireDAC\lib\libmidas.so.2</Transaction>
+    <Transaction>2017/05/16 11:20:47.658,=C:\DelphiAcademy\25-DataSnapFireDAC\lib\System.Classes.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/05/15 12:15:45.000.732,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/05/15 12:16:13.000.566,C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx_client\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/05/15 12:16:13.000.566,C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx_client\uMainForm.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2017/05/15 12:16:27.000.277,C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx_client\ds_fd_dbx_client.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/05/15 12:17:14.000.396,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx_client\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2017/05/15 12:17:14.000.568,=C:\DelphiAcademy\25-DataSnapFireDAC\ds_fd_dbx_client\ClientModuleUnit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
