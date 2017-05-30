@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{9B877DF5-34DA-4AB6-BB63-0A13AB6FA486}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DSSecurity\DSSecurity.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DSSecurityClient\DSSecurityClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DSDataCache\DSDataCache.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dsemployee\dsemployee.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dsemployee\mod_dsemployee.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DSSecurity">
+        <MSBuild Projects="DSSecurity\DSSecurity.dproj"/>
+    </Target>
+    <Target Name="DSSecurity:Clean">
+        <MSBuild Projects="DSSecurity\DSSecurity.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DSSecurity:Make">
+        <MSBuild Projects="DSSecurity\DSSecurity.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DSSecurityClient">
+        <MSBuild Projects="DSSecurityClient\DSSecurityClient.dproj"/>
+    </Target>
+    <Target Name="DSSecurityClient:Clean">
+        <MSBuild Projects="DSSecurityClient\DSSecurityClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DSSecurityClient:Make">
+        <MSBuild Projects="DSSecurityClient\DSSecurityClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DSDataCache">
+        <MSBuild Projects="DSDataCache\DSDataCache.dproj"/>
+    </Target>
+    <Target Name="DSDataCache:Clean">
+        <MSBuild Projects="DSDataCache\DSDataCache.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DSDataCache:Make">
+        <MSBuild Projects="DSDataCache\DSDataCache.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dsemployee">
+        <MSBuild Projects="dsemployee\dsemployee.dproj"/>
+    </Target>
+    <Target Name="dsemployee:Clean">
+        <MSBuild Projects="dsemployee\dsemployee.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dsemployee:Make">
+        <MSBuild Projects="dsemployee\dsemployee.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="mod_dsemployee">
+        <MSBuild Projects="dsemployee\mod_dsemployee.dproj"/>
+    </Target>
+    <Target Name="mod_dsemployee:Clean">
+        <MSBuild Projects="dsemployee\mod_dsemployee.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mod_dsemployee:Make">
+        <MSBuild Projects="dsemployee\mod_dsemployee.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DSSecurity;DSSecurityClient;DSDataCache;dsemployee;mod_dsemployee"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DSSecurity:Clean;DSSecurityClient:Clean;DSDataCache:Clean;dsemployee:Clean;mod_dsemployee:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DSSecurity:Make;DSSecurityClient:Make;DSDataCache:Make;dsemployee:Make;mod_dsemployee:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

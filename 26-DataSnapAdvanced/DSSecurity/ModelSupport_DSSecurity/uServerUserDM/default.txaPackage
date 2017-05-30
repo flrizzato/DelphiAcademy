@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <node uin="5y2h8ujdz0142oqzk_n">
+    <property name="$metaclass" value="Pattern" />
+    <property name="$name" value="Singleton" />
+    <property name="PatternUPID" value="{2004-11-30-7-31-41-705-01016}" />
+    <link uin="1refc63d0114acppq_l">
+      <property name="$metaclass" value="DesignPatternLink" />
+      <property name="$name" value="TDataModule1" />
+      <property name="@supplierRole" value="_Singleton" />
+      <participant referencedUin="design:node:::5y2h8ujdz0142oqzk_n" role="Client" />
+      <participant referencedUin="delphi:e_class:src:DSSecurity:uServerUserDM.TDataModule1" role="Supplier" />
+    </link>
+  </node>
+</nodeSet>

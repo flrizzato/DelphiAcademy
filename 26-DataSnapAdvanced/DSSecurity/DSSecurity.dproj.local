@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/05/29 11:37:33.000.803,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2017/05/29 11:37:34.000.822,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.314,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\serverfunctionexecutor-min.js</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.351,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\connection.js</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.515,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\images\expand.png</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.462,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\templates\serverfunctioninvoker.html</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.007,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.286,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\base64-min.js</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.372,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\serverfunctioninvoker.js</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.228,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\base64.js</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.436,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\templates\reversestring.html</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.299,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\json2-min.js</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.331,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\callbackframework-min.js</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.489,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\images\collapse.png</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.413,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\css\serverfunctioninvoker.css</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.391,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\css\main.css</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.274,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\serverfunctions.js</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.143,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\ServerConst1.pas</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.260,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\callbackframework.js</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.237,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\serverfunctionexecutor.js</Transaction>
+    <Transaction>2017/05/29 11:37:35.000.247,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\js\json2.js</Transaction>
+    <Transaction>2017/05/29 12:46:29.000.107,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\Unit1.pas</Transaction>
+    <Transaction>2017/05/29 12:47:01.000.718,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\uUserDM.pas</Transaction>
+    <Transaction>2017/05/29 12:47:01.000.718,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\Unit1.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\uUserDM.dfm</Transaction>
+    <Transaction>2017/05/29 12:47:18.000.990,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\uUserDM.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\uServerUserDM.pas</Transaction>
+    <Transaction>2017/05/29 12:47:18.000.990,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\uUserDM.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\uServerUserDM.dfm</Transaction>
+    <Transaction>2017/05/29 12:47:31.000.195,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\ModelSupport_DSSecurity\default.txaPackage</Transaction>
+    <Transaction>2017/05/29 12:47:36.000.025,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\ModelSupport_DSSecurity\default.txvpck</Transaction>
+    <Transaction>2017/05/29 12:47:38.000.158,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\ModelSupport_DSSecurity\uServerUserDM\default.txvpck</Transaction>
+    <Transaction>2017/05/29 12:47:38.000.395,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\ModelSupport_DSSecurity\DSSecurity\default.txvpck</Transaction>
+    <Transaction>2017/05/29 12:47:39.000.141,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\ModelSupport_DSSecurity\uServerUserDM\default.txaPackage</Transaction>
+    <Transaction>2017/05/29 14:20:15.000.219,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\ModelSupport_DSSecurity\ServerMethodsUnit1\default.txvpck</Transaction>
+    <Transaction>2017/05/29 14:20:15.000.104,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurity\ModelSupport_DSSecurity\ServerContainerUnit1\default.txvpck</Transaction>
+  </Transactions>
+</BorlandProject>

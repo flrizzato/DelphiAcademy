@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="giswb9i43ke_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:DSSecurity:uServerUserDM.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="design:node:::5y2h8ujdz0142oqzk_n">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="420,29,113,57" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:DSSecurity:uServerUserDM.TServerUserDM">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,218,175" />
+      <reference referencedUin="delphi:e_field:src:DSSecurity:uServerUserDM.TServerUserDM.aUserList" />
+      <reference referencedUin="delphi:e_field:src:DSSecurity:uServerUserDM.TServerUserDM.FInstance" />
+      <reference referencedUin="delphi:e_method:src:DSSecurity:uServerUserDM.TServerUserDM.Create(System.Classes.TComponent)" />
+      <reference referencedUin="delphi:e_method:src:DSSecurity:uServerUserDM.TServerUserDM.GetInstance()" />
+      <reference referencedUin="delphi:e_method:src:DSSecurity:uServerUserDM.TServerUserDM.UserValidate(System.string,System.string,ref@System.string)" />
+      <reference referencedUin="delphi:l_ast:src:DSSecurity:uServerUserDM.TServerUserDM.FInstance">
+        <property name="sourceAnchor" value="228,177" />
+        <property name="targetAnchor" value="220,185" />
+        <property name="bendpoints" value="261,177,261,218,220,218" />
+        <property name="bounds_setted_by_user" value="True" />
+      </reference>
+      <reference referencedUin="delphi:e_method:src:DSSecurity:uServerUserDM.TServerUserDM.GetUserLevel(System.string)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:DSSecurity:uServerUserDM.TUser">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="247,1,116,114" />
+      <reference referencedUin="delphi:e_field:src:DSSecurity:uServerUserDM.TUser.UserName" />
+      <reference referencedUin="delphi:e_field:src:DSSecurity:uServerUserDM.TUser.Password" />
+      <reference referencedUin="delphi:e_field:src:DSSecurity:uServerUserDM.TUser.UserLevel" />
+    </reference>
+  </view>
+</nodeSet>

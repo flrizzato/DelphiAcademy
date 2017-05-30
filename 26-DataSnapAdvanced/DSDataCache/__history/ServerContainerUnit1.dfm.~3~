@@ -1,0 +1,98 @@
+object ServerContainer1: TServerContainer1
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 271
+  Width = 415
+  object DSServer1: TDSServer
+    Left = 328
+    Top = 19
+  end
+  object DSServerClass1: TDSServerClass
+    OnGetClass = DSServerClass1GetClass
+    Server = DSServer1
+    Left = 328
+    Top = 75
+  end
+  object DSServerClass2: TDSServerClass
+    OnGetClass = DSServerClass2GetClass
+    Server = DSServer1
+    LifeCycle = 'Server'
+    Left = 328
+    Top = 131
+  end
+  object DataCacheAlert: TFDEventAlerter
+    Names.Strings = (
+      'DEPTO')
+    Options.Kind = 'Events'
+    Options.Timeout = 10000
+    OnAlert = DataCacheAlertAlert
+    Left = 56
+    Top = 120
+  end
+  object EmployeeConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=EMPLOYEE')
+    LoginPrompt = False
+    Left = 56
+    Top = 8
+  end
+  object DepartmentTable: TFDQuery
+    Connection = EmployeeConnection
+    FetchOptions.AssignedValues = [evMode, evUnidirectional]
+    FetchOptions.Mode = fmAll
+    FetchOptions.Unidirectional = True
+    SQL.Strings = (
+      'SELECT * FROM DEPARTMENT ORDER BY DEPT_NO')
+    Left = 56
+    Top = 64
+    object DepartmentTableDEPT_NO: TStringField
+      FieldName = 'DEPT_NO'
+      Origin = 'DEPT_NO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      FixedChar = True
+      Size = 3
+    end
+    object DepartmentTableDEPARTMENT: TStringField
+      FieldName = 'DEPARTMENT'
+      Origin = 'DEPARTMENT'
+      Required = True
+      Size = 25
+    end
+    object DepartmentTableHEAD_DEPT: TStringField
+      FieldName = 'HEAD_DEPT'
+      Origin = 'HEAD_DEPT'
+      FixedChar = True
+      Size = 3
+    end
+    object DepartmentTableMNGR_NO: TSmallintField
+      FieldName = 'MNGR_NO'
+      Origin = 'MNGR_NO'
+    end
+    object DepartmentTableBUDGET: TBCDField
+      FieldName = 'BUDGET'
+      Origin = 'BUDGET'
+      Precision = 18
+      Size = 2
+    end
+    object DepartmentTableLOCATION: TStringField
+      FieldName = 'LOCATION'
+      Origin = 'LOCATION'
+      Size = 15
+    end
+    object DepartmentTablePHONE_NO: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'PHONE_NO'
+      Origin = 'PHONE_NO'
+    end
+  end
+  object FDPhysIBDriverLink1: TFDPhysIBDriverLink
+    Left = 168
+    Top = 8
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 168
+    Top = 64
+  end
+end

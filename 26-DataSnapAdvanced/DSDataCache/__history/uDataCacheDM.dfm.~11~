@@ -1,0 +1,24 @@
+object DataCacheDM: TDataCacheDM
+  OldCreateOrder = False
+  Height = 301
+  Width = 418
+  object FDStanStorageJSONLink1: TFDStanStorageJSONLink
+    Left = 152
+    Top = 24
+  end
+  object FDStanStorageBinLink1: TFDStanStorageBinLink
+    Left = 280
+    Top = 24
+  end
+  object DataCache: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 48
+    Top = 24
+  end
+end

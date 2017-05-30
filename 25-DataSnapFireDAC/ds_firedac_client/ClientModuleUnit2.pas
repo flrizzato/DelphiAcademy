@@ -126,7 +126,8 @@ begin
   CustomerMemTable.Open;
 
   SalesMemTable.Close;
-  SalesMemTable.AppendData(TFDJSONDataSetsReader.GetListValue(LDataSetList, 1));
+  SalesMemTable.AppendData(TFDJSONDataSetsReader.GetListValue
+    (LDataSetList, 1));
   SalesMemTable.Open;
 end;
 

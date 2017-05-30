@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/05/29 14:10:25.000.878,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/05/29 14:11:23.000.957,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurityClient\uMainForm.pas</Transaction>
+    <Transaction>2017/05/29 14:11:23.000.957,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurityClient\uMainForm.dfm</Transaction>
+    <Transaction>2017/05/29 14:11:31.000.468,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurityClient\DSSecurityClient.dproj</Transaction>
+    <Transaction>2017/05/29 14:14:39.000.842,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurityClient\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2017/05/29 14:14:40.000.041,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurityClient\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2017/05/29 14:32:03.000.472,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\DSSecurityClient\Datasnap.DSClientRest.pas</Transaction>
+  </Transactions>
+</BorlandProject>

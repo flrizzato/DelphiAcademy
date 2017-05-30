@@ -5,9 +5,9 @@
     </ProjectExtensions>
     <PropertyGroup/>
     <ItemGroup Condition="'$(Platform)'=='Win64'">
-        <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ds_fd_dbx\js\</RemoteDir>
-            <RemoteName>base64.js</RemoteName>
+        <DeployFile Include="images\collapse.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ds_fd_dbx\images\</RemoteDir>
+            <RemoteName>collapse.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
@@ -302,9 +302,9 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="images\collapse.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>ds_fd_dbx\images\</RemoteDir>
-            <RemoteName>collapse.png</RemoteName>
+        <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>ds_fd_dbx\js\</RemoteDir>
+            <RemoteName>base64.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
