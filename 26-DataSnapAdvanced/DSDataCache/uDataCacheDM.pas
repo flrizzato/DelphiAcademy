@@ -29,11 +29,16 @@ type
     DepartmentTablePHONE_NO: TStringField;
     FDPhysIBDriverLink1: TFDPhysIBDriverLink;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    FDEventAlerter1: TFDEventAlerter;
     procedure DataModuleCreate(Sender: TObject);
+    procedure FDEventAlerter1Alert(ASender: TFDCustomEventAlerter;
+      const AEventName: string; const AArgument: Variant);
   private
     { Private declarations }
+    procedure InternalDataCacheUpdate;
   public
     { Public declarations }
+    procedure DataCacheUpdate;
     function GetDepartmentTable: TFDJSONDataSets;
   end;
 {$METHODINFO OFF}
@@ -46,17 +51,37 @@ uses ServerContainerUnit1;
 
 {$R *.dfm}
 
+procedure TDataCacheDM.DataCacheUpdate;
+begin
+  InternalDataCacheUpdate;
+end;
+
 procedure TDataCacheDM.DataModuleCreate(Sender: TObject);
 begin
-  DepartmentTable.Close;
-  DepartmentTable.Open;
-  DataCache.Data := DepartmentTable.Data;
+  InternalDataCacheUpdate;
+  FDEventAlerter1.Active := True;
+end;
+
+procedure TDataCacheDM.FDEventAlerter1Alert(ASender: TFDCustomEventAlerter;
+  const AEventName: string; const AArgument: Variant);
+begin
+  if AEventName = 'DEPTO_UPDATED' then
+    InternalDataCacheUpdate;
 end;
 
 function TDataCacheDM.GetDepartmentTable: TFDJSONDataSets;
 begin
   Result := TFDJSONDataSets.Create;
   TFDJSONDataSetsWriter.ListAdd(Result, DataCache);
+end;
+
+procedure TDataCacheDM.InternalDataCacheUpdate;
+begin
+  DepartmentTable.Close;
+  DepartmentTable.Open;
+
+  DataCache.Close;
+  DataCache.Data := DepartmentTable.Data;
 end;
 
 end.

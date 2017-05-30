@@ -1,5 +1,6 @@
 object ServerContainer1: TServerContainer1
   OldCreateOrder = False
+  OnCreate = DataModuleCreate
   Height = 271
   Width = 415
   object DSServer1: TDSServer

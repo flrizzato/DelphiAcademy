@@ -20,6 +20,7 @@ type
       var PersistentClass: TPersistentClass);
     procedure DSServerClass2GetClass(DSServerClass: TDSServerClass;
       var PersistentClass: TPersistentClass);
+    procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,7 +35,7 @@ implementation
 {$R *.dfm}
 
 uses
-  ServerMethodsUnit1, uDataCacheDM;
+  ServerMethodsUnit1, uDataCacheDM, ClientModuleUnit3;
 
 var
   FModule: TComponent;
@@ -49,6 +50,11 @@ constructor TServerContainer1.Create(AOwner: TComponent);
 begin
   inherited;
   FDSServer := DSServer1;
+end;
+
+procedure TServerContainer1.DataModuleCreate(Sender: TObject);
+begin
+  //FDEventAlerter1.Active := True;
 end;
 
 destructor TServerContainer1.Destroy;

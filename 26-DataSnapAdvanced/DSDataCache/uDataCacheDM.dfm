@@ -88,4 +88,15 @@ object DataCacheDM: TDataCacheDM
     Left = 168
     Top = 88
   end
+  object FDEventAlerter1: TFDEventAlerter
+    Connection = EmployeeConnection
+    Names.Strings = (
+      'DEPTO_UPDATED')
+    Options.Timeout = 10000
+    Options.Synchronize = False
+    Options.AutoRegister = True
+    OnAlert = FDEventAlerter1Alert
+    Left = 56
+    Top = 200
+  end
 end

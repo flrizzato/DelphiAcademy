@@ -1,0 +1,65 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MainForm'
+  ClientHeight = 391
+  ClientWidth = 691
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 691
+    Height = 40
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 0
+    object Button1: TButton
+      AlignWithMargins = True
+      Left = 5
+      Top = 5
+      Width = 124
+      Height = 30
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Align = alLeft
+      Caption = 'Execute'
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+  end
+  object DBGrid1: TDBGrid
+    AlignWithMargins = True
+    Left = 5
+    Top = 45
+    Width = 681
+    Height = 341
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    Align = alClient
+    DataSource = DataSource1
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object DataSource1: TDataSource
+    AutoEdit = False
+    DataSet = ClientModule2.FDDepartmentTable
+    Left = 64
+    Top = 80
+  end
+end

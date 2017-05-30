@@ -12,6 +12,9 @@
         <Projects Include="DSDataCache\DSDataCache.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="DSDataCacheClient\DSDataCacheClient.dproj">
+            <Dependencies/>
+        </Projects>
         <Projects Include="dsemployee\dsemployee.dproj">
             <Dependencies/>
         </Projects>
@@ -53,6 +56,15 @@
     <Target Name="DSDataCache:Make">
         <MSBuild Projects="DSDataCache\DSDataCache.dproj" Targets="Make"/>
     </Target>
+    <Target Name="DSDataCacheClient">
+        <MSBuild Projects="DSDataCacheClient\DSDataCacheClient.dproj"/>
+    </Target>
+    <Target Name="DSDataCacheClient:Clean">
+        <MSBuild Projects="DSDataCacheClient\DSDataCacheClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DSDataCacheClient:Make">
+        <MSBuild Projects="DSDataCacheClient\DSDataCacheClient.dproj" Targets="Make"/>
+    </Target>
     <Target Name="dsemployee">
         <MSBuild Projects="dsemployee\dsemployee.dproj"/>
     </Target>
@@ -72,13 +84,13 @@
         <MSBuild Projects="dsemployee\mod_dsemployee.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="DSSecurity;DSSecurityClient;DSDataCache;dsemployee;mod_dsemployee"/>
+        <CallTarget Targets="DSSecurity;DSSecurityClient;DSDataCache;DSDataCacheClient;dsemployee;mod_dsemployee"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="DSSecurity:Clean;DSSecurityClient:Clean;DSDataCache:Clean;dsemployee:Clean;mod_dsemployee:Clean"/>
+        <CallTarget Targets="DSSecurity:Clean;DSSecurityClient:Clean;DSDataCache:Clean;DSDataCacheClient:Clean;dsemployee:Clean;mod_dsemployee:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="DSSecurity:Make;DSSecurityClient:Make;DSDataCache:Make;dsemployee:Make;mod_dsemployee:Make"/>
+        <CallTarget Targets="DSSecurity:Make;DSSecurityClient:Make;DSDataCache:Make;DSDataCacheClient:Make;dsemployee:Make;mod_dsemployee:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
