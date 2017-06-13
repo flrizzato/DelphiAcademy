@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2017/05/30 15:30:04.870,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/05/30 15:30:34.497,C:\DelphiAcademy\26-DataSnapAdvanced\DSDataCacheClient\uMainForm.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2017/05/30 15:30:34.497,C:\DelphiAcademy\26-DataSnapAdvanced\DSDataCacheClient\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/05/30 15:30:43.446,C:\DelphiAcademy\26-DataSnapAdvanced\DSDataCacheClient\DSDataCacheClient.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2017/05/30 15:31:35.853,=C:\DelphiAcademy\26-DataSnapAdvanced\DSDataCacheClient\ClientClassesUnit2.pas</Transaction>
-    <Transaction>2017/05/30 15:31:39.480,=C:\DelphiAcademy\26-DataSnapAdvanced\DSDataCacheClient\ClientModuleUnit2.pas</Transaction>
+	<Transactions>
+    <Transaction>2017/05/30 15:30:04.000.870,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/05/30 15:30:34.000.497,C:\DelphiAcademy\26-DataSnapAdvanced\DSDataCacheClient\uMainForm.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2017/05/30 15:30:34.000.497,C:\DelphiAcademy\26-DataSnapAdvanced\DSDataCacheClient\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/05/30 15:30:43.000.446,C:\DelphiAcademy\26-DataSnapAdvanced\DSDataCacheClient\DSDataCacheClient.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/05/30 15:31:35.000.853,=C:\DelphiAcademy\26-DataSnapAdvanced\DSDataCacheClient\ClientClassesUnit2.pas</Transaction>
+    <Transaction>2017/05/30 15:31:39.000.480,=C:\DelphiAcademy\26-DataSnapAdvanced\DSDataCacheClient\ClientModuleUnit2.pas</Transaction>
   </Transactions>
 </BorlandProject>
