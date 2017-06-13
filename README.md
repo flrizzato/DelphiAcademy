@@ -26,6 +26,11 @@
 22 - Parallel Programming Library (PPL) com Delphi<br>
 23 - Novos Recursos para JSON no Delphi e C++ Builder<br>
 24 - Servidores DataSnap REST<br>
+25 - DataSnap REST com FireDAC<br>
+26 - DataSnap REST Avançado<br>
+27 - Iniciando com Aplicações Mobile em Delphi e C++ Builder<br>
+28 - Aplicações Mobile: Boas Práticas de UI<br>
+29 - Aplicações Mobile: Acesso a Dados<br>
 
 <h2>Español</h2>
 01 - Control de una aplicación Windows desde una aplicación móvil con AppTethering<br>
@@ -51,4 +56,9 @@
 21 - Empezando con RADServer para Windows y Linux de 64 bits<br>
 22 - Parallel Programming Library (PPL) con Delphi<br>
 23 - Nuevos Recursos para JSON en Delphi y C ++ Builder<br>
-
+24 - Servidores DataSnap REST<br>
+25 - DataSnap REST con FireDAC<br>
+26 - DataSnap REST Avanzado<br>
+27 - Empezando con Aplicaciones Móviles en Delphi y C ++ Builder<br>
+28 - Aplicaciones Móviles: Buenas Prácticas de UI<br>
+29 - Aplicaciones Móviles: Acceso a Datos<br>
