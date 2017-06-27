@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{34DE47DC-F454-413D-8DAD-7DD8CDDBF1A9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Toolbar\ToolBar.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Tabs\Tabs.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Home\HomeScreen.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Drawer\Drawer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FormScroll\FormScroll.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Controls\MobileControls.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ToolBar">
+        <MSBuild Projects="Toolbar\ToolBar.dproj"/>
+    </Target>
+    <Target Name="ToolBar:Clean">
+        <MSBuild Projects="Toolbar\ToolBar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ToolBar:Make">
+        <MSBuild Projects="Toolbar\ToolBar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Tabs">
+        <MSBuild Projects="Tabs\Tabs.dproj"/>
+    </Target>
+    <Target Name="Tabs:Clean">
+        <MSBuild Projects="Tabs\Tabs.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Tabs:Make">
+        <MSBuild Projects="Tabs\Tabs.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HomeScreen">
+        <MSBuild Projects="Home\HomeScreen.dproj"/>
+    </Target>
+    <Target Name="HomeScreen:Clean">
+        <MSBuild Projects="Home\HomeScreen.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HomeScreen:Make">
+        <MSBuild Projects="Home\HomeScreen.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Drawer">
+        <MSBuild Projects="Drawer\Drawer.dproj"/>
+    </Target>
+    <Target Name="Drawer:Clean">
+        <MSBuild Projects="Drawer\Drawer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Drawer:Make">
+        <MSBuild Projects="Drawer\Drawer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FormScroll">
+        <MSBuild Projects="FormScroll\FormScroll.dproj"/>
+    </Target>
+    <Target Name="FormScroll:Clean">
+        <MSBuild Projects="FormScroll\FormScroll.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FormScroll:Make">
+        <MSBuild Projects="FormScroll\FormScroll.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MobileControls">
+        <MSBuild Projects="Controls\MobileControls.dproj"/>
+    </Target>
+    <Target Name="MobileControls:Clean">
+        <MSBuild Projects="Controls\MobileControls.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobileControls:Make">
+        <MSBuild Projects="Controls\MobileControls.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ToolBar;Tabs;HomeScreen;Drawer;FormScroll;MobileControls"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ToolBar:Clean;Tabs:Clean;HomeScreen:Clean;Drawer:Clean;FormScroll:Clean;MobileControls:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ToolBar:Make;Tabs:Make;HomeScreen:Make;Drawer:Make;FormScroll:Make;MobileControls:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

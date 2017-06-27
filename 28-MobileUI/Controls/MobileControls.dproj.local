@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="iPhone5"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

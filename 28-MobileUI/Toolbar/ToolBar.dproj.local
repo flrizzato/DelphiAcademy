@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/06/26 23:17:52.000.056,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/26 23:18:30.000.030,C:\DelphiAcademy\28-MobileUI\Toolbar01\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017/06/26 23:18:30.000.030,C:\DelphiAcademy\28-MobileUI\Toolbar01\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/26 23:18:37.000.983,C:\DelphiAcademy\28-MobileUI\Toolbar01\ToolBar01.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/06/27 00:01:22.000.860,C:\DelphiAcademy\28-MobileUI\Toolbar\ToolBar.dproj=C:\DelphiAcademy\28-MobileUI\Toolbar\ToolBar01.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="iPhone5"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

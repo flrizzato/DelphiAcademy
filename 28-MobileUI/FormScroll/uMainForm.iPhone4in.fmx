@@ -1,0 +1,36 @@
+inherited Form3_iPhone4in: TForm3_iPhone4in
+  ClientHeight = 548
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited VertScrollBox1: TVertScrollBox
+    Size.Width = 320.000000000000000000
+    Size.Height = 548.000000000000000000
+    Viewport.Width = 320.000000000000000000
+    Viewport.Height = 548.000000000000000000
+    inherited Edit1: TEdit
+      Size.Height = 30.000000000000000000
+    end
+    inherited Edit2: TEdit
+      Size.Height = 30.000000000000000000
+    end
+    inherited Edit3: TEdit
+      Size.Height = 30.000000000000000000
+    end
+    inherited Edit4: TEdit
+      Size.Height = 30.000000000000000000
+    end
+    inherited Edit5: TEdit
+      Position.Y = 508.000000000000000000
+      Size.Height = 30.000000000000000000
+    end
+    inherited Edit6: TEdit
+      Size.Height = 30.000000000000000000
+    end
+    inherited Edit7: TEdit
+      Size.Height = 30.000000000000000000
+    end
+    inherited Edit8: TEdit
+      Size.Height = 30.000000000000000000
+    end
+  end
+end

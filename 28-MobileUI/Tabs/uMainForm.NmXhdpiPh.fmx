@@ -1,0 +1,38 @@
+inherited Form1_NmXhdpiPh: TForm1_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    Sizes = (
+      400s
+      566s
+      400s
+      566s
+      400s
+      566s
+      400s
+      566s)
+    inherited TabItem1: TTabItem
+      Size.Width = 100.000000000000000000
+      ExplicitSize.cx = 95.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 100.000000000000000000
+      ExplicitSize.cx = 95.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+    inherited TabItem3: TTabItem
+      Size.Width = 100.000000000000000000
+      ExplicitSize.cx = 95.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+    inherited TabItem4: TTabItem
+      Size.Width = 100.000000000000000000
+      ExplicitSize.cx = 97.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+  end
+end

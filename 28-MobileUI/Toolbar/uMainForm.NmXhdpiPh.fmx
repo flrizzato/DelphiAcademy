@@ -1,0 +1,26 @@
+inherited MainForm_NmXhdpiPh: TMainForm_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 400.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited Layout1: TLayout
+      inherited SpeedButton1: TSpeedButton
+        Size.Height = 42.000000000000000000
+      end
+      inherited SpeedButton2: TSpeedButton
+        Size.Height = 42.000000000000000000
+      end
+      inherited SpeedButton3: TSpeedButton
+        Size.Height = 42.000000000000000000
+      end
+    end
+  end
+  inherited Image1: TImage
+    MultiResBitmap.Height = 450
+    MultiResBitmap.Width = 800
+    Size.Width = 380.000000000000000000
+    Size.Height = 547.000000000000000000
+  end
+end

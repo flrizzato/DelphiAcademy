@@ -1,0 +1,43 @@
+inherited Form2_NmXhdpiPh: TForm2_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 400.000000000000000000
+    Size.Height = 48.000000000000000000
+    TintColor = claRed
+    inherited butSearch: TButton
+      IconTintColor = claWhite
+      Position.X = 347.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      OnClick = butSearchClick
+    end
+    inherited butDrawer: TButton
+      IconTintColor = claWhite
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited ListView1: TListView
+    ItemSpaces.Left = 30.000000000000000000
+    ItemSpaces.Right = 30.000000000000000000
+    Size.Width = 400.000000000000000000
+    Size.Height = 567.000000000000000000
+    ItemAppearance.ItemHeight = 50
+    ItemAppearance.ItemEditHeight = 50
+  end
+  inherited MultiView1: TMultiView
+    Size.Height = 567.000000000000000000
+    inherited Image1: TImage
+      MultiResBitmap.Height = 300
+      MultiResBitmap.Width = 620
+    end
+    inherited ListBox1: TListBox
+      Margins.Top = 10.000000000000000000
+      Position.Y = 133.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 150.000000000000000000
+    end
+  end
+end
