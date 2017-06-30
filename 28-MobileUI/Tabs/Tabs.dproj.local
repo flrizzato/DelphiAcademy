@@ -2,9 +2,9 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2017/06/27 00:03:33.000.676,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/06/27 00:12:33.000.154,C:\DelphiAcademy\28-MobileUI\Tabs\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2017/06/27 00:12:33.000.154,C:\DelphiAcademy\28-MobileUI\Tabs\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/06/27 00:12:37.000.015,C:\DelphiAcademy\28-MobileUI\Tabs\Tabs.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/06/27 00:12:33.000.154,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\28-MobileUI\Tabs\uMainForm.pas</Transaction>
+    <Transaction>2017/06/27 00:12:33.000.154,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\DelphiAcademy\28-MobileUI\Tabs\uMainForm.fmx</Transaction>
+    <Transaction>2017/06/27 00:12:37.000.015,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\28-MobileUI\Tabs\Tabs.dproj</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<PmacOS iOSSimulator="iPhone5"/>
