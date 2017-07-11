@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/07/10 15:19:43.000.300,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/10 15:20:21.000.168,C:\DelphiAcademy\29-MobileDB\IBLiteUpdate\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017/07/10 15:20:21.000.168,C:\DelphiAcademy\29-MobileDB\IBLiteUpdate\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/10 15:20:25.000.443,C:\DelphiAcademy\29-MobileDB\IBLiteUpdate\IBLiteUpdate.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/07/10 15:35:22.000.563,=C:\DelphiAcademy\29-MobileDB\mastsql.gdb</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="_iossimulator_5th generation"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

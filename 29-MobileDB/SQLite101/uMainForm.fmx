@@ -1,0 +1,146 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Button1: TButton
+      Align = Center
+      StyleLookup = 'cornerbuttonstyle'
+      TabOrder = 0
+      Text = 'Open'
+      OnClick = Button1Click
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=C:\EVENTS\CodeRageXI\fddemo.sdb'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    BeforeConnect = FDConnection1BeforeConnect
+    Left = 72
+    Top = 56
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 504
+    Top = 328
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 496
+    Top = 392
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'SELECT * FROM CUSTOMERS')
+    Left = 72
+    Top = 112
+    object FDQuery1CustomerID: TStringField
+      FieldName = 'CustomerID'
+      Origin = 'CustomerID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      FixedChar = True
+      Size = 5
+    end
+    object FDQuery1CompanyName: TStringField
+      FieldName = 'CompanyName'
+      Origin = 'CompanyName'
+      Required = True
+      Size = 40
+    end
+    object FDQuery1ContactName: TStringField
+      FieldName = 'ContactName'
+      Origin = 'ContactName'
+      Size = 30
+    end
+    object FDQuery1ContactTitle: TStringField
+      FieldName = 'ContactTitle'
+      Origin = 'ContactTitle'
+      Size = 30
+    end
+    object FDQuery1Address: TStringField
+      FieldName = 'Address'
+      Origin = 'Address'
+      Size = 60
+    end
+    object FDQuery1City: TStringField
+      FieldName = 'City'
+      Origin = 'City'
+      Size = 15
+    end
+    object FDQuery1Region: TStringField
+      FieldName = 'Region'
+      Origin = 'Region'
+      Size = 15
+    end
+    object FDQuery1PostalCode: TStringField
+      FieldName = 'PostalCode'
+      Origin = 'PostalCode'
+      Size = 10
+    end
+    object FDQuery1Country: TStringField
+      FieldName = 'Country'
+      Origin = 'Country'
+      Size = 15
+    end
+    object FDQuery1Phone: TStringField
+      FieldName = 'Phone'
+      Origin = 'Phone'
+      Size = 24
+    end
+    object FDQuery1Fax: TStringField
+      FieldName = 'Fax'
+      Origin = 'Fax'
+      Size = 24
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDQuery1
+    ScopeMappings = <>
+    Left = 288
+    Top = 240
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 292
+    Top = 181
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'CompanyName'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'Phone'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end
