@@ -12,6 +12,6 @@
 	<ActiveMobileDevice>
 		<NoProfile Android="0022831207"/>
 		<PRIZZATOOSX iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf" iOSDevice32="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf" iOSSimulator="iPhone5"/>
-		<PmacOS iOSSimulator="_iossimulator_9.7 inch"/>
+		<PmacOS iOSSimulator="iPhone5"/>
 	</ActiveMobileDevice>
 </BorlandProject>

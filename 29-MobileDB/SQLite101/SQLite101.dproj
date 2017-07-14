@@ -400,14 +400,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSDevice64\Release\SQLite101.dSYM" Configuration="Release" Class="ProjectiOSDeviceDebug">
-                    <Platform Name="iOSDevice64">
+                <DeployFile LocalName="iOSSimulator\Debug\SQLite101" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="iOSSimulator">
                         <RemoteName>SQLite101</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSSimulator\Debug\SQLite101" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="iOSSimulator">
+                <DeployFile LocalName="iOSDevice64\Release\SQLite101.dSYM" Configuration="Release" Class="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice64">
                         <RemoteName>SQLite101</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>

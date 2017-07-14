@@ -36,7 +36,7 @@ object Form1: TForm1
     Params.Strings = (
       'User_Name=sysdba'
       'Password=masterkey'
-      'Database=C:\EVENTS\CodeRageXI\dbdemos.gdb'
+      'Database=C:\DelphiAcademy\29-MobileDB\dbdemos.gdb'
       'DriverID=IBLite')
     LoginPrompt = False
     BeforeConnect = FDConnection1BeforeConnect

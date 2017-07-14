@@ -8,7 +8,7 @@
     <Transaction>2017/07/10 15:35:22.000.563,=C:\DelphiAcademy\29-MobileDB\mastsql.gdb</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<PmacOS iOSSimulator="_iossimulator_5th generation"/>
+		<PmacOS iOSSimulator="iPhone5"/>
 		<NoProfile Android="0022831207"/>
 	</ActiveMobileDevice>
 </BorlandProject>
