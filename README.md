@@ -30,6 +30,17 @@
 27 - Iniciando com Aplicações Mobile em Delphi e C++ Builder<br>
 28 - Aplicações Mobile: Boas Práticas de UI<br>
 29 - Aplicações Mobile: Acesso a Dados<br>
+30 - Aplicações Mobile: Acertos/Erros na UI<br>
+31 - Aplicações Mobile: Sensores e Devices<br>
+32 - Aplicações Mobile: Protótipo Final de UI<br>
+33 - Aplicações Mobile: Entrada de Dados<br>
+34 - Aplicações Mobile: Sincronização Parte 1<br>
+35 - Aplicações Mobile: Sincronização Parte 2<br>
+36 - Técnica de Debug e Log de Applicações<br>
+37 - Desenvolvimento Web: Parte 1<br>
+38 - Desenvolvimento Web: Parte 2<br>
+39 - Desenvolvimento Web: Parte 3<br>
+
 
 <h2>Español</h2>
 01 - Control de una aplicación Windows desde una aplicación móvil con AppTethering<br>
@@ -61,3 +72,13 @@
 27 - Empezando con Aplicaciones Móviles en Delphi y C ++ Builder<br>
 28 - Aplicaciones Móviles: Buenas Prácticas de UI<br>
 29 - Aplicaciones Móviles: Acceso a Datos<br>
+30 - Aplicaciones móviles: Aciertos/Errores en el UI<br>
+31 - Aplicaciones móviles: Sensores y Dispositivos<br>
+32 - Aplicaciones móviles:  Prototipo Final de UI<br>
+33 - Aplicaciones móviles: Entrada de Datos<br>
+34 - Aplicaciones móviles: Sincronización Parte 1<br>
+35 - Aplicaciones móviles: Sincronización Parte 2<br>
+36 - Técnica de Depuración y Log de Aplicaciones<br>
+37 - Desarrollo Web: Parte 1<br>
+38 - Desarrollo Web: Parte 2<br>
+39 - Desarrollo Web: Parte 3<br>
