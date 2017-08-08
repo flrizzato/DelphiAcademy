@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout1: TLayout
+      Align = Center
+      Size.Width = 337.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object SpeedButton1: TSpeedButton
+        StaysPressed = True
+        GroupName = 'OpcoesGroup'
+        IsPressed = True
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'segmentedbuttonleft'
+        Text = 'Pendentes'
+      end
+      object SpeedButton2: TSpeedButton
+        StaysPressed = True
+        GroupName = 'OpcoesGroup'
+        Position.X = 88.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'segmentedbuttonmiddle'
+        Text = 'Aprovadas'
+      end
+      object SpeedButton3: TSpeedButton
+        StaysPressed = True
+        GroupName = 'OpcoesGroup'
+        Position.X = 168.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'segmentedbuttonmiddle'
+        Text = 'Canceladas'
+      end
+      object SpeedButton4: TSpeedButton
+        StaysPressed = True
+        GroupName = 'OpcoesGroup'
+        Position.X = 248.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'segmentedbuttonright'
+        Text = 'Analise'
+      end
+    end
+  end
+end

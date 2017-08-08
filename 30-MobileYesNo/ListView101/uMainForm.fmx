@@ -1,0 +1,138 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TDynamicAppearance'
+    ItemEditAppearanceClassName = 'TDynamicAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.TextAlign = Leading
+        Appearance.Width = 325.000000000000000000
+        Appearance.Height = 22.000000000000000000
+        Appearance.PlaceOffset.X = 86.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Image2'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.Width = 87.000000000000000000
+        Appearance.Height = 44.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Text3'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.TextAlign = Leading
+        Appearance.Width = 155.000000000000000000
+        Appearance.Height = 22.000000000000000000
+        Appearance.PlaceOffset.X = 86.000000000000000000
+        Appearance.PlaceOffset.Y = 22.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Text4'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.TextAlign = Leading
+        Appearance.Width = 155.000000000000000000
+        Appearance.Height = 22.000000000000000000
+        Appearance.PlaceOffset.X = 256.000000000000000000
+        Appearance.PlaceOffset.Y = 22.000000000000000000
+      end>
+    ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+      end>
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 640.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'App Name'
+      TabOrder = 0
+    end
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'ContactBitmap1'
+        FieldType = ftBitmap
+        Generator = 'ContactBitmaps'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactName1'
+        Generator = 'ContactNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactTitle1'
+        Generator = 'ContactTitles'
+        ReadOnly = False
+      end
+      item
+        Name = 'DateTimeField1'
+        FieldType = ftDateTime
+        Generator = 'DateTime'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 544
+    Top = 176
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 548
+    Top = 229
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = PrototypeBindSource1
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'ContactBitmap1'
+          ControlMemberName = 'Image2'
+        end
+        item
+          SourceMemberName = 'ContactName1'
+          ControlMemberName = 'Text1'
+        end
+        item
+          SourceMemberName = 'ContactTitle1'
+          ControlMemberName = 'Text3'
+        end
+        item
+          SourceMemberName = 'DateTimeField1'
+          ControlMemberName = 'Text4'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

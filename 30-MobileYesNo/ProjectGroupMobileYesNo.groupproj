@@ -1,0 +1,132 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7FFA3CF2-F520-4378-B1B4-4591C0618B3D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ToolBar101\ToolBar101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ToolBar102\ToolBar102.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BackButton101\BackButton101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TabControl101\TabControl101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TabControl102\TabControl102.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Switch101\Switch101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Segment101\Segment101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ListBox101\ListBox101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ListView101\ListView101.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ToolBar101">
+        <MSBuild Projects="ToolBar101\ToolBar101.dproj"/>
+    </Target>
+    <Target Name="ToolBar101:Clean">
+        <MSBuild Projects="ToolBar101\ToolBar101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ToolBar101:Make">
+        <MSBuild Projects="ToolBar101\ToolBar101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ToolBar102">
+        <MSBuild Projects="ToolBar102\ToolBar102.dproj"/>
+    </Target>
+    <Target Name="ToolBar102:Clean">
+        <MSBuild Projects="ToolBar102\ToolBar102.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ToolBar102:Make">
+        <MSBuild Projects="ToolBar102\ToolBar102.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BackButton101">
+        <MSBuild Projects="BackButton101\BackButton101.dproj"/>
+    </Target>
+    <Target Name="BackButton101:Clean">
+        <MSBuild Projects="BackButton101\BackButton101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BackButton101:Make">
+        <MSBuild Projects="BackButton101\BackButton101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TabControl101">
+        <MSBuild Projects="TabControl101\TabControl101.dproj"/>
+    </Target>
+    <Target Name="TabControl101:Clean">
+        <MSBuild Projects="TabControl101\TabControl101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TabControl101:Make">
+        <MSBuild Projects="TabControl101\TabControl101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TabControl102">
+        <MSBuild Projects="TabControl102\TabControl102.dproj"/>
+    </Target>
+    <Target Name="TabControl102:Clean">
+        <MSBuild Projects="TabControl102\TabControl102.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TabControl102:Make">
+        <MSBuild Projects="TabControl102\TabControl102.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Switch101">
+        <MSBuild Projects="Switch101\Switch101.dproj"/>
+    </Target>
+    <Target Name="Switch101:Clean">
+        <MSBuild Projects="Switch101\Switch101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Switch101:Make">
+        <MSBuild Projects="Switch101\Switch101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Segment101">
+        <MSBuild Projects="Segment101\Segment101.dproj"/>
+    </Target>
+    <Target Name="Segment101:Clean">
+        <MSBuild Projects="Segment101\Segment101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Segment101:Make">
+        <MSBuild Projects="Segment101\Segment101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ListBox101">
+        <MSBuild Projects="ListBox101\ListBox101.dproj"/>
+    </Target>
+    <Target Name="ListBox101:Clean">
+        <MSBuild Projects="ListBox101\ListBox101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ListBox101:Make">
+        <MSBuild Projects="ListBox101\ListBox101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ListView101">
+        <MSBuild Projects="ListView101\ListView101.dproj"/>
+    </Target>
+    <Target Name="ListView101:Clean">
+        <MSBuild Projects="ListView101\ListView101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ListView101:Make">
+        <MSBuild Projects="ListView101\ListView101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ToolBar101;ToolBar102;BackButton101;TabControl101;TabControl102;Switch101;Segment101;ListBox101;ListView101"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ToolBar101:Clean;ToolBar102:Clean;BackButton101:Clean;TabControl101:Clean;TabControl102:Clean;Switch101:Clean;Segment101:Clean;ListBox101:Clean;ListView101:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ToolBar101:Make;ToolBar102:Make;BackButton101:Make;TabControl101:Make;TabControl102:Make;Switch101:Make;Segment101:Make;ListBox101:Make;ListView101:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

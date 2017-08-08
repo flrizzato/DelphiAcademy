@@ -1,0 +1,60 @@
+inherited Form1_iPhone47in: TForm1_iPhone47in
+  ClientHeight = 647
+  ClientWidth = 375
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 375.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 375.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 375.000000000000000000
+    Size.Height = 603.000000000000000000
+    Viewport.Width = 375.000000000000000000
+    Viewport.Height = 603.000000000000000000
+    inherited ListBoxGroupHeader1: TListBoxGroupHeader
+      Size.Width = 375.000000000000000000
+    end
+    inherited ListBoxItem1: TListBoxItem
+      Size.Width = 375.000000000000000000
+      inherited Edit1: TEdit
+        Position.X = 115.000000000000000000
+        Size.Width = 255.000000000000000000
+      end
+    end
+    inherited ListBoxItem2: TListBoxItem
+      Size.Width = 375.000000000000000000
+      inherited Edit2: TEdit
+        Position.X = 115.000000000000000000
+        Size.Width = 255.000000000000000000
+      end
+    end
+    inherited ListBoxItem3: TListBoxItem
+      Size.Width = 375.000000000000000000
+      inherited Edit3: TEdit
+        Position.X = 115.000000000000000000
+        Size.Width = 255.000000000000000000
+      end
+    end
+    inherited ListBoxGroupHeader2: TListBoxGroupHeader
+      Size.Width = 375.000000000000000000
+    end
+    inherited ListBoxItem4: TListBoxItem
+      Size.Width = 375.000000000000000000
+      inherited Edit4: TEdit
+        Position.X = 115.000000000000000000
+        Size.Width = 255.000000000000000000
+      end
+    end
+    inherited ListBoxItem5: TListBoxItem
+      Size.Width = 375.000000000000000000
+      inherited Edit5: TEdit
+        Position.X = 115.000000000000000000
+        Size.Width = 255.000000000000000000
+      end
+    end
+  end
+end

@@ -1,0 +1,81 @@
+inherited Form1_NmXhdpiPh: TForm1_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 400.000000000000000000
+    Size.Height = 567.000000000000000000
+    TabHeight = 49.000000000000000000
+    Sizes = (
+      400s
+      518s
+      400s
+      518s
+      400s
+      518s
+      400s
+      518s
+      400s
+      518s)
+    inherited TabItem1: TTabItem
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 62.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 62.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    inherited TabItem3: TTabItem
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 68.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    inherited TabItem4: TTabItem
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 51.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    inherited TabItem5: TTabItem
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 61.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 400.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 400.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+    inherited SpeedButton1: TSpeedButton
+      Position.X = 347.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited OverflowMenu: TListBox
+    Position.X = 240.000000000000000000
+    Viewport.Width = 150.000000000000000000
+    Viewport.Height = 170.000000000000000000
+    inherited ListBoxItem1: TListBoxItem
+      Size.Width = 150.000000000000000000
+    end
+    inherited ListBoxItem2: TListBoxItem
+      Size.Width = 150.000000000000000000
+    end
+    inherited ListBoxItem3: TListBoxItem
+      Size.Width = 150.000000000000000000
+    end
+    inherited ListBoxItem4: TListBoxItem
+      Size.Width = 150.000000000000000000
+    end
+  end
+end

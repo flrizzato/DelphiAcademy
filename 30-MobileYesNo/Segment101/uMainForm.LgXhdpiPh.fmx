@@ -1,0 +1,36 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited Layout1: TLayout
+      Size.Height = 48.000000000000000000
+      inherited SpeedButton1: TSpeedButton
+        StyledSettings = [Family, Style, FontColor]
+        Position.Y = 3.000000000000000000
+        Size.Height = 42.000000000000000000
+        TextSettings.Font.Size = 10.000000000000000000
+      end
+      inherited SpeedButton2: TSpeedButton
+        StyledSettings = [Family, Style, FontColor]
+        Position.Y = 3.000000000000000000
+        Size.Height = 42.000000000000000000
+        TextSettings.Font.Size = 10.000000000000000000
+      end
+      inherited SpeedButton3: TSpeedButton
+        StyledSettings = [Family, Style, FontColor]
+        Position.Y = 3.000000000000000000
+        Size.Height = 42.000000000000000000
+        TextSettings.Font.Size = 10.000000000000000000
+      end
+      inherited SpeedButton4: TSpeedButton
+        StyledSettings = [Family, Style, FontColor]
+        Position.Y = 3.000000000000000000
+        Size.Height = 42.000000000000000000
+        TextSettings.Font.Size = 10.000000000000000000
+      end
+    end
+  end
+end

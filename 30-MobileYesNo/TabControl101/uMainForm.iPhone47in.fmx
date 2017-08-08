@@ -1,0 +1,59 @@
+inherited Form1_iPhone47in: TForm1_iPhone47in
+  ClientHeight = 647
+  ClientWidth = 375
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 375.000000000000000000
+    Size.Height = 647.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 4
+    Sizes = (
+      375s
+      598s
+      375s
+      598s
+      375s
+      598s
+      375s
+      598s
+      375s
+      598s)
+    inherited TabItem1: TTabItem
+      IsSelected = False
+      Size.Width = 75.000000000000000000
+      Size.Height = 49.000000000000000000
+      StyleLookup = 'tabitemcontacts'
+      ExplicitSize.cx = 62.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 75.000000000000000000
+      Size.Height = 49.000000000000000000
+      StyleLookup = 'tabitembookmarks'
+      ExplicitSize.cx = 62.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    inherited TabItem3: TTabItem
+      Size.Width = 75.000000000000000000
+      Size.Height = 49.000000000000000000
+      StyleLookup = 'tabitemmostviewed'
+      ExplicitSize.cx = 68.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    inherited TabItem4: TTabItem
+      Size.Width = 75.000000000000000000
+      Size.Height = 49.000000000000000000
+      StyleLookup = 'tabitemdownloads'
+      ExplicitSize.cx = 51.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    inherited TabItem5: TTabItem
+      IsSelected = True
+      Size.Width = 75.000000000000000000
+      Size.Height = 49.000000000000000000
+      StyleLookup = 'tabitemhistory'
+      ExplicitSize.cx = 61.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+end

@@ -1,0 +1,46 @@
+inherited Form1_iPhone47in: TForm1_iPhone47in
+  ClientHeight = 647
+  ClientWidth = 375
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 375.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 375.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 375.000000000000000000
+    Size.Height = 603.000000000000000000
+    Viewport.Width = 375.000000000000000000
+    Viewport.Height = 603.000000000000000000
+    inherited ListBoxItem1: TListBoxItem
+      Size.Width = 375.000000000000000000
+      inherited Switch1: TSwitch
+        Position.X = 315.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 35.000000000000000000
+      end
+    end
+    inherited ListBoxItem2: TListBoxItem
+      Size.Width = 375.000000000000000000
+      inherited Switch2: TSwitch
+        Position.X = 315.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 35.000000000000000000
+      end
+    end
+    inherited ListBoxItem3: TListBoxItem
+      Size.Width = 375.000000000000000000
+      inherited Switch3: TSwitch
+        Position.X = 315.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 35.000000000000000000
+      end
+    end
+  end
+end

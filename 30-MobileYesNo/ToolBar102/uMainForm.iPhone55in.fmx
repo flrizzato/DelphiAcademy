@@ -1,0 +1,52 @@
+inherited Form1_iPhone55in: TForm1_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 414.000000000000000000
+    Size.Height = 716.000000000000000000
+    TabHeight = 49.000000000000000000
+    Sizes = (
+      414s
+      667s
+      414s
+      667s
+      414s
+      667s)
+    inherited TabItem1: TTabItem
+      Size.Width = 138.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 87.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 138.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 100.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited ToolBar1: TToolBar
+        Size.Width = 414.000000000000000000
+        Size.Height = 44.000000000000000000
+        inherited SpeedButton1: TSpeedButton
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+        end
+        inherited SpeedButton2: TSpeedButton
+          Position.X = 365.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+        end
+        inherited Label1: TLabel
+          Size.Width = 414.000000000000000000
+          Size.Height = 44.000000000000000000
+        end
+      end
+    end
+    inherited TabItem3: TTabItem
+      Size.Width = 138.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 133.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+end

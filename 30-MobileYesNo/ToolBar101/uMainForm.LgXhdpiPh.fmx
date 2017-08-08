@@ -1,0 +1,22 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited SpeedButton1: TSpeedButton
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+    inherited SpeedButton2: TSpeedButton
+      Position.X = 397.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+end
