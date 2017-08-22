@@ -1,0 +1,163 @@
+object OrientationSensorForm: TOrientationSensorForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Center
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Orientation Sensor'
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Margins.Top = 10.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 448.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    ShowScrollBars = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    Viewport.Width = 384.000000000000000000
+    Viewport.Height = 448.000000000000000000
+    object lbOrientationSensor: TListBoxItem
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 0
+      Text = 'Orientation Sensor:'
+      object swOrientationSensorActive: TSwitch
+        Anchors = [akTop, akRight]
+        IsChecked = False
+        Position.X = 296.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        OnSwitch = swOrientationSensorActiveSwitch
+      end
+    end
+    object lbTiltX: TListBoxItem
+      Position.Y = 44.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'Tilt X:'
+    end
+    object lbTiltY: TListBoxItem
+      Position.Y = 88.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 2
+      Text = 'Tilt Y:'
+    end
+    object lbTiltZ: TListBoxItem
+      Position.Y = 132.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 3
+      Text = 'Tilt Z:'
+    end
+    object lbHeadingX: TListBoxItem
+      Position.Y = 176.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 4
+      Text = 'Heading X:'
+    end
+    object lbHeadingY: TListBoxItem
+      Position.Y = 220.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 5
+      Text = 'Heading Y:'
+    end
+    object lbHeadingZ: TListBoxItem
+      Position.Y = 264.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 6
+      Text = 'Heading Z:'
+    end
+  end
+  object Layout1: TLayout
+    Align = Top
+    Position.Y = 48.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 61.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object TiltButton: TSpeedButton
+      StaysPressed = True
+      Align = Center
+      IsPressed = True
+      Margins.Right = 100.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'segmentedbuttonleft'
+      Text = 'Tilt'
+      OnClick = TiltButtonClick
+    end
+    object HeadingButton: TSpeedButton
+      StaysPressed = True
+      Align = Center
+      Margins.Right = -100.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'segmentedbuttonright'
+      Text = 'Heading'
+      OnClick = HeadingButtonClick
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 88
+    Top = 496
+  end
+  object OrientationSensor1: TOrientationSensor
+    OnSensorChoosing = OrientationSensor1SensorChoosing
+    Left = 256
+    Top = 408
+  end
+end

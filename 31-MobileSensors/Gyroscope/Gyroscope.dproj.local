@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/08/21 23:07:31.000.100,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/21 23:08:30.000.930,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\31-MobileSensors\Gyroscope\Gyroscope101.dproj</Transaction>
+    <Transaction>2017/08/21 23:08:39.000.920,=C:\DelphiAcademy\31-MobileSensors\Gyroscope\uMain.pas</Transaction>
+    <Transaction>2017/08/21 23:49:40.000.837,C:\DelphiAcademy\31-MobileSensors\Gyroscope\Gyroscope101.dproj=C:\DelphiAcademy\31-MobileSensors\Gyroscope\Gyroscope.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="_iossimulator_5th generation" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

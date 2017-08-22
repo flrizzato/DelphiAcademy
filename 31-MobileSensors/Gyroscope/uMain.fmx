@@ -1,0 +1,78 @@
+object GyroscopeForm: TGyroscopeForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [Desktop]
+  OnCreate = Form3DCreate
+  DesignerMasterStyle = 0
+  object Rectangle3D1: TRectangle3D
+    Position.X = -0.083947569131851200
+    Position.Y = 0.124970436096191400
+    RotationAngle.X = 357.247222900390600000
+    RotationAngle.Y = 5.521286487579346000
+    RotationAngle.Z = 358.115600585937500000
+    Width = 3.230767726898193000
+    Height = 5.091708183288574000
+    Depth = 5.219097614288330000
+    CornerType = Round
+    Flatness = 1.000000000000000000
+    Sides = [Front, Back, Shaft]
+    MaterialShaftSource = LightMaterialSource1
+    MaterialSource = LightMaterialSource1
+    Quanternion = 
+      '(0.020250404253602,-0.478708475828171,0.0274653173983097,-0.8773' +
+      '10216426849)'
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 152
+    Top = 224
+  end
+  object Light1: TLight
+    Color = claWhite
+    LightType = Directional
+    SpotCutOff = 180.000000000000000000
+    Position.X = -1.301304697990417000
+    Position.Y = 3.345268726348877000
+    Position.Z = -3.999995231628418000
+    RotationAngle.X = 19.549705505371090000
+    RotationAngle.Y = 20.214889526367190000
+    RotationAngle.Z = 338.313476562500000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    Quanternion = 
+      '(0.0251593366265297,0.105718806385994,-0.0164530407637358,-0.993' +
+      '941962718964)'
+  end
+  object Layer3D1: TLayer3D
+    Height = 0.833348751068115200
+    Position.X = -0.115065097808837900
+    Position.Y = -6.586240291595459000
+    Resolution = 50
+    StyleLookup = 'backgroundstyle'
+    Width = 8.157747268676758000
+    object Label1: TLabel
+      Align = Center
+      Size.Width = 281.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Gyro'
+    end
+  end
+  object LightMaterialSource1: TLightMaterialSource
+    Diffuse = claYellow
+    Ambient = claChocolate
+    Emissive = claMidnightblue
+    Specular = claCornsilk
+    Shininess = 30
+    Left = 176
+    Top = 272
+  end
+end

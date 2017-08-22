@@ -1,0 +1,151 @@
+object AccelerometerForm: TAccelerometerForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = Timer1Timer
+    Left = 32
+    Top = 368
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Center
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Accelerometer'
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Margins.Top = 10.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 509.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    ShowScrollBars = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    Viewport.Width = 384.000000000000000000
+    Viewport.Height = 509.000000000000000000
+    object lbAccelerometerSensor: TListBoxItem
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 0
+      Text = 'Accelerometer Sensor:'
+      object swAccelerometerSensorActive: TSwitch
+        Align = Right
+        Anchors = []
+        IsChecked = False
+        Margins.Right = 5.000000000000000000
+        Position.X = 335.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        OnSwitch = swAccelerometerSensorActiveSwitch
+      end
+    end
+    object lbAccelerationX: TListBoxItem
+      Position.Y = 44.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'Acceleration X:'
+    end
+    object lbAccelerationY: TListBoxItem
+      Position.Y = 88.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 2
+      Text = 'Acceleration Y:'
+    end
+    object lbAccelerationZ: TListBoxItem
+      Position.Y = 132.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 3
+      Text = 'Acceleration Z:'
+    end
+    object lbAngleAccelX: TListBoxItem
+      Position.Y = 176.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 4
+      Text = 'Angle X:'
+    end
+    object lbAngleAccelY: TListBoxItem
+      Position.Y = 220.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 5
+      Text = 'Angle Y:'
+    end
+    object lbAngleAccelZ: TListBoxItem
+      Position.Y = 264.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 6
+      Text = 'Angle Z:'
+    end
+    object lbMotion: TListBoxItem
+      Position.Y = 308.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 7
+      Text = 'Motion:'
+    end
+    object lbSpeed: TListBoxItem
+      Position.Y = 352.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 8
+      Text = 'Speed:'
+    end
+  end
+  object MotionSensor1: TMotionSensor
+    Left = 104
+    Top = 368
+  end
+end

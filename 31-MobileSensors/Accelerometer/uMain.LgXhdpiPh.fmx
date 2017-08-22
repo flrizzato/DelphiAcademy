@@ -1,0 +1,44 @@
+inherited AccelerometerForm_LgXhdpiPh: TAccelerometerForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 450.000000000000000000
+    Size.Height = 637.000000000000000000
+    Viewport.Width = 450.000000000000000000
+    Viewport.Height = 637.000000000000000000
+    inherited lbAccelerometerSensor: TListBoxItem
+      Size.Width = 450.000000000000000000
+      inherited swAccelerometerSensorActive: TSwitch
+        Position.X = 401.000000000000000000
+      end
+    end
+    inherited lbAccelerationX: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+    inherited lbAccelerationY: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+    inherited lbAccelerationZ: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+    inherited lbAngleAccelX: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+    inherited lbAngleAccelY: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+    inherited lbAngleAccelZ: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+    inherited lbMotion: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+    inherited lbSpeed: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+  end
+end

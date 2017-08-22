@@ -1,0 +1,54 @@
+object frmAboutSensors: TfrmAboutSensors
+  Left = 0
+  Top = 0
+  Caption = 'Sensors'
+  ClientHeight = 554
+  ClientWidth = 461
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnResize = FormResize
+  DesignerMasterStyle = 3
+  object lbMain: TListBox
+    Position.X = 25.000000000000000000
+    Position.Y = 25.000000000000000000
+    Size.Width = 232.000000000000000000
+    Size.Height = 288.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = lbMainItemClick
+    Viewport.Width = 232.000000000000000000
+    Viewport.Height = 288.000000000000000000
+  end
+  object Timer1: TTimer
+    Interval = 50
+    OnTimer = Timer1Timer
+    Left = 80
+    Top = 104
+  end
+  object lInfo: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 296.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.VertAlign = Leading
+    object btnHide: TButton
+      Anchors = [akTop, akRight]
+      Position.X = 40.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Return'
+      OnClick = btnHideClick
+    end
+  end
+end

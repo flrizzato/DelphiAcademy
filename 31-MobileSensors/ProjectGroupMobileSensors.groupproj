@@ -1,0 +1,120 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{07BA5504-73C6-4D03-A659-14CDE22516B2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Accelerometer\Accelerometer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Gyroscope\Gyroscope.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="OrientationSensor\OrientationSensor.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SensorInfo\SensorInfo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ImageRotation\ImageRotation.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ImageZoom\ImageZoom.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TapAndHold\TapAndHold.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TabSliding\TabSliding.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Accelerometer">
+        <MSBuild Projects="Accelerometer\Accelerometer.dproj"/>
+    </Target>
+    <Target Name="Accelerometer:Clean">
+        <MSBuild Projects="Accelerometer\Accelerometer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Accelerometer:Make">
+        <MSBuild Projects="Accelerometer\Accelerometer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Gyroscope">
+        <MSBuild Projects="Gyroscope\Gyroscope.dproj"/>
+    </Target>
+    <Target Name="Gyroscope:Clean">
+        <MSBuild Projects="Gyroscope\Gyroscope.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gyroscope:Make">
+        <MSBuild Projects="Gyroscope\Gyroscope.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OrientationSensor">
+        <MSBuild Projects="OrientationSensor\OrientationSensor.dproj"/>
+    </Target>
+    <Target Name="OrientationSensor:Clean">
+        <MSBuild Projects="OrientationSensor\OrientationSensor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OrientationSensor:Make">
+        <MSBuild Projects="OrientationSensor\OrientationSensor.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SensorInfo">
+        <MSBuild Projects="SensorInfo\SensorInfo.dproj"/>
+    </Target>
+    <Target Name="SensorInfo:Clean">
+        <MSBuild Projects="SensorInfo\SensorInfo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SensorInfo:Make">
+        <MSBuild Projects="SensorInfo\SensorInfo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImageRotation">
+        <MSBuild Projects="ImageRotation\ImageRotation.dproj"/>
+    </Target>
+    <Target Name="ImageRotation:Clean">
+        <MSBuild Projects="ImageRotation\ImageRotation.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImageRotation:Make">
+        <MSBuild Projects="ImageRotation\ImageRotation.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImageZoom">
+        <MSBuild Projects="ImageZoom\ImageZoom.dproj"/>
+    </Target>
+    <Target Name="ImageZoom:Clean">
+        <MSBuild Projects="ImageZoom\ImageZoom.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImageZoom:Make">
+        <MSBuild Projects="ImageZoom\ImageZoom.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TapAndHold">
+        <MSBuild Projects="TapAndHold\TapAndHold.dproj"/>
+    </Target>
+    <Target Name="TapAndHold:Clean">
+        <MSBuild Projects="TapAndHold\TapAndHold.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TapAndHold:Make">
+        <MSBuild Projects="TapAndHold\TapAndHold.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TabSliding">
+        <MSBuild Projects="TabSliding\TabSliding.dproj"/>
+    </Target>
+    <Target Name="TabSliding:Clean">
+        <MSBuild Projects="TabSliding\TabSliding.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TabSliding:Make">
+        <MSBuild Projects="TabSliding\TabSliding.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Accelerometer;Gyroscope;OrientationSensor;SensorInfo;ImageRotation;ImageZoom;TapAndHold;TabSliding"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Accelerometer:Clean;Gyroscope:Clean;OrientationSensor:Clean;SensorInfo:Clean;ImageRotation:Clean;ImageZoom:Clean;TapAndHold:Clean;TabSliding:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Accelerometer:Make;Gyroscope:Make;OrientationSensor:Make;SensorInfo:Make;ImageRotation:Make;ImageZoom:Make;TapAndHold:Make;TabSliding:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

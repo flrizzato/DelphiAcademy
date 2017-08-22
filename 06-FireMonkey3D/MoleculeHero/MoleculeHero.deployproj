@@ -4,11 +4,12 @@
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>
     <PropertyGroup>
-        <DeviceId Condition="'$(Platform)'=='Android'"/>
+        <DeviceId Condition="'$(Platform)'=='Android'">0022831207</DeviceId>
         <DeviceId Condition="'$(Platform)'=='iOSDevice32'"/>
         <DeviceId Condition="'$(Platform)'=='iOSDevice64'"/>
-        <DeviceId Condition="'$(Platform)'=='iOSSimulator'">AD9BFDF3-D701-43D8-8F35-91CE1AB4A5DC</DeviceId>
+        <DeviceId Condition="'$(Platform)'=='iOSSimulator'">iPhone5</DeviceId>
     </PropertyGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'"/>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice64'">
         <DeployFile Include="iOSDevice64\Release\MoleculeHero" Condition="'$(Config)'=='Release'">
             <RemoteDir>MoleculeHero.app\</RemoteDir>
@@ -679,7 +680,6 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
     </ItemGroup>
-    <ItemGroup Condition="'$(Platform)'=='Win64'"/>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice32'">
         <DeployFile Include="artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>MoleculeHero.app\</RemoteDir>
@@ -1372,6 +1372,7 @@
             <Required>True</Required>
         </DeployFile>
     </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
     <ItemGroup Condition="'$(Platform)'=='OSX32'">
         <DeployFile Include="OSX32\Release\MoleculeHero.entitlements" Condition="'$(Config)'=='Release'">
             <RemoteDir>MoleculeHero.app\..\</RemoteDir>
