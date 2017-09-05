@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/09/05 01:23:29.000.035,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/09/05 01:24:21.000.962,C:\DelphiAcademy\32-MobileUX\ModalResult\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017/09/05 01:24:21.000.962,C:\DelphiAcademy\32-MobileUX\ModalResult\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/09/05 01:24:25.000.461,C:\DelphiAcademy\32-MobileUX\ModalResult\ModalResult.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/09/05 01:24:34.000.135,=C:\DelphiAcademy\32-MobileUX\ModalResult\Unit2.pas</Transaction>
+    <Transaction>2017/09/05 01:24:41.000.441,C:\DelphiAcademy\32-MobileUX\ModalResult\uChildForm.pas=C:\DelphiAcademy\32-MobileUX\ModalResult\Unit2.pas</Transaction>
+    <Transaction>2017/09/05 01:24:41.000.441,C:\DelphiAcademy\32-MobileUX\ModalResult\uChildForm.fmx=C:\DelphiAcademy\32-MobileUX\ModalResult\Unit2.fmx</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="_iossimulator_53C7CAB4-C4CA-478E-89FF-67657FD552FC" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

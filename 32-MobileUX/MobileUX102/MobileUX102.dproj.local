@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/07/21 14:28:07.000.787,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/21 14:28:46.000.438,C:\POCs\MobileUX\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017/07/21 14:28:46.000.438,C:\POCs\MobileUX\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/21 14:28:49.000.717,C:\POCs\MobileUX\MobileUX.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/07/21 14:29:00.000.825,=C:\POCs\MobileUX\Unit2.pas</Transaction>
+    <Transaction>2017/07/21 14:29:07.000.229,C:\POCs\MobileUX\uFormOne.fmx=C:\POCs\MobileUX\Unit2.fmx</Transaction>
+    <Transaction>2017/07/21 14:29:07.000.229,C:\POCs\MobileUX\uFormOne.pas=C:\POCs\MobileUX\Unit2.pas</Transaction>
+    <Transaction>2017/07/21 14:29:12.000.987,=C:\POCs\MobileUX\Unit3.pas</Transaction>
+    <Transaction>2017/07/21 14:29:18.000.120,C:\POCs\MobileUX\uFormTwo.pas=C:\POCs\MobileUX\Unit3.pas</Transaction>
+    <Transaction>2017/07/21 14:29:18.000.120,C:\POCs\MobileUX\uFormTwo.fmx=C:\POCs\MobileUX\Unit3.fmx</Transaction>
+    <Transaction>2017/07/21 14:29:25.000.197,=C:\POCs\MobileUX\Unit4.pas</Transaction>
+    <Transaction>2017/07/21 14:29:47.000.012,C:\POCs\MobileUX\uFormThree.fmx=C:\POCs\MobileUX\Unit4.fmx</Transaction>
+    <Transaction>2017/07/21 14:29:47.000.012,C:\POCs\MobileUX\uFormThree.pas=C:\POCs\MobileUX\Unit4.pas</Transaction>
+    <Transaction>2017/09/04 12:00:04.000.282,C:\DelphiAcademy\32-MobileUI\MobileUX101\MobileUX101.dproj=C:\DelphiAcademy\32-MobileUI\MobileUX101\MobileUX.dproj</Transaction>
+    <Transaction>2017/09/04 13:10:07.000.297,C:\DelphiAcademy\32-MobileUX\MobileUX101\MobileUX101.dproj=C:\DelphiAcademy\32-MobileUX\MobileUX101\MobileUX102.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="_iossimulator_9.7 inch" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="0022831207"/>
+		<PmacOSEMBT iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

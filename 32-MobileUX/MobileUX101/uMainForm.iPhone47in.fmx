@@ -1,0 +1,47 @@
+inherited MainForm_iPhone47in: TMainForm_iPhone47in
+  ClientHeight = 647
+  ClientWidth = 375
+  DesignerMasterStyle = 0
+  inherited Layout1: TLayout
+    Size.Width = 375.000000000000000000
+    Size.Height = 647.000000000000000000
+    inherited ToolBar1: TToolBar
+      Size.Width = 375.000000000000000000
+      Size.Height = 44.000000000000000000
+      inherited SpeedButton1: TSpeedButton
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 326.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 44.000000000000000000
+      end
+      inherited Label1: TLabel
+        Size.Width = 375.000000000000000000
+        Size.Height = 44.000000000000000000
+      end
+    end
+    inherited ListView1: TListView
+      Size.Width = 375.000000000000000000
+      Size.Height = 603.000000000000000000
+    end
+  end
+  inherited Rectangle1: TRectangle
+    inherited Layout2: TLayout
+      inherited butOK: TButton
+        Size.Height = 44.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+      inherited butCancel: TButton
+        Size.Height = 44.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited edUser: TEdit
+      Size.Height = 30.000000000000000000
+    end
+    inherited edPass: TEdit
+      Size.Height = 30.000000000000000000
+    end
+  end
+end

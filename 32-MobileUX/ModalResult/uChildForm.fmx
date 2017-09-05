@@ -1,0 +1,103 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    ItemHeight = 40.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 436.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      Size.Width = 636.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'ListBoxItem1'
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 40.000000000000000000
+      Size.Width = 636.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'ListBoxItem2'
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 80.000000000000000000
+      Size.Width = 636.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'ListBoxItem3'
+    end
+    object ListBoxItem4: TListBoxItem
+      Position.Y = 120.000000000000000000
+      Size.Width = 636.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'ListBoxItem4'
+    end
+    object ListBoxItem5: TListBoxItem
+      Position.Y = 160.000000000000000000
+      Size.Width = 636.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'ListBoxItem5'
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Button1: TButton
+      Align = Left
+      ModalResult = 1
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cornerbuttonstyle'
+      TabOrder = 0
+      Text = 'OK'
+    end
+    object Button2: TButton
+      Align = Right
+      ModalResult = 2
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 555.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cornerbuttonstyle'
+      TabOrder = 1
+      Text = 'Cancel'
+    end
+  end
+end

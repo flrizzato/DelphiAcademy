@@ -1,0 +1,207 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ActiveControl = edUser
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBar1: TToolBar
+      Size.Width = 640.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object SpeedButton1: TSpeedButton
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 555.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'refreshtoolbuttonbordered'
+        Text = 'SpeedButton1'
+        OnClick = SpeedButton1Click
+      end
+      object Label1: TLabel
+        Align = Contents
+        Size.Width = 640.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Mobile UX 102'
+        TabOrder = 2
+      end
+    end
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+      ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      AlternatingColors = True
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 440.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      SearchVisible = True
+      object RectAnimation1: TRectAnimation
+        Duration = 0.200000002980232200
+      end
+    end
+    object BlurEffect1: TBlurEffect
+      Softness = 0.300000011920929000
+      Enabled = False
+    end
+  end
+  object Rectangle1: TRectangle
+    Align = Center
+    Fill.Color = claWhitesmoke
+    Size.Width = 255.000000000000000000
+    Size.Height = 130.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Layout2: TLayout
+      Align = Bottom
+      Position.Y = 90.000000000000000000
+      Size.Width = 255.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object butOK: TButton
+        Align = Left
+        Default = True
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'speedbuttonstyle'
+        TabOrder = 4
+        Text = 'OK'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = butOKClick
+      end
+      object butCancel: TButton
+        Align = Right
+        Default = True
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 170.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'speedbuttonstyle'
+        TabOrder = 3
+        Text = 'Cancel'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = butCancelClick
+      end
+    end
+    object edUser: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      ReturnKeyType = Next
+      Position.X = 19.000000000000000000
+      Position.Y = 18.000000000000000000
+      Size.Width = 215.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'User'
+      CharCase = ecLowerCase
+    end
+    object edPass: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      ReturnKeyType = Go
+      Position.X = 19.000000000000000000
+      Position.Y = 50.000000000000000000
+      Size.Width = 215.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Pass'
+      KillFocusByReturn = True
+      CharCase = ecLowerCase
+    end
+    object ShadowEffect1: TShadowEffect
+      Distance = 5.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlue
+    end
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end>
+    Left = 544
+    Top = 200
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = False
+    AutoEdit = False
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'ContactBitmap1'
+        FieldType = ftBitmap
+        Generator = 'ContactBitmaps'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactName1'
+        Generator = 'ContactNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactTitle1'
+        Generator = 'ContactTitles'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 536
+    Top = 64
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 540
+    Top = 133
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = PrototypeBindSource1
+      FillDisplayFieldName = 'ContactName1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'ContactTitle1'
+          ControlMemberName = 'Detail'
+        end
+        item
+          SourceMemberName = 'ContactBitmap1'
+          ControlMemberName = 'Bitmap'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

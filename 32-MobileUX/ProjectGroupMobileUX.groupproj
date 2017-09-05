@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FA49787A-9C77-445F-9A3C-67CB6C2DE88A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ModalResult\ModalResult.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MobileUX101\MobileUX101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MobileUX103\MobileUX103.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MobileUX102\MobileUX102.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ModalResult">
+        <MSBuild Projects="ModalResult\ModalResult.dproj"/>
+    </Target>
+    <Target Name="ModalResult:Clean">
+        <MSBuild Projects="ModalResult\ModalResult.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ModalResult:Make">
+        <MSBuild Projects="ModalResult\ModalResult.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MobileUX101">
+        <MSBuild Projects="MobileUX101\MobileUX101.dproj"/>
+    </Target>
+    <Target Name="MobileUX101:Clean">
+        <MSBuild Projects="MobileUX101\MobileUX101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobileUX101:Make">
+        <MSBuild Projects="MobileUX101\MobileUX101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MobileUX103">
+        <MSBuild Projects="MobileUX103\MobileUX103.dproj"/>
+    </Target>
+    <Target Name="MobileUX103:Clean">
+        <MSBuild Projects="MobileUX103\MobileUX103.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobileUX103:Make">
+        <MSBuild Projects="MobileUX103\MobileUX103.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MobileUX102">
+        <MSBuild Projects="MobileUX102\MobileUX102.dproj"/>
+    </Target>
+    <Target Name="MobileUX102:Clean">
+        <MSBuild Projects="MobileUX102\MobileUX102.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobileUX102:Make">
+        <MSBuild Projects="MobileUX102\MobileUX102.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ModalResult;MobileUX101;MobileUX103;MobileUX102"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ModalResult:Clean;MobileUX101:Clean;MobileUX103:Clean;MobileUX102:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ModalResult:Make;MobileUX101:Make;MobileUX103:Make;MobileUX102:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
