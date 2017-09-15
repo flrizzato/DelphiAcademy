@@ -9,6 +9,6 @@
 	<ActiveMobileDevice>
 		<PmacOSEMBT iOSSimulator="iPhone5"/>
 		<NoProfile Android="0022831207"/>
-		<PmacOS iOSSimulator="_iossimulator_9.7 inch" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<PmacOS iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
 	</ActiveMobileDevice>
 </BorlandProject>

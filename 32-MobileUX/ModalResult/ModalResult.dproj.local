@@ -10,7 +10,7 @@
     <Transaction>2017/09/05 01:24:41.000.441,C:\DelphiAcademy\32-MobileUX\ModalResult\uChildForm.fmx=C:\DelphiAcademy\32-MobileUX\ModalResult\Unit2.fmx</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<PmacOS iOSSimulator="_iossimulator_53C7CAB4-C4CA-478E-89FF-67657FD552FC" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<PmacOS iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
 		<NoProfile Android="0022831207"/>
 	</ActiveMobileDevice>
 </BorlandProject>

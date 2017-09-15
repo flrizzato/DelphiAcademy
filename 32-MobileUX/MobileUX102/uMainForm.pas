@@ -126,7 +126,7 @@ begin
       if TabControl1.TabIndex = 0 then
       begin
         Key := 0;
-        TDialogService.MessageDialog('Encerrar a Aplicação?',
+        TDialogService.MessageDialog('Close the Application?',
           TMsgDlgType.mtConfirmation, [TMsgDlgBtn.mbNo, TMsgDlgBtn.mbYes],
           TMsgDlgBtn.mbYes, 0,
           procedure(const AResult: TModalResult)
