@@ -1,0 +1,507 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 570
+  ClientWidth = 357
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 357.000000000000000000
+    Size.Height = 570.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 3
+    TabPosition = PlatformDefault
+    Sizes = (
+      357s
+      521s
+      357s
+      521s
+      357s
+      521s
+      357s
+      521s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 89.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Edit'
+      ExplicitSize.cx = 89.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 0
+        ControlType = Platform
+        Position.X = 10.000000000000000000
+        Position.Y = 106.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        Caret.Color = claGreen
+      end
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        ControlType = Platform
+        Position.X = 10.000000000000000000
+        Position.Y = 38.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'First Name'
+      end
+      object Edit3: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        ControlType = Platform
+        Text = 'Some text'
+        Position.X = 10.000000000000000000
+        Position.Y = 242.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        object ClearEditButton1: TClearEditButton
+          CanFocus = False
+          Cursor = crArrow
+          Size.Width = 22.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object Edit4: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        ControlType = Platform
+        Text = 'youmail@mail.com'
+        TextSettings.HorzAlign = Center
+        Position.X = 10.000000000000000000
+        Position.Y = 174.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'E-Mail'
+      end
+      object Label2: TLabel
+        Align = Top
+        AutoSize = True
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.WordWrap = False
+        Text = 'Edit with Prompt'
+        TabOrder = 4
+      end
+      object Label3: TLabel
+        Align = Top
+        AutoSize = True
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 214.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.WordWrap = False
+        Text = 'Edit with Clear button'
+        TabOrder = 5
+      end
+      object Label4: TLabel
+        Align = Top
+        AutoSize = True
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 78.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.WordWrap = False
+        Text = 'Edit with green cursor'
+        TabOrder = 6
+      end
+      object Label6: TLabel
+        Align = Top
+        AutoSize = True
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 146.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.WordWrap = False
+        Text = 'Edit with center text aligment'
+        TabOrder = 7
+      end
+      object Label7: TLabel
+        Align = Top
+        AutoSize = True
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 282.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.WordWrap = False
+        Text = 'Transparent Edit'
+        TabOrder = 8
+      end
+      object Edit5: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        StyleLookup = 'transparentedit'
+        TabOrder = 9
+        ControlType = Platform
+        Text = 'Transparented text'
+        Position.X = 10.000000000000000000
+        Position.Y = 310.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 89.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Memo'
+      ExplicitSize.cx = 90.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          'Multi-Device Development'
+          'Mobile Development')
+        Align = Top
+        ControlType = Platform
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'transparentmemo'
+        TabOrder = 1
+        Viewport.Width = 329.000000000000000000
+        Viewport.Height = 42.000000000000000000
+      end
+      object Label8: TLabel
+        Align = Top
+        AutoSize = True
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.WordWrap = False
+        Text = 'Transparent'
+        TabOrder = 2
+      end
+      object Label9: TLabel
+        Align = Top
+        AutoSize = True
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 98.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.WordWrap = False
+        Text = 'Text settings and checks spelling'
+        TabOrder = 3
+      end
+      object Memo2: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        Caret.Color = claGreen
+        CheckSpelling = True
+        DataDetectorTypes = []
+        Lines.Strings = (
+          'Multi-Device Development'
+          'Mobile Development')
+        StyledSettings = [Family]
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {04070000000200000004000000}
+        TextSettings.FontColor = claLightcoral
+        Align = Client
+        ControlType = Platform
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 236.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 329.000000000000000000
+        Viewport.Height = 228.000000000000000000
+      end
+      object Label10: TLabel
+        Align = Bottom
+        AutoSize = True
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 372.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.WordWrap = False
+        Text = 'Detecting phones, links, address, events'
+        TabOrder = 4
+      end
+      object Memo3: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        AutoSelect = True
+        DataDetectorTypes = [PhoneNumber, Link, Address, CalendarEvent]
+        Lines.Strings = (
+          'https://www.embarcadero.com/'
+          'General: info@embarcadero.com '
+          'San Francisco, CA 94111'
+          '415-434-1721'
+          '01/01/2015')
+        ReadOnly = True
+        Align = Bottom
+        ControlType = Platform
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 400.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 111.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        TabStop = False
+        Viewport.Width = 329.000000000000000000
+        Viewport.Height = 103.000000000000000000
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 89.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Standard'
+      ExplicitSize.cx = 89.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Calendar1: TCalendar
+        Align = Top
+        ControlType = Platform
+        Date = 41842.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 357.000000000000000000
+        Size.Height = 280.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object Label1: TLabel
+        Align = Top
+        AutoSize = True
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.WordWrap = False
+        Text = 'Calendar'
+        TabOrder = 1
+      end
+      object Label5: TLabel
+        Align = Top
+        AutoSize = True
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 328.000000000000000000
+        Size.Width = 337.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.WordWrap = False
+        Text = 'Switch'
+        TabOrder = 2
+      end
+      object Switch1: TSwitch
+        Align = Top
+        ControlType = Platform
+        IsChecked = True
+        Position.X = 151.000000000000000000
+        Position.Y = 356.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+      end
+    end
+    object TabItem4: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 90.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'ListView'
+      ExplicitSize.cx = 89.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TImageListItemAppearance'
+        ItemEditAppearanceClassName = 'TImageListItemDeleteAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 357.000000000000000000
+        Size.Height = 521.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        SearchVisible = True
+        PullToRefresh = True
+        ControlType = Platform
+        NativeOptions = [Grouped, Indexed, Styled]
+      end
+    end
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'ContactBitmap1'
+        FieldType = ftBitmap
+        Generator = 'ContactBitmaps'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactName1'
+        Generator = 'ContactNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactTitle1'
+        Generator = 'ContactTitles'
+        ReadOnly = False
+      end
+      item
+        Name = 'LoremIpsum1'
+        Generator = 'LoremIpsum'
+        ReadOnly = False
+      end
+      item
+        Name = 'DateField1'
+        Generator = 'Date'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 232
+    Top = 392
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 228
+    Top = 445
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = PrototypeBindSource1
+      FillDisplayFieldName = 'ContactName1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'ContactBitmap1'
+          ControlMemberName = 'Bitmap'
+        end
+        item
+          SourceMemberName = 'LoremIpsum1'
+          ControlMemberName = 'Detail'
+        end
+        item
+          SourceMemberName = 'DateField1'
+          ControlMemberName = 'ButtonText'
+        end>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'ContactTitle1'
+      FillBreakGroups = <>
+    end
+  end
+end

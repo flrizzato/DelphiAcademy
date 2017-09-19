@@ -1,0 +1,77 @@
+inherited MainForm_LgXhdpiPh: TMainForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited ToolBarMain: TToolBar
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited ListBoxMain: TListBox
+    Size.Width = 430.000000000000000000
+    Size.Height = 567.000000000000000000
+    Viewport.Width = 430.000000000000000000
+    Viewport.Height = 567.000000000000000000
+    inherited ListBoxItem1: TListBoxItem
+      Size.Width = 430.000000000000000000
+      inherited Edit1: TEdit
+        Size.Width = 270.000000000000000000
+      end
+    end
+    inherited ListBoxItem2: TListBoxItem
+      Size.Width = 430.000000000000000000
+      inherited Edit2: TEdit
+        Size.Width = 270.000000000000000000
+      end
+    end
+    inherited ListBoxItem3: TListBoxItem
+      Size.Width = 430.000000000000000000
+      inherited Edit3: TEdit
+        Size.Width = 270.000000000000000000
+      end
+    end
+    inherited ListBoxItem4: TListBoxItem
+      Size.Width = 430.000000000000000000
+      inherited Edit4: TEdit
+        Size.Width = 270.000000000000000000
+      end
+    end
+    inherited ListBoxItem5: TListBoxItem
+      Size.Width = 430.000000000000000000
+      inherited Edit5: TEdit
+        Size.Width = 270.000000000000000000
+      end
+    end
+    inherited ListBoxItem6: TListBoxItem
+      Size.Width = 430.000000000000000000
+      inherited Edit6: TEdit
+        Size.Width = 270.000000000000000000
+      end
+    end
+    inherited ListBoxItem7: TListBoxItem
+      Size.Width = 430.000000000000000000
+      inherited Edit7: TEdit
+        Size.Width = 270.000000000000000000
+      end
+    end
+    inherited ListBoxItem8: TListBoxItem
+      Size.Width = 430.000000000000000000
+      inherited Edit8: TEdit
+        Size.Width = 270.000000000000000000
+      end
+    end
+  end
+  inherited Layout1: TLayout
+    Position.Y = 635.000000000000000000
+    Size.Width = 430.000000000000000000
+    inherited Button1: TButton
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Button2: TButton
+      Position.X = 345.000000000000000000
+    end
+  end
+end

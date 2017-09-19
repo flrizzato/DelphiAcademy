@@ -1,0 +1,96 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ActiveControl = EditText
+  BorderStyle = SizeToolWin
+  Caption = 'Regular Expression Delphi Demo'
+  ClientHeight = 285
+  ClientWidth = 600
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lbRegExp: TListBox
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    ItemIndex = 0
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = lbRegExpChange
+    Viewport.Width = 165.000000000000000000
+    Viewport.Height = 157.000000000000000000
+    object ListBoxItem0: TListBoxItem
+      IsSelected = True
+      TabOrder = 0
+      Text = 'E-mail'
+    end
+    object ListBoxItem1: TListBoxItem
+      Position.Y = 19.000000000000000000
+      TabOrder = 1
+      Text = 'IP Address'
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 38.000000000000000000
+      TabOrder = 2
+      Text = 'Date Interval (mm-dd-yyyy)'
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 57.000000000000000000
+      TabOrder = 3
+      Text = 'Date Interval (dd-mm-yyyy)'
+    end
+    object ListBoxItem5: TListBoxItem
+      Position.Y = 76.000000000000000000
+      TabOrder = 4
+      Text = 'CPF (999.999.999-99)'
+    end
+  end
+  object MemoRegEx: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    TextSettings.WordWrap = True
+    Position.X = 192.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 381.000000000000000000
+    Viewport.Height = 157.000000000000000000
+  end
+  object EditText: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    DisableFocusEffect = True
+    Position.X = 16.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 561.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    OnChangeTracking = EditTextChangeTracking
+    object lbType: TLabel
+      AutoSize = True
+      Position.Y = -24.000000000000000000
+      Size.Width = 34.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'E-mail'
+    end
+    object SEResult: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 1.000000000000000000
+      ShadowColor = claRed
+    end
+  end
+end

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<MobileDevice>04db9f214811d5d3-Android</MobileDevice>
+	<ActiveMobileDevice>
+		<PRIZZATO iOSSimulator="_iossimulator_CFC2B974-8ABE-4659-B804-2B98229C831D" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf" iOSDevice32="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="0022831207"/>
+		<PmacOSEMBT iOSSimulator="iPhone5"/>
+		<PmacOS iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+	</ActiveMobileDevice>
+	<Transactions>
+    <Transaction>2017/09/18 17:43:43.000.828,C:\DelphiAcademy\33-MobileDataEntry\PlatformControlsMobile\NativeControlsDemo.dproj=C:\DelphiAcademy\33-MobileDataEntry\PlatformControlsMobile\PlatformControlsMobile.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

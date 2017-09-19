@@ -1,0 +1,53 @@
+inherited Form1_iPhone4in: TForm1_iPhone4in
+  ClientHeight = 548
+  ClientWidth = 320
+  DesignerMasterStyle = 2
+  inherited ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 320.000000000000000000
+    end
+  end
+  inherited Layout1: TLayout
+    Size.Width = 320.000000000000000000
+    Size.Height = 504.000000000000000000
+    inherited Calendar1: TCalendar
+      Position.X = 59.000000000000000000
+      Position.Y = 280.000000000000000000
+    end
+    inherited Edit1: TEdit
+      Position.Y = 94.000000000000000000
+      Size.Width = 300.000000000000000000
+    end
+    inherited Edit2: TEdit
+      Size.Width = 300.000000000000000000
+    end
+    inherited Edit3: TEdit
+      Position.Y = 156.000000000000000000
+      Size.Width = 300.000000000000000000
+    end
+    inherited Edit4: TEdit
+      Position.Y = 218.000000000000000000
+      Size.Width = 300.000000000000000000
+    end
+    inherited Label2: TLabel
+      Size.Width = 300.000000000000000000
+    end
+    inherited Label3: TLabel
+      Position.Y = 134.000000000000000000
+      Size.Width = 300.000000000000000000
+    end
+    inherited Label4: TLabel
+      Position.Y = 72.000000000000000000
+      Size.Width = 300.000000000000000000
+    end
+    inherited Label5: TLabel
+      Position.Y = 258.000000000000000000
+      Size.Width = 300.000000000000000000
+    end
+    inherited Label6: TLabel
+      Position.Y = 196.000000000000000000
+      Size.Width = 300.000000000000000000
+    end
+  end
+end

@@ -1,0 +1,15 @@
+﻿TargetApplication=DKLang_Constants_Demo
+Author=Dmitry Kann
+SourceLANGID=1033
+LANGID=1031
+Generator=DKLang Translation Editor v2.1
+LastModified=2004-09-26 00:17:03
+
+[fMain]
+00000001=Beispielform
+00000002=Das ist eine Beispielmitteilung.
+00000003=Test
+
+[$CONSTANTS]
+STestMessage=Oops, Sie betätigten die Testschaltfläche!
+SMessageCaption=Info

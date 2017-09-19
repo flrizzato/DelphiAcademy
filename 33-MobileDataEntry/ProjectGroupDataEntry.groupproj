@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{1F1A3408-027C-4E97-9748-A235C75C0E6D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PlatformControlsMobile\PlatformControlsMobile.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PlatformControlsWindows\PlatformControlsWindows.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="InputKeyboards\InputKeyboards.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="AutoNavigation\AutoNavigation.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Validation\RegExpressionDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Constants_FireMonkey_Mobile\DKLang_Constants_FMX_Mobile_Demo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PlatformControlsMobile">
+        <MSBuild Projects="PlatformControlsMobile\PlatformControlsMobile.dproj"/>
+    </Target>
+    <Target Name="PlatformControlsMobile:Clean">
+        <MSBuild Projects="PlatformControlsMobile\PlatformControlsMobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PlatformControlsMobile:Make">
+        <MSBuild Projects="PlatformControlsMobile\PlatformControlsMobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PlatformControlsWindows">
+        <MSBuild Projects="PlatformControlsWindows\PlatformControlsWindows.dproj"/>
+    </Target>
+    <Target Name="PlatformControlsWindows:Clean">
+        <MSBuild Projects="PlatformControlsWindows\PlatformControlsWindows.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PlatformControlsWindows:Make">
+        <MSBuild Projects="PlatformControlsWindows\PlatformControlsWindows.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="InputKeyboards">
+        <MSBuild Projects="InputKeyboards\InputKeyboards.dproj"/>
+    </Target>
+    <Target Name="InputKeyboards:Clean">
+        <MSBuild Projects="InputKeyboards\InputKeyboards.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="InputKeyboards:Make">
+        <MSBuild Projects="InputKeyboards\InputKeyboards.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AutoNavigation">
+        <MSBuild Projects="AutoNavigation\AutoNavigation.dproj"/>
+    </Target>
+    <Target Name="AutoNavigation:Clean">
+        <MSBuild Projects="AutoNavigation\AutoNavigation.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AutoNavigation:Make">
+        <MSBuild Projects="AutoNavigation\AutoNavigation.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RegExpressionDemo">
+        <MSBuild Projects="Validation\RegExpressionDemo.dproj"/>
+    </Target>
+    <Target Name="RegExpressionDemo:Clean">
+        <MSBuild Projects="Validation\RegExpressionDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RegExpressionDemo:Make">
+        <MSBuild Projects="Validation\RegExpressionDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DKLang_Constants_FMX_Mobile_Demo">
+        <MSBuild Projects="Constants_FireMonkey_Mobile\DKLang_Constants_FMX_Mobile_Demo.dproj"/>
+    </Target>
+    <Target Name="DKLang_Constants_FMX_Mobile_Demo:Clean">
+        <MSBuild Projects="Constants_FireMonkey_Mobile\DKLang_Constants_FMX_Mobile_Demo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DKLang_Constants_FMX_Mobile_Demo:Make">
+        <MSBuild Projects="Constants_FireMonkey_Mobile\DKLang_Constants_FMX_Mobile_Demo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PlatformControlsMobile;PlatformControlsWindows;InputKeyboards;AutoNavigation;RegExpressionDemo;DKLang_Constants_FMX_Mobile_Demo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PlatformControlsMobile:Clean;PlatformControlsWindows:Clean;InputKeyboards:Clean;AutoNavigation:Clean;RegExpressionDemo:Clean;DKLang_Constants_FMX_Mobile_Demo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PlatformControlsMobile:Make;PlatformControlsWindows:Make;InputKeyboards:Make;AutoNavigation:Make;RegExpressionDemo:Make;DKLang_Constants_FMX_Mobile_Demo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

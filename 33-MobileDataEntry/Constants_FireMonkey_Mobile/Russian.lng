@@ -1,0 +1,15 @@
+﻿TargetApplication=DKLang_Constants_Demo
+Author=Dmitry Kann
+SourceLANGID=1033
+LANGID=1049
+Generator=DKLang Translation Editor v2.1
+LastModified=2004-09-26 00:17:12
+
+[fMain]
+00000001=Форма-пример
+00000002=Это пример сообщения.
+00000003=Тест
+
+[$CONSTANTS]
+STestMessage=Ага, кажется, вы нажали кнопку «Тест»!
+SMessageCaption=Информация
