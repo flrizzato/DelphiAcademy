@@ -8,6 +8,6 @@
 		<PmacOS iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
 	</ActiveMobileDevice>
 	<Transactions>
-    <Transaction>2017/09/18 17:43:43.000.828,C:\DelphiAcademy\33-MobileDataEntry\PlatformControlsMobile\NativeControlsDemo.dproj=C:\DelphiAcademy\33-MobileDataEntry\PlatformControlsMobile\PlatformControlsMobile.dproj</Transaction>
+    <Transaction>2017/09/18 17:43:43.000.828,C:\DelphiAcademy\33-MobileDataEntry\PlatformControlsMobile\PlatformControlsMobile.dproj=C:\DelphiAcademy\33-MobileDataEntry\PlatformControlsMobile\NativeControlsDemo.dproj</Transaction>
   </Transactions>
 </BorlandProject>

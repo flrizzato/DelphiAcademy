@@ -333,13 +333,13 @@
                 </DeployFile>
                 <DeployFile LocalName="OSX32\Debug\RegExpressionDemo.icns" Configuration="Debug" Class="ProjectOSXResource"/>
                 <DeployFile LocalName="OSX32\Debug\RegExpressionDemo.rsm" Configuration="Debug" Class="DebugSymbols"/>
-                <DeployFile LocalName="OSX32\Debug\RegExpressionDemo.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList"/>
                 <DeployFile LocalName="OSX32\Debug\RegExpressionDemo.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList">
                     <Platform Name="OSX32">
                         <RemoteName>Info.plist</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="OSX32\Debug\RegExpressionDemo.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList"/>
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
                         <Overwrite>true</Overwrite>

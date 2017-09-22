@@ -6,8 +6,8 @@
     <PropertyGroup>
         <DeviceId Condition="'$(Platform)'=='Android'">0022831207</DeviceId>
         <DeviceId Condition="'$(Platform)'=='iOSDevice32'"/>
-        <DeviceId Condition="'$(Platform)'=='iOSDevice64'">7112cfd6ce9983e12d46ee84fbffa466ff670ccf</DeviceId>
-        <DeviceId Condition="'$(Platform)'=='iOSSimulator'">5th generation</DeviceId>
+        <DeviceId Condition="'$(Platform)'=='iOSDevice64'"/>
+        <DeviceId Condition="'$(Platform)'=='iOSSimulator'">iPhone5</DeviceId>
     </PropertyGroup>
     <ItemGroup Condition="'$(Platform)'=='Win64'"/>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice64'">

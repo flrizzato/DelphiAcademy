@@ -2,10 +2,10 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2017/09/18 23:51:44.000.923,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/09/18 23:52:36.000.112,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\33-MobileDataEntry\InputKeyboards\uMainForm.pas</Transaction>
-    <Transaction>2017/09/18 23:52:36.000.112,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\DelphiAcademy\33-MobileDataEntry\InputKeyboards\uMainForm.fmx</Transaction>
-    <Transaction>2017/09/18 23:52:39.000.861,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\33-MobileDataEntry\InputKeyboards\InputKeyboards.dproj</Transaction>
-    <Transaction>2017/09/19 00:35:59.000.788,C:\DelphiAcademy\33-MobileDataEntry\AutoNavigation\InputKeyboards.dproj=C:\DelphiAcademy\33-MobileDataEntry\AutoNavigation\AutoNavigation.dproj</Transaction>
+    <Transaction>2017/09/18 23:52:36.000.112,C:\DelphiAcademy\33-MobileDataEntry\InputKeyboards\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017/09/18 23:52:36.000.112,C:\DelphiAcademy\33-MobileDataEntry\InputKeyboards\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/09/18 23:52:39.000.861,C:\DelphiAcademy\33-MobileDataEntry\InputKeyboards\InputKeyboards.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/09/19 00:35:59.000.788,C:\DelphiAcademy\33-MobileDataEntry\AutoNavigation\AutoNavigation.dproj=C:\DelphiAcademy\33-MobileDataEntry\AutoNavigation\InputKeyboards.dproj</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile Android="0022831207"/>
