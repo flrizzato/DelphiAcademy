@@ -1,0 +1,113 @@
+inherited MainForm_iPhone55in: TMainForm_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 0
+  inherited ToolBarMain: TToolBar
+    Size.Width = 414.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 414.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+  inherited ListBoxMain: TListBox
+    Size.Width = 394.000000000000000000
+    Size.Height = 570.000000000000000000
+    Viewport.Width = 394.000000000000000000
+    Viewport.Height = 570.000000000000000000
+    inherited ListBoxGroupHeader1: TListBoxGroupHeader
+      Size.Width = 394.000000000000000000
+    end
+    inherited ListBoxItem1: TListBoxItem
+      Size.Width = 394.000000000000000000
+      inherited Edit1: TEdit
+        ReturnKeyType = Next
+        Position.Y = 5.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+    end
+    inherited ListBoxItem2: TListBoxItem
+      Size.Width = 394.000000000000000000
+      inherited Edit2: TEdit
+        ReturnKeyType = Next
+        Position.Y = 5.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+    end
+    inherited ListBoxItem3: TListBoxItem
+      Size.Width = 394.000000000000000000
+      inherited Edit3: TEdit
+        ReturnKeyType = Next
+        Position.Y = 5.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+    end
+    inherited ListBoxItem4: TListBoxItem
+      Size.Width = 394.000000000000000000
+      inherited Edit4: TEdit
+        ReturnKeyType = Next
+        Position.Y = 5.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+    end
+    inherited ListBoxItem5: TListBoxItem
+      Size.Width = 394.000000000000000000
+      inherited Edit5: TEdit
+        ReturnKeyType = Next
+        Position.Y = 5.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+    end
+    inherited ListBoxItem6: TListBoxItem
+      Size.Width = 394.000000000000000000
+      inherited Edit6: TEdit
+        ReturnKeyType = Next
+        Position.Y = 5.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+    end
+    inherited ListBoxItem7: TListBoxItem
+      Size.Width = 394.000000000000000000
+      inherited Edit7: TEdit
+        ReturnKeyType = Next
+        Position.Y = 5.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 30.000000000000000000
+      end
+    end
+    inherited ListBoxItem8: TListBoxItem
+      Size.Width = 394.000000000000000000
+      inherited Edit8: TEdit
+        ReturnKeyType = Done
+        Position.Y = 5.000000000000000000
+        Size.Width = 234.000000000000000000
+        Size.Height = 30.000000000000000000
+        KillFocusByReturn = True
+      end
+    end
+  end
+  inherited Layout1: TLayout
+    Position.Y = 634.000000000000000000
+    Size.Width = 394.000000000000000000
+    inherited Button1: TButton
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    inherited Button2: TButton
+      Position.X = 309.000000000000000000
+    end
+  end
+  inherited StatusBar1: TStatusBar
+    Position.Y = 694.000000000000000000
+    Size.Width = 414.000000000000000000
+    inherited lblStatus: TLabel
+      Size.Width = 404.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+end

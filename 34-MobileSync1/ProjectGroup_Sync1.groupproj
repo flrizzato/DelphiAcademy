@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{851D293A-B882-4918-A28B-1CB88A9CD044}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ds_firedac_server\ds_firedac_server.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ds_firedac_mobile\ds_firedac_mobile.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ds_firedac_server">
+        <MSBuild Projects="ds_firedac_server\ds_firedac_server.dproj"/>
+    </Target>
+    <Target Name="ds_firedac_server:Clean">
+        <MSBuild Projects="ds_firedac_server\ds_firedac_server.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ds_firedac_server:Make">
+        <MSBuild Projects="ds_firedac_server\ds_firedac_server.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ds_firedac_mobile">
+        <MSBuild Projects="ds_firedac_mobile\ds_firedac_mobile.dproj"/>
+    </Target>
+    <Target Name="ds_firedac_mobile:Clean">
+        <MSBuild Projects="ds_firedac_mobile\ds_firedac_mobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ds_firedac_mobile:Make">
+        <MSBuild Projects="ds_firedac_mobile\ds_firedac_mobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ds_firedac_server;ds_firedac_mobile"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ds_firedac_server:Clean;ds_firedac_mobile:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ds_firedac_server:Make;ds_firedac_mobile:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/10/03 06:33:20.000.995,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/10/03 06:34:27.000.525,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\DelphiAcademy\34-MobileSync1\ds_firedac_mobile\uMainForm.pas</Transaction>
+    <Transaction>2017/10/03 06:34:27.000.525,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.fmx=C:\DelphiAcademy\34-MobileSync1\ds_firedac_mobile\uMainForm.fmx</Transaction>
+    <Transaction>2017/10/03 06:34:41.000.973,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\34-MobileSync1\ds_firedac_mobile\ds_firedac_mobile.dproj</Transaction>
+    <Transaction>2017/10/03 06:35:40.000.982,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_mobile\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2017/10/03 06:35:41.000.445,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_mobile\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2017/10/03 07:02:48.000.785,=C:\DelphiAcademy\34-MobileSync1\MASTSQL_MOBILE.GDB</Transaction>
+    <Transaction>2017/10/03 07:58:03.000.382,=C:\DelphiAcademy\34-MobileSync1\Common\uSQLUtil.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PmacOS iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

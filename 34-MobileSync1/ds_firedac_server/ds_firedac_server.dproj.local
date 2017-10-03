@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/10/03 01:10:55.000.990,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\FormUnit1.pas</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.834,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\css\serverfunctioninvoker.css</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.793,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\serverfunctioninvoker.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.917,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\images\collapse.png</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.868,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\templates\reversestring.html</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.769,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\connection.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.696,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\serverfunctions.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.707,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\base64-min.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.531,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.814,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\css\main.css</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.251,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.957,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\images\expand.png</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.656,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\base64.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.685,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\callbackframework.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.735,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\serverfunctionexecutor-min.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.676,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\json2.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.719,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\json2-min.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.751,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\callbackframework-min.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.391,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.667,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\js\serverfunctionexecutor.js</Transaction>
+    <Transaction>2017/10/03 01:10:56.000.892,=C:\DelphiAcademy\34-MobileSync1\ds_firedac_server\templates\serverfunctioninvoker.html</Transaction>
+    <Transaction>2017/10/03 01:50:20.000.486,=C:\DelphiAcademy\34-MobileSync1\Common\uSQLUtil.pas</Transaction>
+    <Transaction>2017/10/03 09:04:47.000.586,=C:\DelphiAcademy\34-MobileSync1\Common\DataSetConverter4D.pas</Transaction>
+    <Transaction>2017/10/03 09:04:47.000.475,=C:\DelphiAcademy\34-MobileSync1\Common\DataSetConverter4D.Helper.pas</Transaction>
+    <Transaction>2017/10/03 09:04:47.000.526,=C:\DelphiAcademy\34-MobileSync1\Common\DataSetConverter4D.Impl.pas</Transaction>
+    <Transaction>2017/10/03 09:04:47.000.647,=C:\DelphiAcademy\34-MobileSync1\Common\DataSetConverter4D.Util.pas</Transaction>
+    <Transaction>2017/10/03 09:06:41.000.857,C:\DelphiAcademy\34-MobileSync1\Common\DataSetConverter4D.Impl.pas=</Transaction>
+    <Transaction>2017/10/03 09:06:41.000.960,C:\DelphiAcademy\34-MobileSync1\Common\DataSetConverter4D.Util.pas=</Transaction>
+    <Transaction>2017/10/03 09:06:41.000.763,C:\DelphiAcademy\34-MobileSync1\Common\DataSetConverter4D.Helper.pas=</Transaction>
+    <Transaction>2017/10/03 09:06:41.000.913,C:\DelphiAcademy\34-MobileSync1\Common\DataSetConverter4D.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

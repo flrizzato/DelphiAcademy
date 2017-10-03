@@ -12,9 +12,12 @@ inherited MainForm_LgXhdpiPh: TMainForm_LgXhdpiPh
   end
   inherited ListBoxMain: TListBox
     Size.Width = 430.000000000000000000
-    Size.Height = 567.000000000000000000
+    Size.Height = 545.000000000000000000
     Viewport.Width = 430.000000000000000000
-    Viewport.Height = 567.000000000000000000
+    Viewport.Height = 545.000000000000000000
+    inherited ListBoxGroupHeader1: TListBoxGroupHeader
+      Size.Width = 430.000000000000000000
+    end
     inherited ListBoxItem1: TListBoxItem
       Size.Width = 430.000000000000000000
       inherited Edit1: TEdit
@@ -65,13 +68,21 @@ inherited MainForm_LgXhdpiPh: TMainForm_LgXhdpiPh
     end
   end
   inherited Layout1: TLayout
-    Position.Y = 635.000000000000000000
+    Position.Y = 613.000000000000000000
     Size.Width = 430.000000000000000000
     inherited Button1: TButton
       TextSettings.Font.StyleExt = {00070000000000000004000000}
     end
     inherited Button2: TButton
       Position.X = 345.000000000000000000
+    end
+  end
+  inherited StatusBar1: TStatusBar
+    Position.Y = 673.000000000000000000
+    Size.Width = 450.000000000000000000
+    inherited lblStatus: TLabel
+      Size.Width = 440.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
     end
   end
 end

@@ -1,21 +1,21 @@
 object MainForm: TMainForm
   Left = 0
   Top = 0
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 600
+  ClientWidth = 400
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnKeyDown = FormKeyDown
   DesignerMasterStyle = 0
   object ToolBarMain: TToolBar
-    Size.Width = 640.000000000000000000
+    Size.Width = 400.000000000000000000
     Size.Height = 40.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object Label1: TLabel
       Align = Contents
-      Size.Width = 640.000000000000000000
+      Size.Width = 400.000000000000000000
       Size.Height = 40.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'toollabel'
@@ -32,21 +32,30 @@ object MainForm: TMainForm
     Margins.Top = 10.000000000000000000
     Margins.Right = 10.000000000000000000
     Margins.Bottom = 10.000000000000000000
-    Size.Width = 620.000000000000000000
-    Size.Height = 360.000000000000000000
+    Size.Width = 380.000000000000000000
+    Size.Height = 458.000000000000000000
     Size.PlatformDefault = False
-    StyleLookup = 'transparentlistboxstyle'
+    StyleLookup = 'listboxstyle'
     TabOrder = 1
     DisableFocusEffect = True
+    ItemHeight = 40.000000000000000000
     DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
     DefaultItemStyles.GroupHeaderStyle = ''
     DefaultItemStyles.GroupFooterStyle = ''
     GroupingKind = Grouped
-    Viewport.Width = 620.000000000000000000
-    Viewport.Height = 360.000000000000000000
+    Viewport.Width = 376.000000000000000000
+    Viewport.Height = 454.000000000000000000
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Size.Width = 376.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = 'Customer Data'
+    end
     object ListBoxItem1: TListBoxItem
-      Size.Width = 620.000000000000000000
-      Size.Height = 44.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 376.000000000000000000
+      Size.Height = 40.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       Text = 'First Name'
@@ -54,19 +63,20 @@ object MainForm: TMainForm
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         Align = VertCenter
         TabOrder = 0
+        KeyboardType = Alphabet
         Position.X = 150.000000000000000000
-        Position.Y = 6.000000000000000000
+        Position.Y = 4.000000000000000000
         Margins.Left = 150.000000000000000000
         Margins.Right = 10.000000000000000000
-        Size.Width = 460.000000000000000000
+        Size.Width = 216.000000000000000000
         Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
       end
     end
     object ListBoxItem2: TListBoxItem
-      Position.Y = 44.000000000000000000
-      Size.Width = 620.000000000000000000
-      Size.Height = 44.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 376.000000000000000000
+      Size.Height = 40.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       Text = 'Last Name'
@@ -76,18 +86,18 @@ object MainForm: TMainForm
         TabOrder = 0
         KeyboardType = Alphabet
         Position.X = 150.000000000000000000
-        Position.Y = 6.000000000000000000
+        Position.Y = 4.000000000000000000
         Margins.Left = 150.000000000000000000
         Margins.Right = 10.000000000000000000
-        Size.Width = 460.000000000000000000
+        Size.Width = 216.000000000000000000
         Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
       end
     end
     object ListBoxItem3: TListBoxItem
-      Position.Y = 88.000000000000000000
-      Size.Width = 620.000000000000000000
-      Size.Height = 44.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 376.000000000000000000
+      Size.Height = 40.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
       Text = 'City'
@@ -97,18 +107,18 @@ object MainForm: TMainForm
         TabOrder = 0
         KeyboardType = Alphabet
         Position.X = 150.000000000000000000
-        Position.Y = 6.000000000000000000
+        Position.Y = 4.000000000000000000
         Margins.Left = 150.000000000000000000
         Margins.Right = 10.000000000000000000
-        Size.Width = 460.000000000000000000
+        Size.Width = 216.000000000000000000
         Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
       end
     end
     object ListBoxItem4: TListBoxItem
-      Position.Y = 132.000000000000000000
-      Size.Width = 620.000000000000000000
-      Size.Height = 44.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 376.000000000000000000
+      Size.Height = 40.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 3
       Text = 'State'
@@ -118,18 +128,18 @@ object MainForm: TMainForm
         TabOrder = 0
         KeyboardType = Alphabet
         Position.X = 150.000000000000000000
-        Position.Y = 6.000000000000000000
+        Position.Y = 4.000000000000000000
         Margins.Left = 150.000000000000000000
         Margins.Right = 10.000000000000000000
-        Size.Width = 460.000000000000000000
+        Size.Width = 216.000000000000000000
         Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
       end
     end
     object ListBoxItem5: TListBoxItem
-      Position.Y = 176.000000000000000000
-      Size.Width = 620.000000000000000000
-      Size.Height = 44.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 376.000000000000000000
+      Size.Height = 40.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 4
       Text = 'Zip Code'
@@ -139,18 +149,18 @@ object MainForm: TMainForm
         TabOrder = 0
         KeyboardType = NumberPad
         Position.X = 150.000000000000000000
-        Position.Y = 6.000000000000000000
+        Position.Y = 4.000000000000000000
         Margins.Left = 150.000000000000000000
         Margins.Right = 10.000000000000000000
-        Size.Width = 460.000000000000000000
+        Size.Width = 216.000000000000000000
         Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
       end
     end
     object ListBoxItem6: TListBoxItem
-      Position.Y = 220.000000000000000000
-      Size.Width = 620.000000000000000000
-      Size.Height = 44.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 376.000000000000000000
+      Size.Height = 40.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
       Text = 'Email'
@@ -160,18 +170,18 @@ object MainForm: TMainForm
         TabOrder = 0
         KeyboardType = EmailAddress
         Position.X = 150.000000000000000000
-        Position.Y = 6.000000000000000000
+        Position.Y = 4.000000000000000000
         Margins.Left = 150.000000000000000000
         Margins.Right = 10.000000000000000000
-        Size.Width = 460.000000000000000000
+        Size.Width = 216.000000000000000000
         Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
       end
     end
     object ListBoxItem7: TListBoxItem
-      Position.Y = 264.000000000000000000
-      Size.Width = 620.000000000000000000
-      Size.Height = 44.000000000000000000
+      Position.Y = 280.000000000000000000
+      Size.Width = 376.000000000000000000
+      Size.Height = 40.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 6
       Text = 'Phone'
@@ -181,18 +191,18 @@ object MainForm: TMainForm
         TabOrder = 0
         KeyboardType = PhonePad
         Position.X = 150.000000000000000000
-        Position.Y = 6.000000000000000000
+        Position.Y = 4.000000000000000000
         Margins.Left = 150.000000000000000000
         Margins.Right = 10.000000000000000000
-        Size.Width = 460.000000000000000000
+        Size.Width = 216.000000000000000000
         Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
       end
     end
     object ListBoxItem8: TListBoxItem
-      Position.Y = 308.000000000000000000
-      Size.Width = 620.000000000000000000
-      Size.Height = 44.000000000000000000
+      Position.Y = 320.000000000000000000
+      Size.Width = 376.000000000000000000
+      Size.Height = 40.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 7
       Text = 'Web Page'
@@ -202,10 +212,10 @@ object MainForm: TMainForm
         TabOrder = 0
         KeyboardType = URL
         Position.X = 150.000000000000000000
-        Position.Y = 6.000000000000000000
+        Position.Y = 4.000000000000000000
         Margins.Left = 150.000000000000000000
         Margins.Right = 10.000000000000000000
-        Size.Width = 460.000000000000000000
+        Size.Width = 216.000000000000000000
         Size.Height = 32.000000000000000000
         Size.PlatformDefault = False
         OnExit = Edit8Exit
@@ -218,8 +228,8 @@ object MainForm: TMainForm
     Margins.Right = 10.000000000000000000
     Margins.Bottom = 10.000000000000000000
     Position.X = 10.000000000000000000
-    Position.Y = 420.000000000000000000
-    Size.Width = 620.000000000000000000
+    Position.Y = 518.000000000000000000
+    Size.Width = 380.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
@@ -248,7 +258,7 @@ object MainForm: TMainForm
       Margins.Top = 5.000000000000000000
       Margins.Right = 5.000000000000000000
       Margins.Bottom = 5.000000000000000000
-      Position.X = 535.000000000000000000
+      Position.X = 295.000000000000000000
       Position.Y = 5.000000000000000000
       Size.Width = 80.000000000000000000
       Size.Height = 40.000000000000000000
@@ -256,6 +266,27 @@ object MainForm: TMainForm
       StyleLookup = 'cornerbuttonstyle'
       TabOrder = 1
       Text = 'Cancel'
+    end
+  end
+  object StatusBar1: TStatusBar
+    Position.Y = 578.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 400.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object lblStatus: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Size.Width = 390.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 10.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = ':: Status Text ::'
+      TabOrder = 0
     end
   end
 end

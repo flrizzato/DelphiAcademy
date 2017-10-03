@@ -33,6 +33,9 @@ type
     Layout1: TLayout;
     Button1: TButton;
     Button2: TButton;
+    ListBoxGroupHeader1: TListBoxGroupHeader;
+    StatusBar1: TStatusBar;
+    lblStatus: TLabel;
     procedure FormKeyDown(Sender: TObject; var Key: Word; var KeyChar: Char;
       Shift: TShiftState);
     procedure Button1Click(Sender: TObject);
@@ -49,8 +52,8 @@ var
 implementation
 
 {$R *.fmx}
+{$R *.iPhone55in.fmx IOS}
 {$R *.LgXhdpiPh.fmx ANDROID}
-{$R *.iPhone47in.fmx IOS}
 
 procedure TMainForm.Button1Click(Sender: TObject);
 begin
