@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E3F7108F-8679-4AA3-835A-B753E99C81BF}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="BaaS_Update\BaaS_Up.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BaaS_Client\BaaS_Client.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BaaS_Up">
+        <MSBuild Projects="BaaS_Update\BaaS_Up.dproj"/>
+    </Target>
+    <Target Name="BaaS_Up:Clean">
+        <MSBuild Projects="BaaS_Update\BaaS_Up.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BaaS_Up:Make">
+        <MSBuild Projects="BaaS_Update\BaaS_Up.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BaaS_Client">
+        <MSBuild Projects="BaaS_Client\BaaS_Client.dproj"/>
+    </Target>
+    <Target Name="BaaS_Client:Clean">
+        <MSBuild Projects="BaaS_Client\BaaS_Client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BaaS_Client:Make">
+        <MSBuild Projects="BaaS_Client\BaaS_Client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BaaS_Up;BaaS_Client"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BaaS_Up:Clean;BaaS_Client:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BaaS_Up:Make;BaaS_Client:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

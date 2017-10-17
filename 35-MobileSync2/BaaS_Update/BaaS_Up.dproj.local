@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/10/16 16:21:22.000.622,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/10/16 16:21:35.000.937,C:\DelphiAcademy\35-MobileSync2\BaaS_Update\uMainForm.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2017/10/16 16:21:35.000.937,C:\DelphiAcademy\35-MobileSync2\BaaS_Update\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/10/16 16:21:48.000.182,C:\DelphiAcademy\35-MobileSync2\BaaS_Update\BaaS_Up.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2017/10/16 16:44:42.000.887,=C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.Impl.pas</Transaction>
+    <Transaction>2017/10/16 16:44:42.000.860,=C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.Helper.pas</Transaction>
+    <Transaction>2017/10/16 16:44:42.000.912,=C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.pas</Transaction>
+    <Transaction>2017/10/16 16:44:42.000.934,=C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.Util.pas</Transaction>
+  </Transactions>
+</BorlandProject>
