@@ -60,7 +60,7 @@ end;
 
 procedure TClientDM.FDCnnBeforeConnect(Sender: TObject);
 begin
-  {$IFDEF WINDOWS}
+  {$IFDEF MSWINDOWS}
   // use the design time connection definition
   {$ELSE}
   FDCnn.Params.Database := TPath.GetDocumentsPath + PathDelim +

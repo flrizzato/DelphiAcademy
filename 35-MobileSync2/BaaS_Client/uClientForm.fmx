@@ -13,7 +13,7 @@ object MainForm: TMainForm
     Size.Width = 640.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     TabPosition = PlatformDefault
     Sizes = (
@@ -25,7 +25,7 @@ object MainForm: TMainForm
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 58.000000000000000000
       Size.Height = 26.000000000000000000
       Size.PlatformDefault = False
@@ -67,7 +67,7 @@ object MainForm: TMainForm
       CustomIcon = <
         item
         end>
-      IsSelected = False
+      IsSelected = True
       Size.Width = 58.000000000000000000
       Size.Height = 26.000000000000000000
       Size.PlatformDefault = False
@@ -82,7 +82,7 @@ object MainForm: TMainForm
         Size.PlatformDefault = False
         TabOrder = 0
         object DateToSync: TDateEdit
-          Date = 43025.000000000000000000
+          Date = 43028.000000000000000000
           WeekNumbers = True
           TodayDefault = True
           Align = Left

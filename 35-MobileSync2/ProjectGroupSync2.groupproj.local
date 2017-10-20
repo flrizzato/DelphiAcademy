@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2017/10/16 17:41:10.000.372,C:\DelphiAcademy\35-MobileSync2\ProjectGroupSync.groupproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
-    <Transaction>2017/10/16 17:48:08.000.947,C:\DelphiAcademy\35-MobileSync2\ProjectGroupSync.groupproj=C:\DelphiAcademy\35-MobileSync2\ProjectGroupSync2.groupproj</Transaction>
+    <Transaction>2017/10/16 17:41:10.000.372,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\DelphiAcademy\35-MobileSync2\ProjectGroupSync.groupproj</Transaction>
+    <Transaction>2017/10/16 17:48:08.000.947,C:\DelphiAcademy\35-MobileSync2\ProjectGroupSync2.groupproj=C:\DelphiAcademy\35-MobileSync2\ProjectGroupSync.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="C:\DelphiAcademy\35-MobileSync2\BaaS_Update\BaaS_Up.dproj"/>
+		<Projects ActiveProject="C:\DelphiAcademy\35-MobileSync2\BaaS_Client\BaaS_Client.dproj"/>
 	</Default.Personality>
 </BorlandProject>
