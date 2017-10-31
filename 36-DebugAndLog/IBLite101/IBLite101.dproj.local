@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/11/01 01:59:30.000.831,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/11/01 01:59:47.000.680,C:\DelphiAcademy\15-FireDACMobile\IBLite101\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/11/01 01:59:47.000.680,C:\DelphiAcademy\15-FireDACMobile\IBLite101\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2016/11/01 01:59:50.000.492,C:\DelphiAcademy\15-FireDACMobile\IBLite101\IBLite101.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/11/01 02:12:25.000.910,=C:\DelphiAcademy\15-FireDACMobile\dbdemos.gdb</Transaction>
+    <Transaction>2016/11/10 12:34:06.000.786,=C:\EVENTS\CodeRageXI\dbdemos.gdb</Transaction>
+    <Transaction>2017/07/10 12:12:51.000.208,=C:\DelphiAcademy\29-MobileDB\dbdemos.gdb</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PRIZZATOOSX iOSSimulator="iPhone5" iOSDevice32="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<NoProfile Android="0022831207"/>
+		<PmacOS iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/10/16 17:44:51.000.405,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/10/16 17:45:07.000.334,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\35-MobileSync2\BaaS_Client\uClientForm.pas</Transaction>
+    <Transaction>2017/10/16 17:45:07.000.334,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\DelphiAcademy\35-MobileSync2\BaaS_Client\uClientForm.fmx</Transaction>
+    <Transaction>2017/10/16 17:45:14.000.143,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\35-MobileSync2\BaaS_Client\BaaS_Client.dproj</Transaction>
+    <Transaction>2017/10/16 17:53:58.000.312,=C:\DelphiAcademy\35-MobileSync2\BaaS_Client\Unit1.pas</Transaction>
+    <Transaction>2017/10/16 17:54:05.000.943,C:\DelphiAcademy\35-MobileSync2\BaaS_Client\uClientDM.pas=C:\DelphiAcademy\35-MobileSync2\BaaS_Client\Unit1.pas</Transaction>
+    <Transaction>2017/10/16 17:54:05.000.943,C:\DelphiAcademy\35-MobileSync2\BaaS_Client\uClientDM.dfm=C:\DelphiAcademy\35-MobileSync2\BaaS_Client\Unit1.dfm</Transaction>
+    <Transaction>2017/10/17 00:07:56.000.861,=C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.Impl.pas</Transaction>
+    <Transaction>2017/10/17 00:07:56.000.838,=C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.Helper.pas</Transaction>
+    <Transaction>2017/10/17 00:07:56.000.906,=C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.Util.pas</Transaction>
+    <Transaction>2017/10/17 00:07:56.000.881,=C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.pas</Transaction>
+    <Transaction>2017/10/17 00:07:56.000.933,=C:\DelphiAcademy\35-MobileSync2\Common\uSQLUtil.pas</Transaction>
+    <Transaction>2017/10/17 00:48:19.000.330,C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.pas=</Transaction>
+    <Transaction>2017/10/17 00:48:19.000.353,C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.Util.pas=</Transaction>
+    <Transaction>2017/10/17 00:48:19.000.308,C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.Impl.pas=</Transaction>
+    <Transaction>2017/10/17 00:48:19.000.249,C:\DelphiAcademy\35-MobileSync2\Common\DataSetConverter4D.Helper.pas=</Transaction>
+    <Transaction>2017/10/17 08:38:31.000.274,=C:\DelphiAcademy\35-MobileSync2\MASTSQL_MOBILE.GDB</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PmacOSEMBT iOSSimulator="iPhone5"/>
+		<PmacOS iOSSimulator="iPhone5"/>
+		<NoProfile Android="0022831207"/>
+	</ActiveMobileDevice>
+</BorlandProject>

@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{AE0863DB-F5F5-4FE2-84E5-99A23823F67A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="BaaS_Update\BaaS_Up.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BaaS_Client\BaaS_Client.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="IBLite101\IBLite101.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BaaS_Up">
+        <MSBuild Projects="BaaS_Update\BaaS_Up.dproj"/>
+    </Target>
+    <Target Name="BaaS_Up:Clean">
+        <MSBuild Projects="BaaS_Update\BaaS_Up.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BaaS_Up:Make">
+        <MSBuild Projects="BaaS_Update\BaaS_Up.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BaaS_Client">
+        <MSBuild Projects="BaaS_Client\BaaS_Client.dproj"/>
+    </Target>
+    <Target Name="BaaS_Client:Clean">
+        <MSBuild Projects="BaaS_Client\BaaS_Client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BaaS_Client:Make">
+        <MSBuild Projects="BaaS_Client\BaaS_Client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IBLite101">
+        <MSBuild Projects="IBLite101\IBLite101.dproj"/>
+    </Target>
+    <Target Name="IBLite101:Clean">
+        <MSBuild Projects="IBLite101\IBLite101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IBLite101:Make">
+        <MSBuild Projects="IBLite101\IBLite101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BaaS_Up;BaaS_Client;IBLite101"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BaaS_Up:Clean;BaaS_Client:Clean;IBLite101:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BaaS_Up:Make;BaaS_Client:Make;IBLite101:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

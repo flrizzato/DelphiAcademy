@@ -1,0 +1,150 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Button1: TButton
+      Align = Center
+      StyleLookup = 'cornerbuttonstyle'
+      TabOrder = 0
+      Text = 'Open'
+      OnClick = Button1Click
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'Database=C:\DelphiAcademy\29-MobileDB\dbdemos.gdb'
+      'DriverID=IBLite')
+    LoginPrompt = False
+    BeforeConnect = FDConnection1BeforeConnect
+    Left = 64
+    Top = 64
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'SELECT * FROM CUSTOMER')
+    Left = 64
+    Top = 120
+    object FDQuery1CUSTNO: TFloatField
+      FieldName = 'CUSTNO'
+      Origin = 'CUSTNO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FDQuery1COMPANY: TStringField
+      FieldName = 'COMPANY'
+      Origin = 'COMPANY'
+      Size = 30
+    end
+    object FDQuery1ADDR1: TStringField
+      FieldName = 'ADDR1'
+      Origin = 'ADDR1'
+      Size = 30
+    end
+    object FDQuery1ADDR2: TStringField
+      FieldName = 'ADDR2'
+      Origin = 'ADDR2'
+      Size = 30
+    end
+    object FDQuery1CITY: TStringField
+      FieldName = 'CITY'
+      Origin = 'CITY'
+      Size = 15
+    end
+    object FDQuery1STATE: TStringField
+      FieldName = 'STATE'
+      Origin = 'STATE'
+    end
+    object FDQuery1ZIP: TStringField
+      FieldName = 'ZIP'
+      Origin = 'ZIP'
+      Size = 10
+    end
+    object FDQuery1COUNTRY: TStringField
+      FieldName = 'COUNTRY'
+      Origin = 'COUNTRY'
+    end
+    object FDQuery1PHONE: TStringField
+      FieldName = 'PHONE'
+      Origin = 'PHONE'
+      Size = 15
+    end
+    object FDQuery1FAX: TStringField
+      FieldName = 'FAX'
+      Origin = 'FAX'
+      Size = 15
+    end
+    object FDQuery1TAXRATE: TFloatField
+      FieldName = 'TAXRATE'
+      Origin = 'TAXRATE'
+    end
+    object FDQuery1CONTACT: TStringField
+      FieldName = 'CONTACT'
+      Origin = 'CONTACT'
+    end
+    object FDQuery1LASTINVOICEDATE: TSQLTimeStampField
+      FieldName = 'LASTINVOICEDATE'
+      Origin = 'LASTINVOICEDATE'
+    end
+  end
+  object FDPhysIBDriverLink1: TFDPhysIBDriverLink
+    Left = 544
+    Top = 360
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 544
+    Top = 416
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDQuery1
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 300
+    Top = 285
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'COMPANY'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'PHONE'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end
