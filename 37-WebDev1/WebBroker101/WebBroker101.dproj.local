@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/11/14 08:41:35.000.674,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/11/14 08:41:36.000.510,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ServerConst1.pas</Transaction>
+    <Transaction>2017/11/14 08:41:55.000.093,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.dfm=C:\DelphiAcademy\37-WebDev1\WebBroker101\WebModuleUnit1.dfm</Transaction>
+    <Transaction>2017/11/14 08:41:55.000.093,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas=C:\DelphiAcademy\37-WebDev1\WebBroker101\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/11/14 08:41:56.000.565,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ServerConst1.pas=C:\DelphiAcademy\37-WebDev1\WebBroker101\ServerConst1.pas</Transaction>
+    <Transaction>2017/11/14 08:42:02.000.104,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\37-WebDev1\WebBroker101\WebBroker101.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

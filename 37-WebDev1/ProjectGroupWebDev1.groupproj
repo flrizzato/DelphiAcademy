@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7730D909-BA82-43C9-9DB7-5D8F1A3BCE4E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="WebBroker101\WebBroker101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WebBroker102\WebBroker102.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WebBroker103\PhoneBookServer.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="WebBroker101">
+        <MSBuild Projects="WebBroker101\WebBroker101.dproj"/>
+    </Target>
+    <Target Name="WebBroker101:Clean">
+        <MSBuild Projects="WebBroker101\WebBroker101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebBroker101:Make">
+        <MSBuild Projects="WebBroker101\WebBroker101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WebBroker102">
+        <MSBuild Projects="WebBroker102\WebBroker102.dproj"/>
+    </Target>
+    <Target Name="WebBroker102:Clean">
+        <MSBuild Projects="WebBroker102\WebBroker102.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebBroker102:Make">
+        <MSBuild Projects="WebBroker102\WebBroker102.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PhoneBookServer">
+        <MSBuild Projects="WebBroker103\PhoneBookServer.dproj"/>
+    </Target>
+    <Target Name="PhoneBookServer:Clean">
+        <MSBuild Projects="WebBroker103\PhoneBookServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PhoneBookServer:Make">
+        <MSBuild Projects="WebBroker103\PhoneBookServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="WebBroker101;WebBroker102;PhoneBookServer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="WebBroker101:Clean;WebBroker102:Clean;PhoneBookServer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="WebBroker101:Make;WebBroker102:Make;PhoneBookServer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

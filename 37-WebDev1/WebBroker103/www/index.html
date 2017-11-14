@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>		
+		<script src="//code.jquery.com/ui/1.10.2/jquery-ui.js" type="text/javascript"></script>		
+		<script src="lib/jtable.2.4.0/jquery.jtable.min.js"></script>		
+		<link href="//code.jquery.com/ui/1.10.4/themes/cupertino/jquery-ui.css" rel="stylesheet" type="text/css"/>		
+		<link rel="stylesheet" type="text/css" href="lib/jtable.2.4.0/themes/lightcolor/blue/jtable.min.css"> 
+		<script>
+		  $(document).ready(function(){
+			$('#people').jtable({
+				title: 'My WebBroker Phonebook',
+				defaultSorting: 'first_name ASC',
+				sorting: true,
+				actions: {
+					listAction: '/getpeople',
+					createAction: '/saveperson',
+					updateAction: '/saveperson',
+					deleteAction: '/deleteperson'
+				},
+				fields: {
+					id: {
+						key: true,
+						list: false
+					},
+					first_name: {
+						title: 'First name',
+						width: '20%',
+						sorting: true
+					},
+					last_name: {
+						title: 'Last name',
+						width: '20%',
+						sorting: true
+					},
+					work_phone_number: {
+						title: 'Work Phone #',
+						width: '20%',
+						sorting: false
+					},
+					mobile_phone_number: {
+						title: 'Mobile Phone #',
+						width: '20%',
+						sorting: false
+					},					
+					email: {
+						title: 'email',
+						width: '20%',
+						sorting: true
+					}
+				}});
+			$('#people').jtable('load');
+		  });
+		</script>
+    </head>
+    <body>        
+		<div id="people"></div>
+    </body>
+</html>
