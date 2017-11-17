@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2017/11/14 08:43:23.082,C:\DelphiAcademy\37-WebDev1\ProjectGroupWebDev1.groupproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+	<Transactions>
+    <Transaction>2017/11/14 08:43:23.000.082,C:\DelphiAcademy\37-WebDev1\ProjectGroupWebDev1.groupproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
   </Transactions>
-  <Default.Personality>
-    <Projects ActiveProject="C:\DelphiAcademy\37-WebDev1\WebBroker103\PhoneBookServer.dproj"/>
-  </Default.Personality>
+	<Default.Personality>
+		<Projects ActiveProject="C:\DelphiAcademy\37-WebDev1\WebBroker103\PhoneBookServer.dproj"/>
+	</Default.Personality>
 </BorlandProject>
