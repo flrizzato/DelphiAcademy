@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/11/27 18:24:43.000.357,=C:\DelphiAcademy\38-WebDev2\IW103\Unit1.pas</Transaction>
+    <Transaction>2017/11/27 18:24:44.000.393,=C:\DelphiAcademy\38-WebDev2\IW103\UserSessionUnit.pas</Transaction>
+    <Transaction>2017/11/27 18:24:44.000.336,=C:\DelphiAcademy\38-WebDev2\IW103\ServerController.pas</Transaction>
+    <Transaction>2017/11/27 22:59:58.000.854,=C:\DelphiAcademy\38-WebDev2\IW103\Win32\Debug\templates\IWLogin.html</Transaction>
+    <Transaction>2017/11/28 00:21:06.000.500,=C:\DelphiAcademy\38-WebDev2\IW103\Win32\Debug\wwwroot\css\login.css</Transaction>
+    <Transaction>2017/11/28 00:22:13.000.345,=C:\DelphiAcademy\38-WebDev2\IW103\Win32\Debug\wwwroot\css\login.js</Transaction>
+    <Transaction>2017/11/28 00:23:21.000.243,C:\DelphiAcademy\38-WebDev2\IW103\Win32\Debug\wwwroot\css\login.js=</Transaction>
+    <Transaction>2017/11/28 00:23:43.000.277,=C:\DelphiAcademy\38-WebDev2\IW103\Win32\Debug\wwwroot\js\login.js</Transaction>
+  </Transactions>
+</BorlandProject>

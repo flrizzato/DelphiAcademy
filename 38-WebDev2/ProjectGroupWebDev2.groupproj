@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2D0CF1EC-56CA-4F30-9D25-D6011059069D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="IW101\IW101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="IW102\IW102.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="IW103\IW103.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="IW101">
+        <MSBuild Projects="IW101\IW101.dproj"/>
+    </Target>
+    <Target Name="IW101:Clean">
+        <MSBuild Projects="IW101\IW101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IW101:Make">
+        <MSBuild Projects="IW101\IW101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IW102">
+        <MSBuild Projects="IW102\IW102.dproj"/>
+    </Target>
+    <Target Name="IW102:Clean">
+        <MSBuild Projects="IW102\IW102.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IW102:Make">
+        <MSBuild Projects="IW102\IW102.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IW103">
+        <MSBuild Projects="IW103\IW103.dproj"/>
+    </Target>
+    <Target Name="IW103:Clean">
+        <MSBuild Projects="IW103\IW103.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IW103:Make">
+        <MSBuild Projects="IW103\IW103.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="IW101;IW102;IW103"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="IW101:Clean;IW102:Clean;IW103:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="IW101:Make;IW102:Make;IW103:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

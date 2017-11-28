@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/11/26 18:13:50.000.212,=C:\DelphiAcademy\38-WebDev2\IW101\IW101\Unit1.pas</Transaction>
+    <Transaction>2017/11/26 18:13:52.000.150,=C:\DelphiAcademy\38-WebDev2\IW101\IW101\ServerController.pas</Transaction>
+    <Transaction>2017/11/26 18:13:52.000.198,=C:\DelphiAcademy\38-WebDev2\IW101\IW101\UserSessionUnit.pas</Transaction>
+  </Transactions>
+</BorlandProject>
