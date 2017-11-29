@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/11/29 12:05:48.000.152,=C:\DelphiAcademy\38-WebDev2\IW104\Unit1.pas</Transaction>
+    <Transaction>2017/11/29 12:05:49.000.244,=C:\DelphiAcademy\38-WebDev2\IW104\UserSessionUnit.pas</Transaction>
+    <Transaction>2017/11/29 12:05:49.000.186,=C:\DelphiAcademy\38-WebDev2\IW104\ServerController.pas</Transaction>
+    <Transaction>2017/11/29 12:19:06.000.586,=C:\DelphiAcademy\38-WebDev2\IW104\Unit2.pas</Transaction>
+    <Transaction>2017/11/29 12:19:13.000.075,C:\DelphiAcademy\38-WebDev2\IW104\Unit2.pas=C:\DelphiAcademy\38-WebDev2\IW104\uHandles.pas</Transaction>
+    <Transaction>2017/11/29 12:19:45.000.372,C:\DelphiAcademy\38-WebDev2\IW104\uHandles.pas=</Transaction>
+    <Transaction>2017/11/29 12:24:03.000.973,=C:\DelphiAcademy\38-WebDev2\Common\DataSetConverter4D.Helper.pas</Transaction>
+    <Transaction>2017/11/29 12:24:03.000.999,=C:\DelphiAcademy\38-WebDev2\Common\DataSetConverter4D.Impl.pas</Transaction>
+    <Transaction>2017/11/29 12:24:04.000.023,=C:\DelphiAcademy\38-WebDev2\Common\DataSetConverter4D.pas</Transaction>
+    <Transaction>2017/11/29 12:24:04.000.054,=C:\DelphiAcademy\38-WebDev2\Common\DataSetConverter4D.Util.pas</Transaction>
+    <Transaction>2017/11/29 13:01:47.000.845,=C:\DelphiAcademy\38-WebDev2\IW104\Unit2.pas</Transaction>
+    <Transaction>2017/11/29 13:01:55.000.369,C:\DelphiAcademy\38-WebDev2\IW104\Unit2.pas=C:\DelphiAcademy\38-WebDev2\IW104\uHandles.pas</Transaction>
+    <Transaction>2017/11/29 13:06:45.000.945,C:\DelphiAcademy\38-WebDev2\IW104\Unit1.dfm=C:\DelphiAcademy\38-WebDev2\IW104\uJTableForm.dfm</Transaction>
+    <Transaction>2017/11/29 13:06:45.000.945,C:\DelphiAcademy\38-WebDev2\IW104\Unit1.pas=C:\DelphiAcademy\38-WebDev2\IW104\uJTableForm.pas</Transaction>
+    <Transaction>2017/11/29 16:43:55.951,=C:\DelphiAcademy\38-WebDev2\IW104\Win32\Debug\templates\IWJTableForm.html</Transaction>
+  </Transactions>
+</BorlandProject>

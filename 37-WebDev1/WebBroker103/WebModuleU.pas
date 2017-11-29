@@ -14,18 +14,18 @@ uses System.SysUtils, System.Classes, Web.HTTPApp, Data.DBXJSON,
 
 type
   TwmMain = class(TWebModule)
+    WebFileDispatcher1: TWebFileDispatcher;
     Connection: TFDConnection;
     FDPhysIBDriverLink1: TFDPhysIBDriverLink;
-    cmdInsertPerson: TFDCommand;
     qryPeople: TFDQuery;
-    cmdUpdatePerson: TFDCommand;
-    WebFileDispatcher1: TWebFileDispatcher;
     qryPeopleID: TFDAutoIncField;
     qryPeopleFIRST_NAME: TStringField;
     qryPeopleLAST_NAME: TStringField;
     qryPeopleWORK_PHONE_NUMBER: TStringField;
     qryPeopleMOBILE_PHONE_NUMBER: TStringField;
     qryPeopleEMAIL: TStringField;
+    cmdUpdatePerson: TFDCommand;
+    cmdInsertPerson: TFDCommand;
     procedure wmMainDefaultHandlerAction(Sender: TObject; Request: TWebRequest;
       Response: TWebResponse; var Handled: Boolean);
     procedure wmMainwaGetPeopleAction(Sender: TObject; Request: TWebRequest;

@@ -1,67 +1,11 @@
-object wmMain: TwmMain
+object IWUserSession: TIWUserSession
   OldCreateOrder = False
-  Actions = <
-    item
-      Default = True
-      Name = 'DefaultHandler'
-      PathInfo = '/'
-      OnAction = wmMainDefaultHandlerAction
-    end
-    item
-      MethodType = mtPost
-      Name = 'waGetPeople'
-      PathInfo = '/getpeople'
-      OnAction = wmMainwaGetPeopleAction
-    end
-    item
-      MethodType = mtPost
-      Name = 'waSavePerson'
-      PathInfo = '/saveperson'
-      OnAction = wmMainwaSavePersonAction
-    end
-    item
-      MethodType = mtPost
-      Name = 'waDeletePerson'
-      PathInfo = '/deleteperson'
-      OnAction = wmMainwaDeletePersonAction
-    end>
-  Height = 262
-  Width = 257
-  object WebFileDispatcher1: TWebFileDispatcher
-    WebFileExtensions = <
-      item
-        MimeType = 'text/css'
-        Extensions = 'css'
-      end
-      item
-        MimeType = 'text/html'
-        Extensions = 'html;htm'
-      end
-      item
-        MimeType = 'text/javascript'
-        Extensions = 'js'
-      end
-      item
-        MimeType = 'image/jpeg'
-        Extensions = 'jpeg;jpg'
-      end
-      item
-        MimeType = 'image/x-png'
-        Extensions = 'png'
-      end>
-    WebDirectories = <
-      item
-        DirectoryAction = dirInclude
-        DirectoryMask = '*'
-      end
-      item
-        DirectoryAction = dirExclude
-        DirectoryMask = '\templates\*'
-      end>
-    RootDirectory = 'www'
-    VirtualPath = '/'
-    Left = 48
-    Top = 32
+  Height = 433
+  Width = 585
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 40
+    Top = 144
   end
   object Connection: TFDConnection
     Params.Strings = (
@@ -72,17 +16,17 @@ object wmMain: TwmMain
       'Database=C:\DelphiAcademy\37-WebDev1\SAMPLES.IB'
       'DriverID=IB')
     ConnectedStoredUsage = [auDesignTime]
-    Connected = True
     LoginPrompt = False
     BeforeConnect = ConnectionBeforeConnect
-    Left = 48
-    Top = 96
+    Left = 40
+    Top = 24
   end
   object FDPhysIBDriverLink1: TFDPhysIBDriverLink
-    Left = 48
-    Top = 152
+    Left = 40
+    Top = 80
   end
   object qryPeople: TFDQuery
+    CachedUpdates = True
     Connection = Connection
     UpdateOptions.AssignedValues = [uvFetchGeneratorsPoint, uvGeneratorName]
     UpdateOptions.FetchGeneratorsPoint = gpNone
@@ -90,7 +34,7 @@ object wmMain: TwmMain
     SQL.Strings = (
       'SELECT * FROM PEOPLE')
     Left = 144
-    Top = 152
+    Top = 24
     object qryPeopleID: TFDAutoIncField
       FieldName = 'ID'
       Origin = 'ID'
@@ -161,7 +105,7 @@ object wmMain: TwmMain
         ParamType = ptInput
       end>
     Left = 144
-    Top = 88
+    Top = 152
   end
   object cmdInsertPerson: TFDCommand
     Connection = Connection
@@ -213,6 +157,18 @@ object wmMain: TwmMain
         Size = 60
       end>
     Left = 144
-    Top = 32
+    Top = 88
+  end
+  object cmdDeletePerson: TFDCommand
+    Connection = Connection
+    CommandText.Strings = (
+      'DELETE FROM PEOPLE WHERE ID = :ID')
+    ParamData = <
+      item
+        Name = 'ID'
+        ParamType = ptInput
+      end>
+    Left = 144
+    Top = 216
   end
 end
