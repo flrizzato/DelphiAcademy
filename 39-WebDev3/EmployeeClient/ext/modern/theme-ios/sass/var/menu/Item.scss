@@ -1,0 +1,6 @@
+$menuitem-active-background-color: dynamic($neutral-highlight-color);
+$menuitem-color: dynamic($color);
+$menuitem-active-color: dynamic($menuitem-color);
+$menuitem-icon-color: dynamic($base-color);
+$menuitem-active-icon-color: dynamic($menuitem-icon-color);
+$menuitem-arrow-icon: dynamic($ios-arrow-right);

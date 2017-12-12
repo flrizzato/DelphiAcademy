@@ -1,0 +1,184 @@
+/**
+ * @class Ext.field.Display
+ */
+
+/**
+ * @var {color}
+ * Display Field input color
+ */
+$displayfield-input-color: dynamic($color);
+
+/**
+ * @var {number/list}
+ * Display Field input border width
+ */
+$displayfield-input-border-width: dynamic($textfield-input-border-width);
+
+/**
+ * @var {string/list}
+ * Display Field input border style
+ */
+$displayfield-input-border-style: dynamic($textfield-input-border-style);
+
+/**
+ * @var {color/list}
+ * Display Field input border color
+ */
+$displayfield-input-border-color: dynamic(transparent);
+
+/**
+ * @var {color}
+ * Display Field body background-color
+ */
+$displayfield-input-background-color: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Display Field input padding
+ */
+$displayfield-input-padding: dynamic($textfield-input-padding);
+
+/**
+ * @var {number/list}
+ * Display Field input padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$displayfield-input-padding-big: dynamic($textfield-input-padding-big);
+
+/**
+ * @var {string/number}
+ * Display Field input font-weight
+ */
+$displayfield-input-font-weight: dynamic($textfield-input-font-weight);
+
+/**
+ * @var {number}
+ * Display Field input font-size
+ */
+$displayfield-input-font-size: dynamic($textfield-input-font-size);
+
+/**
+ * @var {number}
+ * Display Field input font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$displayfield-input-font-size-big: dynamic($textfield-input-font-size-big);
+
+/**
+ * @var {number}
+ * Display Field input line-height
+ */
+$displayfield-input-line-height: dynamic($textfield-input-line-height);
+
+/**
+ * @var {number}
+ * Display Field input line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$displayfield-input-line-height-big: dynamic($textfield-input-line-height-big);
+
+/**
+ * @var {string}
+ * Display Field input font-family
+ */
+$displayfield-input-font-family: dynamic($textfield-input-font-family);
+
+/**
+ * @var {number}
+ * Display Field input border-radius
+ */
+$displayfield-input-border-radius: dynamic(null);
+
+/**
+ * Creates a visual theme for a Display Field
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=displayfield] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $input-color
+ * Display field input color
+ *
+ * @param {number/list} $input-border-width
+ * Display Field input border width
+ *
+ * @param {string/list} $input-border-style
+ * Display Field input border style
+ *
+ * @param {color/list} $input-border-color
+ * Display Field input border color
+ *
+ * @param {color} $input-background-color
+ * Display Field input background-color
+ *
+ * @param {color} $input-padding
+ * Display Field input padding
+ *
+ * @param {color} $input-padding-big
+ * Display Field input padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string/number} $input-font-weight
+ * Display Field input font-weight
+ *
+ * @param {number} $input-font-size
+ * Display Field input font-size
+ *
+ * @param {number} $input-font-size-big
+ * Display Field input font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $input-line-height
+ * Display Field input line-height
+ *
+ * @param {number} $input-line-height-big
+ * Display Field input line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $input-font-family
+ * Display Field input font-family
+ *
+ * @param {number} $input-border-radius
+ * The border radius of the text field
+ */
+@mixin displayfield-ui(
+    $ui: null,
+    $xtype: displayfield,
+    $input-color: null,
+    $input-border-width: null,
+    $input-border-style: null,
+    $input-border-color: null,
+    $input-background-color: null,
+    $input-padding: null,
+    $input-padding-big: null,
+    $input-font-weight: null,
+    $input-font-size: null,
+    $input-font-size-big: null,
+    $input-line-height: null,
+    $input-line-height-big: null,
+    $input-font-family: null,
+    $input-border-radius: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        .#{$prefix}body-el {
+            @include border($input-border-width, $input-border-style, $input-border-color);
+
+            background-color: $input-background-color;
+            border-radius: $input-border-radius
+        }
+
+        .#{$prefix}input-el {
+            @include font($input-font-weight, $input-font-size, $input-line-height, $input-font-family);
+            @include padding($input-padding);
+
+            color: $input-color;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    padding: $input-padding-big;
+                    font-size: $input-font-size-big;
+                    line-height: $input-line-height-big;
+                }
+            }
+        }
+    }
+}

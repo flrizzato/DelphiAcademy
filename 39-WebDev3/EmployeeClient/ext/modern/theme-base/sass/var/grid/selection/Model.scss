@@ -1,0 +1,59 @@
+/**
+ * @class Ext.grid.selection.SelectionExtender
+ */
+
+/**
+ * @var {number}
+ * The height of the drag handle for extending a range in the
+ * {@link Ext.grid.selection.Model grid selection model}.
+ */
+$grid-selmodel-handle-height: dynamic(7px);
+
+/**
+ * @var {number}
+ * The width of the drag handle for extending a range in the
+ * {@link Ext.grid.selection.Model grid selection model}.
+ */
+$grid-selmodel-handle-width: dynamic($grid-selmodel-handle-height);
+
+/**
+ * @var {number}
+ * The height of the drag handle for extending a range in the
+ * {@link Ext.grid.selection.Model grid selection model} in the {@link Global_CSS#$enable-big big} sizing scheme..
+ */
+$grid-selmodel-handle-height-big: dynamic(15px);
+
+/**
+ * @var {number}
+ * The width of the drag handle for extending a range in the
+ * {@link Ext.grid.selection.Model grid selection model} in the {@link Global_CSS#$enable-big big} sizing scheme..
+ */
+$grid-selmodel-handle-width-big: dynamic($grid-selmodel-handle-height-big);
+
+/**
+ * @var {number}
+ * The color of the drag handle for extending a range in the
+ * {@link Ext.grid.selection.Model grid selection model}.
+ */
+$grid-selmodel-handle-color: dynamic($base-color);
+
+/**
+ * @var {number}
+ * The width of the dotted line indicating the dragged extension area when extending a range in the
+ * {@link Ext.grid.selection.Model grid selection model}.
+ */
+$grid-selmodel-mask-border-width: dynamic(1px);
+
+/**
+ * @var {string}
+ * The style of the dotted line indicating the dragged extension area when extending a range in the
+ * {@link Ext.grid.selection.Model grid selection model}.
+ */
+$grid-selmodel-mask-border-style: dynamic(dotted);
+
+/**
+ * @var {color}
+ * The color of the dotted line indicating the dragged extension area when extending a range in the
+ * {@link Ext.grid.selection.Model grid selection model}.
+ */
+$grid-selmodel-mask-border-color: dynamic($base-color);

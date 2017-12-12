@@ -1,0 +1,17 @@
+.#{$prefix}containerfield > * > * > .#{$prefix}container {
+    &:not(.#{$prefix}heighted) {
+        flex: 1 1 auto;
+    }
+
+    &.#{$prefix}heighted {
+        max-height: 100%;
+    }
+
+    &.#{$prefix}widthed {
+        max-width: 100%;
+    }
+}
+
+.#{$prefix}containerfield > * > .#{$prefix}body-el {
+    justify-content: flex-start;
+}

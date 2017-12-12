@@ -1,0 +1,45 @@
+.#{$prefix}dock {
+    overflow: hidden;
+    display: flex;
+    flex: 1 1;
+    position: relative;
+
+    // ListSwiper may insert positioned elements as previous siblings of the dock wrapper
+    // wrapper. Inheriting background-color prevents those elements from showing through
+    background-color: inherit;
+
+    .#{$prefix}ie11 & {
+        // Allows align: stretch to align items to the height of the tallest item
+        // in an auto-heighted hbox layout.
+        // can't use flex-basis: auto everywhere because it breaks percentage-sized children
+        // in chrome: https://bugs.chromium.org/p/chromium/issues/detail?id=680484
+        flex-basis: auto;
+    }
+
+    > .#{$prefix}component {
+        flex-shrink: 0;
+    }
+}
+
+.#{$prefix}dock-body {
+    overflow: hidden;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+
+    // ListSwiper may insert positioned elements as previous siblings of the dock wrapper
+    // wrapper. Inheriting background-color prevents those elements from showing through
+    background-color: inherit;
+}
+
+.#{$prefix}dock-vertical {
+    flex-direction: column;
+
+    > .#{$prefix}component {
+         width: auto;
+    }
+}
+
+.#{$prefix}dock-horizontal > .#{$prefix}component {
+    height: auto;
+}

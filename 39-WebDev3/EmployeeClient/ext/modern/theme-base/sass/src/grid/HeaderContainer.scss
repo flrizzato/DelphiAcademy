@@ -1,0 +1,5 @@
+.#{$prefix}headercontainer-body-el > :last-child {
+    // Prevent the resize el from escaping the right side and affecting the
+    // flexbox inner's reported clientWidth which is used to source totalColumnWidth
+    overflow: hidden;
+}

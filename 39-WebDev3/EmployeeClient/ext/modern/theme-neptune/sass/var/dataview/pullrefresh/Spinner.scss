@@ -1,0 +1,64 @@
+$pullrefreshspinner-min-height: dynamic(64px);
+$pullrefreshspinner-min-height-big: dynamic(64px);
+$pullrefreshspinner-background-color: dynamic($background-color);
+$pullrefreshspinner-arrow-color: dynamic($base-color);
+$pullrefreshspinner-border-radius: dynamic(50%);
+
+/**
+ * @class Ext.dataview.pullrefresh.Spinner
+ */
+@mixin pullrefreshspinner-ui(
+    $xtype: pullrefreshspinner,
+    $ui: null,
+    $min-height: null,
+    $min-height-big: null,
+    $background-color: null,
+    $arrow-color: null,
+    $border-radius: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        min-height: $min-height;
+
+        @if $enable-big {
+            .#{$prefix}big & {
+                min-height: $min-height-big;
+            }
+        }
+
+        .#{$prefix}pullrefreshspinner-main {
+            background-color: $background-color;
+            border-radius: $border-radius;
+        }
+
+        .#{$prefix}pullrefreshspinner-arrow-main {
+            border-color: $arrow-color $arrow-color transparent;
+            &:before {
+                border-color: $arrow-color transparent transparent transparent;
+            }
+        }
+
+        .#{$prefix}pullrefreshspinner-spinner-main {
+
+            .#{$prefix}pullrefreshspinner-spinner-left,
+            .#{$prefix}pullrefreshspinner-spinner-right {
+                .#{$prefix}pullrefreshspinner-half-circle {
+                    border-top-color: $arrow-color;
+                }
+            }
+
+            .#{$prefix}pullrefreshspinner-spinner-left {
+                .#{$prefix}pullrefreshspinner-half-circle {
+                    border-left-color: $arrow-color;
+                }
+            }
+
+            .#{$prefix}pullrefreshspinner-spinner-right {
+                .#{$prefix}pullrefreshspinner-half-circle {
+                    border-right-color: $arrow-color;
+                }
+            }
+        }
+    }
+}

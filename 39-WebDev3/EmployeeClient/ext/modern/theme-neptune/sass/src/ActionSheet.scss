@@ -1,0 +1,44 @@
+@include panel-ui(
+    $xtype: actionsheet,
+    $border-color: $actionsheet-border-color,
+    $body-border-color: $actionsheet-border-color,
+    $body-background-color: $actionsheet-background-color,
+    $body-padding: $actionsheet-padding,
+    $manage-borders: false
+);
+
+.#{$prefix}actionsheet {
+    border-color: $actionsheet-border-color;
+    border-style: $actionsheet-border-style;
+
+    @if $actionsheet-border-width == 0 {
+        border-width: 0;
+    } @else {
+        &.#{$prefix}left {
+            border-width: 0 right($actionsheet-border-width) 0 0;
+        }
+
+        &.#{$prefix}right {
+            border-width: 0 0 0 left($actionsheet-border-width);
+        }
+
+        &.#{$prefix}top {
+            border-width: 0 0 bottom($actionsheet-border-width);
+        }
+
+        &.#{$prefix}bottom {
+            border-width: top($actionsheet-border-width) 0 0;
+        }
+    }
+}
+
+.#{$prefix}actionsheet-body-el.#{$prefix}vertical {
+    > .#{$prefix}button {
+        margin-bottom: $actionsheet-button-spacing;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+

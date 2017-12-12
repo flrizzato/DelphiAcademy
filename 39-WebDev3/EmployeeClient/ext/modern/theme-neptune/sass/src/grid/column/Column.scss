@@ -1,0 +1,57 @@
+@include gridcolumn-ui(
+    $color: $gridcolumn-color,
+    $background-color: $gridcolumn-background-color,
+    $hovered-background-color: $gridcolumn-hovered-background-color,
+    $sorted-background-color: $gridcolumn-sorted-background-color,
+    $border-width: $gridcolumn-border-width,
+    $border-style: $gridcolumn-border-style,
+    $border-color: $gridcolumn-border-color,
+    $font-weight: $gridcolumn-font-weight,
+    $font-size: $gridcolumn-font-size,
+    $font-size-big: $gridcolumn-font-size-big,
+    $line-height: $gridcolumn-line-height,
+    $line-height-big: $gridcolumn-line-height-big,
+    $font-family: $gridcolumn-font-family,
+    $padding: $gridcolumn-padding,
+    $padding-big: $gridcolumn-padding-big,
+    $sort-icon-margin: $gridcolumn-sort-icon-margin,
+    $sort-icon-margin-big: $gridcolumn-sort-icon-margin-big,
+    $sort-icon-size: $gridcolumn-sort-icon-size,
+    $sort-icon-size-big: $gridcolumn-sort-icon-size-big,
+    $sort-icon-font-size: $gridcolumn-sort-icon-font-size,
+    $sort-icon-font-size-big: $gridcolumn-sort-icon-font-size-big,
+    $sort-icon-color: $gridcolumn-sort-icon-color,
+    $sort-secondary-icon-color: $gridcolumn-sort-secondary-icon-color,
+    $sort-aux-icon-color: $gridcolumn-sort-aux-icon-color,
+    $sort-asc-icon: $gridcolumn-sort-asc-icon,
+    $sort-desc-icon: $gridcolumn-sort-desc-icon,
+    $trigger-width: $gridcolumn-trigger-width,
+    $trigger-width-big: $gridcolumn-trigger-width-big,
+    $trigger-background-color: $gridcolumn-trigger-background-color,
+    $trigger-border-width: $gridcolumn-trigger-border-width,
+    $trigger-border-style: $gridcolumn-trigger-border-style,
+    $trigger-border-color: $gridcolumn-trigger-border-color,
+    $trigger-icon: $gridcolumn-trigger-icon,
+    $trigger-icon-color: $gridcolumn-trigger-icon-color,
+    $trigger-icon-font-size: $gridcolumn-trigger-icon-font-size,
+    $trigger-icon-font-size-big: $gridcolumn-trigger-icon-font-size-big,
+    $resizer-width: $gridcolumn-resizer-width,
+    $resizer-background-color: $gridcolumn-resizer-background-color
+);
+
+
+.#{$prefix}headermenu-sort-asc {
+    @include icon($gridcolumn-menu-sort-asc-icon);
+}
+
+.#{$prefix}headermenu-sort-desc {
+    @include icon($gridcolumn-menu-sort-desc-icon);
+}
+
+.#{$prefix}headermenu-columns-icon {
+    @include icon($gridcolumn-menu-columns-icon);
+}
+
+.#{$prefix}headermenu-group-by-this {
+    @include icon($gridcolumn-menu-group-by-this-icon);
+}

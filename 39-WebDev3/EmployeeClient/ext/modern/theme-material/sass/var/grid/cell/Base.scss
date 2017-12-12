@@ -1,0 +1,5 @@
+$gridcell-summary-ui: dynamic((
+    font-weight: $font-weight-bold,
+    padding: dynamic(8px 0),
+    padding-big: dynamic(8px 0)
+));

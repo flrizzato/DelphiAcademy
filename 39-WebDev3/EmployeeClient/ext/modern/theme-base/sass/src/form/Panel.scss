@@ -1,0 +1,15 @@
+/**
+ * @class Ext.form.Panel
+ */
+
+.#{$prefix}formpanel {
+    // This cannot have "display: none;" or it will not allow submission
+    .#{$prefix}hidden-submit {
+        visibility: hidden; 
+        width: 0; 
+        height: 0; 
+        position: absolute; 
+        right: 0; 
+        bottom: 0;
+    }
+}

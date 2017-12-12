@@ -1,0 +1,56 @@
+.#{$prefix}tool-dock {
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+
+    // inherit background color so that the default transparent background does not allow
+    // the background color of list swiper items to show through.
+    background-color: inherit;
+}
+
+.#{$prefix}tool-anchor {
+    margin-right: auto;
+
+    .#{$prefix}align-center > & {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .#{$prefix}align-right > & {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    &.#{$prefix}headed {
+        flex: 0 1 auto;
+        margin-left: 0;
+    }
+
+    &.#{$prefix}tailed {
+        flex: 0 1 auto;
+        margin-right: 0;
+    }
+}
+
+.#{$prefix}tool-zone {
+    display: flex;
+    align-items: center;
+    flex: none;
+
+    &.#{$prefix}tail {
+        margin-right: auto;
+
+        .#{$prefix}align-right > & {
+            margin-right: 0;
+        }
+    }
+
+    &.#{$prefix}head {
+        .#{$prefix}align-center > &,
+        .#{$prefix}align-right > & {
+            margin-left: auto;
+        }
+    }
+}
+

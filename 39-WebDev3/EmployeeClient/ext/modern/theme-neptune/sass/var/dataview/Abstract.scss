@@ -1,0 +1,391 @@
+/**
+ * @class Ext.dataview.Abstract
+ */
+
+/**
+ * @var {color}
+ * DataView background-color
+ */
+$dataview-background-color: dynamic($background-color);
+
+/**
+ * @var {color}
+ * DataView Item text color
+ */
+$dataview-item-color: dynamic($color);
+
+/**
+ * @var {color}
+ * DataView Item text color when hovered
+ */
+$dataview-item-hovered-color: dynamic(null);
+
+/**
+ * @var {color}
+ * DataView Item text color when selected
+ */
+$dataview-item-selected-color: dynamic(null);
+
+/**
+ * @var {color}
+ * DataView Item text color when pressed
+ */
+$dataview-item-pressed-color: dynamic(null);
+
+/**
+ * @var {color}
+ * DataView Item background-color
+ */
+$dataview-item-background-color: dynamic($background-color);
+
+/**
+ * @var {color}
+ * background-color for `striped` DataView Items
+ */
+$dataview-item-alt-background-color: dynamic(darken($dataitem-background-color, 2));
+
+/**
+ * @var {color}
+ * DataView Item background-color when hovered
+ */
+$dataview-item-hovered-background-color: dynamic(mix(#fff, $base-light-color, 65%));
+
+/**
+ * @var {color}
+ * DataView Item background-color when selected
+ */
+$dataview-item-selected-background-color: dynamic(mix(#fff, $base-light-color, 25%));
+
+/**
+ * @var {color}
+ * DataView Item background-color when pressed
+ */
+$dataview-item-pressed-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * DataView Item border-width
+ */
+$dataview-item-border-width: dynamic(null);
+
+/**
+ * @var {string}
+ * DataView Item border-style
+ */
+$dataview-item-border-style: dynamic(null);
+
+/**
+ * @var {color}
+ * DataView Item border-color
+ */
+$dataview-item-border-color: dynamic(null);
+
+/**
+ * @var {color}
+ * DataView Item border-color when hovered
+ */
+$dataview-item-hovered-border-color: dynamic(null);
+
+/**
+ * @var {color}
+ * DataView Item border-color when selected
+ */
+$dataview-item-selected-border-color: dynamic(null);
+
+/**
+ * @var {color}
+ * DataView Item border-color when pressed
+ */
+$dataview-item-pressed-border-color: dynamic(null);
+
+/**
+ * @var {number}
+ * DataView Item outline-width when focused
+ */
+$dataview-item-focused-outline-width: dynamic(1px);
+
+/**
+ * @var {string}
+ * DataView Item outline-style when focused
+ */
+$dataview-item-focused-outline-style: dynamic(solid);
+
+/**
+ * @var {color}
+ * DataView Item outline-color when focused
+ */
+$dataview-item-focused-outline-color: dynamic($base-color);
+
+/**
+ * @var {number}
+ * DataView Item outline-offset when focused
+ */
+$dataview-item-focused-outline-offset: dynamic(-$dataview-item-focused-outline-width);
+
+/**
+ * @var {string/number}
+ * DataView Item font-weight
+ */
+$dataview-item-font-weight: dynamic($font-weight-normal);
+
+/**
+ * @var {number}
+ * DataView Item font-size
+ */
+$dataview-item-font-size: dynamic($font-size);
+
+/**
+ * @var {number}
+ * DataView Item font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$dataview-item-font-size-big: dynamic($font-size-big);
+
+/**
+ * @var {number}
+ * DataView Item line-height
+ */
+$dataview-item-line-height: dynamic(16px);
+
+/**
+ * @var {number}
+ * DataView Item line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$dataview-item-line-height-big: dynamic(18px);
+
+/**
+ * @var {string}
+ * DataView Item font-family
+ */
+$dataview-item-font-family: dynamic($font-family);
+
+/**
+ * @var {number/list}
+ * DataView Item padding
+ */
+$dataview-item-padding: dynamic(null);
+
+/**
+ * @var {number/list}
+ * DataView Item padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$dataview-item-padding-big: dynamic(null);
+
+/**
+ * @var {map}
+ * Parameters for the "default" DataView UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$dataview-default-ui: dynamic((
+    item-color: $dataview-item-color,
+    item-hovered-color: $dataview-item-hovered-color,
+    item-selected-color: $dataview-item-selected-color,
+    item-pressed-color: $dataview-item-pressed-color,
+    item-background-color: $dataview-item-background-color,
+    item-alt-background-color: $dataview-item-alt-background-color,
+    item-hovered-background-color: $dataview-item-hovered-background-color,
+    item-selected-background-color: $dataview-item-selected-background-color,
+    item-pressed-background-color: $dataview-item-pressed-background-color,
+    item-border-width: $dataview-item-border-width,
+    item-border-style: $dataview-item-border-style,
+    item-border-color: $dataview-item-border-color,
+    item-hovered-border-color: $dataview-item-hovered-border-color,
+    item-selected-border-color: $dataview-item-selected-border-color,
+    item-pressed-border-color: $dataview-item-pressed-border-color,
+    item-focused-outline-width: $dataview-item-focused-outline-width,
+    item-focused-outline-style: $dataview-item-focused-outline-style,
+    item-focused-outline-color: $dataview-item-focused-outline-color,
+    item-focused-outline-offset: $dataview-item-focused-outline-offset,
+    item-font-weight: $dataview-item-font-weight,
+    item-font-size: $dataview-item-font-size,
+    item-font-size-big: $dataview-item-font-size-big,
+    item-line-height: $dataview-item-line-height,
+    item-line-height-big: $dataview-item-line-height-big,
+    item-font-family: $dataview-item-font-family,
+    item-padding: $dataview-item-padding,
+    item-padding-big: $dataview-item-padding-big
+));
+
+/**
+ * Creates a visual theme for a DataView.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=dataview] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $background-color
+ * DataView background-color
+ *
+ * @param {color} $item-color
+ * DataView Item text color
+ *
+ * @param {color} $item-hovered-color
+ * DataView Item text color when hovered
+ *
+ * @param {color} $item-selected-color
+ * DataView Item text color when selected
+ *
+ * @param {color} $item-pressed-color
+ * DataView Item text color when pressed
+ *
+ * @param {color} $item-background-color
+ * DataView Item background-color
+ *
+ * @param {color} $item-alt-background-color
+ * background-color for `striped` DataView Items
+ *
+ * @param {color} $item-hovered-background-color
+ * DataView Item background-color when hovered
+ *
+ * @param {color} $item-selected-background-color
+ * DataView Item background-color when selected
+ *
+ * @param {color} $item-pressed-background-color
+ * DataView Item background-color when pressed
+ *
+ * @param {number} $item-border-width
+ * DataView Item border-width
+ *
+ * @param {string} $item-border-style
+ * DataView Item border-style
+ *
+ * @param {color} $item-border-color
+ * DataView Item border-color
+ *
+ * @param {color} $item-hovered-border-color
+ * DataView Item border-color when hovered
+ *
+ * @param {color} $item-selected-border-color
+ * DataView Item border-color when selected
+ *
+ * @param {color} $item-pressed-border-color
+ * DataView Item border-color when pressed
+ *
+ * @param {number} $item-focused-outline-width
+ * DataView outline-width when focused
+ *
+ * @param {string} $item-focused-outline-style
+ * DataView outline-style when focused
+ *
+ * @param {color} $item-focused-outline-color
+ * DataView outline-color when focused
+ *
+ * @param {number} $item-focused-outline-offset
+ * DataView outline-offset when focused
+ *
+ * @param {string/number} $item-font-weight
+ * DataView Item font-weight
+ *
+ * @param {number} $item-font-size
+ * DataView Item font-size
+ *
+ * @param {number} $item-font-size-big
+ * DataView Item font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $item-line-height
+ * DataView Item line-height
+ *
+ * @param {number} $item-line-height-big
+ * DataView Item line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $item-font-family
+ * DataView Item font-family
+ *
+ * @param {number/list} $item-padding
+ * DataView Item padding
+ *
+ * @param {number/list} $item-padding-big
+ * DataView Item padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+@mixin dataview-ui(
+    $ui: null,
+    $xtype: dataview,
+    $background-color: null,
+    $item-color: null,
+    $item-hovered-color: null,
+    $item-selected-color: null,
+    $item-pressed-color: null,
+    $item-background-color: null,
+    $item-alt-background-color: null,
+    $item-hovered-background-color: null,
+    $item-selected-background-color: null,
+    $item-pressed-background-color: null,
+    $item-border-width: null,
+    $item-border-style: null,
+    $item-border-color: null,
+    $item-hovered-border-color: null,
+    $item-selected-border-color: null,
+    $item-pressed-border-color: null,
+    $item-focused-outline-width: null,
+    $item-focused-outline-style: null,
+    $item-focused-outline-color: null,
+    $item-focused-outline-offset: null,
+    $item-font-weight: null,
+    $item-font-size: null,
+    $item-font-size-big: null,
+    $item-line-height: null,
+    $item-line-height-big: null,
+    $item-font-family: null,
+    $item-padding: null,
+    $item-padding-big: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        background-color: $background-color;
+    }
+
+    .#{$prefix}#{$xtype}#{$ui-suffix}-body-el > .#{$prefix}dataview-item {
+        color: $item-color;
+        background-color: $item-background-color;
+        @include border($item-border-width, $item-border-style, $item-border-color);
+        @include font($item-font-weight, $item-font-size, $item-line-height, $item-font-family);
+        padding: $item-padding;
+
+        @if $enable-big {
+            .#{$prefix}big & {
+                font-size: $item-font-size-big;
+                line-height: $item-line-height-big;
+                padding: $item-padding-big;
+            }
+        }
+
+        &.#{$prefix}odd {
+            background-color: $item-alt-background-color;
+        }
+
+        &.#{$prefix}hovered {
+            color: $item-hovered-color;
+            background-color: $item-hovered-background-color;
+            border-color: $item-hovered-border-color;
+        }
+
+        &.#{$prefix}pressed {
+            color: $item-pressed-color;
+            background-color: $item-pressed-background-color;
+            border-color: $item-pressed-border-color;
+        }
+
+        &.#{$prefix}focused {
+            .#{$prefix}keyboard-mode & {
+                @include outline(
+                    $width: $item-focused-outline-width,
+                    $style: $item-focused-outline-style,
+                    $color: $item-focused-outline-color,
+                    $offset: $item-focused-outline-offset,
+                    $border-width: $item-border-width
+                );
+            }
+        }
+    }
+
+    .#{$prefix}#{$xtype}#{$ui-suffix}-body-el.#{$prefix}show-selection {
+        > .#{$prefix}dataview-item.#{$prefix}selected {
+            color: $item-selected-color;
+            background-color: $item-selected-background-color;
+            border-color: $item-selected-border-color;
+        }
+    }
+}

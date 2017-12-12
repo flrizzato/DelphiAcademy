@@ -1,0 +1,13 @@
+$toggleslider-width: dynamic(37px);
+$toggleslider-width-big: dynamic(52px);
+$toggleslider-track-background-color: dynamic($background-color);
+$toggleslider-track-border-width: dynamic(1px);
+$toggleslider-track-border-style: dynamic(solid);
+$toggleslider-track-border-color: dynamic($neutral-color);
+$toggleslider-fill-border-color: dynamic($ios-green);
+$toggleslider-fill-background-color: dynamic($ios-green);
+$toggleslider-track-height: dynamic(22px);
+$toggleslider-track-height-big: dynamic(30px);
+$toggleslider-track-border-radius: dynamic($toggleslider-track-height);
+$toggleslider-track-border-radius-big: dynamic($toggleslider-track-height-big);
+$toggleslider-thumb-inset: dynamic(2px);

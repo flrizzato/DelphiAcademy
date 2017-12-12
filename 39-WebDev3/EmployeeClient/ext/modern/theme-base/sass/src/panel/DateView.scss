@@ -1,0 +1,29 @@
+.#{$prefix}dateview {
+    th {
+        text-overflow: clip;
+    }
+
+    td {
+        outline: none;
+    }
+
+    tbody .#{$prefix}cell {
+        position: relative;
+    }
+
+    td:not(.#{$prefix}disabled) {
+        .#{$prefix}inner {
+            cursor: pointer;
+        }
+    }
+
+    .#{$prefix}empty {
+        pointer-events: none;
+    }
+
+    &.#{$prefix}hide-caption {
+        caption {
+            display: none;
+        }
+    }
+}

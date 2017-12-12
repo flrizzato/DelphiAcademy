@@ -1,0 +1,13 @@
+.#{$prefix}searchfield {
+    .#{$prefix}input-el {
+        -webkit-appearance: textfield;
+
+        &::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        &::-webkit-search-cancel-button {
+            -webkit-appearance: none;
+        }
+    }
+}

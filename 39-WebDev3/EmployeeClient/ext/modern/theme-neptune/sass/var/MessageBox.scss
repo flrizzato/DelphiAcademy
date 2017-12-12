@@ -1,0 +1,878 @@
+/**
+ * @class Ext.MessageBox
+ */
+
+/**
+ * @var {color/list}
+ * MessageBox border-color
+ */
+$messagebox-border-color: dynamic(null);
+
+/**
+ * @var {number/list}
+ * MessageBox border-width
+ */
+$messagebox-border-width: dynamic(null);
+
+/**
+ * @var {string/list}
+ * MessageBox border-style
+ */
+$messagebox-border-style: dynamic(null);
+
+/**
+ * @var {number/list}
+ * MessageBox border-radius
+ */
+$messagebox-border-radius: dynamic(null);
+
+/**
+ * @var {number/list}
+ * MessageBox border-radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-border-radius-big: dynamic(null);
+
+//# fashion replaces $messagebox-background-color
+/**
+ * @var {color}
+ * MessageBox body background-color
+ */
+$messagebox-body-background-color: dynamic(null);
+
+/**
+ * @var {color}
+ * MessageBox body text color
+ */
+$messagebox-body-color: dynamic(null);
+
+/**
+ * @var {color}
+ * MessageBox body border-color
+ */
+$messagebox-body-border-color: dynamic(null);
+
+/**
+ * @var {number/list}
+ * MessageBox body border-width
+ */
+$messagebox-body-border-width: dynamic(null);
+
+/**
+ * @var {number/list}
+ * MessageBox body border-style
+ */
+$messagebox-body-border-style: dynamic(null);
+
+/**
+ * @var {string/number}
+ * MessageBox body font-weight
+ */
+$messagebox-body-font-weight: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox body font-size
+ */
+$messagebox-body-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox body font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-body-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox body line-height
+ */
+$messagebox-body-line-height: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox body line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-body-line-height-big: dynamic(null);
+
+/**
+ * @var {string}
+ * MessageBox body font-family
+ */
+$messagebox-body-font-family: dynamic(null);
+
+/**
+ * @var {number/list}
+ * MessageBox body padding
+ */
+$messagebox-body-padding: dynamic(15px 10px);
+
+/**
+ * @var {number/list}
+ * MessageBox body padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-body-padding-big: dynamic(15px);
+
+/**
+ * @var {color}
+ * MessageBox Header background-color
+ */
+$messagebox-header-background-color: dynamic(null);
+
+/**
+ * @var {string/list}
+ * MessageBox Header background-gradient.  Can be either the name of a gradient defined by
+ * {@link Global_CSS#background-gradient} or a list of color stops.
+ */
+$messagebox-header-background-gradient: dynamic(null);
+
+/**
+ * @var {color}
+ * MessageBox Header text color
+ */
+$messagebox-header-color: dynamic(null);
+
+/**
+ * @var {color/list}
+ * MessageBox Header border-color
+ */
+$messagebox-header-border-color: dynamic(null);
+
+/**
+ * @var {number/list}
+ * MessageBox Header border-width
+ */
+$messagebox-header-border-width: dynamic(null);
+
+/**
+ * @var {string/list}
+ * MessageBox Header border-style
+ */
+$messagebox-header-border-style: dynamic(null);
+
+/**
+ * @var {string/number}
+ * MessageBox Header font-weight
+ */
+$messagebox-header-font-weight: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header font-size
+ */
+$messagebox-header-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-header-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header line-height
+ */
+$messagebox-header-line-height: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-header-line-height-big: dynamic(null);
+
+/**
+ * @var {string}
+ * MessageBox Header font-family
+ */
+$messagebox-header-font-family: dynamic(null);
+
+/**
+ * @var {number/list}
+ * MessageBox Header padding
+ */
+$messagebox-header-padding: dynamic(4px 5px 10px 10px);
+
+/**
+ * @var {number/list}
+ * MessageBox Header padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-header-padding-big: dynamic(5px 10px 13px 15px);
+
+/**
+ * @var {number/list}
+ * MessageBox Header Title padding
+ */
+$messagebox-header-title-padding: dynamic(null);
+
+/**
+ * @var {number/list}
+ * MessageBox Header Title padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-header-title-padding-big: dynamic(null);
+
+/**
+ * @var {number/list}
+ * MessageBox Header Title opacity
+ */
+$messagebox-header-title-opacity: dynamic(null);
+
+/**
+ * @var {shadow}
+ * MessageBox Header Shadow
+ */
+$messagebox-header-shadow: dynamic(null);
+
+/**
+ * @var {number}
+ * Z-Index for the MessageBox Header, should be used with shadows to raise header above content
+ */
+$messagebox-header-z-index: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header min-height
+ */
+$messagebox-header-min-height: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header min-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-header-min-height-big: dynamic(null);
+
+/**
+ * @var {color}
+ * MessageBox Header icon color.
+ */
+$messagebox-header-icon-color: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header icon size
+ */
+$messagebox-header-icon-size: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-header-icon-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header icon font-size.  Used for configuring the size of font icons
+ */
+$messagebox-header-icon-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-header-icon-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the MessageBox Header icon and text when the icon is horizontally aligned
+ */
+$messagebox-header-icon-horizontal-spacing: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the MessageBox Header icon and text when the icon is horizontally aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-header-icon-horizontal-spacing-big: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the MessageBox Header icon and text when the icon is vertically aligned
+ */
+$messagebox-header-icon-vertical-spacing: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the MessageBox Header icon and text when the icon is vertically aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-header-icon-vertical-spacing-big: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Header icon opacity
+ */
+$messagebox-header-icon-opacity: dynamic(null);
+
+/**
+ * @var {color}
+ * MessageBox Tool color
+ */
+$messagebox-tool-color: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool color when hovered
+ */
+$messagebox-tool-hovered-color: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool color when pressed
+ */
+$messagebox-tool-pressed-color: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool color when disabled
+ */
+$messagebox-tool-disabled-color: dynamic(null);
+
+/**
+ * @var {color}
+ * MessageBox Tool background-color
+ */
+$messagebox-tool-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool background-color when hovered
+ */
+$messagebox-tool-hovered-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool background-color when pressed
+ */
+$messagebox-tool-pressed-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool background-color when disabled
+ */
+$messagebox-tool-disabled-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool opacity
+ */
+$messagebox-tool-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool opacity when hovered
+ */
+$messagebox-tool-hovered-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool opacity when pressed
+ */
+$messagebox-tool-pressed-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool opacity when disabled
+ */
+$messagebox-tool-disabled-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool border radius
+ */
+$messagebox-tool-border-radius: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool border radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-tool-border-radius-big: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool size
+ */
+$messagebox-tool-size: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-tool-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool font-size
+ */
+$messagebox-tool-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-tool-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between MessageBox Tools
+ */
+$messagebox-tool-spacing: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between MessageBox Tools in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-tool-spacing-big: dynamic(null);
+
+/**
+ * @var {string}
+ * MessageBox Tool cursor
+ */
+$messagebox-tool-cursor: dynamic(null);
+
+/**
+ * @var {string}
+ * MessageBox Tool cursor when disabled
+ */
+$messagebox-tool-disabled-cursor: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool outline width when focused
+ */
+$messagebox-tool-focused-outline-width: dynamic(null);
+
+/**
+ * @var {string}
+ * MessageBox Tool outline style when focused
+ */
+$messagebox-tool-focused-outline-style: dynamic(null);
+
+/**
+ * @var {color}
+ * MessageBox Tool outline color when focused
+ */
+$messagebox-tool-focused-outline-color: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox Tool outline offset when focused
+ */
+$messagebox-tool-focused-outline-offset: dynamic(null);
+
+/**
+ * @var {color}
+ * MessageBox anchor border-color
+ */
+$messagebox-anchor-border-color: dynamic(null);
+
+/**
+ * @var {color}
+ * MessageBox anchor background-color
+ */
+$messagebox-anchor-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * The height (in all orientations) of the anchor arrow
+ */
+$messagebox-anchor-height: dynamic(null);
+
+/**
+ * @var {number}
+ * The width (in all orientations) of the anchor arrow.
+ */
+$messagebox-anchor-width: dynamic(null);
+
+/**
+ * @var {number}
+ * The extra spacing beyond the tip of the anchor arrow to prevent the pointer touching
+ * the target;
+ */
+$messagebox-anchor-margin: dynamic(null);
+
+/**
+ * @var {string}
+ * `true` to include {@link #manageBorders border management} rules
+ */
+$messagebox-manage-borders: dynamic($dialog-manage-borders);
+
+/**
+ * @var {number}
+ * MessageBox min-width
+ */
+$messagebox-min-width: dynamic(null);
+
+/**
+ * @var {number}
+ * MessageBox min-width in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$messagebox-min-width-big: dynamic(null);
+
+/**
+ * Creates a visual theme for a MessageBox.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=messagebox] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {String} [$header-xtype=messageboxheader] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors for the header component.  For use by UI mixins of derived classes.
+ *
+ * @param {String} [$title-xtype=messageboxtitle] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors for the title component.  For use by UI mixins of derived classes.
+ *
+ * @param {String} [$tool-xtype=messageboxtool] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors for tools.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $background-color
+ * MessageBox background-color
+ *
+ * @param {color/list} $border-color
+ * MessageBox border-color
+ *
+ * @param {number/list} $border-width
+ * MessageBox border-width
+ *
+ * @param {string/list} $border-style
+ * MessageBox border-style
+ *
+ * @param {number/list} $border-radius
+ * MessageBox border-radius
+ *
+ * @param {number/list} $border-radius-big
+ * MessageBox border-radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $body-background-color
+ * MessageBox body background-color
+ *
+ * @param {color} $body-color
+ * MessageBox body text color
+ *
+ * @param {color} $body-border-color
+ * MessageBox body border-color
+ *
+ * @param {number/list} $body-border-width
+ * MessageBox body border-width
+ *
+ * @param {number/list} $body-border-style
+ * MessageBox body border-style
+ *
+ * @param {string/number} $body-font-weight
+ * MessageBox body font-weight
+ *
+ * @param {number} $body-font-size
+ * MessageBox body font-size
+ *
+ * @param {number} $body-font-size-big
+ * MessageBox body font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $body-line-height
+ * MessageBox body line-height
+ *
+ * @param {number} $body-line-height-big
+ * MessageBox body line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $body-font-family
+ * MessageBox body font-family
+ *
+ * @param {number/list} $body-padding
+ * MessageBox body padding
+ *
+ * @param {number/list} $body-padding-big
+ * MessageBox body padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $header-background-color
+ * MessageBox Header background-color
+ *
+ * @param {string/list} $header-background-gradient
+ * MessageBox Header background-gradient.  Can be either the name of a gradient defined by
+ * {@link Global_CSS#background-gradient} or a list of color stops.
+ *
+ * @param {color} $header-color
+ * MessageBox Header text color
+ *
+ * @param {color/list} $header-border-color
+ * MessageBox Header border-color
+ *
+ * @param {number/list} $header-border-width
+ * MessageBox Header border-width
+ *
+ * @param {string/list} $header-border-style
+ * MessageBox Header border-style
+ *
+ * @param {string/number} $header-font-weight
+ * MessageBox Header font-weight
+ *
+ * @param {number} $header-font-size
+ * MessageBox Header font-size
+ *
+ * @param {number} $header-font-size-big
+ * MessageBox Header font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-line-height
+ * MessageBox Header line-height
+ *
+ * @param {number} $header-line-height-big
+ * MessageBox Header line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $header-font-family
+ * MessageBox Header font-family
+ *
+ * @param {number/list} $header-padding
+ * MessageBox Header padding
+ *
+ * @param {number/list} $header-padding-big
+ * MessageBox Header padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number/list} $header-title-padding
+ * MessageBox Header Title padding
+ *
+ * @param {number/list} $header-title-padding-big
+ * MessageBox Header Title padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-title-opacity
+ * MessageBox Header Title opacity
+ *
+ * @param {shadow} $header-shadow
+ * MessageBox Header Shadow
+ *
+ * @param {number} $header-z-index
+ * Z-Index for the MessageBox Header, should be used with shadows to raise header above content
+ *
+ * @param {number} $header-min-height
+ * MessageBox Header min-height
+ *
+ * @param {number} $header-min-height-big
+ * MessageBox Header min-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $header-icon-color
+ * MessageBox Header icon color.
+ *
+ * @param {number} $header-icon-size
+ * MessageBox Header icon size
+ *
+ * @param {number} $header-icon-size-big
+ * MessageBox Header icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-font-size
+ * MessageBox Header icon font-size.  Used for configuring the size of font icons
+ *
+ * @param {number} $header-icon-font-size-big
+ * MessageBox Header icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-horizontal-spacing
+ * The space between the MessageBox Header icon and text when the icon is horizontally aligned
+ *
+ * @param {number} $header-icon-horizontal-spacing-big
+ * The space between the MessageBox Header icon and text when the icon is horizontally aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-vertical-spacing
+ * The space between the MessageBox Header icon and text when the icon is vertically aligned
+ *
+ * @param {number} $header-icon-vertical-spacing-big
+ * The space between the MessageBox Header icon and text when the icon is vertically aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-opacity
+ * MessageBox Header icon opacity
+ *
+ * @param {color} $tool-color
+ * MessageBox Tool color
+ *
+ * @param {number} $tool-hovered-color
+ * MessageBox Tool color when hovered
+ *
+ * @param {number} $tool-pressed-color
+ * MessageBox Tool color when pressed
+ *
+ * @param {number} $tool-disabled-color
+ * MessageBox Tool color when disabled
+ *
+ * @param {color} $tool-background-color
+ * MessageBox Tool background-color
+ *
+ * @param {number} $tool-hovered-background-color
+ * MessageBox Tool background-color when hovered
+ *
+ * @param {number} $tool-pressed-background-color
+ * MessageBox Tool background-color when pressed
+ *
+ * @param {number} $tool-disabled-background-color
+ * MessageBox Tool background-color when disabled
+ *
+ * @param {number} $tool-opacity
+ * MessageBox Tool opacity
+ *
+ * @param {number} $tool-hovered-opacity
+ * MessageBox Tool opacity when hovered
+ *
+ * @param {number} $tool-pressed-opacity
+ * MessageBox Tool opacity when pressed
+ *
+ * @param {number} $tool-disabled-opacity
+ * MessageBox Tool opacity when disabled
+ *
+ * @param {number} $tool-border-radius
+ * MessageBox Tool border radius
+ *
+ * @param {number} $tool-border-radius-big
+ * MessageBox Tool border radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $tool-size
+ * MessageBox Tool size
+ *
+ * @param {number} $tool-size-big
+ * MessageBox Tool size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $tool-font-size
+ * MessageBox Tool font-size
+ *
+ * @param {number} $tool-font-size-big
+ * MessageBox Tool font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $tool-spacing
+ * The space between MessageBox Tools
+ *
+ * @param {number} $tool-spacing-big
+ * The space between MessageBox Tools in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $tool-cursor
+ * MessageBox Tool cursor
+ *
+ * @param {string} $tool-disabled-cursor
+ * MessageBox Tool cursor when disabled
+ *
+ * @param {number} $tool-focused-outline-width
+ * MessageBox Tool outline width when focused
+ *
+ * @param {string} $tool-focused-outline-style
+ * MessageBox Tool outline style when focused
+ *
+ * @param {color} $tool-focused-outline-color
+ * MessageBox Tool outline color when focused
+ *
+ * @param {number} $tool-focused-outline-offset
+ * MessageBox Tool outline offset when focused
+ *
+ * @param {color} $anchor-border-color
+ * MessageBox anchor border-color
+ *
+ * @param {color} $anchor-background-color
+ * MessageBox anchor background-color
+ *
+ * @param {number} $anchor-height
+ * The height (in all orientations) of the anchor arrow
+ *
+ * @param {number} $anchor-width
+ * The width (in all orientations) of the anchor arrow.
+ *
+ * @param {number} $anchor-margin
+ * The extra spacing beyond the tip of the anchor arrow to prevent the pointer touching
+ * the target;
+ *
+ * @param {string} $manage-borders
+ * `true` to include {@link #manageBorders border management} rules
+ *
+ * @param {number} $min-width
+ * MessageBox min-width
+ *
+ * @param {number} $min-width-big
+ * MessageBox min-width in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+@mixin messagebox-ui(
+    $ui: null,
+    $xtype: messagebox,
+    $header-xtype: messageboxheader,
+    $title-xtype: messageboxtitle,
+    $tool-xtype: messageboxtool,
+    $background-color: null,
+    $border-color: null,
+    $border-width: null,
+    $border-style: null,
+    $border-radius: null,
+    $border-radius-big: null,
+    $body-background-color: null,
+    $body-color: null,
+    $body-border-color: null,
+    $body-border-width: null,
+    $body-border-style: null,
+    $body-font-weight: null,
+    $body-font-size: null,
+    $body-font-size-big: null,
+    $body-line-height: null,
+    $body-line-height-big: null,
+    $body-font-family: null,
+    $body-padding: null,
+    $body-padding-big: null,
+    $header-background-color: null,
+    $header-background-gradient: null,
+    $header-color: null,
+    $header-border-color: null,
+    $header-border-width: null,
+    $header-border-style: null,
+    $header-font-weight: null,
+    $header-font-size: null,
+    $header-font-size-big: null,
+    $header-line-height: null,
+    $header-line-height-big: null,
+    $header-font-family: null,
+    $header-padding: null,
+    $header-padding-big: null,
+    $header-title-padding: null,
+    $header-title-padding-big: null,
+    $header-title-opacity: null,
+    $header-shadow: null,
+    $header-z-index: null,
+    $header-min-height: null,
+    $header-min-height-big: null,
+    $header-icon-color: null,
+    $header-icon-size: null,
+    $header-icon-size-big: null,
+    $header-icon-font-size: null,
+    $header-icon-font-size-big: null,
+    $header-icon-horizontal-spacing: null,
+    $header-icon-horizontal-spacing-big: null,
+    $header-icon-vertical-spacing: null,
+    $header-icon-vertical-spacing-big: null,
+    $header-icon-opacity: null,
+    $tool-color: null,
+    $tool-hovered-color: null,
+    $tool-pressed-color: null,
+    $tool-disabled-color: null,
+    $tool-background-color: null,
+    $tool-hovered-background-color: null,
+    $tool-pressed-background-color: null,
+    $tool-disabled-background-color: null,
+    $tool-opacity: null,
+    $tool-hovered-opacity: null,
+    $tool-pressed-opacity: null,
+    $tool-disabled-opacity: null,
+    $tool-border-radius: null,
+    $tool-border-radius-big: null,
+    $tool-size: null,
+    $tool-size-big: null,
+    $tool-font-size: null,
+    $tool-font-size-big: null,
+    $tool-spacing: null,
+    $tool-spacing-big: null,
+    $tool-cursor: null,
+    $tool-disabled-cursor: null,
+    $tool-focused-outline-width: null,
+    $tool-focused-outline-style: null,
+    $tool-focused-outline-color: null,
+    $tool-focused-outline-offset: null,
+    $anchor-border-color: null,
+    $anchor-background-color: null,
+    $anchor-height: null,
+    $anchor-width: null,
+    $anchor-margin: null,
+    $manage-borders: $messagebox-manage-borders,
+    $min-width: null,
+    $min-width-big: null
+) {
+    $arguments: intersect-arguments(messagebox-ui, dialog-ui);
+
+    @include dialog-ui($arguments...);
+}
+

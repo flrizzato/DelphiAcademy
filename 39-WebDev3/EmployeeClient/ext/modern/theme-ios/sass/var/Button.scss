@@ -1,0 +1,80 @@
+$enable-inverted-alt-button: dynamic(true);
+
+$button-background-color: dynamic(transparent);
+$button-border-color: dynamic(null);
+$button-border-width: dynamic(null);
+$button-border-style: dynamic(null);
+$button-border-radius: dynamic(7px);
+$button-color: dynamic($base-color);
+$button-pressed-color: dynamic($base-light-color);
+$button-disabled-color: dynamic($neutral-dark-color);
+
+$button-font-weight: dynamic($font-weight-normal);
+
+$button-line-height: dynamic(16px);
+$button-line-height-big: dynamic(20px);
+$button-padding: dynamic(3px 0);
+$button-padding-big: dynamic(5px 0);
+$button-icon-color: dynamic($button-color);
+$button-pressed-icon-color: dynamic($button-pressed-color);
+$button-arrow-icon: dynamic($ios-arrow-down);
+
+$button-badge-font-size: dynamic(13px);
+$button-badge-background-color: dynamic(#fe0000);
+$button-badge-border-radius: dynamic(50%);
+$button-badge-min-width: dynamic(null);
+$button-badge-top: dynamic(-5px);
+$button-badge-left: dynamic(53%);
+$button-badge-right: dynamic(null);
+$button-badge-padding: dynamic(1px 6px);
+
+$button-focused-outline-color: dynamic(null);
+$button-focused-outline-style: dynamic(null);
+$button-focused-outline-width: dynamic(null);
+$button-focused-outline-offset: dynamic(null);
+
+$button-confirm-ui: dynamic((
+    color: $ios-green,
+    pressed-color: mix(#fff, $ios-green, 70%)
+));
+
+$button-alt-ui: dynamic((
+    color: #fff,
+    background-color: $ios-blue,
+    pressed-background-color: $button-pressed-color,
+    padding: 3px 10px,
+    padding-big: 5px 15px
+));
+
+$button-decline-ui: dynamic((
+    color: $ios-red,
+    pressed-color: mix(#fff, $ios-red, 70%)
+));
+
+$button-segmented-ui: dynamic((
+    color: $base-color,
+    border-color: $base-color,
+    hovered-border-color: $base-color,
+    background-color: $background-color,
+    hovered-background-color: $background-color,
+    pressed-background-color: $base-color,
+    pressed-color: #fff,
+    border-radius: 4px,
+    padding: 3px 10px,
+    padding-big: 5px 15px
+));
+
+$button-action-ui: dynamic((
+    font-weight: $font-weight-bold
+));
+
+$button-raised-ui: dynamic((
+    color: $base-color,
+    background-color: $background-color,
+    hovered-background-color: $background-color,
+    pressed-background-color: $base-color,
+    pressed-color: #fff,
+    padding: 3px 10px,
+    padding-big: 5px 15px,
+    box-shadow: (2px 2px 5px 0 rgba(0, 0, 0, 0.12), 2px 2px 5px 0 rgba(0, 0, 0, 0.08))
+));

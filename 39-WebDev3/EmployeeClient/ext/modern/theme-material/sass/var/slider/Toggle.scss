@@ -1,0 +1,13 @@
+$toggleslider-width: dynamic(32px);
+$toggleslider-track-height-big: dynamic(32px);
+$toggleslider-track-height: dynamic(16px);
+$toggleslider-track-height-big: dynamic(16px);
+$toggleslider-track-border-radius: dynamic(8px);
+
+$thumb-toggle-on-ui: dynamic((
+    background-color: $base-color
+));
+
+$thumb-toggle-off-ui: dynamic((
+    background-color: $faded-color
+));

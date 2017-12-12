@@ -1,0 +1,10 @@
+/**
+ * @class Ext.field.Select
+ */
+
+/**
+ * @var {color} $selectfield-selected-item-icon-color
+ */
+$selectfield-selected-item-icon-color: dynamic($color);
+
+$selectfield-selected-item-icon: dynamic($fa-var-check);

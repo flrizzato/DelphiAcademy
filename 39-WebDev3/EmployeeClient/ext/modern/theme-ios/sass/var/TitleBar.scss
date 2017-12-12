@@ -1,0 +1,11 @@
+$titlebar-color: dynamic($color);
+$titlebar-title-color: dynamic($titlebar-color);
+
+$titlebar-title-font-size: dynamic($font-size);
+$titlebar-background-color: dynamic($neutral-light-color);
+$titlebar-border-color: dynamic($neutral-color);
+
+$titlebar-padding: dynamic(6px 10px);
+$titlebar-padding-big: dynamic(0 10px);
+$titlebar-min-height: dynamic(36px);
+$titlebar-min-height-big: dynamic(44px);

@@ -1,0 +1,104 @@
+/**
+ * @class Ext.field.BoxLabelable
+ */
+
+/**
+ * @var {color}
+ * {@link #boxLabel} text color
+ */
+$field-box-label-color: dynamic($field-label-color);
+
+/**
+ * @var {string/number}
+ * {@link #boxLabel} font-weight
+ */
+$field-box-label-font-weight: dynamic($field-label-font-weight);
+
+/**
+ * @var {number}
+ * {@link #boxLabel} font-size
+ */
+$field-box-label-font-size: dynamic($field-label-font-size);
+
+/**
+ * @var {number}
+ * {@link #boxLabel} font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$field-box-label-font-size-big: dynamic($field-label-font-size-big);
+
+/**
+ * @var {number}
+ * {@link #boxLabel} line-height
+ */
+$field-box-label-line-height: dynamic($field-label-line-height);
+
+/**
+ * @var {number}
+ * {@link #boxLabel} line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$field-box-label-line-height-big: dynamic($field-label-line-height-big);
+
+/**
+ * @var {string}
+ * {@link #boxLabel} font-family
+ */
+$field-box-label-font-family: dynamic($field-label-font-family);
+
+/**
+ * @var {number/list}
+ * {@link #boxLabel} padding
+ * The padding box will be flipped horizontally when {@link #boxLabelAlign} is `before`
+ */
+$field-box-label-padding: dynamic(top($field-label-padding) 0 bottom($field-label-padding) 4px);
+
+/**
+ * @var {number/list}
+ * {@link #boxLabel} padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ * The padding box will be flipped horizontally when {@link #boxLabelAlign} is `before`
+ */
+$field-box-label-padding-big: dynamic(top($field-label-padding-big) 0 bottom($field-label-padding-big) 5px);
+
+/**
+ * @private
+ */
+@mixin box-label-ui(
+    $box-label-color: null,
+    $box-label-font-weight: null,
+    $box-label-font-size: null,
+    $box-label-font-size-big: null,
+    $box-label-line-height: null,
+    $box-label-line-height-big: null,
+    $box-label-font-family: null,
+    $box-label-padding: null,
+    $box-label-padding-big: null
+) {
+    .#{$prefix}box-label-el {
+        color: $box-label-color;
+        padding: $box-label-padding;
+
+        @include font(
+            $box-label-font-weight,
+            $box-label-font-size,
+            $box-label-line-height,
+            $box-label-font-family
+        );
+
+        @if $enable-big {
+            .#{$prefix}big & {
+                font-size: $box-label-font-size-big;
+                line-height: $box-label-line-height-big;
+                padding: $box-label-padding-big;
+            }
+        }
+    }
+
+    &.#{$prefix}box-label-align-before .#{$prefix}box-label-el {
+        padding: flip-horizontal($box-label-padding);
+
+        @if $enable-big {
+            .#{$prefix}big & {
+                padding: flip-horizontal($box-label-padding-big);
+            }
+        }
+    }
+}

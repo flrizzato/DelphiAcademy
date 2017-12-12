@@ -1,0 +1,85 @@
+.#{$prefix}menu-body-el {
+    &.#{$prefix}has-separator:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+// CTRL modifier
+.#{$prefix}ctrl-key:before {
+    content: "\2303";
+}
+// ALT modifier
+.#{$prefix}alt-key:before {
+    content: "\2325";
+}
+// SHIFT modifier
+.#{$prefix}shift-key:before {
+    content: "\21E7";
+}
+// META modifier
+.#{$prefix}meta-key:before {
+    content: "\229e";
+}
+// Mac META modifier
+.#{$prefix}mac .#{$prefix}meta-key:before {
+    content: "\2318";
+}
+// CTRL+ALT modifier
+.#{$prefix}ctrl-key.#{$prefix}alt-key:before {
+    content: "\2303\2325";
+}
+// CTRL+SHIFT modifier
+.#{$prefix}ctrl-key.#{$prefix}shift-key:before {
+    content: "\2303\21E7";
+}
+// CTRL+META modifier
+.#{$prefix}ctrl-key.#{$prefix}meta-key:before {
+    content: "\2303\229e";
+}
+// Mac CTRL+META modifier
+.#{$prefix}mac .#{$prefix}ctrl-key.#{$prefix}meta-key:before {
+    content: "\2303\2318";
+}
+// ALT+SHIFT modifier
+.#{$prefix}alt-key.#{$prefix}shift-key:before {
+    content: "\2325\21E7";
+}
+// ALT+META modifier
+.#{$prefix}alt-key.#{$prefix}meta-key:before {
+    content: "\2325\229e";
+}
+// Mac ALT+META modifier
+.#{$prefix}mac .#{$prefix}alt-key.#{$prefix}meta-key:before {
+    content: "\2325\2318";
+}
+// SHIFT+META modifier
+.#{$prefix}shift-key.#{$prefix}meta-key:before {
+    content: "\21E7\229e";
+}
+// Mac SHIFT+META modifier
+.#{$prefix}mac .#{$prefix}shift-key.#{$prefix}meta-key:before {
+    content: "\21E7\2318";
+}
+.#{$prefix}ctrl-key.#{$prefix}alt-key.#{$prefix}shift-key:before {
+    content: "\2303\2325\21E7";
+}
+// CTRL+SHIFT+META modifier
+.#{$prefix}ctrl-key.#{$prefix}shift-key.#{$prefix}meta-key:before {
+    content: "\2303\21E7\229e";
+}
+// Mac CTRL+SHIFT+META modifier
+.#{$prefix}mac .#{$prefix}ctrl-key.#{$prefix}shift-key.#{$prefix}meta-key:before {
+    content: "\2303\21E7\2318";
+}
+// ALT+SHIFT+META modifier
+.#{$prefix}alt-key.#{$prefix}shift-key.#{$prefix}meta-key:before {
+    content: "\2325\21E7\229e";
+}
+// Mac ALT+SHIFT+META modifier
+.#{$prefix}mac .#{$prefix}alt-key.#{$prefix}shift-key.#{$prefix}meta-key:before {
+    content: "\2325\21E7\2318";
+}

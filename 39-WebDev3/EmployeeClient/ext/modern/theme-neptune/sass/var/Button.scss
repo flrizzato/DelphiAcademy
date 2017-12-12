@@ -1,0 +1,1601 @@
+/**
+ * @class Ext.Button
+ */
+
+/**
+ * @var {boolean}
+ * Determines if styles are added to invert text and background colors for
+ * confirm & decline buttons UIs when combined with the 'alt' UI
+ */
+$enable-inverted-alt-button: dynamic(false);
+
+/**
+ * @var {color}
+ * Button background-color
+ */
+$button-background-color: dynamic($neutral-light-color);
+
+/**
+ * @var {color}
+ * Button background-color when hovered
+ */
+$button-hovered-background-color: dynamic(button-hovered-background-color($button-background-color));
+
+/**
+ * @var {color}
+ * Button background-color when pressed
+ */
+$button-pressed-background-color: dynamic(button-pressed-background-color($button-background-color));
+
+/**
+ * @var {color}
+ * Button background-color when focused
+ */
+$button-focused-background-color: dynamic(button-focused-background-color($button-background-color));
+
+/**
+ * @var {color}
+ * Button background-color when disabled
+ */
+$button-disabled-background-color: dynamic(button-disabled-background-color($button-background-color));
+
+//# fashion replaces $button-shadow
+/**
+ * @var {list}
+ * Button box-shadow
+ */
+$button-box-shadow: dynamic(null);
+
+/**
+ * @var {list}
+ * Button box-shadow when hovered
+ */
+$button-hovered-box-shadow: dynamic(null);
+
+//# fashion replaces $button-pressed-shadow
+/**
+ * @var {list}
+ * Button box-shadow when pressed
+ */
+$button-pressed-box-shadow: dynamic(null);
+
+/**
+ * @var {list}
+ * Button box-shadow when focused
+ */
+$button-focused-box-shadow: dynamic(null);
+
+/**
+ * @var {list}
+ * Button box-shadow when disabled
+ */
+$button-disabled-box-shadow: dynamic(null);
+
+/**
+ * @var {list}
+ * Transition for the Button's box-shadow
+ */
+$button-box-shadow-transition: dynamic(null);
+
+/**
+ * @var {string/list}
+ * Button background-gradient.  Can be either the name of a gradient defined by
+ * {@link Global_CSS#background-gradient} or a list of color stops.
+ */
+$button-background-gradient: dynamic(button-background-gradient($button-background-color));
+
+/**
+ * @var {string/list}
+ * Button background-gradient when hovered.  Can be either the name of a gradient
+ * defined by {@link Global_CSS#background-gradient} or a list of color stops.
+ */
+$button-hovered-background-gradient: dynamic(button-hovered-background-gradient($button-hovered-background-color));
+
+/**
+ * @var {string/list}
+ * Button background-gradient when pressed.  Can be either the name of a gradient
+ * defined by {@link Global_CSS#background-gradient} or a list of color stops.
+ */
+$button-pressed-background-gradient: dynamic(button-pressed-background-gradient($button-pressed-background-color));
+
+/**
+ * @var {string/list}
+ * Button background-gradient when focused.  Can be either the name of a gradient
+ * defined by {@link Global_CSS#background-gradient} or a list of color stops.
+ */
+$button-focused-background-gradient: dynamic(button-focused-background-gradient($button-focused-background-color));
+
+/**
+ * @var {string/list}
+ * Button background-gradient when disabled.  Can be either the name of a gradient
+ * defined by {@link Global_CSS#background-gradient} or a list of color stops.
+ */
+$button-disabled-background-gradient: dynamic(button-disabled-background-gradient($button-disabled-background-color));
+
+/**
+ * @var {color}
+ * Button text color
+ */
+$button-color: dynamic(button-color($button-background-color));
+
+/**
+ * @var {color}
+ * Button text color when hovered
+ */
+$button-hovered-color: dynamic(button-hovered-color($button-hovered-background-color, $button-color));
+
+/**
+ * @var {color}
+ * Button text color when pressed
+ */
+$button-pressed-color: dynamic(button-pressed-color($button-pressed-background-color, $button-color));
+
+/**
+ * @var {color}
+ * Button text color when focused
+ */
+$button-focused-color: dynamic(button-focused-color($button-focused-background-color, $button-color));
+
+/**
+ * @var {color}
+ * Button color when disabled
+ */
+$button-disabled-color: dynamic(button-disabled-color($button-disabled-background-color));
+
+/**
+ * @var {color/list}
+ * Button border-color
+ */
+$button-border-color: dynamic(button-border-color($button-background-color));
+
+/**
+ * @var {color/list}
+ * Button border-color when hovered
+ */
+$button-hovered-border-color: dynamic(button-hovered-border-color($button-hovered-background-color));
+
+/**
+ * @var {color/list}
+ * Button border-color when pressed
+ */
+$button-pressed-border-color: dynamic(button-pressed-border-color($button-pressed-background-color));
+
+/**
+ * @var {color/list}
+ * Button border-color when focused
+ */
+$button-focused-border-color: dynamic(button-focused-border-color($button-focused-background-color));
+
+/**
+ * @var {color/list}
+ * Button border-color when disabled
+ */
+$button-disabled-border-color: dynamic(button-disabled-border-color($button-disabled-background-color));
+
+/**
+ * @var {color}
+ * Button focus outline color
+ */
+$button-focused-outline-color: dynamic(button-focused-outline-color($button-background-color, $button-focused-color));
+
+/**
+ * @var {string}
+ * Button focus outline style
+ */
+$button-focused-outline-style: dynamic(solid);
+
+/**
+ * @var {number}
+ * Button focus outline width
+ */
+$button-focused-outline-width: dynamic(1px);
+
+/**
+ * @var {number}
+ * Button focus outline offset
+ */
+$button-focused-outline-offset: dynamic(-2px);
+
+/**
+ * @var {number/list}
+ * Button border-width
+ */
+$button-border-width: dynamic(1px);
+
+/**
+ * @var {string/list}
+ * Button border-style
+ */
+$button-border-style: dynamic(solid);
+
+/**
+ * @var {number}
+ * Button border-radius
+ */
+$button-border-radius: dynamic(3px);
+
+/**
+ * @var {number}
+ * Button border-radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-border-radius-big: dynamic(3px);
+
+/**
+ * @var {string/number}
+ * Button font-weight
+ */
+$button-font-weight: dynamic($font-weight-bold);
+
+/**
+ * @var {number}
+ * Button font-size
+ */
+$button-font-size: dynamic($font-size);
+
+/**
+ * @var {number}
+ * Button font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-font-size-big: dynamic($font-size-big);
+
+/**
+ * @var {number}
+ * Button line-height
+ */
+$button-line-height: dynamic(16px);
+
+/**
+ * @var {number}
+ * Button line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-line-height-big: dynamic(20px);
+
+/**
+ * @var {string}
+ * Button font-family
+ */
+$button-font-family: dynamic($font-family);
+
+/**
+ * @var {string}
+ * Button text-transform
+ */
+$button-text-transform: dynamic(null);
+
+/**
+ * @var {string}
+ * Button text-transform in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-text-transform-big: dynamic($button-text-transform);
+
+/**
+ * @var {number/list}
+ * Button padding
+ */
+$button-padding: dynamic(3px 8px);
+
+/**
+ * @var {number/list}
+ * Button padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-padding-big: dynamic(5px 10px);
+
+/**
+ * @var {number/list}
+ * Button padding when an icon is present without text
+ */
+$button-icon-only-padding: dynamic(nth($button-padding, 1));
+
+/**
+ * @var {number/list}
+ * Button padding when an icon is present without text in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-icon-only-padding-big: dynamic(nth($button-padding-big, 1));
+
+/**
+ * @var {color}
+ * Button icon color.
+ */
+$button-icon-color: dynamic($button-color);
+
+/**
+ * @var {color}
+ * Button icon color when hovered.
+ */
+$button-hovered-icon-color: dynamic($button-hovered-color);
+
+/**
+ * @var {color}
+ * Button icon color when pressed.
+ */
+$button-pressed-icon-color: dynamic($button-pressed-color);
+
+/**
+ * @var {color}
+ * Button icon color when focused
+ */
+$button-focused-icon-color: dynamic($button-focused-color);
+
+/**
+ * @var {color}
+ * Button icon color when disabled
+ */
+$button-disabled-icon-color: dynamic($button-disabled-color);
+
+/**
+ * @var {number}
+ * Button icon size.
+ */
+$button-icon-size: dynamic($button-line-height);
+
+/**
+ * @var {number}
+ * Button icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-icon-size-big: dynamic($button-line-height-big);
+
+/**
+ * @var {number}
+ * Button icon font-size
+ */
+$button-icon-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Button icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-icon-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the button icon and text when the icon is horizontally aligned
+ */
+$button-icon-horizontal-spacing: dynamic(5px);
+
+/**
+ * @var {number}
+ * The space between the button icon and text when the icon is horizontally aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-icon-horizontal-spacing-big: dynamic(8px);
+
+/**
+ * @var {number}
+ * The space between the button icon and text when the icon is vertically aligned
+ */
+$button-icon-vertical-spacing: dynamic(2px);
+
+/**
+ * @var {number}
+ * The space between the button icon and text when the icon is vertically aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-icon-vertical-spacing-big: dynamic(3px);
+
+/**
+ * @var {number}
+ * Button opacity when disabled
+ */
+$button-disabled-opacity: dynamic(.5);
+
+/**
+ * @var {string}
+ * Button arrow icon
+ */
+$button-arrow-icon: dynamic($fa-var-caret-down);
+
+/**
+ * @var {color}
+ * Button arrow icon color
+ */
+$button-arrow-icon-color: dynamic($button-color);
+
+/**
+ * @var {color}
+ * Button arrow icon color when hovered
+ */
+$button-hovered-arrow-icon-color: dynamic($button-hovered-icon-color);
+
+/**
+ * @var {color}
+ * Button arrow icon color when pressed
+ */
+$button-pressed-arrow-icon-color: dynamic($button-pressed-icon-color);
+
+/**
+ * @var {color}
+ * Button arrow icon color when focused
+ */
+$button-focused-arrow-icon-color: dynamic($button-focused-icon-color);
+
+/**
+ * @var {color}
+ * Button arrow icon color when disabled
+ */
+$button-disabled-arrow-icon-color: dynamic($button-disabled-icon-color);
+
+/**
+ * @var {number}
+ * Button arrow icon size
+ */
+$button-arrow-icon-size: dynamic($button-line-height);
+
+/**
+ * @var {number}
+ * Button arrow icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-arrow-icon-size-big: dynamic($button-line-height-big);
+
+/**
+ * @var {number}
+ * Button arrow icon font-size
+ */
+$button-arrow-icon-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Button arrow icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-arrow-icon-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the button arrow and text when {@link #arrowAlign} is `'right'`
+ */
+$button-arrow-horizontal-spacing: dynamic(5px);
+
+/**
+ * @var {number}
+ * The space between the button arrow and text when {@link #arrowAlign} is `'right'`
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-arrow-horizontal-spacing-big: dynamic(8px);
+
+/**
+ * @var {number}
+ * The space between the button arrow and text when {@link #arrowAlign} is `'bottom'`
+ */
+$button-arrow-vertical-spacing: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the button arrow and text when {@link #arrowAlign} is `'bottom'`
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-arrow-vertical-spacing-big: dynamic(null);
+
+/**
+ * @var {color}
+ * The background-color of the button's {@link #badgeText badge}
+ */
+$button-badge-background-color: dynamic(darken($alert-color, 10%));
+
+/**
+ * @var {string/list}
+ * The background-gradient of the button's {@link #badgeText badge} Can be either the name
+ * of a gradient defined by {@link Global_CSS#background-gradient} or a list of color stops.
+ */
+$button-badge-background-gradient: dynamic($base-background-gradient);
+
+/**
+ * @var {color}
+ * The text color of the button's {@link #badgeText badge}
+ */
+$button-badge-color: dynamic(color-by-background($button-badge-background-color));
+
+/**
+ * @var {color}
+ * The border-color of the button's {@link #badgeText badge}
+ */
+$button-badge-border-color: dynamic(darken($button-badge-background-color, 10%));
+
+/**
+ * @var {number/list}
+ * The border-radius of the button's {@link #badgeText badge}
+ */
+$button-badge-border-radius: dynamic(3px);
+
+/**
+ * @var {number}
+ * The min-width of the button's {@link #badgeText badge}
+ */
+$button-badge-min-width: dynamic(null);
+
+/**
+ * @var {number}
+ * The max-width of the button's {@link #badgeText badge}
+ */
+$button-badge-max-width: dynamic(95%);
+
+/**
+ * @var {string/number}
+ * The font-weight of the button's {@link #badgeText badge}
+ */
+$button-badge-font-weight: dynamic(null);
+
+/**
+ * @var {number}
+ * The font-size of the button's {@link #badgeText badge}
+ */
+$button-badge-font-size: dynamic(12px);
+
+/**
+ * @var {number}
+ * The font-size of the button's {@link #badgeText badge} in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-badge-font-size-big: dynamic(13px);
+
+/**
+ * @var {string}
+ * The font-family of the button's {@link #badgeText badge}
+ */
+$button-badge-font-family: dynamic($button-font-family);
+
+/**
+ * @var {number}
+ * The line-height of the button's {@link #badgeText badge}
+ */
+$button-badge-line-height: dynamic(14px);
+
+/**
+ * @var {number}
+ * The line-height of the button's {@link #badgeText badge} in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-badge-line-height-big: dynamic(16px);
+
+/**
+ * @var {number}
+ * Offset of the {@link #badgeText badge} from the top of the button
+ */
+$button-badge-top: dynamic(-3px);
+
+/**
+ * @var {number}
+ * Offset of the {@link #badgeText badge} from the right of the button
+ */
+$button-badge-right: dynamic(0);
+
+/**
+ * @var {number}
+ * Offset of the {@link #badgeText badge} from the bottom of the button
+ */
+$button-badge-bottom: dynamic(null);
+
+/**
+ * @var {number}
+ * Offset of the {@link #badgeText badge} from the left of the button
+ */
+$button-badge-left: dynamic(null);
+
+/**
+ * @var {number}
+ * The padding of the button's {@link #badgeText badge}
+ */
+$button-badge-padding: dynamic(1px 4px);
+
+/**
+ * @var {number}
+ * The padding of the button's {@link #badgeText badge} in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$button-badge-padding-big: dynamic($button-badge-padding);
+
+/**
+ * @var {map}
+ * Parameters for the "action" button UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$button-action-ui: dynamic((
+    background-color: $base-highlight-color
+));
+
+/**
+ * @var {map}
+ * Parameters for the "alt" button UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$button-alt-ui: dynamic((
+    color: $panel-tool-color,
+    background-color: transparent,
+    border-width: 0,
+    pressed-background-color: transparent
+));
+
+/**
+ * @var {map}
+ * Parameters for the "confirm" button UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$button-confirm-ui: dynamic((
+    background-color: desaturate(darken($confirm-color, 10%), 5%)
+));
+
+/**
+ * @var {map}
+ * Parameters for the "decline" button UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$button-decline-ui: dynamic((
+    background-color: desaturate(darken($alert-color, 10%), 5%)
+));
+
+/**
+ * @var {map}
+ * Parameters for the "round" button UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$button-round-ui: dynamic((
+    border-radius: 10000px,
+    border-radius-big: 20000px
+));
+
+/**
+ * @var {map}
+ * Parameters for the "square" button UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$button-square-ui: dynamic((
+    border-radius: 0,
+    border-radius-big: 0
+));
+
+/**
+ * @var {map}
+ * Parameters for the "flat" button UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$button-flat-ui: dynamic((
+    border-width: 0,
+    background-color: transparent
+));
+
+/**
+ * @var {map}
+ * Parameters for the "plain" button UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$button-plain-ui: dynamic((
+    border-width: 0,
+    background-color: transparent
+));
+
+/**
+ * @var {map}
+ * Parameters for the "segmented" button UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$button-segmented-ui: dynamic(null);
+
+/**
+ * @var {map}
+ * Parameters for the "raised" button UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$button-raised-ui: dynamic((
+    box-shadow: (2px 2px 5px 0 rgba(0, 0, 0, 0.12), 2px 2px 5px 0 rgba(0, 0, 0, 0.08))
+));
+
+/**
+ * Creates a visual theme for a Button.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=button] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $background-color
+ * Button background-color
+ *
+ * @param {color} $hovered-background-color
+ * Button background-color when hovered
+ *
+ * @param {color} $pressed-background-color
+ * Button background-color when pressed
+ *
+ * @param {color} $focused-background-color
+ * Button background-color when focused
+ *
+ * @param {color} $disabled-background-color
+ * Button background-color when disabled
+ *
+ * @param {list} $box-shadow
+ * Button box-shadow
+ *
+ * @param {list} $hovered-box-shadow
+ * Button box-shadow when hovered
+ *
+ * @param {list} $pressed-box-shadow
+ * Button box-shadow when pressed
+ *
+ * @param {list} $focused-box-shadow
+ * Button box-shadow when focused
+ *
+ * @param {list} $disabled-box-shadow
+ * Button box-shadow when disabled
+ *
+ * @param {list} $box-shadow-transition
+ * The transition for the Button's box-shadow
+ *
+ * @param {string/list} $background-gradient
+ * Button background-gradient.  Can be either the name of a gradient defined by
+ * {@link Global_CSS#background-gradient} or a list of color stops.
+ *
+ * @param {string/list} $hovered-background-gradient
+ * Button background-gradient when hovered.  Can be either the name of a gradient
+ * defined by {@link Global_CSS#background-gradient} or a list of color stops.
+ *
+ * @param {string/list} $pressed-background-gradient
+ * Button background-gradient when pressed.  Can be either the name of a gradient
+ * defined by {@link Global_CSS#background-gradient} or a list of color stops.
+ *
+ * @param {string/list} $focused-background-gradient
+ * Button background-gradient when focused.  Can be either the name of a gradient
+ * defined by {@link Global_CSS#background-gradient} or a list of color stops.
+ *
+ * @param {string/list} $disabled-background-gradient
+ * Button background-gradient when disabled.  Can be either the name of a gradient
+ * defined by {@link Global_CSS#background-gradient} or a list of color stops.
+ *
+ * @param {color} $color
+ * Button text color
+ *
+ * @param {color} $hovered-color
+ * Button text color when hovered
+ *
+ * @param {color} $pressed-color
+ * Button text color when pressed
+ *
+ * @param {color} $focused-color
+ * Button text color when focused
+ *
+ * @param {color} $disabled-color
+ * Button color when disabled
+ *
+ * @param {color/list} $border-color
+ * Button border-color
+ *
+ * @param {color/list} $hovered-border-color
+ * Button border-color when hovered
+ *
+ * @param {color/list} $pressed-border-color
+ * Button border-color when pressed
+ *
+ * @param {color/list} $focused-border-color
+ * Button border-color when focused
+ *
+ * @param {color/list} $disabled-border-color
+ * Button border-color when disabled
+ *
+ * @param {color} $focused-outline-color
+ * Button focus outline color
+ *
+ * @param {string} $focused-outline-style
+ * Button focus outline style
+ *
+ * @param {number} $focused-outline-width
+ * Button focus outline width
+ *
+ * @param {number} $focused-outline-offset
+ * Button focus outline offset
+ *
+ * @param {number/list} $border-width
+ * Button border-width
+ *
+ * @param {string/list} $border-style
+ * Button border-style
+ *
+ * @param {number} $border-radius
+ * Button border-radius
+ *
+ * @param {number} $border-radius-big
+ * Button border-radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string/number} $font-weight
+ * Button font-weight
+ *
+ * @param {number} $font-size
+ * Button font-size
+ *
+ * @param {number} $font-size-big
+ * Button font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $line-height
+ * Button line-height
+ *
+ * @param {number} $line-height-big
+ * Button line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $font-family
+ * Button font-family
+ *
+ * @param {string} $text-transform
+ * Button text-transform
+ *
+ * @param {string} $text-transform-big
+ * Button text-transform in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number/list} $padding
+ * Button padding
+ *
+ * @param {number/list} $padding-big
+ * Button padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number/list} $icon-only-padding
+ * Button padding when an icon is present without text
+ *
+ * @param {number/list} $icon-only-padding-big
+ * Button padding when an icon is present without text in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $icon-color
+ * Button icon color.
+ *
+ * @param {color} $hovered-icon-color
+ * Button icon color when hovered.
+ *
+ * @param {color} $pressed-icon-color
+ * Button icon color when pressed.
+ *
+ * @param {color} $focused-icon-color
+ * Button icon color when focused
+ *
+ * @param {color} $disabled-icon-color
+ * Button icon color when disabled
+ *
+ * @param {number} $icon-size
+ * Button icon size.
+ *
+ * @param {number} $icon-size-big
+ * Button icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $icon-font-size
+ * Button icon font-size
+ *
+ * @param {number} $icon-font-size-big
+ * Button icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $icon-horizontal-spacing
+ * The space between the button icon and text when the icon is horizontally aligned
+ *
+ * @param {number} $icon-horizontal-spacing-big
+ * The space between the button icon and text when the icon is horizontally aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $icon-vertical-spacing
+ * The space between the button icon and text when the icon is vertically aligned
+ *
+ * @param {number} $icon-vertical-spacing-big
+ * The space between the button icon and text when the icon is vertically aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $disabled-opacity
+ * Button opacity when disabled
+ *
+ * @param {string} $arrow-icon
+ * Button arrow icon
+ *
+ * @param {color} $arrow-icon-color
+ * Button arrow icon color
+ *
+ * @param {color} $hovered-arrow-icon-color
+ * Button arrow icon color when hovered
+ *
+ * @param {color} $pressed-arrow-icon-color
+ * Button arrow icon color when pressed
+ *
+ * @param {color} $focused-arrow-icon-color
+ * Button arrow icon color when focused
+ *
+ * @param {color} $disabled-arrow-icon-color
+ * Button arrow icon color when disabled
+ *
+ * @param {number} $arrow-icon-size
+ * Button arrow icon size
+ *
+ * @param {number} $arrow-icon-size-big
+ * Button arrow icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $arrow-icon-font-size
+ * Button arrow icon font-size
+ *
+ * @param {number} $arrow-icon-font-size-big
+ * Button arrow icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $arrow-horizontal-spacing
+ * The space between the button arrow and text when {@link #arrowAlign} is `'right'`
+ *
+ * @param {number} $arrow-horizontal-spacing-big
+ * The space between the button arrow and text when {@link #arrowAlign} is `'right'`
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $arrow-vertical-spacing
+ * The space between the button arrow and text when {@link #arrowAlign} is `'bottom'`
+ *
+ * @param {number} $arrow-vertical-spacing-big
+ * The space between the button arrow and text when {@link #arrowAlign} is `'bottom'`
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $badge-background-color
+ * The background-color of the button's {@link #badgeText badge}
+ *
+ * @param {string/list} $badge-background-gradient
+ * The background-gradient of the button's {@link #badgeText badge} Can be either the name
+ * of a gradient defined by {@link Global_CSS#background-gradient} or a list of color stops.
+ *
+ * @param {color} $badge-color
+ * The text color of the button's {@link #badgeText badge}
+ *
+ * @param {color} $badge-border-color
+ * The border-color of the button's {@link #badgeText badge}
+ *
+ * @param {number/list} $badge-border-radius
+ * The border-radius of the button's {@link #badgeText badge}
+ *
+ * @param {number} $badge-min-width
+ * The min-width of the button's {@link #badgeText badge}
+ *
+ * @param {number} $badge-max-width
+ * The max-width of the button's {@link #badgeText badge}
+ *
+ * @param {string/number} $badge-font-weight
+ * The font-weight of the button's {@link #badgeText badge}
+ *
+ * @param {number} $badge-font-size
+ * The font-size of the button's {@link #badgeText badge}
+ *
+ * @param {number} $badge-font-size-big
+ * The font-size of the button's {@link #badgeText badge} in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $badge-font-family
+ * The font-family of the button's {@link #badgeText badge}
+ *
+ * @param {number} $badge-line-height
+ * The line-height of the button's {@link #badgeText badge}
+ *
+ * @param {number} $badge-line-height-big
+ * The line-height of the button's {@link #badgeText badge} in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $badge-top
+ * Offset of the {@link #badgeText badge} from the top of the button
+ *
+ * @param {number} $badge-right
+ * Offset of the {@link #badgeText badge} from the right of the button
+ *
+ * @param {number} $badge-bottom
+ * Offset of the {@link #badgeText badge} from the bottom of the button
+ *
+ * @param {number} $badge-left
+ * Offset of the {@link #badgeText badge} from the left of the button
+ *
+ * @param {number} $badge-padding
+ * The padding of the button's {@link #badgeText badge}
+ *
+ * @param {number} $badge-padding-big
+ * The padding of the button's {@link #badgeText badge} in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {boolean} [$derive-colors=true]
+ * Private
+ *
+ * @param {boolean} [$derive-border-colors=true]
+ * Private
+ *
+ * @param {boolean} [$derive-outline-colors=true]
+ * Private
+ *
+ * @param {boolean} [$derive-background-colors=true]
+ * Private
+ *
+ * @param {boolean} [$derive-background-gradients=true]
+ * Private
+ *
+ * @param {boolean} [$derive-icon-colors=true]
+ * Private
+ *
+ * @param {boolean} [$derive-arrow-colors=true]
+ * Private
+ */
+@mixin button-ui(
+    $ui: null,
+    $xtype: button,
+    $background-color: null,
+    $hovered-background-color: null,
+    $pressed-background-color: null,
+    $focused-background-color: null,
+    $disabled-background-color: null,
+    $box-shadow: null,
+    $hovered-box-shadow: null,
+    $pressed-box-shadow: null,
+    $focused-box-shadow: null,
+    $disabled-box-shadow: null,
+    $box-shadow-transition: null,
+    $background-gradient: null,
+    $hovered-background-gradient: null,
+    $pressed-background-gradient: null,
+    $focused-background-gradient: null,
+    $disabled-background-gradient: null,
+    $color: null,
+    $hovered-color: null,
+    $pressed-color: null,
+    $focused-color: null,
+    $disabled-color: null,
+    $border-color: null,
+    $hovered-border-color: null,
+    $pressed-border-color: null,
+    $focused-border-color: null,
+    $disabled-border-color: null,
+    $focused-outline-color: null,
+    $focused-outline-style: null,
+    $focused-outline-width: null,
+    $focused-outline-offset: null,
+    $border-width: null,
+    $border-style: null,
+    $border-radius: null,
+    $border-radius-big: null,
+    $font-weight: null,
+    $font-size: null,
+    $font-size-big: null,
+    $line-height: null,
+    $line-height-big: null,
+    $font-family: null,
+    $text-transform: null,
+    $text-transform-big: null,
+    $padding: null,
+    $padding-big: null,
+    $icon-only-padding: null,
+    $icon-only-padding-big: null,
+    $icon-color: null,
+    $hovered-icon-color: null,
+    $pressed-icon-color: null,
+    $focused-icon-color: null,
+    $disabled-icon-color: null,
+    $icon-size: null,
+    $icon-size-big: null,
+    $icon-font-size: null,
+    $icon-font-size-big: null,
+    $icon-horizontal-spacing: null,
+    $icon-horizontal-spacing-big: null,
+    $icon-vertical-spacing: null,
+    $icon-vertical-spacing-big: null,
+    $disabled-opacity: null,
+    $arrow-icon: null,
+    $arrow-icon-color: null,
+    $hovered-arrow-icon-color: null,
+    $pressed-arrow-icon-color: null,
+    $focused-arrow-icon-color: null,
+    $disabled-arrow-icon-color: null,
+    $arrow-icon-size: null,
+    $arrow-icon-size-big: null,
+    $arrow-icon-font-size: null,
+    $arrow-icon-font-size-big: null,
+    $arrow-horizontal-spacing: null,
+    $arrow-horizontal-spacing-big: null,
+    $arrow-vertical-spacing: null,
+    $arrow-vertical-spacing-big: null,
+    $badge-background-color: null,
+    $badge-background-gradient: null,
+    $badge-color: null,
+    $badge-border-color: null,
+    $badge-border-radius: null,
+    $badge-min-width: null,
+    $badge-max-width: null,
+    $badge-font-weight: null,
+    $badge-font-size: null,
+    $badge-font-size-big: null,
+    $badge-font-family: null,
+    $badge-line-height: null,
+    $badge-line-height-big: null,
+    $badge-top: null,
+    $badge-right: null,
+    $badge-bottom: null,
+    $badge-left: null,
+    $badge-padding: null,
+    $badge-padding-big: null,
+
+    // private
+    $derive-colors: true,
+    $derive-border-colors: true,
+    $derive-outline-colors: true,
+    $derive-background-colors: true,
+    $derive-background-gradients: true,
+    $derive-icon-colors: true,
+    $derive-arrow-colors: true
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    @if $background-color != null {
+        @if $derive-background-colors and ($hovered-background-color == null) {
+            $hovered-background-color: button-hovered-background-color($background-color);
+        }
+
+        @if $derive-background-colors and ($pressed-background-color == null) {
+            $pressed-background-color: button-pressed-background-color($background-color);
+        }
+
+        @if $derive-background-colors and ($focused-background-color == null) {
+            $focused-background-color: button-focused-background-color($background-color);
+        }
+
+        @if $derive-background-colors and ($disabled-background-color == null) {
+            $disabled-background-color: button-disabled-background-color($background-color);
+        }
+
+        @if $derive-border-colors and ($border-color == null) {
+            $border-color: button-border-color($background-color);
+        }
+
+        @if $derive-colors and ($color == null) {
+            $color: button-color($background-color);
+        }
+
+        @if $derive-background-gradients and ($background-gradient == null) {
+            $background-gradient: button-background-gradient($background-color);
+        }
+    }
+
+    @if $hovered-background-color != null {
+        @if $derive-border-colors and ($hovered-border-color == null) {
+            $hovered-border-color: button-hovered-border-color($hovered-background-color);
+        }
+
+        @if $derive-colors and ($hovered-color == null) {
+            $hovered-color: button-hovered-color($hovered-background-color, $color);
+        }
+
+        @if $derive-background-gradients and ($hovered-background-gradient == null) {
+            $hovered-background-gradient: button-hovered-background-gradient($hovered-background-color);
+        }
+    }
+
+    @if $pressed-background-color != null {
+        @if $derive-border-colors and ($pressed-border-color == null) {
+            $pressed-border-color: button-pressed-border-color($pressed-background-color);
+        }
+
+        @if $derive-colors and ($pressed-color == null) {
+            $pressed-color: button-pressed-color($pressed-background-color, $color);
+        }
+
+        @if $derive-background-gradients and ($pressed-background-gradient == null) {
+            $pressed-background-gradient: button-pressed-background-gradient($pressed-background-color);
+        }
+    }
+
+    @if $focused-background-color != null {
+        @if $derive-border-colors and ($focused-border-color == null) {
+            $focused-border-color: button-focused-border-color($focused-background-color);
+        }
+
+        @if $derive-colors and ($focused-color == null) {
+            $focused-color: button-focused-color($focused-background-color, $color);
+        }
+
+        @if $derive-background-gradients and ($focused-background-gradient == null) {
+            $focused-background-gradient: button-focused-background-gradient($focused-background-color);
+        }
+    }
+
+    @if $disabled-background-color != null {
+        @if $derive-border-colors and ($disabled-border-color == null) {
+            $disabled-border-color: button-disabled-border-color($disabled-background-color);
+        }
+
+        @if $derive-colors and ($disabled-color == null) {
+            $disabled-color: button-disabled-color($disabled-background-color, $color);
+        }
+
+        @if $derive-background-gradients and ($disabled-background-gradient == null) {
+            $disabled-background-gradient: button-disabled-background-gradient($disabled-background-color);
+        }
+    }
+
+    @if $derive-outline-colors and ($focused-outline-color == null) {
+        $focused-outline-color: button-focused-outline-color($focused-background-color or $background-color, $focused-color or $color);
+    }
+
+    @if $derive-icon-colors {
+        @if $icon-color == null {
+            $icon-color: $color;
+        }
+
+        @if $hovered-icon-color == null {
+            $hovered-icon-color: $hovered-color;
+        }
+
+        @if $pressed-icon-color == null {
+            $pressed-icon-color: $pressed-color;
+        }
+
+        @if $focused-icon-color == null {
+            $focused-icon-color: $focused-color;
+        }
+
+        @if $disabled-icon-color == null {
+            $disabled-icon-color: $disabled-color;
+        }
+    }
+
+    @if $derive-arrow-colors {
+        @if $arrow-icon-color == null {
+            $arrow-icon-color: $color;
+        }
+
+        @if $hovered-arrow-icon-color == null {
+            $hovered-arrow-icon-color: $hovered-color;
+        }
+
+        @if $pressed-arrow-icon-color == null {
+            $pressed-arrow-icon-color: $pressed-color;
+        }
+
+        @if $focused-arrow-icon-color == null {
+            $focused-arrow-icon-color: $focused-color;
+        }
+
+        @if $disabled-arrow-icon-color == null {
+            $disabled-arrow-icon-color: $disabled-color;
+        }
+    }
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        color: $color;
+        box-shadow: $box-shadow;
+        @include font($font-weight, $font-size, $line-height, $font-family);
+        border-radius: $border-radius;
+
+        @if $enable-big {
+            .#{$prefix}big & {
+                font-size: $font-size-big;
+                line-height: $line-height-big;
+                border-radius: $border-radius-big;
+            }
+        }
+
+        .#{$prefix}inner-el {
+            padding: $icon-only-padding;
+            @include border($border-width, $border-style, $border-color);
+            @include background-gradient($background-color, $background-gradient);
+            border-radius: $border-radius;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    padding: $icon-only-padding-big;
+                    border-radius: $border-radius-big;
+                }
+            }
+        }
+
+        &.#{$prefix}has-text .#{$prefix}inner-el {
+            padding: $padding;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    padding: $padding-big;
+                }
+            }
+        }
+
+        .#{$prefix}icon-el {
+            @include icon(
+                $color: $color,
+                $size: $icon-size,
+                $size-big: $icon-size-big,
+                $font-size: $icon-font-size,
+                $font-size-big: $icon-font-size-big,
+            );
+        }
+
+        &.#{$prefix}has-text.#{$prefix}icon-align-left .#{$prefix}icon-el {
+            margin-right: $icon-horizontal-spacing;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin-right: $icon-horizontal-spacing-big;
+                }
+            }
+        }
+
+        &.#{$prefix}has-text.#{$prefix}icon-align-right .#{$prefix}icon-el {
+            margin-left: $icon-horizontal-spacing;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin-left: $icon-horizontal-spacing-big;
+                }
+            }
+        }
+
+        &.#{$prefix}has-text.#{$prefix}icon-align-top .#{$prefix}icon-el {
+            margin-bottom: $icon-vertical-spacing;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin-bottom: $icon-vertical-spacing-big;
+                }
+            }
+        }
+
+        &.#{$prefix}has-text.#{$prefix}icon-align-bottom .#{$prefix}icon-el {
+            margin-top: $icon-vertical-spacing;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin-top: $icon-vertical-spacing-big;
+                }
+            }
+        }
+
+        .#{$prefix}arrow-el {
+            @include icon(
+                $icon: $arrow-icon,
+                $color: $arrow-icon-color,
+                $size: $arrow-icon-size,
+                $size-big: $arrow-icon-size-big,
+                $font-size: $arrow-icon-font-size,
+                $font-size-big: $arrow-icon-font-size-big
+            );
+        }
+
+        &.#{$prefix}arrow-align-right .#{$prefix}arrow-el {
+            margin-left: $arrow-horizontal-spacing;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin-left: $arrow-horizontal-spacing-big;
+                }
+            }
+        }
+
+        &.#{$prefix}arrow-align-bottom .#{$prefix}arrow-el {
+            margin-top: $arrow-vertical-spacing;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin-top: $arrow-vertical-spacing-big;
+                }
+            }
+        }
+
+        .#{$prefix}text-el {
+            // prevents the button height from shrinking when it has no text
+            min-height: $line-height;
+            text-transform: $text-transform;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    min-height: $line-height-big;
+                    text-transform: $text-transform-big;
+                }
+            }
+        }
+
+        .#{$prefix}badge-el {
+            color: $badge-color;
+            border-color: $badge-border-color;
+            border-radius: $badge-border-radius;
+            min-width: $badge-min-width;
+            top: $badge-top;
+            right: $badge-right;
+            bottom: $badge-bottom;
+            left: $badge-left;
+            padding: $badge-padding;
+            max-width: $badge-max-width;
+            @include font($badge-font-weight, $badge-font-size, $badge-line-height, $badge-font-family);
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    font-size: $badge-font-size-big;
+                    line-height: $badge-line-height-big;
+                }
+            }
+
+            @include background-gradient($badge-background-color, $badge-background-gradient);
+        }
+
+        &.#{$prefix}hovered {
+            color: $hovered-color;
+            box-shadow: $hovered-box-shadow;
+
+            .#{$prefix}inner-el {
+                border-color: $hovered-border-color;
+                @include background-gradient($hovered-background-color, $hovered-background-gradient);
+            }
+
+            .#{$prefix}icon-el {
+                color: $hovered-icon-color;
+            }
+
+            .#{$prefix}arrow-el {
+                color: $hovered-arrow-icon-color;
+            }
+        }
+
+        &:before {
+            @if $pressed-box-shadow {
+                content: '';
+            }
+
+            border-radius: $border-radius;
+            box-shadow: $pressed-box-shadow;
+            transition: $box-shadow-transition;
+        }
+
+        &.#{$prefix}pressing, &.#{$prefix}pressed {
+            color: $pressed-color;
+
+            .#{$prefix}inner-el {
+                border-color: $pressed-border-color;
+                @include background-gradient($pressed-background-color, $pressed-background-gradient);
+            }
+
+            .#{$prefix}icon-el {
+                color: $pressed-icon-color;
+            }
+
+            .#{$prefix}arrow-el {
+                color: $pressed-arrow-icon-color;
+            }
+        }
+
+        &.#{$prefix}focused {
+            .#{$prefix}keyboard-mode & {
+                color: $focused-color;
+                box-shadow: $focused-box-shadow;
+
+                .#{$prefix}inner-el {
+                    border-color: $focused-border-color;
+                    @include background-gradient($focused-background-color, $focused-background-gradient);
+                }
+
+                .#{$prefix}icon-el {
+                    color: $focused-icon-color;
+                }
+
+                .#{$prefix}arrow-el {
+                    color: $focused-arrow-icon-color;
+                }
+
+
+                &:after {
+                    // This is a pseudo element for simulating a focus outline.
+                    // We can't use regular css outline because it does not support radius.
+                    // We also can't simulate an outline using box-shadow because buttons may
+                    // already have a box-shadow configured using the $button-shadow var.
+                    @if $focused-outline-offset != null {
+                        margin-top: -$focused-outline-offset;
+                        margin-right: -$focused-outline-offset;
+                        margin-left: -$focused-outline-offset;
+                        margin-bottom: -$focused-outline-offset;
+                    }
+
+                    @include border($focused-outline-width, $focused-outline-style, $focused-outline-color);
+
+                    border-radius: $border-radius;
+
+                    @if $enable-big {
+                        .#{$prefix}big & {
+                            border-radius: $border-radius-big;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.#{$prefix}disabled {
+            opacity: $disabled-opacity;
+            color: $disabled-color;
+            box-shadow: $disabled-box-shadow;
+
+            .#{$prefix}inner-el {
+                border-color: $disabled-border-color;
+                @include background-gradient($disabled-background-color, $disabled-background-gradient);
+            }
+
+            .#{$prefix}icon-el {
+                color: $disabled-icon-color;
+            }
+
+            .#{$prefix}arrow-el {
+                color: $disabled-arrow-icon-color;
+            }
+        }
+    }
+}
+
+/**
+ * Creates a theme UI for buttons.
+ * Also automatically generates UIs for {ui-label}-round and {ui-label}-small.
+ *
+ *     // SCSS
+ *     @include sencha-button-ui('secondary', #99A4AE, 'glossy');
+ *
+ *     // JS
+ *     var cancelBtn = new Ext.Button({text: 'Cancel', ui: 'secondary'});
+ *
+ * @param {string} $ui-label The name of the UI being created.
+ *   Can not included spaces or special punctuation (used in class names)
+ * @param {color} $color Base color for the UI.
+ * @param {string} $gradient Default gradient for the UI.
+ *
+ * @member Ext.Button
+ * @deprecated 6.0 Use {@link #button-ui} instead
+ */
+@mixin sencha-button-ui(
+    $ui-label,
+    $color,
+    $gradient: $button-background-gradient
+) {
+    @include button-ui(
+        $ui: $ui-label,
+        $background-color: $color,
+        $background-gradient: $gradient
+    );
+}
+
+/**
+ * alt uis + decline/confirm have some magic to swap foreground and background colors.
+ * this creates a "alt decline" and "alt confirm".
+ * @private
+ */
+@mixin button-alt-invert-ui($ui, $ui-selector) {
+    $background-color: map_get($ui, 'color');
+    $color: map_get($ui, 'background-color');
+
+    @if $color == null {
+        $color: map_get($button-alt-ui, 'color');
+    }
+
+    .#{$prefix}button-alt.#{$ui-selector} {
+        color: $color;
+
+        .#{$prefix}inner-el {
+            background-color: $background-color;
+        }
+
+        .#{$prefix}icon-el {
+            color: $color;
+        }
+
+        &.#{$prefix}hovered {
+            color: $color;
+
+            .#{$prefix}inner-el {
+                background-color: $background-color;
+            }
+
+            .#{$prefix}icon-el {
+                color: $color;
+            }
+        }
+
+        &.#{$prefix}pressing, &.#{$prefix}pressed {
+            color: $color;
+
+            .#{$prefix}inner-el {
+                background-color: $background-color;
+            }
+
+            .#{$prefix}icon-el {
+                color: $color;
+            }
+        }
+
+        &.#{$prefix}focused {
+            .#{$prefix}keyboard-mode & {
+                color: $color;
+
+                .#{$prefix}inner-el {
+                    background-color: $background-color;
+                }
+
+                .#{$prefix}icon-el {
+                    color: $color;
+                }
+            }
+        }
+    }
+}
+
+@if ($enable-inverted-alt-button) {
+    @include button-alt-invert-ui($button-decline-ui, #{$prefix}button-decline);
+    @include button-alt-invert-ui($button-confirm-ui, #{$prefix}button-confirm);
+}

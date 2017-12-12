@@ -1,0 +1,171 @@
+.#{$prefix}field {
+    display: flex;
+    overflow: hidden;
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
+
+    // Field must use child selectors and not descendant selectors to ensure it only
+    // styles the field's own elements and not descendants of a containerfield
+
+    &.#{$prefix}inline {
+        display: inline-flex;
+    }
+
+    > .#{$prefix}label-el {
+        display: none;
+        flex: none;
+        max-width: 100%;
+    }
+
+    &.#{$prefix}labeled > .#{$prefix}label-el {
+        display: block;
+    }
+
+    &.#{$prefix}label-align-right {
+        flex-direction: row-reverse;
+    }
+
+    &.#{$prefix}label-align-top,
+    &.#{$prefix}label-align-placeholder {
+        flex-direction: column;
+    }
+
+    &.#{$prefix}label-align-bottom {
+        flex-direction: column-reverse;
+    }
+
+    &.#{$prefix}label-align-vertical > .#{$prefix}label-el {
+         // !important - may need to override inline style set by labelWidth config
+        width: auto !important;
+    }
+
+    &.#{$prefix}no-label-wrap > .#{$prefix}label-el {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &.#{$prefix}label-text-align-left > .#{$prefix}label-el {
+        text-align: left;
+    }
+
+    &.#{$prefix}label-text-align-center > .#{$prefix}label-el {
+        text-align: center;
+    }
+
+    &.#{$prefix}label-text-align-right > .#{$prefix}label-el {
+        text-align: right;
+    }
+
+    &.#{$prefix}required > .#{$prefix}label-el:after {
+        content: "*";
+    }
+
+    > .#{$prefix}body-wrap-el {
+        flex: 1 1 auto;
+        display: flex;
+        overflow: hidden;
+    }
+
+    &.#{$prefix}label-align-vertical > .#{$prefix}body-wrap-el {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    &.#{$prefix}label-align-horizontal > .#{$prefix}body-wrap-el {
+        max-height: 100%;
+        min-height: 100%;
+    }
+
+    &.#{$prefix}label-align-right > .#{$prefix}body-wrap-el {
+        flex-direction: row-reverse;
+    }
+
+    &.#{$prefix}error-target-under > .#{$prefix}body-wrap-el {
+        flex-direction: column;
+    }
+
+    > * > .#{$prefix}body-el {
+        position: relative;
+        overflow: hidden;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &.#{$prefix}body-align-start > * > .#{$prefix}body-el {
+        align-items: flex-start;
+    }
+
+    &.#{$prefix}body-align-center > * > .#{$prefix}body-el {
+        align-items: center;
+    }
+
+    &.#{$prefix}body-align-end > * > .#{$prefix}body-el {
+        align-items: flex-end;
+    }
+
+    &.#{$prefix}body-align-stretch > * > .#{$prefix}body-el {
+        align-items: stretch;
+    }
+
+    > * > .#{$prefix}error-el {
+        align-self: center;
+        display: none;
+        flex-shrink: 0
+    }
+
+    > * > * > .#{$prefix}error-icon-el {
+        flex-shrink: 0;
+        display: none;
+    }
+
+    &.#{$prefix}error-target-under > * > .#{$prefix}error-el {
+        display: flex;
+        align-self: stretch;
+    }
+
+    &.#{$prefix}error-target-side > * > * > .#{$prefix}error-message-el {
+        display: none;
+    }
+
+    &.#{$prefix}no-auto-fit-errors {
+        > * > .#{$prefix}error-el,
+        > * > * > .#{$prefix}error-icon-el {
+            display: flex;
+            visibility: hidden;
+        }
+    }
+
+    &.#{$prefix}invalid {
+        > * > .#{$prefix}error-el,
+        > * > * > .#{$prefix}error-icon-el {
+            display: flex;
+            visibility: visible;
+        }
+    }
+
+    > * > * > .#{$prefix}error-message-el {
+        flex: 1 1 auto;
+        // error message must not be wider than field.
+        // overflow: hidden allows flex-shrink to constrain the width of the message element
+        // even if the text is too long
+        overflow: hidden;
+        // show ellipsis, but only if a single word is long enough to consume the entire
+        // available width (don't use white-space: nowrap because we want long messages
+        // to wrap.
+        overflow: ellipsis;
+        word-wrap: break-word;
+        @include ext-hyphens;
+    }
+
+}
+
+.#{$prefix}layout-vbox > .#{$prefix}field.#{$prefix}no-min-content:not(.#{$prefix}textareafield) {
+    // Workaround for lack of support for min-height:min-content in IE, Edge and Firefox
+    // See also https://bugzilla.mozilla.org/show_bug.cgi?id=135015
+    flex-shrink: 0 !important;
+    flex-basis: auto !important;
+}

@@ -1,0 +1,7 @@
+.#{$prefix}component.#{$prefix}layout-card-item {
+    // A card item should always fill the width and height of its container regardless
+    // of whether the user configured a height and/or width on the item.
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}

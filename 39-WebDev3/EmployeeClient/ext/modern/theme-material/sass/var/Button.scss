@@ -1,0 +1,93 @@
+$enable-inverted-alt-button: dynamic(true);
+
+$button-background-color: dynamic(transparent);
+$button-pressed-background-color: dynamic($base-pressed-color);
+$button-color: dynamic($base-color);
+$button-hovered-color: dynamic(null);
+$button-hovered-background-color: dynamic(rgba($color, 0.075));
+$button-pressed-color: dynamic($background-color);
+$button-border-color: dynamic(null);
+$button-pressed-border-color: dynamic(null);
+$button-icon-color: dynamic($base-color);
+$button-pressed-icon-color: dynamic($background-color);
+$button-border-width: dynamic(null);
+$button-border-style: dynamic(null);
+$button-border-radius: dynamic(2px);
+$button-border-radius-big: dynamic($button-border-radius);
+
+$button-focused-background-color: dynamic($base-pressed-color);
+$button-focused-color: dynamic($background-color);
+$button-focused-icon-color: dynamic($background-color);
+$button-focused-outline-color: dynamic(null);
+$button-focused-outline-style: dynamic(null);
+$button-focused-outline-width: dynamic(null);
+$button-focused-outline-offset: dynamic(null);
+
+$button-font-size: dynamic(14px);
+$button-font-size-big: dynamic(14px);
+$button-font-weight: dynamic(600);
+$button-line-height: dynamic(16px);
+$button-line-height-big: dynamic(24px);
+$button-padding: dynamic(8px 16px);
+$button-padding-big: dynamic(6px 16px);
+$button-pressed-icon-color: dynamic($button-pressed-color);
+$button-disabled-opacity: dynamic(.25);
+$button-arrow-icon: dynamic('arrow_drop_down');
+$button-arrow-icon-font-size: dynamic(22px);
+$button-badge-background-color: dynamic($accent-color);
+$button-badge-background-gradient: dynamic(null);
+$button-badge-color: dynamic($accent-foreground-color);
+$button-badge-border-color: dynamic(transparent);
+$button-badge-border-radius: dynamic(32px);
+$button-badge-font-size: dynamic(12px);
+$button-badge-font-size-big: dynamic(13px);
+$button-badge-top: dynamic(-10px);
+$button-badge-right: dynamic(-10px);
+$button-badge-left: dynamic(null);
+$button-badge-padding: dynamic(4px);
+$button-badge-line-height: dynamic(16px);
+$button-badge-line-height-big: dynamic(16px);
+$button-text-transform: dynamic(uppercase);
+$button-text-transform-big: dynamic(null);
+$button-badge-min-width: dynamic($button-badge-line-height + horizontal($button-badge-padding));
+$button-badge-min-width-big: dynamic($button-badge-line-height-big + horizontal($button-badge-padding-big));
+$button-badge-max-width: dynamic(55%);
+
+$button-raised-ui: dynamic((
+    box-shadow-transition: (opacity 0.15s),
+    box-shadow: (1px 2px 5px 0 rgba(0, 0, 0, 0.2)),
+    pressed-box-shadow: (0 5px 10px 0 rgba(0, 0, 0, 0.3)),
+    disabled-box-shadow: unset
+));
+
+$button-action-ui: dynamic((
+    color: $base-foreground-color,
+    background-color: $base-color
+));
+
+$button-alt-ui: dynamic((
+    color: $base-foreground-color,
+    background-color: transparent,
+    pressed-background-color: transparent
+));
+
+$button-confirm-ui: dynamic((
+    color: $confirm-color,
+    pressed-color: $base-foreground-color,
+    pressed-background-color: $confirm-color,
+    focused-background-color: $confirm-color
+));
+
+$button-decline-ui: dynamic((
+    color: $alert-color,
+    pressed-color: $base-foreground-color,
+    pressed-background-color: $alert-color,
+    focused-background-color: $alert-color
+));
+
+$button-segmented-ui: dynamic((
+    color: $base-foreground-color,
+    background-color: $base-pressed-color,
+    pressed-color: $background-color,
+    pressed-background-color: $base-color
+));

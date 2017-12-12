@@ -1,0 +1,11 @@
+/**
+ * @class Ext.dataview.pullrefresh.Spinner
+ */
+
+@include pullrefreshspinner-ui(
+    $min-height: $pullrefreshspinner-min-height,
+    $min-height-big: $pullrefreshspinner-min-height-big,
+    $background-color: $pullrefreshspinner-background-color,
+    $arrow-color: $pullrefreshspinner-arrow-color,
+    $border-radius: $pullrefreshspinner-border-radius
+);

@@ -1,0 +1,377 @@
+/**
+ * @class Ext.dataview.DataItem
+ */
+
+/**
+ * @var {color}
+ * DataItem text color
+ */
+$dataitem-color: dynamic($dataview-item-color);
+
+/**
+ * @var {color}
+ * DataItem text color when hovered
+ */
+$dataitem-hovered-color: dynamic($dataview-item-hovered-color);
+
+/**
+ * @var {color}
+ * DataItem text color when selected
+ */
+$dataitem-selected-color: dynamic($dataview-item-selected-color);
+
+/**
+ * @var {color}
+ * DataItem text color when pressed
+ */
+$dataitem-pressed-color: dynamic($dataview-item-pressed-color);
+
+/**
+ * @var {color}
+ * DataItem background-color
+ */
+$dataitem-background-color: dynamic($dataview-item-background-color);
+
+/**
+ * @var {color}
+ * background-color for `striped` DataItems
+ */
+$dataitem-alt-background-color: dynamic($dataview-item-alt-background-color);
+
+/**
+ * @var {color}
+ * DataItem background-color when hovered
+ */
+$dataitem-hovered-background-color: dynamic($dataview-item-hovered-background-color);
+
+/**
+ * @var {color}
+ * DataItem background-color when selected
+ */
+$dataitem-selected-background-color: dynamic($dataview-item-selected-background-color);
+
+/**
+ * @var {color}
+ * DataItem background-color when pressed
+ */
+$dataitem-pressed-background-color: dynamic($dataview-item-pressed-background-color);
+
+/**
+ * @var {number}
+ * DataItem border-width
+ */
+$dataitem-border-width: dynamic($dataview-item-border-width);
+
+/**
+ * @var {string}
+ * DataItem border-style
+ */
+$dataitem-border-style: dynamic($dataview-item-border-style);
+
+/**
+ * @var {color}
+ * DataItem border-color
+ */
+$dataitem-border-color: dynamic($dataview-item-border-color);
+
+/**
+ * @var {color}
+ * DataItem border-color when hovered
+ */
+$dataitem-hovered-border-color: dynamic($dataview-item-hovered-border-color);
+
+/**
+ * @var {color}
+ * DataItem border-color when selected
+ */
+$dataitem-selected-border-color: dynamic($dataview-item-selected-border-color);
+
+/**
+ * @var {color}
+ * DataItem border-color when pressed
+ */
+$dataitem-pressed-border-color: dynamic($dataview-item-pressed-border-color);
+
+/**
+ * @var {number}
+ * DataItem outline-width when focused
+ */
+$dataitem-focused-outline-width: dynamic($dataview-item-focused-outline-width);
+
+/**
+ * @var {string}
+ * DataItem outline-style when focused
+ */
+$dataitem-focused-outline-style: dynamic($dataview-item-focused-outline-style);
+
+/**
+ * @var {color}
+ * DataItem outline-color when focused
+ */
+$dataitem-focused-outline-color: dynamic($dataview-item-focused-outline-color);
+
+/**
+ * @var {number}
+ * DataItem outline-offset when focused
+ */
+$dataitem-focused-outline-offset: dynamic($dataview-item-focused-outline-offset);
+
+/**
+ * @var {string/number}
+ * DataItem font-weight
+ */
+$dataitem-font-weight: dynamic($dataview-item-font-weight);
+
+/**
+ * @var {number}
+ * DataItem font-size
+ */
+$dataitem-font-size: dynamic($dataview-item-font-size);
+
+/**
+ * @var {number}
+ * DataItem font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$dataitem-font-size-big: dynamic($dataview-item-font-size-big);
+
+/**
+ * @var {number}
+ * DataItem line-height
+ */
+$dataitem-line-height: dynamic($dataview-item-line-height);
+
+/**
+ * @var {number}
+ * DataItem line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$dataitem-line-height-big: dynamic($dataview-item-line-height-big);
+
+/**
+ * @var {string}
+ * DataItem font-family
+ */
+$dataitem-font-family: dynamic($dataview-item-font-family);
+
+/**
+ * @var {number/list}
+ * DataItem padding
+ */
+$dataitem-padding: dynamic($dataview-item-padding);
+
+/**
+ * @var {number/list}
+ * DataItem padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$dataitem-padding-big: dynamic($dataview-item-padding-big);
+
+/**
+ * @var {map}
+ * Parameters for the "default" DataItem UI.
+ * Set to `null` to eliminate the UI from the CSS output.
+ */
+$dataitem-default-ui: dynamic((
+    color: $dataitem-color,
+    hovered-color: $dataitem-hovered-color,
+    selected-color: $dataitem-selected-color,
+    pressed-color: $dataitem-pressed-color,
+    background-color: $dataitem-background-color,
+    alt-background-color: $dataitem-alt-background-color,
+    hovered-background-color: $dataitem-hovered-background-color,
+    selected-background-color: $dataitem-selected-background-color,
+    pressed-background-color: $dataitem-pressed-background-color,
+    border-width: $dataitem-border-width,
+    border-style: $dataitem-border-style,
+    border-color: $dataitem-border-color,
+    hovered-border-color: $dataitem-hovered-border-color,
+    selected-border-color: $dataitem-selected-border-color,
+    pressed-border-color: $dataitem-pressed-border-color,
+    focused-outline-width: $dataitem-focused-outline-width,
+    focused-outline-style: $dataitem-focused-outline-style,
+    focused-outline-color: $dataitem-focused-outline-color,
+    focused-outline-offset: $dataitem-focused-outline-offset,
+    font-weight: $dataitem-font-weight,
+    font-size: $dataitem-font-size,
+    font-size-big: $dataitem-font-size-big,
+    line-height: $dataitem-line-height,
+    line-height-big: $dataitem-line-height-big,
+    font-family: $dataitem-font-family,
+    padding: $dataitem-padding,
+    padding-big: $dataitem-padding-big
+));
+
+/**
+ * Creates a visual theme for a DataItem.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=dataitem] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $color
+ * DataItem Item text color
+ *
+ * @param {color} $hovered-color
+ * DataItem Item text color when hovered
+ *
+ * @param {color} $selected-color
+ * DataItem Item text color when selected
+ *
+ * @param {color} $pressed-color
+ * DataItem Item text color when pressed
+ *
+ * @param {color} $background-color
+ * DataItem Item background-color
+ *
+ * @param {color} $alt-background-color
+ * background-color for `striped` DataItems
+ *
+ * @param {color} $hovered-background-color
+ * DataItem Item background-color when hovered
+ *
+ * @param {color} $selected-background-color
+ * DataItem Item background-color when selected
+ *
+ * @param {color} $pressed-background-color
+ * DataItem Item background-color when pressed
+ *
+ * @param {number} $border-width
+ * DataItem Item border-width
+ *
+ * @param {string} $border-style
+ * DataItem Item border-style
+ *
+ * @param {color} $border-color
+ * DataItem Item border-color
+ *
+ * @param {color} $hovered-border-color
+ * DataItem Item border-color when hovered
+ *
+ * @param {color} $selected-border-color
+ * DataItem Item border-color when selected
+ *
+ * @param {color} $pressed-border-color
+ * DataItem Item border-color when pressed
+ *
+ * @param {number} $focused-outline-width
+ * DataItem outline-width when focused
+ *
+ * @param {string} $focused-outline-style
+ * DataItem outline-style when focused
+ *
+ * @param {color} $focused-outline-color
+ * DataItem outline-color when focused
+ *
+ * @param {number} $focused-outline-offset
+ * DataItem outline-offset when focused
+ *
+ * @param {string/number} $font-weight
+ * DataItem Item font-weight
+ *
+ * @param {number} $font-size
+ * DataItem Item font-size
+ *
+ * @param {number} $font-size-big
+ * DataItem Item font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $line-height
+ * DataItem Item line-height
+ *
+ * @param {number} $line-height-big
+ * DataItem Item line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $font-family
+ * DataItem Item font-family
+ *
+ * @param {number/list} $padding
+ * DataItem Item padding
+ *
+ * @param {number/list} $padding-big
+ * DataItem Item padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+@mixin dataitem-ui(
+    $ui: null,
+    $xtype: dataitem,
+    $color: null,
+    $hovered-color: null,
+    $selected-color: null,
+    $pressed-color: null,
+    $background-color: null,
+    $alt-background-color: null,
+    $hovered-background-color: null,
+    $selected-background-color: null,
+    $pressed-background-color: null,
+    $border-width: null,
+    $border-style: null,
+    $border-color: null,
+    $hovered-border-color: null,
+    $selected-border-color: null,
+    $pressed-border-color: null,
+    $focused-outline-width: null,
+    $focused-outline-style: null,
+    $focused-outline-color: null,
+    $focused-outline-offset: null,
+    $font-weight: null,
+    $font-size: null,
+    $font-size-big: null,
+    $line-height: null,
+    $line-height-big: null,
+    $font-family: null,
+    $padding: null,
+    $padding-big: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        color: $color;
+        background-color: $background-color;
+        @include border($border-width, $border-style, $border-color);
+        @include font($font-weight, $font-size, $line-height, $font-family);
+        padding: $padding;
+
+        @if $enable-big {
+            .#{$prefix}big & {
+                font-size: $font-size-big;
+                line-height: $line-height-big;
+                padding: $padding-big;
+            }
+        }
+
+        &.#{$prefix}odd {
+            background-color: $alt-background-color;
+        }
+
+        &.#{$prefix}hovered {
+            color: $hovered-color;
+            background-color: $hovered-background-color;
+            border-color: $hovered-border-color;
+        }
+
+        &.#{$prefix}selected {
+            .#{$prefix}show-selection > & {
+                color: $selected-color;
+                background-color: $selected-background-color;
+                border-color: $selected-border-color;
+            }
+        }
+
+        &.#{$prefix}pressed {
+            color: $pressed-color;
+            background-color: $pressed-background-color;
+            border-color: $pressed-border-color;
+        }
+
+        &.#{$prefix}focused {
+            .#{$prefix}keyboard-mode & {
+                @include outline(
+                    $width: $focused-outline-width,
+                    $style: $focused-outline-style,
+                    $color: $focused-outline-color,
+                    $offset: $focused-outline-offset,
+                    $border-width: $border-width
+                );
+            }
+        }
+    }
+}

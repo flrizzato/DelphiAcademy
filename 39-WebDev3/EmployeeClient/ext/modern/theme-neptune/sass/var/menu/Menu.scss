@@ -1,0 +1,1074 @@
+/**
+ * @class Ext.menu.Menu
+ */
+
+/**
+ * @var {color/list}
+ * Menu background-color
+ */
+$menu-background-color: dynamic(null);
+
+/**
+ * @var {color/list}
+ * Menu border-color
+ */
+$menu-border-color: dynamic($neutral-color);
+
+/**
+ * @var {number/list}
+ * Menu border-width
+ */
+$menu-border-width: dynamic(null);
+
+/**
+ * @var {string/list}
+ * Menu border-style
+ */
+$menu-border-style: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu border-radius
+ */
+$menu-border-radius: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu border-radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-border-radius-big: dynamic($menu-border-radius);
+
+/**
+ * @var {color}
+ * Menu body background-color
+ */
+$menu-body-background-color: dynamic($menu-background-color);
+
+/**
+ * @var {color}
+ * Menu body text color
+ */
+$menu-body-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu body border-color
+ */
+$menu-body-border-color: dynamic($menu-border-color);
+
+/**
+ * @var {number/list}
+ * Menu body border-width
+ */
+$menu-body-border-width: dynamic($menu-border-width);
+
+/**
+ * @var {number/list}
+ * Menu body border-style
+ */
+$menu-body-border-style: dynamic(null);
+
+/**
+ * @var {string/number}
+ * Menu body font-weight
+ */
+$menu-body-font-weight: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu body font-size
+ */
+$menu-body-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu body font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-body-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu body line-height
+ */
+$menu-body-line-height: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu body line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-body-line-height-big: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu body font-family
+ */
+$menu-body-font-family: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu body padding
+ */
+$menu-body-padding: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu body padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-body-padding-big: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu Header background-color
+ */
+$menu-header-background-color: dynamic(null);
+
+/**
+ * @var {string/list}
+ * Menu Header background-gradient.  Can be either the name of a gradient defined by
+ * {@link Global_CSS#background-gradient} or a list of color stops.
+ */
+$menu-header-background-gradient: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu Header text color
+ */
+$menu-header-color: dynamic(null);
+
+/**
+ * @var {color/list}
+ * Menu Header border-color
+ */
+$menu-header-border-color: dynamic($menu-border-color);
+
+/**
+ * @var {number/list}
+ * Menu Header border-width
+ */
+$menu-header-border-width: dynamic($menu-border-width);
+
+/**
+ * @var {string/list}
+ * Menu Header border-style
+ */
+$menu-header-border-style: dynamic(null);
+
+/**
+ * @var {string/number}
+ * Menu Header font-weight
+ */
+$menu-header-font-weight: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header font-size
+ */
+$menu-header-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-header-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header line-height
+ */
+$menu-header-line-height: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-header-line-height-big: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu Header font-family
+ */
+$menu-header-font-family: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu Header padding
+ */
+$menu-header-padding: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu Header padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-header-padding-big: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu Header Title padding
+ */
+$menu-header-title-padding: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu Header Title padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-header-title-padding-big: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header Title opacity
+ */
+$menu-header-title-opacity: dynamic(null);
+
+/**
+ * @var {shadow}
+ * Menu Header Shadow
+ */
+$menu-header-shadow: dynamic(null);
+
+/**
+ * @var {number}
+ * Z-Index for the Menu Header, should be used with shadows to raise header above content
+ */
+$menu-header-z-index: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header min-height
+ */
+$menu-header-min-height: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header min-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-header-min-height-big: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu Header icon color.
+ */
+$menu-header-icon-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header icon size
+ */
+$menu-header-icon-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-header-icon-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header icon font-size.  Used for configuring the size of font icons
+ */
+$menu-header-icon-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-header-icon-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the Menu Header icon and text when the icon is horizontally aligned
+ */
+$menu-header-icon-horizontal-spacing: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the Menu Header icon and text when the icon is horizontally aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-header-icon-horizontal-spacing-big: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the Menu Header icon and text when the icon is vertically aligned
+ */
+$menu-header-icon-vertical-spacing: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the Menu Header icon and text when the icon is vertically aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-header-icon-vertical-spacing-big: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Header icon opacity
+ */
+$menu-header-icon-opacity: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu Tool color
+ */
+$menu-tool-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool color when hovered
+ */
+$menu-tool-hovered-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool color when pressed
+ */
+$menu-tool-pressed-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool color when disabled
+ */
+$menu-tool-disabled-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu Tool background-color
+ */
+$menu-tool-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool background-color when hovered
+ */
+$menu-tool-hovered-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool background-color when pressed
+ */
+$menu-tool-pressed-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool background-color when disabled
+ */
+$menu-tool-disabled-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool opacity
+ */
+$menu-tool-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool opacity when hovered
+ */
+$menu-tool-hovered-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool opacity when pressed
+ */
+$menu-tool-pressed-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool opacity when disabled
+ */
+$menu-tool-disabled-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool border radius
+ */
+$menu-tool-border-radius: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool border radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-tool-border-radius-big: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool size
+ */
+$menu-tool-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-tool-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool font-size
+ */
+$menu-tool-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-tool-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between Menu Tools
+ */
+$menu-tool-spacing: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between Menu Tools in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-tool-spacing-big: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu Tool cursor
+ */
+$menu-tool-cursor: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu Tool cursor when disabled
+ */
+$menu-tool-disabled-cursor: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool outline width when focused
+ */
+$menu-tool-focused-outline-width: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu Tool outline style when focused
+ */
+$menu-tool-focused-outline-style: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu Tool outline color when focused
+ */
+$menu-tool-focused-outline-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Tool outline offset when focused
+ */
+$menu-tool-focused-outline-offset: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu anchor border-color
+ */
+$menu-anchor-border-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu anchor background-color
+ */
+$menu-anchor-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * The height (in all orientations) of the anchor arrow
+ */
+$menu-anchor-height: dynamic(null);
+
+/**
+ * @var {number}
+ * The width (in all orientations) of the anchor arrow.
+ */
+$menu-anchor-width: dynamic(null);
+
+/**
+ * @var {number}
+ * The extra spacing beyond the tip of the anchor arrow to prevent the pointer touching
+ * the target;
+ */
+$menu-anchor-margin: dynamic(null);
+
+/**
+ * @var {string}
+ * `true` to include {@link #manageBorders border management} rules
+ */
+$menu-manage-borders: dynamic($panel-manage-borders);
+
+/**
+ * @var {number}
+ * Space reserved for Menu Item {@link Ext.menu.Item#icon icons}.
+ * Icons are horizontally centered within this space.
+ */
+$menu-icon-column-width: dynamic(30px);
+
+/**
+ * @var {number}
+ * Space reserved for Menu Item {@link Ext.menu.Item#icon icons}
+ * in the {@link Global_CSS#$enable-big big} sizing scheme.
+ * Icons are horizontally centered within this space.
+ */
+$menu-icon-column-width-big: dynamic(40px);
+
+/**
+ * @var {number/list}
+ * The space between Menu Item text and the Menu's edge when not {@link #indented} or the
+ * space between the text and the vertical {@link #separator}, if present.
+ * Can be a single numeric value, or a list of 2 values representing the left and right spacing.
+ */
+$menu-text-spacing: dynamic(8px);
+
+/**
+ * @var {number/list}
+ * The space, in the {@link Global_CSS#$enable-big big} sizing scheme, between Menu Item
+ * text and the Menu's edge when not {@link #indented} or the space between the text and
+ * the vertical {@link #separator}, if present.
+ * Can be a single numeric value, or a list of 2 values representing the left and right spacing.
+ */
+$menu-text-spacing-big: dynamic(10px);
+
+/**
+ * @var {number}
+ * Menu {@link #separator} width
+ */
+$menu-separator-width: dynamic(1px);
+
+/**
+ * @var {number}
+ * Menu {@link #separator} border-width
+ */
+$menu-separator-border-width: dynamic(0 0 0 $menu-separator-width);
+
+/**
+ * @var {string}
+ * Menu {@link #separator} border-style
+ */
+$menu-separator-border-style: dynamic(solid);
+
+/**
+ * @var {color}
+ * Menu {@link #separator} border-color
+ */
+$menu-separator-border-color: dynamic($neutral-color);
+
+/**
+ * @var {color}
+ * Menu {@link #separator} background-color
+ */
+$menu-separator-background-color: dynamic(null);
+
+/**
+ * @var {number/list}
+ * The margin of child components that are not {@link Ext.menu.Item Menu Items}
+ */
+$menu-component-margin: dynamic(2px $menu-text-spacing);
+
+/**
+ * @var {number/list}
+ * The margin of child components that are not {@link Ext.menu.Item Menu Items}
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menu-component-margin-big: dynamic(3px $menu-text-spacing-big);
+
+/**
+ * Creates a visual theme for a Menu.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=menu] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {String} [$header-xtype=menuheader] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors for the header component.  For use by UI mixins of derived classes.
+ *
+ * @param {String} [$title-xtype=menutitle] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors for the title component.  For use by UI mixins of derived classes.
+ *
+ * @param {String} [$tool-xtype=menutool] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors for tools.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $background-color
+ * Menu background-color
+ *
+ * @param {color/list} $border-color
+ * Menu border-color
+ *
+ * @param {number/list} $border-width
+ * Menu border-width
+ *
+ * @param {string/list} $border-style
+ * Menu border-style
+ *
+ * @param {number/list} $border-radius
+ * Menu border-radius
+ *
+ * @param {number/list} $border-radius-big
+ * Menu border-radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $body-background-color
+ * Menu body background-color
+ *
+ * @param {color} $body-color
+ * Menu body text color
+ *
+ * @param {color} $body-border-color
+ * Menu body border-color
+ *
+ * @param {number/list} $body-border-width
+ * Menu body border-width
+ *
+ * @param {number/list} $body-border-style
+ * Menu body border-style
+ *
+ * @param {string/number} $body-font-weight
+ * Menu body font-weight
+ *
+ * @param {number} $body-font-size
+ * Menu body font-size
+ *
+ * @param {number} $body-font-size-big
+ * Menu body font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $body-line-height
+ * Menu body line-height
+ *
+ * @param {number} $body-line-height-big
+ * Menu body line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $body-font-family
+ * Menu body font-family
+ *
+ * @param {number/list} $body-padding
+ * Menu body padding
+ *
+ * @param {number/list} $body-padding-big
+ * Menu body padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $header-background-color
+ * Menu Header background-color
+ *
+ * @param {string/list} $header-background-gradient
+ * Menu Header background-gradient.  Can be either the name of a gradient defined by
+ * {@link Global_CSS#background-gradient} or a list of color stops.
+ *
+ * @param {color} $header-color
+ * Menu Header text color
+ *
+ * @param {color/list} $header-border-color
+ * Menu Header border-color
+ *
+ * @param {number/list} $header-border-width
+ * Menu Header border-width
+ *
+ * @param {string/list} $header-border-style
+ * Menu Header border-style
+ *
+ * @param {string/number} $header-font-weight
+ * Menu Header font-weight
+ *
+ * @param {number} $header-font-size
+ * Menu Header font-size
+ *
+ * @param {number} $header-font-size-big
+ * Menu Header font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-line-height
+ * Menu Header line-height
+ *
+ * @param {number} $header-line-height-big
+ * Menu Header line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $header-font-family
+ * Menu Header font-family
+ *
+ * @param {number/list} $header-padding
+ * Menu Header padding
+ *
+ * @param {number/list} $header-padding-big
+ * Menu Header padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number/list} $header-title-padding
+ * Menu Header Title padding
+ *
+ * @param {number/list} $header-title-padding-big
+ * Menu Header Title padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number/list} $header-title-opacity
+ * Menu Header Title opacity
+ *
+ * @param {shadow} $header-shadow
+ * Menu Header Shadow
+ *
+ * @param {number} $header-z-index
+ * Z-Index for the Menu Header, should be used with shadows to raise header above content
+ *
+ * @param {number} $header-min-height
+ * Menu Header min-height
+ *
+ * @param {number} $header-min-height-big
+ * Menu Header min-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $header-icon-color
+ * Menu Header icon color.
+ *
+ * @param {number} $header-icon-size
+ * Menu Header icon size
+ *
+ * @param {number} $header-icon-size-big
+ * Menu Header icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-font-size
+ * Menu Header icon font-size.  Used for configuring the size of font icons
+ *
+ * @param {number} $header-icon-font-size-big
+ * Menu Header icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-horizontal-spacing
+ * The space between the Menu Header icon and text when the icon is horizontally aligned
+ *
+ * @param {number} $header-icon-horizontal-spacing-big
+ * The space between the Menu Header icon and text when the icon is horizontally aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-vertical-spacing
+ * The space between the Menu Header icon and text when the icon is vertically aligned
+ *
+ * @param {number} $header-icon-vertical-spacing-big
+ * The space between the Menu Header icon and text when the icon is vertically aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-opacity
+ * Menu Header icon opacity
+ *
+ * @param {color} $tool-color
+ * Menu Tool color
+ *
+ * @param {number} $tool-hovered-color
+ * Menu Tool color when hovered
+ *
+ * @param {number} $tool-pressed-color
+ * Menu Tool color when pressed
+ *
+ * @param {number} $tool-disabled-color
+ * Menu Tool color when disabled
+ *
+ * @param {color} $tool-background-color
+ * Menu Tool background-color
+ *
+ * @param {number} $tool-hovered-background-color
+ * Menu Tool background-color when hovered
+ *
+ * @param {number} $tool-pressed-background-color
+ * Menu Tool background-color when pressed
+ *
+ * @param {number} $tool-disabled-background-color
+ * Menu Tool background-color when disabled
+ *
+ * @param {number} $tool-opacity
+ * Menu Tool opacity
+ *
+ * @param {number} $tool-hovered-opacity
+ * Menu Tool opacity when hovered
+ *
+ * @param {number} $tool-pressed-opacity
+ * Menu Tool opacity when pressed
+ *
+ * @param {number} $tool-disabled-opacity
+ * Menu Tool opacity when disabled
+ *
+ * @param {number} $tool-border-radius
+ * Menu Tool border radius
+ *
+ * @param {number} $tool-border-radius-big
+ * Menu Tool border radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $tool-size
+ * Menu Tool size
+ *
+ * @param {number} $tool-size-big
+ * Menu Tool size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $tool-font-size
+ * Menu Tool font-size
+ *
+ * @param {number} $tool-font-size-big
+ * Menu Tool font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $tool-spacing
+ * The space between Menu Tools
+ *
+ * @param {number} $tool-spacing-big
+ * The space between Menu Tools in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $tool-cursor
+ * Menu Tool cursor
+ *
+ * @param {string} $tool-disabled-cursor
+ * Menu Tool cursor when disabled
+ *
+ * @param {number} $tool-focused-outline-width
+ * Menu Tool outline width when focused
+ *
+ * @param {string} $tool-focused-outline-style
+ * Menu Tool outline style when focused
+ *
+ * @param {color} $tool-focused-outline-color
+ * Menu Tool outline color when focused
+ *
+ * @param {number} $tool-focused-outline-offset
+ * Menu Tool outline offset when focused
+ *
+ * @param {color} $anchor-border-color
+ * Menu anchor border-color
+ *
+ * @param {color} $anchor-background-color
+ * Menu anchor background-color
+ *
+ * @param {number} $anchor-height
+ * The height (in all orientations) of the anchor arrow
+ *
+ * @param {number} $anchor-width
+ * The width (in all orientations) of the anchor arrow.
+ *
+ * @param {number} $anchor-margin
+ * The extra spacing beyond the tip of the anchor arrow to prevent the pointer touching
+ * the target;
+ *
+ * @param {string} $manage-borders
+ * `true` to include {@link #manageBorders border management} rules
+ *
+ * @param {number} $icon-column-width
+ * Space reserved for Menu Item {@link Ext.menu.Item#icon icons}.
+ * Icons are horizontally centered within this space.
+ *
+ * @param {number} $icon-column-width-big
+ * Space reserved for Menu Item {@link Ext.menu.Item#icon icons}
+ * in the {@link Global_CSS#$enable-big big} sizing scheme.
+ * Icons are horizontally centered within this space.
+ *
+ * @param {number/list} $text-spacing
+ * The space between Menu Item text and the Menu's edge when not {@link #indented} or the
+ * space between the text and the vertical {@link #separator}, if present.
+ * Can be a single numeric value, or a list of 2 values representing the left and right spacing.
+ *
+ * @param {number/list} $text-spacing-big
+ * The space, in the {@link Global_CSS#$enable-big big} sizing scheme, between Menu Item
+ * text and the Menu's edge when not {@link #indented} or the space between the text and
+ * the vertical {@link #separator}, if present.
+ * Can be a single numeric value, or a list of 2 values representing the left and right spacing.
+ *
+ * @param {number} $separator-width
+ * Menu {@link #separator} width
+ *
+ * @param {number} $separator-border-width
+ * Menu {@link #separator} border-width
+ *
+ * @param {string} $separator-border-style
+ * Menu {@link #separator} border-style
+ *
+ * @param {color} $separator-border-color
+ * Menu {@link #separator} border-color
+ *
+ * @param {color} $separator-background-color
+ * Menu {@link #separator} background-color
+ *
+ * @param {number/list} $component-margin
+ * The margin of child components that are not {@link Ext.menu.Item Menu Items}
+ *
+ * @param {number/list} $component-margin-big
+ * The margin of child components that are not {@link Ext.menu.Item Menu Items}
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+@mixin menu-ui(
+    $ui: null,
+    $xtype: menu,
+    $header-xtype: menuheader,
+    $title-xtype: menutitle,
+    $tool-xtype: menutool,
+    $background-color: null,
+    $border-color: null,
+    $border-width: null,
+    $border-style: null,
+    $border-radius: null,
+    $border-radius-big: null,
+    $body-background-color: null,
+    $body-color: null,
+    $body-border-color: null,
+    $body-border-width: null,
+    $body-border-style: null,
+    $body-font-weight: null,
+    $body-font-size: null,
+    $body-font-size-big: null,
+    $body-line-height: null,
+    $body-line-height-big: null,
+    $body-font-family: null,
+    $body-padding: null,
+    $body-padding-big: null,
+    $header-background-color: null,
+    $header-background-gradient: null,
+    $header-color: null,
+    $header-border-color: null,
+    $header-border-width: null,
+    $header-border-style: null,
+    $header-font-weight: null,
+    $header-font-size: null,
+    $header-font-size-big: null,
+    $header-line-height: null,
+    $header-line-height-big: null,
+    $header-font-family: null,
+    $header-padding: null,
+    $header-padding-big: null,
+    $header-title-padding: null,
+    $header-title-padding-big: null,
+    $header-title-opacity: null,
+    $header-shadow: null,
+    $header-z-index: null,
+    $header-min-height: null,
+    $header-min-height-big: null,
+    $header-icon-color: null,
+    $header-icon-size: null,
+    $header-icon-size-big: null,
+    $header-icon-font-size: null,
+    $header-icon-font-size-big: null,
+    $header-icon-horizontal-spacing: null,
+    $header-icon-horizontal-spacing-big: null,
+    $header-icon-vertical-spacing: null,
+    $header-icon-vertical-spacing-big: null,
+    $header-icon-opacity: null,
+    $tool-color: null,
+    $tool-hovered-color: null,
+    $tool-pressed-color: null,
+    $tool-disabled-color: null,
+    $tool-background-color: null,
+    $tool-hovered-background-color: null,
+    $tool-pressed-background-color: null,
+    $tool-disabled-background-color: null,
+    $tool-opacity: null,
+    $tool-hovered-opacity: null,
+    $tool-pressed-opacity: null,
+    $tool-disabled-opacity: null,
+    $tool-border-radius: null,
+    $tool-border-radius-big: null,
+    $tool-size: null,
+    $tool-size-big: null,
+    $tool-font-size: null,
+    $tool-font-size-big: null,
+    $tool-spacing: null,
+    $tool-spacing-big: null,
+    $tool-cursor: null,
+    $tool-disabled-cursor: null,
+    $tool-focused-outline-width: null,
+    $tool-focused-outline-style: null,
+    $tool-focused-outline-color: null,
+    $tool-focused-outline-offset: null,
+    $anchor-border-color: null,
+    $anchor-background-color: null,
+    $anchor-height: null,
+    $anchor-width: null,
+    $anchor-margin: null,
+    $manage-borders: $menu-manage-borders,
+    $icon-column-width: null,
+    $icon-column-width-big: null,
+    $text-spacing: null,
+    $text-spacing-big: null,
+    $separator-width: null,
+    $separator-border-width: null,
+    $separator-border-style: null,
+    $separator-border-color: null,
+    $separator-background-color: null,
+    $component-margin: null,
+    $component-margin-big: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    $arguments: intersect-arguments(menu-ui, panel-ui);
+
+    @include panel-ui($arguments...);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix}-body-el {
+        > .#{$prefix}menuitem .#{$prefix}icon-wrap-el {
+            width: $icon-column-width;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    width: $icon-column-width-big;
+                }
+            }
+        }
+
+        > .#{$prefix}non-menuitem {
+            margin: $component-margin;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin: $component-margin-big;
+                }
+            }
+        }
+
+        > .#{$prefix}non-menuitem.#{$prefix}indented {
+            margin-left: $icon-column-width;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin-left: $icon-column-width-big;
+                }
+            }
+        }
+
+        &.#{$prefix}has-separator {
+            &:before {
+                @include border($separator-border-width, $separator-border-style, $separator-border-color);
+                background-color: $background-color;
+                width: $separator-width;
+                margin-left: $icon-column-width;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-left: $icon-column-width-big;
+                    }
+                }
+            }
+
+            > .#{$prefix}non-menuitem.#{$prefix}indented {
+                margin-left: $icon-column-width + left($component-margin);
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-left: $icon-column-width-big + left($component-margin-big);
+                    }
+                }
+            }
+        }
+
+        .#{$prefix}menuitem:not(.#{$prefix}indented):not(.#{$prefix}has-left-icon) .#{$prefix}text-el,
+        &.#{$prefix}has-separator > .#{$prefix}menuitem .#{$prefix}text-el {
+            // $text-spacing is a list with either 1 or 2 items so top() here means left
+            margin-left: top($text-spacing);
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin-left: top($text-spacing-big);
+                }
+            }
+        }
+
+        .#{$prefix}menuitem:not(.#{$prefix}has-right-icon):not(.#{$prefix}has-arrow) .#{$prefix}text-el {
+            margin-right: right($text-spacing);
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin-right: right($text-spacing-big);
+                }
+            }
+        }
+    }
+}
+
+
+

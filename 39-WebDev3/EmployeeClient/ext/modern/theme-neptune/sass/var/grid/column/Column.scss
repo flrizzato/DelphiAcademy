@@ -1,0 +1,542 @@
+/**
+ * @class Ext.grid.column.Column
+ */
+
+//# fashion replaces $grid-column-color
+/**
+ * @var {color}
+ * Grid Column text color
+ */
+$gridcolumn-color: dynamic($highlight-color);
+
+//# fashion replaces $grid-column-background-color
+/**
+ * @var {color}
+ * Grid Column background-color
+ */
+$gridcolumn-background-color: dynamic($headercontainer-background-color);
+
+/**
+ * @var {color}
+ * Grid Column background-color when hovered
+ */
+$gridcolumn-hovered-background-color: dynamic(mix(#fff, $base-light-color, 80%));
+
+//# fashion replaces $grid-column-sorted-background-color
+/**
+ * @var {color}
+ * Grid Column background-color when sorted
+ */
+$gridcolumn-sorted-background-color: dynamic($gridcolumn-hovered-background-color);
+
+/**
+ * @var {number/list}
+ * Grid Column border-width
+ */
+$gridcolumn-border-width: dynamic(0 1px 1px 0);
+
+/**
+ * @var {string/list}
+ * Grid Column border-style
+ */
+$gridcolumn-border-style: dynamic(solid);
+
+//# fashion replaces $grid-column-border-color
+/**
+ * @var {color}
+ * Grid Column border-color
+ */
+$gridcolumn-border-color: dynamic($headercontainer-border-color);
+
+//# fashion replaces $grid-column-font-weight
+/**
+ * @var {string/number}
+ * Grid Column font-weight
+ */
+$gridcolumn-font-weight: dynamic($font-weight-bold);
+
+//# fashion replaces $grid-column-font-size
+/**
+ * @var {number}
+ * Grid Column font-size
+ */
+$gridcolumn-font-size: dynamic($font-size);
+
+//# fashion replaces $grid-column-font-size-big
+/**
+ * @var {number}
+ * Grid Column font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$gridcolumn-font-size-big: dynamic($font-size-big);
+
+//# fashion replaces $grid-column-line-height
+/**
+ * @var {number}
+ * Grid Column line-height
+ */
+$gridcolumn-line-height: dynamic(16px);
+
+//# fashion replaces $grid-column-line-height-big
+/**
+ * @var {number}
+ * Grid Column line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$gridcolumn-line-height-big: dynamic(18px);
+
+//# fashion replaces $grid-column-font-family
+/**
+ * @var {string}
+ * Grid Column font-family
+ */
+$gridcolumn-font-family: dynamic($font-family);
+
+//# fashion replaces $grid-column-padding
+/**
+ * @var {number/list}
+ * Grid Column padding
+ */
+$gridcolumn-padding: dynamic(4px 8px);
+
+//# fashion replaces $grid-column-padding-big
+/**
+ * @var {number/list}
+ * Grid Column padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$gridcolumn-padding-big: dynamic(7px 15px);
+
+/**
+ * @var {number}
+ * Grid Column sort icon margin
+ */
+$gridcolumn-sort-icon-margin: dynamic(0 0 0 3px);
+
+/**
+ * @var {number}
+ * Grid Column sort icon margin in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$gridcolumn-sort-icon-margin-big: dynamic(null);
+
+/**
+ * @var {number}
+ * Grid Column sort icon size
+ */
+$gridcolumn-sort-icon-size: dynamic(13px);
+
+/**
+ * @var {number}
+ * Grid Column sort icon size in the {@link global_css#$enable-big big} sizing scheme
+ */
+$gridcolumn-sort-icon-size-big: dynamic(null);
+
+//# fashion replaces $grid-column-sort-icon-font-size
+/**
+ * @var {number}
+ * Grid Column sort icon font-size
+ */
+$gridcolumn-sort-icon-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Grid Column sort icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$gridcolumn-sort-icon-font-size-big: dynamic(null);
+
+//# fashion replaces $grid-column-sort-icon-color
+/**
+ * @var {color}
+ * Grid Column sort icon color
+ */
+$gridcolumn-sort-icon-color: dynamic($gridcolumn-color);
+
+/**
+ * @var {color}
+ * Grid Column secondary sort icon color
+ */
+$gridcolumn-sort-secondary-icon-color: dynamic(mix(#fff, $gridcolumn-sort-icon-color, 50%));
+
+/**
+ * @var {color}
+ * Grid Column auxilliary (tertiary and below) sort icon color
+ */
+$gridcolumn-sort-aux-icon-color: dynamic(mix(#fff, $gridcolumn-sort-icon-color, 70%));
+
+//# fashion replaces $grid-column-sort-asc-icon
+/**
+ * @var {string/list}
+ * Grid Column sort ascending icon
+ */
+$gridcolumn-sort-asc-icon: dynamic($fa-var-long-arrow-up);
+
+//# fashion replaces $grid-column-sort-desc-icon
+/**
+ * @var {string/list}
+ * Grid Column sort descending icon
+ */
+$gridcolumn-sort-desc-icon: dynamic($fa-var-long-arrow-down);
+
+/**
+ * @var {number}
+ * Grid Column trigger width
+ */
+$gridcolumn-trigger-width: dynamic(18px);
+
+/**
+ * @var {number}
+ * Grid Column trigger width in the {@link global_css#$enable-big big} sizing scheme
+ */
+$gridcolumn-trigger-width-big: dynamic(24px);
+
+/**
+ * @var {color}
+ * Grid Column trigger background-color
+ */
+$gridcolumn-trigger-background-color: dynamic($gridcolumn-hovered-background-color or $gridcolumn-background-color);
+
+/**
+ * @var {number/list}
+ * Grid Column trigger border-width
+ */
+$gridcolumn-trigger-border-width: dynamic(0 0 0 1px);
+
+/**
+ * @var {string}
+ * Grid Column trigger border-style
+ */
+$gridcolumn-trigger-border-style: dynamic(right($gridcolumn-border-style));
+
+/**
+ * @var {color}
+ * Grid Column trigger border-color
+ */
+$gridcolumn-trigger-border-color: dynamic(right($gridcolumn-border-color));
+
+/**
+ * @var {string/list}
+ * Grid Column trigger icon
+ */
+$gridcolumn-trigger-icon: dynamic($fa-var-caret-down);
+
+/**
+ * @var {color}
+ * Grid Column trigger icon color
+ */
+$gridcolumn-trigger-icon-color: dynamic(#808080);
+
+/**
+ * @var {number}
+ * Grid Column trigger icon font size
+ */
+$gridcolumn-trigger-icon-font-size: dynamic(16px);
+
+/**
+ * @var {number}
+ * Grid Column trigger icon font size in the {@link global_css#$enable-big big} sizing scheme
+ */
+$gridcolumn-trigger-icon-font-size-big: dynamic(20px);
+
+/**
+ * @var {color}
+ * Grid Column resizer width
+ */
+$gridcolumn-resizer-width: dynamic(13px);
+
+/**
+ * @var {color}
+ * Grid Column resizer background-color
+ */
+$gridcolumn-resizer-background-color: dynamic(darken($gridcolumn-background-color, 10%));
+
+/**
+ * Creates a visual theme for a grid column.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=gridcolumn] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $color
+ * Grid Column text color
+ *
+ * @param {color} $background-color
+ * Grid Column background-color
+ *
+ * @param {color} $hovered-background-color
+ * Grid Column background-color when hovered
+ *
+ * @param {color} $sorted-background-color
+ * Grid Column background-color when sorted
+ *
+ * @param {number/list} $border-width
+ * Grid Column border-width
+ *
+ * @param {string/list} $border-style
+ * Grid Column border-style
+ *
+ * @param {color} $border-color
+ * Grid Column border-color
+ *
+ * @param {string/number} $font-weight
+ * Grid Column font-weight
+ *
+ * @param {number} $font-size
+ * Grid Column font-size
+ *
+ * @param {number} $font-size-big
+ * Grid Column font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $line-height
+ * Grid Column line-height
+ *
+ * @param {number} $line-height-big
+ * Grid Column line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $font-family
+ * Grid Column font-family
+ *
+ * @param {number/list} $padding
+ * Grid Column padding
+ *
+ * @param {number/list} $padding-big
+ * Grid Column padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $sort-icon-margin
+ * Grid Column sort icon margin
+ *
+ * @param {number} $sort-icon-margin-big
+ * Grid Column sort icon margin in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $sort-icon-size
+ * Grid Column sort icon size
+ *
+ * @param {number} $sort-icon-size-big
+ * Grid Column sort icon size in the {@link global_css#$enable-big big} sizing scheme
+ *
+ * @param {number} $sort-icon-font-size
+ * Grid Column sort icon font-size
+ *
+ * @param {number} $sort-icon-font-size-big
+ * Grid Column sort icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $sort-icon-color
+ * Grid Column sort icon color
+ *
+ * @param {color} $sort-secondary-icon-color
+ * Grid Column secondary sort icon color
+ *
+ * @param {color} $sort-aux-icon-color
+ * Grid Column aux icon color
+ *
+ * @param {string/list} $sort-asc-icon
+ * Grid Column sort ascending icon
+ *
+ * @param {string/list} $sort-desc-icon
+ * Grid Column sort descending icon
+ *
+ * @param {number} $trigger-width
+ * Grid Column trigger width
+ *
+ * @param {number} $trigger-width-big
+ * Grid Column trigger width in the {@link global_css#$enable-big big} sizing scheme
+ *
+ * @param {color} $trigger-background-color
+ * Grid Column trigger background-color
+ *
+ * @param {number/list} $trigger-border-width
+ * Grid Column trigger border-width
+ *
+ * @param {string} $trigger-border-style
+ * Grid Column trigger border-style
+ *
+ * @param {color} $trigger-border-color
+ * Grid Column trigger border-color
+ *
+ * @param {string/list} $trigger-icon
+ * Grid Column trigger icon
+ *
+ * @param {color} $trigger-icon-color
+ * Grid Column trigger icon color
+ *
+ * @param {number} $trigger-icon-font-size
+ * Grid Column trigger icon font size
+ *
+ * @param {number} $trigger-icon-font-size-big
+ * Grid Column trigger icon font size in the {@link global_css#$enable-big big} sizing scheme
+ *
+ * @param {color} $resizer-width
+ * Grid Column resizer width
+ *
+ * @param {color} $resizer-background-color
+ * Grid Column resizer background-color
+ */
+@mixin gridcolumn-ui(
+    $ui: null,
+    $xtype: gridcolumn,
+    $color: null,
+    $background-color: null,
+    $hovered-background-color: null,
+    $sorted-background-color: null,
+    $border-width: null,
+    $border-style: null,
+    $border-color: null,
+    $font-weight: null,
+    $font-size: null,
+    $font-size-big: null,
+    $line-height: null,
+    $line-height-big: null,
+    $font-family: null,
+    $padding: null,
+    $padding-big: null,
+    $sort-icon-margin: null,
+    $sort-icon-margin-big: null,
+    $sort-icon-size: null,
+    $sort-icon-size-big: null,
+    $sort-icon-font-size: null,
+    $sort-icon-font-size-big: null,
+    $sort-icon-color: null,
+    $sort-secondary-icon-color: null,
+    $sort-aux-icon-color: null,
+    $sort-asc-icon: null,
+    $sort-desc-icon: null,
+    $trigger-width: null,
+    $trigger-width-big: null,
+    $trigger-background-color: null,
+    $trigger-border-width: null,
+    $trigger-border-style: null,
+    $trigger-border-color: null,
+    $trigger-icon: null,
+    $trigger-icon-color: null,
+    $trigger-icon-font-size: null,
+    $trigger-icon-font-size-big: null,
+    $resizer-width: null,
+    $resizer-background-color: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+
+        > .#{$prefix}header-el {
+            color: $color;
+            background-color: $background-color;
+            @include font($font-weight, $font-size, $line-height, $font-family);
+            @include border($border-width, $border-style, $border-color);
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    font-size: $font-size-big;
+                    line-height: $line-height-big;
+                }
+            }
+
+            &:hover {
+                background-color: $hovered-background-color;
+            }
+
+            .#{$prefix}trigger-el {
+                width: $trigger-width;
+                color: $trigger-icon-color;
+                background-color: $trigger-background-color;
+                @include border($trigger-border-width, $trigger-border-style, $trigger-border-color);
+
+                @include icon(
+                    $icon: $trigger-icon,
+                    $font-size: $trigger-icon-font-size,
+                    $font-size-big: $trigger-icon-font-size-big
+                );
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        width: $trigger-width-big;
+                    }
+                }
+            }
+
+            // resizer element
+            &:after {
+                width: $resizer-width;
+                background-color: $resizer-background-color;
+            }
+        }
+
+        &.#{$prefix}sorted {
+            > .#{$prefix}header-el {
+                background-color: $sorted-background-color;
+            }
+
+            .#{$prefix}sort-icon-el {
+                margin: $sort-icon-margin;
+                height: $sort-icon-size;
+                width: $sort-icon-size;
+                color: $sort-icon-color;
+
+                @include icon(
+                    $font-size: $sort-icon-font-size,
+                    $font-size-big: $sort-icon-font-size-big
+                );
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin: $sort-icon-margin-big;
+                        height: $sort-icon-size-big;
+                        width: $sort-icon-size-big;
+                    }
+                }
+            }
+
+            // Allow different colors for secondary and below sort arrows.
+            &.#{$prefix}secondary-sort {
+                .#{$prefix}sort-icon-el {
+                    color: $sort-secondary-icon-color;
+                }
+            }
+            &.#{$prefix}aux-sort {
+                .#{$prefix}sort-icon-el {
+                    color: $sort-aux-icon-color;
+                }
+            }
+        }
+
+        &.#{$prefix}sorted-asc .#{$prefix}sort-icon-el {
+            @include icon($sort-asc-icon);
+        }
+
+        &.#{$prefix}sorted-desc .#{$prefix}sort-icon-el {
+            @include icon($sort-desc-icon);
+        }
+    }
+
+    @include toolable-ui(
+        $ui: $ui,
+        $xtype: $xtype,
+        $padding: $padding,
+        $padding-big: $padding-big,
+        $anchor: title-wrap-el
+    );
+}
+
+// Non-UI vars
+
+/**
+ * @var {string/list}
+ * Column menu sort ascending item icon.
+ */
+$gridcolumn-menu-sort-asc-icon: dynamic($fa-var-sort-alpha-asc);
+
+/**
+ * @var {string/list}
+ * Column menu sort descending item icon.
+ */
+$gridcolumn-menu-sort-desc-icon: dynamic($fa-var-sort-alpha-desc);
+
+/**
+ * @var {string/list}
+ * Column hide/show menu item icon.
+ */
+$gridcolumn-menu-columns-icon: dynamic($fa-var-columns);
+
+/**
+ * @var {string/list}
+ * Grid Column "Group by this column" icon
+ */
+$gridcolumn-menu-group-by-this-icon: dynamic($ext-var-group-by ExtJS);

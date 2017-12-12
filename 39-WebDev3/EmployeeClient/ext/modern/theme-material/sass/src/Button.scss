@@ -1,0 +1,73 @@
+/* Floating Action Buttons
+{
+  xtype: 'button',
+  ui: 'fab',
+  bottom: 16,
+  right: 16,
+  iconCls: 'md-icon-add'
+}*/
+.#{$prefix}button-fab {
+    .#{$prefix}inner-el {
+        @include material-shadow(2);
+        color: $accent-foreground-color;
+        display: flex;
+        width: 56px;
+        height: 56px;
+        background-color: $accent-color;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background-color 450ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .#{$prefix}ripple {
+        background-color: $accent-foreground-color;
+    }
+
+    &.#{$prefix}hovered .#{$prefix}inner-el {
+        background-color: $accent-pressed-color;
+    }
+
+    .#{$prefix}keyboard-mode &.#{$prefix}focused .#{$prefix}inner-el {
+        background-color: $accent-pressed-color;
+    }
+
+    .#{$prefix}big & {
+        .#{$prefix}inner-el {
+            border-radius: 50%;
+        }
+    }
+
+    .#{$prefix}icon-el {
+        color: $accent-foreground-color;
+    }
+
+    &.#{$prefix}pressing {
+        .#{$prefix}inner-el {
+            @include material-shadow(3);
+            .#{$prefix}icon-el {
+                color: $accent-foreground-color;
+            }
+            background-color: $accent-pressed-color;
+        }
+    }
+}
+
+.#{$prefix}docked-top {
+    .#{$prefix}has-badge .#{$prefix}badge-el {
+        top: -8px;
+    }
+}
+
+.#{$prefix}has-badge {
+    .#{$prefix}badge-el {
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center;
+        display: block;
+        overflow: hidden;
+
+        @include material-shadow(1);
+    }
+}

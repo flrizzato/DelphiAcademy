@@ -1,0 +1,312 @@
+/**
+ * @class Ext.dataview.ItemHeader
+ */
+
+//# fashion replaces $list-group-header-color
+/**
+ * @var {color}
+ * List ItemHeader color
+ */
+$itemheader-color: dynamic($highlight-color);
+
+/**
+ * @var {color}
+ * List ItemHeader color when {@link Ext.dataview.List#pinHeaders pinned}
+ */
+$itemheader-pinned-color: dynamic(null);
+
+//# fashion replaces $list-group-header-background-color
+/**
+ * @var {color}
+ * List ItemHeader background-color
+ */
+$itemheader-background-color: dynamic($neutral-light-color);
+
+/**
+ * @var {color}
+ * List ItemHeader background-color when {@link Ext.dataview.List#pinHeaders pinned}
+ */
+$itemheader-pinned-background-color: dynamic(null);
+
+/**
+ * @var {number/list}
+ * List ItemHeader border-width
+ */
+$itemheader-border-width: dynamic($listitem-border-width);
+
+/**
+ * @var {string}
+ * List ItemHeader border-style
+ */
+$itemheader-border-style: dynamic($listitem-border-style);
+
+//# fashion replaces $list-group-header-border-color
+/**
+ * @var {color}
+ * List ItemHeader border-color
+ */
+$itemheader-border-color: dynamic($neutral-medium-dark-color);
+
+/**
+ * @var {color}
+ * List ItemHeader border-color when {@link Ext.dataview.List#pinHeaders pinned}
+ */
+$itemheader-pinned-border-color: dynamic(null);
+
+/**
+ * @var {number}
+ * List ItemHeader outline-width when focused
+ */
+$itemheader-focused-outline-width: dynamic($listitem-focused-outline-width);
+
+/**
+ * @var {string}
+ * List ItemHeader outline-style when focused
+ */
+$itemheader-focused-outline-style: dynamic($listitem-focused-outline-style);
+
+/**
+ * @var {color}
+ * List ItemHeader outline-color when focused
+ */
+$itemheader-focused-outline-color: dynamic($listitem-focused-outline-color);
+
+/**
+ * @var {number}
+ * List ItemHeader outline-offset when focused
+ */
+$itemheader-focused-outline-offset: dynamic($listitem-focused-outline-offset);
+
+/**
+ * @var {list}
+ * List ItemHeader box-shadow
+ */
+$itemheader-box-shadow: dynamic(null);
+
+/**
+ * @var {list}
+ * List ItemHeader box-shadow when {@link Ext.dataview.List#pinHeaders pinned}
+ */
+$itemheader-pinned-box-shadow: dynamic($listitem-pinned-box-shadow);
+
+/**
+ * @var {list}
+ * List ItemHeader box-shadow when {@link Ext.dataview.List#pinFooters pinned} to the bottom
+ */
+$itemheader-pinned-bottom-box-shadow: dynamic($listitem-pinned-bottom-box-shadow);
+
+//# fashion replaces $list-group-header-font-weight
+/**
+ * @var {string/number}
+ * List ItemHeader font-weight
+ */
+$itemheader-font-weight: dynamic($font-weight-bold);
+
+//# fashion replaces $list-group-header-font-size
+/**
+ * @var {number}
+ * List ItemHeader font-size
+ */
+$itemheader-font-size: dynamic($listitem-font-size);
+
+//# fashion replaces $list-group-header-font-size-big
+/**
+ * @var {number}
+ * List ItemHeader font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$itemheader-font-size-big: dynamic($listitem-font-size-big);
+
+//# fashion replaces $list-group-header-line-height
+/**
+ * @var {number}
+ * List ItemHeader line-height
+ */
+$itemheader-line-height: dynamic($listitem-line-height);
+
+//# fashion replaces $list-group-header-line-height-big
+/**
+ * @var {number}
+ * List ItemHeader line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$itemheader-line-height-big: dynamic($listitem-line-height-big);
+
+//# fashion replaces $list-group-header-font-family
+/**
+ * @var {string}
+ * List ItemHeader font-family
+ */
+$itemheader-font-family: dynamic($listitem-font-family);
+
+//# fashion replaces $list-group-header-padding
+/**
+ * @var {number/list}
+ * List ItemHeader padding
+ */
+$itemheader-padding: dynamic($listitem-padding);
+
+//# fashion replaces $list-group-header-padding-big
+/**
+ * @var {number/list}
+ * List ItemHeader padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$itemheader-padding-big: dynamic($listitem-padding-big);
+
+/**
+ * Creates a visual theme for a List ItemHeader.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=itemheader] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $color
+ * List ItemHeader color
+ *
+ * @param {color} $pinned-color
+ * List ItemHeader color when {@link Ext.dataview.List#pinHeaders pinned}
+ *
+ * @param {color} $background-color
+ * List ItemHeader background-color
+ *
+ * @param {color} $pinned-background-color
+ * List ItemHeader background-color when {@link Ext.dataview.List#pinHeaders pinned}
+ *
+ * @param {number/list} $border-width
+ * List ItemHeader border-width
+ *
+ * @param {string} $border-style
+ * List ItemHeader border-style
+ *
+ * @param {color} $border-color
+ * List ItemHeader border-color
+ *
+ * @param {color} $pinned-border-color
+ * List ItemHeader border-color when {@link Ext.dataview.List#pinHeaders pinned}
+ *
+ * @param {number} $focused-outline-width
+ * List ItemHeader outline-width when focused
+ *
+ * @param {string} $focused-outline-style
+ * List ItemHeader outline-style when focused
+ *
+ * @param {color} $focused-outline-color
+ * List ItemHeader outline-color when focused
+ *
+ * @param {number} $focused-outline-offset
+ * List ItemHeader outline-offset when focused
+ *
+ * @param {list} $box-shadow
+ * List ItemHeader box-shadow
+ *
+ * @param {list} $pinned-box-shadow
+ * List ItemHeader box-shadow when {@link Ext.dataview.List#pinHeaders pinned}
+ *
+ * @param {list} $pinned-bottom-box-shadow
+ * List ItemHeader box-shadow when {@link Ext.dataview.List#pinFooters pinned} to the bottom
+ *
+ * @param {string/number} $font-weight
+ * List ItemHeader font-weight
+ *
+ * @param {number} $font-size
+ * List ItemHeader font-size
+ *
+ * @param {number} $font-size-big
+ * List ItemHeader font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $line-height
+ * List ItemHeader line-height
+ *
+ * @param {number} $line-height-big
+ * List ItemHeader line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $font-family
+ * List ItemHeader font-family
+ *
+ * @param {number/list} $padding
+ * List ItemHeader padding
+ *
+ * @param {number/list} $padding-big
+ * List ItemHeader padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+@mixin itemheader-ui(
+    $ui: null,
+    $xtype: itemheader,
+    $color: null,
+    $pinned-color: null,
+    $background-color: null,
+    $pinned-background-color: null,
+    $border-width: null,
+    $border-style: null,
+    $border-color: null,
+    $pinned-border-color: null,
+    $focused-outline-width: null,
+    $focused-outline-style: null,
+    $focused-outline-color: null,
+    $focused-outline-offset: null,
+    $box-shadow: null,
+    $pinned-box-shadow: null,
+    $pinned-bottom-box-shadow: null,
+    $font-weight: null,
+    $font-size: null,
+    $font-size-big: null,
+    $line-height: null,
+    $line-height-big: null,
+    $font-family: null,
+    $padding: null,
+    $padding-big: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        color: $color;
+        background-color: $background-color;
+        @include border($border-width, $border-style, $border-color);
+        @include font($font-weight, $font-size, $line-height, $font-family);
+        box-shadow: $box-shadow;
+        margin-bottom: -(bottom($border-width));
+
+        + .#{$prefix}scrolldock-end {
+            margin-top: bottom($border-width)
+        }
+
+        @if $enable-big  {
+            .#{$prefix}big & {
+                font-size: $font-size-big;
+                line-height: $line-height-big;
+            }
+        }
+
+        &.#{$prefix}pinned {
+            color: $pinned-color;
+            background-color: $pinned-background-color;
+            border-color: $pinned-border-color;
+            box-shadow: $pinned-box-shadow;
+        }
+
+        &.#{$prefix}pinned-bottom {
+            box-shadow: $pinned-bottom-box-shadow;
+        }
+
+        &.#{$prefix}focused {
+            .#{$prefix}keyboard-mode & {
+                @include outline(
+                    $width: $focused-outline-width,
+                    $style: $focused-outline-style,
+                    $color: $focused-outline-color,
+                    $offset: $focused-outline-offset,
+                    $border-width: $border-width
+                );
+            }
+        }
+
+    }
+
+    @include toolable-ui(
+        $ui: $ui,
+        $xtype: $xtype,
+        $padding: $padding,
+        $padding-big: $padding-big
+    );
+}

@@ -1,0 +1,126 @@
+@function button-hovered-background-color($background-color) {
+    @if $background-color == transparent or $background-color == null {
+        @return $background-color;
+    } @else {
+        @return darken($background-color, 6%);
+    }
+}
+
+@function button-pressed-background-color($background-color) {
+    @if $background-color == transparent or $background-color == null {
+        @return $background-color;
+    } @else {
+        @return darken($background-color, 12%);
+    }
+}
+
+@function button-focused-background-color($background-color) {
+    @return null;
+}
+
+@function button-disabled-background-color($background-color) {
+    @return null;
+}
+
+@function button-border-color($background-color) {
+    @if $background-color == transparent or $background-color == null {
+        @return $background-color;
+    } @else {
+        @return darken($background-color, 8%);
+    }
+}
+
+@function button-hovered-border-color($background-color) {
+    @return button-border-color($background-color);
+}
+
+@function button-pressed-border-color($background-color) {
+    @return button-border-color($background-color);
+}
+
+@function button-focused-border-color($background-color) {
+    @return button-border-color($background-color);
+}
+
+@function button-disabled-border-color($background-color) {
+    @return button-border-color($background-color);
+}
+
+@function button-color($background-color) {
+    @return color-by-background($background-color);
+}
+
+@function button-hovered-color($background-color, $color) {
+    @return button-color($background-color);
+}
+
+@function button-pressed-color($background-color, $color) {
+    @return button-color($background-color);
+}
+
+@function button-focused-color($background-color, $color) {
+    @return button-color($background-color);
+}
+
+@function button-disabled-color($background-color, $color) {
+    @return button-color($background-color);
+}
+
+@function button-background-gradient($background-color) {
+    @if $background-color != transparent and $background-color != null {
+        @return color_stops(
+            mix(#fff, $background-color, 10%),
+            $background-color 50%,
+            mix(#000, $background-color, 5%) 51%,
+            $background-color
+        );
+    }
+    @return null;
+}
+
+@function button-hovered-background-gradient($background-color) {
+    @return button-background-gradient($background-color);
+}
+
+@function button-pressed-background-gradient($background-color) {
+    @if $background-color != transparent and $background-color != null {
+        @return color_stops(
+            $background-color,
+            mix(#000, $background-color, 5%) 50%,
+            $background-color 51%,
+            mix(#fff, $background-color, 10%)
+        );
+    }
+    @return null;
+}
+
+@function button-focused-background-gradient($background-color) {
+    @return button-background-gradient($background-color);
+}
+
+@function button-disabled-background-gradient($background-color) {
+    @return button-background-gradient($background-color);
+}
+
+@function button-focused-outline-color($background-color, $color) {
+    $dark-color: null;
+    $light-color: null;
+
+    @if $background-color != null {
+        @if $base-color != null {
+            $dark-color: mix($background-color, $base-color, 20%);
+        }
+
+        @if $color != null {
+            $light-color: mix($background-color, $color, 20%);
+        }
+
+        @return color-by-background(
+            $bg-color: $background-color,
+            $dark-color: $dark-color,
+            $light-color: $light-color
+        );
+    }
+
+    @return null;
+}

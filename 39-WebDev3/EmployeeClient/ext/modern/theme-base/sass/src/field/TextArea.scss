@@ -1,0 +1,16 @@
+/**
+ * @class Ext.field.TextArea
+ */
+
+.#{$prefix}textareafield {
+    min-height: unset;
+
+    .#{$prefix}input-el {
+        resize: none;
+    }
+}
+
+.#{$prefix}ie11 .#{$prefix}textareafield .#{$prefix}input-el {
+    overflow: auto;
+    min-width: 0;
+}

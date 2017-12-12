@@ -1,0 +1,60 @@
+[
+    {
+        "platform": "Windows 7",
+        "browserName": "internet explorer",
+        "version": "8",
+        "prerun": {
+            "executable": "https://qa.sencha.com/js-timeout-fix.bat"
+        },
+        "enablePersistentHover": false,
+        "chunks": 10
+    },
+    {
+        "platform": "Windows 7",
+        "browserName": "internet explorer",
+        "version": "11",
+        "enablePersistentHover": false,
+        "chunks": 10
+    },
+    {
+        "platformName": "iOS",
+        "browserName": "Safari",
+        "platformVersion": "9.3",
+        "appiumVersion": "1.6.4",
+        "deviceName": "iPad Retina Simulator",
+        "deviceOrientation": "landscape",
+        "displayName": "iOS 9.3@Safari",
+        "chunks": 10
+    },
+    {
+        "browserName": "MicrosoftEdge",
+        "platform": "Windows 10",
+        "version": "latest",
+        "enablePersistentHover": false,
+        "chunks": 10
+    },
+    {
+        "platform": "OS X 10.11",
+        "browserName": "safari",
+        "version": "9",
+        "chunks": 5
+    },
+//    {
+//        "platform": "OS X 10.12",
+//        "browserName": "safari",
+//        "version": "10",
+//        "chunks": 7
+//    },
+    {
+        "platform": "Windows 10",
+        "browserName": "firefox",
+        "version": "latest",
+        "chunks": 5
+    },
+    {
+        "platform": "Windows 10",
+        "browserName": "chrome",
+        "version": "latest",
+        "chunks": 5
+    }
+]

@@ -1,0 +1,9 @@
+$checkboxfield-checkbox-size: dynamic(18px);
+$checkboxfield-checkbox-size-big: dynamic(20px);
+$checkboxfield-checkbox-icon: dynamic('check_box_outline_blank');
+$checkboxfield-checked-checkbox-icon: dynamic('check_box');
+$checkboxfield-checkbox-color: dynamic($highlight-color);
+$checkboxfield-checked-checkbox-color: dynamic($base-color);
+$checkboxfield-disabled-checkbox-color: dynamic($disabled-color);
+$checkboxfield-body-padding: dynamic(($content-padding / 4) 0);
+$checkboxfield-body-padding-big: dynamic(($content-padding / 4) 0);

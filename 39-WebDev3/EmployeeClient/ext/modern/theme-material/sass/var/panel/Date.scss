@@ -1,0 +1,38 @@
+$datepanel-split-title-header-padding: dynamic(12px 8px);
+
+$datepanel-header-year-font-size: dynamic(16px);
+$datepanel-header-year-line-height: dynamic($datepanel-header-year-font-size);
+
+$datepanel-header-year-inactive-opacity: dynamic(0.6);
+$datepanel-header-year-inactive-font-size: dynamic(14px);
+
+$datepanel-header-font-size: dynamic(28px);
+$datepanel-header-line-height: dynamic(32px);
+
+$datepanel-header-title-inactive-opacity: dynamic(0.6);
+
+$datepanel-header-inactive-transition: dynamic(
+    font-size 0.35s cubic-bezier(.4,0,.2,1),
+    opacity 0.35s cubic-bezier(.4,0,.2,1)
+);
+
+$datepanel-cell-width: dynamic(40px);
+$datepanel-cell-height: dynamic(40px);
+$datepanel-cell-border-radius: dynamic(100%);
+
+$datepanel-day-cell-background-color: dynamic(transparent);
+$datepanel-pane-margin: dynamic(15px);
+
+$datepanel-day-cell-color: dynamic(#9e9e9e);
+$datepanel-day-cell-font-weight: dynamic(500);
+
+$datepanel-caption-padding: dynamic(0 0 10px 0);
+$datepanel-caption-font-size: dynamic(14px);
+$datepanel-caption-font-weight: dynamic(600);
+$datepanel-caption-color: dynamic(#3e3e3e);
+
+$datepanel-today-cell-color: dynamic($base-color);
+$datepanel-today-cell-background-color: dynamic(null);
+$datepanel-today-cell-font-weight: dynamic(700);
+
+$datepanel-selected-cell-font-weight: dynamic(normal);

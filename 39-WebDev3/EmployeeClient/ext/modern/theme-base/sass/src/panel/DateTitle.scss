@@ -1,0 +1,41 @@
+.#{$prefix}datetitle {
+    .#{$prefix}body-el {
+        position: relative;
+        width: 100%;
+    }
+
+    .#{$prefix}year-el {
+        cursor: pointer;
+    }
+
+    .#{$prefix}text-container-el {
+        width: 100%;
+        position: relative;
+        align-items: center;
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+    }
+
+    .#{$prefix}cloned {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+
+
+    &.#{$prefix}split {
+        .#{$prefix}text-container-el {
+            display: block;
+        }
+    }
+
+    &:not(.#{$prefix}split) {
+        .#{$prefix}text-el {
+            text-align: center;
+            width: 100%;
+        }
+    }
+}

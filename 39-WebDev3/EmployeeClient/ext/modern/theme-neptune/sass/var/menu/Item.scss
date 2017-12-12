@@ -1,0 +1,473 @@
+/**
+ * @class Ext.menu.Item
+ */
+
+/**
+ * @var {color}
+ * Menu Item text color
+ */
+$menuitem-color: dynamic($color);
+
+/**
+ * @var {color}
+ * Menu Item text color when active
+ */
+$menuitem-active-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu Item text color when disabled
+ */
+$menuitem-disabled-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu Item background-color
+ */
+$menuitem-background-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu Item background-color when active
+ */
+$menuitem-active-background-color: dynamic(mix(#fff, $base-light-color, 50%));
+
+/**
+ * @var {color}
+ * Menu Item background-color when disabled
+ */
+$menuitem-disabled-background-color: dynamic(null);
+
+/**
+ * @var {string/number}
+ * Menu Item font-weight
+ */
+$menuitem-font-weight: dynamic($font-weight);
+
+/**
+ * @var {number}
+ * Menu Item font-size
+ */
+$menuitem-font-size: dynamic($font-size);
+
+/**
+ * @var {number}
+ * Menu Item font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuitem-font-size-big: dynamic($font-size-big);
+
+/**
+ * @var {string}
+ * Menu Item font-family
+ */
+$menuitem-font-family: dynamic($font-family);
+
+/**
+ * @var {number}
+ * Menu Item height
+ */
+$menuitem-height: dynamic(24px);
+
+/**
+ * @var {number}
+ * Menu Item height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuitem-height-big: dynamic(32px);
+
+/**
+ * @var {string}
+ * Menu Item cursor
+ */
+$menuitem-cursor: dynamic(pointer);
+
+/**
+ * @var {string}
+ * Menu Item cursor when disabled
+ */
+$menuitem-disabled-cursor: dynamic(default);
+
+/**
+ * @var {number}
+ * Menu item outline-width when focused
+ */
+$menuitem-focused-outline-width: dynamic(1px);
+
+/**
+ * @var {string}
+ * Menu item outline-style when focused
+ */
+$menuitem-focused-outline-style: dynamic(solid);
+
+/**
+ * @var {color}
+ * Menu item outline-color when focused
+ */
+$menuitem-focused-outline-color: dynamic($base-color);
+
+/**
+ * @var {color}
+ * Menu item outline-offset when focused
+ */
+$menuitem-focused-outline-offset: dynamic(-$menuitem-focused-outline-width);
+
+/**
+ * @var {number}
+ * The opacity of disabled {@link Ext.menu.Item Menu Items}
+ */
+$menuitem-disabled-opacity: dynamic(.5);
+
+/**
+ * @var {color}
+ * Menu Item icon color
+ */
+$menuitem-icon-color: dynamic(#808080);
+
+/**
+ * @var {color}
+ * Menu Item icon color when active
+ */
+$menuitem-active-icon-color: dynamic($menuitem-active-color);
+
+/**
+ * @var {color}
+ * Menu Item icon color when disabled
+ */
+$menuitem-disabled-icon-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Item icon size
+ */
+$menuitem-icon-size: dynamic(16px);
+
+/**
+ * @var {number}
+ * Menu Item icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuitem-icon-size-big: dynamic(20px);
+
+/**
+ * @var {number}
+ * Menu Item icon font-size
+ */
+$menuitem-icon-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Item icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuitem-icon-font-size-big: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu Item arrow icon
+ */
+$menuitem-arrow-icon: dynamic($fa-var-caret-right);
+
+/**
+ * @var {color}
+ * Menu Item arrow icon color
+ */
+$menuitem-arrow-icon-color: dynamic($menuitem-icon-color);
+
+/**
+ * @var {color}
+ * Menu Item arrow icon color when active
+ */
+$menuitem-active-arrow-icon-color: dynamic($menuitem-active-icon-color);
+
+/**
+ * @var {color}
+ * Menu Item arrow icon color when disabled
+ */
+$menuitem-disabled-arrow-icon-color: dynamic($menuitem-disabled-icon-color);
+
+/**
+ * @var {number}
+ * Menu Item arrow icon size
+ */
+$menuitem-arrow-icon-size: dynamic($menuitem-icon-size);
+
+/**
+ * @var {number}
+ * Menu Item arrow icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuitem-arrow-icon-size-big: dynamic($menuitem-icon-size-big);
+
+/**
+ * @var {number}
+ * Menu Item arrow icon font-size
+ */
+$menuitem-arrow-icon-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu Item arrow icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuitem-arrow-icon-font-size-big: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu Item arrow icon margin
+ */
+$menuitem-arrow-icon-margin: dynamic(0 7px);
+
+/**
+ * @var {number/list}
+ * Menu Item arrow icon margin in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuitem-arrow-icon-margin-big: dynamic(0 10px);
+
+/**
+ * Creates a visual theme for a Menu Item.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=menuitem] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $color
+ * Menu Item text color
+ *
+ * @param {color} $active-color
+ * Menu Item text color when active
+ *
+ * @param {color} $disabled-color
+ * Menu Item text color when disabled
+ *
+ * @param {color} $background-color
+ * Menu Item background-color
+ *
+ * @param {color} $active-background-color
+ * Menu Item background-color when active
+ *
+ * @param {color} $disabled-background-color
+ * Menu Item background-color when disabled
+ *
+ * @param {string/number} $font-weight
+ * Menu Item font-weight
+ *
+ * @param {number} $font-size
+ * Menu Item font-size
+ *
+ * @param {number} $font-size-big
+ * Menu Item font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $font-family
+ * Menu Item font-family
+ *
+ * @param {number} $height
+ * Menu Item height
+ *
+ * @param {number} $height-big
+ * Menu Item height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $cursor
+ * Menu Item cursor
+ *
+ * @param {string} $disabled-cursor
+ * Menu Item cursor when disabled
+ *
+ * @param {number} $focused-outline-width
+ * Menu item outline-width when focused
+ *
+ * @param {string} $focused-outline-style
+ * Menu item outline-style when focused
+ *
+ * @param {color} $focused-outline-color
+ * Menu item outline-color when focused
+ *
+ * @param {color} $focused-outline-offset
+ * Menu item outline-offset when focused
+ *
+ * @param {number} $disabled-opacity
+ * The opacity of disabled {@link Ext.menu.Item Menu Items}
+ *
+ * @param {color} $icon-color
+ * Menu Item icon color
+ *
+ * @param {color} $active-icon-color
+ * Menu Item icon color when active
+ *
+ * @param {color} $disabled-icon-color
+ * Menu Item icon color when disabled
+ *
+ * @param {number} $icon-size
+ * Menu Item icon size
+ *
+ * @param {number} $icon-size-big
+ * Menu Item icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $icon-font-size
+ * Menu Item icon font-size
+ *
+ * @param {number} $icon-font-size-big
+ * Menu Item icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $arrow-icon
+ * Menu Item arrow icon
+ *
+ * @param {color} $arrow-icon-color
+ * Menu Item arrow icon color
+ *
+ * @param {color} $active-arrow-icon-color
+ * Menu Item arrow icon color when active
+ *
+ * @param {color} $disabled-arrow-icon-color
+ * Menu Item arrow icon color when disabled
+ *
+ * @param {number} $arrow-icon-size
+ * Menu Item arrow icon size
+ *
+ * @param {number} $arrow-icon-size-big
+ * Menu Item arrow icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $arrow-icon-font-size
+ * Menu Item arrow icon font-size
+ *
+ * @param {number} $arrow-icon-font-size-big
+ * Menu Item arrow icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number/list} $arrow-icon-margin
+ * Menu Item arrow icon margin
+ *
+ * @param {number/list} $arrow-icon-margin-big
+ * Menu Item arrow icon margin in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+@mixin menuitem-ui(
+    $ui: null,
+    $xtype: menuitem,
+    $color: null,
+    $active-color: null,
+    $disabled-color: null,
+    $background-color: null,
+    $active-background-color: null,
+    $disabled-background-color: null,
+    $font-weight: null,
+    $font-size: null,
+    $font-size-big: null,
+    $font-family: null,
+    $height: null,
+    $height-big: null,
+    $cursor: null,
+    $disabled-cursor: null,
+    $focused-outline-width: null,
+    $focused-outline-style: null,
+    $focused-outline-color: null,
+    $focused-outline-offset: null,
+    $disabled-opacity: null,
+    $icon-color: null,
+    $active-icon-color: null,
+    $disabled-icon-color: null,
+    $icon-size: null,
+    $icon-size-big: null,
+    $icon-font-size: null,
+    $icon-font-size-big: null,
+    $arrow-icon: null,
+    $arrow-icon-color: null,
+    $active-arrow-icon-color: null,
+    $disabled-arrow-icon-color: null,
+    $arrow-icon-size: null,
+    $arrow-icon-size-big: null,
+    $arrow-icon-font-size: null,
+    $arrow-icon-font-size-big: null,
+    $arrow-icon-margin: null,
+    $arrow-icon-margin-big: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        .#{$prefix}body-el {
+            // These properties go on the body el so as to not affect the menu item's
+            // "separator"
+            color: $color;
+            @include font($font-weight: $font-weight, $font-size: $font-size, $font-family: $font-family);
+            background-color: $background-color;
+            height: $height;
+            cursor: $cursor;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    font-size: $font-size-big;
+                    height: $height-big;
+                }
+            }
+        }
+
+        .#{$prefix}icon-el {
+            @include icon(
+                $color: $icon-color,
+                $size: $icon-size,
+                $size-big: $icon-size-big,
+                $font-size: $icon-font-size,
+                $font-size-big: $icon-font-size-big
+            );
+        }
+
+        .#{$prefix}arrow-el {
+            margin: $arrow-icon-margin;
+
+            @include icon(
+                $icon: $arrow-icon,
+                $color: $arrow-icon-color,
+                $size: $arrow-icon-size,
+                $size-big: $arrow-icon-size-big,
+                $font-size: $arrow-icon-font-size,
+                $font-size-big: $arrow-icon-font-size-big
+            );
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin: $arrow-icon-margin-big;
+                }
+            }
+        }
+
+        &.#{$prefix}active {
+            .#{$prefix}body-el {
+                color: $active-color;
+                background-color: $active-background-color;
+            }
+
+            .#{$prefix}icon-el {
+                color: $active-icon-color;
+            }
+
+            .#{$prefix}arrow-el {
+                color: $active-arrow-icon-color;
+            }
+        }
+
+        &.#{$prefix}disabled {
+            .#{$prefix}body-el {
+                color: $disabled-color;
+                background-color: $disabled-background-color;
+                cursor: $disabled-cursor;
+            }
+
+            // disabled opacity is applied to the individual child els of the body to
+            // avoid affecting the focus outline pseudo el
+            .#{$prefix}text-el {
+                opacity: $disabled-opacity;
+            }
+
+            .#{$prefix}icon-el {
+                color: $disabled-icon-color;
+                opacity: $disabled-opacity;
+            }
+
+            .#{$prefix}arrow-el {
+                color: $disabled-arrow-icon-color;
+                opacity: $disabled-opacity;
+            }
+        }
+
+        &.#{$prefix}focused .#{$prefix}body-el {
+            .#{$prefix}keyboard-mode & {
+                @include outline($focused-outline-width, $focused-outline-style, $focused-outline-color, $focused-outline-offset);
+            }
+        }
+    }
+}

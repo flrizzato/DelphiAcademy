@@ -1,0 +1,84 @@
+/**
+ * Creates an outline round an element, by default immediately
+ * surrounding the element. It may be offset positively (away from the element bounds)
+ * or negatively (within the element bounds).
+ *
+ * @param {number/list} $width
+ * The outline-width
+ *
+ * @param {string/list} $style
+ * The outline-style
+ *
+ * @param {color/list} $color
+ * The outline-color
+ *
+ * @param {number} $offset
+ * The outline-offset
+ *
+ * @param {string/boolean} [$pseudo=after]
+ * A pseudo element is used to create the appearance of an outline in IE and Edge if
+ * required by $offset.  By default the :after pseudo is used.  Set this to 'before'
+ * if :after is not available.  Set this to `false` to use CSS outline.
+ *
+ * @param {number} $z-index
+ * z-index of the pseudo element
+ *
+ * @param {number/list} $border-width
+ * The border-width of the element that the outline is being applied to.
+ * Since the pseudo element is rendered inside the borders, the border-width needs to be
+ * included in the $offset calculation
+ *
+ * @param {number/list} $border-radius
+ * The border radius of the of pseudo element.
+ *
+ * @private
+ */
+@mixin outline(
+    $width: null,
+    $style: null,
+    $color: null,
+    $offset: null,
+    $pseudo: after,
+    $z-index: null,
+    $border-width: null,
+    $border-radius: null
+) {
+    @if ($border-radius == null and ($offset == null or $offset == 0 or $pseudo == false)) {
+        @if $width != null and $style != null and $color != null {
+            outline: $width $style $color;
+        } @else {
+            outline-width: $width;
+            outline-style: $style;
+            outline-color: $color;
+        }
+
+        outline-offset: $offset;
+    } @else {
+        // IE/Edge don't support outline-offset so we have to fake it using a pseudo element
+        @if $z-index == null and $pseudo == before {
+            $z-index: 1;
+        }
+
+        &:#{$pseudo} {
+            content: '';
+            position: absolute;
+            top: -$width - $offset;
+            right: -$width - $offset;
+            bottom: -$width - $offset;
+            left: -$width - $offset;
+            pointer-events: none;
+            @include border($width, $style, $color);
+            border-radius: $border-radius;
+            z-index: $z-index;
+            // use negative margins to account for parent border-width instead of including
+            // border-width in the calculation for top/right/bottom/left.
+            // This ensures that UI mixins are not required to pass both $offset and $border-width -
+            // they can inherit one or the other from another UI or the default UI.
+            margin: box(-(top($border-width)), -(right($border-width)), -(bottom($border-width)), -(left($border-width)));
+        }
+
+        @if $offset > -1 {
+            overflow: visible;
+        }
+    }
+}

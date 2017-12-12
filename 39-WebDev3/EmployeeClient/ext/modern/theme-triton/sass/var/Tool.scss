@@ -1,0 +1,15 @@
+$tool-opacity: dynamic(0.8);
+$tool-hovered-opacity: dynamic(1);
+$tool-pressed-opacity: dynamic(0.8);
+
+$tool-boxscroller-tabbar-ui: dynamic((
+    color: #fff,
+    opacity: .5,
+    margin: 4px 0 0 0,
+    hovered-opacity: .6,
+    pressed-opacity: .7,
+    width: 24px,
+    height: 24px,
+    width-big: 32px,
+    height-big: 32px
+));

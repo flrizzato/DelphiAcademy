@@ -1,0 +1,29 @@
+/**
+ * @class Ext.dataview.plugin.ListPaging
+ */
+
+.#{$prefix}listpaging {
+    .#{$prefix}loading-spinner {
+        display: none;
+    }
+
+    .#{$prefix}message {
+        cursor: pointer;
+    }
+
+    &.#{$prefix}disabled {
+        .#{$prefix}message {
+            cursor: default;
+        }
+    }
+
+    &.#{$prefix}loading {
+        .#{$prefix}loading-spinner {
+            display: block;
+        }
+
+        .#{$prefix}message {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.#{$prefix}layout-center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.#{$prefix}layout-center-item,
+.#{$prefix}layout-center > .#{$prefix}innerhtml {
+    // use auto margins to center the content instead of align-items/justify-content
+    // so that the entire content is reachable when the container is scrollable.
+    // See https://drafts.csswg.org/css-flexbox-1/#auto-margins
+    margin: auto;
+}
+
+.#{$prefix}layout-center-item.#{$prefix}widthed {
+    flex-shrink: 0;
+}

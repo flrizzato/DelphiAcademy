@@ -1,0 +1,39 @@
+/**
+ * @class Ext.Sheet
+ */
+
+/**
+ * @var {color}
+ * Sheet background-color
+ */
+$sheet-background-color: dynamic($background-color);
+
+/**
+ * @var {color}
+ * Sheet border-color
+ */
+$sheet-border-color: dynamic($neutral-color);
+
+/**
+ * @var {number}
+ * Sheet border-width
+ */
+$sheet-border-width: dynamic($panel-border-width);
+
+/**
+ * @var {number}
+ * Sheet border-style
+ */
+$sheet-border-style: dynamic($panel-border-style);
+
+/**
+ * @var {number}
+ * Space between vertically aligned sheet buttons
+ */
+$sheet-button-spacing: dynamic(6px);
+
+/**
+ * @var {number}
+ * Sheet padding
+ */
+$sheet-padding: dynamic(null);

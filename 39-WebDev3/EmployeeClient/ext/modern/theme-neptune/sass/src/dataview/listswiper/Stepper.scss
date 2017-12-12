@@ -1,0 +1,59 @@
+@include listswiperstepper-ui(
+    $color: $listswiperstepper-color,
+    $active-color: $listswiperstepper-active-color,
+    $undo-color: $listswiperstepper-undo-color,
+    $background-color: $listswiperstepper-background-color,
+    $active-background-color: $listswiperstepper-active-background-color,
+    $undo-background-color: $listswiperstepper-undo-background-color,
+    $padding: $listswiperstepper-padding,
+    $padding-big: $listswiperstepper-padding-big,
+    $font-family: $listswiperstepper-font-family,
+    $font-size: $listswiperstepper-font-size,
+    $font-size-big: $listswiperstepper-font-size-big,
+    $font-weight: $listswiperstepper-font-weight,
+    $line-height: $listswiperstepper-line-height,
+    $line-height-big: $listswiperstepper-line-height-big,
+    $padding: $listswiperstepper-padding,
+    $padding-big: $listswiperstepper-padding-big,
+    $icon-color: $listswiperstepper-icon-color,
+    $active-icon-color: $listswiperstepper-active-icon-color,
+    $undo-icon-color: $listswiperstepper-undo-icon-color,
+    $icon-size: $listswiperstepper-icon-size,
+    $icon-size-big: $listswiperstepper-icon-size-big,
+    $icon-font-size: $listswiperstepper-icon-font-size,
+    $icon-font-size-big: $listswiperstepper-icon-font-size-big,
+    $icon-horizontal-spacing: $listswiperstepper-icon-horizontal-spacing,
+    $icon-horizontal-spacing-big: $listswiperstepper-icon-horizontal-spacing-big
+);
+
+@include button-ui(
+    $ui: 'listswiperstepper-trigger',
+    $background-color: transparent,
+    $border-width: 0,
+    $font-family: inherit,
+    $font-size: inherit,
+    $font-weight: inherit,
+    $icon-size: $listswiperstepper-icon-size,
+    $icon-size-big: $listswiperstepper-icon-size-big,
+    $icon-font-size: $listswiperstepper-icon-font-size,
+    $icon-font-size-big: $listswiperstepper-icon-font-size-big,
+    $icon-horizontal-spacing: $listswiperstepper-icon-horizontal-spacing,
+    $icon-horizontal-spacing-big: $listswiperstepper-icon-horizontal-spacing-big,
+    $padding: $listswiperstepper-padding,
+    $padding-big: $listswiperstepper-padding-big,
+    $pressed-background-color: rgba(0,0,0,0.2)
+);
+
+@if $enable-default-uis {
+    @if $listswiperstepper-action-ui != null {
+        @include listswiperstepper-ui(map-merge((ui: action), $listswiperstepper-action-ui)...);
+    }
+
+    @if $listswiperstepper-confirm-ui != null {
+        @include listswiperstepper-ui(map-merge((ui: confirm), $listswiperstepper-confirm-ui)...);
+    }
+
+    @if $listswiperstepper-decline-ui != null {
+        @include listswiperstepper-ui(map-merge((ui: decline), $listswiperstepper-decline-ui)...);
+    }
+}

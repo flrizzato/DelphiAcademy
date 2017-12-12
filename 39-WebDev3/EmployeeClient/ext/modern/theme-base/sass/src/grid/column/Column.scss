@@ -1,0 +1,101 @@
+.#{$prefix}gridcolumn {
+    // allows the resizer-el to escape the bounds of the column
+    overflow: visible;
+
+    .#{$prefix}header-el {
+        position: relative;
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .#{$prefix}title-wrap-el {
+        overflow: hidden;
+    }
+
+    .#{$prefix}title-el {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .#{$prefix}text-el {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &.#{$prefix}align-center > .#{$prefix}header-el {
+        justify-content: center;
+    }
+
+    &.#{$prefix}align-right > .#{$prefix}header-el {
+        justify-content: flex-end;
+    }
+
+    &.#{$prefix}group {
+        > .#{$prefix}header-el > {
+            .#{$prefix}title-wrap-el,
+            .#{$prefix}tool-dock {
+                // group headers should be widthed according to the combined widths of their children
+                width: 0;
+                min-width: 100%;
+            }
+        }
+
+        &.#{$prefix}align-center > .#{$prefix}header-el .#{$prefix}title-el {
+            justify-content: center;
+        }
+
+        &.#{$prefix}align-right > .#{$prefix}header-el .#{$prefix}title-el {
+            justify-content: flex-end;
+        }
+    }
+
+    &.#{$prefix}leaf {
+        .#{$prefix}header-el {
+            border-bottom: 0;
+        }
+
+        .#{$prefix}gridcolumn-body-el {
+            display: none;
+        }
+    }
+
+    .#{$prefix}trigger-el {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    > .#{$prefix}header-el:hover .#{$prefix}trigger-el,
+    &.#{$prefix}menu-open > .#{$prefix}header-el .#{$prefix}trigger-el {
+        opacity: 1;
+    }
+
+    &.#{$prefix}resizing .#{$prefix}trigger-el {
+        opacity: 0 !important;
+    }
+
+    // resizer element
+    > .#{$prefix}header-el:after {
+        content: '';
+        width: 0;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+    }
+
+    &.#{$prefix}resizing > .#{$prefix}header-el:after {
+        display: block;
+    }
+}
+
+.#{$prefix}gridcolumn-body-el {
+    flex: none;
+    overflow: visible;
+}

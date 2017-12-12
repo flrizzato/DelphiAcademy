@@ -1,0 +1,14 @@
+/**
+ * @class Ext.Video
+ */
+
+/**
+ * @var {color} $video-background-color
+ * The background color of the video component.
+ */
+$video-background-color: dynamic(#000);
+/**
+ * @var {color} $video-ghost-background-color
+ * The background color of the poster image.
+ */
+$video-ghost-background-color: dynamic($video-background-color);

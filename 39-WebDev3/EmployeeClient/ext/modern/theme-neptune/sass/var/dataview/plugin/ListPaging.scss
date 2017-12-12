@@ -1,0 +1,211 @@
+/**
+ * @class Ext.dataview.plugin.ListPaging
+ */
+
+/**
+ * @var {number/list}
+ * Paging padding.
+ */
+$listpaging-padding: dynamic(13px 0);
+
+/**
+ * @var {number/list}
+ * Paging padding in the {@link Global_CSS#$enable-big big} sizing scheme.
+ */
+$listpaging-padding-big: dynamic($listpaging-padding);
+
+/**
+ * @var {color}
+ * Paging background color.
+ */
+$listpaging-background-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Paging padding background color when disabled.
+ */
+$listpaging-disabled-background-color: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Paging border width.
+ */
+$listpaging-border-width: dynamic(null);
+
+/**
+ * @var {string}
+ * Paging border style.
+ */
+$listpaging-border-style: dynamic(null);
+
+/**
+ * @var {color}
+ * Paging border color.
+ */
+$listpaging-border-color: dynamic(null);
+
+/**
+ * @var {string}
+ * Paging message text align.
+ */
+$listpaging-message-text-align: dynamic(center);
+
+/**
+ * @var {color}
+ * Paging message color.
+ */
+$listpaging-message-color: dynamic($active-color);
+
+/**
+ * @var {color}
+ * Paging message color when disabled.
+ */
+$listpaging-disabled-message-color: dynamic($color);
+
+/**
+ * @var {number}
+ * Paging message font size.
+ */
+$listpaging-message-font-size: dynamic($font-size);
+
+/**
+ * @var {number}
+ * Paging message font size in the {@link Global_CSS#$enable-big big} sizing scheme.
+ */
+$listpaging-message-font-size-big: dynamic($font-size-big);
+
+/**
+ * @var {number}
+ * Paging spinner font size.
+ */
+$listpaging-spinner-font-size: dynamic(180%);
+
+/**
+ * @var {number}
+ * Paging spinner font size in the {@link Global_CSS#$enable-big big} sizing scheme.
+ */
+$listpaging-spinner-font-size-big: dynamic($listpaging-spinner-font-size);
+
+/**
+ * @var {number/list}
+ * Paging spinner margin.
+ */
+$listpaging-spinner-margin: dynamic(0 auto);
+
+/**
+ * Creates a visual theme for the list paging plugin.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=listpaging] (protected) The base UI class to be used.
+ *
+ * @param {number/list} $padding
+ * Paging padding.
+ *
+ * @param {number/list} $padding-big
+ * Paging padding in the {@link Global_CSS#$enable-big big} sizing scheme.
+ *
+ * @param {color} $background-color
+ * Paging background color.
+ *
+ * @param {color} $disabled-background-color
+ * Paging padding background color when disabled.
+ *
+ * @param {number/list} $border-width.
+ * Paging border width.
+ *
+ * @param {string} $border-style.
+ * Paging border style.
+ *
+ * @param {color} $border-color.
+ * Paging border color.
+ *
+ * @param {string} $message-text-align
+ * Paging message text align.
+ *
+ * @param {color} $message-color
+ * Paging message color.
+ *
+ * @param {color} $disabled-message-color
+ * Paging message color when disabled.
+ *
+ * @param {number} $message-font-size
+ * Paging message font size.
+ *
+ * @param {number} $message-font-size-big
+ * Paging message font size in the {@link Global_CSS#$enable-big big} sizing scheme.
+ *
+ * @param {number} $spinner-font-size
+ * Paging spinner font size.
+ *
+ * @param {number} $spinner-font-size-big
+ * Paging spinner font size in the {@link Global_CSS#$enable-big big} sizing scheme.
+ *
+ * @param {number/list} $spinner-margin
+ * Paging spinner margin.
+ */
+@mixin listpaging-ui(
+    $ui: null,
+    $xtype: listpaging,
+
+    $padding: null,
+    $padding-big: null,
+    $background-color: null,
+
+    $disabled-background-color: null,
+
+    $border-width: null,
+    $border-style: null,
+    $border-color: null,
+
+    $message-text-align: null,
+    $message-color: null,
+    $disabled-message-color: null,
+    $message-font-size: null,
+    $message-font-size-big: null,
+
+    $spinner-font-size: null,
+    $spinner-font-size-big: null,
+    $spinner-margin: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        padding: $padding;
+        background-color: $background-color;
+        @include border($border-width, $border-style, $border-color);
+
+        .#{$prefix}big & {
+            padding: $padding-big;
+        }
+
+        &.#{$prefix}disabled {
+            background-color: $disabled-background-color;
+
+            .#{$prefix}message {
+                color: $disabled-message-color;
+            }
+        }
+
+        .#{$prefix}message {
+            color: $message-color;
+            text-align: $message-text-align;
+            font-size: $message-font-size;
+
+            .#{$prefix}big & {
+                font-size: $message-font-size-big;
+            }
+        }
+
+        .#{$prefix}loading-spinner {
+            font-size: $spinner-font-size;
+            margin: $spinner-margin;
+
+            .#{$prefix}big & {
+                font-size: $spinner-font-size-big;
+            }
+        }
+    }
+}

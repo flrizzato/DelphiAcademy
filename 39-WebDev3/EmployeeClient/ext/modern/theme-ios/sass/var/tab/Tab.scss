@@ -1,0 +1,52 @@
+$tab-background-color: dynamic(transparent);
+$tab-hovered-background-color: dynamic($tab-background-color);
+$tab-pressed-background-color: dynamic($tab-background-color);
+$tab-active-background-color: dynamic($tab-background-color);
+$tab-hovered-background-color: dynamic($tab-background-color);
+$tab-focused-outline-color: dynamic(null);
+$tab-focused-outline-width: dynamic(null);
+$tab-focused-outline-style: dynamic(null);
+$tab-focused-outline-offset: dynamic(null);
+
+$tab-font-weight: dynamic($font-weight-normal);
+
+$tab-color: dynamic($highlight-color);
+$tab-active-color: dynamic($base-color);
+
+$tab-font-size: dynamic($font-size);
+$tab-stacked-font-size: dynamic(10px);
+$tab-stacked-font-size-big: dynamic(10px);
+
+$tab-line-height: dynamic(16px);
+$tab-line-height-big: dynamic(20px);
+
+$tab-padding: dynamic(10px);
+$tab-padding-big: dynamic(12px 10px);
+
+$tab-badge-font-size: dynamic(12px);
+$tab-badge-font-size-big: dynamic(14px);
+$tab-badge-min-width: dynamic(null);
+$tab-badge-max-width: dynamic(75%);
+$tab-badge-background-color: dynamic(#fe0000);
+$tab-badge-background-gradient: dynamic(null);
+$tab-badge-top: dynamic(0);
+$tab-badge-left: dynamic(53%);
+$tab-badge-right: dynamic(null);
+
+$tab-badge-padding: dynamic(1px 6px);
+$tab-badge-padding-big: dynamic(2px 8px);
+
+$tab-badge-border-radius: dynamic(140px);
+
+$tab-close-icon: dynamic($ios-close);
+$tab-close-icon-color: dynamic(null);
+$tab-close-icon-hovered-color: dynamic(null);
+$tab-close-icon-pressed-color: dynamic(null);
+
+$tab-active-close-icon-color: dynamic(null);
+$tab-active-close-icon-hovered-color: dynamic(null);
+$tab-active-close-icon-pressed-color: dynamic(null);
+
+$tab-close-icon-background-color: dynamic(null);
+$tab-close-icon-hovered-background-color: dynamic(null);
+$tab-close-icon-pressed-background-color: dynamic(null);

@@ -1,0 +1,13 @@
+.#{$prefix}boundlistitem {
+    .#{$prefix}selected-icon {
+        visibility: hidden;
+    }
+}
+
+.#{$prefix}show-selection.#{$prefix}multi-select {
+    .#{$prefix}boundlistitem.#{$prefix}selected {
+        .#{$prefix}selected-icon {
+            visibility: visible;
+        }
+    }
+}

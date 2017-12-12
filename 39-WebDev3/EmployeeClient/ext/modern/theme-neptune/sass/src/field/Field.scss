@@ -1,0 +1,93 @@
+@include field-ui(
+    $background-color: $field-background-color,
+    $focused-background-color: $field-focused-background-color,
+    $invalid-background-color: $field-invalid-background-color,
+    $disabled-background-color: $field-disabled-background-color,
+    $label-color: $field-label-color,
+    $focused-label-color: $field-focused-label-color,
+    $invalid-label-color: $field-invalid-label-color,
+    $disabled-label-color: $field-disabled-label-color,
+    $label-background-color: $field-label-background-color,
+    $focused-label-background-color: $field-focused-label-background-color,
+    $invalid-label-background-color: $field-invalid-label-background-color,
+    $disabled-label-background-color: $field-disabled-label-background-color,
+    $label-padding: $field-label-padding,
+    $label-padding-big: $field-label-padding-big,
+    $label-font-weight: $field-label-font-weight,
+    $label-font-size: $field-label-font-size,
+    $label-font-size-big: $field-label-font-size-big,
+    $label-line-height: $field-label-line-height,
+    $label-line-height-big: $field-label-line-height-big,
+    $label-font-family: $field-label-font-family,
+    $label-width: $field-label-width,
+    $label-width-big: $field-label-width-big,
+    $label-min-width: $field-label-min-width,
+    $label-min-width-big: $field-label-min-width-big,
+    $disabled-opacity: $field-disabled-opacity,
+    $required-indicator-font-weight: $field-required-indicator-font-weight,
+    $required-indicator-font-size: $field-required-indicator-font-size,
+    $required-indicator-line-height: $field-required-indicator-line-height,
+    $required-indicator-font-family: $field-required-indicator-font-family,
+    $required-indicator-margin: $field-required-indicator-margin,
+    $required-indicator-margin-big: $field-required-indicator-margin-big,
+    $error-icon-side: $field-error-icon-side,
+    $error-icon-side-color: $field-error-icon-side-color,
+    $error-icon-side-size: $field-error-icon-side-size,
+    $error-icon-side-size-big: $field-error-icon-side-size-big,
+    $error-icon-side-font-size: $field-error-icon-side-font-size,
+    $error-icon-side-font-size-big: $field-error-icon-side-font-size-big,
+    $error-icon-side-margin: $field-error-icon-side-margin,
+    $error-icon-side-margin-big: $field-error-icon-side-margin-big,
+    $error-icon-under: $field-error-icon-under,
+    $error-icon-under-color: $field-error-icon-under-color,
+    $error-icon-under-size: $field-error-icon-under-size,
+    $error-icon-under-size-big: $field-error-icon-under-size-big,
+    $error-icon-under-font-size: $field-error-icon-under-font-size,
+    $error-icon-under-font-size-big: $field-error-icon-under-font-size-big,
+    $error-icon-under-margin: $field-error-icon-under-margin,
+    $error-icon-under-margin-big: $field-error-icon-under-margin-big,
+    $error-under-margin: $field-error-under-margin,
+    $error-under-margin-big: $field-error-under-margin-big,
+    $error-message-color: $field-error-message-color,
+    $error-message-font-weight: $field-error-message-font-weight,
+    $error-message-font-size: $field-error-message-font-size,
+    $error-message-font-size-big: $field-error-message-font-size-big,
+    $error-message-line-height: $field-error-message-line-height,
+    $error-message-line-height-big: $field-error-message-line-height-big,
+    $error-message-font-family: $field-error-message-font-family
+);
+
+.#{$prefix}field:not(.#{$prefix}field-solo) {
+    &.#{$prefix}layout-auto-item,
+    &.#{$prefix}layout-vbox-item {
+        // the bottom spacing is implemented as padding so that when you are using
+        // fieldSeparators: true and inputBorders:false, each field's content appears
+        // centered vertically between the separators
+        @if $field-vertical-spacing != null {
+            margin-top: $field-vertical-spacing / 2;
+            padding-bottom: $field-vertical-spacing / 2;
+        }
+
+        @if $enable-big and $field-vertical-spacing-big != null {
+            .#{$prefix}big & {
+                margin-top: $field-vertical-spacing-big / 2;
+                padding-bottom: $field-vertical-spacing-big / 2;
+            }
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.#{$prefix}ripple-wrapper + .#{$prefix}field {
+    &.#{$prefix}layout-auto-item,
+    &.#{$prefix}layout-vbox-item {
+        margin-top: 0 !important;
+    }
+}

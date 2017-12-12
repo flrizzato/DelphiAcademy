@@ -1,0 +1,70 @@
+Ext JS 6.5.2.463 - JavaScript Library
+Copyright (c) 2006-2017, Sencha Inc.
+All rights reserved.
+licensing@sencha.com
+
+options: http://www.sencha.com/license
+license: http://www.sencha.com/legal/sencha-sdk-software-license-agreement
+
+
+Evaluation/Trial License
+------------------------------------------------------------------------------------------
+This version of Sencha Ext JS 6.5.2.463 is licensed commercially for a limited period for evaluation 
+purposes only. Production use or use beyond the applicable evaluation period is prohibited 
+under this license.
+See http://www.sencha.com/legal/sencha-sdk-software-license-agreement (Trial License) 
+for license terms.
+
+
+Third Party Content
+------------------------------------------------------------------------------------------
+The following third party software is distributed with Ext JS 6.5.2.463 and is 
+provided under other licenses and/or has source available from other locations. 
+
+Library: YUI 0.6 - drag-and-drop code
+License: BSD
+Location: http://developer.yahoo.com/yui
+
+Library: JSON parser 
+License: Public Domain
+Location: http://www.JSON.org/js.html
+
+Library: flexible-js-formatting - date parsing and formatting
+License: MIT
+Location: http://code.google.com/p/flexible-js-formatting/
+
+Library: spin.js � animated graphic
+License: MIT
+Location: http://fgnass.github.com/spin.js/
+
+Library: sparkline.js � micro charts
+License: BSD
+Location: http://omnipotent.net/jquery.sparkline
+
+Library: DeftJS
+License: MIT
+Location: http://deftjs.org/
+
+Library: Open-Sans
+License: Apache
+Location: http://www.fontsquirrel.com/fonts/open-sans
+
+
+Ext JS 6.5.2.463 Examples:
+
+Library: Silk Icons 
+Location: http://www.famfamfam.com/lab/icons/silk/
+License: http://www.famfamfam.com/lab/icons/silk/ (Creative Commons Attribution 2.5 License)
+
+Library: Font Awesome CSS
+Location: http://fontawesome.io/
+License: http://fontawesome.io/3.2.1/license/ (MIT)
+
+Library: Material Design Icons
+Location: https://github.com/google/material-design-icons
+License: https://github.com/google/material-design-icons/blob/master/LICENSE (Apache)
+
+
+--
+
+THIS SOFTWARE IS DISTRIBUTED "AS-IS" WITHOUT ANY WARRANTIES, CONDITIONS AND REPRESENTATIONS WHETHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, MERCHANTABLE QUALITY, FITNESS FOR A PARTICULAR PURPOSE, DURABILITY, NON-INFRINGEMENT, PERFORMANCE AND THOSE ARISING BY STATUTE OR FROM CUSTOM OR USAGE OF TRADE OR COURSE OF DEALING.  

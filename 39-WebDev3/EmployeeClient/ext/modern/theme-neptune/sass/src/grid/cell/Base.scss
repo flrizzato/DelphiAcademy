@@ -1,0 +1,37 @@
+@include gridcell-ui(
+    $color: $gridcell-color,
+    $hovered-color: $gridcell-hovered-color,
+    $selected-color: $gridcell-selected-color,
+    $pressed-color: $gridcell-pressed-color,
+    $background-color: $gridcell-background-color,
+    $hovered-background-color: $gridcell-hovered-background-color,
+    $selected-background-color: $gridcell-selected-background-color,
+    $pressed-background-color: $gridcell-pressed-background-color,
+    $column-border-width: $gridcell-column-border-width,
+    $column-border-style: $gridcell-column-border-style,
+    $column-border-color: $gridcell-column-border-color,
+    $focused-outline-width: $gridcell-focused-outline-width,
+    $focused-outline-style: $gridcell-focused-outline-style,
+    $focused-outline-color: $gridcell-focused-outline-color,
+    $focused-outline-offset: $gridcell-focused-outline-offset,
+    $font-weight: $gridcell-font-weight,
+    $font-size: $gridcell-font-size,
+    $font-size-big: $gridcell-font-size-big,
+    $line-height: $gridcell-line-height,
+    $line-height-big: $gridcell-line-height-big,
+    $font-family: $gridcell-font-family,
+    $padding: $gridcell-padding,
+    $padding-big: $gridcell-padding-big,
+    $dirty-icon: $gridcell-dirty-icon,
+    $dirty-icon-color: $gridcell-dirty-icon-color,
+    $dirty-icon-size: $gridcell-dirty-icon-size,
+    $dirty-icon-size-big: $gridcell-dirty-icon-size-big,
+    $dirty-icon-font-size: $gridcell-dirty-icon-font-size,
+    $dirty-icon-font-size-big: $gridcell-dirty-icon-font-size-big
+);
+
+@if $enable-default-uis {
+    @if $gridcell-summary-ui {
+        @include gridcell-ui(map-merge((ui: summary), $gridcell-summary-ui)...);
+    }
+}

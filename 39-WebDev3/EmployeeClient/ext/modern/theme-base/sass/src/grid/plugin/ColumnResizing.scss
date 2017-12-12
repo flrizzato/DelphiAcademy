@@ -1,0 +1,25 @@
+.#{$prefix}gridcolumn .#{$prefix}resizer-el {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -($grid-column-resizer-width / 2);
+    bottom: 0;
+    width: $grid-column-resizer-width;
+    background-color: transparent;
+    z-index: 1;
+    cursor: col-resize;
+    display: none;
+
+    @if $enable-big {
+        .#{$prefix}big & {
+            right: -($grid-column-resizer-width-big / 2);
+            width: $grid-column-resizer-width-big;
+        }
+    }
+}
+
+// Show the resizer handle if the column is resizable and it's widthed
+// If it is shrinkwrapping, we must resize its children to create its width
+.#{$prefix}grid.#{$prefix}has-columnresizing .#{$prefix}gridcolumn.#{$prefix}resizable .#{$prefix}resizer-el {
+    display: block;
+}

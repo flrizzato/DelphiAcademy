@@ -1,0 +1,65 @@
+/**
+ * @class Ext.grid.HeaderContainer
+ */
+
+/**
+ * @var {number}
+ * Header container border-width
+ */
+$headercontainer-border-width: dynamic(0 0 1px);
+
+/**
+ * @var {string}
+ * Header container border-style
+ */
+$headercontainer-border-style: dynamic(solid);
+
+/**
+ * @var {color}
+ * Header container border-color
+ */
+$headercontainer-border-color: dynamic($neutral-medium-dark-color);
+
+/**
+ * @var {color}
+ * Header container background-color
+ */
+$headercontainer-background-color: dynamic($neutral-light-color);
+
+/**
+ * Creates a visual theme for a grid header container.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=headercontainer] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {number} $border-width
+ * Header container border-width
+ *
+ * @param {string} $border-style
+ * Header container border-style
+ *
+ * @param {color} $border-color
+ * Header container border-color
+ *
+ * @param {color} $background-color
+ * Header container $background-color
+ */
+@mixin headercontainer-ui(
+    $ui: null,
+    $xtype: headercontainer,
+    $border-width: null,
+    $border-style: null,
+    $border-color: null,
+    $background-color: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        @include border($border-width, $border-style, $border-color);
+        background-color: $background-color;
+    }
+}

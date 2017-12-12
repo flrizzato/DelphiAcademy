@@ -1,0 +1,299 @@
+/**
+ * @class Ext.panel.Title
+ */
+
+/**
+ * Creates a visual theme for a Panel Title.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=paneltitle] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $color
+ * Panel Title text color
+ *
+ * @param {string/number} $font-weight
+ * Panel Title font-weight
+ *
+ * @param {number} $font-size
+ * Panel Title font-size
+ *
+ * @param {number} $font-size-big
+ * Panel Title font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $line-height
+ * Panel Title line-height
+ *
+ * @param {number} $line-height-big
+ * Panel Title line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $font-family
+ * Panel Title font-family
+ *
+ * @param {number/list} $padding
+ * Panel Title padding
+ *
+ * @param {number/list} $padding-big
+ * Panel Title padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number/list} $opacity
+ * Panel Title opacity
+ *
+ * @param {color} $icon-color
+ * Panel Title icon color.
+ *
+ * @param {number} $icon-size
+ * Panel Title icon size
+ *
+ * @param {number} $icon-size-big
+ * Panel Title icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $icon-font-size
+ * Panel Title icon font-size.  Used for configuring the size of font icons
+ *
+ * @param {number} $icon-font-size-big
+ * Panel Title icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $icon-horizontal-spacing
+ * The space between the Panel Title icon and text when the icon is horizontally aligned
+ *
+ * @param {number} $icon-horizontal-spacing-big
+ * The space between the Panel Title icon and text when the icon is horizontally aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $icon-vertical-spacing
+ * The space between the Panel Title icon and text when the icon is vertically aligned
+ *
+ * @param {number} $icon-vertical-spacing-big
+ * The space between the Panel Title icon and text when the icon is vertically aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $icon-opacity
+ * Panel Title icon opacity
+ *
+ * @private
+ */
+@mixin paneltitle-ui(
+    $ui: null,
+    $xtype: paneltitle,
+    $color: null,
+    $font-weight: null,
+    $font-size: null,
+    $font-size-big: null,
+    $line-height: null,
+    $line-height-big: null,
+    $font-family: null,
+    $padding: null,
+    $padding-big: null,
+    $opacity: null,
+    $icon-color: null,
+    $icon-size: null,
+    $icon-size-big: null,
+    $icon-font-size: null,
+    $icon-font-size-big: null,
+    $icon-horizontal-spacing: null,
+    $icon-horizontal-spacing-big: null,
+    $icon-vertical-spacing: null,
+    $icon-vertical-spacing-big: null,
+    $icon-opacity: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    @if $icon-font-size == null {
+        $icon-font-size: $icon-size;
+    }
+
+    @if $icon-font-size-big == null {
+        $icon-font-size-big: $icon-size-big;
+    }
+
+    @if $icon-color == null {
+        $icon-color: $color;
+    }
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        color: $color;
+        @include font($font-weight, $font-size, $line-height, $font-family);
+        padding: $padding;
+
+        @if $enable-big {
+            .#{$prefix}big & {
+                padding: $padding-big;
+                font-size: $font-size-big;
+                line-height: $line-height-big;
+            }
+        }
+
+        .#{$prefix}icon-el {
+            opacity: $icon-opacity;
+
+            @include icon(
+                $color: $icon-color,
+                $size: $icon-size,
+                $size-big: $icon-size-big,
+                $font-size: $icon-font-size,
+                $font-size-big: $icon-font-size-big
+            );
+        }
+
+        .#{$prefix}text-el {
+            opacity: $opacity;
+        }
+
+        &.#{$prefix}horizontal {
+            &.#{$prefix}icon-align-top .#{$prefix}icon-el {
+                margin-bottom: $icon-vertical-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-bottom: $icon-vertical-spacing-big;
+                    }
+                }
+            }
+
+            &.#{$prefix}icon-align-right .#{$prefix}icon-el {
+                margin-left: $icon-horizontal-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-left: $icon-horizontal-spacing-big;
+                    }
+                }
+            }
+
+            &.#{$prefix}icon-align-bottom .#{$prefix}icon-el {
+                margin-top: $icon-vertical-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-top: $icon-vertical-spacing-big;
+                    }
+                }
+            }
+
+            &.#{$prefix}icon-align-left .#{$prefix}icon-el {
+                margin-right: $icon-horizontal-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-right: $icon-horizontal-spacing-big;
+                    }
+                }
+            }
+        }
+
+        &.#{$prefix}rotate-90 {
+            padding: rotate90($padding);
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    padding: rotate90($padding-big);
+                }
+            }
+
+            &.#{$prefix}icon-align-top .#{$prefix}icon-el {
+                margin-left: $icon-vertical-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-left: $icon-vertical-spacing-big;
+                    }
+                }
+            }
+
+            &.#{$prefix}icon-align-right .#{$prefix}icon-el {
+                margin-top: $icon-horizontal-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-top: $icon-horizontal-spacing-big;
+                    }
+                }
+            }
+
+            &.#{$prefix}icon-align-bottom .#{$prefix}icon-el {
+                margin-right: $icon-vertical-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-right: $icon-vertical-spacing-big;
+                    }
+                }
+            }
+
+            &.#{$prefix}icon-align-left .#{$prefix}icon-el {
+                margin-bottom: $icon-horizontal-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-bottom: $icon-horizontal-spacing-big;
+                    }
+                }
+            }
+        }
+
+        &.#{$prefix}rotate-270 {
+            padding: rotate270($padding);
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    padding: rotate270($padding-big);
+                }
+            }
+
+            &.#{$prefix}icon-align-top .#{$prefix}icon-el {
+                margin-right: $icon-vertical-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-right: $icon-vertical-spacing-big;
+                    }
+                }
+            }
+
+            &.#{$prefix}icon-align-right .#{$prefix}icon-el {
+                margin-bottom: $icon-horizontal-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-bottom: $icon-horizontal-spacing-big;
+                    }
+                }
+            }
+
+            &.#{$prefix}icon-align-bottom .#{$prefix}icon-el {
+                margin-left: $icon-vertical-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-left: $icon-vertical-spacing-big;
+                    }
+                }
+            }
+
+            &.#{$prefix}icon-align-left .#{$prefix}icon-el {
+                margin-top: $icon-horizontal-spacing;
+
+                @if $enable-big {
+                    .#{$prefix}big & {
+                        margin-top: $icon-horizontal-spacing-big;
+                    }
+                }
+            }
+        }
+
+        &.#{$prefix}vertical .#{$prefix}text-el {
+            // fixes disappearing text bug on rotated titles in firefox
+            width: $line-height;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    width: $line-height-big;
+                }
+            }
+        }
+    }
+}

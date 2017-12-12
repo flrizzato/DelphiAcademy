@@ -1,0 +1,9 @@
+$indicator-light-ui: dynamic((
+    background-color: rgba(#fff, .15),
+    active-background-color: rgba(#fff, .8)
+));
+
+$indicator-dark-ui: dynamic((
+    background-color: rgba(#000, .3),
+    active-background-color: rgba(#000, .8)
+));

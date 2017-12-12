@@ -1,0 +1,5 @@
+$dataview-item-line-height: dynamic(17px);
+$dataview-item-line-height-big: dynamic(20px);
+$dataview-item-alt-background-color: dynamic($neutral-light-color);
+$dataview-item-selected-background-color: dynamic(#ffefbb);
+$dataview-item-hovered-background-color: dynamic(mix($neutral-light-color, $base-highlight-color, 90%));

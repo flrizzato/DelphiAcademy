@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-neptune/resources/theme-neptune-all.css" 
+         rel = "stylesheet" />
+      <script type = "text/javascript" 
+         src = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+      <script type = "text/javascript">
+         Ext.define('Person', 
+         {
+             name : 'Unknown',
+             constructor : function(name){
+                 if(name){
+                     this.name = name;
+                 }
+                 
+             },
+             getName : function(){
+                 return this.name;
+             }
+         });
+         
+         Ext.define('Student', {
+             extend: 'Person',
+             schoolName: 'Unknown',
+              constructor: function(name, schoolName) {
+          	this.schoolName = schoolName || 'Unknown';
+         
+             //call parent class constructor
+             this.callParent(arguments);
+              },
+             getSchoolName: function() {
+                 alert("My school name is " + this.schoolName);
+              }
+         });
+         
+         var  studentObj = new Ext.create('Student','XYZ','ABC School');
+         alert(studentObj.getName());
+               
+      </script> 
+   </head>
+   <body>
+   </body>
+</html>
+

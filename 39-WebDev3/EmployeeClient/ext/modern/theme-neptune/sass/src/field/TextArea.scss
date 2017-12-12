@@ -1,0 +1,35 @@
+/**
+ * @class Ext.field.TextArea
+ */
+
+.#{$prefix}textareafield {
+    .#{$prefix}body-wrap-el {
+        height: $textareafield-body-height;
+        padding: $textareafield-padding;
+
+        @if $enable-big {
+            .#{$prefix}big & {
+                height: $textareafield-body-height-big;
+                padding: $textareafield-padding-big;
+            }
+        }
+    }
+}
+
+.#{$prefix}textareafield.#{$prefix}label-align-horizontal.#{$prefix}has-percentage-size-flex-bug {
+    .#{$prefix}layout-fit > & .#{$prefix}body-wrap-el,
+    .#{$prefix}layout-vbox > &.#{$prefix}flexed .#{$prefix}body-wrap-el,
+    .#{$prefix}layout-hbox.#{$prefix}align-stretch > & .#{$prefix}body-wrap-el {
+        // When the textareafield's label is horizontally aligned (left or right), we use
+        // a min-height and max-height of 100% on the body-wrap-el to ensure that the field's
+        // height correctly grows and shrinks in response to configured height or layout
+        // flexing/stretching.  However, in Safari, the following bug prevents percentage
+        // heights from working when the item's height is flexed by a vbox layout or stretched
+        // by an hbox layout:
+        // https://bugs.webkit.org/show_bug.cgi?id=167240
+        // To workaround the issue we set the body-wrap-el height back to auto when we detect
+        // that is the case.  The trade off is that if the owning layout itself is auto-heighted
+        // the $textareafield-body-height will not be respected.
+        height: auto;
+    }
+}

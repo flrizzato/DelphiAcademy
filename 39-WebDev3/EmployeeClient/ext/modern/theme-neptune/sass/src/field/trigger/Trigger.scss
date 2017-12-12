@@ -1,0 +1,73 @@
+@include trigger-ui(
+    $width: $trigger-width,
+    $width-big: $trigger-width-big,
+    $background-color: $trigger-background-color,
+    $hovered-background-color: $trigger-hovered-background-color,
+    $pressed-background-color: $trigger-pressed-background-color,
+    $icon: $trigger-icon,
+    $icon-color: $trigger-icon-color,
+    $hovered-icon-color: $trigger-hovered-icon-color,
+    $pressed-icon-color: $trigger-pressed-icon-color,
+    $icon-background-color: $trigger-icon-background-color,
+    $hovered-icon-background-color: $trigger-hovered-icon-background-color,
+    $pressed-icon-background-color: $trigger-pressed-icon-background-color,
+    $icon-border-radius: $trigger-icon-border-radius,
+    $icon-size: $trigger-icon-size,
+    $icon-size-big: $trigger-icon-size-big,
+    $icon-font-size: $trigger-icon-font-size,
+    $icon-font-size-big: $trigger-icon-font-size-big
+);
+
+.#{$prefix}trigger.#{$prefix}grouped {
+    display: flex;
+
+    @if $trigger-grouped-align == vertical {
+        flex-direction: column;
+    }
+
+    @mixin vertical-trigger() {
+        flex-direction: column-reverse;
+
+        .#{$prefix}trigger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    @if $trigger-grouped-align == vertical {
+        @include vertical-trigger();
+    }
+
+    @if $enable-big {
+        .x-big & {
+            @if $trigger-grouped-align != $trigger-grouped-align-big {
+                @if $trigger-grouped-align-big == vertical {
+                    flex-direction: column;
+                } @else {
+                    flex-direction: row;
+                }
+            }
+
+            @if $trigger-grouped-align-big == vertical {
+                @include vertical-trigger();
+            } @else {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+@if $enable-default-uis {
+    @if $trigger-alt-ui {
+        @include trigger-ui(map-merge((ui: 'alt'), $trigger-alt-ui)...);
+    }
+
+    @if $trigger-faded-ui {
+        @include trigger-ui(map-merge((ui: 'faded'), $trigger-faded-ui)...);
+    }
+
+    @if $trigger-solo-ui {
+        @include trigger-ui(map-merge((ui: 'solo'), $trigger-solo-ui)...);
+    }
+}

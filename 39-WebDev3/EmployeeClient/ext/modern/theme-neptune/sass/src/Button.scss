@@ -1,0 +1,136 @@
+@include button-ui(
+    $background-color: $button-background-color,
+    $hovered-background-color: $button-hovered-background-color,
+    $pressed-background-color: $button-pressed-background-color,
+    $focused-background-color: $button-focused-background-color,
+    $disabled-background-color: $button-disabled-background-color,
+    $box-shadow: $button-box-shadow,
+    $hovered-box-shadow: $button-hovered-box-shadow,
+    $pressed-box-shadow: $button-pressed-box-shadow,
+    $focused-box-shadow: $button-focused-box-shadow,
+    $disabled-box-shadow: $button-disabled-box-shadow,
+    $background-gradient: $button-background-gradient,
+    $hovered-background-gradient: $button-hovered-background-gradient,
+    $pressed-background-gradient: $button-pressed-background-gradient,
+    $focused-background-gradient: $button-focused-background-gradient,
+    $disabled-background-gradient: $button-disabled-background-gradient,
+    $color: $button-color,
+    $hovered-color: $button-hovered-color,
+    $pressed-color: $button-pressed-color,
+    $focused-color: $button-focused-color,
+    $disabled-color: $button-disabled-color,
+    $border-color: $button-border-color,
+    $hovered-border-color: $button-hovered-border-color,
+    $pressed-border-color: $button-pressed-border-color,
+    $focused-border-color: $button-focused-border-color,
+    $disabled-border-color: $button-disabled-border-color,
+    $focused-outline-color: $button-focused-outline-color,
+    $focused-outline-style: $button-focused-outline-style,
+    $focused-outline-width: $button-focused-outline-width,
+    $focused-outline-offset: $button-focused-outline-offset,
+    $border-width: $button-border-width,
+    $border-style: $button-border-style,
+    $border-radius: $button-border-radius,
+    $border-radius-big: $button-border-radius-big,
+    $font-weight: $button-font-weight,
+    $font-size: $button-font-size,
+    $font-size-big: $button-font-size-big,
+    $line-height: $button-line-height,
+    $line-height-big: $button-line-height-big,
+    $font-family: $button-font-family,
+    $text-transform: $button-text-transform,
+    $text-transform-big: $button-text-transform-big,
+    $padding: $button-padding,
+    $padding-big: $button-padding-big,
+    $icon-only-padding: $button-icon-only-padding,
+    $icon-only-padding-big: $button-icon-only-padding-big,
+    $icon-color: $button-icon-color,
+    $hovered-icon-color: $button-hovered-icon-color,
+    $pressed-icon-color: $button-pressed-icon-color,
+    $focused-icon-color: $button-focused-icon-color,
+    $disabled-icon-color: $button-disabled-icon-color,
+    $icon-size: $button-icon-size,
+    $icon-size-big: $button-icon-size-big,
+    $icon-font-size: $button-icon-font-size,
+    $icon-font-size-big: $button-icon-font-size-big,
+    $icon-horizontal-spacing: $button-icon-horizontal-spacing,
+    $icon-horizontal-spacing-big: $button-icon-horizontal-spacing-big,
+    $icon-vertical-spacing: $button-icon-vertical-spacing,
+    $icon-vertical-spacing-big: $button-icon-vertical-spacing-big,
+    $disabled-opacity: $button-disabled-opacity,
+    $arrow-icon: $button-arrow-icon,
+    $arrow-icon-color: $button-arrow-icon-color,
+    $hovered-arrow-icon-color: $button-hovered-arrow-icon-color,
+    $pressed-arrow-icon-color: $button-pressed-arrow-icon-color,
+    $focused-arrow-icon-color: $button-focused-arrow-icon-color,
+    $disabled-arrow-icon-color: $button-disabled-arrow-icon-color,
+    $arrow-icon-size: $button-arrow-icon-size,
+    $arrow-icon-size-big: $button-arrow-icon-size-big,
+    $arrow-icon-font-size: $button-arrow-icon-font-size,
+    $arrow-icon-font-size-big: $button-arrow-icon-font-size-big,
+    $arrow-horizontal-spacing: $button-arrow-horizontal-spacing,
+    $arrow-horizontal-spacing-big: $button-arrow-horizontal-spacing-big,
+    $arrow-vertical-spacing: $button-arrow-vertical-spacing,
+    $arrow-vertical-spacing-big: $button-arrow-vertical-spacing-big,
+    $badge-background-color: $button-badge-background-color,
+    $badge-background-gradient: $button-badge-background-gradient,
+    $badge-color: $button-badge-color,
+    $badge-border-color: $button-badge-border-color,
+    $badge-border-radius: $button-badge-border-radius,
+    $badge-min-width: $button-badge-min-width,
+    $badge-max-width: $button-badge-max-width,
+    $badge-font-weight: $button-badge-font-weight,
+    $badge-font-size: $button-badge-font-size,
+    $badge-font-size-big: $button-badge-font-size-big,
+    $badge-font-family: $button-badge-font-family,
+    $badge-line-height: $button-badge-line-height,
+    $badge-line-height-big: $button-badge-line-height-big,
+    $badge-top: $button-badge-top,
+    $badge-right: $button-badge-right,
+    $badge-bottom: $button-badge-bottom,
+    $badge-left: $button-badge-left,
+    $badge-padding: $button-badge-padding,
+    $badge-padding-big: $button-badge-padding-big
+);
+
+@if $enable-default-uis {
+    @if $button-alt-ui {
+        @include button-ui(map-merge((ui: alt), $button-alt-ui)...);
+    }
+
+    @if $button-action-ui {
+        @include button-ui(map-merge((ui: action), $button-action-ui)...);
+    }
+
+    @if $button-confirm-ui {
+        @include button-ui(map-merge((ui: confirm), $button-confirm-ui)...);
+    }
+
+    @if $button-decline-ui {
+        @include button-ui(map-merge((ui: decline), $button-decline-ui)...);
+    }
+
+    @if $button-round-ui {
+        @include button-ui(map-merge((ui: round), $button-round-ui)...);
+    }
+
+    @if $button-square-ui {
+        @include button-ui(map-merge((ui: square), $button-square-ui)...);
+    }
+
+    @if $button-flat-ui {
+        @include button-ui(map-merge((ui: flat), $button-flat-ui)...);
+    }
+
+    @if $button-plain-ui {
+        @include button-ui(map-merge((ui: plain), $button-plain-ui)...);
+    }
+
+    @if $button-raised-ui {
+        @include button-ui(map-merge((ui: raised), $button-raised-ui)...);
+    }
+
+    @if $button-segmented-ui {
+        @include button-ui(map-merge((ui: segmented), $button-segmented-ui)...);
+    }
+}

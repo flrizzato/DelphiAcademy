@@ -1,0 +1,474 @@
+/**
+ * @class Ext.menu.RadioItem
+ */
+
+/**
+ * @var {color}
+ * Menu RadioItem text color
+ */
+$menuradioitem-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu RadioItem text color when active
+ */
+$menuradioitem-active-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu RadioItem text color when disabled
+ */
+$menuradioitem-disabled-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu RadioItem background-color
+ */
+$menuradioitem-background-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu RadioItem background-color when active
+ */
+$menuradioitem-active-background-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu RadioItem background-color when disabled
+ */
+$menuradioitem-disabled-background-color: dynamic(null);
+
+/**
+ * @var {string/number}
+ * Menu RadioItem font-weight
+ */
+$menuradioitem-font-weight: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem font-size
+ */
+$menuradioitem-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuradioitem-font-size-big: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu RadioItem font-family
+ */
+$menuradioitem-font-family: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem height
+ */
+$menuradioitem-height: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuradioitem-height-big: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu RadioItem cursor
+ */
+$menuradioitem-cursor: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu RadioItem cursor when disabled
+ */
+$menuradioitem-disabled-cursor: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu item outline-width when focused
+ */
+$menuradioitem-focused-outline-width: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu item outline-style when focused
+ */
+$menuradioitem-focused-outline-style: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu item outline-color when focused
+ */
+$menuradioitem-focused-outline-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu item outline-offset when focused
+ */
+$menuradioitem-focused-outline-offset: dynamic(null);
+
+/**
+ * @var {number}
+ * The opacity of disabled {@link Ext.menu.Item Menu RadioItems}
+ */
+$menuradioitem-disabled-opacity: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu RadioItem icon color
+ */
+$menuradioitem-icon-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu RadioItem icon color when active
+ */
+$menuradioitem-active-icon-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu RadioItem icon color when disabled
+ */
+$menuradioitem-disabled-icon-color: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem icon size
+ */
+$menuradioitem-icon-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuradioitem-icon-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem icon font-size
+ */
+$menuradioitem-icon-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuradioitem-icon-font-size-big: dynamic(null);
+
+/**
+ * @var {string}
+ * Menu RadioItem arrow icon
+ */
+$menuradioitem-arrow-icon: dynamic(null);
+
+/**
+ * @var {color}
+ * Menu RadioItem arrow icon color
+ */
+$menuradioitem-arrow-icon-color: dynamic($menuradioitem-icon-color);
+
+/**
+ * @var {color}
+ * Menu RadioItem arrow icon color when active
+ */
+$menuradioitem-active-arrow-icon-color: dynamic($menuradioitem-active-icon-color);
+
+/**
+ * @var {color}
+ * Menu RadioItem arrow icon color when disabled
+ */
+$menuradioitem-disabled-arrow-icon-color: dynamic($menuradioitem-disabled-icon-color);
+
+/**
+ * @var {number}
+ * Menu RadioItem arrow icon size
+ */
+$menuradioitem-arrow-icon-size: dynamic($menuradioitem-icon-size);
+
+/**
+ * @var {number}
+ * Menu RadioItem arrow icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuradioitem-arrow-icon-size-big: dynamic($menuradioitem-icon-size-big);
+
+/**
+ * @var {number}
+ * Menu RadioItem arrow icon font-size
+ */
+$menuradioitem-arrow-icon-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem arrow icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuradioitem-arrow-icon-font-size-big: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu RadioItem arrow icon margin
+ */
+$menuradioitem-arrow-icon-margin: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Menu RadioItem arrow icon margin in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuradioitem-arrow-icon-margin-big: dynamic(null);
+
+/**
+ * @var {string/list}
+ * Menu RadioItem checkbox icon
+ */
+$menuradioitem-checkbox-icon: dynamic('');
+
+/**
+ * @var {string/list}
+ * Menu RadioItem checkbox icon when checked
+ */
+$menuradioitem-checked-checkbox-icon: dynamic($fa-var-check);
+
+/**
+ * @var {color}
+ * Menu RadioItem checkbox color
+ */
+$menuradioitem-checkbox-color: dynamic($menuitem-icon-color);
+
+/**
+ * @var {color}
+ * Menu RadioItem checkbox color when active
+ */
+$menuradioitem-active-checkbox-color: dynamic($menuitem-active-icon-color);
+
+/**
+ * @var {color}
+ * Menu RadioItem checkbox color when disabled
+ */
+$menuradioitem-disabled-checkbox-color: dynamic($menuitem-disabled-icon-color);
+
+/**
+ * @var {number}
+ * Menu RadioItem checkbox size
+ */
+$menuradioitem-checkbox-size: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem checkbox size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuradioitem-checkbox-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * Menu RadioItem checkbox font size
+ */
+$menuradioitem-checkbox-font-size: dynamic($menuradioitem-checkbox-size);
+
+/**
+ * @var {number}
+ * Menu RadioItem checkbox font size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$menuradioitem-checkbox-font-size-big: dynamic($menuradioitem-checkbox-size-big);
+
+/**
+ * Creates a visual theme for a Menu RadioItem.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=menuradioitem] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $color
+ * Menu RadioItem text color
+ *
+ * @param {color} $active-color
+ * Menu RadioItem text color when active
+ *
+ * @param {color} $disabled-color
+ * Menu RadioItem text color when disabled
+ *
+ * @param {color} $background-color
+ * Menu RadioItem background-color
+ *
+ * @param {color} $active-background-color
+ * Menu RadioItem background-color when active
+ *
+ * @param {color} $disabled-background-color
+ * Menu RadioItem background-color when disabled
+ *
+ * @param {string/number} $font-weight
+ * Menu RadioItem font-weight
+ *
+ * @param {number} $font-size
+ * Menu RadioItem font-size
+ *
+ * @param {number} $font-size-big
+ * Menu RadioItem font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $font-family
+ * Menu RadioItem font-family
+ *
+ * @param {number} $height
+ * Menu RadioItem height
+ *
+ * @param {number} $height-big
+ * Menu RadioItem height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $cursor
+ * Menu RadioItem cursor
+ *
+ * @param {string} $disabled-cursor
+ * Menu RadioItem cursor when disabled
+ *
+ * @param {number} $focused-outline-width
+ * Menu item outline-width when focused
+ *
+ * @param {string} $focused-outline-style
+ * Menu item outline-style when focused
+ *
+ * @param {color} $focused-outline-color
+ * Menu item outline-color when focused
+ *
+ * @param {color} $focused-outline-offset
+ * Menu item outline-offset when focused
+ *
+ * @param {number} $disabled-opacity
+ * The opacity of disabled {@link Ext.menu.Item Menu RadioItems}
+ *
+ * @param {color} $icon-color
+ * Menu RadioItem icon color
+ *
+ * @param {color} $active-icon-color
+ * Menu RadioItem icon color when active
+ *
+ * @param {color} $disabled-icon-color
+ * Menu RadioItem icon color when disabled
+ *
+ * @param {number} $icon-size
+ * Menu RadioItem icon size
+ *
+ * @param {number} $icon-size-big
+ * Menu RadioItem icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $icon-font-size
+ * Menu RadioItem icon font-size
+ *
+ * @param {number} $icon-font-size-big
+ * Menu RadioItem icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $arrow-icon
+ * Menu RadioItem arrow icon
+ *
+ * @param {color} $arrow-icon-color
+ * Menu RadioItem arrow icon color
+ *
+ * @param {color} $active-arrow-icon-color
+ * Menu RadioItem arrow icon color when active
+ *
+ * @param {color} $disabled-arrow-icon-color
+ * Menu RadioItem arrow icon color when disabled
+ *
+ * @param {number} $arrow-icon-size
+ * Menu RadioItem arrow icon size
+ *
+ * @param {number} $arrow-icon-size-big
+ * Menu RadioItem arrow icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $arrow-icon-font-size
+ * Menu RadioItem arrow icon font-size
+ *
+ * @param {number} $arrow-icon-font-size-big
+ * Menu RadioItem arrow icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number/list} $arrow-icon-margin
+ * Menu RadioItem arrow icon margin
+ *
+ * @param {number/list} $arrow-icon-margin-big
+ * Menu RadioItem arrow icon margin in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string/list} $checkbox-icon
+ * Menu RadioItem checkbox icon
+ *
+ * @param {string/list} $checked-checkbox-icon
+ * Menu RadioItem checkbox icon when checked
+ *
+ * @param {color} $checkbox-color
+ * Menu RadioItem checkbox color
+ *
+ * @param {color} $active-checkbox-color
+ * Menu RadioItem checkbox color when active
+ *
+ * @param {color} $disabled-checkbox-color
+ * Menu RadioItem checkbox color when disabled
+ *
+ * @param {number} $checkbox-size
+ * Menu RadioItem checkbox size
+ *
+ * @param {number} $checkbox-size-big
+ * Menu RadioItem checkbox size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $checkbox-font-size
+ * Menu RadioItem checkbox font size
+ *
+ * @param {number} $checkbox-font-size-big
+ * Menu RadioItem checkbox font size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+@mixin menuradioitem-ui(
+    $ui: null,
+    $xtype: menuradioitem,
+    $color: null,
+    $active-color: null,
+    $disabled-color: null,
+    $background-color: null,
+    $active-background-color: null,
+    $disabled-background-color: null,
+    $font-weight: null,
+    $font-size: null,
+    $font-size-big: null,
+    $font-family: null,
+    $height: null,
+    $height-big: null,
+    $cursor: null,
+    $disabled-cursor: null,
+    $focused-outline-width: null,
+    $focused-outline-style: null,
+    $focused-outline-color: null,
+    $focused-outline-offset: null,
+    $disabled-opacity: null,
+    $icon-color: null,
+    $active-icon-color: null,
+    $disabled-icon-color: null,
+    $icon-size: null,
+    $icon-size-big: null,
+    $icon-font-size: null,
+    $icon-font-size-big: null,
+    $arrow-icon: null,
+    $arrow-icon-color: null,
+    $active-arrow-icon-color: null,
+    $disabled-arrow-icon-color: null,
+    $arrow-icon-size: null,
+    $arrow-icon-size-big: null,
+    $arrow-icon-font-size: null,
+    $arrow-icon-font-size-big: null,
+    $arrow-icon-margin: null,
+    $arrow-icon-margin-big: null,
+    $checkbox-icon: null,
+    $checked-checkbox-icon: null,
+    $checkbox-color: null,
+    $active-checkbox-color: null,
+    $disabled-checkbox-color: null,
+    $checkbox-size: null,
+    $checkbox-size-big: null,
+    $checkbox-font-size: null,
+    $checkbox-font-size-big: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    $arguments: intersect-arguments(menuradioitem-ui, menucheckitem-ui);
+
+    @include menucheckitem-ui($arguments...);
+}

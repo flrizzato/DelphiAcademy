@@ -1,0 +1,24 @@
+.#{$prefix}viewport-body-el {
+    z-index: 0;
+    // TODO: this should have its own variable
+    background-color: $panel-body-background-color;
+}
+
+.#{$prefix}orientation-inspector {
+    display: none;
+}
+
+// Set it to display block in landscape, portrait when not so
+// we can detect it for browsers that don't have a better way
+// to calculate it
+@media (orientation : landscape) {
+    .#{$prefix}orientation-inspector-landscape {
+        display: block;
+    }
+}
+
+@media (orientation : portrait) {
+    .#{$prefix}orientation-inspector-landscape {
+        display: none;
+    }
+}

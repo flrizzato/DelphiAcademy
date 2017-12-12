@@ -1,0 +1,18 @@
+.#{$prefix}tabbar-body-el {
+    overflow: visible; // tab badges may overflow
+}
+
+.#{$prefix}tabbar {
+    .#{$prefix}strip-el {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+     .#{$prefix}active-indicator-el  {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,231 @@
+/**
+ * @class Ext.grid.Row
+ */
+
+//# fashion replaces $grid-cell-color
+/**
+ * @var {color}
+ * Grid Row text color
+ */
+$gridrow-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Grid Row text color when hovered
+ */
+$gridrow-hovered-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Grid Row text color when selected
+ */
+$gridrow-selected-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Grid Row text color when pressed
+ */
+$gridrow-pressed-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Grid Row text color when pinned
+ */
+$gridrow-pinned-color: dynamic(null);
+
+//# fashion replaces $grid-cell-background-color
+/**
+ * @var {color}
+ * Grid Row background-color
+ */
+$gridrow-background-color: dynamic(null);
+
+/**
+ * @var {color}
+ * background-color for `striped` Grid Rows
+ */
+$gridrow-alt-background-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Grid Row background-color when hovered
+ */
+$gridrow-hovered-background-color: dynamic(null);
+
+//# fashion replaces $grid-cell-selected-background-color
+/**
+ * @var {color}
+ * Grid Row background-color when selected
+ */
+$gridrow-selected-background-color: dynamic(null);
+
+//# fashion replaces $grid-cell-pressed-background-color
+/**
+ * @var {color}
+ * Grid Row background-color when pressed
+ */
+$gridrow-pressed-background-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Grid Row background-color when pinned
+ */
+$gridrow-pinned-background-color: dynamic(null);
+
+/**
+ * @var {number/list}
+ * Grid Row border-width
+ */
+$gridrow-border-width: dynamic(null);
+
+/**
+ * @var {string}
+ * Grid Row border-style
+ */
+$gridrow-border-style: dynamic(null);
+
+//# fashion replaces $grid-cell-border-color
+/**
+ * @var {color}
+ * Grid Row border-color
+ */
+$gridrow-border-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Grid Row border-color when hovered
+ */
+$gridrow-hovered-border-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Grid Row border-color when selected
+ */
+$gridrow-selected-border-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Grid Row border-color when pressed
+ */
+$gridrow-pressed-border-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Grid Row border-color when pinned
+ */
+$gridrow-pinned-border-color: dynamic(null);
+
+/**
+ * @var {list}
+ * Grid Row border-color when pinned
+ */
+$gridrow-pinned-box-shadow: dynamic(null);
+
+/**
+ * @var {list}
+ * Grid Row border-color when pinned to the bottom
+ */
+$gridrow-pinned-bottom-box-shadow: dynamic(null);
+
+/**
+ * Creates a visual theme for a Grid Row.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=gridrow] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $color
+ * Grid Row text color
+ *
+ * @param {color} $hovered-color
+ * Grid Row text color when hovered
+ *
+ * @param {color} $selected-color
+ * Grid Row text color when selected
+ *
+ * @param {color} $pressed-color
+ * Grid Row text color when pressed
+ *
+ * @param {color} $pinned-color
+ * Grid Row text color when pinned
+ *
+ * @param {color} $background-color
+ * Grid Row background-color
+ *
+ * @param {color} $alt-background-color
+ * background-color for `striped` Grid Rows
+ *
+ * @param {color} $hovered-background-color
+ * Grid Row background-color when hovered
+ *
+ * @param {color} $selected-background-color
+ * Grid Row background-color when selected
+ *
+ * @param {color} $pressed-background-color
+ * Grid Row background-color when pressed
+ *
+ * @param {color} $pinned-background-color
+ * Grid Row background-color when pinned
+ *
+ * @param {number/list} $border-width
+ * Grid Row border-width
+ *
+ * @param {string} $border-style
+ * Grid Row border-style
+ *
+ * @param {color} $border-color
+ * Grid Row border-color
+ *
+ * @param {color} $hovered-border-color
+ * Grid Row border-color when hovered
+ *
+ * @param {color} $selected-border-color
+ * Grid Row border-color when selected
+ *
+ * @param {color} $pressed-border-color
+ * Grid Row border-color when pressed
+ *
+ * @param {color} $pinned-border-color
+ * Grid Row border-color when pinned
+ *
+ * @param {list} $pinned-box-shadow
+ * Grid Row border-color when pinned
+ *
+ * @param {list} $pinned-bottom-box-shadow
+ * Grid Row border-color when pinned to the bottom
+ */
+@mixin gridrow-ui(
+    $ui: null,
+    $xtype: gridrow,
+    $color: null,
+    $hovered-color: null,
+    $selected-color: null,
+    $pressed-color: null,
+    $pinned-color: null,
+    $background-color: null,
+    $alt-background-color: null,
+    $hovered-background-color: null,
+    $selected-background-color: null,
+    $pressed-background-color: null,
+    $pinned-background-color: null,
+    $border-width: null,
+    $border-style: null,
+    $border-color: null,
+    $hovered-border-color: null,
+    $selected-border-color: null,
+    $pressed-border-color: null,
+    $pinned-border-color: null,
+    $pinned-box-shadow: null,
+    $pinned-bottom-box-shadow: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    $arguments: intersect-arguments(gridrow-ui, listitem-base);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        @include listitem-base($arguments...);
+    }
+}

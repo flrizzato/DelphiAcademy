@@ -1,0 +1,65 @@
+.#{$prefix}layout-form {
+    display: table;
+    border-collapse: separate;
+    width: 100%;
+
+    &.#{$prefix}has-label-width {
+        table-layout: fixed;
+    }
+
+    .#{$prefix}colgroup-el {
+        display: table-column-group;
+    }
+
+    .#{$prefix}label-column-el,
+    .#{$prefix}body-column-el {
+        display: table-column;
+    }
+}
+
+.#{$prefix}layout-form-item.#{$prefix}field {
+    display: table-row;
+    border-spacing: 0;
+
+    > {
+        .#{$prefix}label-el {
+            display: table-cell;
+            vertical-align: top;
+            width: 1px !important; // !important to override configured labelWidth on the field
+        }
+
+        .#{$prefix}body-wrap-el {
+            display: table-cell;
+            vertical-align: middle;
+            width: auto;
+
+            > {
+                .#{$prefix}body-el {
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 100%;
+
+                    > .#{$prefix}input-wrap-el {
+                        height: 100%;
+
+                        // Workaround for https://bugs.webkit.org/show_bug.cgi?id=137693
+                        &.#{$prefix}webkit-border-box-bug {
+                            box-sizing: content-box;
+                        }
+                    }
+                }
+
+                .#{$prefix}error-el {
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 1px;
+
+                    .#{$prefix}error-message-el {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,283 @@
+/**
+ * @class Ext.field.Checkbox
+ */
+
+/**
+ * @var {number}
+ * Checkbox Field checkbox size
+ */
+$checkboxfield-checkbox-size: dynamic(16px);
+
+/**
+ * @var {number}
+ * Checkbox Field checkbox size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$checkboxfield-checkbox-size-big: dynamic(20px);
+
+/**
+ * @var {number}
+ * Checkbox Field checkbox font size
+ */
+$checkboxfield-checkbox-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * CheckboxField checkbox font size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$checkboxfield-checkbox-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * CheckboxField checkbox margin
+ */
+$checkboxfield-checkbox-margin: dynamic(null);
+
+/**
+ * @var {number}
+ * CheckboxField checkbox margin in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$checkboxfield-checkbox-margin-big: dynamic(null);
+
+/**
+ * @var {string/list}
+ * Checkbox Field checkbox icon
+ */
+$checkboxfield-checkbox-icon: dynamic($fa-var-square-o);
+
+/**
+ * @var {string/list}
+ * Checkbox Field checkbox icon when checked
+ */
+$checkboxfield-checked-checkbox-icon: dynamic($fa-var-check-square-o);
+
+/**
+ * @var {color}
+ * Checkbox Field checkbox color
+ */
+$checkboxfield-checkbox-color: dynamic($neutral-dark-color);
+
+/**
+ * @var {color}
+ * Checkbox Field checkbox color when checked
+ */
+$checkboxfield-checked-checkbox-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Checkbox Field checkbox color when disabled
+ */
+$checkboxfield-disabled-checkbox-color: dynamic(null);
+
+/**
+ * @var {color}
+ * Checkbox Field checkbox color when focused
+ */
+$checkboxfield-focused-checkbox-color: dynamic(mix(#fff, $base-color, 15%));
+
+/**
+ * @var {color}
+ * Checkbox Field {@link #boxLabel} text color
+ */
+$checkboxfield-box-label-color: dynamic($field-box-label-color);
+
+/**
+ * @var {string/number}
+ * Checkbox Field {@link #boxLabel} font-weight
+ */
+$checkboxfield-box-label-font-weight: dynamic($field-box-label-font-weight);
+
+/**
+ * @var {number}
+ * Checkbox Field {@link #boxLabel} font-size
+ */
+$checkboxfield-box-label-font-size: dynamic($field-box-label-font-size);
+
+/**
+ * @var {number}
+ * Checkbox Field {@link #boxLabel} font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$checkboxfield-box-label-font-size-big: dynamic($field-box-label-font-size-big);
+
+/**
+ * @var {number}
+ * Checkbox Field {@link #boxLabel} line-height
+ */
+$checkboxfield-box-label-line-height: dynamic($field-box-label-line-height);
+
+/**
+ * @var {number}
+ * Checkbox Field {@link #boxLabel} line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$checkboxfield-box-label-line-height-big: dynamic($field-box-label-line-height-big);
+
+/**
+ * @var {string}
+ * Checkbox Field {@link #boxLabel} font-family
+ */
+$checkboxfield-box-label-font-family: dynamic($field-box-label-font-family);
+
+/**
+ * @var {number/list}
+ * Checkbox Field {@link #boxLabel} padding
+ * The padding box will be flipped horizontally when {@link #boxLabelAlign} is `before`
+ */
+$checkboxfield-box-label-padding: dynamic($field-box-label-padding);
+
+/**
+ * @var {number/list}
+ * Checkbox Field {@link #boxLabel} padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ * The padding box will be flipped horizontally when {@link #boxLabelAlign} is `before`
+ */
+$checkboxfield-box-label-padding-big: dynamic($field-box-label-padding-big);
+
+/**
+ * Creates a visual theme for a Checkbox Field
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=checkboxfield] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {number} $checkbox-size
+ * Checkbox Field checkbox size
+ *
+ * @param {number} $checkbox-size-big
+ * Checkbox Field checkbox size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $checkbox-font-size
+ * Checkbox Field checkbox font size
+ *
+ * @param {number} $checkbox-font-size-big
+ * CheckboxField checkbox font size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $checkbox-margin
+ * CheckboxField checkbox margin
+ *
+ * @param {number} $checkbox-margin-big
+ * CheckboxField checkbox margin in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string/list} $checkbox-icon
+ * Checkbox Field checkbox icon
+ *
+ * @param {string/list} $checked-checkbox-icon
+ * Checkbox Field checkbox icon when checked
+ *
+ * @param {color} $checkbox-color
+ * Checkbox Field checkbox color
+ *
+ * @param {color} $checked-checkbox-color
+ * Checkbox Field checkbox color when checked
+ *
+ * @param {color} $disabled-checkbox-color
+ * Checkbox Field checkbox color when disabled
+ *
+ * @param {color} $focused-checkbox-color
+ * Checkbox Field checkbox color when focused
+ *
+ * @param {color} $box-label-color
+ * Checkbox Field {@link #boxLabel} text color
+ *
+ * @param {string/number} $box-label-font-weight
+ * Checkbox Field {@link #boxLabel} font-weight
+ *
+ * @param {number} $box-label-font-size
+ * Checkbox Field {@link #boxLabel} font-size
+ *
+ * @param {number} $box-label-font-size-big
+ * Checkbox Field {@link #boxLabel} font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $box-label-line-height
+ * Checkbox Field {@link #boxLabel} line-height
+ *
+ * @param {number} $box-label-line-height-big
+ * Checkbox Field {@link #boxLabel} line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $box-label-font-family
+ * Checkbox Field {@link #boxLabel} font-family
+ *
+ * @param {number/list} $box-label-padding
+ * Checkbox Field {@link #boxLabel} padding
+ * The padding box will be flipped horizontally when {@link #boxLabelAlign} is `before`
+ *
+ * @param {number/list} $box-label-padding-big
+ * Checkbox Field {@link #boxLabel} padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ * The padding box will be flipped horizontally when {@link #boxLabelAlign} is `before`
+ */
+@mixin checkboxfield-ui(
+    $ui: null,
+    $xtype: checkboxfield,
+    $checkbox-size: null,
+    $checkbox-size-big: null,
+    $checkbox-font-size: null,
+    $checkbox-font-size-big: null,
+    $checkbox-margin: null,
+    $checkbox-margin-big: null,
+    $checkbox-icon: null,
+    $checked-checkbox-icon: null,
+    $checkbox-color: null,
+    $checked-checkbox-color: null,
+    $disabled-checkbox-color: null,
+    $focused-checkbox-color: null,
+    $box-label-color: null,
+    $box-label-font-weight: null,
+    $box-label-font-size: null,
+    $box-label-font-size-big: null,
+    $box-label-line-height: null,
+    $box-label-line-height-big: null,
+    $box-label-font-family: null,
+    $box-label-padding: null,
+    $box-label-padding-big: null
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+
+        .#{$prefix}icon-el {
+            margin: $checkbox-margin;
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    margin: $checkbox-margin-big;
+                }
+            }
+
+            @include icon(
+                $icon: $checkbox-icon,
+                $color: $checkbox-color,
+                $size: $checkbox-size,
+                $size-big: $checkbox-size-big,
+                $font-size: $checkbox-font-size,
+                $font-size-big: $checkbox-font-size-big
+            );
+        }
+
+        &.#{$prefix}checked .#{$prefix}icon-el {
+            @include icon($checked-checkbox-icon);
+            color: $checked-checkbox-color;
+        }
+
+        &.#{$prefix}focused .#{$prefix}icon-el {
+            .#{$prefix}keyboard-mode & {
+                color: $focused-checkbox-color;
+            }
+        }
+
+        &.#{$prefix}disabled .#{$prefix}icon-el {
+            color: $disabled-checkbox-color;
+        }
+
+        @include box-label-ui(
+            $box-label-color: $box-label-color,
+            $box-label-font-weight: $box-label-font-weight,
+            $box-label-font-size: $box-label-font-size,
+            $box-label-font-size-big: $box-label-font-size-big,
+            $box-label-line-height: $box-label-line-height,
+            $box-label-line-height-big: $box-label-line-height-big,
+            $box-label-font-family: $box-label-font-family,
+            $box-label-padding: $box-label-padding,
+            $box-label-padding-big: $box-label-padding-big
+        );
+    }
+}

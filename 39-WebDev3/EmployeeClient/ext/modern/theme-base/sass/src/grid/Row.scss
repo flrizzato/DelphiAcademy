@@ -1,0 +1,14 @@
+.#{$prefix}gridrow {
+    display: block;
+
+    .#{$prefix}cells-el {
+        display: table;
+        table-layout: fixed;
+        // width: 0 allows the cells in a fixed table layout, which are individually sized
+        // in response to header container layout, to be allowed to shrink smaller than
+        // their content.
+        width: 0;
+        // inherit background-color so color of listswiper items doesn't show through
+        background-color: inherit;
+    }
+}

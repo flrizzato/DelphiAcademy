@@ -1,0 +1,10 @@
+$tooltip-body-color: dynamic($light-color);
+$tooltip-body-background-color: dynamic(mix(#000, $neutral-dark-color, 20%));
+$tooltip-border-color: dynamic($tooltip-body-background-color);
+$tooltip-body-padding: dynamic(8px);
+$tooltip-body-padding-big: dynamic(10px);
+$tooltip-tool-color: dynamic($light-color);
+$tooltip-header-padding: dynamic(8px 8px 2px);
+$tooltip-header-padding-big: dynamic(10px 10px 2px);
+$tooltip-border-radius: dynamic(2px);
+$tooltip-tool-focused-outline-color: dynamic(#fff);

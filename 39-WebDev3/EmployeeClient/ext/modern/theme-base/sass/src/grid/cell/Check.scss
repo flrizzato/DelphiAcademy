@@ -1,0 +1,10 @@
+.#{$prefix}checkcell {
+    .#{$prefix}checkbox-el {
+        outline: none;
+        cursor: pointer;
+
+        .#{$prefix}summaryrow & {
+            display: none;
+        }
+    }
+}

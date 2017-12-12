@@ -1,0 +1,88 @@
+/**
+ * @class Ext.menu.Separator
+ */
+
+/**
+ * @var {color}
+ * Menu Separator size
+ */
+$menuseparator-size: dynamic($menu-separator-width);
+
+/**
+ * @var {number}
+ * Menu Separator border-width
+ */
+$menuseparator-border-width: dynamic(rotate90($menu-separator-border-width));
+
+/**
+ * @var {number}
+ * Menu Separator border-style
+ */
+$menuseparator-border-style: dynamic($menu-separator-border-style);
+
+/**
+ * @var {color}
+ * Menu Separator border-color
+ */
+$menuseparator-border-color: dynamic($menu-separator-border-color);
+
+/**
+ * @var {color}
+ * Menu Separator background-color
+ */
+$menuseparator-background-color: dynamic($menu-separator-background-color);
+
+/**
+ * @var {color}
+ * Menu Separator margin
+ */
+$menuseparator-margin: dynamic(2px 0);
+
+/**
+ * Creates a visual theme for a Menu Separator.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=menuseparator] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $size
+ * Menu Separator size
+ *
+ * @param {number} $border-width
+ * Menu Separator border-width
+ *
+ * @param {number} $border-style
+ * Menu Separator border-style
+ *
+ * @param {color} $border-color
+ * Menu Separator border-color
+ *
+ * @param {color} $background-color
+ * Menu Separator background-color
+ *
+ * @param {color} $margin
+ * Menu Separator margin
+ */
+@mixin menuseparator-ui(
+    $ui: null,
+    $xtype: menuseparator,
+    $size: null,
+    $border-width: null,
+    $border-style: null,
+    $border-color: null,
+    $background-color: null,
+    $margin: null
+
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix} {
+        height: $size;
+        @include border($border-width, $border-style, $border-color);
+        background-color: $background-color;
+        margin: $margin;
+    }
+}

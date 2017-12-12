@@ -1,0 +1,59 @@
+/**
+ * @class Ext.mixin.Toolable
+ */
+
+/**
+ * Toolable components need special handling for their padding. When there are no tools
+ * (which usually means no dock wrapper) the padding on all sides is placed on the body-el,
+ * However, when the component has tools, the horizontal padding needs to be removed
+ * from the body-el and placed on the innermost dock wrapper so that the horizontal padding
+ * is between the outermost tools and the left/right edges of the component.  In this
+ * configuration the space between the body and the tools is provided by the tools
+ * themselves via $tool-spacing.
+ *
+ * The vertical padding remains on the body-el so that the height of the toolable component
+ * when auto-heighted is determined by the body-el's line-height + padding  + the element
+ * borders. The tools gain an additional advantage from this arrangement because it means
+ * they can be taller than the component's line-height and not cause the component's height
+ * to increase since they are not "inside" of the vertical padding.
+ * @private
+ */
+@mixin toolable-ui(
+    $ui: null,
+    $xtype: null,
+    $padding: null,
+    $padding-big: null,
+    $anchor: body-el
+) {
+    $ui-suffix: ui-suffix($ui);
+
+    .#{$prefix}#{$xtype}#{$ui-suffix}-#{$anchor} {
+        padding: $padding;
+
+        @if $enable-big {
+            .#{$prefix}big & {
+                padding: $padding-big;
+            }
+        }
+    }
+
+    .#{$prefix}#{$xtype}#{$ui-suffix}-tool-dock {
+        padding: box(0 right($padding) 0 left($padding));
+
+        @if $enable-big {
+            .#{$prefix}big & {
+                padding: box(0 right($padding-big) 0 left($padding-big));
+            }
+        }
+
+        > .#{$prefix}#{$anchor} {
+            padding: box(top($padding) 0 bottom($padding) 0);
+
+            @if $enable-big {
+                .#{$prefix}big & {
+                    padding: box(top($padding-big) 0 bottom($padding-big) 0);
+                }
+            }
+        }
+    }
+}

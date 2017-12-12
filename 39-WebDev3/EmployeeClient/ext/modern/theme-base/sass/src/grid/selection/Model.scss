@@ -1,0 +1,38 @@
+.#{$prefix}selmodel-row-numberer-hd {
+    // Needs important to defeat the s-resize rule on all column headers
+    cursor: se-resize!important;
+}
+
+.#{$prefix}selmodel-row-numberer-cell {
+    cursor: e-resize;
+}
+
+.#{$prefix}selmodel-column-select {
+    .#{$prefix}column-header {
+        cursor: s-resize;
+    }
+}
+
+.#{$prefix}selmodel-extender-drag-handle {
+    position: absolute;
+    cursor: crosshair;
+    z-index: 1;
+    height: $grid-selmodel-handle-height;
+    width: $grid-selmodel-handle-width;
+    background-color: $grid-selmodel-handle-color;
+
+    @if $enable-big {
+        // Maintainer: We add one to keep sizes odd so it can be centered on a 1px line intersection.
+        .#{$prefix}big & {
+            height: $grid-selmodel-handle-height * 2 + 1;
+            width: $grid-selmodel-handle-width * 2 + 1;
+        }
+    }
+}
+
+.#{$prefix}selmodel-extender-mask {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    border: $grid-selmodel-mask-border-width $grid-selmodel-mask-border-style $grid-selmodel-mask-border-color;
+}

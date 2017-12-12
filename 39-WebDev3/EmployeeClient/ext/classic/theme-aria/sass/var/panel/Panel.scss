@@ -1,0 +1,23 @@
+/* ARIA theme is dark, no light UI is defined */
+$include-panel-light-ui: dynamic(false);
+$include-panel-light-framed-ui: dynamic(false);
+
+$panel-header-background-color: dynamic(#3a4155);
+$panel-header-color: dynamic(#fff);
+$panel-body-background-color: dynamic(#232d38);
+$panel-body-color: dynamic(#fff);
+$panel-border-color: dynamic($panel-header-background-color);
+$panel-frame-background-color: dynamic(#3f4757);
+$panel-header-focus-outline-color: dynamic($orange);
+$panel-header-focus-outline-style: dynamic(solid);
+$panel-header-focus-outline-width: dynamic(2px);
+$panel-header-focus-outline-offset: dynamic(0);
+$panel-header-focus-color: dynamic(#000);
+$panel-header-focus-background-color: dynamic($orange);
+$panel-tool-focus-outline-color: dynamic($panel-header-focus-outline-color);
+$panel-tool-focus-outline-style: dynamic($panel-header-focus-outline-style);
+$panel-tool-focus-outline-width: dynamic($panel-header-focus-outline-width);
+$panel-tool-focus-outline-offset: dynamic($panel-header-focus-outline-offset);
+$panel-tool-focus-color: dynamic($panel-header-focus-color);
+$panel-tool-focus-background-color: dynamic($panel-header-focus-background-color);
+$panel-tool-focus-background-image: dynamic('tools/tool-sprites-dark');

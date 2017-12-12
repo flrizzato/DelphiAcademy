@@ -1,0 +1,8 @@
+$accordion-header-color: dynamic(#fff);
+$accordion-header-background-color: dynamic(#4d596e);
+$accordion-header-over-background-color: dynamic($accordion-header-background-color);
+$accordion-background-color: dynamic($base-highlight-color);
+$accordion-header-focus-outline-color: dynamic($orange);
+$accordion-header-focus-outline-offset: dynamic(0);
+$accordion-tool-background-image: dynamic('tools/tool-sprites');
+$accordion-tool-focus-background-image: dynamic('tools/tool-sprites-dark');

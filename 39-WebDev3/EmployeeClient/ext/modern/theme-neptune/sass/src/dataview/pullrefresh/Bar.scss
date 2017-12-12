@@ -1,0 +1,35 @@
+/**
+ * @class Ext.dataview.pullrefresh.Bar
+ */
+
+@include pullrefreshbar-ui(
+    $width:             $pullrefreshbar-width,
+    $min-height:        $pullrefreshbar-min-height,
+    $min-height-big:    $pullrefreshbar-min-height-big,
+    $color:             $pullrefreshbar-color,
+    $background-color:  $pullrefreshbar-background-color,
+    $font-size:         $pullrefreshbar-font-size,
+    $font-size-big:     $pullrefreshbar-font-size-big,
+    $border-width:      $pullrefreshbar-border-width,
+    $border-style:      $pullrefreshbar-border-style,
+    $border-color:      $pullrefreshbar-border-color,
+
+    $arrow-width:               $pullrefreshbar-arrow-width,
+    $arrow-icon:                $pullrefreshbar-arrow-icon,
+    $arrow-icon-color:          $pullrefreshbar-arrow-icon-color,
+    $arrow-icon-font-size:      $pullrefreshbar-arrow-icon-font-size,
+    $arrow-icon-font-size-big:  $pullrefreshbar-arrow-icon-font-size-big,
+
+    $bottom-box-shadow: $pullrefreshbar-bottom-box-shadow,
+
+    $text-margin:       $pullrefreshbar-text-margin,
+    $text-margin-big:   $pullrefreshbar-text-margin-big,
+
+    $spinner-font-size:         $pullrefreshbar-spinner-font-size,
+    $spinner-font-size-big:     $pullrefreshbar-spinner-font-size-big,
+    $spinner-padding:           $pullrefreshbar-spinner-padding,
+    $spinner-padding-big:       $pullrefreshbar-spinner-padding-big,
+    $spinner-background-color:  $pullrefreshbar-spinner-background-color,
+    $spinner-border-radius:     $pullrefreshbar-spinner-border-radius,
+    $spinner-border-radius-big: $pullrefreshbar-spinner-border-radius-big
+);

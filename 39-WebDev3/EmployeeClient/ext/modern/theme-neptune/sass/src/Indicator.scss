@@ -1,0 +1,11 @@
+@include indicator-ui;
+
+@if $enable-default-uis {
+    @if $indicator-light-ui {
+        @include indicator-ui(map-merge((ui: light), $indicator-light-ui)...);
+    }
+
+    @if $indicator-dark-ui {
+        @include indicator-ui(map-merge((ui: dark), $indicator-dark-ui)...);
+    }
+}

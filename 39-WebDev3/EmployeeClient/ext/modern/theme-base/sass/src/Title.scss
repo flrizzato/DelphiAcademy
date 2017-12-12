@@ -1,0 +1,7 @@
+.#{$prefix}title {
+    max-width: 100%;
+
+    .#{$prefix}innerhtml {
+        @include ellipsis;
+    }
+}

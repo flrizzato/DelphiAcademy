@@ -1,0 +1,37 @@
+{
+    "name": "@extjs/ext-react-classic-theme-aria",
+    "version": "6.5.2.463",
+    "sencha": {
+        "name": "theme-aria",
+        "namespace": "Ext",
+        "type": "theme",
+        "extend": "theme-neptune",
+        "alternateName": [
+            "ext-theme-aria"
+        ],
+        "framework": "ext",
+        "toolkit": "classic",
+        "creator": "Sencha",
+        "summary": "Ext JS Aria Theme",
+        "detailedDescription": "A high-contrast accessibility theme based on Neptune",
+        "version": "6.5.2.463",
+        "compatVersion": "6.0.0",
+        "format": "1",
+        "output": "${workspace.subpkg.prefix}/${package.name}",
+        "local": true,
+        "sass": {
+            "namespace": "Ext",
+            "etc": "${package.dir}/sass/etc/all.scss",
+            "var": "${package.dir}/sass/var",
+            "src": "${package.dir}/sass/src"
+        },
+        "classpath": "${package.dir}/src",
+        "overrides": "${package.dir}/overrides",
+        "slicer": {
+            "js": []
+        },
+        "properties": {
+            "skip.pkg": 1
+        }
+    }
+}

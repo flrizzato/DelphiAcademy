@@ -1,0 +1,20 @@
+.#{$prefix}root {
+	font: $font-weight-normal #{$font-size}/#{$line-height} $font-family;
+	color: $color;
+
+    &.#{$prefix}big,
+    .#{$prefix}big & {
+		font-size: $font-size-big;
+	}
+}
+
+.#{$prefix}font-icon {
+	font-family: $font-icon-font-family;
+	// ensure that font icon does not inherit font-weight from parent node
+}
+
+@include st-loading-spinner(16px, $loading-spinner-color, 1px, 4px);
+
+.#{$prefix}draggable {
+	cursor: $draggable-cursor !important;
+}

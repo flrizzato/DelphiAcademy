@@ -1,0 +1,879 @@
+/**
+ * @class Ext.tip.ToolTip
+ */
+
+/**
+ * @var {color/list}
+ * ToolTip background-color
+ */
+$tooltip-background-color: dynamic(mix($base-light-color, #fff, 25%));
+
+//# fashion replaces $tip-border-color
+/**
+ * @var {color/list}
+ * ToolTip border-color
+ */
+$tooltip-border-color: dynamic($neutral-medium-dark-color);
+
+//# fashion replaces $tip-border-width
+/**
+ * @var {number/list}
+ * ToolTip border-width
+ */
+$tooltip-border-width: dynamic(null);
+
+/**
+ * @var {string/list}
+ * ToolTip border-style
+ */
+$tooltip-border-style: dynamic(null);
+
+/**
+ * @var {number/list}
+ * ToolTip border-radius
+ */
+$tooltip-border-radius: dynamic(3px);
+
+/**
+ * @var {number/list}
+ * ToolTip border-radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-border-radius-big: dynamic($tooltip-border-radius);
+
+//# fashion replaces $tip-background-color
+/**
+ * @var {color}
+ * ToolTip body background-color
+ */
+$tooltip-body-background-color: dynamic($tooltip-background-color);
+
+//# fashion replaces $tip-body-color
+/**
+ * @var {color}
+ * ToolTip body text color
+ */
+$tooltip-body-color: dynamic($color);
+
+/**
+ * @var {color}
+ * ToolTip body border-color
+ */
+$tooltip-body-border-color: dynamic($tooltip-border-color);
+
+/**
+ * @var {number/list}
+ * ToolTip body border-width
+ */
+$tooltip-body-border-width: dynamic(null);
+
+/**
+ * @var {number/list}
+ * ToolTip body border-style
+ */
+$tooltip-body-border-style: dynamic(null);
+
+//# fashion replaces $tip-body-font-weight
+/**
+ * @var {string/number}
+ * ToolTip body font-weight
+ */
+$tooltip-body-font-weight: dynamic(null);
+
+//# fashion replaces $tip-body-font-size
+/**
+ * @var {number}
+ * ToolTip body font-size
+ */
+$tooltip-body-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip body font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-body-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip body line-height
+ */
+$tooltip-body-line-height: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip body line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-body-line-height-big: dynamic(null);
+
+/**
+ * @var {string}
+ * ToolTip body font-family
+ */
+$tooltip-body-font-family: dynamic(null);
+
+//# fashion replaces $tip-body-padding
+/**
+ * @var {number/list}
+ * ToolTip body padding
+ */
+$tooltip-body-padding: dynamic(5px);
+
+/**
+ * @var {number/list}
+ * ToolTip body padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-body-padding-big: dynamic(8px);
+
+/**
+ * @var {color}
+ * ToolTip Header background-color
+ */
+$tooltip-header-background-color: dynamic($tooltip-body-background-color);
+
+/**
+ * @var {string/list}
+ * ToolTip Header background-gradient.  Can be either the name of a gradient defined by
+ * {@link Global_CSS#background-gradient} or a list of color stops.
+ */
+$tooltip-header-background-gradient: dynamic(null);
+
+//# fashion replaces $tip-header-color
+/**
+ * @var {color}
+ * ToolTip Header text color
+ */
+$tooltip-header-color: dynamic($tooltip-body-color);
+
+/**
+ * @var {color/list}
+ * ToolTip Header border-color
+ */
+$tooltip-header-border-color: dynamic($tooltip-border-color);
+
+/**
+ * @var {number/list}
+ * ToolTip Header border-width
+ */
+$tooltip-header-border-width: dynamic(null);
+
+/**
+ * @var {string/list}
+ * ToolTip Header border-style
+ */
+$tooltip-header-border-style: dynamic(null);
+
+//# fashion replaces $tip-header-font-weight
+/**
+ * @var {string/number}
+ * ToolTip Header font-weight
+ */
+$tooltip-header-font-weight: dynamic($font-weight-bold);
+
+//# fashion replaces $tip-header-font-size
+/**
+ * @var {number}
+ * ToolTip Header font-size
+ */
+$tooltip-header-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Header font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-header-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Header line-height
+ */
+$tooltip-header-line-height: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Header line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-header-line-height-big: dynamic(null);
+
+/**
+ * @var {string}
+ * ToolTip Header font-family
+ */
+$tooltip-header-font-family: dynamic(null);
+
+//# fashion replaces $tip-header-padding
+/**
+ * @var {number/list}
+ * ToolTip Header padding
+ */
+$tooltip-header-padding: dynamic(5px 5px 2px);
+
+/**
+ * @var {number/list}
+ * ToolTip Header padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-header-padding-big: dynamic(8px 8px 2px);
+
+/**
+ * @var {number/list}
+ * ToolTip Header Title padding
+ */
+$tooltip-header-title-padding: dynamic(0);
+
+/**
+ * @var {number/list}
+ * ToolTip Header Title padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-header-title-padding-big: dynamic(0);
+
+/**
+ * @var {number}
+ * ToolTip Header Title opacity
+ */
+$tooltip-header-title-opacity: dynamic(null);
+
+/**
+ * @var {shadow}
+ * ToolTip Header Shadow
+ */
+$tooltip-header-shadow: dynamic(null);
+
+/**
+ * @var {number}
+ * Z-Index for the ToolTip Header, should be used with shadows to raise header above content
+ */
+$tooltip-header-z-index: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Header min-height
+ */
+$tooltip-header-min-height: dynamic(0);
+
+/**
+ * @var {number}
+ * ToolTip Header min-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-header-min-height-big: dynamic(0);
+
+/**
+ * @var {color}
+ * ToolTip Header icon color.
+ */
+$tooltip-header-icon-color: dynamic(rgba($tooltip-header-color, .5));
+
+/**
+ * @var {number}
+ * ToolTip Header icon size
+ */
+$tooltip-header-icon-size: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Header icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-header-icon-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Header icon font-size.  Used for configuring the size of font icons
+ */
+$tooltip-header-icon-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Header icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-header-icon-font-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the ToolTip Header icon and text when the icon is horizontally aligned
+ */
+$tooltip-header-icon-horizontal-spacing: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the ToolTip Header icon and text when the icon is horizontally aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-header-icon-horizontal-spacing-big: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the ToolTip Header icon and text when the icon is vertically aligned
+ */
+$tooltip-header-icon-vertical-spacing: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between the ToolTip Header icon and text when the icon is vertically aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-header-icon-vertical-spacing-big: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Header icon opacity
+ */
+$tooltip-header-icon-opacity: dynamic(null);
+
+//# fashion replaces $tip-tool-color
+/**
+ * @var {color}
+ * ToolTip Tool color
+ */
+$tooltip-tool-color: dynamic($highlight-color);
+
+/**
+ * @var {number}
+ * ToolTip Tool color when hovered
+ */
+$tooltip-tool-hovered-color: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool color when pressed
+ */
+$tooltip-tool-pressed-color: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool color when disabled
+ */
+$tooltip-tool-disabled-color: dynamic(null);
+
+/**
+ * @var {color}
+ * ToolTip Tool background-color
+ */
+$tooltip-tool-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool background-color when hovered
+ */
+$tooltip-tool-hovered-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool background-color when pressed
+ */
+$tooltip-tool-pressed-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool background-color when disabled
+ */
+$tooltip-tool-disabled-background-color: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool opacity
+ */
+$tooltip-tool-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool opacity when hovered
+ */
+$tooltip-tool-hovered-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool opacity when pressed
+ */
+$tooltip-tool-pressed-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool opacity when disabled
+ */
+$tooltip-tool-disabled-opacity: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool border radius
+ */
+$tooltip-tool-border-radius: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool border radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-tool-border-radius-big: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool size
+ */
+$tooltip-tool-size: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-tool-size-big: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool font-size
+ */
+$tooltip-tool-font-size: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-tool-font-size-big: dynamic(null);
+
+//# fashion replaces $tip-tool-spacing
+/**
+ * @var {number}
+ * The space between ToolTip Tools
+ */
+$tooltip-tool-spacing: dynamic(null);
+
+/**
+ * @var {number}
+ * The space between ToolTip Tools in the {@link Global_CSS#$enable-big big} sizing scheme
+ */
+$tooltip-tool-spacing-big: dynamic(null);
+
+/**
+ * @var {string}
+ * ToolTip Tool cursor
+ */
+$tooltip-tool-cursor: dynamic(null);
+
+/**
+ * @var {string}
+ * ToolTip Tool cursor when disabled
+ */
+$tooltip-tool-disabled-cursor: dynamic(null);
+
+/**
+ * @var {number}
+ * ToolTip Tool outline width when focused
+ */
+$tooltip-tool-focused-outline-width: dynamic(null);
+
+/**
+ * @var {string}
+ * ToolTip Tool outline style when focused
+ */
+$tooltip-tool-focused-outline-style: dynamic(null);
+
+/**
+ * @var {color}
+ * ToolTip Tool outline color when focused
+ */
+$tooltip-tool-focused-outline-color: dynamic($base-color);
+
+/**
+ * @var {number}
+ * ToolTip Tool outline offset when focused
+ */
+$tooltip-tool-focused-outline-offset: dynamic(null);
+
+/**
+ * @var {color}
+ * ToolTip anchor border-color
+ */
+$tooltip-anchor-border-color: dynamic(null);
+
+/**
+ * @var {color}
+ * ToolTip anchor background-color
+ */
+$tooltip-anchor-background-color: dynamic(null);
+
+//# fashion replaces $tip-anchor-height
+/**
+ * @var {number}
+ * The height (in all orientations) of the anchor arrow
+ */
+$tooltip-anchor-height: dynamic(null);
+
+//# fashion replaces $tip-anchor-width
+/**
+ * @var {number}
+ * The width (in all orientations) of the anchor arrow.
+ */
+$tooltip-anchor-width: dynamic(null);
+
+//# fashion replaces $tip-anchor-margin
+/**
+ * @var {number}
+ * The extra spacing beyond the tip of the anchor arrow to prevent the pointer touching
+ * the target;
+ */
+$tooltip-anchor-margin: dynamic(null);
+
+/**
+ * @var {string}
+ * `true` to include {@link #manageBorders border management} rules
+ */
+$tooltip-manage-borders: dynamic($panel-manage-borders);
+
+/**
+ * Creates a visual theme for a ToolTip.
+ *
+ * @param {string} $ui
+ * The name of the UI being created. Can not included spaces or special punctuation
+ * (used in CSS class names).
+ *
+ * @param {String} [$xtype=tooltip] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors.  For use by UI mixins of derived classes.
+ *
+ * @param {String} [$header-xtype=tooltipheader] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors for the header component.  For use by UI mixins of derived classes.
+ *
+ * @param {String} [$title-xtype=tooltiptitle] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors for the title component.  For use by UI mixins of derived classes.
+ *
+ * @param {String} [$tool-xtype=tooltiptool] (protected) The {@link Ext.Class#xtype} to use
+ * in CSS selectors for tools.  For use by UI mixins of derived classes.
+ *
+ * @param {color} $background-color
+ * ToolTip background-color
+ *
+ * @param {color/list} $border-color
+ * ToolTip border-color
+ *
+ * @param {number/list} $border-width
+ * ToolTip border-width
+ *
+ * @param {string/list} $border-style
+ * ToolTip border-style
+ *
+ * @param {number/list} $border-radius
+ * ToolTip border-radius
+ *
+ * @param {number/list} $border-radius-big
+ * ToolTip border-radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $body-background-color
+ * ToolTip body background-color
+ *
+ * @param {color} $body-color
+ * ToolTip body text color
+ *
+ * @param {color} $body-border-color
+ * ToolTip body border-color
+ *
+ * @param {number/list} $body-border-width
+ * ToolTip body border-width
+ *
+ * @param {number/list} $body-border-style
+ * ToolTip body border-style
+ *
+ * @param {string/number} $body-font-weight
+ * ToolTip body font-weight
+ *
+ * @param {number} $body-font-size
+ * ToolTip body font-size
+ *
+ * @param {number} $body-font-size-big
+ * ToolTip body font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $body-line-height
+ * ToolTip body line-height
+ *
+ * @param {number} $body-line-height-big
+ * ToolTip body line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $body-font-family
+ * ToolTip body font-family
+ *
+ * @param {number/list} $body-padding
+ * ToolTip body padding
+ *
+ * @param {number/list} $body-padding-big
+ * ToolTip body padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $header-background-color
+ * ToolTip Header background-color
+ *
+ * @param {string/list} $header-background-gradient
+ * ToolTip Header background-gradient.  Can be either the name of a gradient defined by
+ * {@link Global_CSS#background-gradient} or a list of color stops.
+ *
+ * @param {color} $header-color
+ * ToolTip Header text color
+ *
+ * @param {color/list} $header-border-color
+ * ToolTip Header border-color
+ *
+ * @param {number/list} $header-border-width
+ * ToolTip Header border-width
+ *
+ * @param {string/list} $header-border-style
+ * ToolTip Header border-style
+ *
+ * @param {string/number} $header-font-weight
+ * ToolTip Header font-weight
+ *
+ * @param {number} $header-font-size
+ * ToolTip Header font-size
+ *
+ * @param {number} $header-font-size-big
+ * ToolTip Header font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-line-height
+ * ToolTip Header line-height
+ *
+ * @param {number} $header-line-height-big
+ * ToolTip Header line-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $header-font-family
+ * ToolTip Header font-family
+ *
+ * @param {number/list} $header-padding
+ * ToolTip Header padding
+ *
+ * @param {number/list} $header-padding-big
+ * ToolTip Header padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number/list} $header-title-padding
+ * ToolTip Header Title padding
+ *
+ * @param {number/list} $header-title-padding-big
+ * ToolTip Header Title padding in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number/list} $header-title-opacity
+ * ToolTip Header Title opacity
+ *
+ * @param {shadow} $header-shadow
+ * ToolTip Header Shadow
+ *
+ * @param {number} $header-z-index
+ * Z-Index for the ToolTip Header, should be used with shadows to raise header above content
+ *
+ * @param {number} $header-min-height
+ * ToolTip Header min-height
+ *
+ * @param {number} $header-min-height-big
+ * ToolTip Header min-height in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {color} $header-icon-color
+ * ToolTip Header icon color.
+ *
+ * @param {number} $header-icon-size
+ * ToolTip Header icon size
+ *
+ * @param {number} $header-icon-size-big
+ * ToolTip Header icon size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-font-size
+ * ToolTip Header icon font-size.  Used for configuring the size of font icons
+ *
+ * @param {number} $header-icon-font-size-big
+ * ToolTip Header icon font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-horizontal-spacing
+ * The space between the ToolTip Header icon and text when the icon is horizontally aligned
+ *
+ * @param {number} $header-icon-horizontal-spacing-big
+ * The space between the ToolTip Header icon and text when the icon is horizontally aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-vertical-spacing
+ * The space between the ToolTip Header icon and text when the icon is vertically aligned
+ *
+ * @param {number} $header-icon-vertical-spacing-big
+ * The space between the ToolTip Header icon and text when the icon is vertically aligned
+ * in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $header-icon-opacity
+ * ToolTip Header icon opacity
+ *
+ * @param {color} $tool-color
+ * ToolTip Tool color
+ *
+ * @param {number} $tool-hovered-color
+ * ToolTip Tool color when hovered
+ *
+ * @param {number} $tool-pressed-color
+ * ToolTip Tool color when pressed
+ *
+ * @param {number} $tool-disabled-color
+ * ToolTip Tool color when disabled
+ *
+ * @param {color} $tool-background-color
+ * ToolTip Tool background-color
+ *
+ * @param {number} $tool-hovered-background-color
+ * ToolTip Tool background-color when hovered
+ *
+ * @param {number} $tool-pressed-background-color
+ * ToolTip Tool background-color when pressed
+ *
+ * @param {number} $tool-disabled-background-color
+ * ToolTip Tool background-color when disabled
+ *
+ * @param {number} $tool-opacity
+ * ToolTip Tool opacity
+ *
+ * @param {number} $tool-hovered-opacity
+ * ToolTip Tool opacity when hovered
+ *
+ * @param {number} $tool-pressed-opacity
+ * ToolTip Tool opacity when pressed
+ *
+ * @param {number} $tool-disabled-opacity
+ * ToolTip Tool opacity when disabled
+ *
+ * @param {number} $tool-border-radius
+ * ToolTip Tool border radius
+ *
+ * @param {number} $tool-border-radius-big
+ * ToolTip Tool border radius in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $tool-size
+ * ToolTip Tool size
+ *
+ * @param {number} $tool-size-big
+ * ToolTip Tool size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $tool-font-size
+ * ToolTip Tool font-size
+ *
+ * @param {number} $tool-font-size-big
+ * ToolTip Tool font-size in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {number} $tool-spacing
+ * The space between ToolTip Tools
+ *
+ * @param {number} $tool-spacing-big
+ * The space between ToolTip Tools in the {@link Global_CSS#$enable-big big} sizing scheme
+ *
+ * @param {string} $tool-cursor
+ * ToolTip Tool cursor
+ *
+ * @param {string} $tool-disabled-cursor
+ * ToolTip Tool cursor when disabled
+ *
+ * @param {number} $tool-focused-outline-width
+ * ToolTip Tool outline width when focused
+ *
+ * @param {string} $tool-focused-outline-style
+ * ToolTip Tool outline style when focused
+ *
+ * @param {color} $tool-focused-outline-color
+ * ToolTip Tool outline color when focused
+ *
+ * @param {number} $tool-focused-outline-offset
+ * ToolTip Tool outline offset when focused
+ *
+ * @param {color} $anchor-border-color
+ * ToolTip anchor border-color
+ *
+ * @param {color} $anchor-background-color
+ * ToolTip anchor background-color
+ *
+ * @param {number} $anchor-height
+ * The height (in all orientations) of the anchor arrow
+ *
+ * @param {number} $anchor-width
+ * The width (in all orientations) of the anchor arrow.
+ *
+ * @param {number} $anchor-margin
+ * The extra spacing beyond the tip of the anchor arrow to prevent the pointer touching
+ * the target;
+ *
+ * @param {string} $manage-borders
+ * `true` to include {@link #manageBorders border management} rules
+ */
+@mixin tooltip-ui(
+    $ui: null,
+    $xtype: tooltip,
+    $header-xtype: tooltipheader,
+    $title-xtype: tooltiptitle,
+    $tool-xtype: tooltiptool,
+    $background-color: null,
+    $border-color: null,
+    $border-width: null,
+    $border-style: null,
+    $border-radius: null,
+    $border-radius-big: null,
+    $body-background-color: null,
+    $body-color: null,
+    $body-border-color: null,
+    $body-border-width: null,
+    $body-border-style: null,
+    $body-font-weight: null,
+    $body-font-size: null,
+    $body-font-size-big: null,
+    $body-line-height: null,
+    $body-line-height-big: null,
+    $body-font-family: null,
+    $body-padding: null,
+    $body-padding-big: null,
+    $header-background-color: null,
+    $header-background-gradient: null,
+    $header-color: null,
+    $header-border-color: null,
+    $header-border-width: null,
+    $header-border-style: null,
+    $header-font-weight: null,
+    $header-font-size: null,
+    $header-font-size-big: null,
+    $header-line-height: null,
+    $header-line-height-big: null,
+    $header-font-family: null,
+    $header-padding: null,
+    $header-padding-big: null,
+    $header-title-padding: null,
+    $header-title-padding-big: null,
+    $header-title-opacity: null,
+    $header-shadow: null,
+    $header-z-index: null,
+    $header-min-height: null,
+    $header-min-height-big: null,
+    $header-icon-color: null,
+    $header-icon-size: null,
+    $header-icon-size-big: null,
+    $header-icon-font-size: null,
+    $header-icon-font-size-big: null,
+    $header-icon-horizontal-spacing: null,
+    $header-icon-horizontal-spacing-big: null,
+    $header-icon-vertical-spacing: null,
+    $header-icon-vertical-spacing-big: null,
+    $header-icon-opacity: null,
+    $tool-color: null,
+    $tool-hovered-color: null,
+    $tool-pressed-color: null,
+    $tool-disabled-color: null,
+    $tool-background-color: null,
+    $tool-hovered-background-color: null,
+    $tool-pressed-background-color: null,
+    $tool-disabled-background-color: null,
+    $tool-opacity: null,
+    $tool-hovered-opacity: null,
+    $tool-pressed-opacity: null,
+    $tool-disabled-opacity: null,
+    $tool-border-radius: null,
+    $tool-border-radius-big: null,
+    $tool-size: null,
+    $tool-size-big: null,
+    $tool-font-size: null,
+    $tool-font-size-big: null,
+    $tool-spacing: null,
+    $tool-spacing-big: null,
+    $tool-cursor: null,
+    $tool-disabled-cursor: null,
+    $tool-focused-outline-width: null,
+    $tool-focused-outline-style: null,
+    $tool-focused-outline-color: null,
+    $tool-focused-outline-offset: null,
+    $anchor-border-color: null,
+    $anchor-background-color: null,
+    $anchor-height: null,
+    $anchor-width: null,
+    $anchor-margin: null,
+    $manage-borders: $tooltip-manage-borders
+) {
+    $arguments: intersect-arguments(tooltip-ui, panel-ui);
+
+    @include panel-ui($arguments...);
+}
+
