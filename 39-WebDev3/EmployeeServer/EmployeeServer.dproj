@@ -2,10 +2,10 @@
     <PropertyGroup>
         <ProjectGuid>{21B5983B-C62A-4EB3-AF52-D35EE224913B}</ProjectGuid>
         <MainSource>EmployeeServer.dpk</MainSource>
-        <ProjectVersion>18.2</ProjectVersion>
+        <ProjectVersion>18.3</ProjectVersion>
         <FrameworkType>None</FrameworkType>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Package</AppType>

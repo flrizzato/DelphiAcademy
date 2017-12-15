@@ -4,7 +4,14 @@ object EmployeeServerResource1: TEmployeeServerResource1
   Width = 649
   object EmployeeConnection: TFDConnection
     Params.Strings = (
-      'ConnectionDef=EMPLOYEE')
+      
+        'Database=C:\Users\Public\Documents\Embarcadero\Studio\19.0\Sampl' +
+        'es\Data\EMPLOYEE.GDB'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=localhost'
+      'DriverID=IB')
     LoginPrompt = False
     Left = 57
     Top = 22
