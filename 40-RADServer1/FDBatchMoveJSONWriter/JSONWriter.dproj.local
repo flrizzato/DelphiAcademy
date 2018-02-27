@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/02/26 10:20:33.000.867,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/02/26 10:22:56.000.290,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\40-RADServer1\TFDBatchMoveJSONWriter\uMainForm.pas</Transaction>
+    <Transaction>2018/02/26 10:22:56.000.290,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\DelphiAcademy\40-RADServer1\TFDBatchMoveJSONWriter\uMainForm.dfm</Transaction>
+    <Transaction>2018/02/26 10:23:15.000.906,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\40-RADServer1\TFDBatchMoveJSONWriter\JSONWriter.dproj</Transaction>
+    <Transaction>2018/02/26 11:42:55.000.007,=C:\DelphiAcademy\40-RADServer1\TFDBatchMoveJSONWriter\Unit1.pas</Transaction>
+    <Transaction>2018/02/26 11:43:14.000.120,C:\DelphiAcademy\40-RADServer1\Common\uJSONHelper.pas=C:\DelphiAcademy\40-RADServer1\TFDBatchMoveJSONWriter\Unit1.pas</Transaction>
+    <Transaction>2018/02/26 11:43:14.000.120,C:\DelphiAcademy\40-RADServer1\Common\uJSONHelper.dfm=C:\DelphiAcademy\40-RADServer1\TFDBatchMoveJSONWriter\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

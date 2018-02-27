@@ -2,13 +2,13 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2017/09/04 18:01:55.000.295,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2017/09/04 18:02:50.000.832,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\32-MobileUX\MobileUX103\uMainForm.pas</Transaction>
-    <Transaction>2017/09/04 18:02:50.000.832,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\DelphiAcademy\32-MobileUX\MobileUX103\uMainForm.fmx</Transaction>
-    <Transaction>2017/09/04 18:02:56.000.935,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\32-MobileUX\MobileUX103\MobileUX103.dproj</Transaction>
+    <Transaction>2017/09/04 18:02:50.000.832,C:\DelphiAcademy\32-MobileUX\MobileUX103\uMainForm.fmx=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2017/09/04 18:02:50.000.832,C:\DelphiAcademy\32-MobileUX\MobileUX103\uMainForm.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/09/04 18:02:56.000.935,C:\DelphiAcademy\32-MobileUX\MobileUX103\MobileUX103.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile Android="0022831207"/>
+		<NoProfile Android="0042349368"/>
 		<PmacOSEMBT iOSSimulator="iPhone5"/>
-		<PmacOS iOSSimulator="iPhone5" iOSDevice64="_iosdevice_7112cfd6ce9983e12d46ee84fbffa466ff670ccf"/>
+		<PmacOS iOSSimulator="iPhone5" iOSDevice64=""/>
 	</ActiveMobileDevice>
 </BorlandProject>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+		<PmacOS iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+	<Transactions>
+    <Transaction>2018/02/26 16:31:39.000.556,C:\DelphiAcademy\40-RADServer1\RS-ZipCode\RSZipClient.dproj=C:\DelphiAcademy\40-RADServer1\RS-ZipCode\RSClient102.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

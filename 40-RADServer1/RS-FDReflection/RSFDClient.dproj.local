@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/02/26 17:10:28.000.095,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2018/02/26 17:11:56.000.342,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\DelphiAcademy\40-RADServer1\RS-FDReflection\uMainForm.dfm</Transaction>
+    <Transaction>2018/02/26 17:11:56.000.342,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\DelphiAcademy\40-RADServer1\RS-FDReflection\uMainForm.pas</Transaction>
+    <Transaction>2018/02/26 17:12:08.000.521,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\40-RADServer1\RS-FDReflection\RSFDReflectionClient.dproj</Transaction>
+    <Transaction>2018/02/26 17:16:04.000.738,C:\DelphiAcademy\40-RADServer1\RS-FDReflection\RSFDClient.dproj=C:\DelphiAcademy\40-RADServer1\RS-FDReflection\RSFDReflectionClient.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

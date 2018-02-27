@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/02/27 07:43:21.000.285,=emsserverapi.dcp</Transaction>
+    <Transaction>2018/02/27 07:43:21.000.315,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/02/27 07:43:51.000.376,C:\DelphiAcademy\40-RADServer1\RS-PlainJSON\uMainDM.dfm=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2018/02/27 07:43:51.000.376,C:\DelphiAcademy\40-RADServer1\RS-PlainJSON\uMainDM.pas=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/02/27 07:44:02.000.873,C:\DelphiAcademy\40-RADServer1\RS-PlainJSON\RSPlainJSON.dproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2018/02/27 07:45:03.000.951,=C:\DelphiAcademy\40-RADServer1\Common\uJSONHelper.pas</Transaction>
+    <Transaction>2018/02/27 07:45:18.000.119,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2018/02/27 07:45:18.000.084,=dbrtl.dcp</Transaction>
+    <Transaction>2018/02/27 07:45:18.000.147,=FireDACIBDriver.dcp</Transaction>
+    <Transaction>2018/02/27 07:45:18.000.134,=FireDACCommon.dcp</Transaction>
+    <Transaction>2018/02/27 07:45:18.000.103,=FireDAC.dcp</Transaction>
+  </Transactions>
+</BorlandProject>

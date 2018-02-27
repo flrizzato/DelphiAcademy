@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{788F530F-E251-4B6B-8064-525CA9B7A8AC}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="FDBatchMoveJSONWriter\JSONWriter.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS-ZipCode\RSZipCode.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS-ZipCode\RSZipClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS-FDReflection\RSFDReflection.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS-FDReflection\RSFDClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RS-PlainJSON\RSPlainJSON.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="JSONWriter">
+        <MSBuild Projects="FDBatchMoveJSONWriter\JSONWriter.dproj"/>
+    </Target>
+    <Target Name="JSONWriter:Clean">
+        <MSBuild Projects="FDBatchMoveJSONWriter\JSONWriter.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JSONWriter:Make">
+        <MSBuild Projects="FDBatchMoveJSONWriter\JSONWriter.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RSZipCode">
+        <MSBuild Projects="RS-ZipCode\RSZipCode.dproj"/>
+    </Target>
+    <Target Name="RSZipCode:Clean">
+        <MSBuild Projects="RS-ZipCode\RSZipCode.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RSZipCode:Make">
+        <MSBuild Projects="RS-ZipCode\RSZipCode.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RSZipClient">
+        <MSBuild Projects="RS-ZipCode\RSZipClient.dproj"/>
+    </Target>
+    <Target Name="RSZipClient:Clean">
+        <MSBuild Projects="RS-ZipCode\RSZipClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RSZipClient:Make">
+        <MSBuild Projects="RS-ZipCode\RSZipClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RSFDReflection">
+        <MSBuild Projects="RS-FDReflection\RSFDReflection.dproj"/>
+    </Target>
+    <Target Name="RSFDReflection:Clean">
+        <MSBuild Projects="RS-FDReflection\RSFDReflection.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RSFDReflection:Make">
+        <MSBuild Projects="RS-FDReflection\RSFDReflection.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RSFDClient">
+        <MSBuild Projects="RS-FDReflection\RSFDClient.dproj"/>
+    </Target>
+    <Target Name="RSFDClient:Clean">
+        <MSBuild Projects="RS-FDReflection\RSFDClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RSFDClient:Make">
+        <MSBuild Projects="RS-FDReflection\RSFDClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RSPlainJSON">
+        <MSBuild Projects="RS-PlainJSON\RSPlainJSON.dproj"/>
+    </Target>
+    <Target Name="RSPlainJSON:Clean">
+        <MSBuild Projects="RS-PlainJSON\RSPlainJSON.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RSPlainJSON:Make">
+        <MSBuild Projects="RS-PlainJSON\RSPlainJSON.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="JSONWriter;RSZipCode;RSZipClient;RSFDReflection;RSFDClient;RSPlainJSON"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="JSONWriter:Clean;RSZipCode:Clean;RSZipClient:Clean;RSFDReflection:Clean;RSFDClient:Clean;RSPlainJSON:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="JSONWriter:Make;RSZipCode:Make;RSZipClient:Make;RSFDReflection:Make;RSFDClient:Make;RSPlainJSON:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
