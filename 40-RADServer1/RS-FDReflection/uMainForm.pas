@@ -31,8 +31,10 @@ type
     BindingsList1: TBindingsList;
     LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
     BindSourceDB1: TBindSourceDB;
+    butGetOneCustomer: TButton;
     procedure butGetCustomersClick(Sender: TObject);
     procedure butUpdateCustomersClick(Sender: TObject);
+    procedure butGetOneCustomerClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -71,6 +73,14 @@ end;
 
 procedure TMainForm.butGetCustomersClick(Sender: TObject);
 begin
+  EMSFireDACClient1.GetEndpoint.ResourceSuffix := 'ALL';
+  EMSFireDACClient1.GetData;
+  GridAutoSizeCols(StringGridBindSourceDB1);
+end;
+
+procedure TMainForm.butGetOneCustomerClick(Sender: TObject);
+begin
+  EMSFireDACClient1.GetEndpoint.ResourceSuffix := '1001';
   EMSFireDACClient1.GetData;
   GridAutoSizeCols(StringGridBindSourceDB1);
 end;

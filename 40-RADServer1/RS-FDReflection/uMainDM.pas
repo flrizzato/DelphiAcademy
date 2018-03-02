@@ -15,6 +15,7 @@ uses
   FireDAC.Comp.Client, Data.DB, FireDAC.Comp.DataSet;
 
 type
+
   [ResourceName('RSFDReflection')]
   TRSResource1 = class(TDataModule)
     EmployeeConnection: TFDConnection;
@@ -24,22 +25,31 @@ type
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     FDStanStorageJSONLink1: TFDStanStorageJSONLink;
   published
-    procedure Get(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
-    procedure Post(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+    [ResourceSuffix('{item}')]
+    procedure Get(const AContext: TEndpointContext;
+      const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+    procedure Post(const AContext: TEndpointContext;
+      const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
   end;
 
 implementation
 
 {%CLASSGROUP 'System.Classes.TPersistent'}
-
 {$R *.dfm}
 
-procedure TRSResource1.Get(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+procedure TRSResource1.Get(const AContext: TEndpointContext;
+  const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
 var
+  LItem: string;
   fMem: TMemoryStream;
 begin
+  LItem := ARequest.Params.Values['item'];
   fMem := TMemoryStream.Create;
   try
+    if LItem.Trim = 'ALL' then
+      CustomerTable.SQL.Text := 'SELECT * FROM CUSTOMER ORDER BY CUST_NO'
+    else
+      CustomerTable.SQL.Text := 'SELECT * FROM CUSTOMER WHERE CUST_NO = ' + LItem;
     CustomerTable.Open;
     FDSchemaAdapter1.SaveToStream(fMem, TFDStorageFormat.sfJSON);
     AResponse.Body.SetStream(fMem, 'application/json', True);
@@ -52,8 +62,10 @@ begin
   end;
 end;
 
-procedure TRSResource1.Post(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
-var fMem: TStream;
+procedure TRSResource1.Post(const AContext: TEndpointContext;
+  const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  fMem: TStream;
 begin
   if not ARequest.Body.TryGetStream(fMem) then
     raise Exception.Create('Nada para atualizar...');
@@ -68,7 +80,7 @@ begin
 end;
 
 initialization
-  Register;
+
+Register;
+
 end.
-
-

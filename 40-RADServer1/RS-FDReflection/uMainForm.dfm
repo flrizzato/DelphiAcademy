@@ -46,7 +46,7 @@ object MainForm: TMainForm
     TabOrder = 2
     object butUpdateCustomers: TButton
       AlignWithMargins = True
-      Left = 115
+      Left = 225
       Top = 5
       Width = 100
       Height = 40
@@ -58,6 +58,7 @@ object MainForm: TMainForm
       Caption = 'Post'
       TabOrder = 0
       OnClick = butUpdateCustomersClick
+      ExplicitLeft = 195
     end
     object butGetCustomers: TButton
       AlignWithMargins = True
@@ -70,9 +71,26 @@ object MainForm: TMainForm
       Margins.Right = 5
       Margins.Bottom = 5
       Align = alLeft
-      Caption = 'Get'
+      Caption = 'Get All'
       TabOrder = 1
       OnClick = butGetCustomersClick
+      ExplicitTop = 2
+    end
+    object butGetOneCustomer: TButton
+      AlignWithMargins = True
+      Left = 115
+      Top = 5
+      Width = 100
+      Height = 40
+      Margins.Left = 5
+      Margins.Top = 5
+      Margins.Right = 5
+      Margins.Bottom = 5
+      Align = alLeft
+      Caption = 'Get One'
+      TabOrder = 2
+      OnClick = butGetOneCustomerClick
+      ExplicitLeft = 5
     end
   end
   object EMSProvider1: TEMSProvider
@@ -121,7 +139,7 @@ object MainForm: TMainForm
     Methods = <>
     OutputConverters = <>
     Left = 500
-    Top = 349
+    Top = 357
     object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
       DataSource = BindSourceDB1
       GridControl = StringGridBindSourceDB1
@@ -132,6 +150,6 @@ object MainForm: TMainForm
     DataSet = FDMemTable1
     ScopeMappings = <>
     Left = 584
-    Top = 352
+    Top = 360
   end
 end
