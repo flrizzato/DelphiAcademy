@@ -12,7 +12,7 @@ object JSONDM: TJSONDM
   object FDBatchMoveDataSetReader1: TFDBatchMoveDataSetReader
     Optimise = False
     Left = 72
-    Top = 64
+    Top = 72
   end
   object FDBatchMove1: TFDBatchMove
     Reader = FDBatchMoveDataSetReader1
