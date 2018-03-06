@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/12/12 00:15:24.000.344,=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/12/12 00:15:24.000.320,=emsserverapi.dcp</Transaction>
+    <Transaction>2017/12/12 00:16:05.000.272,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\DelphiAcademy\39-WebDev3\EmployeeServer\uEmployeeResource.pas</Transaction>
+    <Transaction>2017/12/12 00:16:05.000.272,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\DelphiAcademy\39-WebDev3\EmployeeServer\uEmployeeResource.dfm</Transaction>
+    <Transaction>2017/12/12 00:16:08.000.863,C:\Users\ferna\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DelphiAcademy\39-WebDev3\EmployeeServer\EmployeeServer.dproj</Transaction>
+    <Transaction>2017/12/12 00:23:10.000.016,=C:\DelphiAcademy\39-WebDev3\Common\DataSetConverter4D.Helper.pas</Transaction>
+    <Transaction>2017/12/12 00:23:34.000.239,=C:\DelphiAcademy\39-WebDev3\Common\DataSetConverter4D.pas</Transaction>
+    <Transaction>2017/12/12 00:23:46.000.876,=C:\DelphiAcademy\39-WebDev3\Common\DataSetConverter4D.Impl.pas</Transaction>
+    <Transaction>2017/12/12 00:24:00.000.317,=C:\DelphiAcademy\39-WebDev3\Common\DataSetConverter4D.Util.pas</Transaction>
+    <Transaction>2017/12/12 00:24:05.000.720,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2017/12/12 00:24:05.000.687,=DbxCommonDriver.dcp</Transaction>
+    <Transaction>2017/12/12 00:24:05.000.672,=dbrtl.dcp</Transaction>
+    <Transaction>2017/12/12 00:24:05.000.704,=FireDAC.dcp</Transaction>
+    <Transaction>2017/12/12 00:24:05.000.751,=FireDACIBDriver.dcp</Transaction>
+    <Transaction>2017/12/12 00:24:05.000.736,=FireDACCommon.dcp</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,175 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup/>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="$(BDS)\Redist\Win64\rtl250.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>rtl250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win64\FireDACCommonDriver250.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>FireDACCommonDriver250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win64\emsserverapi250.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>emsserverapi250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win64\FireDACCommon250.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>FireDACCommon250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win64\FireDAC250.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>FireDAC250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\19.0\Bpl\Win64\EmployeeServer.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>EmployeeServer.bpl</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win64\dbrtl250.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>dbrtl250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win64\FireDACIBDriver250.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>FireDACIBDriver250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win64\xmlrtl250.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>xmlrtl250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win64\FireDACSqliteDriver250.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>FireDACSqliteDriver250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\Win64\DBXCommonDriver250.bpl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>DBXCommonDriver250.bpl</RemoteName>
+            <DeployClass>DependencyPackage</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\EmployeeServer.bpl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>EmployeeServer.bpl</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgsqlite3.dylib">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>libcgsqlite3.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>EmployeeServer\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Android'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
+            <RemoteDir>EmployeeServer.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
+            <RemoteDir>EmployeeServer.app\</RemoteDir>
+            <RemoteName>libPCRE.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>
