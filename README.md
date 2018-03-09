@@ -40,6 +40,16 @@
 37 - Desenvolvimento Web: Parte 1<br>
 38 - Desenvolvimento Web: Parte 2<br>
 39 - Desenvolvimento Web: Parte 3<br>
+40 - Iniciando com RAD Server<br>
+41 - RAD Server: Distribuindo para Windows com IIS<br>
+42 - RAD Server: Distribuindo para Linux com  Apache<br>
+43 - RAD Server: Projeto Exemplo Parte 1 (Server)<br>
+44 - RAD Server: Projeto Exemplo Parte 2 (Cliente Mobile e Desktop)<br>
+45 - RAD Server: Projeto Exemplo Parte 3 (Cliente WEB com Ext JS)<br>
+46 - RAD Server: Push Notifications e Recursos Avançados<br>
+47 - Novos Produtos, Novos Recursos #1<br>
+48 - Novos Produtos, Novos Recursos #2<br>
+49 - Novos Produtos, Novos Recursos #3<br>
 
 
 <h2>Español</h2>
@@ -82,3 +92,13 @@
 37 - Desarrollo Web: Parte 1<br>
 38 - Desarrollo Web: Parte 2<br>
 39 - Desarrollo Web: Parte 3<br>
+40 - Primeros pasos con RAD Server<br>
+41 - RAD Server: implementación en Windows con IIS<br>
+42 - RAD Server: implementación en Linux  con Apache<br>
+43 - RAD Server: Proyecto Ejemplo Parte 1 (Servidor)<br>
+44 - RAD Server: Proyecto Ejemplo Parte 2 (Cliente móvil y de escritorio)<br>
+45 - RAD Server: Proyecto Ejemplo Parte 3 (Cliente WEB con Ext JS)<br>
+46 - RAD Server: Push Notificaciones y características avanzadas<br>
+47 - Nuevos Productos, Nuevos Recursos # 1<br>
+48 - Nuevos Productos, Nuevos Recursos # 2<br>
+49 - Nuevos productos, Nuevos recursos # 3<br>
