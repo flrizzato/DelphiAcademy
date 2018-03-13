@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <link href = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-classic/resources/theme-classic-all.css" 
+      <link href = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/classic/theme-classic/resources/theme-classic-all.css" 
          rel = "stylesheet" />
       <script type = "text/javascript" 
-         src = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+         src = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/ext-all.js"></script>
       
       <script type = "text/javascript">
          Ext.onReady(function () {
@@ -16,12 +16,7 @@
                items: [{
                   xtype: 'panel',
                   title: 'Tab One',
-                  html: 'The first tab',
-                  listeners: {
-                     render: function() {
-                        Ext.MessageBox.alert('Tab one', 'Tab One was clicked.');
-                     }
-                  }
+                  html: 'The first tab'
                },{
                   // xtype for all Component configurations in a Container
                   title: 'Tab Two',
