@@ -1,9 +1,0 @@
-.#{$prefix}layout-form {
-    border-spacing: $layout-form-item-spacing;
-
-    @if $enable-big {
-        .#{$prefix}big & {
-            border-spacing: $layout-form-item-spacing-big;
-        }
-    }
-}

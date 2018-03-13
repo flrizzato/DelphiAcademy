@@ -1,2 +1,0 @@
-# locale - Read Me
-

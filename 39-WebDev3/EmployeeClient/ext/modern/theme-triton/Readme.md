@@ -1,2 +1,0 @@
-# theme-triton - Read Me
-

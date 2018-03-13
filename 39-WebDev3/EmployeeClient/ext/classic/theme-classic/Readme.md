@@ -1,2 +1,0 @@
-# theme-classic - Read Me
-

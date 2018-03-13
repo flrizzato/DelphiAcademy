@@ -1,8 +1,0 @@
-/** @class Ext.layout.container.Accordion */
-//
-
-$accordion-header-background-color: dynamic(adjust-color($base-color, $saturation: 13%, $lightness: 7%));
-$accordion-header-padding: dynamic(4px 5px 5px 5px);
-$accordion-header-border-color: dynamic($panel-header-inner-border-color $panel-header-border-color $panel-header-border-color);
-$accordion-tool-focus-outline-color: dynamic(adjust-color($neutral-color, $hue: 0deg, $saturation: 0%, $lightness: -66%));
-$accordion-tool-focus-outline-style: dynamic(dotted);

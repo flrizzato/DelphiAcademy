@@ -1,8 +1,0 @@
-// TAB guards must not affect any layout while remaining accessible.
-// The only thing that counts is their position in the DOM tab sequence.
-.#{$prefix}tabguard-el {
-    width: 0;
-    height: 0;
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-}

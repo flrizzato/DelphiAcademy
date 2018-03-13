@@ -1,3 +1,0 @@
-@if $yearpicker-listitem-ui {
-    @include listitem-ui(map-merge((ui: yearpicker), $yearpicker-listitem-ui)...);
-}

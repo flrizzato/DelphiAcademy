@@ -1,6 +1,0 @@
-@import 'functions.js';
-
-@function ui-suffix($ui) {
-    @return if($ui == null, '', '-' + $ui);
-}
-

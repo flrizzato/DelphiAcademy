@@ -1,2 +1,0 @@
-# touch-sizing - Read Me
-

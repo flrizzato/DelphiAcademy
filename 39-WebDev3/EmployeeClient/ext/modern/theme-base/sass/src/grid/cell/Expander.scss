@@ -1,9 +1,0 @@
-.#{$prefix}expandercell {
-    .#{$prefix}icon-el {
-        cursor: pointer;
-
-        .#{$prefix}summaryrow & {
-            display: none;
-        }
-    }
-}

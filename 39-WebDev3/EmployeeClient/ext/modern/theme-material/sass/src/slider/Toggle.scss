@@ -1,7 +1,0 @@
-.#{$prefix}toggleslider .#{$prefix}thumb {
-    @include material-shadow(1);
-
-    &:active {
-        @include scale(1);
-    }
-}

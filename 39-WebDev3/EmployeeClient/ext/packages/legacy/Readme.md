@@ -1,2 +1,0 @@
-# legacy-device - Read Me
-

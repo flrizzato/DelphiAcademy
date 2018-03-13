@@ -1,2 +1,0 @@
-# theme-crisp - Read Me
-

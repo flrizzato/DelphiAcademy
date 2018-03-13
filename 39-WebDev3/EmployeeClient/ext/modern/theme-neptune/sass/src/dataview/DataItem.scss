@@ -1,8 +1,0 @@
-// There is no default call to dataview-ui here because dataitems
-// do not have any default styling for backward compatibility reasons.
-// One must use set ui to 'default' to opt into styling of dataitems
-@if $enable-default-uis {
-    @if $dataitem-default-ui {
-        @include dataitem-ui(map-merge((ui: default), $dataitem-default-ui)...);
-    }
-}

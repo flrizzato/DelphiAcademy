@@ -1,9 +1,0 @@
-.#{$prefix}form-fieldset-title {
-    .#{$prefix}innerhtml {
-        @include ellipsis();
-    }
-}
-
-.#{$prefix}form-fieldset-instructions {
-    text-align: center;
-}
