@@ -1,0 +1,48 @@
+package EmployeeServer;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  emsserverapi,
+  dbrtl,
+  DbxCommonDriver,
+  FireDAC,
+  FireDACCommonDriver,
+  FireDACCommon,
+  FireDACIBDriver;
+
+contains
+  uEmployeeResource in 'uEmployeeResource.pas' {EmployeeServerResource1: TDataModule},
+  DataSetConverter4D.Helper in '..\Common\DataSetConverter4D.Helper.pas',
+  DataSetConverter4D in '..\Common\DataSetConverter4D.pas',
+  DataSetConverter4D.Impl in '..\Common\DataSetConverter4D.Impl.pas',
+  DataSetConverter4D.Util in '..\Common\DataSetConverter4D.Util.pas';
+
+end.
