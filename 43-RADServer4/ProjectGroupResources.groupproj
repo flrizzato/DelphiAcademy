@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{09E901E8-5FCD-4431-8A69-15C6FF9CAC6F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ClassHelpers\ClassHelpersDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Resources\EmployeeEMS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Resources\CountryEMS.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ClassHelpersDemo">
+        <MSBuild Projects="ClassHelpers\ClassHelpersDemo.dproj"/>
+    </Target>
+    <Target Name="ClassHelpersDemo:Clean">
+        <MSBuild Projects="ClassHelpers\ClassHelpersDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClassHelpersDemo:Make">
+        <MSBuild Projects="ClassHelpers\ClassHelpersDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EmployeeEMS">
+        <MSBuild Projects="Resources\EmployeeEMS.dproj"/>
+    </Target>
+    <Target Name="EmployeeEMS:Clean">
+        <MSBuild Projects="Resources\EmployeeEMS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmployeeEMS:Make">
+        <MSBuild Projects="Resources\EmployeeEMS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CountryEMS">
+        <MSBuild Projects="Resources\CountryEMS.dproj"/>
+    </Target>
+    <Target Name="CountryEMS:Clean">
+        <MSBuild Projects="Resources\CountryEMS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CountryEMS:Make">
+        <MSBuild Projects="Resources\CountryEMS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ClassHelpersDemo;EmployeeEMS;CountryEMS"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ClassHelpersDemo:Clean;EmployeeEMS:Clean;CountryEMS:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ClassHelpersDemo:Make;EmployeeEMS:Make;CountryEMS:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
