@@ -25,6 +25,7 @@ object MainForm: TMainForm
     RowCount = 2
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
     TabOrder = 0
+    ExplicitTop = 53
   end
   object NavigatorBindSourceDB1: TBindNavigator
     Left = 0
@@ -58,7 +59,6 @@ object MainForm: TMainForm
       Caption = 'Post'
       TabOrder = 0
       OnClick = butUpdateCustomersClick
-      ExplicitLeft = 195
     end
     object butGetCustomers: TButton
       AlignWithMargins = True
@@ -74,7 +74,6 @@ object MainForm: TMainForm
       Caption = 'Get All'
       TabOrder = 1
       OnClick = butGetCustomersClick
-      ExplicitTop = 2
     end
     object butGetOneCustomer: TButton
       AlignWithMargins = True
@@ -90,7 +89,6 @@ object MainForm: TMainForm
       Caption = 'Get One'
       TabOrder = 2
       OnClick = butGetOneCustomerClick
-      ExplicitLeft = 5
     end
   end
   object EMSProvider1: TEMSProvider
