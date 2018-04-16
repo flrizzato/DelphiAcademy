@@ -4,13 +4,11 @@ object JSONDM: TJSONDM
   Width = 284
   object FDBatchMoveJSONWriter1: TFDBatchMoveJSONWriter
     DataDef.Fields = <>
-    DataDef.Formatting = Indented
     Encoding = ecANSI
     Left = 72
     Top = 126
   end
   object FDBatchMoveDataSetReader1: TFDBatchMoveDataSetReader
-    Optimise = False
     Left = 72
     Top = 72
   end

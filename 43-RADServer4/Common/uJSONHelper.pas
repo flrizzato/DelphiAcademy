@@ -26,7 +26,8 @@ type
   private
     procedure JsonToDataset(aJSON: TJSONObject; aDataset: TDataSet);
   public
-    function AsJSONArray: string;
+    function AsJSONString: string;
+    function AsJSONArray: TJSONArray;
     function AsJSONStream: TStream;
     procedure InsertFromJSON(aJSON: TJSONObject);
     procedure UpdateFromJSON(aJSON: TJSONObject);
@@ -40,7 +41,7 @@ implementation
 
 { TDataSetJSONHelper }
 
-function TDataSetJSONHelper.AsJSONArray: string;
+function TDataSetJSONHelper.AsJSONString: string;
 var
   lDM: TJSONDM;
   lSTR: TStringStream;
@@ -58,6 +59,25 @@ begin
   finally
     lDM.Free;
     lSTR.Free;
+    Self.EnableControls;
+  end;
+end;
+
+function TDataSetJSONHelper.AsJSONArray: TJSONArray;
+var
+  lDM: TJSONDM;
+begin
+  lDM := TJSONDM.Create(nil);
+  Result := TJSONArray.Create;
+  try
+    Self.DisableControls;
+    if not Self.Active then
+      Self.Active := True;
+    lDM.FDBatchMoveDataSetReader1.DataSet := Self;
+    lDM.FDBatchMoveJSONWriter1.JsonArray := Result;
+    lDM.FDBatchMove1.Execute;
+  finally
+    lDM.Free;
     Self.EnableControls;
   end;
 end;
