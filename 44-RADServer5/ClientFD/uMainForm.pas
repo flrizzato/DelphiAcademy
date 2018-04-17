@@ -73,14 +73,14 @@ end;
 
 procedure TMainForm.butGetCustomersClick(Sender: TObject);
 begin
-  EMSFireDACClient1.GetEndpoint.ResourceSuffix := 'ALL';
+  EMSFireDACClient1.GetEndpoint.Params.Clear;
   EMSFireDACClient1.GetData;
   GridAutoSizeCols(StringGridBindSourceDB1);
 end;
 
 procedure TMainForm.butGetOneCustomerClick(Sender: TObject);
 begin
-  EMSFireDACClient1.GetEndpoint.ResourceSuffix := '1001';
+  EMSFireDACClient1.GetEndpoint.Params.AddItem('CUST_NO', '1001');
   EMSFireDACClient1.GetData;
   GridAutoSizeCols(StringGridBindSourceDB1);
 end;

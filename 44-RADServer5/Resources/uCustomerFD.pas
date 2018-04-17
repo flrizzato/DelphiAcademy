@@ -25,7 +25,6 @@ type
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     FDStanStorageJSONLink1: TFDStanStorageJSONLink;
   published
-    [ResourceSuffix('{item}')]
     procedure Get(const AContext: TEndpointContext;
       const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
     procedure Post(const AContext: TEndpointContext;
@@ -40,16 +39,17 @@ implementation
 procedure TRSResource1.Get(const AContext: TEndpointContext;
   const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
 var
-  LItem: string;
+  CUST_NO: string;
   fMem: TMemoryStream;
 begin
-  LItem := ARequest.Params.Values['item'];
+  if ARequest.Params.TryGetValue('CUST_NO', CUST_NO) then
+    CustomerTable.SQL.Text := 'SELECT * FROM CUSTOMER WHERE CUST_NO = '
+      + CUST_NO
+  else
+    CustomerTable.SQL.Text := 'SELECT * FROM CUSTOMER ORDER BY CUST_NO';
+
   fMem := TMemoryStream.Create;
   try
-    if LItem.Trim = 'ALL' then
-      CustomerTable.SQL.Text := 'SELECT * FROM CUSTOMER ORDER BY CUST_NO'
-    else
-      CustomerTable.SQL.Text := 'SELECT * FROM CUSTOMER WHERE CUST_NO = ' + LItem;
     CustomerTable.Open;
     FDSchemaAdapter1.SaveToStream(fMem, TFDStorageFormat.sfJSON);
     AResponse.Body.SetStream(fMem, 'application/json', True);

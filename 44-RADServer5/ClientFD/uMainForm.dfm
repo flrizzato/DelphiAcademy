@@ -98,7 +98,7 @@ object MainForm: TMainForm
     Top = 8
   end
   object EMSFireDACClient1: TEMSFireDACClient
-    Resource = 'RSFDReflection'
+    Resource = 'customerFD'
     Provider = EMSProvider1
     SchemaAdapter = FDSchemaAdapter1
     Left = 568
