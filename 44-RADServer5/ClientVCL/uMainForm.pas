@@ -87,21 +87,23 @@ begin
   try
     try
       if bInsert then
-       begin
+      begin
         LMemTable.FilterChanges := [rtInserted];
         RESTMethods.Method := rmPOST;
         RESTMethods.ResourceSuffix := '';
-       end
+      end
       else
-       begin
+      begin
         LMemTable.FilterChanges := [rtModified];
         RESTMethods.Method := rmPUT;
         RESTMethods.ResourceSuffix := LMemTable.FieldByName('CUST_NO').AsString;
-       end;
+      end;
 
       RESTMethods.ClearBody;
       RESTMethods.AddBody(LMemTable.AsJSONObject);
       RESTMethods.Execute;
+
+      ShowMessage(RESTMethodsResponse.StatusCode.ToString);
 
       FDMemTable1.CommitUpdates;
     except
@@ -126,6 +128,8 @@ begin
       RESTMethods.Method := rmDELETE;
       RESTMethods.ResourceSuffix := LMemTable.FieldByName('CUST_NO').AsString;
       RESTMethods.Execute;
+
+      ShowMessage(RESTMethodsResponse.StatusCode.ToString);
 
       FDMemTable1.CommitUpdates;
     except
