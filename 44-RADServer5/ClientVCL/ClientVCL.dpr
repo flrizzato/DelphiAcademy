@@ -2,7 +2,8 @@ program ClientVCL;
 
 uses
   Vcl.Forms,
-  uMainForm in 'uMainForm.pas' {Form1};
+  uMainForm in 'uMainForm.pas' {Form1},
+  uJSONHelper in '..\Common\uJSONHelper.pas' {JSONDM: TDataModule};
 
 {$R *.res}
 

@@ -8,7 +8,7 @@ uses
   FireDAC.Comp.BatchMove.JSON, REST.Response.Adapter, FireDAC.Stan.Option,
   FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
   FireDAC.DApt.Intf, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
-  System.JSON, FireDAC.DApt;
+  System.JSON, FireDAC.DApt, FireDAC.Stan.StorageBin;
 
 type
   TJSONDM = class(TDataModule)
@@ -28,17 +28,18 @@ type
   public
     function AsJSONString: string;
     function AsJSONArray: TJSONArray;
+    function AsJSONObject: TJSONObject;
     function AsJSONStream: TStream;
     procedure InsertFromJSON(aJSON: TJSONObject);
     procedure UpdateFromJSON(aJSON: TJSONObject);
   end;
 
+function MemTableCreateDelta(const AFDMemTable: TFDMemTable): TFDMemTable;
+
 implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
-
 {$R *.dfm}
-
 { TDataSetJSONHelper }
 
 function TDataSetJSONHelper.AsJSONString: string;
@@ -82,6 +83,11 @@ begin
   end;
 end;
 
+function TDataSetJSONHelper.AsJSONObject: TJSONObject;
+begin
+  Result := TJSONObject(AsJsonArray.Items[0]);
+end;
+
 function TDataSetJSONHelper.AsJSONStream: TStream;
 var
   lDM: TJSONDM;
@@ -101,13 +107,14 @@ begin
   end;
 end;
 
-procedure TDataSetJSONHelper.JsonToDataset(aJSON: TJSONObject; aDataset: TDataSet);
+procedure TDataSetJSONHelper.JsonToDataset(aJSON: TJSONObject;
+  aDataset: TDataSet);
 var
-   vConv : TCustomJSONDataSetAdapter;
+  vConv: TCustomJSONDataSetAdapter;
 begin
   vConv := TCustomJSONDataSetAdapter.Create(Nil);
   try
-    vConv.Dataset := aDataset;
+    vConv.DataSet := aDataset;
     vConv.UpdateDataSet(aJSON);
   finally
     vConv.Free;
@@ -124,8 +131,8 @@ begin
   try
     JsonToDataset(aJSON, lDM.JsonData);
     Self.Append;
-    for i := 0 to lDM.JsonData.FieldCount-1 do
-       Self.FieldByName(lDM.JsonData.Fields[i].FieldName).Value :=
+    for i := 0 to lDM.JsonData.FieldCount - 1 do
+      Self.FieldByName(lDM.JsonData.Fields[i].FieldName).Value :=
         lDM.JsonData.Fields[i].Value;
     Self.Post;
   finally
@@ -144,13 +151,45 @@ begin
   try
     JsonToDataset(aJSON, lDM.JsonData);
     Self.Edit;
-    for i := 0 to lDM.JsonData.FieldCount-1 do
-       Self.FieldByName(lDM.JsonData.Fields[i].FieldName).Value :=
+    for i := 0 to lDM.JsonData.FieldCount - 1 do
+      Self.FieldByName(lDM.JsonData.Fields[i].FieldName).Value :=
         lDM.JsonData.Fields[i].Value;
     Self.Post;
   finally
     lDM.Free;
     Self.EnableControls;
+  end;
+end;
+
+function MemTableCreateDelta(const AFDMemTable: TFDMemTable): TFDMemTable;
+
+  procedure CopyDataSet(const ASource, ADest: TFDAdaptedDataSet);
+  var
+    LStream: TStream;
+  begin
+    LStream := TMemoryStream.Create;
+    try
+      ASource.SaveToStream(LStream, TFDStorageFormat.sfBinary);
+      LStream.Seek(0, TSeekOrigin.soBeginning);
+      ADest.LoadFromStream(LStream, TFDStorageFormat.sfBinary);
+    finally
+      LStream.Free;
+    end;
+  end;
+
+var
+  LStoreItems: TFDStoreItems;
+begin
+  Result := TFDMemTable.Create(nil);
+  Result.ResourceOptions.StoreItems := [siMeta, siDelta];
+  LStoreItems := AFDMemTable.ResourceOptions.StoreItems;
+  AFDMemTable.DisableControls;
+  try
+    AFDMemTable.ResourceOptions.StoreItems := [siMeta, siDelta];
+    CopyDataSet(AFDMemTable, Result);
+  finally
+    AFDMemTable.ResourceOptions.StoreItems := LStoreItems;
+    AFDMemTable.EnableControls;
   end;
 end;
 

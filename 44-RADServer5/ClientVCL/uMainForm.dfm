@@ -124,38 +124,35 @@ object Form1: TForm1
     Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
     AcceptCharset = 'UTF-8, *;q=0.8'
     BaseURL = 'http://localhost:8080/customer'
-    ContentType = 'application/json'
     Params = <>
     HandleRedirects = True
     RaiseExceptionOn500 = False
-    Left = 64
-    Top = 184
+    Left = 72
+    Top = 64
   end
   object RESTRequest1: TRESTRequest
     Client = RESTClient1
-    Params = <
-      item
-        Kind = pkREQUESTBODY
-        Value = '{ "CUSTOMER": "REST DEBUGGER 123"}'
-        ContentType = ctAPPLICATION_JSON
-      end>
+    Params = <>
     Response = RESTResponse1
     SynchronizedEvents = False
-    Left = 64
-    Top = 240
+    Left = 72
+    Top = 120
   end
   object RESTResponse1: TRESTResponse
-    Left = 64
-    Top = 296
+    Left = 72
+    Top = 176
   end
   object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
     Dataset = FDMemTable1
     FieldDefs = <>
     ResponseJSON = RESTResponse1
-    Left = 184
-    Top = 184
+    Left = 72
+    Top = 232
   end
   object FDMemTable1: TFDMemTable
+    BeforePost = FDMemTable1BeforePost
+    AfterPost = FDMemTable1AfterPost
+    AfterDelete = FDMemTable1AfterDelete
     FieldDefs = <>
     CachedUpdates = True
     IndexDefs = <>
@@ -167,8 +164,8 @@ object Form1: TForm1
     UpdateOptions.CheckRequired = False
     UpdateOptions.AutoCommitUpdates = True
     StoreDefs = True
-    Left = 184
-    Top = 240
+    Left = 72
+    Top = 288
     object FDMemTable1CUST_NO: TFDAutoIncField
       FieldName = 'CUST_NO'
       Origin = 'CUST_NO'
@@ -234,12 +231,24 @@ object Form1: TForm1
   end
   object DataSource1: TDataSource
     DataSet = FDMemTable1
-    Left = 184
-    Top = 296
+    Left = 72
+    Top = 336
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'Forms'
-    Left = 72
+    Left = 688
+    Top = 72
+  end
+  object RESTMethods: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTMethodsResponse
+    SynchronizedEvents = False
+    Left = 184
     Top = 120
+  end
+  object RESTMethodsResponse: TRESTResponse
+    Left = 184
+    Top = 176
   end
 end
