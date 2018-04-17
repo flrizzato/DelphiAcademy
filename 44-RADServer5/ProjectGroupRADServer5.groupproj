@@ -9,6 +9,15 @@
         <Projects Include="Resources\CustomerEMS.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="Resources\CustomerFD.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ClientVCL\ClientVCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ClientFD\ClientFD.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +44,41 @@
     <Target Name="CustomerEMS:Make">
         <MSBuild Projects="Resources\CustomerEMS.dproj" Targets="Make"/>
     </Target>
+    <Target Name="CustomerFD">
+        <MSBuild Projects="Resources\CustomerFD.dproj"/>
+    </Target>
+    <Target Name="CustomerFD:Clean">
+        <MSBuild Projects="Resources\CustomerFD.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomerFD:Make">
+        <MSBuild Projects="Resources\CustomerFD.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClientVCL">
+        <MSBuild Projects="ClientVCL\ClientVCL.dproj"/>
+    </Target>
+    <Target Name="ClientVCL:Clean">
+        <MSBuild Projects="ClientVCL\ClientVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientVCL:Make">
+        <MSBuild Projects="ClientVCL\ClientVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClientFD">
+        <MSBuild Projects="ClientFD\ClientFD.dproj"/>
+    </Target>
+    <Target Name="ClientFD:Clean">
+        <MSBuild Projects="ClientFD\ClientFD.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientFD:Make">
+        <MSBuild Projects="ClientFD\ClientFD.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="CountryEMS;CustomerEMS"/>
+        <CallTarget Targets="CountryEMS;CustomerEMS;CustomerFD;ClientVCL;ClientFD"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="CountryEMS:Clean;CustomerEMS:Clean"/>
+        <CallTarget Targets="CountryEMS:Clean;CustomerEMS:Clean;CustomerFD:Clean;ClientVCL:Clean;ClientFD:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="CountryEMS:Make;CustomerEMS:Make"/>
+        <CallTarget Targets="CountryEMS:Make;CustomerEMS:Make;CustomerFD:Make;ClientVCL:Make;ClientFD:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
