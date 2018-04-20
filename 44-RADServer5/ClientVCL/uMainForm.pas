@@ -103,8 +103,6 @@ begin
       RESTMethods.AddBody(LMemTable.AsJSONObject);
       RESTMethods.Execute;
 
-      ShowMessage(RESTMethodsResponse.StatusCode.ToString);
-
       FDMemTable1.CommitUpdates;
     except
       on E: Exception do
@@ -128,8 +126,6 @@ begin
       RESTMethods.Method := rmDELETE;
       RESTMethods.ResourceSuffix := LMemTable.FieldByName('CUST_NO').AsString;
       RESTMethods.Execute;
-
-      ShowMessage(RESTMethodsResponse.StatusCode.ToString);
 
       FDMemTable1.CommitUpdates;
     except

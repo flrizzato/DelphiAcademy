@@ -4,6 +4,6 @@
     <Transaction>2018/04/16 10:51:14.000.872,C:\DelphiAcademy\44-RADServer5\ProjectGroupRADServer5.groupproj=C:\Users\ferna\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="C:\DelphiAcademy\44-RADServer5\ClientFD\ClientFD.dproj"/>
+		<Projects ActiveProject="C:\DelphiAcademy\44-RADServer5\ClientVCL\ClientVCL.dproj"/>
 	</Default.Personality>
 </BorlandProject>
