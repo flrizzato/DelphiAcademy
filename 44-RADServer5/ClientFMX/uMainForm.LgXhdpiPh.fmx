@@ -21,6 +21,11 @@ inherited MainForm_LgXhdpiPh: TMainForm_LgXhdpiPh
         ItemAppearanceObjects.ItemObjects.Text.Font.StyleExt = {00070000000000000004000000}
         ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 10.000000000000000000
       end
+      inherited CalloutRectangle1: TCalloutRectangle
+        inherited Label1: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
     end
     inherited TabItem2: TTabItem
       ExplicitSize.cx = 8.000000000000000000

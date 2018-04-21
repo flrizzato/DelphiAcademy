@@ -3,19 +3,20 @@ unit uMainForm;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
   FMX.ListView, FMX.TabControl, FMX.StdCtrls, FMX.Controls.Presentation,
   IPPeerClient, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
-  FireDAC.UI.Intf,  FireDAC.Comp.UI, Data.DB,
+  FireDAC.UI.Intf, FireDAC.Comp.UI, Data.DB,
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, REST.Response.Adapter, REST.Client,
   Data.Bind.Components, Data.Bind.ObjectScope, System.Rtti,
-  System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt,
-  Fmx.Bind.DBEngExt, Data.Bind.DBScope, System.Actions, FMX.ActnList, FMX.Edit,
-  FMX.ListBox, FMX.Layouts, Data.Bind.Controls, Fmx.Bind.Navigator,
-  FireDAC.FMXUI.Wait, FMX.Objects;
+  System.Bindings.Outputs, FMX.Bind.Editors, Data.Bind.EngExt,
+  FMX.Bind.DBEngExt, Data.Bind.DBScope, System.Actions, FMX.ActnList, FMX.Edit,
+  FMX.ListBox, FMX.Layouts, Data.Bind.Controls, FMX.Bind.Navigator,
+  FireDAC.FMXUI.Wait, FMX.Objects, FMX.Ani;
 
 type
   TMainForm = class(TForm)
@@ -96,6 +97,9 @@ type
     LiveBindingsBindNavigateDelete1: TFMXBindNavigateDelete;
     LiveBindingsBindNavigatePost1: TFMXBindNavigatePost;
     LiveBindingsBindNavigateCancel1: TFMXBindNavigateCancel;
+    CalloutRectangle1: TCalloutRectangle;
+    Label1: TLabel;
+    FloatAnimation1: TFloatAnimation;
     procedure ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
       const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
     procedure ListView1PullRefresh(Sender: TObject);
@@ -117,7 +121,7 @@ var
 implementation
 
 uses
-  REST.Types, uJSONHelper;
+  REST.Types, uJSONHelper, qdac_fmx_vkhelper;
 
 {$R *.fmx}
 {$R *.LgXhdpiPh.fmx ANDROID}
@@ -192,13 +196,17 @@ end;
 
 procedure TMainForm.FormShow(Sender: TObject);
 begin
-  {$IFDEF MSWINDOWS}
+{$IFDEF MSWINDOWS}
   ListView1PullRefresh(Self);
-  {$ENDIF}
+{$ELSE}
+  FloatAnimation1.Enabled := True;
+  FloatAnimation1.Start;
+{$ENDIF}
 end;
 
-procedure TMainForm.ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
-  const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
+procedure TMainForm.ListView1ItemClickEx(const Sender: TObject;
+  ItemIndex: Integer; const LocalClickPos: TPointF;
+  const ItemObject: TListItemDrawable);
 begin
   if ItemObject is TListItemAccessory then
     NextTabAction1.Execute;

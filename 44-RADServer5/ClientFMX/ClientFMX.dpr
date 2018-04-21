@@ -4,7 +4,8 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   uMainForm in 'uMainForm.pas' {MainForm},
-  uJSONHelper in '..\Common\uJSONHelper.pas' {JSONDM: TDataModule};
+  uJSONHelper in '..\Common\uJSONHelper.pas' {JSONDM: TDataModule},
+  qdac_fmx_vkhelper in '..\Common\qdac_fmx_vkhelper.pas';
 
 {$R *.res}
 

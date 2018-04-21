@@ -85,7 +85,7 @@ end;
 
 function TDataSetJSONHelper.AsJSONObject: TJSONObject;
 begin
-  Result := TJSONObject(AsJsonArray.Items[0]);
+  Result := AsJSONArray.Items[0] as TJSONObject;
 end;
 
 function TDataSetJSONHelper.AsJSONStream: TStream;

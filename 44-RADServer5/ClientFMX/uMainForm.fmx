@@ -57,6 +57,41 @@ object MainForm: TMainForm
         PullToRefresh = True
         PullRefreshWait = True
       end
+      object CalloutRectangle1: TCalloutRectangle
+        Anchors = [akTop, akRight]
+        Fill.Color = claCornflowerblue
+        Opacity = 0.000000000000000000
+        Position.X = 504.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        CalloutWidth = 23.000000000000000000
+        CalloutLength = 15.000000000000000000
+        CalloutPosition = Left
+        object Label1: TLabel
+          Align = Client
+          AutoSize = True
+          StyledSettings = [Family]
+          Margins.Left = 25.000000000000000000
+          Size.Width = 88.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          Text = 'Pull to Refresh the List...'
+          TabOrder = 0
+        end
+        object FloatAnimation1: TFloatAnimation
+          AutoReverse = True
+          Duration = 3.000000000000000000
+          PropertyName = 'Opacity'
+          StartValue = 0.000000000000000000
+          StopValue = 1.000000000000000000
+        end
+      end
     end
     object TabItem2: TTabItem
       CustomIcon = <
@@ -109,6 +144,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem2: TListBoxItem
@@ -132,6 +168,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem3: TListBoxItem
@@ -155,6 +192,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem4: TListBoxItem
@@ -178,6 +216,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem5: TListBoxItem
@@ -201,6 +240,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem6: TListBoxItem
@@ -224,6 +264,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem7: TListBoxItem
@@ -247,6 +288,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem8: TListBoxItem
@@ -270,6 +312,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem9: TListBoxItem
@@ -293,6 +336,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem10: TListBoxItem
@@ -316,6 +360,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem11: TListBoxItem
@@ -339,6 +384,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
         object ListBoxItem12: TListBoxItem
@@ -362,6 +408,7 @@ object MainForm: TMainForm
             Size.Width = 525.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
+            KillFocusByReturn = True
           end
         end
       end
@@ -607,84 +654,84 @@ object MainForm: TMainForm
       DataSource = BindSourceDB1
       FieldName = 'CUST_NO'
       Control = Edit1
-      Track = False
+      Track = True
     end
     object LinkControlToField2: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'CUSTOMER'
       Control = Edit2
-      Track = False
+      Track = True
     end
     object LinkControlToField4: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'CONTACT_FIRST'
       Control = Edit3
-      Track = False
+      Track = True
     end
     object LinkControlToField3: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'CONTACT_LAST'
       Control = Edit4
-      Track = False
+      Track = True
     end
     object LinkControlToField12: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'PHONE_NO'
       Control = Edit5
-      Track = False
+      Track = True
     end
     object LinkControlToField5: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'ADDRESS_LINE1'
       Control = Edit6
-      Track = False
+      Track = True
     end
     object LinkControlToField6: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'ADDRESS_LINE2'
       Control = Edit7
-      Track = False
+      Track = True
     end
     object LinkControlToField7: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'CITY'
       Control = Edit8
-      Track = False
+      Track = True
     end
     object LinkControlToField8: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'STATE_PROVINCE'
       Control = Edit9
-      Track = False
+      Track = True
     end
     object LinkControlToField9: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'COUNTRY'
       Control = Edit10
-      Track = False
+      Track = True
     end
     object LinkControlToField10: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'POSTAL_CODE'
       Control = Edit11
-      Track = False
+      Track = True
     end
     object LinkControlToField11: TLinkControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
       FieldName = 'ON_HOLD'
       Control = Edit12
-      Track = False
+      Track = True
     end
   end
   object ActionList1: TActionList
