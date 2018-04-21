@@ -2,7 +2,7 @@ object MainForm: TMainForm
   Left = 0
   Top = 0
   Caption = 'MainForm'
-  ClientHeight = 480
+  ClientHeight = 591
   ClientWidth = 640
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -12,21 +12,21 @@ object MainForm: TMainForm
   object TabControl1: TTabControl
     Align = Client
     Size.Width = 640.000000000000000000
-    Size.Height = 480.000000000000000000
+    Size.Height = 591.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     TabPosition = None
     Sizes = (
       640s
-      480s
+      591s
       640s
-      480s)
+      591s)
     object TabItem1: TTabItem
       CustomIcon = <
         item
         end>
-      IsSelected = False
+      IsSelected = True
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -40,14 +40,13 @@ object MainForm: TMainForm
         ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
         HeaderAppearanceClassName = 'TListHeaderObjects'
         FooterAppearanceClassName = 'TListHeaderObjects'
-        AlternatingColors = True
         Align = Client
         Margins.Left = 5.000000000000000000
         Margins.Top = 5.000000000000000000
         Margins.Right = 5.000000000000000000
         Margins.Bottom = 5.000000000000000000
         Size.Width = 630.000000000000000000
-        Size.Height = 470.000000000000000000
+        Size.Height = 581.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         ItemAppearanceObjects.ItemObjects.Text.Font.StyleExt = {00070000000000000004000000}
@@ -63,7 +62,7 @@ object MainForm: TMainForm
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -74,63 +73,22 @@ object MainForm: TMainForm
       ExplicitSize.cy = 8.000000000000000000
       object ListBox1: TListBox
         Align = Client
-        Size.Width = 640.000000000000000000
-        Size.Height = 480.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 630.000000000000000000
+        Size.Height = 533.000000000000000000
         Size.PlatformDefault = False
+        StyleLookup = 'transparentlistboxstyle'
         TabOrder = 0
         DisableFocusEffect = True
-        ItemIndex = 0
-        ItemHeight = 35.000000000000000000
+        ItemHeight = 40.000000000000000000
         DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
         DefaultItemStyles.GroupHeaderStyle = ''
         DefaultItemStyles.GroupFooterStyle = ''
-        GroupingKind = Grouped
-        Viewport.Width = 636.000000000000000000
-        Viewport.Height = 476.000000000000000000
-        object ListBoxGroupHeader1: TListBoxGroupHeader
-          TextSettings.Font.StyleExt = {00070000000000000004000000}
-          TextSettings.HorzAlign = Center
-          StyledSettings = [Family, Size, FontColor]
-          IsSelected = True
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 0
-          Text = 'Customer View'
-          object Button1: TButton
-            Align = Left
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 5.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Margins.Bottom = 5.000000000000000000
-            Position.X = 5.000000000000000000
-            Position.Y = 5.000000000000000000
-            Size.Width = 30.000000000000000000
-            Size.Height = 25.000000000000000000
-            Size.PlatformDefault = False
-            StyleLookup = 'backtoolbutton'
-            TabOrder = 0
-            OnClick = Button1Click
-          end
-          object BindNavigator1: TBindNavigator
-            Align = Right
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 5.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Margins.Bottom = 5.000000000000000000
-            Position.X = 511.000000000000000000
-            Position.Y = 5.000000000000000000
-            Size.Width = 120.000000000000000000
-            Size.Height = 25.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 1
-            DataSource = BindSourceDB1
-            VisibleButtons = [nbInsert, nbDelete, nbPost, nbCancel]
-            Corners = []
-            xRadius = 4.000000000000000000
-            yRadius = 4.000000000000000000
-          end
-        end
+        Viewport.Width = 630.000000000000000000
+        Viewport.Height = 533.000000000000000000
         object ListBoxItem1: TListBoxItem
           TextSettings.Font.Size = 10.000000000000000000
           TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -139,18 +97,17 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 35.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 1
+          TabOrder = 0
           Text = 'CUST_NO'
           object Edit1: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -162,18 +119,18 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 70.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 2
+          TabOrder = 1
           Text = 'CUSTOMER'
           object Edit2: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -185,18 +142,18 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 105.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 3
+          TabOrder = 2
           Text = 'CONTACT_FIRST'
           object Edit3: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -208,18 +165,18 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 140.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Position.Y = 120.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 4
+          TabOrder = 3
           Text = 'CONTACT_LAST'
           object Edit4: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -231,18 +188,18 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 175.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Position.Y = 160.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 5
+          TabOrder = 4
           Text = 'PHONE_NO'
           object Edit5: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -254,18 +211,18 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 210.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Position.Y = 200.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 6
+          TabOrder = 5
           Text = 'ADDR_LINE1'
           object Edit6: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -277,18 +234,18 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 245.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Position.Y = 240.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 7
+          TabOrder = 6
           Text = 'ADDR_LINE2'
           object Edit7: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -301,17 +258,17 @@ object MainForm: TMainForm
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
           Position.Y = 280.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 8
+          TabOrder = 7
           Text = 'CITY'
           object Edit8: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -323,18 +280,18 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 315.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Position.Y = 320.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 9
+          TabOrder = 8
           Text = 'STATE'
           object Edit9: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -346,18 +303,18 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 350.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Position.Y = 360.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 10
+          TabOrder = 9
           Text = 'COUNTRY'
           object Edit10: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -369,18 +326,18 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 385.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Position.Y = 400.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 11
+          TabOrder = 10
           Text = 'POSTAL_CODE'
           object Edit11: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
         end
@@ -392,20 +349,110 @@ object MainForm: TMainForm
           Padding.Top = 5.000000000000000000
           Padding.Right = 5.000000000000000000
           Padding.Bottom = 5.000000000000000000
-          Position.Y = 420.000000000000000000
-          Size.Width = 636.000000000000000000
-          Size.Height = 35.000000000000000000
+          Position.Y = 440.000000000000000000
+          Size.Width = 630.000000000000000000
+          Size.Height = 40.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 12
+          TabOrder = 11
           Text = 'ON_HOLD'
           object Edit12: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             Align = Client
             TabOrder = 0
-            Size.Width = 531.000000000000000000
-            Size.Height = 25.000000000000000000
+            Size.Width = 525.000000000000000000
+            Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
           end
+        end
+      end
+      object Rectangle1: TRectangle
+        Align = Top
+        Fill.Color = claWhite
+        Size.Width = 640.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        object Button1: TButton
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          TabOrder = 0
+          OnClick = Button1Click
+        end
+        object Button2: TButton
+          Action = LiveBindingsBindNavigateCancel1
+          Align = Right
+          Enabled = True
+          ImageIndex = -1
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 585.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toolbutton'
+          TabOrder = 1
+        end
+        object Button3: TButton
+          Action = LiveBindingsBindNavigatePost1
+          Align = Right
+          Enabled = True
+          ImageIndex = -1
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 531.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toolbutton'
+          TabOrder = 2
+        end
+        object Button4: TButton
+          Action = LiveBindingsBindNavigateDelete1
+          Align = Right
+          Enabled = True
+          ImageIndex = -1
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 477.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'trashtoolbutton'
+          TabOrder = 3
+        end
+        object Button5: TButton
+          Action = LiveBindingsBindNavigateInsert1
+          Align = Right
+          Enabled = True
+          ImageIndex = -1
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 423.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'composetoolbutton'
+          TabOrder = 4
         end
       end
     end
@@ -413,31 +460,31 @@ object MainForm: TMainForm
   object RESTClient1: TRESTClient
     Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
     AcceptCharset = 'UTF-8, *;q=0.8'
-    BaseURL = 'http://localhost:8080/customer'
+    BaseURL = 'http://192.168.0.13:8080/customer'
     Params = <>
     HandleRedirects = True
     RaiseExceptionOn500 = False
-    Left = 88
-    Top = 80
+    Left = 176
+    Top = 144
   end
   object RESTRequest1: TRESTRequest
     Client = RESTClient1
     Params = <>
     Response = RESTResponse1
     SynchronizedEvents = False
-    Left = 88
-    Top = 136
+    Left = 176
+    Top = 200
   end
   object RESTResponse1: TRESTResponse
-    Left = 88
-    Top = 192
+    Left = 176
+    Top = 256
   end
   object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
     Dataset = FDMemTable1
     FieldDefs = <>
     ResponseJSON = RESTResponse1
-    Left = 88
-    Top = 248
+    Left = 176
+    Top = 312
   end
   object FDMemTable1: TFDMemTable
     BeforePost = FDMemTable1BeforePost
@@ -454,8 +501,8 @@ object MainForm: TMainForm
     UpdateOptions.CheckRequired = False
     UpdateOptions.AutoCommitUpdates = True
     StoreDefs = True
-    Left = 88
-    Top = 304
+    Left = 176
+    Top = 368
     object FDMemTable1CUST_NO: TFDAutoIncField
       FieldName = 'CUST_NO'
       Origin = 'CUST_NO'
@@ -519,34 +566,29 @@ object MainForm: TMainForm
       Size = 1
     end
   end
-  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
-    Provider = 'Forms'
-    Left = 564
-    Top = 96
-  end
   object RESTMethods: TRESTRequest
     Client = RESTClient1
     Params = <>
     Response = RESTMethodsResponse
     SynchronizedEvents = False
-    Left = 216
-    Top = 136
+    Left = 304
+    Top = 200
   end
   object RESTMethodsResponse: TRESTResponse
-    Left = 216
-    Top = 192
+    Left = 304
+    Top = 256
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = FDMemTable1
     ScopeMappings = <>
-    Left = 216
-    Top = 256
+    Left = 304
+    Top = 320
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 212
-    Top = 309
+    Left = 300
+    Top = 373
     object LinkListControlToField1: TLinkListControlToField
       Category = 'Quick Bindings'
       DataSource = BindSourceDB1
@@ -646,8 +688,8 @@ object MainForm: TMainForm
     end
   end
   object ActionList1: TActionList
-    Left = 560
-    Top = 152
+    Left = 176
+    Top = 432
     object NextTabAction1: TNextTabAction
       Category = 'Tab'
       TabControl = TabControl1
@@ -656,5 +698,30 @@ object MainForm: TMainForm
       Category = 'Tab'
       TabControl = TabControl1
     end
+    object LiveBindingsBindNavigateInsert1: TFMXBindNavigateInsert
+      Category = 'LiveBindings'
+      Text = 'Insert'
+      DataSource = BindSourceDB1
+    end
+    object LiveBindingsBindNavigateDelete1: TFMXBindNavigateDelete
+      Category = 'LiveBindings'
+      Text = 'Delete'
+      DataSource = BindSourceDB1
+    end
+    object LiveBindingsBindNavigatePost1: TFMXBindNavigatePost
+      Category = 'LiveBindings'
+      Text = 'Save'
+      DataSource = BindSourceDB1
+    end
+    object LiveBindingsBindNavigateCancel1: TFMXBindNavigateCancel
+      Category = 'LiveBindings'
+      Text = 'Cancel'
+      DataSource = BindSourceDB1
+    end
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 296
+    Top = 432
   end
 end

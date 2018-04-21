@@ -9,12 +9,13 @@ uses
   FMX.ListView, FMX.TabControl, FMX.StdCtrls, FMX.Controls.Presentation,
   IPPeerClient, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
-  FireDAC.UI.Intf, FireDAC.VCLUI.Wait, FireDAC.Comp.UI, Data.DB,
+  FireDAC.UI.Intf,  FireDAC.Comp.UI, Data.DB,
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, REST.Response.Adapter, REST.Client,
   Data.Bind.Components, Data.Bind.ObjectScope, System.Rtti,
   System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt,
   Fmx.Bind.DBEngExt, Data.Bind.DBScope, System.Actions, FMX.ActnList, FMX.Edit,
-  FMX.ListBox, FMX.Layouts, Data.Bind.Controls, Fmx.Bind.Navigator;
+  FMX.ListBox, FMX.Layouts, Data.Bind.Controls, Fmx.Bind.Navigator,
+  FireDAC.FMXUI.Wait, FMX.Objects;
 
 type
   TMainForm = class(TForm)
@@ -39,7 +40,6 @@ type
     FDMemTable1COUNTRY: TStringField;
     FDMemTable1POSTAL_CODE: TStringField;
     FDMemTable1ON_HOLD: TStringField;
-    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     RESTMethods: TRESTRequest;
     RESTMethodsResponse: TRESTResponse;
     BindSourceDB1: TBindSourceDB;
@@ -49,7 +49,6 @@ type
     PreviousTabAction1: TPreviousTabAction;
     LinkListControlToField1: TLinkListControlToField;
     ListBox1: TListBox;
-    ListBoxGroupHeader1: TListBoxGroupHeader;
     ListBoxItem1: TListBoxItem;
     ListBoxItem2: TListBoxItem;
     ListBoxItem3: TListBoxItem;
@@ -87,7 +86,16 @@ type
     LinkControlToField11: TLinkControlToField;
     LinkControlToField12: TLinkControlToField;
     Button1: TButton;
-    BindNavigator1: TBindNavigator;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    Rectangle1: TRectangle;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    LiveBindingsBindNavigateInsert1: TFMXBindNavigateInsert;
+    LiveBindingsBindNavigateDelete1: TFMXBindNavigateDelete;
+    LiveBindingsBindNavigatePost1: TFMXBindNavigatePost;
+    LiveBindingsBindNavigateCancel1: TFMXBindNavigateCancel;
     procedure ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
       const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
     procedure ListView1PullRefresh(Sender: TObject);
@@ -112,6 +120,7 @@ uses
   REST.Types, uJSONHelper;
 
 {$R *.fmx}
+{$R *.LgXhdpiPh.fmx ANDROID}
 
 procedure TMainForm.Button1Click(Sender: TObject);
 begin

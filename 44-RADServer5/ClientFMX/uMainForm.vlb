@@ -1,9 +1,6 @@
 ﻿[FDMemTable1COUNTRY]
 Coordinates=470,1,135,33
 
-[FDGUIxWaitCursor1]
-Coordinates=470,56,113,33
-
 [FDMemTable1]
 Coordinates=298,10,84,33
 Visible=False
@@ -73,7 +70,7 @@ Coordinates=670,441,143,33
 Coordinates=28,723,107,33
 
 []
-Coordinates=109,364,53,51
+Coordinates=887,1052,123,33
 
 [BindSourceDB1]
 Coordinates=134,405,99,303
@@ -163,9 +160,6 @@ LayerNames=test
 [Edit5]
 Coordinates=363,614,40,51
 LayerNames=test
-
-[ListBoxGroupHeader1]
-Coordinates=887,1052,123,33
 
 [ListBoxItem3]
 Coordinates=772,1052,79,33

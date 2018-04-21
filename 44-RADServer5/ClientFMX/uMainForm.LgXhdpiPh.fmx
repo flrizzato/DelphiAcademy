@@ -1,0 +1,181 @@
+inherited MainForm_LgXhdpiPh: TMainForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    TabHeight = 49.000000000000000000
+    Sizes = (
+      450s
+      695s
+      450s
+      695s)
+    inherited TabItem1: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited ListView1: TListView
+        Size.Width = 440.000000000000000000
+        Size.Height = 685.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Text.Font.Size = 10.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Text.Font.StyleExt = {00070000000000000004000000}
+        ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 10.000000000000000000
+      end
+    end
+    inherited TabItem2: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited ListBox1: TListBox
+        Size.Width = 440.000000000000000000
+        Size.Height = 637.000000000000000000
+        Viewport.Width = 440.000000000000000000
+        Viewport.Height = 637.000000000000000000
+        inherited ListBoxItem1: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit1: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem2: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit2: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem3: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit3: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem4: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit4: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem5: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit5: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem6: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit6: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem7: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit7: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem8: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit8: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem9: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit9: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem10: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit10: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem11: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit11: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        inherited ListBoxItem12: TListBoxItem
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Size.Width = 440.000000000000000000
+          inherited Edit12: TEdit
+            TextSettings.Font.Size = 10.000000000000000000
+            Size.Width = 335.000000000000000000
+            Size.Height = 32.000000000000000000
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+      end
+      inherited Rectangle1: TRectangle
+        Size.Width = 450.000000000000000000
+        inherited Button1: TButton
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+        inherited Button2: TButton
+          Position.X = 395.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+        inherited Button3: TButton
+          Position.X = 341.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+        inherited Button4: TButton
+          Position.X = 289.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+        inherited Button5: TButton
+          Position.X = 237.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+        end
+      end
+    end
+  end
+end
