@@ -18,6 +18,9 @@
         <Projects Include="ClientFD\ClientFD.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="ClientFMX\ClientFMX.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -71,14 +74,23 @@
     <Target Name="ClientFD:Make">
         <MSBuild Projects="ClientFD\ClientFD.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ClientFMX">
+        <MSBuild Projects="ClientFMX\ClientFMX.dproj"/>
+    </Target>
+    <Target Name="ClientFMX:Clean">
+        <MSBuild Projects="ClientFMX\ClientFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientFMX:Make">
+        <MSBuild Projects="ClientFMX\ClientFMX.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="CountryEMS;CustomerEMS;CustomerFD;ClientVCL;ClientFD"/>
+        <CallTarget Targets="CountryEMS;CustomerEMS;CustomerFD;ClientVCL;ClientFD;ClientFMX"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="CountryEMS:Clean;CustomerEMS:Clean;CustomerFD:Clean;ClientVCL:Clean;ClientFD:Clean"/>
+        <CallTarget Targets="CountryEMS:Clean;CustomerEMS:Clean;CustomerFD:Clean;ClientVCL:Clean;ClientFD:Clean;ClientFMX:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="CountryEMS:Make;CustomerEMS:Make;CustomerFD:Make;ClientVCL:Make;ClientFD:Make"/>
+        <CallTarget Targets="CountryEMS:Make;CustomerEMS:Make;CustomerFD:Make;ClientVCL:Make;ClientFD:Make;ClientFMX:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

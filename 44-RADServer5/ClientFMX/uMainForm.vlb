@@ -4,9 +4,6 @@ Coordinates=470,1,135,33
 [FDGUIxWaitCursor1]
 Coordinates=470,56,113,33
 
-[ToolBar1]
-Coordinates=431,364,58,33
-
 [FDMemTable1]
 Coordinates=298,10,84,33
 Visible=False
@@ -15,7 +12,7 @@ Visible=False
 Coordinates=670,1,174,33
 
 [RESTMethods]
-Coordinates=656,10,84,87
+Coordinates=950,10,84,87
 
 [FDMemTable1CONTACT_FIRST]
 Coordinates=670,56,169,33
@@ -23,20 +20,17 @@ Coordinates=670,56,169,33
 [FDMemTable1ON_HOLD]
 Coordinates=470,111,134,33
 
-[Button1]
-Coordinates=109,364,53,51
-
 [FDMemTable1CONTACT_LAST]
 Coordinates=670,111,167,33
 
 [RESTRequest1]
-Coordinates=543,10,88,87
+Coordinates=1074,10,88,87
 
 [FDMemTable1POSTAL_CODE]
 Coordinates=670,166,161,33
 
 [ListView1]
-Coordinates=426,10,89,159
+Coordinates=332,10,89,159
 Visible=True
 
 [FDMemTable1PHONE_NO]
@@ -49,28 +43,28 @@ Coordinates=670,276,169,33
 Coordinates=470,166,133,33
 
 [TabItem2]
-Coordinates=352,364,59,33
+Coordinates=345,1052,59,33
 
 [FDMemTable1STATE_PROVINCE]
 Coordinates=670,331,177,33
 
 [RESTMethodsResponse]
-Coordinates=10,10,133,285
+Coordinates=604,10,133,285
 
 [TabItem1]
-Coordinates=273,364,59,33
+Coordinates=440,1052,59,33
 
 [TabControl1]
-Coordinates=178,364,74,33
+Coordinates=234,1052,74,33
 
 [FDMemTable1ADDRESS_LINE2]
 Coordinates=670,386,169,33
 
 [RESTResponse1]
-Coordinates=175,10,96,285
+Coordinates=465,10,96,285
 
 [RESTClient1]
-Coordinates=10,364,76,69
+Coordinates=1203,10,76,69
 
 [FDMemTable1CUSTOMER]
 Coordinates=670,441,143,33
@@ -79,10 +73,11 @@ Coordinates=670,441,143,33
 Coordinates=28,723,107,33
 
 []
-Coordinates=325,595,91,36
+Coordinates=109,364,53,51
 
 [BindSourceDB1]
-Coordinates=298,10,99,285
+Coordinates=134,405,99,303
+LayerNames=test
 
 [BindingsList1]
 Coordinates=380,419,82,33
@@ -95,4 +90,98 @@ Coordinates=43,314,113,33
 
 [NextTabAction1]
 Coordinates=309,314,92,33
+
+[ListBoxItem9]
+Coordinates=355,1136,79,33
+
+[ListBox1]
+Coordinates=785,10,116,213
+Visible=True
+
+[Edit4]
+Coordinates=363,378,40,51
+
+[Edit7]
+Coordinates=363,850,40,51
+LayerNames=test
+
+[ListBoxItem6]
+Coordinates=240,1136,79,33
+
+[ListBoxItem7]
+Coordinates=125,1136,79,33
+
+[Edit2]
+Coordinates=363,260,40,51
+
+[ListBoxItem4]
+Coordinates=10,1136,79,33
+
+[Edit9]
+Coordinates=87,1052,40,51
+LayerNames=test
+
+[Edit10]
+Coordinates=10,1052,45,51
+LayerNames=test
+
+[ListBoxItem10]
+Coordinates=1522,1052,84,33
+
+[Edit8]
+Coordinates=363,968,40,51
+LayerNames=test
+
+[ListBoxItem8]
+Coordinates=1407,1052,79,33
+
+[ListBoxItem5]
+Coordinates=1292,1052,79,33
+
+[Edit3]
+Coordinates=363,496,40,51
+LayerNames=test
+
+[Edit1]
+Coordinates=10,555,40,51
+Visible=True
+
+[ListBoxItem1]
+Coordinates=1177,1052,79,33
+
+[ListBoxItem11]
+Coordinates=1055,1052,84,33
+
+[Edit12]
+Coordinates=157,1052,45,51
+LayerNames=test
+
+[Edit11]
+Coordinates=1318,10,45,51
+LayerNames=test
+
+[Edit5]
+Coordinates=363,614,40,51
+LayerNames=test
+
+[ListBoxGroupHeader1]
+Coordinates=887,1052,123,33
+
+[ListBoxItem3]
+Coordinates=772,1052,79,33
+
+[Edit6]
+Coordinates=363,732,40,51
+LayerNames=test
+
+[ListBoxItem2]
+Coordinates=657,1052,79,33
+
+[ListBoxItem12]
+Coordinates=535,1052,84,33
+
+[Module Settings]
+ModelLayerNames=test
+ActiveLayerNames=test
+EditingLayerName=test
 

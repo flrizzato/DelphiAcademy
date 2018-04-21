@@ -316,7 +316,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="uMainForm.pas">
-            <Form>Form2</Form>
+            <Form>MainForm</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="..\Common\uJSONHelper.pas">

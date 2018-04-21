@@ -13,12 +13,11 @@ uses
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, REST.Response.Adapter, REST.Client,
   Data.Bind.Components, Data.Bind.ObjectScope, System.Rtti,
   System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt,
-  Fmx.Bind.DBEngExt, Data.Bind.DBScope, System.Actions, FMX.ActnList;
+  Fmx.Bind.DBEngExt, Data.Bind.DBScope, System.Actions, FMX.ActnList, FMX.Edit,
+  FMX.ListBox, FMX.Layouts, Data.Bind.Controls, Fmx.Bind.Navigator;
 
 type
-  TForm2 = class(TForm)
-    ToolBar1: TToolBar;
-    Button1: TButton;
+  TMainForm = class(TForm)
     TabControl1: TTabControl;
     TabItem1: TTabItem;
     TabItem2: TTabItem;
@@ -49,17 +48,63 @@ type
     NextTabAction1: TNextTabAction;
     PreviousTabAction1: TPreviousTabAction;
     LinkListControlToField1: TLinkListControlToField;
-    procedure Button1Click(Sender: TObject);
+    ListBox1: TListBox;
+    ListBoxGroupHeader1: TListBoxGroupHeader;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxItem3: TListBoxItem;
+    ListBoxItem4: TListBoxItem;
+    ListBoxItem5: TListBoxItem;
+    ListBoxItem6: TListBoxItem;
+    ListBoxItem7: TListBoxItem;
+    ListBoxItem8: TListBoxItem;
+    ListBoxItem9: TListBoxItem;
+    ListBoxItem10: TListBoxItem;
+    ListBoxItem11: TListBoxItem;
+    ListBoxItem12: TListBoxItem;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    Edit9: TEdit;
+    Edit10: TEdit;
+    Edit11: TEdit;
+    Edit12: TEdit;
+    LinkControlToField1: TLinkControlToField;
+    LinkControlToField2: TLinkControlToField;
+    LinkControlToField3: TLinkControlToField;
+    LinkControlToField4: TLinkControlToField;
+    LinkControlToField5: TLinkControlToField;
+    LinkControlToField6: TLinkControlToField;
+    LinkControlToField7: TLinkControlToField;
+    LinkControlToField8: TLinkControlToField;
+    LinkControlToField9: TLinkControlToField;
+    LinkControlToField10: TLinkControlToField;
+    LinkControlToField11: TLinkControlToField;
+    LinkControlToField12: TLinkControlToField;
+    Button1: TButton;
+    BindNavigator1: TBindNavigator;
     procedure ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
       const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
+    procedure ListView1PullRefresh(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure FDMemTable1AfterDelete(DataSet: TDataSet);
+    procedure FDMemTable1AfterPost(DataSet: TDataSet);
+    procedure FDMemTable1BeforePost(DataSet: TDataSet);
   private
     { Private declarations }
+    bInsert: boolean;
   public
     { Public declarations }
   end;
 
 var
-  Form2: TForm2;
+  MainForm: TMainForm;
 
 implementation
 
@@ -68,7 +113,89 @@ uses
 
 {$R *.fmx}
 
-procedure TForm2.Button1Click(Sender: TObject);
+procedure TMainForm.Button1Click(Sender: TObject);
+begin
+  PreviousTabAction1.Execute;
+end;
+
+procedure TMainForm.FDMemTable1AfterDelete(DataSet: TDataSet);
+var
+  LMemTable: TFDCustomMemTable;
+begin
+  LMemTable := MemTableCreateDelta(FDMemTable1);
+  try
+    try
+      LMemTable.FilterChanges := [rtDeleted];
+
+      RESTMethods.ClearBody;
+      RESTMethods.Method := rmDELETE;
+      RESTMethods.ResourceSuffix := LMemTable.FieldByName('CUST_NO').AsString;
+      RESTMethods.Execute;
+
+      FDMemTable1.CommitUpdates;
+    except
+      on E: Exception do
+        raise Exception.Create('Error Message: ' + E.Message);
+    end;
+  finally
+    LMemTable.Free;
+  end;
+end;
+
+procedure TMainForm.FDMemTable1AfterPost(DataSet: TDataSet);
+var
+  LMemTable: TFDCustomMemTable;
+begin
+  LMemTable := MemTableCreateDelta(FDMemTable1);
+  try
+    try
+      if bInsert then
+      begin
+        LMemTable.FilterChanges := [rtInserted];
+        RESTMethods.Method := rmPOST;
+        RESTMethods.ResourceSuffix := '';
+      end
+      else
+      begin
+        LMemTable.FilterChanges := [rtModified];
+        RESTMethods.Method := rmPUT;
+        RESTMethods.ResourceSuffix := LMemTable.FieldByName('CUST_NO').AsString;
+      end;
+
+      RESTMethods.ClearBody;
+      RESTMethods.AddBody(LMemTable.AsJSONObject);
+      RESTMethods.Execute;
+
+      FDMemTable1.CommitUpdates;
+    except
+      on E: Exception do
+        raise Exception.Create('Error Message: ' + E.Message);
+    end;
+  finally
+    LMemTable.Free;
+  end;
+end;
+
+procedure TMainForm.FDMemTable1BeforePost(DataSet: TDataSet);
+begin
+  bInsert := DataSet.State = dsInsert;
+end;
+
+procedure TMainForm.FormShow(Sender: TObject);
+begin
+  {$IFDEF MSWINDOWS}
+  ListView1PullRefresh(Self);
+  {$ENDIF}
+end;
+
+procedure TMainForm.ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
+  const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
+begin
+  if ItemObject is TListItemAccessory then
+    NextTabAction1.Execute;
+end;
+
+procedure TMainForm.ListView1PullRefresh(Sender: TObject);
 begin
   FDMemTable1.AfterPost := nil;
   FDMemTable1.AfterDelete := nil;
@@ -77,18 +204,9 @@ begin
     RESTRequest1.Execute;
     FDMemTable1.CommitUpdates;
   finally
-    //FDMemTable1.AfterPost := FDMemTable1AfterPost;
-    //FDMemTable1.AfterDelete := FDMemTable1AfterDelete;
+    FDMemTable1.AfterPost := FDMemTable1AfterPost;
+    FDMemTable1.AfterDelete := FDMemTable1AfterDelete;
   end;
-
-end;
-
-procedure TForm2.ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
-  const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
-begin
-  if ItemObject.Name = 'A' then
-    NextTabAction1.Execute;
-
 end;
 
 end.
