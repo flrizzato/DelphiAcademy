@@ -1,0 +1,140 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ActiveControl = Button1
+  Caption = 'DS Security FMX'
+  ClientHeight = 480
+  ClientWidth = 564
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 564.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ediUser: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Left
+      TabOrder = 0
+      Text = 'User1'
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Username'
+      OnChange = ediUserChange
+    end
+    object ediPass: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Left
+      TabOrder = 1
+      Text = 'Pass1'
+      Position.X = 105.000000000000000000
+      Position.Y = 5.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Password'
+      OnChange = ediUserChange
+    end
+    object ediAddress: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Left
+      TabOrder = 2
+      Text = '192.168.0.13'
+      Position.X = 205.000000000000000000
+      Position.Y = 5.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'IP Address'
+      OnChange = ediUserChange
+    end
+  end
+  object memResult: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 554.000000000000000000
+    Size.Height = 380.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 550.000000000000000000
+    Viewport.Height = 376.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Top
+    Position.Y = 40.000000000000000000
+    Size.Width = 564.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Button1: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cornerbuttonstyle'
+      TabOrder = 0
+      Text = 'EchoString'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 105.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cornerbuttonstyle'
+      TabOrder = 1
+      Text = 'ReverseString'
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 205.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cornerbuttonstyle'
+      TabOrder = 2
+      Text = 'DateTime'
+      OnClick = Button3Click
+    end
+  end
+end

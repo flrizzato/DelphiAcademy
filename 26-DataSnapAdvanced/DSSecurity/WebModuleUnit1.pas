@@ -94,8 +94,9 @@ end;
 
 function TWebModule1.AllowServerFunctionInvoker: Boolean;
 begin
-  Result := (Request.RemoteAddr = '127.0.0.1') or
-    (Request.RemoteAddr = '0:0:0:0:0:0:0:1') or (Request.RemoteAddr = '::1');
+  Result := True;
+//  Result := (Request.RemoteAddr = '127.0.0.1') or
+//    (Request.RemoteAddr = '0:0:0:0:0:0:0:1') or (Request.RemoteAddr = '::1');
 end;
 
 procedure TWebModule1.WebFileDispatcher1BeforeDispatch(Sender: TObject;
