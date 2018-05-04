@@ -44,7 +44,7 @@ procedure TMainForm.Button1Click(Sender: TObject);
 var
   Task: ITask;
 begin
-  //ediUserChange(Self);
+  ediUserChange(Self);
   Task := TTask.Create(
     procedure
     var
@@ -68,7 +68,7 @@ procedure TMainForm.Button2Click(Sender: TObject);
 var
   Task: ITask;
 begin
-  //ediUserChange(Self);
+  ediUserChange(Self);
   Task := TTask.Create(
     procedure
     var
@@ -93,7 +93,7 @@ procedure TMainForm.Button3Click(Sender: TObject);
 var
   Task: ITask;
 begin
-  //ediUserChange(Self);
+  ediUserChange(Self);
   Task := TTask.Create(
     procedure
     var
