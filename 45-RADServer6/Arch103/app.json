@@ -1,0 +1,137 @@
+{
+   "name": "Arch103",
+   "namespace": "Arch103",
+   "version": "1.0.0.0",
+   "framework": "ext",
+   "toolkit": "classic",
+   "theme": "theme-triton-0ae85b2e-5cd8-4f2b-bd87-379cbb5edd76",
+   "requires": [
+      "font-awesome"
+   ],
+   "indexHtmlPath": "index.html",
+   "classpath": [
+      "app"
+   ],
+   "overrides": [
+      "overrides"
+   ],
+   "fashion": {
+      "missingParameters": "error",
+      "inliner": {
+         "enable": false
+      }
+   },
+   "sass": {
+      "namespace": "Arch103",
+      "generated": {
+         "var": "sass/save.scss",
+         "src": "sass/save"
+      },
+      "etc": [
+         "sass/etc/all.scss"
+      ],
+      "var": [
+         "sass/var/all.scss",
+         "sass/var"
+      ],
+      "src": [
+         "sass/src"
+      ]
+   },
+   "js": [
+      {
+         "path": "${framework.dir}/build/ext-all-rtl-debug.js"
+      },
+      {
+         "path": "app.js",
+         "bundle": true
+      }
+   ],
+   "css": [
+      {
+         "path": "${build.out.css.path}",
+         "bundle": true,
+         "exclude": [
+            "fashion"
+         ]
+      }
+   ],
+   "loader": {
+      "cache": false,
+      "cacheParam": "_dc"
+   },
+   "production": {
+      "output": {
+         "appCache": {
+            "enable": true,
+            "path": "cache.appcache"
+         }
+      },
+      "loader": {
+         "cache": "${build.timestamp}"
+      },
+      "cache": {
+         "enable": true
+      },
+      "compressor": {
+         "type": "yui"
+      }
+   },
+   "testing": {},
+   "development": {
+      "watch": {
+         "delay": 250
+      }
+   },
+   "bootstrap": {
+      "base": "${app.dir}",
+      "microloader": "bootstrap.js",
+      "css": "bootstrap.css"
+   },
+   "output": {
+      "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+      "appCache": {
+         "enable": false
+      }
+   },
+   "cache": {
+      "enable": false,
+      "deltas": true
+   },
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [
+      {
+         "path": "resources",
+         "output": "shared"
+      }
+   ],
+   "archivePath": "archive",
+   "slicer": {
+      "js": [
+         {
+            "path": "sass/example/custom.js",
+            "isWidgetManifest": true
+         }
+      ],
+      "output": {
+         "appCache": {
+            "enable": false
+         }
+      },
+      "cache": {
+         "enable": false
+      }
+   },
+   "ignore": [
+      "(^|/)CVS(/?$|/.*?$)"
+   ],
+   "id": "d58e689a-2f5a-4428-a351-80a3eab16454"
+}

@@ -1,0 +1,62 @@
+{
+    "name": "Arch102",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.5.3.6",
+            "frameworkVersion": "6.5.3.57"
+        },
+        "urlPrefix": "http://localhost:51538/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Desktop (Auto Expand)",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            },
+            "viewportOrientation": "portrait"
+        },
+        "exportPath": "",
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed",
+        "sdkPath": ""
+    },
+    "xdsVersion": "4.2.3",
+    "xdsBuild": 371,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "modern65",
+    "viewOrderMap": {
+        "view": [
+            "a2ff1a0c-19f2-4431-94ae-8d32a95a0910",
+            "c5740dfe-2118-42cb-962e-7035e30a25c3",
+            "42b0141c-42f5-41cc-92fc-0b64989ae2f9",
+            "8aaae907-6686-4908-a9cc-d7b2322c7492",
+            "67e58682-4b8a-4b0a-89cc-e4e4602492ff",
+            "c3dd1f25-e738-44d7-9f6e-90326fac9042",
+            "ad72b6ae-be3a-4a6f-bdbd-00e76c6ffc43",
+            "c6b1c606-e491-491b-8485-724ed4c6867d",
+            "1ac29790-348f-4727-9065-9f277144b2fb",
+            "fbcb79cc-5b22-4c25-ab87-9b18c47273ec",
+            "1005dc96-ae9d-4ffd-b33b-5b2e833c8dd6",
+            "005ea439-e8e7-49a6-94c6-93cb4d2ac512"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "f9e243d2-250b-4a65-9d3a-57688a67d59c",
+            "a6f73396-1d38-4e69-b716-e161c7be941e",
+            "53a8c89c-f651-4a69-9a81-6df8bec74bae"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

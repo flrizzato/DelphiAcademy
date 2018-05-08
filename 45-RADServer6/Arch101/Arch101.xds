@@ -1,0 +1,53 @@
+{
+    "name": "Arch101",
+    "settings": {
+        "cmd": {
+            "license": "custom",
+            "frameworkOverride": "C:\\SENCHA\\Frameworks\\ext-6.5.3.57",
+            "cmdVersion": "6.5.3.6"
+        },
+        "urlPrefixTemplate": "http://localhost:{port}/{path}",
+        "urlPrefix": "http://localhost:51881/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Desktop (Auto Expand)",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            },
+            "viewportOrientation": "portrait"
+        },
+        "exportPath": "",
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed",
+        "sdkPath": ""
+    },
+    "xdsVersion": "4.2.3",
+    "xdsBuild": 371,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "modern65",
+    "viewOrderMap": {
+        "view": [
+            "b0c9bb85-76cf-4567-8943-1f8e69366207",
+            "05190765-b5e6-49f2-8ed4-df13614b9aa8",
+            "804ef06b-c4b4-4ef7-8afc-bf9debf66e74"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "d2f16262-e8f5-493e-ab72-9f8e5cf458a7",
+            "910a6d44-d377-481f-a1b5-cece7e1cd529",
+            "cc8ed2e3-45fc-4076-a713-bd96c67a36af"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
