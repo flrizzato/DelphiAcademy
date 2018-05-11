@@ -6,7 +6,7 @@
             "cmdVersion": "6.5.3.6",
             "frameworkVersion": "6.5.3.57"
         },
-        "urlPrefix": "http://localhost:51538/",
+        "urlPrefix": "http://localhost:50207/",
         "canvasControls": {
             "viewportSize": {
                 "name": "Desktop (Auto Expand)",
