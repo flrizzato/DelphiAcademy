@@ -1,0 +1,262 @@
+object FrameJSONGrid: TFrameJSONGrid
+  Size.Width = 717.000000000000000000
+  Size.Height = 310.000000000000000000
+  Size.PlatformDefault = False
+  object StringGrid: TStringGrid
+    StyleName = 'gridstyle'
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 717.000000000000000000
+    Size.Height = 218.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    RowHeight = 21.000000000000000000
+    Options = [ColumnResize, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick]
+    OnHeaderClick = StringGridHeaderClick
+    OnColumnMoved = StringGridColumnMoved
+    OnEditingDone = StringGridEditingDone
+    Viewport.Width = 713.000000000000000000
+    Viewport.Height = 193.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    StyleName = 'ToolBarstyle'
+    Align = Bottom
+    Position.Y = 240.000000000000000000
+    Size.Width = 717.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object EditingPanel: TPanel
+      StyleName = 'Panelstyle'
+      Align = MostLeft
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Enabled = False
+      Position.X = 473.000000000000000000
+      Size.Width = 473.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object DoneButton: TSpeedButton
+        Anchors = [akLeft, akBottom]
+        Position.X = 48.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'organizetoolbuttonbordered'
+        OnClick = DoneButtonClick
+        object Label6: TLabel
+          StyleName = 'Labelstyle'
+          Anchors = [akRight, akBottom]
+          Position.X = -45.000000000000000000
+          Position.Y = -23.000000000000000000
+          Size.Width = 129.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Update'
+        end
+      end
+      object CancelButton: TSpeedButton
+        Anchors = [akRight, akBottom]
+        Position.X = 169.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'cleareditbutton'
+        OnClick = CancelButtonClick
+        object Label7: TLabel
+          StyleName = 'Labelstyle'
+          Anchors = [akRight, akBottom]
+          Position.X = -29.000000000000000000
+          Position.Y = -23.000000000000000000
+          Size.Width = 106.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Cancel'
+        end
+      end
+    end
+    object NoEditingPanel: TPanel
+      StyleName = 'Panelstyle'
+      Align = MostLeft
+      Anchors = [akLeft, akBottom]
+      Size.Width = 473.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object RefreshButton: TSpeedButton
+        StaysPressed = True
+        Anchors = [akBottom]
+        Position.X = 35.000000000000000000
+        Position.Y = 33.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'refreshtoolbutton'
+        OnClick = RefreshButtonClick
+        object Label1: TLabel
+          StyleName = 'Labelstyle'
+          Anchors = [akBottom]
+          Position.X = -32.000000000000000000
+          Position.Y = -23.000000000000000000
+          Size.Width = 114.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Refresh'
+        end
+      end
+      object EditModeButton: TSpeedButton
+        StaysPressed = True
+        Anchors = [akBottom]
+        Position.X = 109.000000000000000000
+        Position.Y = 33.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'composetoolbutton'
+        OnClick = EditModeButtonClick
+        object Label2: TLabel
+          StyleName = 'Labelstyle'
+          Anchors = [akBottom]
+          Position.X = -29.000000000000000000
+          Position.Y = -23.000000000000000000
+          Size.Width = 101.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Edit'
+        end
+      end
+      object AddItemButton: TSpeedButton
+        StaysPressed = True
+        Anchors = [akBottom]
+        Position.X = 283.000000000000000000
+        Position.Y = 33.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'additembutton'
+        OnClick = AddItemButtonClick
+        object LabelAdd: TLabel
+          StyleName = 'Labelstyle'
+          Anchors = [akBottom]
+          Position.X = -36.000000000000000000
+          Position.Y = -23.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Add'
+        end
+      end
+      object DeleteButton: TSpeedButton
+        Anchors = [akBottom]
+        Position.X = 373.000000000000000000
+        Position.Y = 34.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'deleteitembutton'
+        OnClick = DeleteButtonClick
+        object LabelDelete: TLabel
+          StyleName = 'Labelstyle'
+          Anchors = [akLeft, akBottom]
+          Position.X = -39.000000000000000000
+          Position.Y = -23.000000000000000000
+          Size.Width = 119.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Delete'
+        end
+      end
+      object SpeedButton1: TSpeedButton
+        StaysPressed = True
+        Anchors = [akBottom]
+        Position.X = 194.000000000000000000
+        Position.Y = 33.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'composetoolbutton'
+        OnClick = SpeedButton1Click
+        object Label3: TLabel
+          StyleName = 'Labelstyle'
+          Anchors = [akBottom]
+          Position.X = -29.000000000000000000
+          Position.Y = -23.000000000000000000
+          Size.Width = 101.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Edit Selected'
+        end
+      end
+    end
+  end
+  object LayoutExtras: TLayout
+    Align = MostTop
+    Size.Width = 717.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    object ComboBoxExtras: TComboBox
+      StyleName = 'ComboBoxstyle'
+      Margins.Left = 10.000000000000000000
+      Position.X = 90.000000000000000000
+      Size.Width = 174.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnChange = ComboBoxExtrasChange
+      object LabelExtras: TLabel
+        StyleName = 'Labelstyle'
+        Position.X = -80.000000000000000000
+        Size.Width = 79.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Label'
+      end
+    end
+  end
+  object FDMemTable: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    Left = 96
+    Top = 160
+  end
+  object RESTResponseDataSetAdapter: TRESTResponseDataSetAdapter
+    Dataset = FDMemTable
+    FieldDefs = <>
+    OnBeforeOpenDataSet = RESTResponseDataSetAdapterBeforeOpenDataSet
+    Left = 328
+    Top = 72
+  end
+  object BindSourceDB: TBindSourceDB
+    DataSet = FDMemTable
+    ScopeMappings = <>
+    Left = 184
+    Top = 136
+  end
+  object BindingsList: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 28
+    Top = 69
+    object LinkGridToDataSourceBindSourceDB: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB
+      GridControl = StringGrid
+      Columns = <>
+    end
+  end
+end

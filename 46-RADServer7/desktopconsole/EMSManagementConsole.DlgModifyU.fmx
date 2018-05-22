@@ -1,0 +1,133 @@
+object FormAddDlg: TFormAddDlg
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Modify'
+  ClientHeight = 349
+  ClientWidth = 707
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  inline AddFrame: TAddFrame
+    Align = Client
+    Size.Width = 707.000000000000000000
+    Size.Height = 349.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    inherited AddTabControl: TTabControl
+      Size.Width = 707.000000000000000000
+      Size.Height = 349.000000000000000000
+      inherited AddUserTabItem: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited Layout4: TLayout
+          inherited CustomFieldsGrid: TStringGrid
+            Viewport.Width = 477.000000000000000000
+            Viewport.Height = 165.000000000000000000
+            inherited StringColumnName: TStringColumn
+              Size.Height = 168.000000000000000000
+            end
+            inherited StringColumnValue: TStringColumn
+              Size.Height = 168.000000000000000000
+            end
+          end
+          inherited GroupBoxGroups: TVertScrollBox
+            Viewport.Width = 153.000000000000000000
+            Viewport.Height = 160.000000000000000000
+          end
+        end
+      end
+      inherited AddGroupTabItem: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited Layout6: TLayout
+          inherited CustomGroupFieldsGrid: TStringGrid
+            Viewport.Width = 433.000000000000000000
+            Viewport.Height = 154.000000000000000000
+            inherited StringGroupColumnName: TStringColumn
+              Size.Height = 105.000000000000000000
+            end
+          end
+          inherited GroupBoxUsers: TVertScrollBox
+            Viewport.Width = 166.000000000000000000
+            Viewport.Height = 156.000000000000000000
+          end
+        end
+      end
+      inherited AddInstalltionTabItem: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited Layout8: TLayout
+          inherited AddChannelsListBox: TListBox
+            Viewport.Width = 113.000000000000000000
+            Viewport.Height = 97.000000000000000000
+          end
+          inherited ChannelsListBox: TListBox
+            Viewport.Width = 117.000000000000000000
+            Viewport.Height = 97.000000000000000000
+          end
+          inherited CustomInstallGrid: TStringGrid
+            Viewport.Width = 371.000000000000000000
+            Viewport.Height = 158.000000000000000000
+            inherited StringInstallolumnName: TStringColumn
+              Size.Height = 168.000000000000000000
+            end
+          end
+        end
+      end
+      inherited AddEdgeModuleTabItem: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited Layout14: TLayout
+          inherited CustomEdgeModuleStringGrid: TStringGrid
+            Viewport.Width = 657.000000000000000000
+            Viewport.Height = 93.000000000000000000
+            inherited StringColumn1: TStringColumn
+              Size.Height = 105.000000000000000000
+            end
+            inherited StringColumn2: TStringColumn
+              Size.Height = 105.000000000000000000
+            end
+          end
+        end
+      end
+      inherited AddResourceTabItem: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited Layout1: TLayout
+          Size.Width = 707.000000000000000000
+        end
+        inherited Layout2: TLayout
+          Size.Width = 707.000000000000000000
+          Size.Height = 220.000000000000000000
+          inherited Layout11: TLayout
+            Position.Y = 188.000000000000000000
+            Size.Width = 707.000000000000000000
+            inherited AddResourceButton: TButton
+              Position.X = 367.000000000000000000
+            end
+            inherited Button4: TButton
+              Position.X = 537.000000000000000000
+            end
+          end
+          inherited CustomResourcesStringGrid: TStringGrid
+            Size.Width = 677.000000000000000000
+            Size.Height = 158.000000000000000000
+            Viewport.Width = 657.000000000000000000
+            Viewport.Height = 133.000000000000000000
+            inherited StringColumn3: TStringColumn
+              Size.Height = 147.000000000000000000
+            end
+            inherited StringColumn4: TStringColumn
+              Size.Height = 147.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+end

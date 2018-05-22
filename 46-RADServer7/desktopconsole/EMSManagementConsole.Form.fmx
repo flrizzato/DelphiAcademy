@@ -1,0 +1,252 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Console'
+  ClientHeight = 644
+  ClientWidth = 718
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object ViewsLayout: TLayout
+    Align = Client
+    Size.Width = 718.000000000000000000
+    Size.Height = 394.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    inline ViewsFrame: TViewsFrame
+      Align = Client
+      Size.Width = 718.000000000000000000
+      Size.Height = 394.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      inherited ViewsControl: TTabControl
+        Size.Width = 718.000000000000000000
+        Size.Height = 394.000000000000000000
+        Sizes = (
+          718s
+          368s)
+        inherited PushTabItem: TTabItem
+          ExplicitSize.cx = 45.000000000000000000
+          ExplicitSize.cy = 24.000000000000000000
+          inherited PushFrame1: TPushFrame
+            Size.Width = 718.000000000000000000
+            Size.Height = 368.000000000000000000
+            inherited Layout1: TLayout
+              Position.X = 598.000000000000000000
+              Size.Height = 201.000000000000000000
+            end
+            inherited Layout2: TLayout
+              Size.Width = 598.000000000000000000
+              Size.Height = 201.000000000000000000
+              inherited LayoutPushData: TLayout
+                Size.Height = 201.000000000000000000
+                inherited DataMemo: TMemo
+                  Size.Height = 178.000000000000000000
+                  Viewport.Width = 221.000000000000000000
+                  Viewport.Height = 174.000000000000000000
+                end
+              end
+              inherited LayoutPushTarget: TLayout
+                Size.Width = 357.000000000000000000
+                Size.Height = 201.000000000000000000
+                inherited TargetMemo: TMemo
+                  Size.Width = 357.000000000000000000
+                  Size.Height = 178.000000000000000000
+                  Viewport.Width = 353.000000000000000000
+                  Viewport.Height = 174.000000000000000000
+                end
+                inherited Label4: TLabel
+                  Size.Width = 357.000000000000000000
+                end
+              end
+              inherited Splitter1: TSplitter
+                Size.Height = 201.000000000000000000
+              end
+            end
+            inherited Layout3: TLayout
+              Position.Y = 201.000000000000000000
+              Size.Width = 718.000000000000000000
+              inherited ListView1: TListView
+                Size.Width = 718.000000000000000000
+              end
+              inherited ToolBar1: TToolBar
+                Size.Width = 718.000000000000000000
+                inherited ClearButton: TButton
+                  Position.X = 629.000000000000000000
+                end
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    StyleName = 'ToolBarstyle'
+    Size.Width = 718.000000000000000000
+    Size.Height = 250.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    inline SettingsFrame: TSettingsFrame
+      Align = Client
+      Size.Width = 718.000000000000000000
+      Size.Height = 250.000000000000000000
+      Size.PlatformDefault = False
+      inherited ConnectionInfoControl: TTabControl
+        Size.Height = 210.000000000000000000
+        TabIndex = 0
+        Sizes = (
+          718s
+          184s
+          718s
+          184s
+          718s
+          184s
+          718s
+          184s
+          718s
+          184s)
+        inherited ConnectionTabItem: TTabItem
+          IsSelected = True
+          ExplicitSize.cx = 80.000000000000000000
+          ExplicitSize.cy = 24.000000000000000000
+          inherited Layout2: TLayout
+            Size.Height = 184.000000000000000000
+            inherited HostLabel: TLabel
+              Anchors = [akLeft, akTop, akRight]
+            end
+            inherited PortLabel: TLabel
+              Anchors = [akLeft, akTop, akRight]
+            end
+            inherited URLLabel: TLabel
+              Anchors = [akLeft, akTop, akRight]
+            end
+          end
+          inherited Layout3: TLayout
+            Size.Height = 186.000000000000000000
+          end
+        end
+        inherited ProxyTabItem: TTabItem
+          ExplicitSize.cx = 50.000000000000000000
+          ExplicitSize.cy = 24.000000000000000000
+          inherited Layout4: TLayout
+            Size.Height = 184.000000000000000000
+            inherited ProxyPortLabel: TLabel
+              Anchors = [akLeft, akTop, akRight]
+            end
+            inherited ProxyServerLabel: TLabel
+              Anchors = [akLeft, akTop, akRight]
+            end
+          end
+          inherited Layout5: TLayout
+            Size.Height = 184.000000000000000000
+          end
+        end
+        inherited KeysTabItem: TTabItem
+          ExplicitSize.cx = 44.000000000000000000
+          ExplicitSize.cy = 24.000000000000000000
+          inherited Layout6: TLayout
+            Size.Height = 184.000000000000000000
+            inherited ApplicationIDLabel: TLabel
+              Anchors = [akLeft, akTop, akRight]
+            end
+            inherited AppSecretLabel: TLabel
+              Anchors = [akLeft, akTop, akRight]
+            end
+          end
+          inherited Layout7: TLayout
+            Size.Height = 184.000000000000000000
+          end
+        end
+        inherited AuthenticateTabItem: TTabItem
+          IsSelected = False
+          ExplicitSize.cx = 87.000000000000000000
+          ExplicitSize.cy = 24.000000000000000000
+          inherited Layout8: TLayout
+            Size.Height = 184.000000000000000000
+            inherited MasterSecretLabel: TLabel
+              StyleName = ''
+              Anchors = [akLeft, akTop, akRight]
+            end
+            inherited PassLabel: TLabel
+              StyleName = ''
+              Anchors = [akLeft, akTop, akRight]
+            end
+            inherited UserLabel: TLabel
+              StyleName = ''
+              Anchors = [akLeft, akTop, akRight]
+            end
+          end
+          inherited Layout9: TLayout
+            Size.Height = 184.000000000000000000
+            inherited LoginButton: TButton
+              StyleName = ''
+            end
+            inherited LogoutButton: TButton
+              StyleName = ''
+            end
+            inherited MasterSecretEdit: TEdit
+              StyleName = ''
+            end
+            inherited MSecretCheckBox: TCheckBox
+              StyleName = ''
+            end
+            inherited PassEdit: TEdit
+              StyleName = ''
+            end
+            inherited UserEdit: TEdit
+              StyleName = ''
+            end
+          end
+        end
+        inherited TabItem1: TTabItem
+          ExplicitSize.cx = 69.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+        end
+      end
+    end
+  end
+  object MainMenu: TMainMenu
+    Left = 864
+    Top = 240
+    object FileMenu: TMenuItem
+      Text = 'File'
+      object ExportProfile: TMenuItem
+        Locked = True
+        Text = 'Export Profiles...'
+        OnClick = ExportProfileClick
+      end
+      object ImportProfile: TMenuItem
+        Locked = True
+        Text = 'Import Profiles...'
+        OnClick = ImportProfileClick
+      end
+    end
+    object ProfileMenu: TMenuItem
+      Text = 'Profile'
+      object NewProfile: TMenuItem
+        Locked = True
+        Text = 'New Profile'
+        OnClick = NewProfileClick
+      end
+      object RenameProfile: TMenuItem
+        Locked = True
+        Text = 'Rename Profile...'
+        OnClick = RenameProfileClick
+      end
+      object RemoveProfile: TMenuItem
+        Locked = True
+        Text = 'Remove Profile'
+        OnClick = RemoveProfileClick
+      end
+    end
+    object HelpMenu: TMenuItem
+      Text = 'Help'
+      OnClick = HelpMenuClick
+    end
+  end
+end

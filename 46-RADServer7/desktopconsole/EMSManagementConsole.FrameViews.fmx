@@ -1,0 +1,107 @@
+object ViewsFrame: TViewsFrame
+  Align = Client
+  Size.Width = 640.000000000000000000
+  Size.Height = 405.000000000000000000
+  Size.PlatformDefault = False
+  object ViewsControl: TTabControl
+    StyleName = 'TabControlstyle'
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 405.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    object PushTabItem: TTabItem
+      StyleName = 'TabItemstyle'
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 43.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Push'
+      ExplicitSize.cx = 45.000000000000000000
+      ExplicitSize.cy = 24.000000000000000000
+      inline PushFrame1: TPushFrame
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 381.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        inherited Layout1: TLayout
+          Position.X = 520.000000000000000000
+          Size.Height = 214.000000000000000000
+          inherited ButtonPushData: TButton
+            StyleName = 'Buttonstyle'
+          end
+          inherited ButtonTargetChannels: TButton
+            StyleName = 'Buttonstyle'
+          end
+          inherited ButtonTargetWhere: TButton
+            StyleName = 'Buttonstyle'
+          end
+          inherited SendButton: TButton
+            StyleName = 'Buttonstyle'
+          end
+        end
+        inherited Layout2: TLayout
+          Size.Width = 520.000000000000000000
+          Size.Height = 214.000000000000000000
+          inherited LayoutPushData: TLayout
+            Size.Height = 214.000000000000000000
+            inherited DataMemo: TMemo
+              StyleName = 'Memostyle'
+              Size.Height = 191.000000000000000000
+              Viewport.Width = 221.000000000000000000
+              Viewport.Height = 187.000000000000000000
+            end
+            inherited TitleLabel: TLabel
+              StyleName = 'Labelstyle'
+            end
+          end
+          inherited LayoutPushTarget: TLayout
+            Size.Width = 279.000000000000000000
+            Size.Height = 214.000000000000000000
+            inherited TargetMemo: TMemo
+              StyleName = 'Memostyle'
+              Size.Width = 279.000000000000000000
+              Size.Height = 191.000000000000000000
+              Viewport.Width = 275.000000000000000000
+              Viewport.Height = 187.000000000000000000
+            end
+            inherited Label4: TLabel
+              StyleName = 'Labelstyle'
+              Size.Width = 279.000000000000000000
+            end
+          end
+          inherited Splitter1: TSplitter
+            StyleName = 'Splitterstyle'
+            Size.Height = 214.000000000000000000
+          end
+        end
+        inherited Layout3: TLayout
+          Position.Y = 214.000000000000000000
+          Size.Width = 640.000000000000000000
+          inherited ListView1: TListView
+            StyleName = 'listviewstyle'
+            Size.Width = 640.000000000000000000
+          end
+          inherited ToolBar1: TToolBar
+            StyleName = 'ToolBarstyle'
+            Size.Width = 640.000000000000000000
+            inherited Label1: TLabel
+              StyleName = 'Labelstyle'
+            end
+            inherited ClearButton: TButton
+              StyleName = 'Buttonstyle'
+              Position.X = 551.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+end

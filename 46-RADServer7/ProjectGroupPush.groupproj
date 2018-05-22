@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7625B0CC-2E6F-4CB5-931C-0EB61F95C230}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="rs101\rs101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="push101\push101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dispatcher101\dispatcher101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="desktopconsole\EMSManagementConsole.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="rs101">
+        <MSBuild Projects="rs101\rs101.dproj"/>
+    </Target>
+    <Target Name="rs101:Clean">
+        <MSBuild Projects="rs101\rs101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rs101:Make">
+        <MSBuild Projects="rs101\rs101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="push101">
+        <MSBuild Projects="push101\push101.dproj"/>
+    </Target>
+    <Target Name="push101:Clean">
+        <MSBuild Projects="push101\push101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="push101:Make">
+        <MSBuild Projects="push101\push101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dispatcher101">
+        <MSBuild Projects="dispatcher101\dispatcher101.dproj"/>
+    </Target>
+    <Target Name="dispatcher101:Clean">
+        <MSBuild Projects="dispatcher101\dispatcher101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dispatcher101:Make">
+        <MSBuild Projects="dispatcher101\dispatcher101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EMSManagementConsole">
+        <MSBuild Projects="desktopconsole\EMSManagementConsole.dproj"/>
+    </Target>
+    <Target Name="EMSManagementConsole:Clean">
+        <MSBuild Projects="desktopconsole\EMSManagementConsole.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EMSManagementConsole:Make">
+        <MSBuild Projects="desktopconsole\EMSManagementConsole.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="rs101;push101;dispatcher101;EMSManagementConsole"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="rs101:Clean;push101:Clean;dispatcher101:Clean;EMSManagementConsole:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="rs101:Make;push101:Make;dispatcher101:Make;EMSManagementConsole:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
