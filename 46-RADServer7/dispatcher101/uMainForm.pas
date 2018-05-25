@@ -60,9 +60,9 @@ var
 begin
   Data := TPushData.Create;
   try
-    Data.GCM.Title    := 'Compra aprovada #' + SalesTablePO_NUMBER.AsString;
-    Data.GCM.Message  := 'Sua Compra no valor de ' + SalesTableTOTAL_VALUE.AsString +
-     ' foi aprovada';
+    Data.GCM.Title    := 'Compra aprobada #' + SalesTablePO_NUMBER.AsString;
+    Data.GCM.Message  := 'La compra con el valor de ' + SalesTableTOTAL_VALUE.AsString +
+     ' fue aprobada';
     BackEndPush1.PushData(Data);
   finally
     Data.Free;
