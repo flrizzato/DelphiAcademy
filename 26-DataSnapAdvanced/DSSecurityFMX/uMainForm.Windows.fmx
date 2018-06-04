@@ -1,7 +1,0 @@
-inherited MainForm_Windows: TMainForm_Windows
-  DesignerMasterStyle = 0
-  inherited memResult: TMemo
-    Viewport.Width = 554.000000000000000000
-    Viewport.Height = 380.000000000000000000
-  end
-end

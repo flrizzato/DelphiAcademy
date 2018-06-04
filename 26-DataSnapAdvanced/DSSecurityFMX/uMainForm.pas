@@ -35,8 +35,6 @@ var
 implementation
 
 {$R *.fmx}
-{$R *.Windows.fmx MSWINDOWS}
-{$R *.LgXhdpiPh.fmx ANDROID}
 
 uses ClientModuleUnit3, System.Threading, System.Net.HttpClient.Android;
 
@@ -51,7 +49,12 @@ begin
       CapturedException: TObject;
     begin
       try
-        memResult.Text := ClientModule3.ServerMethods1Client.EchoString('123');
+        TThread.Synchronize(nil,
+          procedure
+          begin
+            memResult.Text := ClientModule3.ServerMethods1Client.
+              EchoString('123');
+          end);
       except
         CapturedException := AcquireExceptionObject;
         TThread.Queue(TThread.CurrentThread,
@@ -75,8 +78,12 @@ begin
       CapturedException: TObject;
     begin
       try
-        memResult.Text := ClientModule3.ServerMethods1Client.
-          ReverseString('123');
+        TThread.Synchronize(nil,
+          procedure
+          begin
+            memResult.Text := ClientModule3.ServerMethods1Client.
+              ReverseString('123');
+          end);
       except
         CapturedException := AcquireExceptionObject;
         TThread.Queue(TThread.CurrentThread,
@@ -100,7 +107,11 @@ begin
       CapturedException: TObject;
     begin
       try
-        memResult.Text := ClientModule3.ServerMethods1Client.ServerDateTime;
+        TThread.Synchronize(nil,
+          procedure
+          begin
+            memResult.Text := ClientModule3.ServerMethods1Client.ServerDateTime;
+          end);
       except
         CapturedException := AcquireExceptionObject;
         TThread.Queue(TThread.CurrentThread,
@@ -115,9 +126,6 @@ end;
 
 procedure TMainForm.ediUserChange(Sender: TObject);
 begin
-//  ClientModule3.fUser := ediUser.Text;
-//  ClientModule3.fPass := ediPass.Text;
-//  ClientModule3.fAddress := ediAddress.Text;
   ClientModule3.DSRestConnection1.UserName := ediUser.Text;
   ClientModule3.DSRestConnection1.Password := ediPass.Text;
   ClientModule3.DSRestConnection1.Host := ediAddress.Text;

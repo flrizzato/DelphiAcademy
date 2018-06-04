@@ -1,0 +1,170 @@
+object PushFrame: TPushFrame
+  Align = Client
+  Size.Width = 649.000000000000000000
+  Size.Height = 615.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Right
+    Position.X = 529.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 448.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ButtonPushData: TButton
+      Position.X = 11.000000000000000000
+      Position.Y = 7.000000000000000000
+      Size.Width = 101.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Data...'
+      OnClick = ButtonPushDataClick
+    end
+    object ButtonTargetChannels: TButton
+      Position.X = 10.000000000000000000
+      Position.Y = 39.000000000000000000
+      Size.Width = 102.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Channels...'
+      OnClick = ButtonTargetChannelsClick
+    end
+    object ButtonTargetWhere: TButton
+      Position.X = 10.000000000000000000
+      Position.Y = 71.000000000000000000
+      Size.Width = 102.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Where...'
+      OnClick = ButtonTargetWhereClick
+    end
+    object SendButton: TButton
+      Position.X = 10.000000000000000000
+      Position.Y = 102.000000000000000000
+      Size.Width = 102.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Send'
+      OnClick = SendButtonClick
+    end
+  end
+  object Layout2: TLayout
+    Align = Client
+    Padding.Left = 8.000000000000000000
+    Size.Width = 529.000000000000000000
+    Size.Height = 448.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object LayoutPushData: TLayout
+      Align = Left
+      Position.X = 8.000000000000000000
+      Size.Width = 225.000000000000000000
+      Size.Height = 448.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object DataMemo: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Cursor = crDefault
+        Size.Width = 225.000000000000000000
+        Size.Height = 425.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        Viewport.Width = 225.000000000000000000
+        Viewport.Height = 425.000000000000000000
+      end
+      object TitleLabel: TLabel
+        Align = Top
+        Margins.Top = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Data'
+      end
+    end
+    object LayoutPushTarget: TLayout
+      Align = Client
+      Size.Width = 288.000000000000000000
+      Size.Height = 448.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object TargetMemo: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Cursor = crDefault
+        Size.Width = 288.000000000000000000
+        Size.Height = 425.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 288.000000000000000000
+        Viewport.Height = 425.000000000000000000
+      end
+      object Label4: TLabel
+        Align = Top
+        Margins.Top = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 288.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Target'
+      end
+    end
+    object Splitter1: TSplitter
+      Align = Left
+      Cursor = crHSplit
+      MinSize = 20.000000000000000000
+      Position.X = 233.000000000000000000
+      Size.Width = 8.000000000000000000
+      Size.Height = 448.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Layout3: TLayout
+    Align = MostBottom
+    Position.Y = 448.000000000000000000
+    Size.Width = 649.000000000000000000
+    Size.Height = 167.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      Align = Client
+      Size.Width = 649.000000000000000000
+      Size.Height = 128.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+      OnChange = ListView1Change
+    end
+    object ToolBar1: TToolBar
+      Size.Width = 649.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label1: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Text = 'Send History'
+      end
+      object ClearButton: TButton
+        Anchors = [akTop, akRight]
+        Position.X = 560.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 1
+        Text = 'Clear'
+        OnClick = ClearButtonClick
+      end
+    end
+  end
+end

@@ -1,0 +1,809 @@
+object AddFrame: TAddFrame
+  Align = Client
+  Size.Width = 614.000000000000000000
+  Size.Height = 384.000000000000000000
+  Size.PlatformDefault = False
+  object AddTabControl: TTabControl
+    StyleName = 'TabControlstyle'
+    Align = Client
+    Size.Width = 614.000000000000000000
+    Size.Height = 384.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 4
+    TabOrder = 0
+    TabPosition = None
+    object AddUserTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Add user'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout3: TLayout
+        Align = MostTop
+        Size.Width = 50.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object PassEdit: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Position.X = 128.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 537.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object PassLabel: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 16.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Password'
+        end
+        object UserEdit: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 2
+          Position.X = 128.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 537.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object UserLabel: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 16.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'User name'
+        end
+      end
+      object Layout4: TLayout
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object CustomFieldsGrid: TStringGrid
+          StyleName = 'gridstyle'
+          Align = Client
+          Margins.Left = 200.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Options = [Editing, ColumnResize, ColumnMove, ColLines, RowLines, AlwaysShowSelection, Tabs, Header, HeaderClick]
+          RowCount = 100
+          RowHeight = 21.000000000000000000
+          Viewport.Width = 384.000000000000000000
+          Viewport.Height = 200.000000000000000000
+          object StringColumnName: TStringColumn
+            StyleName = 'Columnstyle'
+            Header = 'Field Name'
+            Size.Width = 185.000000000000000000
+            Size.Height = 21.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+          object StringColumnValue: TStringColumn
+            StyleName = 'Columnstyle'
+            Header = 'Field Value'
+            Position.X = 185.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 21.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+        end
+        object GroupBoxGroups: TVertScrollBox
+          StyleName = 'scrollboxstyle'
+          Align = Vertical
+          Margins.Top = 40.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Position.X = 16.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Viewport.Width = 153.000000000000000000
+          Viewport.Height = 195.000000000000000000
+        end
+        object GroupsLabel: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 16.000000000000000000
+          Position.Y = 15.000000000000000000
+          Text = 'Groups'
+        end
+        object Layout9: TLayout
+          Align = MostBottom
+          Position.Y = -32.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object AddUserButton: TButton
+            StyleName = 'Buttonstyle'
+            Align = MostRight
+            AutoTranslate = False
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = -290.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'OK'
+            OnClick = AddUserButtonClick
+          end
+          object AddUserCancel: TButton
+            StyleName = 'Buttonstyle'
+            Align = MostRight
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = -120.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Cancel'
+            OnClick = ButtonCancelClick
+          end
+        end
+      end
+    end
+    object AddGroupTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Add group'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout5: TLayout
+        Align = MostTop
+        Size.Width = 50.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object GroupNameEdit: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Position.X = 128.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 489.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object GroupNameLabel: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 16.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Group name'
+        end
+      end
+      object Layout6: TLayout
+        Align = Client
+        Anchors = [akLeft]
+        Size.Width = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object CustomGroupFieldsGrid: TStringGrid
+          StyleName = 'gridstyle'
+          Align = Client
+          Margins.Left = 200.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Options = [Editing, ColumnResize, ColumnMove, ColLines, RowLines, AlwaysShowSelection, Tabs, Header, HeaderClick]
+          RowCount = 100
+          RowHeight = 21.000000000000000000
+          Viewport.Width = 400.000000000000000000
+          Viewport.Height = 200.000000000000000000
+          object StringGroupColumnName: TStringColumn
+            StyleName = 'Columnstyle'
+            Header = 'Field Name'
+            Size.Width = 185.000000000000000000
+            Size.Height = 21.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+          object StringGroupColumnValue: TStringColumn
+            StyleName = 'Columnstyle'
+            Header = 'Field Value'
+            Position.X = 185.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 21.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+        end
+        object GroupBoxUsers: TVertScrollBox
+          StyleName = 'scrollboxstyle'
+          Align = Vertical
+          Margins.Top = 40.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Position.X = 16.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Viewport.Width = 153.000000000000000000
+          Viewport.Height = 195.000000000000000000
+        end
+        object UsersLabel: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 16.000000000000000000
+          Position.Y = 15.000000000000000000
+          Text = 'Users'
+        end
+        object Layout10: TLayout
+          Align = MostBottom
+          Position.Y = -32.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Button2: TButton
+            StyleName = 'Buttonstyle'
+            Align = MostRight
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = -120.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Cancel'
+            OnClick = ButtonCancelClick
+          end
+          object AddGroupButton: TButton
+            StyleName = 'Buttonstyle'
+            Align = MostRight
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = -290.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'OK'
+            OnClick = AddGroupButtonClick
+          end
+        end
+      end
+    end
+    object AddInstalltionTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Add installation'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout7: TLayout
+        Align = MostTop
+        Size.Width = 614.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object DeviceLabel: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 24.000000000000000000
+          Position.Y = 56.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Device type'
+        end
+        object DeviceTypeCombo: TComboBox
+          StyleName = 'ComboBoxstyle'
+          Position.X = 136.000000000000000000
+          Position.Y = 56.000000000000000000
+          TabOrder = 15
+        end
+        object LabeToken: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 24.000000000000000000
+          Position.Y = 22.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Device token'
+        end
+        object TokenEdit: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 6
+          Position.X = 136.000000000000000000
+          Position.Y = 22.000000000000000000
+          Size.Width = 489.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Layout8: TLayout
+        Align = Client
+        Anchors = [akLeft]
+        Size.Width = 614.000000000000000000
+        Size.Height = 287.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object AddChannelsListBox: TListBox
+          StyleName = 'ListBoxstyle'
+          Align = Vertical
+          Margins.Top = 80.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Position.X = 148.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 117.000000000000000000
+          Size.Height = 155.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 13
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          OnItemClick = AddChannelsListBoxItemClick
+          Viewport.Width = 113.000000000000000000
+          Viewport.Height = 151.000000000000000000
+        end
+        object ChannelEdit: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 11
+          Position.X = 16.000000000000000000
+          Position.Y = 37.000000000000000000
+          Size.Width = 249.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          object AddChannel: TSpeedButton
+            Position.X = 215.000000000000000000
+            Size.Width = 33.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'addtoolbutton'
+            Text = 'Add channel'
+            OnClick = AddChannelClick
+          end
+        end
+        object ChannelsListBox: TListBox
+          StyleName = 'ListBoxstyle'
+          Align = Vertical
+          Margins.Top = 80.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 155.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 12
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          OnItemClick = ChannelsListBoxItemClick
+          Viewport.Width = 117.000000000000000000
+          Viewport.Height = 151.000000000000000000
+        end
+        object ChannelsListLabel: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 8.000000000000000000
+          Position.Y = 59.000000000000000000
+          Text = 'Channels list'
+        end
+        object ChannlesBoxLabel: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 16.000000000000000000
+          Position.Y = 15.000000000000000000
+          Text = 'Enter channel'
+        end
+        object CustomInstallGrid: TStringGrid
+          StyleName = 'gridstyle'
+          Align = Client
+          Margins.Left = 280.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Size.Width = 324.000000000000000000
+          Size.Height = 225.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 9
+          Options = [Editing, ColumnResize, ColumnMove, ColLines, RowLines, AlwaysShowSelection, Tabs, Header, HeaderClick]
+          RowCount = 100
+          RowHeight = 21.000000000000000000
+          Viewport.Width = 304.000000000000000000
+          Viewport.Height = 184.000000000000000000
+          object StringInstallolumnName: TStringColumn
+            StyleName = 'Columnstyle'
+            Header = 'Field Name'
+            Size.Width = 155.000000000000000000
+            Size.Height = 189.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+          object StringInstallolumnValue: TStringColumn
+            StyleName = 'Columnstyle'
+            Header = 'Field Value'
+            Position.X = 155.000000000000000000
+            Size.Width = 155.000000000000000000
+            Size.Height = 189.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+        end
+        object ToAddLabel: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 140.000000000000000000
+          Position.Y = 59.000000000000000000
+          Text = 'Channels to add '
+        end
+        object Layout12: TLayout
+          Align = MostBottom
+          Position.Y = 255.000000000000000000
+          Size.Width = 614.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 17
+          object Button1: TButton
+            StyleName = 'Buttonstyle'
+            Align = MostRight
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 444.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Cancel'
+            OnClick = ButtonCancelClick
+          end
+          object AddInstallButton: TButton
+            StyleName = 'Buttonstyle'
+            Align = MostRight
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 274.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'OK'
+            OnClick = AddInstallButtonClick
+          end
+        end
+      end
+    end
+    object AddEdgeModuleTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Add EdgeModule'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout13: TLayout
+        Align = MostTop
+        Size.Width = 614.000000000000000000
+        Size.Height = 129.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object EditModuleName: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 4
+          Position.X = 128.000000000000000000
+          Position.Y = 25.000000000000000000
+          Size.Width = 469.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label2: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 13.000000000000000000
+          Position.Y = 25.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Module name'
+        end
+        object Label3: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 13.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Protocol'
+        end
+        object EditProtocol: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 3
+          Position.X = 128.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 469.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label4: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 13.000000000000000000
+          Position.Y = 94.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Protocol Prop.'
+        end
+        object EditProtocolProps: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Position.X = 128.000000000000000000
+          Position.Y = 94.000000000000000000
+          Size.Width = 469.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Layout14: TLayout
+        Align = Client
+        Anchors = [akLeft]
+        Size.Width = 614.000000000000000000
+        Size.Height = 255.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Layout15: TLayout
+          Align = MostBottom
+          Position.Y = 223.000000000000000000
+          Size.Width = 614.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object AddModuleButton: TButton
+            StyleName = 'Buttonstyle'
+            Align = MostRight
+            AutoTranslate = False
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 274.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'OK'
+          end
+          object Button6: TButton
+            StyleName = 'Buttonstyle'
+            Align = MostRight
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 444.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Cancel'
+            OnClick = ButtonCancelClick
+          end
+        end
+        object CustomEdgeModuleStringGrid: TStringGrid
+          StyleName = 'gridstyle'
+          Align = Client
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Size.Width = 584.000000000000000000
+          Size.Height = 193.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Options = [Editing, ColumnResize, ColumnMove, ColLines, RowLines, AlwaysShowSelection, Tabs, Header, HeaderClick]
+          RowCount = 100
+          RowHeight = 21.000000000000000000
+          Viewport.Width = 564.000000000000000000
+          Viewport.Height = 168.000000000000000000
+          object StringColumn1: TStringColumn
+            StyleName = 'Columnstyle'
+            Header = 'Field Name'
+            Size.Width = 185.000000000000000000
+            Size.Height = 189.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+          object StringColumn2: TStringColumn
+            StyleName = 'Columnstyle'
+            Header = 'Field Value'
+            Position.X = 185.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 189.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+        end
+      end
+    end
+    object AddResourceTabItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Add Resource'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout1: TLayout
+        Align = MostTop
+        Size.Width = 614.000000000000000000
+        Size.Height = 129.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object EditResourceName: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 2
+          Position.X = 112.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 489.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label5: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 7.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 98.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Resource name'
+        end
+        object EditModuleIDResource: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 3
+          Position.X = 112.000000000000000000
+          Position.Y = 58.000000000000000000
+          Size.Width = 489.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label6: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 7.000000000000000000
+          Position.Y = 58.000000000000000000
+          Size.Width = 98.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Module ID'
+        end
+        object EditModuleNameResource: TEdit
+          StyleName = 'Editstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 4
+          Position.X = 112.000000000000000000
+          Position.Y = 90.000000000000000000
+          Size.Width = 489.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label1: TLabel
+          StyleName = 'Labelstyle'
+          Position.X = 7.000000000000000000
+          Position.Y = 90.000000000000000000
+          Size.Width = 98.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Module name'
+        end
+      end
+      object Layout2: TLayout
+        Align = Client
+        Anchors = [akLeft]
+        Size.Width = 614.000000000000000000
+        Size.Height = 255.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Layout11: TLayout
+          Align = MostBottom
+          Position.Y = 223.000000000000000000
+          Size.Width = 614.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object AddResourceButton: TButton
+            StyleName = 'Buttonstyle'
+            Align = MostRight
+            AutoTranslate = False
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 274.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'OK'
+            OnClick = AddUserButtonClick
+          end
+          object Button4: TButton
+            StyleName = 'Buttonstyle'
+            Align = MostRight
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 444.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Cancel'
+            OnClick = ButtonCancelClick
+          end
+        end
+        object CustomResourcesStringGrid: TStringGrid
+          StyleName = 'gridstyle'
+          Align = Client
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Size.Width = 584.000000000000000000
+          Size.Height = 193.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Options = [Editing, ColumnResize, ColumnMove, ColLines, RowLines, AlwaysShowSelection, Tabs, Header, HeaderClick]
+          RowCount = 100
+          RowHeight = 21.000000000000000000
+          Viewport.Width = 564.000000000000000000
+          Viewport.Height = 168.000000000000000000
+          object StringColumn3: TStringColumn
+            StyleName = 'Columnstyle'
+            Header = 'Field Name'
+            Size.Width = 185.000000000000000000
+            Size.Height = 189.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+          object StringColumn4: TStringColumn
+            StyleName = 'Columnstyle'
+            Header = 'Field Value'
+            Position.X = 185.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 189.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+        end
+      end
+    end
+  end
+end

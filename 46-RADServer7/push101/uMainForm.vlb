@@ -1,0 +1,16 @@
+﻿[EMSProvider1]
+Coordinates=185,1,97,36
+
+[ToolBar1]
+Coordinates=10,122,67,36
+
+[PushEvents1]
+Coordinates=10,10,90,102
+Visible=True
+
+[Label1]
+Coordinates=110,10,53,58
+
+[]
+Coordinates=173,10,57,58
+

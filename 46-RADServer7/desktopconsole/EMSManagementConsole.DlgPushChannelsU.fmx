@@ -1,0 +1,64 @@
+object DlgPushChannels: TDlgPushChannels
+  Left = 0
+  Top = 0
+  Caption = 'Channels'
+  ClientHeight = 356
+  ClientWidth = 316
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object GroupBox2: TGroupBox
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 297.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Channels'
+    TabOrder = 0
+    object CheckBoxAllChannels: TCheckBox
+      Position.X = 15.000000000000000000
+      Position.Y = 264.000000000000000000
+      TabOrder = 0
+      Text = 'Check All'
+      OnChange = CheckBoxAllChannelsChange
+    end
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      EditMode = True
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 257.000000000000000000
+      Size.Height = 233.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnItemClick = ListView1ItemClick
+    end
+  end
+  object ButtonOK: TButton
+    Anchors = [akRight, akBottom]
+    ModalResult = 1
+    Position.X = 138.000000000000000000
+    Position.Y = 321.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'OK'
+  end
+  object ButtonCancel: TButton
+    Anchors = [akRight, akBottom]
+    ModalResult = 2
+    Position.X = 226.000000000000000000
+    Position.Y = 321.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Cancel'
+  end
+end

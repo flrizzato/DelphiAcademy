@@ -1,0 +1,114 @@
+object DlgPushWhere: TDlgPushWhere
+  Left = 0
+  Top = 0
+  Caption = 'Where'
+  ClientHeight = 441
+  ClientWidth = 312
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object GroupBox1: TGroupBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 295.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Device types'
+    TabOrder = 0
+    object RadioButtonAll: TRadioButton
+      Anchors = [akLeft, akTop, akRight]
+      IsChecked = True
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 260.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'All device types'
+      OnChange = RadioButtonAllChange
+    end
+    object RadioButtonIOS: TRadioButton
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 260.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'IOS Devices'
+      OnChange = RadioButtonAllChange
+    end
+    object RadioButtonAndroid: TRadioButton
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 16.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 260.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Android Devices'
+      OnChange = RadioButtonAllChange
+    end
+  end
+  object GroupBox2: TGroupBox
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 296.000000000000000000
+    Size.Height = 279.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Devices'
+    TabOrder = 1
+    object CheckBoxAllDevices: TCheckBox
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 260.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'All devices'
+      OnChange = CheckBoxAllDevicesChange
+    end
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TListItemAppearance'
+      ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      EditMode = True
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Position.X = 16.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 257.000000000000000000
+      Size.Height = 201.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnItemClick = ListView1ItemClick
+    end
+  end
+  object ButtonOK: TButton
+    Anchors = [akRight, akBottom]
+    ModalResult = 1
+    Position.X = 136.000000000000000000
+    Position.Y = 412.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'OK'
+  end
+  object ButtonCancel: TButton
+    Anchors = [akRight, akBottom]
+    ModalResult = 2
+    Position.X = 224.000000000000000000
+    Position.Y = 412.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Cancel'
+  end
+end

@@ -1,7 +1,6 @@
 object MainForm: TMainForm
   Left = 0
   Top = 0
-  ActiveControl = Button1
   Caption = 'DS Security FMX'
   ClientHeight = 480
   ClientWidth = 564
@@ -19,6 +18,7 @@ object MainForm: TMainForm
       Align = Left
       TabOrder = 0
       Text = 'User1'
+      TextSettings.Font.Size = 10.000000000000000000
       Position.X = 5.000000000000000000
       Position.Y = 5.000000000000000000
       Margins.Left = 5.000000000000000000
@@ -29,6 +29,7 @@ object MainForm: TMainForm
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       TextPrompt = 'Username'
+      StyledSettings = [Family, Style, FontColor]
       OnChange = ediUserChange
     end
     object ediPass: TEdit
@@ -36,6 +37,7 @@ object MainForm: TMainForm
       Align = Left
       TabOrder = 1
       Text = 'Pass1'
+      TextSettings.Font.Size = 10.000000000000000000
       Position.X = 105.000000000000000000
       Position.Y = 5.000000000000000000
       Margins.Left = 5.000000000000000000
@@ -46,13 +48,19 @@ object MainForm: TMainForm
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       TextPrompt = 'Password'
+      StyledSettings = [Family, Style, FontColor]
       OnChange = ediUserChange
     end
     object ediAddress: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Left
       TabOrder = 2
+<<<<<<< HEAD
       Text = '172.23.1.116'
+=======
+      Text = '192.168.0.13'
+      TextSettings.Font.Size = 10.000000000000000000
+>>>>>>> 9f86edcf11e5855aded5cc6eee076b1c27a5467c
       Position.X = 205.000000000000000000
       Position.Y = 5.000000000000000000
       Margins.Left = 5.000000000000000000
@@ -63,6 +71,7 @@ object MainForm: TMainForm
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       TextPrompt = 'IP Address'
+      StyledSettings = [Family, Style, FontColor]
       OnChange = ediUserChange
     end
   end
@@ -90,6 +99,7 @@ object MainForm: TMainForm
     TabOrder = 2
     object Button1: TButton
       Align = Left
+      StyledSettings = [Family, Style, FontColor]
       Margins.Left = 5.000000000000000000
       Margins.Top = 5.000000000000000000
       Margins.Right = 5.000000000000000000
@@ -102,10 +112,12 @@ object MainForm: TMainForm
       StyleLookup = 'cornerbuttonstyle'
       TabOrder = 0
       Text = 'EchoString'
+      TextSettings.Font.Size = 10.000000000000000000
       OnClick = Button1Click
     end
     object Button2: TButton
       Align = Left
+      StyledSettings = [Family, Style, FontColor]
       Margins.Left = 5.000000000000000000
       Margins.Top = 5.000000000000000000
       Margins.Right = 5.000000000000000000
@@ -118,10 +130,12 @@ object MainForm: TMainForm
       StyleLookup = 'cornerbuttonstyle'
       TabOrder = 1
       Text = 'ReverseString'
+      TextSettings.Font.Size = 10.000000000000000000
       OnClick = Button2Click
     end
     object Button3: TButton
       Align = Left
+      StyledSettings = [Family, Style, FontColor]
       Margins.Left = 5.000000000000000000
       Margins.Top = 5.000000000000000000
       Margins.Right = 5.000000000000000000
@@ -134,6 +148,7 @@ object MainForm: TMainForm
       StyleLookup = 'cornerbuttonstyle'
       TabOrder = 2
       Text = 'DateTime'
+      TextSettings.Font.Size = 10.000000000000000000
       OnClick = Button3Click
     end
   end
