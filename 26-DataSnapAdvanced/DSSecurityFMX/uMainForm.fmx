@@ -55,8 +55,12 @@ object MainForm: TMainForm
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Left
       TabOrder = 2
+<<<<<<< HEAD
+      Text = '172.23.1.116'
+=======
       Text = '192.168.0.13'
       TextSettings.Font.Size = 10.000000000000000000
+>>>>>>> 9f86edcf11e5855aded5cc6eee076b1c27a5467c
       Position.X = 205.000000000000000000
       Position.Y = 5.000000000000000000
       Margins.Left = 5.000000000000000000

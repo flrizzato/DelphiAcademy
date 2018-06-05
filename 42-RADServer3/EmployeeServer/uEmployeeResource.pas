@@ -78,7 +78,6 @@ procedure TEmployeeServerResource1.Get(const AContext: TEndpointContext;
 var
   empDataObj: TJSONObject;
 begin
-  //FSetExceptMask($32);
   EmployeeTable.Open;
   empDataObj := TJSONObject.Create;
   empDataObj.AddPair('items', EmployeeTable.AsJSONArray);

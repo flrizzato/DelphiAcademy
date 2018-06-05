@@ -5,7 +5,11 @@
         <FrameworkType>FMX</FrameworkType>
         <MainSource>DSSecurityFMX.dpr</MainSource>
         <Base>True</Base>
+<<<<<<< HEAD
+        <Config Condition="'$(Config)'==''">Debug</Config>
+=======
         <Config Condition="'$(Config)'==''">Release</Config>
+>>>>>>> 9f86edcf11e5855aded5cc6eee076b1c27a5467c
         <Platform Condition="'$(Platform)'==''">Android</Platform>
         <TargetedPlatforms>1119</TargetedPlatforms>
         <AppType>Application</AppType>
@@ -343,6 +347,7 @@
             <Form>ClientModule3</Form>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
+        <DCCReference Include="System.Net.HttpClient.Android.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

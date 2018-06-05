@@ -36,7 +36,7 @@ implementation
 
 {$R *.fmx}
 
-uses ClientModuleUnit3, System.Threading;
+uses ClientModuleUnit3, System.Threading, System.Net.HttpClient.Android;
 
 procedure TMainForm.Button1Click(Sender: TObject);
 var

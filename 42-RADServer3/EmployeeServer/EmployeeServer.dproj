@@ -145,7 +145,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Linux64\bplDBXCommonDriver250.so" Configuration="Release" Class="DependencyPackage">
+                <DeployFile LocalName="$(BDS)\Redist\Linux64\bplemsserverapi250.so" Configuration="Release" Class="DependencyPackage">
                     <Platform Name="Linux64">
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -155,15 +155,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="data\employee.gdb" Configuration="Release" Class="File">
-                    <Platform Name="Linux64">
-                        <RemoteName>employee.gdb</RemoteName>
+                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\EmployeeServer.bpl" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>EmployeeServer.bpl</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="data\EmployeeLinux.ini" Configuration="Release" Class="File">
+                <DeployFile LocalName="$(BDS)\Redist\Linux64\bplrtl250.so" Configuration="Release" Class="DependencyPackage">
                     <Platform Name="Linux64">
-                        <RemoteName>EmployeeLinux.ini</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -218,19 +217,20 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Linux64\bplemsserverapi250.so" Configuration="Release" Class="DependencyPackage">
+                <DeployFile LocalName="$(BDS)\Redist\Linux64\bplDBXCommonDriver250.so" Configuration="Release" Class="DependencyPackage">
                     <Platform Name="Linux64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\EmployeeServer.bpl" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>EmployeeServer.bpl</RemoteName>
+                <DeployFile LocalName="data\employee.gdb" Configuration="Release" Class="File">
+                    <Platform Name="Linux64">
+                        <RemoteName>employee.gdb</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\Linux64\bplrtl250.so" Configuration="Release" Class="DependencyPackage">
+                <DeployFile LocalName="data\EmployeeLinux.ini" Configuration="Release" Class="File">
                     <Platform Name="Linux64">
+                        <RemoteName>EmployeeLinux.ini</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

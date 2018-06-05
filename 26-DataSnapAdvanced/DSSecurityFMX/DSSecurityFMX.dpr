@@ -8,7 +8,8 @@ uses
   {$ENDIF}
   uMainForm in 'uMainForm.pas' {MainForm},
   ClientClassesUnit3 in 'ClientClassesUnit3.pas',
-  ClientModuleUnit3 in 'ClientModuleUnit3.pas' {ClientModule3: TDataModule};
+  ClientModuleUnit3 in 'ClientModuleUnit3.pas' {ClientModule3: TDataModule},
+  System.Net.HttpClient.Android in 'System.Net.HttpClient.Android.pas';
 
 {$R *.res}
 
