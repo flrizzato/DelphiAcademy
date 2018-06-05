@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3EB13F80-22EB-44E5-85FF-6FCAA7D5D7BE}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="RADServer\CountrySEC.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ClientVCL\ClientVCL.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CountrySEC">
+        <MSBuild Projects="RADServer\CountrySEC.dproj"/>
+    </Target>
+    <Target Name="CountrySEC:Clean">
+        <MSBuild Projects="RADServer\CountrySEC.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CountrySEC:Make">
+        <MSBuild Projects="RADServer\CountrySEC.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClientVCL">
+        <MSBuild Projects="ClientVCL\ClientVCL.dproj"/>
+    </Target>
+    <Target Name="ClientVCL:Clean">
+        <MSBuild Projects="ClientVCL\ClientVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientVCL:Make">
+        <MSBuild Projects="ClientVCL\ClientVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CountrySEC;ClientVCL"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CountrySEC:Clean;ClientVCL:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CountrySEC:Make;ClientVCL:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

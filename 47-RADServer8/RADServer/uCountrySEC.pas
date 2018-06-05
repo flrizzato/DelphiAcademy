@@ -1,4 +1,4 @@
-unit uCountry;
+unit uCountrySEC;
 
 // EMS Resource Module
 
@@ -50,8 +50,7 @@ procedure TCountryResource1.Get(const AContext: TEndpointContext;
   const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
 begin
   CountryTable.SQL.Text := 'SELECT * FROM COUNTRY ORDER BY COUNTRY';
-    AResponse.Body.SetStream(CountryTable.AsJSONStream,
-      'application/json', True);
+  AResponse.Body.SetStream(CountryTable.AsJSONStream, 'application/json', True);
 end;
 
 procedure TCountryResource1.GetItem(const AContext: TEndpointContext;
@@ -114,6 +113,11 @@ procedure TCountryResource1.DeleteItem(const AContext: TEndpointContext;
 var
   LItem: string;
 begin
+  if AContext.User = nil then
+    EEMSHTTPError.RaiseUnauthorized('', 'User required');
+  if not AContext.User.Groups.Contains('Admin') then
+    EEMSHTTPError.RaiseForbidden('', 'Administrator required');
+
   LItem := ARequest.Params.Values['item'];
   if LItem.IsEmpty then
     AResponse.RaiseBadRequest('missing parameter');
@@ -143,4 +147,3 @@ initialization
 Register;
 
 end.
-
