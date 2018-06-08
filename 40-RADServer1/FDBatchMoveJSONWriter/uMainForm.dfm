@@ -164,7 +164,29 @@ object Form1: TForm1
   object FDBatchMove1: TFDBatchMove
     Reader = FDBatchMoveDataSetReader1
     Writer = FDBatchMoveJSONWriter1
-    Mappings = <>
+    Mappings = <
+      item
+        SourceFieldName = 'PROJ_ID'
+        DestinationFieldName = 'ID'
+      end
+      item
+        SourceFieldName = 'PROJ_NAME'
+        SourceExpression = 'Lower(Name)'
+        DestinationFieldName = 'Name'
+      end
+      item
+        SourceFieldName = 'PROJ_DESC'
+        DestinationFieldName = 'Description'
+      end
+      item
+        SourceFieldName = 'TEAM_LEADER'
+        DestinationFieldName = 'Leader'
+      end
+      item
+        SourceFieldName = 'PRODUCT'
+        SourceExpression = 'Upper(Product)'
+        DestinationFieldName = 'Product'
+      end>
     LogFileName = 'Data.log'
     Left = 88
     Top = 256
@@ -176,7 +198,27 @@ object Form1: TForm1
     Top = 304
   end
   object FDBatchMoveJSONWriter1: TFDBatchMoveJSONWriter
-    DataDef.Fields = <>
+    DataDef.Fields = <
+      item
+        FieldName = 'ID'
+        DataType = jtString
+      end
+      item
+        FieldName = 'Name'
+        DataType = jtString
+      end
+      item
+        FieldName = 'Description'
+        DataType = jtString
+      end
+      item
+        FieldName = 'Leader'
+        DataType = jtString
+      end
+      item
+        FieldName = 'Product'
+        DataType = jtString
+      end>
     DataDef.Formatting = Indented
     Encoding = ecANSI
     Left = 88

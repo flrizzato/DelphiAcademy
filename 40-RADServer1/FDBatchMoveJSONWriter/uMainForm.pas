@@ -11,7 +11,7 @@ uses
   FireDAC.DApt, FireDAC.VCLUI.Wait, Data.DB, Vcl.StdCtrls, FireDAC.Comp.UI,
   FireDAC.Phys.IBBase, Vcl.Grids, Vcl.DBGrids, FireDAC.Comp.DataSet,
   FireDAC.Comp.Client, FireDAC.Comp.BatchMove.JSON, FireDAC.Comp.BatchMove,
-  FireDAC.Comp.BatchMove.DataSet;
+  FireDAC.Comp.BatchMove.DataSet, FireDAC.Stan.ExprFuncs;
 
 type
   TForm1 = class(TForm)
