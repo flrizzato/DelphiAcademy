@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{15E416F8-8010-4F8A-9F5E-09E8EA35F16B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Windows 10 SharingContract\ShareContractComponent.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Windows 10 Notifications\NotificationsVCL.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ShareContractComponent">
+        <MSBuild Projects="Windows 10 SharingContract\ShareContractComponent.dproj"/>
+    </Target>
+    <Target Name="ShareContractComponent:Clean">
+        <MSBuild Projects="Windows 10 SharingContract\ShareContractComponent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ShareContractComponent:Make">
+        <MSBuild Projects="Windows 10 SharingContract\ShareContractComponent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NotificationsVCL">
+        <MSBuild Projects="Windows 10 Notifications\NotificationsVCL.dproj"/>
+    </Target>
+    <Target Name="NotificationsVCL:Clean">
+        <MSBuild Projects="Windows 10 Notifications\NotificationsVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NotificationsVCL:Make">
+        <MSBuild Projects="Windows 10 Notifications\NotificationsVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ShareContractComponent;NotificationsVCL"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ShareContractComponent:Clean;NotificationsVCL:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ShareContractComponent:Make;NotificationsVCL:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{95BD18D9-5078-49EB-83AC-47A3D51AC9EB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="VCLSensors\VCLSensors.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Location\Location.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="VCLSensors">
+        <MSBuild Projects="VCLSensors\VCLSensors.dproj"/>
+    </Target>
+    <Target Name="VCLSensors:Clean">
+        <MSBuild Projects="VCLSensors\VCLSensors.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLSensors:Make">
+        <MSBuild Projects="VCLSensors\VCLSensors.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Location">
+        <MSBuild Projects="Location\Location.dproj"/>
+    </Target>
+    <Target Name="Location:Clean">
+        <MSBuild Projects="Location\Location.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Location:Make">
+        <MSBuild Projects="Location\Location.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="VCLSensors;Location"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="VCLSensors:Clean;Location:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="VCLSensors:Make;Location:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{8D3461C7-CF7B-469C-B59C-2F2110B56AF6}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SPPChatFMX\SPPChatFMX.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SPPChatVCL\SPPChatVCL.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SPPChatFMX">
+        <MSBuild Projects="SPPChatFMX\SPPChatFMX.dproj"/>
+    </Target>
+    <Target Name="SPPChatFMX:Clean">
+        <MSBuild Projects="SPPChatFMX\SPPChatFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SPPChatFMX:Make">
+        <MSBuild Projects="SPPChatFMX\SPPChatFMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SPPChatVCL">
+        <MSBuild Projects="SPPChatVCL\SPPChatVCL.dproj"/>
+    </Target>
+    <Target Name="SPPChatVCL:Clean">
+        <MSBuild Projects="SPPChatVCL\SPPChatVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SPPChatVCL:Make">
+        <MSBuild Projects="SPPChatVCL\SPPChatVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SPPChatFMX;SPPChatVCL"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SPPChatFMX:Clean;SPPChatVCL:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SPPChatFMX:Make;SPPChatVCL:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

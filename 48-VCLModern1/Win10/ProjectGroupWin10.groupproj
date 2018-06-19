@@ -1,0 +1,132 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FF50F1A3-BD4C-4B1D-ACDC-8BC2E0E3E0E0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="1-ActivityIndicator\ActivityIndicator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="2-SearchBox\SearchBox.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="3-ToggleSwitch\ToggleSwitch.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="4-SplitView\SplitView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="5-DateTimePickers\DateTimePickers.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="6-VCLCalendars\VCLCalendars.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="7-RelativePanel\RelativePanel.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="8-StackPanel\StackPanel.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="9-CardPanel\CardPanel.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ActivityIndicator">
+        <MSBuild Projects="1-ActivityIndicator\ActivityIndicator.dproj"/>
+    </Target>
+    <Target Name="ActivityIndicator:Clean">
+        <MSBuild Projects="1-ActivityIndicator\ActivityIndicator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ActivityIndicator:Make">
+        <MSBuild Projects="1-ActivityIndicator\ActivityIndicator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SearchBox">
+        <MSBuild Projects="2-SearchBox\SearchBox.dproj"/>
+    </Target>
+    <Target Name="SearchBox:Clean">
+        <MSBuild Projects="2-SearchBox\SearchBox.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SearchBox:Make">
+        <MSBuild Projects="2-SearchBox\SearchBox.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ToggleSwitch">
+        <MSBuild Projects="3-ToggleSwitch\ToggleSwitch.dproj"/>
+    </Target>
+    <Target Name="ToggleSwitch:Clean">
+        <MSBuild Projects="3-ToggleSwitch\ToggleSwitch.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ToggleSwitch:Make">
+        <MSBuild Projects="3-ToggleSwitch\ToggleSwitch.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SplitView">
+        <MSBuild Projects="4-SplitView\SplitView.dproj"/>
+    </Target>
+    <Target Name="SplitView:Clean">
+        <MSBuild Projects="4-SplitView\SplitView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SplitView:Make">
+        <MSBuild Projects="4-SplitView\SplitView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DateTimePickers">
+        <MSBuild Projects="5-DateTimePickers\DateTimePickers.dproj"/>
+    </Target>
+    <Target Name="DateTimePickers:Clean">
+        <MSBuild Projects="5-DateTimePickers\DateTimePickers.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DateTimePickers:Make">
+        <MSBuild Projects="5-DateTimePickers\DateTimePickers.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VCLCalendars">
+        <MSBuild Projects="6-VCLCalendars\VCLCalendars.dproj"/>
+    </Target>
+    <Target Name="VCLCalendars:Clean">
+        <MSBuild Projects="6-VCLCalendars\VCLCalendars.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLCalendars:Make">
+        <MSBuild Projects="6-VCLCalendars\VCLCalendars.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RelativePanel">
+        <MSBuild Projects="7-RelativePanel\RelativePanel.dproj"/>
+    </Target>
+    <Target Name="RelativePanel:Clean">
+        <MSBuild Projects="7-RelativePanel\RelativePanel.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RelativePanel:Make">
+        <MSBuild Projects="7-RelativePanel\RelativePanel.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StackPanel">
+        <MSBuild Projects="8-StackPanel\StackPanel.dproj"/>
+    </Target>
+    <Target Name="StackPanel:Clean">
+        <MSBuild Projects="8-StackPanel\StackPanel.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StackPanel:Make">
+        <MSBuild Projects="8-StackPanel\StackPanel.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CardPanel">
+        <MSBuild Projects="9-CardPanel\CardPanel.dproj"/>
+    </Target>
+    <Target Name="CardPanel:Clean">
+        <MSBuild Projects="9-CardPanel\CardPanel.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CardPanel:Make">
+        <MSBuild Projects="9-CardPanel\CardPanel.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ActivityIndicator;SearchBox;ToggleSwitch;SplitView;DateTimePickers;VCLCalendars;RelativePanel;StackPanel;CardPanel"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ActivityIndicator:Clean;SearchBox:Clean;ToggleSwitch:Clean;SplitView:Clean;DateTimePickers:Clean;VCLCalendars:Clean;RelativePanel:Clean;StackPanel:Clean;CardPanel:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ActivityIndicator:Make;SearchBox:Make;ToggleSwitch:Make;SplitView:Make;DateTimePickers:Make;VCLCalendars:Make;RelativePanel:Make;StackPanel:Make;CardPanel:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

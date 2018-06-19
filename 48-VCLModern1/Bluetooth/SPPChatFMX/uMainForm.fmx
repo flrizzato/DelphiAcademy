@@ -1,0 +1,121 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ClientHeight = 493
+  ClientWidth = 403
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object memLog: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ShowSizeGrip = True
+    StyledSettings = [Family, Size]
+    TextSettings.Font.StyleExt = {00040000000200000004000000}
+    TextSettings.WordWrap = True
+    Align = Client
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 387.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Viewport.Width = 389.000000000000000000
+    Viewport.Height = 383.000000000000000000
+  end
+  object ToolBarMain: TToolBar
+    Size.Width = 403.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    object butDevices: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Devices'
+      OnClick = butDevicesClick
+    end
+    object CBDevices: TComboBox
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 233.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+    object butStart: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 328.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Start'
+      OnClick = butStartClick
+    end
+  end
+  object ToolBarBottom: TToolBar
+    Align = Bottom
+    Position.Y = 445.000000000000000000
+    Size.Width = 403.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    object edtMessage: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 313.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object butSend: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 328.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Send'
+      OnClick = butSendClick
+    end
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end>
+    Left = 32
+    Top = 72
+  end
+end
