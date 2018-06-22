@@ -22,7 +22,7 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('Amakrits');
+  TStyleManager.TrySetStyle('Aqua Graphite');
   Application.Title := 'TSplitView Demo';
   Application.CreateForm(TSplitViewForm, SplitViewForm);
   Application.Run;

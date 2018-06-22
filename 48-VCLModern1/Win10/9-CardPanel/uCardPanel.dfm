@@ -89,7 +89,7 @@ object CardPanelForm: TCardPanelForm
     Margins.Right = 10
     Margins.Bottom = 10
     Align = alClient
-    ActiveCard = Card1
+    ActiveCard = Card2
     Caption = 'CardPanel1'
     Constraints.MinHeight = 384
     Constraints.MinWidth = 512
@@ -11920,6 +11920,19 @@ object CardPanelForm: TCardPanelForm
       Caption = 'Card6'
       CardIndex = 5
       TabOrder = 5
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+    end
+    object Card7: TCard
+      Left = 1
+      Top = 1
+      Width = 512
+      Height = 382
+      Caption = 'Card7'
+      CardIndex = 6
+      TabOrder = 6
       ExplicitLeft = 0
       ExplicitTop = 0
       ExplicitWidth = 185

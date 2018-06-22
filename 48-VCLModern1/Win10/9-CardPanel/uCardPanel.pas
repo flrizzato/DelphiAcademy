@@ -42,6 +42,7 @@ type
     Image4: TImage;
     Image5: TImage;
     Card6: TCard;
+    Card7: TCard;
     procedure FormCreate(Sender: TObject);
     procedure cbxVclStylesChange(Sender: TObject);
     procedure actNextCardExecute(Sender: TObject);
