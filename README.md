@@ -46,10 +46,10 @@
 43 - RAD Server: Projeto Exemplo Parte 1 (Server)<br>
 44 - RAD Server: Projeto Exemplo Parte 2 (Cliente Mobile e Desktop)<br>
 45 - RAD Server: Projeto Exemplo Parte 3 (Cliente WEB com Ext JS)<br>
-46 - RAD Server: Push Notifications e Recursos Avançados<br>
-47 - Novos Produtos, Novos Recursos #1<br>
-48 - Novos Produtos, Novos Recursos #2<br>
-49 - Novos Produtos, Novos Recursos #3<br>
+46 - RAD Server: Push Notifications<br>
+47 - RAD Server: Autorização e Autenticação<br>
+48 - Modernização de Aplicações VCL - Parte 1<br>
+49 - Modernização de Aplicações VCL - Parte 2<br>
 
 
 <h2>Español</h2>
@@ -98,7 +98,7 @@
 43 - RAD Server: Proyecto Ejemplo Parte 1 (Servidor)<br>
 44 - RAD Server: Proyecto Ejemplo Parte 2 (Cliente móvil y de escritorio)<br>
 45 - RAD Server: Proyecto Ejemplo Parte 3 (Cliente WEB con Ext JS)<br>
-46 - RAD Server: Push Notificaciones y características avanzadas<br>
-47 - Nuevos Productos, Nuevos Recursos # 1<br>
-48 - Nuevos Productos, Nuevos Recursos # 2<br>
-49 - Nuevos productos, Nuevos recursos # 3<br>
+46 - RAD Server: Notificaciones Push<br>
+47 - RAD Server: Autorización y Autenticación<br>
+48 - Modernización de Aplicaciones VCL - Parte 1<br>
+49 - Modernización de Aplicaciones VCL - Parte 2<br>
