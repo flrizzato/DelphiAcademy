@@ -126,7 +126,7 @@
         <PF_UWPPackageDisplayName>DelphiMeetingOrganizer</PF_UWPPackageDisplayName>
         <PF_UWPPackageName>4382fernando.rizzato.DelphiMeetingOrganizer</PF_UWPPackageName>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <PF_KeyStorePass>8578479C5FC107D3CF27E56CA457E36281C30502A02B979B97EE0FB48E3E3C9EDB56A384E34A1C6BC1AE577CFA9CC360BAE1367E044B22801678459DE5E522CEC91BF36FD558FAD0BFAFAF11070285B7</PF_KeyStorePass>
+        <PF_KeyStorePass>8578479C645855D8A342711DD129E36881D0051BA043979397B40FAB8E363C94DB04A3D7E3401C39C1CC5752FACFC338BAF83613042722C3164B45C2E5BA22DBC90AF35DEEDFA898D3843B4E722685B7</PF_KeyStorePass>
         <UWP_DelphiLogo150>C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Images\Logo150x150.png</UWP_DelphiLogo150>
         <PF_UWPDistributionType>Store</PF_UWPDistributionType>
         <VerInfo_Locale>1033</VerInfo_Locale>
@@ -238,6 +238,8 @@
                     <Source Name="MainSource">MeetingOrganizer.dpr</Source>
                 </Source>
                 <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k250.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp250.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k250.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp250.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
@@ -267,6 +269,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="$(IBREDISTDIR)\ios64_device\interbase\license.txt" Configuration="Debug" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents\interbase\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="$(IBREDISTDIR)\win32_togo\interbase\oss_license_notice.txt" Configuration="Release" Class="File">
                     <Platform Name="Win32">
                         <RemoteDir>interbase\</RemoteDir>
@@ -279,21 +287,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(IBREDISTDIR)\reg_ibtogo.txt" Configuration="Debug" Class="File">
-                    <Platform Name="iOSDevice64">
-                        <RemoteDir>StartUp\Documents\interbase\license\</RemoteDir>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(IBREDISTDIR)\reg_iblite.txt" Configuration="Debug" Class="File">
                     <Platform Name="Win64">
                         <RemoteDir>interbase\license\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(IBREDISTDIR)\ios64_device\interbase\license.txt" Configuration="Debug" Class="File">
+                <DeployFile LocalName="$(IBREDISTDIR)\reg_ibtogo.txt" Configuration="Debug" Class="File">
                     <Platform Name="iOSDevice64">
-                        <RemoteDir>StartUp\Documents\interbase\</RemoteDir>
+                        <RemoteDir>StartUp\Documents\interbase\license\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
