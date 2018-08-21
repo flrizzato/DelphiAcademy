@@ -126,7 +126,7 @@
         <PF_UWPPackageDisplayName>DelphiMeetingOrganizer</PF_UWPPackageDisplayName>
         <PF_UWPPackageName>4382fernando.rizzato.DelphiMeetingOrganizer</PF_UWPPackageName>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <PF_KeyStorePass>8578479C645855D8A342711DD129E36881D0051BA043979397B40FAB8E363C94DB04A3D7E3401C39C1CC5752FACFC338BAF83613042722C3164B45C2E5BA22DBC90AF35DEEDFA898D3843B4E722685B7</PF_KeyStorePass>
+        <PF_KeyStorePass>8578479C5FC107D3CF277131D12CE37981B20541A00D978D97E60FBE8E6C3C8ADB57A3DEE3551C63C1E35725FAC7C317BA95360204642291163A459CE5B722BEC916F341D513FACCBFF83B4E722685B7</PF_KeyStorePass>
         <UWP_DelphiLogo150>C:\EVENTS\BerlinUpdate2\MeetingOrganizer\Images\Logo150x150.png</UWP_DelphiLogo150>
         <PF_UWPDistributionType>Store</PF_UWPDistributionType>
         <VerInfo_Locale>1033</VerInfo_Locale>
@@ -269,6 +269,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="$(IBREDISTDIR)\reg_ibtogo.txt" Configuration="Debug" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents\interbase\license\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="$(IBREDISTDIR)\ios64_device\interbase\license.txt" Configuration="Debug" Class="File">
                     <Platform Name="iOSDevice64">
                         <RemoteDir>StartUp\Documents\interbase\</RemoteDir>
@@ -281,21 +287,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\MeetingOrganizer.exe" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
-                        <RemoteName>MeetingOrganizer.exe</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(IBREDISTDIR)\reg_iblite.txt" Configuration="Debug" Class="File">
                     <Platform Name="Win64">
                         <RemoteDir>interbase\license\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(IBREDISTDIR)\reg_ibtogo.txt" Configuration="Debug" Class="File">
-                    <Platform Name="iOSDevice64">
-                        <RemoteDir>StartUp\Documents\interbase\license\</RemoteDir>
+                <DeployFile LocalName="..\MeetingOrganizer.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>MeetingOrganizer.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

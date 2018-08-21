@@ -151,18 +151,18 @@
         </DeployFile>
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice64'">
-        <DeployFile Include="$(IBREDISTDIR)\ios64_device\interbase\license.txt" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>MeetingOrganizer.app\StartUp\Documents\interbase\</RemoteDir>
-            <RemoteName>license.txt</RemoteName>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>MeetingOrganizer.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
             <DeployClass>File</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>MeetingOrganizer.app\StartUp\Documents\interbase\license\</RemoteDir>
-            <RemoteName>reg_ibtogo.txt</RemoteName>
+        <DeployFile Include="$(IBREDISTDIR)\ios64_device\interbase\license.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>MeetingOrganizer.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
             <DeployClass>File</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
