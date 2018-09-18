@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package
+   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities">
+  <Identity Name="%projectName%"
+	ProcessorArchitecture="%processorArchitecture%"
+			Publisher="%publisher%"
+			Version="%version%" />
+  <Properties>
+    <DisplayName>%packageDisplayName%</DisplayName>
+    <PublisherDisplayName>%publisherDisplayName%</PublisherDisplayName>
+    <Description>%description%</Description>
+    <Logo>%logo%</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="%language%" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="%minVersion%" MaxVersionTested="%maxVersionTested%" />
+  </Dependencies>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+  <Applications>
+    <Application Id="%programID%"
+				Executable="%executable%"
+				EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements BackgroundColor="#464646"
+				DisplayName="%applicationDisplayName%"
+				Square150x150Logo="%applicationLogo150%"
+				Square44x44Logo="%applicationLogo44%"
+				Description="%applicationDescription%" />
+    </Application>
+  </Applications>
+</Package>
