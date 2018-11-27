@@ -1,0 +1,196 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 3
+  object ListBox1: TListBox
+    Align = Top
+    Padding.Top = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Position.Y = 58.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 227.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    ShowScrollBars = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    Viewport.Width = 384.000000000000000000
+    Viewport.Height = 227.000000000000000000
+    object lbLocationSensor: TListBoxItem
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Location Sensor'
+      object swLocationSensorActive: TSwitch
+        Align = Right
+        Anchors = []
+        IsChecked = False
+        Margins.Right = 5.000000000000000000
+        Position.X = 335.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        OnSwitch = swLocationSensorActiveSwitch
+      end
+    end
+    object lbTriggerDistance: TListBoxItem
+      Position.Y = 44.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Trigger Distance'
+      object nbTriggerDistance: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 0
+        Cursor = crIBeam
+        KeyboardType = Default
+        TextSettings.HorzAlign = Center
+        Position.X = 239.000000000000000000
+        Position.Y = 6.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = nbTriggerDistanceChange
+      end
+      object Button1: TButton
+        Align = Right
+        Anchors = []
+        Position.X = 285.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'stepperbuttonleft'
+        TabOrder = 1
+        Text = 'btnTriggerDown'
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Align = Right
+        Anchors = []
+        Margins.Right = 5.000000000000000000
+        Position.X = 332.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'stepperbuttonright'
+        TabOrder = 2
+        Text = 'btnTriggerUp'
+        OnClick = Button2Click
+      end
+    end
+    object lbAccuracy: TListBoxItem
+      Position.Y = 88.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Accuracy'
+      object Button3: TButton
+        Align = Right
+        Anchors = []
+        Position.X = 285.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'stepperbuttonleft'
+        TabOrder = 0
+        Text = 'btnAccuracyDown'
+        OnClick = Button3Click
+      end
+      object Button4: TButton
+        Align = Right
+        Anchors = []
+        Margins.Right = 5.000000000000000000
+        Position.X = 332.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 47.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'stepperbuttonright'
+        TabOrder = 1
+        Text = 'btnAccuracyUp'
+        OnClick = Button4Click
+      end
+      object nbAccuracy: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 2
+        Cursor = crIBeam
+        KeyboardType = Default
+        TextSettings.HorzAlign = Center
+        Position.X = 239.000000000000000000
+        Position.Y = 6.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = nbAccuracyChange
+      end
+    end
+    object lbLatitude: TListBoxItem
+      Position.Y = 132.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Latitude'
+    end
+    object lbLongitude: TListBoxItem
+      Position.Y = 176.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Longitude'
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Location'
+    end
+  end
+  object WebBrowser1: TWebBrowser
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 282.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LocationSensor1: TLocationSensor
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 248
+    Top = 392
+  end
+end

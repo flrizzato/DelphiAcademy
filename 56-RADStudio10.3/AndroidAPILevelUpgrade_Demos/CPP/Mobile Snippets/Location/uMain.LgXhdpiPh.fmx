@@ -1,0 +1,61 @@
+inherited Form2_LgXhdpiPh: TForm2_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ListBox1: TListBox
+    Size.Width = 450.000000000000000000
+    inherited lbLocationSensor: TListBoxItem
+      Size.Width = 440.000000000000000000
+      inherited swLocationSensorActive: TSwitch
+        Position.X = 359.000000000000000000
+        Size.Height = 44.000000000000000000
+      end
+    end
+    inherited lbTriggerDistance: TListBoxItem
+      Size.Width = 440.000000000000000000
+      inherited nbTriggerDistance: TNumberBox
+        Position.X = 295.000000000000000000
+        Size.Height = 44.000000000000000000
+      end
+      inherited Button1: TButton
+        Position.X = 341.000000000000000000
+        Size.Height = 44.000000000000000000
+      end
+      inherited Button2: TButton
+        Position.X = 388.000000000000000000
+        Size.Height = 44.000000000000000000
+      end
+    end
+    inherited lbAccuracy: TListBoxItem
+      Size.Width = 440.000000000000000000
+      inherited Button3: TButton
+        Position.X = 341.000000000000000000
+        Size.Height = 44.000000000000000000
+      end
+      inherited Button4: TButton
+        Position.X = 388.000000000000000000
+        Size.Height = 44.000000000000000000
+      end
+      inherited nbAccuracy: TNumberBox
+        Position.X = 295.000000000000000000
+        Size.Height = 44.000000000000000000
+      end
+    end
+    inherited lbLatitude: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+    inherited lbLongitude: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+    end
+  end
+  inherited WebBrowser1: TWebBrowser
+    Size.Width = 450.000000000000000000
+    Size.Height = 410.000000000000000000
+  end
+end

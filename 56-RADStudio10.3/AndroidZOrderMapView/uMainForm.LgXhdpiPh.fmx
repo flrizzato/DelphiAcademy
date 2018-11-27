@@ -1,0 +1,28 @@
+inherited MainForm_LgXhdpiPh: TMainForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited MapView1: TMapView
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited Layout1: TLayout
+      Align = Top
+      Position.Y = 10.000000000000000000
+      Size.Width = 450.000000000000000000
+      inherited Layout2: TLayout
+        inherited butLandmark1: TButton
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TintColor = claOrange
+        end
+        inherited butLandmark2: TButton
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TintColor = claOrange
+        end
+        inherited butLandmark3: TButton
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TintColor = claOrange
+        end
+      end
+    end
+  end
+end

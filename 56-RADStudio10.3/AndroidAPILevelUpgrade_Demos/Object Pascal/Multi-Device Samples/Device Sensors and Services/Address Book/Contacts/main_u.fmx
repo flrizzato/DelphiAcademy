@@ -1,0 +1,492 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 681
+  ClientWidth = 570
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 570.000000000000000000
+    Size.Height = 681.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      570s
+      632s
+      570s
+      632s
+      570s
+      632s)
+    object TabItemContact: TTabItem
+      CustomIcon = <
+        item
+          FileName = 
+            'C:\Program Files (x86)\Embarcadero\Studio\19.0\Images\GlyFX\Icon' +
+            's\Aero\PNG\32x32\arrow_right_32.png'
+        end>
+      IsSelected = True
+      Size.Width = 190.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemmostviewed'
+      TabOrder = 0
+      Text = 'Add Contact'
+      ExplicitSize.cx = 58.000000000000000000
+      ExplicitSize.cy = 22.000000000000000000
+      object ToolBar2: TToolBar
+        Align = MostTop
+        Size.Width = 570.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label1: TLabel
+          Align = Contents
+          Size.Width = 570.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Add Contact'
+        end
+        object btnOK: TButton
+          Action = ActionAddContact
+          Align = Right
+          Enabled = True
+          ImageIndex = -1
+          Margins.Right = 5.000000000000000000
+          Position.X = 497.000000000000000000
+          Position.Y = 9.000000000000000000
+          Size.Width = 68.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listitembutton'
+          TabOrder = 2
+        end
+        object btnClear: TButton
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 9.000000000000000000
+          Size.Width = 68.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listitembutton'
+          TabOrder = 3
+          Text = 'Clear'
+          OnClick = btnClearClick
+        end
+      end
+      object ContactList: TListBox
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 53.000000000000000000
+        Size.Width = 560.000000000000000000
+        Size.Height = 400.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        Viewport.Width = 560.000000000000000000
+        Viewport.Height = 400.000000000000000000
+        object ContactInfoHeader: TListBoxGroupHeader
+          Size.Width = 560.000000000000000000
+          Size.Height = 56.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxgroupheader'
+          TabOrder = 0
+          Text = 'Enter Contact Information'
+        end
+        object Photo: TListBoxItem
+          Position.Y = 56.000000000000000000
+          TabOrder = 5
+          Text = 'Add Photo'
+          object btnLoadPicture: TButton
+            Align = Right
+            Margins.Right = 3.000000000000000000
+            Position.X = 509.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'organizetoolbuttonbordered'
+            TabOrder = 0
+            Text = 'Photo Library'
+            OnClick = btnLoadPictureClick
+          end
+          object Image1: TImage
+            MultiResBitmap = <
+              item
+              end>
+            Align = Right
+            Margins.Right = 3.000000000000000000
+            Position.X = 405.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object btnTakePicture: TButton
+            Align = Right
+            Margins.Right = 3.000000000000000000
+            Position.X = 458.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'cameratoolbuttonbordered'
+            TabOrder = 1
+            Text = 'Take Photo'
+            OnClick = btnTakePictureClick
+          end
+        end
+        object FirstName: TListBoxItem
+          Position.Y = 100.000000000000000000
+          Size.Width = 560.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 2
+          Text = 'First Name'
+          object edtFirstName: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Right
+            TabOrder = 0
+            ReturnKeyType = Done
+            Position.X = 370.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 20.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 180.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            KillFocusByReturn = True
+          end
+        end
+        object LastName: TListBoxItem
+          StyledSettings = [Family, Size, Style, FontColor]
+          Position.Y = 144.000000000000000000
+          Size.Width = 560.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 3
+          Text = 'Last Name'
+          object edtLastName: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Right
+            TabOrder = 0
+            ReturnKeyType = Done
+            Position.X = 370.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 20.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 180.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            KillFocusByReturn = True
+          end
+        end
+        object WorkEmail: TListBoxItem
+          StyledSettings = [Family, Size, Style]
+          Position.Y = 188.000000000000000000
+          Size.Width = 560.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 4
+          Text = 'Work Email'
+          object edtWorkMail: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Right
+            TabOrder = 0
+            KeyboardType = EmailAddress
+            ReturnKeyType = Done
+            Position.X = 370.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 20.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 180.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            KillFocusByReturn = True
+          end
+        end
+        object Group: TListBoxItem
+          Position.Y = 232.000000000000000000
+          Size.Width = 560.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 1
+          Text = 'Select Group'
+          object ComboBox1: TComboBox
+            Align = Right
+            Margins.Right = 10.000000000000000000
+            Position.X = 370.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 180.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+      end
+    end
+    object TabItemContacts: TTabItem
+      CustomIcon = <
+        item
+          FileName = 
+            'C:\Program Files (x86)\Embarcadero\Studio\19.0\Images\GlyFX\Icon' +
+            's\Aero\PNG\32x32\users_32.png'
+        end>
+      IsSelected = False
+      Size.Width = 190.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemcontacts'
+      TabOrder = 0
+      Text = 'Address Book'
+      ExplicitSize.cx = 109.000000000000000000
+      ExplicitSize.cy = 22.000000000000000000
+      object ToolBar1: TToolBar
+        Size.Width = 570.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btnRemove: TSpeedButton
+          Action = ActionRemoveContact
+          Align = Left
+          Enabled = True
+          ImageIndex = -1
+          Margins.Left = 3.000000000000000000
+          Position.X = 3.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'trashtoolbuttonbordered'
+        end
+        object btnRefresh: TSpeedButton
+          Action = ActionRefresh
+          Align = Right
+          Enabled = True
+          ImageIndex = -1
+          Margins.Right = 3.000000000000000000
+          Position.X = 519.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'refreshtoolbuttonbordered'
+        end
+        object Label7: TLabel
+          Align = Contents
+          Size.Width = 570.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Address Book'
+        end
+      end
+      object ListViewContacts: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemDeleteAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 570.000000000000000000
+        Size.Height = 584.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+        SearchVisible = True
+      end
+    end
+    object TabItemGroup: TTabItem
+      CustomIcon = <
+        item
+          FileName = 
+            'C:\Program Files (x86)\Embarcadero\Studio\19.0\Images\GlyFX\Icon' +
+            's\Aero\PNG\32x32\treenode_add_32_h.png'
+        end>
+      IsSelected = False
+      Size.Width = 190.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 0
+      Text = 'Add/Remove Group'
+      ExplicitSize.cx = 79.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ToolBar3: TToolBar
+        Size.Width = 570.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label8: TLabel
+          Align = Contents
+          Size.Width = 570.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Group Management'
+        end
+      end
+      object ListBox1: TListBox
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 53.000000000000000000
+        Size.Width = 560.000000000000000000
+        Size.Height = 256.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        Viewport.Width = 560.000000000000000000
+        Viewport.Height = 256.000000000000000000
+        object ListBoxGroupHeader1: TListBoxGroupHeader
+          Size.Width = 560.000000000000000000
+          Size.Height = 56.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxgroupheader'
+          TabOrder = 0
+          Text = 'Add Group'
+        end
+        object EnterGroup: TListBoxItem
+          Position.Y = 56.000000000000000000
+          Size.Width = 560.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 1
+          Text = 'Enter Group Name'
+          object edtGroupName: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Right
+            TabOrder = 1
+            ReturnKeyType = Done
+            Position.X = 339.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            KillFocusByReturn = True
+          end
+          object btnAddGroup: TButton
+            Action = ActionAddGroup
+            Align = MostRight
+            Enabled = True
+            ImageIndex = -1
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 504.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'addtoolbuttonbordered'
+            TabOrder = 2
+          end
+        end
+        object ListBoxGroupHeader2: TListBoxGroupHeader
+          Position.Y = 100.000000000000000000
+          Size.Width = 560.000000000000000000
+          Size.Height = 56.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Delete Group'
+        end
+        object SelectGroup: TListBoxItem
+          Position.Y = 156.000000000000000000
+          Size.Width = 560.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Select Group'
+          object ComboBox2: TComboBox
+            Align = Right
+            Margins.Right = 5.000000000000000000
+            Position.X = 339.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+          end
+          object btnRemoveGroup: TButton
+            Action = ActionRemoveGroup
+            Align = MostRight
+            Enabled = True
+            ImageIndex = -1
+            Margins.Left = 10.000000000000000000
+            Margins.Right = 8.000000000000000000
+            Position.X = 504.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'trashtoolbuttonbordered'
+            TabOrder = 2
+            Text = 'Remove'
+          end
+        end
+      end
+    end
+  end
+  object AddressBook1: TAddressBook
+    OnPermissionRequest = AddressBook1PermissionRequest
+    OnExternalChange = AddressBook1ExternalChange
+    Left = 280
+    Top = 336
+  end
+  object ActionList1: TActionList
+    OnUpdate = ActionList1Update
+    Left = 368
+    Top = 336
+    object ActionAddContact: TAction
+      Text = 'Add'
+      OnExecute = ActionAddContactExecute
+    end
+    object ActionRefresh: TAction
+      Text = 'Refresh'
+      OnExecute = ActionRefreshExecute
+    end
+    object ActionRemoveGroup: TAction
+      Text = 'Remove Group'
+      Visible = False
+      OnExecute = ActionRemoveGroupExecute
+    end
+    object ActionAddGroup: TAction
+      Text = 'Add Group'
+      OnExecute = ActionAddGroupExecute
+    end
+    object ActionRemoveContact: TAction
+      Text = 'Remove contact'
+      OnExecute = ActionRemoveContactExecute
+    end
+    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakePhotoFromLibraryAction1DidFinishTaking
+    end
+    object TakePhotoFromCameraAction1: TTakePhotoFromCameraAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakePhotoFromCameraAction1DidFinishTaking
+    end
+  end
+end

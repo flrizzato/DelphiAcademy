@@ -1,0 +1,455 @@
+object TFMXMusicPlayerFrm: TTFMXMusicPlayerFrm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 3
+  object tcUITabs: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 384.000000000000000000
+    Size.Height = 567.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = Bottom
+    Sizes = (
+      384s
+      518s
+      384s
+      518s
+      384s
+      518s)
+    object tiAlbums: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 128.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemfavorites'
+      TabOrder = 0
+      Text = 'Albums'
+      ExplicitSize.cx = 21.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object lvAlbums: TListView
+        ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+        ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 518.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        CanSwipeDelete = False
+        OnChange = lvAlbumsChange
+      end
+    end
+    object tiSongs: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 128.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemfeatured'
+      TabOrder = 0
+      Text = 'Songs'
+      ExplicitSize.cx = 22.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object lvSongs: TListView
+        ItemAppearanceClassName = 'TCustomizeItemObjects'
+        ItemEditAppearanceClassName = 'TCustomizeItemObjects'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 518.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        CanSwipeDelete = False
+        OnChange = lvSongsChange
+      end
+    end
+    object tiNowPlaying: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 128.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemrecent'
+      TabOrder = 0
+      Text = 'Now Playing'
+      ExplicitSize.cx = 21.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object tbNowPlaying: TToolBar
+        Align = Bottom
+        Position.Y = 470.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btnPrev: TButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          TabOrder = 0
+          Text = 'btnPrev'
+          OnClick = btnPrevClick
+        end
+        object btnNext: TButton
+          Align = Right
+          Position.X = 336.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'nexttoolbutton'
+          TabOrder = 1
+          Text = 'btnNext'
+          OnClick = btnNextClick
+        end
+        object lyState: TLayout
+          Align = Center
+          Size.Width = 153.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          object btnPlay: TButton
+            Align = Left
+            Enabled = False
+            Size.Width = 48.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'playtoolbutton'
+            TabOrder = 0
+            Text = 'btnPlay'
+            OnClick = btnPlayClick
+          end
+          object btnPause: TButton
+            Align = Center
+            Enabled = False
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'pausetoolbutton'
+            TabOrder = 1
+            Text = 'btnPause'
+            OnClick = btnPauseClick
+          end
+          object btnStop: TButton
+            Align = Right
+            Enabled = False
+            Position.X = 105.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'stoptoolbutton'
+            TabOrder = 2
+            Text = 'btnStop'
+            OnClick = btnStopClick
+          end
+        end
+      end
+      object lblArtist: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 82.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Artist:'
+        TabOrder = 1
+      end
+      object lblTitle: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 48.000000000000000000
+        Size.Width = 82.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Title:'
+        TabOrder = 2
+      end
+      object lblAlbum: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 80.000000000000000000
+        Size.Width = 82.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Album:'
+        TabOrder = 3
+      end
+      object lblDuration: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 112.000000000000000000
+        Size.Width = 82.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Duration:'
+        TabOrder = 4
+      end
+      object lblArtistVal: TLabel
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 96.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 416.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        TabOrder = 5
+      end
+      object lblTitleVal: TLabel
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 96.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 416.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        TabOrder = 6
+      end
+      object lblAlbumVal: TLabel
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 96.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 416.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        TabOrder = 7
+      end
+      object lblDurationVal: TLabel
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 96.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 416.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        TabOrder = 8
+      end
+      object lyProgressSettings: TLayout
+        Align = Bottom
+        Position.Y = 370.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        object btnSettings: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbutton'
+          TabOrder = 0
+          Text = 'Settings'
+        end
+        object tbProgress: TTrackBar
+          Align = Bottom
+          CanParentFocus = True
+          Orientation = Horizontal
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 58.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnChange = tbProgressChange
+        end
+      end
+    end
+  end
+  object volTimer: TTimer
+    Interval = 100
+    OnTimer = volTimerTimer
+    Left = 176
+    Top = 272
+  end
+  object mvSettings: TMultiView
+    TargetControl = tcUITabs
+    MasterButton = btnSettings
+    Size.Width = 320.000000000000000000
+    Size.Height = 567.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 2
+    object SettingsList: TListBox
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 519.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 0
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      GroupingKind = Grouped
+      Viewport.Width = 320.000000000000000000
+      Viewport.Height = 519.000000000000000000
+      object RepeatModes: TListBoxGroupHeader
+        Size.Width = 320.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxgroupheader'
+        TabOrder = 0
+        Text = 'Repeat Modes'
+      end
+      object All: TListBoxItem
+        ItemData.Accessory = aCheckmark
+        Position.Y = 56.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'All'
+        OnClick = RepeatItemsClick
+      end
+      object One: TListBoxItem
+        Position.Y = 100.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'One'
+        OnClick = RepeatItemsClick
+      end
+      object None: TListBoxItem
+        Position.Y = 144.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'None'
+        OnClick = RepeatItemsClick
+      end
+      object Default: TListBoxItem
+        Position.Y = 188.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Default'
+        OnClick = RepeatItemsClick
+      end
+      object ShuffleMusic: TListBoxGroupHeader
+        Position.Y = 232.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxgroupheader'
+        TabOrder = 5
+        Text = 'Shuffle Music'
+      end
+      object ShufffleMode: TListBoxItem
+        Selectable = False
+        Position.Y = 288.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Enable Shuffle Mode'
+        object swShuffleMode: TSwitch
+          Align = Right
+          IsChecked = False
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 266.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          TouchTargetExpansion.Left = 6.000000000000000000
+          TouchTargetExpansion.Top = 6.000000000000000000
+          TouchTargetExpansion.Right = 6.000000000000000000
+          TouchTargetExpansion.Bottom = 6.000000000000000000
+          OnSwitch = swShuffleModeSwitch
+        end
+      end
+      object VolumeHeader: TListBoxGroupHeader
+        Position.Y = 332.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxgroupheader'
+        TabOrder = 7
+        Text = 'Adjust Volume'
+      end
+      object VolumeListItem: TListBoxItem
+        Selectable = False
+        Position.Y = 388.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        object VolumeTrackBar: TTrackBar
+          Align = Top
+          CanParentFocus = True
+          Max = 1.000000000000000000
+          Orientation = Horizontal
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Value = 1.000000000000000000
+          OnChange = VolumeTrackBarChange
+        end
+      end
+    end
+    object tbSettings: TToolBar
+      Size.Width = 320.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object lblSettings: TLabel
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Size.Width = 262.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        Text = 'Settings'
+      end
+      object btnCloseSettings: TButton
+        Align = Right
+        Position.X = 272.000000000000000000
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'donetoolbutton'
+        TabOrder = 1
+        Text = 'Done'
+        OnClick = btnCloseSettingsClick
+      end
+    end
+  end
+end

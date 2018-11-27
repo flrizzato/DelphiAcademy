@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{CC1C2180-1E18-4CAB-9FEF-187EF9AE2F20}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DesktopWall\DesktopWallApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Mobile\MobilePhotoApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DesktopWallApp">
+        <MSBuild Projects="DesktopWall\DesktopWallApp.dproj"/>
+    </Target>
+    <Target Name="DesktopWallApp:Clean">
+        <MSBuild Projects="DesktopWall\DesktopWallApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DesktopWallApp:Make">
+        <MSBuild Projects="DesktopWall\DesktopWallApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MobilePhotoApp">
+        <MSBuild Projects="Mobile\MobilePhotoApp.dproj"/>
+    </Target>
+    <Target Name="MobilePhotoApp:Clean">
+        <MSBuild Projects="Mobile\MobilePhotoApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobilePhotoApp:Make">
+        <MSBuild Projects="Mobile\MobilePhotoApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DesktopWallApp;MobilePhotoApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DesktopWallApp:Clean;MobilePhotoApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DesktopWallApp:Make;MobilePhotoApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

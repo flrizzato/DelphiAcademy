@@ -1,0 +1,187 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 485
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object TopToolBar: TToolBar
+    Align = MostTop
+    Size.Width = 640.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, FontColor]
+      Size.Width = 640.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Maps'
+    end
+  end
+  object BottomToolBar: TToolBar
+    Align = Bottom
+    Position.Y = 441.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object GridPanelLayout1: TGridPanelLayout
+      Align = Center
+      Size.Width = 282.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          Value = 33.500838226764620000
+        end
+        item
+          Value = 33.333053223065930000
+        end
+        item
+          Value = 33.166108550169450000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = SpeedButton1
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = SpeedButton2
+          Row = 0
+        end
+        item
+          Column = 2
+          Control = SpeedButton3
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      object SpeedButton1: TSpeedButton
+        StaysPressed = True
+        Align = VertCenter
+        GroupName = 'Selector'
+        Position.Y = 5.000000000000000000
+        Size.Width = 94.472366333007810000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'segmentedbuttonleft'
+        Text = 'Normal'
+        OnClick = SpeedButton1Click
+      end
+      object SpeedButton2: TSpeedButton
+        StaysPressed = True
+        Align = VertCenter
+        GroupName = 'Selector'
+        Position.X = 94.472366333007810000
+        Position.Y = 5.000000000000000000
+        Size.Width = 93.999206542968750000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'segmentedbuttonmiddle'
+        Text = 'Satellite'
+        OnClick = SpeedButton2Click
+      end
+      object SpeedButton3: TSpeedButton
+        StaysPressed = True
+        Align = VertCenter
+        GroupName = 'Selector'
+        Position.X = 188.471572875976600000
+        Position.Y = 5.000000000000000000
+        Size.Width = 93.528427124023440000
+        Size.Height = 29.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'segmentedbuttonright'
+        Text = 'Hybrid'
+        OnClick = SpeedButton3Click
+      end
+    end
+  end
+  object MapView1: TMapView
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 353.000000000000000000
+    Size.PlatformDefault = False
+    OnMapClick = MapView1MapClick
+  end
+  object Panel1: TPanel
+    Align = Top
+    Position.Y = 44.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object edLat: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Right
+      TabOrder = 0
+      KeyboardType = NumberPad
+      Text = '0.0'
+      Position.X = 390.000000000000000000
+      Position.Y = 7.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      KillFocusByReturn = True
+    end
+    object edLong: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Right
+      TabOrder = 1
+      KeyboardType = NumberPad
+      Text = '0.0'
+      Position.X = 470.000000000000000000
+      Position.Y = 7.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      KillFocusByReturn = True
+    end
+    object Button1: TButton
+      Align = Right
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 550.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Go'
+      OnClick = Button1Click
+    end
+    object TrackBar1: TTrackBar
+      Align = Left
+      CanParentFocus = True
+      Frequency = 1.000000000000000000
+      Max = 180.000000000000000000
+      Orientation = Horizontal
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      OnChange = TrackBar1Change
+    end
+  end
+end

@@ -1,0 +1,60 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 2
+  inherited TopToolBar: TToolBar
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+      Size.Height = 48.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+  inherited BottomToolBar: TToolBar
+    Position.Y = 647.000000000000000000
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited GridPanelLayout1: TGridPanelLayout
+      inherited SpeedButton1: TSpeedButton
+        Position.Y = -1.000000000000000000
+        Size.Height = 42.000000000000000000
+      end
+      inherited SpeedButton2: TSpeedButton
+        Position.Y = -1.000000000000000000
+        Size.Height = 42.000000000000000000
+      end
+      inherited SpeedButton3: TSpeedButton
+        Position.Y = -1.000000000000000000
+        Size.Height = 42.000000000000000000
+      end
+    end
+  end
+  inherited MapView1: TMapView
+    Size.Width = 450.000000000000000000
+    Size.Height = 555.000000000000000000
+  end
+  inherited Panel1: TPanel
+    Position.Y = 48.000000000000000000
+    Size.Width = 450.000000000000000000
+    inherited edLat: TEdit
+      KeyboardType = NumbersAndPunctuation
+      Position.X = 200.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Height = 32.000000000000000000
+    end
+    inherited edLong: TEdit
+      KeyboardType = NumbersAndPunctuation
+      Position.X = 280.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Height = 32.000000000000000000
+    end
+    inherited Button1: TButton
+      Position.X = 360.000000000000000000
+    end
+    inherited TrackBar1: TTrackBar
+      Position.Y = 6.000000000000000000
+      Size.Height = 32.000000000000000000
+    end
+  end
+end

@@ -1,0 +1,138 @@
+inherited Form1_iPhone47in: TForm1_iPhone47in
+  ClientHeight = 647
+  ClientWidth = 375
+  DesignerMasterStyle = 2
+  inherited TabControl1: TTabControl
+    Size.Width = 375.000000000000000000
+    Size.Height = 647.000000000000000000
+    Sizes = (
+      375s
+      598s
+      375s
+      598s
+      375s
+      598s)
+    inherited TabItemContact: TTabItem
+      Size.Width = 125.000000000000000000
+      ExplicitSize.cx = 58.000000000000000000
+      ExplicitSize.cy = 22.000000000000000000
+      inherited ToolBar2: TToolBar
+        Size.Width = 375.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 375.000000000000000000
+        end
+        inherited btnOK: TButton
+          Position.X = 302.000000000000000000
+        end
+      end
+      inherited ContactList: TListBox
+        Size.Width = 365.000000000000000000
+        Viewport.Width = 365.000000000000000000
+        Viewport.Height = 400.000000000000000000
+        inherited ContactInfoHeader: TListBoxGroupHeader
+          Size.Width = 365.000000000000000000
+        end
+        inherited Photo: TListBoxItem
+          inherited btnLoadPicture: TButton
+            Position.X = 318.000000000000000000
+          end
+          inherited Image1: TImage
+            Position.X = 218.000000000000000000
+          end
+          inherited btnTakePicture: TButton
+            Position.X = 271.000000000000000000
+          end
+        end
+        inherited FirstName: TListBoxItem
+          Size.Width = 365.000000000000000000
+          inherited edtFirstName: TEdit
+            Position.X = 175.000000000000000000
+          end
+        end
+        inherited LastName: TListBoxItem
+          Size.Width = 365.000000000000000000
+          inherited edtLastName: TEdit
+            Position.X = 175.000000000000000000
+          end
+        end
+        inherited WorkEmail: TListBoxItem
+          Size.Width = 365.000000000000000000
+          inherited edtWorkMail: TEdit
+            Position.X = 175.000000000000000000
+          end
+        end
+        inherited Group: TListBoxItem
+          Size.Width = 365.000000000000000000
+          inherited ComboBox1: TComboBox
+            Position.X = 175.000000000000000000
+          end
+        end
+      end
+    end
+    inherited TabItemContacts: TTabItem
+      Size.Width = 125.000000000000000000
+      ExplicitSize.cx = 109.000000000000000000
+      ExplicitSize.cy = 22.000000000000000000
+      inherited ToolBar1: TToolBar
+        Size.Width = 375.000000000000000000
+        inherited btnRefresh: TSpeedButton
+          Position.X = 328.000000000000000000
+        end
+        inherited Label7: TLabel
+          Size.Width = 375.000000000000000000
+        end
+      end
+      inherited ListViewContacts: TListView
+        Size.Width = 375.000000000000000000
+        Size.Height = 554.000000000000000000
+      end
+    end
+    inherited TabItemGroup: TTabItem
+      Size.Width = 125.000000000000000000
+      ExplicitSize.cx = 79.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited ToolBar3: TToolBar
+        Size.Width = 375.000000000000000000
+        inherited Label8: TLabel
+          Size.Width = 375.000000000000000000
+        end
+      end
+      inherited ListBox1: TListBox
+        Size.Width = 365.000000000000000000
+        Viewport.Width = 365.000000000000000000
+        Viewport.Height = 256.000000000000000000
+        inherited ListBoxGroupHeader1: TListBoxGroupHeader
+          Size.Width = 365.000000000000000000
+        end
+        inherited EnterGroup: TListBoxItem
+          Size.Width = 365.000000000000000000
+          inherited edtGroupName: TEdit
+            Position.X = 168.000000000000000000
+          end
+          inherited btnAddGroup: TButton
+            Position.X = 313.000000000000000000
+          end
+        end
+        inherited ListBoxGroupHeader2: TListBoxGroupHeader
+          Size.Width = 365.000000000000000000
+        end
+        inherited SelectGroup: TListBoxItem
+          Size.Width = 365.000000000000000000
+          inherited ComboBox2: TComboBox
+            Position.X = 168.000000000000000000
+          end
+          inherited btnRemoveGroup: TButton
+            Position.X = 313.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  inherited AddressBook1: TAddressBook
+    Left = 168
+    Top = 376
+  end
+  inherited ActionList1: TActionList
+    Left = 96
+  end
+end

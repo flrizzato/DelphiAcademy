@@ -1,0 +1,334 @@
+object CameraComponentForm: TCameraComponentForm
+  Left = 0
+  Top = 0
+  ClientHeight = 579
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object btnStartCamera: TButton
+    Align = Top
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Size.Width = 374.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Start Camera'
+    OnClick = btnStartCameraClick
+  end
+  object btnStopCamera: TButton
+    Align = Top
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 54.000000000000000000
+    Size.Width = 374.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Stop Camera'
+    OnClick = btnStopCameraClick
+  end
+  object tbControl: TTabControl
+    Align = Client
+    FullSize = True
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Size.Width = 374.000000000000000000
+    Size.Height = 476.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 4
+    TabPosition = PlatformDefault
+    OnChange = tbControlChange
+    Sizes = (
+      374s
+      427s
+      374s
+      427s)
+    object tiSettings: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 187.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Settings'
+      ExplicitSize.cx = 187.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object rCameraType: TRectangle
+        Align = Top
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 374.000000000000000000
+        Size.Height = 92.000000000000000000
+        Size.PlatformDefault = False
+        object lblCameraType: TLabel
+          Align = Top
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemlabel'
+          Text = 'Camera Type:'
+        end
+        object btnBackCamera: TSpeedButton
+          StaysPressed = True
+          GroupName = 'grpCameraType'
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Position.X = 185.000000000000000000
+          Position.Y = 41.000000000000000000
+          Size.Width = 181.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'segmentedbuttonright'
+          Text = 'Back'
+          OnClick = btnBackCameraClick
+        end
+        object btnFrontCamera: TSpeedButton
+          StaysPressed = True
+          GroupName = 'grpCameraType'
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 41.000000000000000000
+          Size.Width = 177.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'segmentedbuttonleft'
+          Text = 'Front'
+          OnClick = btnFrontCameraClick
+        end
+      end
+      object rFlashType: TRectangle
+        Align = Top
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Position.Y = 318.000000000000000000
+        Size.Width = 374.000000000000000000
+        Size.Height = 89.000000000000000000
+        Size.PlatformDefault = False
+        object cbCameraFlashType: TLabel
+          Align = Top
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemlabel'
+          Text = 'Camera Torch Type:'
+        end
+        object btnAuto: TSpeedButton
+          StaysPressed = True
+          GroupName = 'grpCameraFlashType'
+          Position.X = 240.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 129.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'segmentedbuttonright'
+          Text = 'Auto'
+          OnClick = btnAutoClick
+        end
+        object btnOff: TSpeedButton
+          StaysPressed = True
+          GroupName = 'grpCameraFlashType'
+          Position.X = 120.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 121.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'segmentedbuttonmiddle'
+          Text = 'Off'
+          OnClick = btnOffClick
+        end
+        object btnOn: TSpeedButton
+          StaysPressed = True
+          GroupName = 'grpCameraFlashType'
+          Position.X = 5.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 116.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'segmentedbuttonleft'
+          Text = 'On'
+          OnClick = btnOnClick
+        end
+      end
+      object rCameraResolution: TRectangle
+        Align = Top
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Position.Y = 102.000000000000000000
+        Size.Width = 374.000000000000000000
+        Size.Height = 211.000000000000000000
+        Size.PlatformDefault = False
+        object lblCameraResolution: TLabel
+          Align = Top
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemlabel'
+          Text = 'Camera Resolutions:'
+        end
+        object cbResolutions: TComboBox
+          Align = Top
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 41.000000000000000000
+          Size.Width = 358.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnChange = cbResolutionsChange
+        end
+        object pnlCameraResolution: TPanel
+          Align = Top
+          Position.X = 5.000000000000000000
+          Position.Y = 114.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 52.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object btnLowQuality: TButton
+            Size.Width = 73.000000000000000000
+            Size.Height = 52.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Low'
+            OnClick = btnLowQualityClick
+          end
+          object btnHighQuality: TButton
+            Position.X = 168.000000000000000000
+            Size.Width = 96.000000000000000000
+            Size.Height = 52.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'High'
+            OnClick = btnHighQualityClick
+          end
+          object btnMediumQuality: TButton
+            Position.X = 72.000000000000000000
+            Size.Width = 96.000000000000000000
+            Size.Height = 52.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Medium'
+            OnClick = btnMediumQualityClick
+          end
+          object btnPhotoQuality: TButton
+            Position.X = 264.000000000000000000
+            Size.Width = 100.000000000000000000
+            Size.Height = 52.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Photo'
+            OnClick = btnPhotoQualityClick
+          end
+        end
+        object cbPriority: TComboBox
+          Align = Top
+          ItemIndex = 0
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 79.000000000000000000
+          Size.Width = 358.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          OnChange = cbPriorityChange
+          object lbiResolution: TListBoxItem
+            IsSelected = True
+            Size.Width = 44.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Prioritize Resolution'
+          end
+          object lbiFrameRate: TListBoxItem
+            TabOrder = 1
+            Text = 'Prioritize FrameRate'
+          end
+        end
+        object lblCurrentResolution: TLabel
+          Align = Top
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 169.000000000000000000
+          Size.Width = 358.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'lblCurrentResolution'
+        end
+      end
+    end
+    object tiPreview: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 187.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Camera Preview'
+      ExplicitSize.cx = 187.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object imgCameraView: TImage
+        MultiResBitmap = <
+          item
+          end
+          item
+            Scale = 2.000000000000000000
+          end>
+        Align = Client
+        Size.Width = 374.000000000000000000
+        Size.Height = 427.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object CameraComponent: TCameraComponent
+    OnSampleBufferReady = CameraComponentSampleBufferReady
+    Left = 344
+    Top = 16
+  end
+end

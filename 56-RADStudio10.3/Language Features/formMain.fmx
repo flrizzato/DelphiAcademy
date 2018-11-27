@@ -1,0 +1,207 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 592
+  ClientWidth = 677
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object ScaledLayout1: TScaledLayout
+    Align = Client
+    OriginalWidth = 677.000000000000000000
+    OriginalHeight = 592.000000000000000000
+    Size.Width = 677.000000000000000000
+    Size.Height = 592.000000000000000000
+    Size.PlatformDefault = False
+    object TabControl1: TTabControl
+      Align = Client
+      Size.Width = 677.000000000000000000
+      Size.Height = 592.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        677s
+        566s
+        677s
+        566s)
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 69.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem1'
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        object Label1: TLabel
+          Align = Top
+          AutoSize = True
+          StyledSettings = []
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 30.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 30.000000000000000000
+          Size.Width = 627.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Verdana'
+          TextSettings.Font.Size = 22.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claBlue
+          Text = 'Inline Variables (Declaration)'
+          TabOrder = 1
+        end
+        object Layout1: TLayout
+          Align = Top
+          Position.Y = 337.000000000000000000
+          Size.Width = 677.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Button1: TButton
+            Align = Center
+            StyledSettings = [Family, FontColor]
+            TabOrder = 0
+            Text = 'Try It!'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            OnClick = Button1Click
+          end
+        end
+        object Memo1: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          StyledSettings = [Family, Style, FontColor]
+          TextSettings.Font.Size = 14.000000000000000000
+          Align = Client
+          Margins.Left = 15.000000000000000000
+          Margins.Top = 15.000000000000000000
+          Margins.Right = 15.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 647.000000000000000000
+          Size.Height = 157.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 647.000000000000000000
+          Viewport.Height = 157.000000000000000000
+        end
+        object WebBrowser1: TWebBrowser
+          Align = Top
+          Size.Width = 617.000000000000000000
+          Size.Height = 210.000000000000000000
+          Size.PlatformDefault = False
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Position.X = 30.000000000000000000
+          Position.Y = 127.000000000000000000
+          URL = 
+            'about:<!doctype html><html><head></head><body style="background-' +
+            'color: #0000FF; font-size: 18;"><pre style='#39'color:#ffff00;<br/>b' +
+            'ackground:#ffffff;<br/>'#39'><span style='#39'color:#ffffff;<br/> font-w' +
+            'eight:bold;<br/> '#39'>begin<br/></span>'
+          object mmohtml: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            Lines.Strings = (
+              
+                'about:<!doctype html><html><head></head><body style="background-' +
+                'color: #0000FF; font-size: 18;"><pre style='#39'color:#ffff00;<br/>b' +
+                'ackground:#ffffff;<br/>'#39'><span style='#39'color:#ffffff;<br/> font-w' +
+                'eight:bold;<br/> '#39'>begin<br/></span>'
+              
+                '  <span style='#39'color:#ffffff;<br/> font-weight:bold;<br/> '#39'>var<' +
+                '/span> idx<span style='#39'color:#FFAA00;<br/> '#39'>:</span> int32<span' +
+                ' style='#39'color:#ffffff;<br/> '#39'>;<br/></span>'
+              
+                '  idx <span style='#39'color:#FFAA00;<br/> '#39'>:</span><span style='#39'co' +
+                'lor:#FFAA00;<br/> '#39'>=</span> <span style='#39'color:#FFAA00;<br/> '#39'>' +
+                '12</span><span style='#39'color:#ffffff;<br/> '#39'>;<br/></span>'
+              
+                '  Memo1<span style='#39'color:#FFAA00;<br/> '#39'>.</span>Lines<span sty' +
+                'le='#39'color:#FFAA00;<br/> '#39'>.</span>Add<span style='#39'color:#FFAA00;' +
+                '<br/> '#39'>(</span><span style='#39'color:#00CCFF;<br/> '#39'>'#39'idx = '#39'</spa' +
+                'n><span style='#39'color:#FFAA00;<br/> '#39'>+</span>IntToStr<span style' +
+                '='#39'color:#FFAA00;<br/> '#39'>(</span>idx<span style='#39'color:#FFAA00;<b' +
+                'r/> '#39'>)</span><span style='#39'color:#FFAA00;<br/> '#39'>)</span><span s' +
+                'tyle='#39'color:#ffffff;<br/> '#39'>;<br/></span>'
+              
+                '<span style='#39'color:#ffffff;<br/> font-weight:bold;<br/> '#39'>end</s' +
+                'pan><span style='#39'color:#ffffff;<br/> '#39'>;<br/></span>'
+              '</pre></body></html>')
+            Align = Client
+            Size.Width = 617.000000000000000000
+            Size.Height = 137.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Visible = False
+            Viewport.Width = 617.000000000000000000
+            Viewport.Height = 137.000000000000000000
+          end
+        end
+        object Text1: TText
+          Align = Top
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Position.X = 30.000000000000000000
+          Position.Y = 67.000000000000000000
+          Size.Width = 617.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 
+            'Variables may now be declared inside of compound statements (beg' +
+            'in .. end blocks) '
+          TextSettings.Font.Family = 'Verdana'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claDarkgray
+          TextSettings.HorzAlign = Leading
+          TextSettings.VertAlign = Leading
+        end
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 69.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem2'
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060C50616E656C315374796C653103AC0000
+          545046300A5452656374616E676C6500095374796C654E616D65060C50616E65
+          6C315374796C653105416C69676E070643656E7465720A46696C6C2E436F6C6F
+          7207097846463436343646390748697454657374080A53697A652E5769647468
+          05000000000000C08608400B53697A652E4865696768740500000000000000F0
+          05401453697A652E506C6174666F726D44656661756C74080B5374726F6B652E
+          4B696E6407044E6F6E650000}
+      end>
+    Left = 592
+    Top = 8
+  end
+end

@@ -1,0 +1,92 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 689
+  ClientWidth = 531
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 531.000000000000000000
+    Size.Height = 689.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ListBox1: TListBox
+      Align = Horizontal
+      Position.Y = 56.000000000000000000
+      Size.Width = 531.000000000000000000
+      Size.Height = 265.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnItemClick = ListBox1ItemClick
+      Viewport.Width = 531.000000000000000000
+      Viewport.Height = 265.000000000000000000
+    end
+    object btnStartScan: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Start Scan'
+      OnClick = btnStartScanClick
+    end
+    object btnStopScan: TButton
+      Position.X = 136.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Stop Scan'
+      OnClick = btnStopScanClick
+    end
+    object ProgressBar1: TProgressBar
+      Anchors = [akLeft, akTop, akRight]
+      Orientation = Horizontal
+      Position.X = 256.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 257.000000000000000000
+      Size.Height = 10.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object ListBox2: TListBox
+      Align = Horizontal
+      Position.Y = 328.000000000000000000
+      Size.Width = 531.000000000000000000
+      Size.Height = 361.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 531.000000000000000000
+      Viewport.Height = 361.000000000000000000
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 359
+    Top = 104
+  end
+  object BluetoothLE1: TBluetoothLE
+    Enabled = True
+    OnDiscoverLEDevice = BluetoothLE1DiscoverLEDevice
+    OnServicesDiscovered = BluetoothLE1ServicesDiscovered
+    OnEndDiscoverDevices = BluetoothLE1EndDiscoverDevices
+    Left = 432
+    Top = 80
+  end
+end

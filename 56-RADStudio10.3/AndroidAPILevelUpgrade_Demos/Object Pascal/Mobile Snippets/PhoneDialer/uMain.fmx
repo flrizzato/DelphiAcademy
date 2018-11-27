@@ -1,0 +1,124 @@
+object PhoneDialerForm: TPhoneDialerForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object btnGetCarrierInfo: TButton
+    Align = Horizontal
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 364.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Get Carrier Info'
+    OnClick = btnGetCarrierInfoClick
+  end
+  object btnMakeCall: TButton
+    Align = Horizontal
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 364.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Make Call'
+    OnClick = btnMakeCallClick
+  end
+  object edtTelephoneNumber: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    KeyboardType = PhonePad
+    Position.X = 16.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblTelephoneNumber: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'listboxitemlabel'
+    Text = 'Telephone Number:'
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object Label1: TLabel
+      Align = Center
+      Size.Width = 185.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Phone Dialer'
+    end
+  end
+  object ListBox1: TListBox
+    Align = Horizontal
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 364.000000000000000000
+    Size.Height = 121.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    DisableFocusEffect = True
+    ItemHeight = 30.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemrightdetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 364.000000000000000000
+    Viewport.Height = 121.000000000000000000
+    object CarrierNameItem: TListBoxItem
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemrightdetail'
+      TabOrder = 0
+      Text = 'Carrier Name:'
+    end
+    object CountryCodeItem: TListBoxItem
+      Position.Y = 30.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemrightdetail'
+      TabOrder = 1
+      Text = 'ISO Country Code:'
+    end
+    object NetworkCodeItem: TListBoxItem
+      Position.Y = 60.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemrightdetail'
+      TabOrder = 2
+      Text = 'Network Code:'
+    end
+    object MobileNetworkItem: TListBoxItem
+      Position.Y = 90.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemrightdetail'
+      TabOrder = 3
+      Text = 'Mobile Network:'
+    end
+  end
+end

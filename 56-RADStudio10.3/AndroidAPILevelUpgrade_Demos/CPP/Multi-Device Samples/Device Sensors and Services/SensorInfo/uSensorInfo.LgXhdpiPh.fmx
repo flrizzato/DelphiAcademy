@@ -1,0 +1,5 @@
+inherited frmAboutSensors_LgXhdpiPh: TfrmAboutSensors_LgXhdpiPh
+  ClientHeight = 455
+  ClientWidth = 854
+  DesignerMasterStyle = 3
+end

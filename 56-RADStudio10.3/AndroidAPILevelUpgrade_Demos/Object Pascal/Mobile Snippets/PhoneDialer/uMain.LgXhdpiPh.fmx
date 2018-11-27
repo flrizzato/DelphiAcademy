@@ -1,0 +1,29 @@
+inherited PhoneDialerForm_LgXhdpiPh: TPhoneDialerForm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited btnGetCarrierInfo: TButton
+    Size.Width = 460.000000000000000000
+  end
+  inherited btnMakeCall: TButton
+    Size.Width = 460.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 460.000000000000000000
+    inherited CarrierNameItem: TListBoxItem
+      Size.Width = 460.000000000000000000
+    end
+    inherited CountryCodeItem: TListBoxItem
+      Size.Width = 460.000000000000000000
+    end
+    inherited NetworkCodeItem: TListBoxItem
+      Size.Width = 460.000000000000000000
+    end
+    inherited MobileNetworkItem: TListBoxItem
+      Size.Width = 460.000000000000000000
+    end
+  end
+end

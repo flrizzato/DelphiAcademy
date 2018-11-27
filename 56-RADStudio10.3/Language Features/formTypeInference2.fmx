@@ -1,0 +1,236 @@
+object frmTypeInference2: TfrmTypeInference2
+  Left = 0
+  Top = 0
+  ClientHeight = 604
+  ClientWidth = 654
+  Fill.Kind = Solid
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lotScale: TScaledLayout
+    Align = Client
+    OriginalWidth = 654.000000000000000000
+    OriginalHeight = 604.000000000000000000
+    Size.Width = 654.000000000000000000
+    Size.Height = 604.000000000000000000
+    Size.PlatformDefault = False
+    object lotMain: TLayout
+      Align = Client
+      Size.Width = 654.000000000000000000
+      Size.Height = 604.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object lotTryMe: TLayout
+        Align = Top
+        Position.Y = 372.000000000000000000
+        Size.Width = 654.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object pnlButtons: TPanel
+          Align = Center
+          Size.Width = 265.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'pnlButtonsStyle1'
+          TabOrder = 0
+          object btnPrev: TButton
+            StyledSettings = [Family, FontColor]
+            Position.X = 4.000000000000000000
+            Position.Y = 9.000000000000000000
+            TabOrder = 2
+            Text = '< Back'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            OnClick = btnPrevClick
+          end
+          object btnTry: TButton
+            StyledSettings = [Family, FontColor]
+            Position.X = 92.000000000000000000
+            Position.Y = 9.000000000000000000
+            TabOrder = 0
+            Text = 'Try It!'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            OnClick = btnTryClick
+          end
+          object btnNext: TButton
+            StyledSettings = [Family, FontColor]
+            Position.X = 180.000000000000000000
+            Position.Y = 9.000000000000000000
+            TabOrder = 1
+            Text = 'Next >'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            OnClick = btnNextClick
+          end
+        end
+      end
+      object lotDescription: TLayout
+        Align = Top
+        Size.Width = 654.000000000000000000
+        Size.Height = 145.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblTitle: TLabel
+          Align = Top
+          AutoSize = True
+          StyledSettings = []
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 604.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Verdana'
+          TextSettings.Font.Size = 22.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claBlue
+          Text = '6 - Type Inference'
+          TabOrder = 1
+        end
+        object Text1: TText
+          Align = Top
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Position.X = 30.000000000000000000
+          Position.Y = 47.000000000000000000
+          Size.Width = 594.000000000000000000
+          Size.Height = 74.000000000000000000
+          Size.PlatformDefault = False
+          Text = 
+            'Type inference is not limited to simple types, in the example, t' +
+            'hen generic type TPair<string,integer> is inferred from a dictio' +
+            'nary.'
+          TextSettings.Font.Family = 'Verdana'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claDarkgray
+          TextSettings.HorzAlign = Leading
+          TextSettings.VertAlign = Leading
+        end
+      end
+      object wbShowCode: TWebBrowser
+        Align = Top
+        Size.Width = 594.000000000000000000
+        Size.Height = 210.000000000000000000
+        Size.PlatformDefault = False
+        Margins.Left = 30.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Position.X = 30.000000000000000000
+        Position.Y = 153.000000000000000000
+        object mmohtml: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          Lines.Strings = (
+            
+              'about:<!doctype html><html><head></head><body style="background-' +
+              'color: #0000FF; font-size: 18;"><pre style='#39'color:#ffff00;<br/>b' +
+              'ackground:#ffffff;<br/>'#39'><span style='#39'color:#ffffff;<br/> font-w' +
+              'eight:bold;<br/> '#39'>begin<br/></span>'
+            
+              '  <span style='#39'color:#ffffff;<br/> font-weight:bold;<br/> '#39'>var<' +
+              '/span> MyDictionary <span style='#39'color:#FFAA00;<br/> '#39'>:</span><' +
+              'span style='#39'color:#FFAA00;<br/> '#39'>=</span> TDictionary<span styl' +
+              'e='#39'color:#FFAA00;<br/> '#39'>&lt;</span><span style='#39'color:#bb7977;<' +
+              'br/> '#39'>string</span><span style='#39'color:#FFAA00;<br/> '#39'>,</span><' +
+              'span style='#39'color:#bb7977;<br/> '#39'>integer</span><span style='#39'col' +
+              'or:#FFAA00;<br/> '#39'>></span><span style='#39'color:#FFAA00;<br/> '#39'>.<' +
+              '/span>Create<span style='#39'color:#ffffff;<br/> '#39'>;<br/></span>'
+            
+              '  MyDictionary<span style='#39'color:#FFAA00;<br/> '#39'>.</span>Add<spa' +
+              'n style='#39'color:#FFAA00;<br/> '#39'>(</span><span style='#39'color:#00CCF' +
+              'F;<br/> '#39'>'#39'one'#39'</span><span style='#39'color:#FFAA00;<br/> '#39'>,</span' +
+              '><span style='#39'color:#FFAA00;<br/> '#39'>1</span><span style='#39'color:#' +
+              'FFAA00;<br/> '#39'>)</span><span style='#39'color:#ffffff;<br/> '#39'>;<br/>' +
+              '</span>'
+            
+              '  <span style='#39'color:#ffffff;<br/> font-weight:bold;<br/> '#39'>var<' +
+              '/span> APair <span style='#39'color:#FFAA00;<br/> '#39'>:</span><span st' +
+              'yle='#39'color:#FFAA00;<br/> '#39'>=</span> MyDictionary<span style='#39'col' +
+              'or:#FFAA00;<br/> '#39'>.</span>ExtractPair<span style='#39'color:#FFAA00' +
+              ';<br/> '#39'>(</span><span style='#39'color:#00CCFF;<br/> '#39'>'#39'one'#39'</span>' +
+              '<span style='#39'color:#FFAA00;<br/> '#39'>)</span><span style='#39'color:#f' +
+              'fffff;<br/> '#39'>;<br/></span>'
+            
+              '  MemoResult<span style='#39'color:#FFAA00;<br/> '#39'>.</span>Lines<spa' +
+              'n style='#39'color:#FFAA00;<br/> '#39'>.</span>Add<span style='#39'color:#FF' +
+              'AA00;<br/> '#39'>(</span>APair<span style='#39'color:#FFAA00;<br/> '#39'>.</' +
+              'span>Value<span style='#39'color:#FFAA00;<br/> '#39'>.</span>ToString<sp' +
+              'an style='#39'color:#FFAA00;<br/> '#39'>)</span><span style='#39'color:#ffff' +
+              'ff;<br/> '#39'>;<br/></span>'
+            
+              '<span style='#39'color:#ffffff;<br/> font-weight:bold;<br/> '#39'>end</s' +
+              'pan><span style='#39'color:#ffffff;<br/> '#39'>;<br/></span>'
+            '</pre></body></html>')
+          Align = Client
+          Size.Width = 593.000000000000000000
+          Size.Height = 137.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Visible = False
+          Viewport.Width = 593.000000000000000000
+          Viewport.Height = 137.000000000000000000
+        end
+      end
+      object MemoResult: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        StyledSettings = [Family, Style, FontColor]
+        TextSettings.Font.Size = 18.000000000000000000
+        Align = Client
+        Margins.Left = 15.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        Size.Width = 624.000000000000000000
+        Size.Height = 153.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Viewport.Width = 624.000000000000000000
+        Viewport.Height = 153.000000000000000000
+      end
+      object Splitter1: TSplitter
+        Align = Top
+        Cursor = crVSplit
+        MinSize = 20.000000000000000000
+        Position.Y = 363.000000000000000000
+        Size.Width = 654.000000000000000000
+        Size.Height = 9.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Splitter2: TSplitter
+        Align = Top
+        Cursor = crVSplit
+        MinSize = 20.000000000000000000
+        Position.Y = 145.000000000000000000
+        Size.Width = 654.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E35010610706E6C427574746F6E735374796C6531
+          03AA0000545046300A5452656374616E676C6500095374796C654E616D650610
+          706E6C427574746F6E735374796C653105416C69676E070643656E7465720946
+          696C6C2E4B696E6407044E6F6E650748697454657374080A53697A652E576964
+          746805000000000000808407400B53697A652E48656967687405000000000000
+          00A404401453697A652E506C6174666F726D44656661756C74080B5374726F6B
+          652E4B696E6407044E6F6E650000}
+      end>
+    Left = 592
+    Top = 152
+  end
+end

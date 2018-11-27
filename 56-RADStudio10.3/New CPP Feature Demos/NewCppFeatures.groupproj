@@ -1,0 +1,120 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4E4DD49D-FFA0-4322-8AB3-2A6C272E581B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Cpp Return type deduction\CppReturnTypeDeduction.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CppGenericLambdas\CppGenericLambdas.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CppInitializingLambdaCaptures\CppInitializingLambdaCaptures.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CppConstExpr\CppConstExpr.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CppIfInit\CppIfInit.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CppConstExprIf\CppConstExprIf.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CppStringView\CppStringView.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Cpp17Misc\Cpp17Misc.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CppReturnTypeDeduction">
+        <MSBuild Projects="Cpp Return type deduction\CppReturnTypeDeduction.cbproj"/>
+    </Target>
+    <Target Name="CppReturnTypeDeduction:Clean">
+        <MSBuild Projects="Cpp Return type deduction\CppReturnTypeDeduction.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppReturnTypeDeduction:Make">
+        <MSBuild Projects="Cpp Return type deduction\CppReturnTypeDeduction.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="CppGenericLambdas">
+        <MSBuild Projects="CppGenericLambdas\CppGenericLambdas.cbproj"/>
+    </Target>
+    <Target Name="CppGenericLambdas:Clean">
+        <MSBuild Projects="CppGenericLambdas\CppGenericLambdas.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppGenericLambdas:Make">
+        <MSBuild Projects="CppGenericLambdas\CppGenericLambdas.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="CppInitializingLambdaCaptures">
+        <MSBuild Projects="CppInitializingLambdaCaptures\CppInitializingLambdaCaptures.cbproj"/>
+    </Target>
+    <Target Name="CppInitializingLambdaCaptures:Clean">
+        <MSBuild Projects="CppInitializingLambdaCaptures\CppInitializingLambdaCaptures.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppInitializingLambdaCaptures:Make">
+        <MSBuild Projects="CppInitializingLambdaCaptures\CppInitializingLambdaCaptures.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="CppConstExpr">
+        <MSBuild Projects="CppConstExpr\CppConstExpr.cbproj"/>
+    </Target>
+    <Target Name="CppConstExpr:Clean">
+        <MSBuild Projects="CppConstExpr\CppConstExpr.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppConstExpr:Make">
+        <MSBuild Projects="CppConstExpr\CppConstExpr.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="CppIfInit">
+        <MSBuild Projects="CppIfInit\CppIfInit.cbproj"/>
+    </Target>
+    <Target Name="CppIfInit:Clean">
+        <MSBuild Projects="CppIfInit\CppIfInit.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppIfInit:Make">
+        <MSBuild Projects="CppIfInit\CppIfInit.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="CppConstExprIf">
+        <MSBuild Projects="CppConstExprIf\CppConstExprIf.cbproj"/>
+    </Target>
+    <Target Name="CppConstExprIf:Clean">
+        <MSBuild Projects="CppConstExprIf\CppConstExprIf.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppConstExprIf:Make">
+        <MSBuild Projects="CppConstExprIf\CppConstExprIf.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="CppStringView">
+        <MSBuild Projects="CppStringView\CppStringView.cbproj"/>
+    </Target>
+    <Target Name="CppStringView:Clean">
+        <MSBuild Projects="CppStringView\CppStringView.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppStringView:Make">
+        <MSBuild Projects="CppStringView\CppStringView.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Cpp17Misc">
+        <MSBuild Projects="Cpp17Misc\Cpp17Misc.cbproj"/>
+    </Target>
+    <Target Name="Cpp17Misc:Clean">
+        <MSBuild Projects="Cpp17Misc\Cpp17Misc.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Cpp17Misc:Make">
+        <MSBuild Projects="Cpp17Misc\Cpp17Misc.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CppReturnTypeDeduction;CppGenericLambdas;CppInitializingLambdaCaptures;CppConstExpr;CppIfInit;CppConstExprIf;CppStringView;Cpp17Misc"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CppReturnTypeDeduction:Clean;CppGenericLambdas:Clean;CppInitializingLambdaCaptures:Clean;CppConstExpr:Clean;CppIfInit:Clean;CppConstExprIf:Clean;CppStringView:Clean;Cpp17Misc:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CppReturnTypeDeduction:Make;CppGenericLambdas:Make;CppInitializingLambdaCaptures:Make;CppConstExpr:Make;CppIfInit:Make;CppConstExprIf:Make;CppStringView:Make;Cpp17Misc:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
