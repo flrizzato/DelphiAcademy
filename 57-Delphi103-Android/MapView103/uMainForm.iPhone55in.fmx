@@ -1,0 +1,24 @@
+inherited MainForm_iPhone55in: TMainForm_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 0
+  inherited MapView1: TMapView
+    Size.Width = 414.000000000000000000
+    Size.Height = 716.000000000000000000
+    inherited Layout1: TLayout
+      Position.Y = 658.000000000000000000
+      Size.Width = 414.000000000000000000
+      inherited Layout2: TLayout
+        inherited butLandmark1: TButton
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited butLandmark2: TButton
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited butLandmark3: TButton
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+      end
+    end
+  end
+end

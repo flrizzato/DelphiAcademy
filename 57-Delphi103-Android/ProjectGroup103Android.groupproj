@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{AA0A3E66-69AE-4022-8A47-90ECEAEF3B26}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="NativeControls\NativeControls.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MapView103\MapView103.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="AccessCameraApp\AccessCameraApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LocationDemo\LocationDemoProject.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="NativeControls">
+        <MSBuild Projects="NativeControls\NativeControls.dproj"/>
+    </Target>
+    <Target Name="NativeControls:Clean">
+        <MSBuild Projects="NativeControls\NativeControls.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativeControls:Make">
+        <MSBuild Projects="NativeControls\NativeControls.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MapView103">
+        <MSBuild Projects="MapView103\MapView103.dproj"/>
+    </Target>
+    <Target Name="MapView103:Clean">
+        <MSBuild Projects="MapView103\MapView103.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MapView103:Make">
+        <MSBuild Projects="MapView103\MapView103.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AccessCameraApp">
+        <MSBuild Projects="AccessCameraApp\AccessCameraApp.dproj"/>
+    </Target>
+    <Target Name="AccessCameraApp:Clean">
+        <MSBuild Projects="AccessCameraApp\AccessCameraApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AccessCameraApp:Make">
+        <MSBuild Projects="AccessCameraApp\AccessCameraApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LocationDemoProject">
+        <MSBuild Projects="LocationDemo\LocationDemoProject.dproj"/>
+    </Target>
+    <Target Name="LocationDemoProject:Clean">
+        <MSBuild Projects="LocationDemo\LocationDemoProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LocationDemoProject:Make">
+        <MSBuild Projects="LocationDemo\LocationDemoProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="NativeControls;MapView103;AccessCameraApp;LocationDemoProject"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="NativeControls:Clean;MapView103:Clean;AccessCameraApp:Clean;LocationDemoProject:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="NativeControls:Make;MapView103:Make;AccessCameraApp:Make;LocationDemoProject:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

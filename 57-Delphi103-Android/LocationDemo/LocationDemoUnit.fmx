@@ -1,0 +1,250 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 684
+  ClientWidth = 1280
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 1030.000000000000000000
+    Size.Height = 684.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    object ToolBar1: TToolBar
+      Size.Width = 1030.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Client
+        Size.Width = 1030.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Location Demo'
+        object Button1: TButton
+          Align = Client
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'detailstoolbutton'
+          TabOrder = 1
+          Text = 'Button1'
+          Visible = False
+        end
+      end
+    end
+    object WebBrowser1: TWebBrowser
+      Align = Client
+      Size.Width = 1030.000000000000000000
+      Size.Height = 636.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object MultiView1: TMultiView
+    TargetControl = Layout1
+    DrawerOptions.Mode = PushingDetailView
+    MasterButton = Button1
+    Size.Width = 250.000000000000000000
+    Size.Height = 684.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object ListBox1: TListBox
+      Align = Client
+      Size.Width = 250.000000000000000000
+      Size.Height = 636.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 0
+      ShowScrollBars = False
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      GroupingKind = Grouped
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 636.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        Margins.Top = 15.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemnodetail'
+        TabOrder = 0
+        Text = 'Enable Location Services'
+        object Switch1: TSwitch
+          Align = Right
+          IsChecked = False
+          Margins.Left = 9.000000000000000000
+          Margins.Top = 9.000000000000000000
+          Margins.Right = 9.000000000000000000
+          Margins.Bottom = 9.000000000000000000
+          Position.X = 197.000000000000000000
+          Position.Y = 9.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          TouchTargetExpansion.Left = 6.000000000000000000
+          TouchTargetExpansion.Top = 6.000000000000000000
+          TouchTargetExpansion.Right = 6.000000000000000000
+          TouchTargetExpansion.Bottom = 6.000000000000000000
+          OnSwitch = Switch1Switch
+        end
+      end
+      object ListBoxGroupHeader1: TListBoxGroupHeader
+        Position.Y = 59.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxgroupheader'
+        TabOrder = 1
+        Text = 'Your location'
+      end
+      object ListBoxItemLatitude: TListBoxItem
+        Position.Y = 115.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 2
+        Text = 'Latitude'
+      end
+      object ListBoxItemLongitude: TListBoxItem
+        Position.Y = 159.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 3
+        Text = 'Longitude'
+      end
+      object ListBoxGroupHeader2: TListBoxGroupHeader
+        Position.Y = 203.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 56.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxgroupheader'
+        TabOrder = 4
+        Text = 'Current Address'
+      end
+      object ListBoxItemAdminArea: TListBoxItem
+        Position.Y = 259.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 5
+        Text = 'AdminArea'
+      end
+      object ListBoxItemCountryCode: TListBoxItem
+        Position.Y = 303.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 6
+        Text = 'CountryCode'
+      end
+      object ListBoxItemCountryName: TListBoxItem
+        Position.Y = 347.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 7
+        Text = 'CountryName'
+      end
+      object ListBoxItemFeatureName: TListBoxItem
+        Position.Y = 391.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 8
+        Text = 'FeatureName'
+      end
+      object ListBoxItemLocality: TListBoxItem
+        Position.Y = 435.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 9
+        Text = 'Locality'
+      end
+      object ListBoxItemPostalCode: TListBoxItem
+        Position.Y = 479.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 10
+        Text = 'PostalCode'
+      end
+      object ListBoxItemSubAdminArea: TListBoxItem
+        Position.Y = 523.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 11
+        Text = 'SubAdminArea'
+      end
+      object ListBoxItemSubLocality: TListBoxItem
+        Position.Y = 567.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 12
+        Text = 'SubLocality'
+      end
+      object ListBoxItemSubThoroughfare: TListBoxItem
+        Position.Y = 611.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 13
+        Text = 'SubThoroughfare'
+      end
+      object ListBoxItemThoroughfare: TListBoxItem
+        Position.Y = 655.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemleftdetail'
+        TabOrder = 14
+        Text = 'Thoroughfare'
+      end
+    end
+    object ToolBar2: TToolBar
+      Size.Width = 250.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Button2: TButton
+        Align = Left
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'backtoolbutton'
+        TabOrder = 1
+        Text = 'Hide'
+        OnClick = Button2Click
+      end
+    end
+  end
+  object LocationSensor1: TLocationSensor
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 488
+    Top = 128
+  end
+end

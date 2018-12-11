@@ -1,0 +1,4 @@
+http://docwiki.embarcadero.com/RADStudio/Tokyo/en/Configuring_Android_Applications_to_Use_Google_Maps
+http://docwiki.embarcadero.com/RADStudio/Tokyo/en/Mobile_Tutorial:_Using_a_Map_Component_to_Work_with_Maps_(iOS_and_Android)
+http://blog.marcocantu.com/blog/2018-october-inline-variables-delphi.html
+http://neftali.clubdelphi.com/visualizando-y-utilizando-mapas-componente-tmapview/

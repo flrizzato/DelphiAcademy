@@ -1,0 +1,15 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ListBox1: TListBox
+    Size.Height = 829.000000000000000000
+  end
+  inherited Line2: TLine
+    Size.Height = 829.000000000000000000
+  end
+  inherited WebBrowser1: TWebBrowser
+    Size.Width = 134.000000000000000000
+    Size.Height = 829.000000000000000000
+  end
+end
