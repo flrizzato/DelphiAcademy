@@ -50,6 +50,15 @@
 47 - RAD Server: Autorização e Autenticação<br>
 48 - Modernização de Aplicações VCL - Parte 1<br>
 49 - Modernização de Aplicações VCL - Parte 2<br>
+50 - Episódio Comemorativo #50: Delphi Community Edition está aqui!<br>
+51 - Delphi CE: Introdução ao Object Pascal<br>
+52 - Delphi CE: Iniciando com Aplicações Windows<br>
+53 - Delphi CE: Iniciando com Aplicações de Banco de Dados<br>
+54 - Delphi CE: Iniciando com Aplicações Mobile<br>
+55 - Delphi CE: Iniciando com Aplicações WEB<br>
+56 - Lançamento do RAD Studio 10.3 online!<br>
+57 - 10.3: Novo modelo de permissões e controles nativos para Android<br>
+58 - 10.3: O que há de novo no FireDAC, REST, Cloud e RAD Server<br>
 
 
 <h2>Español</h2>
@@ -102,3 +111,12 @@
 47 - RAD Server: Autorización y Autenticación<br>
 48 - Modernización de Aplicaciones VCL - Parte 1<br>
 49 - Modernización de Aplicaciones VCL - Parte 2<br>
+50 - Episodio Conmemorativo #50: Delphi Community Edition está aquí!<br>
+51 - Delphi CE: Introducción al Object Pascal<br>
+52 - Delphi CE: Primeros Pasos con Aplicaciones Windows<br>
+53 - Delphi CE: Primeros Pasos con Aplicaciones de Base de Datos<br>
+54 - Delphi CE: Primeros Pasos con Aplicaciones Móviles<br>
+55 - Delphi CE: Primeros Pasos con Aplicaciones WEB<br>
+56 - Todas las Características de RAD Studio 10.3 Rio<br>
+57 - 10.3: Nuevo modelo de permisos y controles nativos para Android<br>
+58 - 10.3: Novedades en FireDAC, REST, Cloud y RAD Server<br>
