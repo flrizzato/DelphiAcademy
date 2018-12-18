@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{93798F78-7CF4-4DE8-A661-0AE0C00BBC7A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="rs103a\RADServer103a.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="rs103b\RADServer103b.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RADServer103a">
+        <MSBuild Projects="rs103a\RADServer103a.dproj"/>
+    </Target>
+    <Target Name="RADServer103a:Clean">
+        <MSBuild Projects="rs103a\RADServer103a.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RADServer103a:Make">
+        <MSBuild Projects="rs103a\RADServer103a.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RADServer103b">
+        <MSBuild Projects="rs103b\RADServer103b.dproj"/>
+    </Target>
+    <Target Name="RADServer103b:Clean">
+        <MSBuild Projects="rs103b\RADServer103b.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RADServer103b:Make">
+        <MSBuild Projects="rs103b\RADServer103b.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RADServer103a;RADServer103b"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RADServer103a:Clean;RADServer103b:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RADServer103a:Make;RADServer103b:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

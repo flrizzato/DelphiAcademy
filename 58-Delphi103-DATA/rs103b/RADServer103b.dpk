@@ -1,0 +1,50 @@
+package RADServer103b;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  emsserverapi,
+  dbrtl,
+  emsserverresource,
+  FireDAC,
+  FireDACSqliteDriver,
+  FireDACCommonDriver,
+  FireDACCommon,
+  FireDACIBDriver;
+
+contains
+  Content_DataModule in 'Content_DataModule.pas' {ContentResource1: TDataModule},
+  Query_DataModule in 'Query_DataModule.pas' {TCustomerResource1: TDataModule},
+  Files_DataModule in 'Files_DataModule.pas' {FilesResource1: TDataModule},
+  Batch_DataModule in 'Batch_DataModule.pas' {BatchResource1: TDataModule},
+  Plain_DataModule in 'Plain_DataModule.pas' {PlainResource1: TDataModule},
+  Manual_DataModule in 'Manual_DataModule.pas' {ManualResource1: TDataModule};
+
+end.
