@@ -52,7 +52,8 @@ begin
   try
     CustomerTable.Open;
     FDSchemaAdapter1.SaveToStream(fMem, TFDStorageFormat.sfJSON);
-    AResponse.Body.SetStream(fMem, 'application/json', True);
+    //AResponse.Body.SetStream(fMem, 'application/json', True);
+    AResponse.Body.SetStream(fMem, 'application/vnd.embarcadero.firedac+json', True);
   except
     on E: Exception do
     begin

@@ -94,13 +94,13 @@ object MainForm: TMainForm
     ApiVersion = '1'
     URLHost = '127.0.0.1'
     URLPort = 8080
-    Left = 568
-    Top = 8
+    Left = 472
+    Top = 64
   end
   object EMSFireDACClient1: TEMSFireDACClient
-    Resource = 'customerFD'
     Provider = EMSProvider1
     SchemaAdapter = FDSchemaAdapter1
+    Resource = 'customerFD'
     Left = 568
     Top = 64
   end
