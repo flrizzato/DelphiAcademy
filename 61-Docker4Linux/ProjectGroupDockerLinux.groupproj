@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{05F2C74B-64B9-41F5-B20B-9149D69B5B4D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="docker101\docker101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="service101\service101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="datasnap101\datasnap101.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="docker101">
+        <MSBuild Projects="docker101\docker101.dproj"/>
+    </Target>
+    <Target Name="docker101:Clean">
+        <MSBuild Projects="docker101\docker101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="docker101:Make">
+        <MSBuild Projects="docker101\docker101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="service101">
+        <MSBuild Projects="service101\service101.dproj"/>
+    </Target>
+    <Target Name="service101:Clean">
+        <MSBuild Projects="service101\service101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="service101:Make">
+        <MSBuild Projects="service101\service101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="datasnap101">
+        <MSBuild Projects="datasnap101\datasnap101.dproj"/>
+    </Target>
+    <Target Name="datasnap101:Clean">
+        <MSBuild Projects="datasnap101\datasnap101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="datasnap101:Make">
+        <MSBuild Projects="datasnap101\datasnap101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="docker101;service101;datasnap101"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="docker101:Clean;service101:Clean;datasnap101:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="docker101:Make;service101:Make;datasnap101:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

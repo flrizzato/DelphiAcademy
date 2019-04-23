@@ -23,3 +23,4 @@ CMD ["/root/PAServer-20.0/paserver","-password="]
 
 # Expose ports.
 EXPOSE 64211
+EXPOSE 8080
