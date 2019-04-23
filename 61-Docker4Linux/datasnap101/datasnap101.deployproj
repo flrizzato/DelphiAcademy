@@ -15,6 +15,15 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>json2.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Debug'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>serverfunctioninvoker.js</RemoteName>
@@ -24,9 +33,45 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\templates\</RemoteDir>
+            <RemoteName>reversestring.html</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\callbackframework-min.js" Condition="'$(Config)'=='Debug'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>callbackframework-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="css\main.css" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\css\</RemoteDir>
+            <RemoteName>main.css</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\images\</RemoteDir>
+            <RemoteName>expand.png</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>json2.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
@@ -60,6 +105,42 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\templates\</RemoteDir>
+            <RemoteName>serverfunctioninvoker.html</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>base64.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>serverfunctionexecutor.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>serverfunctions.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>base64-min.js</RemoteName>
@@ -87,6 +168,15 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\templates\</RemoteDir>
+            <RemoteName>serverfunctioninvoker.html</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\callbackframework-min.js" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>callbackframework-min.js</RemoteName>
@@ -105,6 +195,33 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\css\</RemoteDir>
+            <RemoteName>serverfunctioninvoker.css</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>json2-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>json2-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>serverfunctioninvoker.js</RemoteName>
@@ -117,6 +234,24 @@
         <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\images\</RemoteDir>
             <RemoteName>expand.png</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\templates\</RemoteDir>
+            <RemoteName>reversestring.html</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>callbackframework.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
@@ -162,141 +297,6 @@
         <DeployFile Include="images\collapse.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\images\</RemoteDir>
             <RemoteName>collapse.png</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>json2.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\templates\</RemoteDir>
-            <RemoteName>reversestring.html</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="css\main.css" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\css\</RemoteDir>
-            <RemoteName>main.css</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\images\</RemoteDir>
-            <RemoteName>expand.png</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>json2.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\templates\</RemoteDir>
-            <RemoteName>serverfunctioninvoker.html</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>base64.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>serverfunctionexecutor.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>serverfunctions.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\templates\</RemoteDir>
-            <RemoteName>serverfunctioninvoker.html</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\css\</RemoteDir>
-            <RemoteName>serverfunctioninvoker.css</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>json2-min.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>json2-min.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\templates\</RemoteDir>
-            <RemoteName>reversestring.html</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>callbackframework.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
@@ -352,69 +352,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="js\callbackframework-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>callbackframework-min.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\images\</RemoteDir>
-            <RemoteName>expand.png</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>base64-min.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>callbackframework.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>serverfunctioninvoker.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\css\</RemoteDir>
-            <RemoteName>serverfunctioninvoker.css</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>serverfunctions.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor.js</RemoteName>
@@ -469,9 +406,27 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="js\callbackframework-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>callbackframework-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>serverfunctions.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\images\</RemoteDir>
+            <RemoteName>expand.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
@@ -487,6 +442,15 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>base64-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>base64.js</RemoteName>
@@ -496,9 +460,36 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>callbackframework.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Debug'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>base64-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>serverfunctioninvoker.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\css\</RemoteDir>
+            <RemoteName>serverfunctioninvoker.css</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
@@ -526,6 +517,15 @@
         <DeployFile Include="js\serverfunctionexecutor-min.js" Condition="'$(Config)'=='Debug'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>serverfunctions.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
@@ -570,9 +570,46 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>callbackframework.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Linux64\Release\datasnap101" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\</RemoteDir>
+            <RemoteName>datasnap101</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>callbackframework.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>json2-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>base64-min.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
@@ -597,6 +634,24 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>serverfunctionexecutor.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>serverfunctions.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>serverfunctionexecutor.js</RemoteName>
@@ -606,18 +661,18 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Release'">
             <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>json2.js</RemoteName>
+            <RemoteName>base64.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="css\serverfunctioninvoker.css" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\css\</RemoteDir>
-            <RemoteName>serverfunctioninvoker.css</RemoteName>
+        <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>json2.js</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
@@ -651,6 +706,15 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>datasnap101\js\</RemoteDir>
+            <RemoteName>base64-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Debug'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>json2.js</RemoteName>
@@ -663,132 +727,6 @@
         <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Debug'">
             <RemoteDir>datasnap101\js\</RemoteDir>
             <RemoteName>json2-min.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="images\collapse.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\images\</RemoteDir>
-            <RemoteName>collapse.png</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="templates\serverfunctioninvoker.html" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\templates\</RemoteDir>
-            <RemoteName>serverfunctioninvoker.html</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\serverfunctioninvoker.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>serverfunctioninvoker.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>callbackframework.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\callbackframework.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>callbackframework.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\connection.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>connection.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>base64-min.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="templates\reversestring.html" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\templates\</RemoteDir>
-            <RemoteName>reversestring.html</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\serverfunctionexecutor.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>serverfunctionexecutor.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\serverfunctions.js" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>serverfunctions.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>base64.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="css\main.css" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\css\</RemoteDir>
-            <RemoteName>main.css</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\js\</RemoteDir>
-            <RemoteName>base64-min.js</RemoteName>
-            <DeployClass>ProjectFile</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="images\expand.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>datasnap101\images\</RemoteDir>
-            <RemoteName>expand.png</RemoteName>
             <DeployClass>ProjectFile</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
