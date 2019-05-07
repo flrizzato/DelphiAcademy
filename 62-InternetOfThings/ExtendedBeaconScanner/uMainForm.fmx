@@ -1,0 +1,208 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 496
+  ClientWidth = 384
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 496.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Button1: TButton
+      Align = Top
+      Size.Width = 384.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'SCAN'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Align = Top
+      Position.Y = 33.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'STOP SCANNING'
+      OnClick = Button2Click
+    end
+    object Panel2: TPanel
+      Align = Top
+      Position.Y = 65.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object CheckBoxStandard: TCheckBox
+        Position.X = 2.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Standard'
+        OnChange = CheckBoxiScanningChange
+      end
+      object CheckBoxAlternative: TCheckBox
+        Position.X = 79.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Alternative'
+        OnChange = CheckBoxiScanningChange
+      end
+      object CheckBoxScanEddystone: TCheckBox
+        Position.X = 164.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 118.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'ScanEddystone'
+        OnChange = CheckBoxiScanningChange
+      end
+      object CheckBoxExtended: TCheckBox
+        Position.X = 281.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Extended'
+        OnChange = CheckBoxiScanningChange
+      end
+      object Label2: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 4.000000000000000000
+        Position.Y = 1.000000000000000000
+        Size.Width = 66.000000000000000000
+        Size.Height = 14.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        Text = 'Scan mode'
+      end
+    end
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+      ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      AllowSelection = False
+      Align = Client
+      CanFocus = False
+      Size.Width = 384.000000000000000000
+      Size.Height = 343.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      ItemAppearance.ItemHeight = 110
+      ItemAppearance.HeaderHeight = 10
+      ItemAppearance.FooterHeight = 10
+      ItemAppearanceObjects.ItemObjects.Text.Width = 648.000000000000000000
+      ItemAppearanceObjects.ItemObjects.Text.Height = 41.000000000000000000
+      ItemAppearanceObjects.ItemObjects.Text.PlaceOffset.X = 1.000000000000000000
+      ItemAppearanceObjects.ItemObjects.Text.PlaceOffset.Y = 2.000000000000000000
+      ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 11.000000000000000000
+      ItemAppearanceObjects.ItemObjects.Detail.TextVertAlign = Leading
+      ItemAppearanceObjects.ItemObjects.Detail.Width = 643.000000000000000000
+      ItemAppearanceObjects.ItemObjects.Detail.Height = 245.000000000000000000
+      ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.X = 1.000000000000000000
+      ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.Y = 31.000000000000000000
+      ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+      ItemAppearanceObjects.HeaderObjects.Text.Width = 664.000000000000000000
+      ItemAppearanceObjects.HeaderObjects.Text.Height = 24.000000000000000000
+      ItemAppearanceObjects.FooterObjects.Text.Width = 367.000000000000000000
+      ItemAppearanceObjects.FooterObjects.Text.Height = 332.000000000000000000
+      ItemAppearanceObjects.FooterObjects.Text.PlaceOffset.Y = 4.000000000000000000
+      CanSwipeDelete = False
+    end
+    object Panel3: TPanel
+      Align = Top
+      Position.Y = 105.000000000000000000
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object CheckBoxAltBeacon: TCheckBox
+        Position.X = 73.000000000000000000
+        Position.Y = 18.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'AltBeacon'
+      end
+      object CheckBoxEddystone: TCheckBox
+        Position.X = 157.000000000000000000
+        Position.Y = 18.000000000000000000
+        Size.Width = 88.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Eddystone'
+      end
+      object CheckBoxiBeacon: TCheckBox
+        Position.X = 2.000000000000000000
+        Position.Y = 18.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'iBeacon'
+      end
+      object CheckBoxDeviceInf: TCheckBox
+        IsChecked = True
+        Position.X = 275.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 88.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Device Inf.'
+      end
+      object Label3: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 4.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 85.000000000000000000
+        Size.Height = 14.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        Text = 'Extended mode'
+      end
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 296
+    Top = 177
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+        Platform = 'Android'
+      end>
+    Left = 232
+    Top = 241
+  end
+  object Beacon1: TBeacon
+    ModeExtended = [iBeacons, AltBeacons, Eddystones]
+    MonitorizedRegions = <>
+    BeaconDeathTime = 5
+    SPC = 0.500000000000000000
+    ScanningTime = 1000
+    Left = 232
+    Top = 177
+  end
+end

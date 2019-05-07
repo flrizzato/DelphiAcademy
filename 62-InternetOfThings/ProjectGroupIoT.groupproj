@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F152FD92-D44B-463F-A42E-D03416E2AA85}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="BLEScanner\BLEScanner.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ExtendedBeaconScanner\AllBeaconsScanner.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BLEScanner">
+        <MSBuild Projects="BLEScanner\BLEScanner.dproj"/>
+    </Target>
+    <Target Name="BLEScanner:Clean">
+        <MSBuild Projects="BLEScanner\BLEScanner.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BLEScanner:Make">
+        <MSBuild Projects="BLEScanner\BLEScanner.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AllBeaconsScanner">
+        <MSBuild Projects="ExtendedBeaconScanner\AllBeaconsScanner.dproj"/>
+    </Target>
+    <Target Name="AllBeaconsScanner:Clean">
+        <MSBuild Projects="ExtendedBeaconScanner\AllBeaconsScanner.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AllBeaconsScanner:Make">
+        <MSBuild Projects="ExtendedBeaconScanner\AllBeaconsScanner.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BLEScanner;AllBeaconsScanner"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BLEScanner:Clean;AllBeaconsScanner:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BLEScanner:Make;AllBeaconsScanner:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
