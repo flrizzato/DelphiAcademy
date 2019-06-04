@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-neptune/resources/theme-neptune-all.css" 
+         rel = "stylesheet" />
+      <script type = "text/javascript" 
+         src = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+      
+      <script type = "text/javascript">
+         Ext.onReady(function() {
+            Ext.create('Ext.Button', {
+               renderTo: Ext.getElementById('helloWorldPanel'),
+               text: 'My Button', 
+               listeners: {
+                  click: function() {
+                     Ext.MessageBox.alert('Alert box', 'Button is clicked');	
+                  }
+               }
+            });
+         });
+      </script> 
+   </head>
+   
+   <body>
+      <p> Please click the button to see event listener </p>
+      <div id = 'helloWorldPanel' />   <!--  panel will be rendered here-- >
+   </body>
+</html>
