@@ -16,16 +16,10 @@ uses
 type
   TForm1 = class(TForm)
     EmployeeConnection: TFDConnection;
-    ProjectTable: TFDQuery;
     DBGrid1: TDBGrid;
     FDPhysIBDriverLink1: TFDPhysIBDriverLink;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
     DataSource1: TDataSource;
-    ProjectTablePROJ_ID: TStringField;
-    ProjectTablePROJ_NAME: TStringField;
-    ProjectTablePROJ_DESC: TMemoField;
-    ProjectTableTEAM_LEADER: TSmallintField;
-    ProjectTablePRODUCT: TStringField;
     Button1: TButton;
     FDBatchMove1: TFDBatchMove;
     FDBatchMoveDataSetReader1: TFDBatchMoveDataSetReader;
@@ -33,6 +27,20 @@ type
     Button2: TButton;
     Memo1: TMemo;
     Button3: TButton;
+    SalesTable: TFDQuery;
+    SalesTablePO_NUMBER: TStringField;
+    SalesTableCUST_NO: TIntegerField;
+    SalesTableSALES_REP: TSmallintField;
+    SalesTableORDER_STATUS: TStringField;
+    SalesTableORDER_DATE: TSQLTimeStampField;
+    SalesTableSHIP_DATE: TSQLTimeStampField;
+    SalesTableDATE_NEEDED: TSQLTimeStampField;
+    SalesTablePAID: TStringField;
+    SalesTableQTY_ORDERED: TIntegerField;
+    SalesTableTOTAL_VALUE: TCurrencyField;
+    SalesTableDISCOUNT: TSingleField;
+    SalesTableITEM_TYPE: TStringField;
+    SalesTableAGED: TFMTBCDField;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -49,32 +57,35 @@ implementation
 
 {$R *.dfm}
 
-uses uJSONHelper;
+uses uJSONHelper, System.JSON.Types;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  ProjectTable.Open;
+  SalesTable.Open;
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 var
   sstr: TStringStream;
 begin
+  JSONFormatSettings.ShortDateFormat := 'dd/mm/yy';
+
   sstr := TStringStream.Create;
+  SalesTable.DisableControls;
   try
-    ProjectTable.DisableControls;
     FDBatchMoveJSONWriter1.Stream := sstr;
     FDBatchMove1.Execute;
     Memo1.Lines.Text := sstr.DataString;
   finally
     sstr.Free;
-    ProjectTable.EnableControls;
+    SalesTable.First;
+    SalesTable.EnableControls;
   end
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-  Memo1.Lines.Text := ProjectTable.AsJSONArray;
+  Memo1.Lines.Text := SalesTable.AsJSONArray;
 end;
 
 end.
