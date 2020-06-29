@@ -4,6 +4,9 @@ object RSResource1: TRSResource1
   Width = 399
   object EmployeeConnection: TFDConnection
     Params.Strings = (
+      
+        'Database=C:\Users\Public\Documents\Embarcadero\Studio\21.0\Sampl' +
+        'es\Data\EMPLOYEE.GDB'
       'ConnectionDef=EMPLOYEE')
     LoginPrompt = False
     Left = 64

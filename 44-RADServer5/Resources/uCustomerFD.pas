@@ -73,6 +73,9 @@ begin
   fMem.Position := 0;
   FDSchemaAdapter1.LoadFromStream(fMem, TFDStorageFormat.sfJSON);
   FDSchemaAdapter1.ApplyUpdates;
+
+  fMem.Size := 0;
+  AResponse.Body.SetStream(fMem, 'application/vnd.embarcadero.firedac+json', true);
 end;
 
 procedure Register;
